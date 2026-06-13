@@ -1,0 +1,142 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola Shows
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VEVENT
+UID:2026-06-13-bettys-just-dance-pensapride@diypensacola
+DTSTART:20260613T183000
+DTEND:20260613T213000
+SUMMARY:Just Dance Pensapride @ Betty's
+DESCRIPTION:just dance: 2nd annual pensa pride after-party at betty's. sat jun 13\, doors 6:30\, 18+. $10 presale / $15 at the door. come dance.
+LOCATION:Betty's
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-13-handlebar-katie-dineen@diypensacola
+DTSTART:20260613T190000
+DTEND:20260613T220000
+SUMMARY:Katie Dineen\, Snake\, The Rabbit\, Neon Tomboy @ The Handlebar
+DESCRIPTION:katie dineen\, snake and the rabbit\, neon tomboy at the handlebar. saturday jun 13\, doors 7pm. tickets at thehandlebar850.com.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-13-the-den-mario-judah@diypensacola
+DTSTART:20260613T160000
+DTEND:20260613T190000
+SUMMARY:Mario Judah\, Lesion\, Cdd\, More @ The-Den
+DESCRIPTION:mario judah with lesion\, cdd\, and more at the den. saturday june 13\, doors 4 / music 5. $12. 9575 bridlewood rd\, beulah. carpool encouraged\, no id no bottle.
+LOCATION:The-Den
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-17-handlebar-snow-halo@diypensacola
+DTSTART:20260617T190000
+DTEND:20260617T220000
+SUMMARY:Snow Halo @ Handlebar
+DESCRIPTION:
+LOCATION:Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-18-unconfirmed-nights-of-malice@diypensacola
+DTSTART:20260618T190000
+DTEND:20260618T220000
+SUMMARY:Nights Of Malice\, My Own Will\, Hemlock\, Exformation @ UNCONFIRMED
+DESCRIPTION:nights of malice\, my own will\, hemlock\, exformation at the handlebar. thu jun 18\, doors 7 / music 8. $10 adv / $15 door.
+LOCATION:UNCONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-20-bettys-fetish-pride-night@diypensacola
+DTSTART:20260620T190000
+DTEND:20260620T220000
+SUMMARY:Fetish Pride Night @ Betty's
+DESCRIPTION:fetish goth pride night ft. glass casket at betty's. sat jun 20\, 8pm til 1am\, 18+. $15.
+LOCATION:Betty's
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-26-undergrowth-other@diypensacola
+DTSTART:20260626T183000
+DTEND:20260626T213000
+SUMMARY:Other @ Undergrowth
+DESCRIPTION:rock the vote: other\, tirra lirra\, and mother's milk at our house (412 e hernandez st). friday june 26\, doors 6:30 / show 7pm. free show.
+LOCATION:Undergrowth
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-04-the-den-lesion@diypensacola
+DTSTART:20260704T180000
+DTEND:20260704T210000
+SUMMARY:Lesion @ The-Den
+DESCRIPTION:insubordinate day: lesion\, charcoal\, and caca del diablo at the den (9575 bridlewood rd\, beulah). july 4th\, doors 6 / music 7. free show.
+LOCATION:The-Den
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-04-309-maggot-sandwich@diypensacola
+DTSTART:20260704T180000
+DTEND:20260704T210000
+SUMMARY:Maggot Sandwich\, The Pallbearers @ 309
+DESCRIPTION:maggot sandwich and the pallbearers at 309. sat jul 4\, doors 6pm. new orleans punk rock legends. 309 n 6th ave.
+LOCATION:309
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-12-309-woody-guthrie-gathering@diypensacola
+DTSTART:20260712T173000
+DTEND:20260712T203000
+SUMMARY:Woody Guthrie Gathering @ 309
+DESCRIPTION:woody guthrie birthday gathering with shuttle punx at 309. sun jul 12\, doors 5:30 / show 6\, all ages. donations welcome.
+LOCATION:309
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-17-bettys-johanna-rose@diypensacola
+DTSTART:20260717T200000
+DTEND:20260717T230000
+SUMMARY:Johanna Rose\, The Dreamboats\, Goodwin Rainer\, Stufy @ Betty's
+DESCRIPTION:johanna rose & the dreamboats\, goodwin rainer\, stufy at betty's. fri jul 17\, doors 8 / music 9. $12.
+LOCATION:Betty's
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-19-handlebar-in-gloom@diypensacola
+DTSTART:20260719T190000
+DTEND:20260719T220000
+SUMMARY:In Gloom\, Innerwounds\, Fire Came Disparity\, Wraithbearer @ The Handlebar
+DESCRIPTION:in gloom\, innerwounds\, with fire came disparity\, wraithbearer at the handlebar. sun jul 19\, doors 7 / music 8\, all ages. $10 adv / $15 door.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-21-handlebar-high-fade@diypensacola
+DTSTART:20260721T190000
+DTEND:20260721T220000
+SUMMARY:High Fade @ The Handlebar
+DESCRIPTION:high fade on the twice as nice tour at the handlebar. tue jul 21\, doors 7pm. tickets at thehandlebar850.com.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-22-handlebar-no-complications@diypensacola
+DTSTART:20260722T190000
+DTEND:20260722T220000
+SUMMARY:No Complications\, King In Yellow\, Tirra Lirra @ The Handlebar
+DESCRIPTION:no complications\, king in yellow\, tirra lirra at the handlebar. wed jul 22\, 6pm. $15.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-14-handlebar-archers@diypensacola
+DTSTART:20260914T190000
+DTEND:20260914T220000
+SUMMARY:Archers\, Autumn Kings\, Pinknoise\, Coldstate @ The Handlebar
+DESCRIPTION:archers\, autumn kings\, pinknoise\, and coldstate at the handlebar. september 14. tickets at thehandlebar850.com.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-27-handlebar-eyehategod@diypensacola
+DTSTART:20260927T190000
+DTEND:20260927T220000
+SUMMARY:Eyehategod\, Whores\, Nomas @ The Handlebar
+DESCRIPTION:eyehategod\, whores\, and nomas at the handlebar. september 27. tickets on sale now at thehandlebar850.com.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-22-handlebar-fenix-tx@diypensacola
+DTSTART:20261022T190000
+DTEND:20261022T220000
+SUMMARY:Fenix Tx\, Scream Out Loud\, Color The Void @ The Handlebar
+DESCRIPTION:fenix tx with scream out loud and color the void at the handlebar. thursday october 22. tickets at thehandlebar850.com.
+LOCATION:The Handlebar
+END:VEVENT
+END:VCALENDAR
