@@ -77,6 +77,14 @@ DESCRIPTION:rock the vote: other\, tirra lirra\, and mother's milk at our house 
 LOCATION:Undergrowth
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-06-27-bettys-punk-rock-prom@diypensacola
+DTSTART;TZID=America/Chicago:20260627T180000
+DTEND;TZID=America/Chicago:20260627T210000
+SUMMARY:Ex-Teenage Rebels @ Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
+DESCRIPTION:punk rock prom at betty's\, saturday june 27. doors at 6\, $23. live music by ex-teenage rebels\, plus dj hale\, jukebox roulette\, a prom king & queen contest\, and a photo booth. fundraiser for 309 punk project. theme is neon decay.
+LOCATION:Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-07-04-the-den-lesion@diypensacola
 DTSTART;TZID=America/Chicago:20260704T180000
 DTEND;TZID=America/Chicago:20260704T210000
