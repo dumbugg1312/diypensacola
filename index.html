@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'sha256-MB673l6SVuryORlHTbRVycYkWAhOu3mLCkgix0VbybE='">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'sha256-UrWParX1g2lcK6OYxoPgb84/NGWBUyuMNNzLDR6AJ08='">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>DIYPENSACOLA — shows and events in punksacola</title>
 <meta name="description" content="Upcoming DIY and punk shows in Pensacola, FL — 18 on the calendar right now, with flyers, dates, venues, and a forever archive of past shows. Support your local scene.">
@@ -158,8 +158,21 @@ main section:target{animation:viewin .26s ease both}
 @keyframes lbin{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:none}}
 @keyframes sheetup{from{transform:translateY(100%)}to{transform:translateY(0)}}
 
+/* back-to-top — a tilted tape button that fades in once you've scrolled down.
+   z-index sits below the lightbox/detail (50/55) so it hides behind an open modal. */
+.totop{position:fixed;right:1.2rem;bottom:1.2rem;z-index:45;width:3rem;height:3rem;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;
+  background:var(--tape);color:#111;border:2px solid #111;box-shadow:3px 3px 0 var(--hot);
+  font:1.5rem/1 "Anton","Special Elite",sans-serif;text-decoration:none;
+  transform:rotate(-3deg) translateY(10px);opacity:0;pointer-events:none;
+  transition:opacity .2s,transform .2s}
+.totop.show{opacity:1;pointer-events:auto;transform:rotate(-3deg) translateY(0)}
+.totop:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
+.totop:active{transform:rotate(-3deg) translate(2px,2px);box-shadow:1px 1px 0 var(--hot)}
+
 @media (max-width:640px){
   #calgrid{display:none}#agenda{display:block}
+  .totop{display:none}  /* the sticky nav already covers this on phones */
 
   /* header: tighter so shows are reachable sooner — same big punk type */
   header{padding:1.5rem 1rem .2rem}
@@ -248,6 +261,7 @@ main section:target{animation:viewin .26s ease both}
 <footer>flyer info comes straight from the venues. <b>support your local scene.</b><br>proudly ran out of punksacola, fl
 <div class="flinks"><a href="https://forms.gle/tEPE8XWALYj4UbLz9" target="_blank" rel="noopener">submit yr flyers</a><a href="https://309punkproject.org" target="_blank" rel="noopener">309 punk project</a></div>
 </footer>
+<button class="totop" id="totop" type="button" aria-label="back to top" title="back to top">&#8593;</button>
 <div class="lb" id="lb"><a class="x" href="#" aria-label="close">×</a><img id="lbimg" src="" alt="flyer full view"></div>
 <div class="lb detail" id="detail" role="dialog" aria-modal="true" aria-label="show details">
 <div class="dbox">
@@ -409,6 +423,19 @@ main section:target{animation:viewin .26s ease both}
   if(logo){
     logo.addEventListener('mouseenter',function(){logo.classList.remove('tl','tr');logo.classList.add(leftTilt?'tl':'tr');leftTilt=!leftTilt;});
     logo.addEventListener('mouseleave',function(){logo.classList.remove('tl','tr');});
+  }
+
+  // back-to-top: reveal after scrolling past the header, scroll-to-top on click
+  // (uses scrollTo, not a #top link, so the current view/hash is preserved).
+  var toTop=document.getElementById('totop');
+  if(toTop){
+    var onScroll=function(){toTop.classList.toggle('show',(window.pageYOffset||document.documentElement.scrollTop||0)>400);};
+    window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+    toTop.addEventListener('click',function(e){
+      e.preventDefault();
+      var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({top:0,behavior:rm?'auto':'smooth'});
+    });
   }
 })();
 </script>
