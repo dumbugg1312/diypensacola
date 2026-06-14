@@ -142,7 +142,77 @@ footer b{color:var(--hot)}
   box-shadow:3px 3px 0 var(--hot);padding:.45rem .85rem;cursor:pointer;font:inherit;text-transform:uppercase;
   letter-spacing:.05em;font-size:.82rem;text-decoration:none}
 .dbtn:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
-@media (max-width:640px){#calgrid{display:none}#agenda{display:block}.dflyer{max-width:100%;width:100%}}
+/* ---------- touch + mobile polish (premium feel, same zine look) ---------- */
+html{scroll-behavior:smooth}
+body{overflow-x:clip}
+a,button,.show,.cf,.vchip,.athumb{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+/* tactile press feedback — invisible at rest, so the static look is unchanged */
+.links a:active,.dbtn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--hot)}
+nav a:active,.vchip:active,.searchtoggle:active{transform:scale(.95)}
+.show:active{box-shadow:3px 3px 0 var(--hot);transform:translate(2px,2px)}
+.athumb:active,.cf:active{transform:scale(.96)}
+/* gentle entrance when switching views or popping a flyer */
+main section:target{animation:viewin .26s ease both}
+.lb.open #lbimg{animation:lbin .24s ease both}
+@keyframes viewin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes lbin{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:none}}
+@keyframes sheetup{from{transform:translateY(100%)}to{transform:translateY(0)}}
+
+@media (max-width:640px){
+  #calgrid{display:none}#agenda{display:block}
+
+  /* header: tighter so shows are reachable sooner — same big punk type */
+  header{padding:1.5rem 1rem .2rem}
+  header .logo{width:126px;height:126px;margin-bottom:.5rem}
+  h1{font-size:clamp(2.4rem,14vw,3.4rem)}
+  header .tag{font-size:.83rem;margin-top:.5rem;line-height:1.45}
+
+  .links{gap:.5rem;padding:.7rem .85rem .15rem}
+  .links a{font-size:.8rem;padding:.55rem .9rem}
+
+  /* sticky segmented view-switcher — always one tap away */
+  nav{position:sticky;top:0;z-index:40;gap:.5rem;margin-bottom:.2rem;
+    padding:.55rem .8rem;padding-top:calc(.55rem + env(safe-area-inset-top));
+    background:rgba(12,12,13,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line)}
+  nav a{flex:1;text-align:center;padding:.58rem .3rem;font-size:.82rem}
+  main section{scroll-margin-top:4.4rem}
+  main{padding:0 .85rem}
+
+  /* controls + chips: comfy 44px-ish tap targets */
+  .controls{padding:0}
+  .searchtoggle{width:2.7rem;height:2.7rem;font-size:1.35rem}
+  .vchip{padding:.6rem .8rem;font-size:.8rem}
+  .search input{height:2.7rem}
+
+  .show{padding:.85rem;gap:.85rem}
+  #b-tonight .show img.thumb{width:112px;height:140px}
+
+  /* detail view becomes a slide-up bottom sheet with a grab handle */
+  .detail{align-items:flex-end;padding:0}
+  .detail .dbox{width:100%;max-width:100%;max-height:90vh;border:none;border-top:3px solid var(--hot);
+    border-radius:20px 20px 0 0;box-shadow:none;-webkit-overflow-scrolling:touch;
+    padding:1.6rem 1.05rem calc(1.3rem + env(safe-area-inset-bottom));
+    animation:sheetup .3s cubic-bezier(.2,.85,.25,1) both}
+  .detail .dbox::before{content:"";position:absolute;top:.6rem;left:50%;transform:translateX(-50%);
+    width:42px;height:5px;border-radius:3px;background:var(--dim);opacity:.55}
+  .dflyer{width:100%;max-width:100%}
+  .dinfo h2{font-size:1.5rem}
+  .dactions{gap:.5rem}
+  .dactions .dbtn{flex:1;justify-content:center;padding:.7rem .8rem}
+
+  /* roomier lightbox close, clear of the notch */
+  .lb .x{font-size:2.3rem;width:2.6rem;height:2.6rem;display:flex;align-items:center;justify-content:center;
+    top:calc(.5rem + env(safe-area-inset-top));right:.8rem}
+  .lb img#lbimg{max-height:84vh}
+
+  footer{padding:2rem 1rem calc(2rem + env(safe-area-inset-bottom))}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition:none!important}
+}
 </style></head><body>
 <header>
 <img class="logo" src="logo.png" alt="DIYPensacola — Punksacola water tower logo">
