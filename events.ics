@@ -21,30 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-06-13-bettys-just-dance-pensapride@diypensacola
-DTSTART;TZID=America/Chicago:20260613T183000
-DTEND;TZID=America/Chicago:20260613T213000
-SUMMARY:Just Dance Pensapride @ Betty's
-DESCRIPTION:just dance: 2nd annual pensa pride after-party at betty's. sat jun 13\, doors 6:30\, 18+. $10 presale / $15 at the door. come dance.
-LOCATION:Betty's
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-06-13-handlebar-katie-dineen@diypensacola
-DTSTART;TZID=America/Chicago:20260613T190000
-DTEND;TZID=America/Chicago:20260613T220000
-SUMMARY:Katie Dineen\, Snake\, The Rabbit\, Neon Tomboy @ The Handlebar
-DESCRIPTION:katie dineen\, snake and the rabbit\, neon tomboy at the handlebar. saturday jun 13\, doors 7pm. tickets at thehandlebar850.com.
-LOCATION:The Handlebar
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-06-13-the-den-mario-judah@diypensacola
-DTSTART;TZID=America/Chicago:20260613T160000
-DTEND;TZID=America/Chicago:20260613T190000
-SUMMARY:Mario Judah\, Lesion\, Cdd\, More @ The-Den
-DESCRIPTION:mario judah with lesion\, cdd\, and more at the den. saturday june 13\, doors 4 / music 5. $12. 9575 bridlewood rd\, beulah. carpool encouraged\, no id no bottle.
-LOCATION:The-Den
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-06-17-handlebar-snow-halo@diypensacola
 DTSTART;TZID=America/Chicago:20260617T190000
 DTEND;TZID=America/Chicago:20260617T220000
