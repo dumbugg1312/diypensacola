@@ -38,8 +38,8 @@ LOCATION:UNCONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-06-20-bettys-fetish-pride-night@diypensacola
-DTSTART;TZID=America/Chicago:20260620T190000
-DTEND;TZID=America/Chicago:20260620T220000
+DTSTART;TZID=America/Chicago:20260620T200000
+DTEND;TZID=America/Chicago:20260620T230000
 SUMMARY:Fetish Pride Night @ Betty's
 DESCRIPTION:fetish goth pride night ft. glass casket at betty's. sat jun 20\, 8pm til 1am\, 18+. $15.
 LOCATION:Betty's
@@ -110,8 +110,8 @@ LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-07-22-handlebar-no-complications@diypensacola
-DTSTART;TZID=America/Chicago:20260722T190000
-DTEND;TZID=America/Chicago:20260722T220000
+DTSTART;TZID=America/Chicago:20260722T180000
+DTEND;TZID=America/Chicago:20260722T210000
 SUMMARY:No Complications\, King In Yellow\, Tirra Lirra @ The Handlebar
 DESCRIPTION:no complications\, king in yellow\, tirra lirra at the handlebar. wed jul 22\, 6pm. $15.
 LOCATION:The Handlebar
