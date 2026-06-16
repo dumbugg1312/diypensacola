@@ -21,6 +21,14 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:2026-06-16-handlebar-dan-spencer@diypensacola
+DTSTART;TZID=America/Chicago:20260616T180000
+DTEND;TZID=America/Chicago:20260616T210000
+SUMMARY:Dan Spencer\, Dead Allies\, Tuffalo & The Treewalkers\, Sungraz @ The Handlebar
+DESCRIPTION:dan spencer\, dead allies\, tuffalo & the treewalkers\, and sungraz at the handlebar this tuesday. doors at 6.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-06-17-handlebar-snow-halo@diypensacola
 DTSTART;TZID=America/Chicago:20260617T190000
 DTEND;TZID=America/Chicago:20260617T220000
@@ -37,12 +45,68 @@ DESCRIPTION:nights of malice\, my own will\, hemlock\, exformation at the handle
 LOCATION:UNCONFIRMED
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-06-19-handlebar-goldmine@diypensacola
+DTSTART;TZID=America/Chicago:20260619T190000
+DTEND;TZID=America/Chicago:20260619T220000
+SUMMARY:Goldmine\, Lunar Parque\, Southern Magnolia @ The Handlebar
+DESCRIPTION:goldmine with lunar parque and southern magnolia at the handlebar friday. doors 7.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-06-20-bettys-fetish-pride-night@diypensacola
 DTSTART;TZID=America/Chicago:20260620T200000
 DTEND;TZID=America/Chicago:20260620T230000
 SUMMARY:Fetish Pride Night @ Betty's
 DESCRIPTION:fetish goth pride night ft. glass casket at betty's. sat jun 20\, 8pm til 1am\, 18+. $15.
 LOCATION:Betty's
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-20-handlebar-feed-lemon@diypensacola
+DTSTART;TZID=America/Chicago:20260620T190000
+DTEND;TZID=America/Chicago:20260620T220000
+SUMMARY:Feed Lemon\, Cavae Mundi\, Sick Room\, Glazed Eyes @ The Handlebar
+DESCRIPTION:feed lemon\, cavae mundi\, sick room\, and glazed eyes at the handlebar saturday night. doors at 7.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-21-handlebar-rare-seed@diypensacola
+DTSTART;TZID=America/Chicago:20260621T160000
+DTEND;TZID=America/Chicago:20260621T190000
+SUMMARY:Rare Seed\, Still Alice\, Mourning Glories\, Conflict of Interests @ The Handlebar
+DESCRIPTION:rare seed\, still alice\, mourning glories\, and conflict of interests at the handlebar sunday. doors 4.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-21-handlebar-call-me-daddy@diypensacola
+DTSTART;TZID=America/Chicago:20260621T210000
+DTEND;TZID=America/Chicago:20260622T000000
+SUMMARY:Call Me Daddy Drag Show (Drag King Open Stage) @ The Handlebar
+DESCRIPTION:call me daddy drag show at the handlebar sunday night. drag king open stage. doors at 9.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-22-handlebar-psycho-frame@diypensacola
+DTSTART;TZID=America/Chicago:20260622T180000
+DTEND;TZID=America/Chicago:20260622T210000
+SUMMARY:Psycho-Frame\, Oinkliteration\, Caving In\, Hemlock @ The Handlebar
+DESCRIPTION:psycho-frame\, oinkliteration\, caving in\, and hemlock at the handlebar monday. doors 6.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-24-handlebar-mc-chris@diypensacola
+DTSTART;TZID=America/Chicago:20260624T190000
+DTEND;TZID=America/Chicago:20260624T220000
+SUMMARY:MC Chris\, Swell Rell @ The Handlebar
+DESCRIPTION:mc chris with swell rell at the handlebar wednesday. doors at 7.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-25-handlebar-pentagram@diypensacola
+DTSTART;TZID=America/Chicago:20260625T180000
+DTEND;TZID=America/Chicago:20260625T210000
+SUMMARY:Pentagram\, Cursed Body\, Slugger @ The Handlebar
+DESCRIPTION:pentagram\, cursed body\, and slugger at the handlebar thursday. doors 6.
+LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-06-26-undergrowth-other@diypensacola
@@ -59,6 +123,14 @@ DTEND;TZID=America/Chicago:20260627T210000
 SUMMARY:Ex-Teenage Rebels @ Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
 DESCRIPTION:punk rock prom at betty's\, saturday june 27. doors at 6\, $23. live music by ex-teenage rebels\, plus dj hale\, jukebox roulette\, a prom king & queen contest\, and a photo booth. fundraiser for 309 punk project. theme is neon decay.
 LOCATION:Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-30-handlebar-iron-roses@diypensacola
+DTSTART;TZID=America/Chicago:20260630T190000
+DTEND;TZID=America/Chicago:20260630T220000
+SUMMARY:The Iron Roses\, The Glorious Flaws\, Pauper's Grave @ The Handlebar
+DESCRIPTION:the iron roses\, the glorious flaws\, and pauper's grave at the handlebar tuesday the 30th. doors at 7.
+LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-07-04-the-den-lesion@diypensacola
