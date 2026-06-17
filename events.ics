@@ -48,9 +48,9 @@ BEGIN:VEVENT
 UID:2026-06-19-bettys-quintessence@diypensacola
 DTSTART;TZID=America/Chicago:20260619T200000
 DTEND;TZID=America/Chicago:20260619T230000
-SUMMARY:ICANTREAD\, J. Mike\, _Logik\, Quintessence\, IWFS\, Birdz @ Betty's (The Backroom)
+SUMMARY:ICANTREAD\, J. Mike\, _Logik\, Quintessence\, IWFS\, Birdz @ Betty's
 DESCRIPTION:niteowl presents the essence: quintessence. sets from icantread\, j. mike\, _logik\, quintessence\, iwfs\, and birdz. the backroom at betty's\, june 19th. 8pm-2am\, $15.
-LOCATION:Betty's (The Backroom)
+LOCATION:Betty's
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-06-20-bettys-fetish-pride-night@diypensacola
@@ -120,9 +120,9 @@ BEGIN:VEVENT
 UID:2026-06-27-bettys-punk-rock-prom@diypensacola
 DTSTART;TZID=America/Chicago:20260627T180000
 DTEND;TZID=America/Chicago:20260627T210000
-SUMMARY:Ex-Teenage Rebels @ Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
+SUMMARY:Ex-Teenage Rebels @ Betty's
 DESCRIPTION:punk rock prom at betty's\, saturday june 27. doors at 6\, $23. live music by ex-teenage rebels\, plus dj hale\, jukebox roulette\, a prom king & queen contest\, and a photo booth. fundraiser for 309 punk project. theme is neon decay.
-LOCATION:Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
+LOCATION:Betty's
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-06-30-handlebar-iron-roses@diypensacola
