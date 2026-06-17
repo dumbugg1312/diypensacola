@@ -21,14 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-06-16-handlebar-dan-spencer@diypensacola
-DTSTART;TZID=America/Chicago:20260616T180000
-DTEND;TZID=America/Chicago:20260616T210000
-SUMMARY:Dan Spencer\, Dead Allies\, Tuffalo & The Treewalkers\, Sungraz @ The Handlebar
-DESCRIPTION:dan spencer\, dead allies\, tuffalo & the treewalkers\, and sungraz at the handlebar this tuesday. doors at 6.
-LOCATION:The Handlebar
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-06-17-handlebar-snow-halo@diypensacola
 DTSTART;TZID=America/Chicago:20260617T190000
 DTEND;TZID=America/Chicago:20260617T220000
@@ -51,6 +43,14 @@ DTEND;TZID=America/Chicago:20260619T220000
 SUMMARY:Goldmine\, Lunar Parque\, Southern Magnolia @ The Handlebar
 DESCRIPTION:goldmine with lunar parque and southern magnolia at the handlebar friday. doors 7.
 LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-19-bettys-quintessence@diypensacola
+DTSTART;TZID=America/Chicago:20260619T200000
+DTEND;TZID=America/Chicago:20260619T230000
+SUMMARY:ICANTREAD\, J. Mike\, _Logik\, Quintessence\, IWFS\, Birdz @ Betty's (The Backroom)
+DESCRIPTION:niteowl presents the essence: quintessence. sets from icantread\, j. mike\, _logik\, quintessence\, iwfs\, and birdz. the backroom at betty's\, june 19th. 8pm-2am\, $15.
+LOCATION:Betty's (The Backroom)
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-06-20-bettys-fetish-pride-night@diypensacola
