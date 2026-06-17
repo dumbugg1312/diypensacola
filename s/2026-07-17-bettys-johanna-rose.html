@@ -82,7 +82,7 @@ body:has(#grid:target) a[href='#grid'],body:has(#archive:target) a[href='#archiv
 #b-tonight .bhead{color:var(--hot);font-size:1.95rem}
 .cards{display:grid;gap:1.1rem}
 .show{display:flex;gap:1rem;background:var(--card);border:1px solid var(--line);padding:1rem;align-items:center;
-  box-shadow:5px 5px 0 rgba(107,112,54,.5);cursor:pointer}
+  box-shadow:5px 5px 0 rgba(107,112,54,.5);cursor:pointer;transition:box-shadow .12s ease,transform .12s ease}
 .show.past{display:none}
 .show:hover,.show:focus{outline:none;box-shadow:5px 5px 0 var(--hot)}
 .thumbwrap{position:relative;flex:none}
@@ -98,6 +98,10 @@ body:has(#grid:target) a[href='#grid'],body:has(#archive:target) a[href='#archiv
 #b-tonight .show img.thumb{width:130px;height:163px;transform:rotate(-1.4deg)}
 #b-tonight .show h2{font-size:2rem}
 #b-tonight .show{box-shadow:6px 6px 0 var(--hot)}
+/* tonight cards already wear the hot shadow at rest, so they need their own
+   hover/focus state (higher specificity than the base rule) to still signal
+   they're clickable — otherwise hovering them does nothing. */
+#b-tonight .show:hover,#b-tonight .show:focus{box-shadow:10px 10px 0 var(--hot);transform:translate(-3px,-3px)}
 .stamp{position:absolute;font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;font-size:.68rem;
   letter-spacing:.05em;padding:.1rem .38rem;border:2px solid currentColor;background:rgba(12,12,13,.62);line-height:1;pointer-events:none}
 .s-free{color:var(--free);bottom:6px;left:-7px;transform:rotate(-8deg)}
