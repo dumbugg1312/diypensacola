@@ -53,6 +53,14 @@ DESCRIPTION:niteowl presents the essence: quintessence. sets from icantread\, j.
 LOCATION:Betty's (The Backroom)
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-06-19-309-q-the-poet@diypensacola
+DTSTART;TZID=America/Chicago:20260619T200000
+DTEND;TZID=America/Chicago:20260619T230000
+SUMMARY:Quincy "Q" Hull\, Lachelle Johns\, Patriot X\, Scott Satterwhite @ 309
+DESCRIPTION:juneteenth at 309 with quincy "q" hull. spoken word from q the poet\, with lachelle johns\, patriot x\, scott satterwhite\, and a special guest. friday june 19\, 8pm at 309.
+LOCATION:309
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-06-20-bettys-fetish-pride-night@diypensacola
 DTSTART;TZID=America/Chicago:20260620T200000
 DTEND;TZID=America/Chicago:20260620T230000
@@ -101,6 +109,14 @@ DESCRIPTION:mc chris with swell rell at the handlebar wednesday. doors at 7.
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-06-24-bettys-oolong-second-place@diypensacola
+DTSTART;TZID=America/Chicago:20260624T190000
+DTEND;TZID=America/Chicago:20260624T220000
+SUMMARY:Oolong\, Second Place\, Other\, ihatesundays @ Betty's
+DESCRIPTION:oolong (long island) and second place (houston) at betty's with other and ihatesundays. wednesday june 24\, doors 7\, show 8.
+LOCATION:Betty's
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-06-25-handlebar-pentagram@diypensacola
 DTSTART;TZID=America/Chicago:20260625T180000
 DTEND;TZID=America/Chicago:20260625T210000
@@ -115,6 +131,14 @@ DTEND;TZID=America/Chicago:20260626T213000
 SUMMARY:Other @ Undergrowth
 DESCRIPTION:rock the vote: other\, tirra lirra\, and mother's milk at our house (412 e hernandez st). friday june 26\, doors 6:30 / show 7pm. free show.
 LOCATION:Undergrowth
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-26-handlebar-blight@diypensacola
+DTSTART;TZID=America/Chicago:20260626T190000
+DTEND;TZID=America/Chicago:20260626T220000
+SUMMARY:Blight\, Aumua\, Innerwounds\, Grave Chorus @ The Handlebar
+DESCRIPTION:blight\, aumua\, innerwounds\, and grave chorus at the handlebar. june 26\, doors 7\, show 8\, $10.
+LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-06-27-bettys-punk-rock-prom@diypensacola
