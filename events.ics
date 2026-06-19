@@ -21,22 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-06-18-unconfirmed-nights-of-malice@diypensacola
-DTSTART;TZID=America/Chicago:20260618T190000
-DTEND;TZID=America/Chicago:20260618T220000
-SUMMARY:Nights Of Malice\, My Own Will\, Hemlock\, Exformation @ UNCONFIRMED
-DESCRIPTION:nights of malice\, my own will\, hemlock\, exformation at the handlebar. thu jun 18\, doors 7 / music 8. $10 adv / $15 door.
-LOCATION:UNCONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-06-18-bettys-tooth-gems@diypensacola
-DTSTART;TZID=America/Chicago:20260618T180000
-DTEND;TZID=America/Chicago:20260618T210000
-SUMMARY:Tooth Gems + Moving Sale @ Betty's on Belmont
-DESCRIPTION:tooth gems + moving sale pop-up at betty's on belmont for thirstday gay night market\, june 18. 6 to midnight. discounts from siren sanctum.
-LOCATION:Betty's on Belmont
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-06-19-handlebar-goldmine@diypensacola
 DTSTART;TZID=America/Chicago:20260619T190000
 DTEND;TZID=America/Chicago:20260619T220000
