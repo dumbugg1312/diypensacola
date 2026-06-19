@@ -165,12 +165,28 @@ DESCRIPTION:maggot sandwich and the pallbearers at 309. sat jul 4\, doors 6pm. n
 LOCATION:309
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-07-05-handlebar-the-soap-girls@diypensacola
+DTSTART;TZID=America/Chicago:20260705T190000
+DTEND;TZID=America/Chicago:20260705T220000
+SUMMARY:The Soap Girls\, Wynter @ The Handlebar
+DESCRIPTION:the soap girls at the handlebar sunday july 5 with wynter.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-07-12-309-woody-guthrie-gathering@diypensacola
 DTSTART;TZID=America/Chicago:20260712T173000
 DTEND;TZID=America/Chicago:20260712T203000
 SUMMARY:Woody Guthrie Gathering @ 309
 DESCRIPTION:woody guthrie birthday gathering with shuttle punx at 309. sun jul 12\, doors 5:30 / show 6\, all ages. donations welcome.
 LOCATION:309
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-16-bettys-wyrm@diypensacola
+DTSTART;TZID=America/Chicago:20260716T190000
+DTEND;TZID=America/Chicago:20260716T220000
+SUMMARY:Wyrm\, Tremors\, Power Bomb @ Betty's
+DESCRIPTION:wyrm\, tremors\, and power bomb at betty's thursday july 16. 506 w belmont st. doors 7.
+LOCATION:Betty's
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-07-17-bettys-johanna-rose@diypensacola
@@ -205,6 +221,14 @@ DESCRIPTION:no complications\, king in yellow\, tirra lirra at the handlebar. we
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-08-15-handlebar-heroes-for-ghosts@diypensacola
+DTSTART;TZID=America/Chicago:20260815T180000
+DTEND;TZID=America/Chicago:20260815T210000
+SUMMARY:Heroes For Ghosts\, Spiritless\, Afterdusk\, Caving In @ The Handlebar
+DESCRIPTION:heroes for ghosts and spiritless at the handlebar saturday august 15\, with local support from afterdusk and caving in. doors 6\, show 7. $15 at the door.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-09-14-handlebar-archers@diypensacola
 DTSTART;TZID=America/Chicago:20260914T190000
 DTEND;TZID=America/Chicago:20260914T220000
@@ -226,6 +250,14 @@ DTSTART;TZID=America/Chicago:20260927T190000
 DTEND;TZID=America/Chicago:20260927T220000
 SUMMARY:Eyehategod\, Whores\, Nomas @ The Handlebar
 DESCRIPTION:eyehategod\, whores\, and nomas at the handlebar. september 27. tickets on sale now at thehandlebar850.com.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-10-handlebar-silent-theory@diypensacola
+DTSTART;TZID=America/Chicago:20261010T190000
+DTEND;TZID=America/Chicago:20261010T220000
+SUMMARY:Silent Theory\, Discrepancies\, Sick Century @ The Handlebar
+DESCRIPTION:silent theory at the handlebar saturday october 10 with discrepancies and sick century. tickets at silenttheory.com.
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
