@@ -21,46 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-06-19-handlebar-goldmine@diypensacola
-DTSTART;TZID=America/Chicago:20260619T190000
-DTEND;TZID=America/Chicago:20260619T220000
-SUMMARY:Goldmine\, Lunar Parque\, Southern Magnolia @ The Handlebar
-DESCRIPTION:goldmine with lunar parque and southern magnolia at the handlebar friday. doors 7.
-LOCATION:The Handlebar
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-06-19-bettys-quintessence@diypensacola
-DTSTART;TZID=America/Chicago:20260619T200000
-DTEND;TZID=America/Chicago:20260619T230000
-SUMMARY:ICANTREAD\, J. Mike\, _Logik\, Quintessence\, IWFS\, Birdz @ Betty's (The Backroom)
-DESCRIPTION:niteowl presents the essence: quintessence. sets from icantread\, j. mike\, _logik\, quintessence\, iwfs\, and birdz. the backroom at betty's\, june 19th. 8pm-2am\, $15.
-LOCATION:Betty's (The Backroom)
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-06-19-309-q-the-poet@diypensacola
-DTSTART;TZID=America/Chicago:20260619T200000
-DTEND;TZID=America/Chicago:20260619T230000
-SUMMARY:Quincy "Q" Hull\, Lachelle Johns\, Patriot X\, Scott Satterwhite @ 309
-DESCRIPTION:juneteenth at 309 with quincy "q" hull. spoken word from q the poet\, with lachelle johns\, patriot x\, scott satterwhite\, and a special guest. friday june 19\, 8pm at 309.
-LOCATION:309
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-06-20-bettys-fetish-pride-night@diypensacola
-DTSTART;TZID=America/Chicago:20260620T200000
-DTEND;TZID=America/Chicago:20260620T230000
-SUMMARY:Fetish Pride Night @ Betty's
-DESCRIPTION:fetish goth pride night ft. glass casket at betty's. sat jun 20\, 8pm til 1am\, 18+. $15.
-LOCATION:Betty's
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-06-20-handlebar-feed-lemon@diypensacola
-DTSTART;TZID=America/Chicago:20260620T190000
-DTEND;TZID=America/Chicago:20260620T220000
-SUMMARY:Feed Lemon\, Cavae Mundi\, Sick Room\, Glazed Eyes @ The Handlebar
-DESCRIPTION:feed lemon\, cavae mundi\, sick room\, and glazed eyes at the handlebar saturday night. doors at 7.
-LOCATION:The Handlebar
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-06-21-handlebar-rare-seed@diypensacola
 DTSTART;TZID=America/Chicago:20260621T160000
 DTEND;TZID=America/Chicago:20260621T190000
@@ -123,6 +83,14 @@ DTEND;TZID=America/Chicago:20260626T220000
 SUMMARY:Blight\, Aumua\, Innerwounds\, Grave Chorus @ The Handlebar
 DESCRIPTION:blight\, aumua\, innerwounds\, and grave chorus at the handlebar. june 26\, doors 7\, show 8\, $10.
 LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-26-309-talamieka-brice@diypensacola
+DTSTART;TZID=America/Chicago:20260626T180000
+DTEND;TZID=America/Chicago:20260626T210000
+SUMMARY:Talamieka Brice Bootjack and Red Film Screening + Discussion @ 309
+DESCRIPTION:talamieka brice presents "bootjack and red" — a film screening + discussion at 309 punk project. friday june 26th\, 6pm. 309 n 6th ave. all welcome.
+LOCATION:309
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-06-27-bettys-punk-rock-prom@diypensacola
