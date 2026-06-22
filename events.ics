@@ -21,22 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-06-21-handlebar-rare-seed@diypensacola
-DTSTART;TZID=America/Chicago:20260621T160000
-DTEND;TZID=America/Chicago:20260621T190000
-SUMMARY:Rare Seed\, Still Alice\, Mourning Glories\, Conflict of Interests @ The Handlebar
-DESCRIPTION:rare seed\, still alice\, mourning glories\, and conflict of interests at the handlebar sunday. doors 4.
-LOCATION:The Handlebar
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-06-21-handlebar-call-me-daddy@diypensacola
-DTSTART;TZID=America/Chicago:20260621T210000
-DTEND;TZID=America/Chicago:20260622T000000
-SUMMARY:Call Me Daddy Drag Show (Drag King Open Stage) @ The Handlebar
-DESCRIPTION:call me daddy drag show at the handlebar sunday night. drag king open stage. doors at 9.
-LOCATION:The Handlebar
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-06-22-handlebar-psycho-frame@diypensacola
 DTSTART;TZID=America/Chicago:20260622T180000
 DTEND;TZID=America/Chicago:20260622T210000
@@ -93,6 +77,14 @@ DESCRIPTION:talamieka brice presents "bootjack and red" — a film screening + d
 LOCATION:309
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-06-26-bettys-slayyyd@diypensacola
+DTSTART;TZID=America/Chicago:20260626T210000
+DTEND;TZID=America/Chicago:20260627T000000
+SUMMARY:Wanda Doomy\, Vixen Valentine\, Mon Cherri Pop\, Gemini\, h8male\, Day Day DuVay @ Betty's
+DESCRIPTION:h8male presents slayyy'd\, a slayyyter themed drag show at betty's friday june 26th. wanda doomy\, vixen valentine\, mon cherri pop\, gemini\, h8male\, day day duvay. doors 9pm\, $10\, 18+.
+LOCATION:Betty's
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-06-27-bettys-punk-rock-prom@diypensacola
 DTSTART;TZID=America/Chicago:20260627T180000
 DTEND;TZID=America/Chicago:20260627T210000
@@ -117,6 +109,14 @@ DESCRIPTION:whisper party brings the gulf of reverb tour to betty's on belmont\,
 LOCATION:Betty's on Belmont
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-07-03-bettys-weirdo-circus@diypensacola
+DTSTART;TZID=America/Chicago:20260703T200000
+DTEND;TZID=America/Chicago:20260703T230000
+SUMMARY:Weirdo Mutual Aid Circus\, Earthly Delights Show @ Betty's
+DESCRIPTION:weirdo mutual aid circus: the earthly delights show at betty's july 3rd. games\, burlesque\, clown contest\, daring acts. shows at 8\, 9 & 10. $15\, benefitting free gaza circus.
+LOCATION:Betty's
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-07-04-the-den-lesion@diypensacola
 DTSTART;TZID=America/Chicago:20260704T180000
 DTEND;TZID=America/Chicago:20260704T210000
@@ -139,6 +139,14 @@ DTEND;TZID=America/Chicago:20260705T220000
 SUMMARY:The Soap Girls\, Wynter @ The Handlebar
 DESCRIPTION:the soap girls at the handlebar sunday july 5 with wynter.
 LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-09-bettys-shidded@diypensacola
+DTSTART;TZID=America/Chicago:20260709T200000
+DTEND;TZID=America/Chicago:20260709T230000
+SUMMARY:Shidded\, Machina\, Ihatesundays @ Betty's
+DESCRIPTION:shidded\, machina\, and ihatesundays at betty's on belmont thursday july 9th. doors 8pm.
+LOCATION:Betty's
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-07-12-309-woody-guthrie-gathering@diypensacola

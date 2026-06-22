@@ -24,12 +24,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Special+Elite&family=Rock+Salt&display=swap" rel="stylesheet">
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Event", "name": "High Fade", "startDate": "2026-07-21T19:00:00-05:00", "endDate": "2026-07-21T22:00:00-05:00", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "The Handlebar", "address": {"@type": "PostalAddress", "addressLocality": "Pensacola", "addressRegion": "FL", "addressCountry": "US"}}, "image": "https://diypensacola.com/flyers/flyer_2026-07-21_handlebar_high-fade.jpg", "url": "https://diypensacola.com/s/2026-07-21-handlebar-high-fade.html", "organizer": {"@type": "Organization", "name": "DIYPensacola", "url": "https://diypensacola.com/"}, "performer": [{"@type": "MusicGroup", "name": "High Fade"}]}]</script>
 <style>
-:root{--bg:#0c0c0d;--card:#17171a;--ink:#f2f2ee;--dim:#9b9b94;--hot:#6b7036;--on-hot:#f2f2ee;--line:#2c2c31;--tape:#d8d4c5;--free:#aebf5a;--soldout:#e06464;--sliding:#7fb0a8;--age:#d59b46}
+:root{--bg:#0c0c0d;--card:#17171a;--ink:#f2f2ee;--dim:#9b9b94;--hot:#6b7036;--hotink:#8f9850;--on-hot:#f2f2ee;--line:#2c2c31;--tape:#d8d4c5;--free:#aebf5a;--soldout:#e06464;--sliding:#7fb0a8;--age:#d59b46;--benefit:#d98cb0}
 *{box-sizing:border-box}
 body{margin:0;background-color:var(--bg);color:var(--ink);font:16px/1.5 "Special Elite","Courier New",monospace;
   background-image:radial-gradient(1000px 520px at 50% -140px,rgba(107,112,54,.32),rgba(107,112,54,0) 72%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.11'/%3E%3C/svg%3E");
   background-repeat:no-repeat,repeat}
-a{color:var(--hot)}
+a{color:var(--hotink)}
 header{padding:2.2rem 1rem .3rem;text-align:center}
 header .logo{width:170px;height:170px;display:block;margin:0 auto .6rem;filter:drop-shadow(0 0 14px rgba(255,255,255,.18));transition:transform .2s}
 header .logo.tl{transform:rotate(-6deg) scale(1.04)}
@@ -37,7 +37,7 @@ header .logo.tr{transform:rotate(6deg) scale(1.04)}
 h1{margin:0;font-family:"Special Elite","Courier New",monospace;font-weight:400;font-size:clamp(2.4rem,11vw,4.4rem);letter-spacing:.02em;
   text-transform:uppercase;transform:rotate(-2deg);text-shadow:4px 4px 0 var(--hot)}
 header .tag{color:var(--dim);margin:.7rem 0 0;font-size:.95rem}
-.links{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center;padding:.8rem 1rem .2rem}
+.links{display:flex;flex-wrap:wrap;gap:1rem .6rem;justify-content:center;max-width:680px;margin:0 auto;padding:.8rem 1rem .2rem}
 .links a{font-size:.85rem;text-decoration:none;color:#111;background:var(--tape);padding:.4rem .9rem;
   border:2px solid #111;box-shadow:3px 3px 0 var(--hot);text-transform:uppercase;letter-spacing:.05em}
 .links a:nth-child(odd){transform:rotate(-1.5deg)}.links a:nth-child(even){transform:rotate(1.2deg)}
@@ -89,7 +89,7 @@ body:has(#grid:target) a[href='#grid'],body:has(#archive:target) a[href='#archiv
 .show img.thumb{width:84px;height:106px;object-fit:cover;border:2px solid var(--ink);display:block;background:#000}
 .show img.thumb.ph{object-fit:contain;padding:6px;filter:grayscale(.2) opacity(.85)}
 .info{min-width:0}
-.date{color:var(--hot);font-weight:700;text-transform:uppercase;font-size:.85rem;letter-spacing:.06em}
+.date{color:var(--hotink);font-weight:700;text-transform:uppercase;font-size:.85rem;letter-spacing:.06em}
 .show h2{margin:.2rem 0;font-family:"Anton","Special Elite",sans-serif;font-weight:400;font-size:1.05rem;
   line-height:1.04;text-transform:uppercase;letter-spacing:.01em}
 .meta{color:var(--dim);font-size:.92rem}
@@ -107,6 +107,7 @@ body:has(#grid:target) a[href='#grid'],body:has(#archive:target) a[href='#archiv
 .s-free{color:var(--free);bottom:6px;left:-7px;transform:rotate(-8deg)}
 .s-sliding{color:var(--sliding);bottom:6px;left:-7px;transform:rotate(-8deg)}
 .s-age{color:var(--age);top:6px;right:-7px;transform:rotate(7deg)}
+.s-benefit{color:var(--benefit);top:6px;left:-7px;transform:rotate(-7deg)}
 .s-soldout{color:var(--soldout);top:50%;left:50%;transform:translate(-50%,-50%) rotate(-12deg);font-size:1.05rem;border-width:3px}
 .mon{margin:2rem 0 .6rem;font-size:1.25rem;color:var(--hot);font-family:"Rock Salt",cursive;transform:rotate(-1deg)}
 #agenda{display:none}
@@ -149,6 +150,9 @@ footer b{color:var(--hot)}
   text-transform:uppercase;font-size:1.7rem;line-height:1.05}
 .drow{color:var(--ink);font-size:.95rem;margin:.25rem 0}
 .dcap{color:var(--dim);font-size:.9rem;margin:.7rem 0;line-height:1.5}
+.dbenefit{color:var(--benefit);font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.submitlist{margin:.3rem 0 1.2rem;padding-left:1.2rem;line-height:1.7}
+.submitlist li{margin:.15rem 0}
 .dactions{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.9rem}
 .dbtn{display:inline-flex;align-items:center;gap:.4rem;background:var(--tape);color:#111;border:2px solid #111;
   box-shadow:3px 3px 0 var(--hot);padding:.45rem .85rem;cursor:pointer;font:inherit;text-transform:uppercase;
@@ -239,6 +243,22 @@ main section:target{animation:viewin .26s ease both}
   *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition:none!important}
 }
 
+/* ---------- accessibility: visible keyboard focus + skip link ---------- */
+/* The styles above strip outlines on :hover/:focus for the pressed-tape look,
+   which leaves keyboard users with no focus indicator. :focus-visible only
+   matches keyboard focus, so this restores a high-contrast ring for keyboard
+   and screen-reader users while mouse/touch users see the unchanged zine look. */
+a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visible,
+.show:focus-visible,.cf:focus-visible,.athumb:focus-visible,.vchip:focus-visible,
+.tagchip:focus-visible,.searchtoggle:focus-visible,.search input:focus-visible{
+  outline:3px solid var(--tape);outline-offset:2px}
+/* skip link: off-screen until a keyboard user Tabs to it, then a tape chip
+   top-left that jumps straight to the show list. */
+.skip{position:absolute;left:-9999px;top:0;z-index:60;background:var(--tape);color:#111;
+  border:2px solid #111;box-shadow:3px 3px 0 var(--hot);padding:.5rem .9rem;text-decoration:none;
+  text-transform:uppercase;letter-spacing:.05em;font-size:.85rem}
+.skip:focus{left:8px;top:8px}
+
 /* ---------- standalone per-show pages (site/s/<id>.html) ---------- */
 /* Real shareable URLs so a link previews with that show's flyer. They reuse the
    zine tokens above and stay script-free (stricter CSP). */
@@ -258,6 +278,19 @@ main section:target{animation:viewin .26s ease both}
   transform:none;text-shadow:none}
 .spback{text-align:center;margin:1.7rem 0 .5rem}
 .spback a{text-decoration:none}
+/* ---------- showgoer guide (site/guide.html) — blog-post layout ---------- */
+.guide{max-width:680px}
+.guide h1{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  font-size:clamp(2rem,8vw,3rem);line-height:1.08;letter-spacing:.01em;margin:.4rem 0 .95rem;
+  text-shadow:3px 3px 0 var(--hot)}
+.glead{color:var(--dim);margin:0 0 2.4rem;line-height:1.7;font-size:.92rem}
+.post h2{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  font-size:clamp(1.45rem,5.5vw,2rem);line-height:1.05;letter-spacing:.01em;color:var(--hotink);
+  margin:2.2rem 0 .7rem;padding-top:1.5rem;border-top:2px dashed var(--line)}
+.post h2:first-child{border-top:none;padding-top:0;margin-top:.5rem}
+.post p{margin:0 0 1.05rem;line-height:1.75}
+.post em{font-style:italic;color:var(--ink)}
+.post strong{color:var(--ink)}
 @media (max-width:640px){.showpage header{text-align:center}.spflyer{width:100%}.spcard{padding:1rem}}
 </style></head><body class="showpage">
 <header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a></header>
