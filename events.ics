@@ -21,14 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-06-22-handlebar-psycho-frame@diypensacola
-DTSTART;TZID=America/Chicago:20260622T180000
-DTEND;TZID=America/Chicago:20260622T210000
-SUMMARY:Psycho-Frame\, Oinkliteration\, Caving In\, Hemlock @ The Handlebar
-DESCRIPTION:psycho-frame\, oinkliteration\, caving in\, and hemlock at the handlebar monday. doors 6.
-LOCATION:The Handlebar
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-06-24-handlebar-mc-chris@diypensacola
 DTSTART;TZID=America/Chicago:20260624T190000
 DTEND;TZID=America/Chicago:20260624T220000
@@ -91,6 +83,22 @@ DTEND;TZID=America/Chicago:20260627T210000
 SUMMARY:Ex-Teenage Rebels @ Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
 DESCRIPTION:punk rock prom at betty's\, saturday june 27. doors at 6\, $23. live music by ex-teenage rebels\, plus dj hale\, jukebox roulette\, a prom king & queen contest\, and a photo booth. fundraiser for 309 punk project. theme is neon decay.
 LOCATION:Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-27-handlebar-heated-rivalry@diypensacola
+DTSTART;TZID=America/Chicago:20260627T210000
+DTEND;TZID=America/Chicago:20260628T000000
+SUMMARY:Heated Rivalry Night Dance Party (Burwoodland) @ The Handlebar
+DESCRIPTION:heated rivalry night dance party at the handlebar this saturday. doors 9pm. choose your team\, lose yourself.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-28-handlebar-katie-dineen-nikki-forgione@diypensacola
+DTSTART;TZID=America/Chicago:20260628T150000
+DTEND;TZID=America/Chicago:20260628T180000
+SUMMARY:Katie Dineen\, Nikki Forgione\, Eric Melvin\, Grace Michelle @ The Handlebar
+DESCRIPTION:pensacola songwriter rounds series with katie dineen\, nikki forgione\, eric melvin\, and grace michelle. the handlebar\, sunday june 28. 3pm matinee\, $10.
+LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-06-30-handlebar-iron-roses@diypensacola
