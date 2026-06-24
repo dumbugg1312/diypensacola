@@ -45,6 +45,22 @@ DESCRIPTION:pentagram\, cursed body\, and slugger at the handlebar thursday. doo
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-06-25-liberation-center-pride-art-build@diypensacola
+DTSTART;TZID=America/Chicago:20260625T190000
+DTEND;TZID=America/Chicago:20260625T220000
+SUMMARY:Pensacola Pride Art Build @ Pensacola Liberation Center
+DESCRIPTION:pensacola pride art build at the pensacola liberation center\, thursday june 25\, 7pm. come make art for the community. 2737 north e street. hosted by @psl_cgc
+LOCATION:Pensacola Liberation Center
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-25-bettys-gay-night-market@diypensacola
+DTSTART;TZID=America/Chicago:20260625T190000
+DTEND;TZID=America/Chicago:20260625T220000
+SUMMARY:...But Make It Gay Night Market Pop Up @ Betty's
+DESCRIPTION:...but make it gay night market at betty's\, thursday june 25. handmade and non-food vendors\, no reservations\, find ur spot. 506 w belmont.
+LOCATION:Betty's
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-06-26-undergrowth-other@diypensacola
 DTSTART;TZID=America/Chicago:20260626T183000
 DTEND;TZID=America/Chicago:20260626T213000
@@ -155,6 +171,14 @@ DTEND;TZID=America/Chicago:20260704T210000
 SUMMARY:Maggot Sandwich\, The Pallbearers @ 309
 DESCRIPTION:maggot sandwich and the pallbearers at 309. sat jul 4\, doors 6pm. new orleans punk rock legends. 309 n 6th ave.
 LOCATION:309
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-04-dorothys-lgbbq@diypensacola
+DTSTART;TZID=America/Chicago:20260704T150000
+DTEND;TZID=America/Chicago:20260704T180000
+SUMMARY:LGBBQ @ Dorothy's
+DESCRIPTION:lgbbq at dorothy's\, july 4th from 3 to 8pm. drink specials\, $5 hot dogs\, games\, and a view of the fireworks at 8:30. liberty and justice for all.
+LOCATION:Dorothy's
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-07-05-handlebar-the-soap-girls@diypensacola
