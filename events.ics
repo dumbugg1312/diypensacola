@@ -93,11 +93,27 @@ DESCRIPTION:heated rivalry night dance party at the handlebar this saturday. doo
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-06-27-handlebar-house-of-androgyny@diypensacola
+DTSTART;TZID=America/Chicago:20260627T190000
+DTEND;TZID=America/Chicago:20260627T220000
+SUMMARY:House of Androgyny: Prismatic\, Host Jay Jay DuVay\, Host Andy Rodignous\, Keke Zorra\, Cryboy Cassanova\, Mon Cheri Legend\, Becky Belle Bottoms\, Hēmale\, Whatier Kandee\, Gloss\, Thotherry Kingcake\, Strawberrie Zorra\, Frankie Fontaine @ The Handlebar
+DESCRIPTION:house of androgyny: prismatic! a pride drag show at the handlebar this saturday\, june 27. doors at 7pm. hosted by jay jay duvay and andy rodignous with a full cast. tickets at thehandlebar850.com
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-06-28-handlebar-katie-dineen-nikki-forgione@diypensacola
 DTSTART;TZID=America/Chicago:20260628T150000
 DTEND;TZID=America/Chicago:20260628T180000
 SUMMARY:Katie Dineen\, Nikki Forgione\, Eric Melvin\, Grace Michelle @ The Handlebar
 DESCRIPTION:pensacola songwriter rounds series with katie dineen\, nikki forgione\, eric melvin\, and grace michelle. the handlebar\, sunday june 28. 3pm matinee\, $10.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-28-handlebar-children-of-judas@diypensacola
+DTSTART;TZID=America/Chicago:20260628T190000
+DTEND;TZID=America/Chicago:20260628T220000
+SUMMARY:Children of Judas\, Come to Ruin\, User Assumes Risk @ The Handlebar
+DESCRIPTION:children of judas\, come to ruin\, and user assumes risk at the handlebar this sunday\, june 28. doors at 7pm. tickets at thehandlebar850.com
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
