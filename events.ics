@@ -21,22 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-06-24-handlebar-mc-chris@diypensacola
-DTSTART;TZID=America/Chicago:20260624T190000
-DTEND;TZID=America/Chicago:20260624T220000
-SUMMARY:MC Chris\, Swell Rell @ The Handlebar
-DESCRIPTION:mc chris with swell rell at the handlebar wednesday. doors at 7.
-LOCATION:The Handlebar
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-06-24-bettys-oolong-second-place@diypensacola
-DTSTART;TZID=America/Chicago:20260624T190000
-DTEND;TZID=America/Chicago:20260624T220000
-SUMMARY:Oolong\, Second Place\, Other\, ihatesundays @ Betty's
-DESCRIPTION:oolong (long island) and second place (houston) at betty's with other and ihatesundays. wednesday june 24\, doors 7\, show 8.
-LOCATION:Betty's
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-06-25-handlebar-pentagram@diypensacola
 DTSTART;TZID=America/Chicago:20260625T180000
 DTEND;TZID=America/Chicago:20260625T210000
