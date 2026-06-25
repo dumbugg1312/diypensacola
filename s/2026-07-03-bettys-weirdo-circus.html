@@ -52,6 +52,9 @@ main{max-width:880px;margin:0 auto 2rem;padding:0 1rem}
 main section{display:none}
 main section:target{display:block}
 main:not(:has(section:target)) #list{display:block}
+/* sections are programmatic focus targets (focus moves here on view switch); they
+   aren't Tab-reachable controls, so they carry no visible focus ring. */
+main section[tabindex]:focus{outline:none}
 body:has(#list:target) a[href='#list'],body:not(:has(section:target)) a[href='#list'],
 body:has(#grid:target) a[href='#grid'],body:has(#archive:target) a[href='#archive']{border:2px solid var(--hot);background:var(--hot);color:var(--on-hot)}
 .controls{max-width:680px;margin:0 auto .3rem}
@@ -144,7 +147,7 @@ footer b{color:var(--hot)}
 .flinks{margin:.7rem 0 0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;justify-content:center}
 .flinks a{color:var(--dim)}
 .lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;
-  z-index:50;padding:1.5rem;cursor:zoom-out}
+  z-index:60;padding:1.5rem;cursor:zoom-out}
 .lb.open{display:flex}
 .lb img#lbimg{max-width:100%;max-height:90vh;border:3px solid var(--ink);box-shadow:0 0 0 6px var(--hot)}
 .lb .x{position:absolute;top:1rem;right:1.2rem;color:var(--ink);font-size:2rem;text-decoration:none;line-height:1;z-index:2}
@@ -182,7 +185,7 @@ main section:target{animation:viewin .26s ease both}
 @keyframes sheetup{from{transform:translateY(100%)}to{transform:translateY(0)}}
 
 /* back-to-top — a tilted tape button that fades in once you've scrolled down.
-   z-index sits below the lightbox/detail (50/55) so it hides behind an open modal. */
+   z-index sits below the modals (detail 55 / lightbox 60) so it hides behind an open modal. */
 .totop{position:fixed;right:1.2rem;bottom:1.2rem;z-index:45;width:3rem;height:3rem;
   display:flex;align-items:center;justify-content:center;cursor:pointer;
   background:var(--tape);color:#111;border:2px solid #111;box-shadow:3px 3px 0 var(--hot);
