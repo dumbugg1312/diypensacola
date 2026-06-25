@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'sha256-RJtZX+ozuG9XWCvHFpzvGmWrVKu2ADm41O3mnwsbAL0='">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'sha256-uzemQoQMni3H7X/BM5VWj/+9mrIs9HRk3+JgsYdm99g='">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>DIYPENSACOLA — shows and events in punksacola</title>
 <meta name="description" content="Upcoming DIY and punk shows in Pensacola, FL — 34 on the calendar right now, with flyers, dates, venues, and a forever archive of past shows. Support your local scene.">
@@ -703,8 +703,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   // After a high-intent action (copying a show's share link, or adding the
   // calendar to your own), slide up a small dismissible "keep this alive" card
   // pointing at the existing Venmo. First-party only, so the CSP is untouched.
-  // Frequency-capped in localStorage: at most weekly (easing to monthly after a
-  // few dismissals), and a long rest once someone actually chips in. A share
+  // Shown at most once per visit; rests 30 days after someone chips in and stops
+  // after a few dismissals (reload re-arms it, so it stays easy to test). A share
   // happens inside the open detail modal, so the nudge is queued and shown when
   // that dialog closes (it would otherwise render behind it).
   var tip=document.getElementById('tip');
@@ -714,17 +714,16 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   function tipSet(o){var s=tipStore();if(!s)return;try{s.setItem('dpc_tip',JSON.stringify(o));}catch(e){}}
   function tipModalOpen(){return lb.classList.contains('open')||dt.classList.contains('open');}
   function tipCanShow(){
-    if(tipSessionDone||!tip)return false;
+    if(tipSessionDone||!tip)return false;                     // once per page load
     var st=tipGet(),now=Date.now();
-    if(st.tipped&&now-st.tipped<60*DAY)return false;          // recently chipped in: long rest
-    var cap=(st.dismissed>=3?30:7)*DAY;                        // weekly, easing to monthly
-    if(st.shown&&now-st.shown<cap)return false;
+    if(st.tipped&&now-st.tipped<30*DAY)return false;          // recently chipped in: rest
+    if((st.dismissed||0)>=3)return false;                     // dismissed enough times: stop
     return true;
   }
   function showTip(){
     if(!tip)return;
     tip.hidden=false; void tip.offsetWidth; tip.classList.add('on');   // reflow so it transitions in
-    var st=tipGet(); st.shown=Date.now(); tipSet(st); tipSessionDone=true;
+    tipSessionDone=true;
   }
   function hideTip(){if(!tip)return;tip.classList.remove('on');setTimeout(function(){if(!tip.classList.contains('on'))tip.hidden=true;},260);}
   function flushTip(){
@@ -742,21 +741,18 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
     document.addEventListener('keydown',function(e){if(e.key==='Escape'&&tip.classList.contains('on')&&!tipModalOpen())dismissTip();});
   }
 
-  // end-of-page support callout: fade it in once it scrolls into view, unless the
-  // visitor recently chipped in (reuses the nudge's localStorage 'tipped' record).
+  // end-of-page support callout: a permanent fixture that fades in once it scrolls
+  // into view. Clicking "chip in" records a tip so the corner nudge rests, but the
+  // callout itself always shows (it's passive, only at the very bottom).
   var endtip=document.getElementById('endtip');
   if(endtip){
-    var est=tipGet();
-    if(est.tipped&&Date.now()-est.tipped<60*DAY){endtip.style.display='none';}
-    else{
-      var revealEnd=function(){endtip.classList.add('in');};
-      if('IntersectionObserver' in window){
-        var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){revealEnd();io.disconnect();}});},{threshold:.25});
-        io.observe(endtip);
-      }else{revealEnd();}
-      var eg=document.getElementById('endtipgo');
-      if(eg)eg.addEventListener('click',function(){var s=tipGet();s.tipped=Date.now();tipSet(s);});
-    }
+    var revealEnd=function(){endtip.classList.add('in');};
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){revealEnd();io.disconnect();}});},{threshold:.25});
+      io.observe(endtip);
+    }else{revealEnd();}
+    var eg=document.getElementById('endtipgo');
+    if(eg)eg.addEventListener('click',function(){var s=tipGet();s.tipped=Date.now();tipSet(s);});
   }
 })();
 </script>
