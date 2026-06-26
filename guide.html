@@ -215,6 +215,24 @@ main section:target{animation:viewin .26s ease both}
 .tipx:hover{color:var(--hot)}
 @media (max-width:640px){.tip{left:.7rem;right:.7rem;max-width:none;bottom:calc(.8rem + env(safe-area-inset-bottom))}}
 
+/* "add to home screen" banner: dismissible install nudge for mobile. Android/
+   Chrome gets a real install button (beforeinstallprompt); iOS Safari gets
+   Share-sheet instructions, since it has no install API. Slides down from the
+   top so it never collides with the bottom-corner support tip / back-to-top. */
+.a2hs{position:fixed;left:0;right:0;top:0;z-index:47;background:var(--card);
+  border-bottom:2px solid var(--hot);box-shadow:0 4px 0 var(--hot);
+  padding:calc(.7rem + env(safe-area-inset-top)) .9rem .7rem;display:flex;align-items:center;gap:.7rem;
+  transform:translateY(-110%);transition:transform .28s cubic-bezier(.2,.85,.25,1)}
+.a2hs.on{transform:translateY(0)}
+.a2hs[hidden]{display:none}
+.a2hsicon{width:34px;height:34px;flex:0 0 auto;border:1px solid var(--hot)}
+.a2hstext{margin:0;font-size:.82rem;line-height:1.4;flex:1 1 auto;color:var(--ink)}
+.a2hstext b{color:var(--hotink)}
+.a2hsgo{flex:0 0 auto;white-space:nowrap}
+.a2hsx{flex:0 0 auto;background:none;border:none;color:var(--dim);font:1.4rem/1 inherit;cursor:pointer;padding:.1rem .4rem}
+.a2hsx:hover{color:var(--hot)}
+@media (min-width:641px){.a2hs{left:auto;right:1rem;top:1rem;max-width:380px;border:2px solid var(--hot);box-shadow:6px 6px 0 var(--hot);transform:translateY(-160%)}}
+
 /* end-of-page support callout: an in-flow banner just above the footer that
    fades in once it scrolls into view (reduced-motion users get it instantly). */
 .endtip{max-width:680px;margin:2.6rem auto .4rem;background:var(--card);border:2px dashed var(--hot);
