@@ -24,12 +24,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Special+Elite&family=Rock+Salt&display=swap" rel="stylesheet">
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Event", "name": "Eyehategod, Whores, Nomas", "startDate": "2026-09-27T19:00:00-05:00", "endDate": "2026-09-27T22:00:00-05:00", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "The Handlebar", "address": {"@type": "PostalAddress", "addressLocality": "Pensacola", "addressRegion": "FL", "addressCountry": "US"}}, "image": "https://diypensacola.com/flyers/flyer_2026-09-27_handlebar_eyehategod.jpg", "url": "https://diypensacola.com/s/2026-09-27-handlebar-eyehategod.html", "organizer": {"@type": "Organization", "name": "DIYPensacola", "url": "https://diypensacola.com/"}, "performer": [{"@type": "MusicGroup", "name": "Eyehategod"}, {"@type": "MusicGroup", "name": "Whores"}, {"@type": "MusicGroup", "name": "Nomas"}]}]</script>
 <style>
-:root{--bg:#0c0c0d;--card:#17171a;--ink:#f2f2ee;--dim:#9b9b94;--hot:#6b7036;--hotink:#8f9850;--on-hot:#f2f2ee;--line:#2c2c31;--tape:#d8d4c5;--free:#aebf5a;--soldout:#e06464;--sliding:#7fb0a8;--age:#d59b46;--benefit:#d98cb0}
+:root{--bg:#0c0c0d;--card:#17171a;--ink:#f2f2ee;--dim:#9b9b94;--hot:#6b7036;--hotink:#8f9850;--on-hot:#f2f2ee;--line:#2c2c31;--tape:#d8d4c5;--free:#aebf5a;--soldout:#e06464;--sliding:#7fb0a8;--age:#d59b46;--benefit:#d98cb0;--shadow:rgba(107,112,54,.5);--scrim:rgba(12,12,13,.82)}
 *{box-sizing:border-box}
 body{margin:0;background-color:var(--bg);color:var(--ink);font:16px/1.5 "Special Elite","Courier New",monospace;
   background-image:radial-gradient(1000px 520px at 50% -140px,rgba(107,112,54,.32),rgba(107,112,54,0) 72%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.11'/%3E%3C/svg%3E");
   background-repeat:no-repeat,repeat}
 a{color:var(--hotink)}
+/* typography polish: balanced heading line-breaks + orphan-free prose. Progressive
+   enhancement — silently ignored where unsupported. */
+h1,h2,h3,.ehead{text-wrap:balance}
+.glead,.post p,.dcap,.emptybig p{text-wrap:pretty}
 header{padding:2.2rem 1rem .3rem;text-align:center}
 header .logo{width:170px;height:170px;display:block;margin:0 auto .6rem;filter:drop-shadow(0 0 14px rgba(255,255,255,.18));transition:transform .2s}
 header .logo.tl{transform:rotate(-6deg) scale(1.04)}
@@ -87,7 +91,7 @@ body:has(#grid:target) a[href='#grid'],body:has(#archive:target) a[href='#archiv
 #b-tonight .bhead{color:var(--hot);font-size:1.95rem}
 .cards{display:grid;gap:1.1rem}
 .show{display:flex;gap:1rem;background:var(--card);border:1px solid var(--line);padding:1rem;align-items:center;
-  box-shadow:5px 5px 0 rgba(107,112,54,.5);cursor:pointer;transition:box-shadow .12s ease,transform .12s ease}
+  box-shadow:5px 5px 0 var(--shadow);cursor:pointer;transition:box-shadow .12s ease,transform .12s ease}
 .show.past{display:none}
 .show:hover,.show:focus{outline:none;box-shadow:5px 5px 0 var(--hot)}
 .thumbwrap{position:relative;flex:none}
@@ -95,20 +99,21 @@ body:has(#grid:target) a[href='#grid'],body:has(#archive:target) a[href='#archiv
 .show img.thumb.ph{object-fit:contain;padding:6px;filter:grayscale(.2) opacity(.85)}
 .info{min-width:0}
 .date{color:var(--hotink);font-weight:700;text-transform:uppercase;font-size:.85rem;letter-spacing:.06em}
-.show h2{margin:.2rem 0;font-family:"Anton","Special Elite",sans-serif;font-weight:400;font-size:1.05rem;
+.show h3{margin:.2rem 0;font-family:"Anton","Special Elite",sans-serif;font-weight:400;font-size:1.05rem;
   line-height:1.04;text-transform:uppercase;letter-spacing:.01em}
+.show h3 .more{color:var(--dim)}
 .meta{color:var(--dim);font-size:.92rem}
 #b-week .show img.thumb{width:108px;height:135px}
-#b-week .show h2{font-size:1.5rem}
+#b-week .show h3{font-size:1.5rem}
 #b-tonight .show img.thumb{width:130px;height:163px;transform:rotate(-1.4deg)}
-#b-tonight .show h2{font-size:2rem}
+#b-tonight .show h3{font-size:2rem}
 #b-tonight .show{box-shadow:6px 6px 0 var(--hot)}
 /* tonight cards already wear the hot shadow at rest, so they need their own
    hover/focus state (higher specificity than the base rule) to still signal
    they're clickable — otherwise hovering them does nothing. */
 #b-tonight .show:hover,#b-tonight .show:focus{box-shadow:10px 10px 0 var(--hot);transform:translate(-3px,-3px)}
 .stamp{position:absolute;font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;font-size:.68rem;
-  letter-spacing:.05em;padding:.1rem .38rem;border:2px solid currentColor;background:rgba(12,12,13,.82);line-height:1;pointer-events:none;text-shadow:0 1px 2px #000}
+  letter-spacing:.05em;padding:.1rem .38rem;border:2px solid currentColor;background:var(--scrim);line-height:1;pointer-events:none;text-shadow:0 1px 2px #000}
 .s-free{color:var(--free);bottom:6px;left:-7px;transform:rotate(-8deg)}
 .s-sliding{color:var(--sliding);bottom:6px;left:-7px;transform:rotate(-8deg)}
 .s-age{color:var(--age);top:6px;right:-7px;transform:rotate(7deg)}
@@ -142,10 +147,18 @@ body:has(#grid:target) a[href='#grid'],body:has(#archive:target) a[href='#archiv
 .arch .date{display:inline-block;width:4.2rem}
 .al strong{font-weight:400}
 .empty{color:var(--dim);text-align:center}
+.emptyline{margin:0 0 .9rem}
+/* first-use / no-shows state: a dashed-card onboarding moment in the zine
+   vocabulary — Anton head, typewriter body, tape-button CTAs. Not a SaaS blank. */
+.emptybig{max-width:520px;margin:2.4rem auto;padding:1.7rem 1.4rem;border:2px dashed var(--line);background:var(--card)}
+.emptybig .ehead{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  font-size:1.45rem;letter-spacing:.02em;color:var(--ink);margin:0 0 .7rem}
+.emptybig p{margin:0 0 1.15rem;line-height:1.6;color:var(--dim)}
+.eactions{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center}
 footer{text-align:center;color:var(--dim);padding:2.5rem 1rem;font-size:.85rem}
 footer b{color:var(--hot)}
 .flinks{margin:.7rem 0 0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;justify-content:center}
-.flinks a{color:var(--dim)}
+.flinks a{color:var(--hotink);text-decoration:underline}
 .lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;
   z-index:60;padding:1.5rem;cursor:zoom-out}
 .lb.open{display:flex}
@@ -258,18 +271,21 @@ main section:target{animation:viewin .26s ease both}
   .links a{font-size:.8rem;padding:.55rem .9rem}
 
   /* sticky segmented view-switcher — always one tap away */
-  nav{position:sticky;top:0;z-index:40;gap:.5rem;margin-bottom:.2rem;
+  /* sticks below the install banner when it's up: --a2hs-h (set by JS to the
+     banner's height, else 0) keeps the view-switcher from hiding behind it. */
+  nav{position:sticky;top:var(--a2hs-h,0px);z-index:40;gap:.5rem;margin-bottom:.2rem;
+    transition:top .28s cubic-bezier(.2,.85,.25,1);
     padding:.55rem .8rem;padding-top:calc(.55rem + env(safe-area-inset-top));
-    background:rgba(12,12,13,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    background:var(--scrim);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
     border-bottom:1px solid var(--line)}
   nav a{flex:1;text-align:center;padding:.58rem .3rem;font-size:.82rem}
-  main section{scroll-margin-top:4.4rem}
+  main section{scroll-margin-top:calc(4.4rem + var(--a2hs-h,0px))}
   main{padding:0 .85rem}
 
   /* controls + chips: comfy 44px-ish tap targets */
   .controls{padding:0}
   .searchtoggle{width:2.7rem;height:2.7rem;font-size:1.35rem}
-  .vchip{padding:.6rem .8rem;font-size:.8rem}
+  .vchip,.tagchip{padding:.6rem .8rem;font-size:.8rem;min-height:44px;display:inline-flex;align-items:center;justify-content:center}
   .search input{height:2.7rem}
 
   .show{padding:.85rem;gap:.85rem}
