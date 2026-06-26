@@ -21,30 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-06-25-handlebar-pentagram@diypensacola
-DTSTART;TZID=America/Chicago:20260625T180000
-DTEND;TZID=America/Chicago:20260625T210000
-SUMMARY:Pentagram\, Cursed Body\, Slugger @ The Handlebar
-DESCRIPTION:pentagram\, cursed body\, and slugger at the handlebar thursday. doors 6.
-LOCATION:The Handlebar
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-06-25-liberation-center-pride-art-build@diypensacola
-DTSTART;TZID=America/Chicago:20260625T190000
-DTEND;TZID=America/Chicago:20260625T220000
-SUMMARY:Pensacola Pride Art Build @ Pensacola Liberation Center
-DESCRIPTION:pensacola pride art build at the pensacola liberation center\, thursday june 25\, 7pm. come make art for the community. 2737 north e street. hosted by @psl_cgc
-LOCATION:Pensacola Liberation Center
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-06-25-bettys-gay-night-market@diypensacola
-DTSTART;TZID=America/Chicago:20260625T190000
-DTEND;TZID=America/Chicago:20260625T220000
-SUMMARY:...But Make It Gay Night Market Pop Up @ Betty's
-DESCRIPTION:...but make it gay night market at betty's\, thursday june 25. handmade and non-food vendors\, no reservations\, find ur spot. 506 w belmont.
-LOCATION:Betty's
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-06-26-undergrowth-other@diypensacola
 DTSTART;TZID=America/Chicago:20260626T183000
 DTEND;TZID=America/Chicago:20260626T213000
@@ -141,6 +117,14 @@ DESCRIPTION:weirdo mutual aid circus: the earthly delights show at betty's july 
 LOCATION:Betty's
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-07-03-handlebar-lost-wandering@diypensacola
+DTSTART;TZID=America/Chicago:20260703T200000
+DTEND;TZID=America/Chicago:20260703T230000
+SUMMARY:Skiz\, Yante\, MyBrotha Van\, Miatropolis\, Jeremy McLennon @ The Handlebar
+DESCRIPTION:lost wandering at the handlebar with skiz\, yante\, mybrotha van\, miatropolis\, and jeremy mclennon on live drums. july 3rd\, music at 8pm. 319 n tarragona.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-07-04-the-den-lesion@diypensacola
 DTSTART;TZID=America/Chicago:20260704T180000
 DTEND;TZID=America/Chicago:20260704T210000
@@ -181,6 +165,14 @@ DESCRIPTION:shidded\, machina\, and ihatesundays at betty's on belmont thursday 
 LOCATION:Betty's
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-07-10-309-just-opposed-release@diypensacola
+DTSTART;TZID=America/Chicago:20260710T180000
+DTEND;TZID=America/Chicago:20260710T210000
+SUMMARY:Vixen Valentine @ 309 Punk Project
+DESCRIPTION:just-opposed zine release party at 309 punk project. friday july 10th\, 6-9pm. vixen valentine at 6:30\, plus perfect day books\, phantasma\, pensacola pflag\, emerald waves squares\, upward intuition\, and pensacola poetry.
+LOCATION:309 Punk Project
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-07-12-309-woody-guthrie-gathering@diypensacola
 DTSTART;TZID=America/Chicago:20260712T173000
 DTEND;TZID=America/Chicago:20260712T203000
@@ -194,6 +186,14 @@ DTSTART;TZID=America/Chicago:20260716T190000
 DTEND;TZID=America/Chicago:20260716T220000
 SUMMARY:Wynter\, Tremors\, Power Bomb @ Betty's
 DESCRIPTION:wynter\, tremors\, and power bomb at betty's thursday july 16. 506 w belmont st. doors 7.
+LOCATION:Betty's
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-16-bettys-wyrm@diypensacola
+DTSTART;TZID=America/Chicago:20260716T190000
+DTEND;TZID=America/Chicago:20260716T220000
+SUMMARY:Wyrm\, Tremors\, Power Bomb @ Betty's
+DESCRIPTION:wyrm\, tremors\, and power bomb at betty's thursday july 16. 506 w belmont st. doors 7.
 LOCATION:Betty's
 END:VEVENT
 BEGIN:VEVENT
