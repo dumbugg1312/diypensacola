@@ -21,62 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-06-26-undergrowth-other@diypensacola
-DTSTART;TZID=America/Chicago:20260626T183000
-DTEND;TZID=America/Chicago:20260626T213000
-SUMMARY:Other @ Undergrowth
-DESCRIPTION:rock the vote: other\, tirra lirra\, and mother's milk at our house (412 e hernandez st). friday june 26\, doors 6:30 / show 7pm. free show.
-LOCATION:Undergrowth
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-06-26-handlebar-blight@diypensacola
-DTSTART;TZID=America/Chicago:20260626T190000
-DTEND;TZID=America/Chicago:20260626T220000
-SUMMARY:Blight\, Aumua\, Innerwounds\, Grave Chorus @ The Handlebar
-DESCRIPTION:blight\, aumua\, innerwounds\, and grave chorus at the handlebar. june 26\, doors 7\, show 8\, $10.
-LOCATION:The Handlebar
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-06-26-309-talamieka-brice@diypensacola
-DTSTART;TZID=America/Chicago:20260626T180000
-DTEND;TZID=America/Chicago:20260626T210000
-SUMMARY:Talamieka Brice Bootjack and Red Film Screening + Discussion @ 309
-DESCRIPTION:talamieka brice presents "bootjack and red" — a film screening + discussion at 309 punk project. friday june 26th\, 6pm. 309 n 6th ave. all welcome.
-LOCATION:309
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-06-26-bettys-slayyyd@diypensacola
-DTSTART;TZID=America/Chicago:20260626T210000
-DTEND;TZID=America/Chicago:20260627T000000
-SUMMARY:Wanda Doomy\, Vixen Valentine\, Mon Cherri Pop\, Gemini\, h8male\, Day Day DuVay @ Betty's
-DESCRIPTION:h8male presents slayyy'd\, a slayyyter themed drag show at betty's friday june 26th. wanda doomy\, vixen valentine\, mon cherri pop\, gemini\, h8male\, day day duvay. doors 9pm\, $10\, 18+.
-LOCATION:Betty's
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-06-27-bettys-punk-rock-prom@diypensacola
-DTSTART;TZID=America/Chicago:20260627T180000
-DTEND;TZID=America/Chicago:20260627T210000
-SUMMARY:Ex-Teenage Rebels @ Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
-DESCRIPTION:punk rock prom at betty's\, saturday june 27. doors at 6\, $23. live music by ex-teenage rebels\, plus dj hale\, jukebox roulette\, a prom king & queen contest\, and a photo booth. fundraiser for 309 punk project. theme is neon decay.
-LOCATION:Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-06-27-handlebar-heated-rivalry@diypensacola
-DTSTART;TZID=America/Chicago:20260627T210000
-DTEND;TZID=America/Chicago:20260628T000000
-SUMMARY:Heated Rivalry Night Dance Party (Burwoodland) @ The Handlebar
-DESCRIPTION:heated rivalry night dance party at the handlebar this saturday. doors 9pm. choose your team\, lose yourself.
-LOCATION:The Handlebar
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-06-27-handlebar-house-of-androgyny@diypensacola
-DTSTART;TZID=America/Chicago:20260627T190000
-DTEND;TZID=America/Chicago:20260627T220000
-SUMMARY:House of Androgyny: Prismatic\, Host Jay Jay DuVay\, Host Andy Rodignous\, Keke Zorra\, Cryboy Cassanova\, Mon Cheri Legend\, Becky Belle Bottoms\, Hēmale\, Whatier Kandee\, Gloss\, Thotherry Kingcake\, Strawberrie Zorra\, Frankie Fontaine @ The Handlebar
-DESCRIPTION:house of androgyny: prismatic! a pride drag show at the handlebar this saturday\, june 27. doors at 7pm. hosted by jay jay duvay and andy rodignous with a full cast. tickets at thehandlebar850.com
-LOCATION:The Handlebar
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-06-28-handlebar-katie-dineen-nikki-forgione@diypensacola
 DTSTART;TZID=America/Chicago:20260628T150000
 DTEND;TZID=America/Chicago:20260628T180000
@@ -181,6 +125,14 @@ DESCRIPTION:woody guthrie birthday gathering with shuttle punx at 309. sun jul 1
 LOCATION:309
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-07-12-bettys-bad-bitch-brunches@diypensacola
+DTSTART;TZID=America/Chicago:20260712T130000
+DTEND;TZID=America/Chicago:20260712T160000
+SUMMARY:Pretty Baked / Bad B!tch Brunch @ Betty's
+DESCRIPTION:pretty baked presents bad b!tch brunch at betty's. sunday july 12\, 1-4pm. all vegan menu — tiramisu french toast\, drunk monty cristo\, krabby patties\, cheeze grits and more.
+LOCATION:Betty's
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-07-16-bettys-wynter@diypensacola
 DTSTART;TZID=America/Chicago:20260716T190000
 DTEND;TZID=America/Chicago:20260716T220000
@@ -235,6 +187,14 @@ DTEND;TZID=America/Chicago:20260815T210000
 SUMMARY:Heroes For Ghosts\, Spiritless\, Afterdusk\, Caving In @ The Handlebar
 DESCRIPTION:heroes for ghosts and spiritless at the handlebar saturday august 15\, with local support from afterdusk and caving in. doors 6\, show 7. $15 at the door.
 LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-27-bettys-ramblin-ricky-tate@diypensacola
+DTSTART;TZID=America/Chicago:20260827T190000
+DTEND;TZID=America/Chicago:20260827T220000
+SUMMARY:Bryan Raymond\, Ramblin Ricky Tate\, STUFY\, Good Night Geezer @ Betty's
+DESCRIPTION:bryan raymond and ramblin ricky tate bring the hot sauce hell raisers tour to betty's. thursday august 27\, 506 w belmont. with stufy and good night geezer.
+LOCATION:Betty's
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-14-handlebar-archers@diypensacola
