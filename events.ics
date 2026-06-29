@@ -21,6 +21,14 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:2026-06-29-handlebar-exit-life-strikeforce@diypensacola
+DTSTART;TZID=America/Chicago:20260629T183000
+DTEND;TZID=America/Chicago:20260629T213000
+SUMMARY:Exit Life\, Strikeforce\, Command Voice\, Hemlock\, Carry the Torch @ The Handlebar
+DESCRIPTION:exit life (brutal hc from miami)\, strikeforce\, command voice\, hemlock\, carry the torch at the handlebar tonight. june 29\, 6:30. 5 bands for 5 bucks.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-06-30-handlebar-iron-roses@diypensacola
 DTSTART;TZID=America/Chicago:20260630T190000
 DTEND;TZID=America/Chicago:20260630T220000
@@ -157,12 +165,28 @@ DESCRIPTION:no complications\, king in yellow\, tirra lirra at the handlebar. we
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-07-24-our-house-our-house-in-progress@diypensacola
+DTSTART;TZID=America/Chicago:20260724T160000
+DTEND;TZID=America/Chicago:20260724T190000
+SUMMARY:Our House (in progress) - DIY art exhibition @ Our House (912 E Hernandez St)
+DESCRIPTION:the undergrowth presents our house (in progress) — a diy art exhibition at our house\, 912 e hernandez st. july 24th\, 4-9pm. $10 entry\, proceeds split with local orgs.
+LOCATION:Our House (912 E Hernandez St)
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-07-28-handlebar-internal-suffering@diypensacola
 DTSTART;TZID=America/Chicago:20260728T190000
 DTEND;TZID=America/Chicago:20260728T220000
 SUMMARY:Internal Suffering\, Gut Fucked\, Rotted Remains @ The Handlebar
 DESCRIPTION:internal suffering\, gut fucked\, rotted remains at the handlebar tuesday july 28th. doors 7pm\, show 8pm. $15\, all ages. 30 years of chaos — dominion of the xul tour.
 LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-30-the-den-spidershed@diypensacola
+DTSTART;TZID=America/Chicago:20260730T180000
+DTEND;TZID=America/Chicago:20260730T210000
+SUMMARY:Spidershed\, Future Compost\, Caca del Diablo @ Beulah Den
+DESCRIPTION:spidershed\, future compost\, and caca del diablo at beulah den for freaky jone's big fat birthday. july 30th\, doors at 6. free show.
+LOCATION:Beulah Den
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-15-handlebar-heroes-for-ghosts@diypensacola
