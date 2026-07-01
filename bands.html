@@ -1,0 +1,552 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-GKV0z0zAaZmxTENSVVwpDsrkt65CID3HPYOZmeBwctU='">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>bands &amp; acts · DIYPensacola</title>
+<meta name="description" content="The DIYPensacola scene index: 99 local Pensacola DIY and punk bands plus drag performers, poets, recurring nights, and the touring acts that have played here.">
+<meta name="theme-color" content="#0c0c0d">
+<link rel="canonical" href="https://diypensacola.com/bands.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DIYPensacola">
+<meta property="og:title" content="bands &amp; acts · DIYPensacola">
+<meta property="og:description" content="The DIYPensacola scene index: 99 local Pensacola DIY and punk bands plus drag performers, poets, recurring nights, and the touring acts that have played here.">
+<meta property="og:url" content="https://diypensacola.com/bands.html">
+<meta property="og:image" content="https://diypensacola.com/logo.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Special+Elite&family=Rock+Salt&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0c0c0d;--card:#17171a;--ink:#f2f2ee;--dim:#9b9b94;--hot:#6b7036;--hotink:#8f9850;--on-hot:#f2f2ee;--line:#2c2c31;--tape:#d8d4c5;--free:#aebf5a;--soldout:#e06464;--sliding:#7fb0a8;--age:#d59b46;--benefit:#d98cb0;--shadow:rgba(107,112,54,.5);--scrim:rgba(12,12,13,.82)}
+*{box-sizing:border-box}
+body{margin:0;background-color:var(--bg);color:var(--ink);font:16px/1.5 "Special Elite","Courier New",monospace;
+  background-image:radial-gradient(1000px 520px at 50% -140px,rgba(107,112,54,.32),rgba(107,112,54,0) 72%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.11'/%3E%3C/svg%3E");
+  background-repeat:no-repeat,repeat}
+a{color:var(--hotink)}
+/* typography polish: balanced heading line-breaks + orphan-free prose. Progressive
+   enhancement — silently ignored where unsupported. */
+h1,h2,h3,.ehead{text-wrap:balance}
+.glead,.post p,.dcap,.emptybig p{text-wrap:pretty}
+header{padding:2.2rem 1rem .3rem;text-align:center}
+header .logo{width:170px;height:170px;display:block;margin:0 auto .6rem;filter:drop-shadow(0 0 14px rgba(255,255,255,.18));transition:transform .2s}
+header .logo.tl{transform:rotate(-6deg) scale(1.04)}
+header .logo.tr{transform:rotate(6deg) scale(1.04)}
+h1{margin:0;font-family:"Special Elite","Courier New",monospace;font-weight:400;font-size:clamp(2.4rem,11vw,4.4rem);letter-spacing:.02em;
+  text-transform:uppercase;transform:rotate(-2deg);text-shadow:4px 4px 0 var(--hot)}
+header .tag{color:var(--dim);margin:.7rem 0 0;font-size:.95rem}
+header h1 a{color:inherit;text-decoration:none}
+.homelink{display:block;text-decoration:none}
+.links{display:flex;flex-wrap:wrap;gap:1rem .6rem;justify-content:center;max-width:680px;margin:0 auto;padding:.8rem 1rem .2rem}
+.links a{font-size:.85rem;text-decoration:none;color:#111;background:var(--tape);padding:.4rem .9rem;
+  border:2px solid #111;box-shadow:3px 3px 0 var(--hot);text-transform:uppercase;letter-spacing:.05em}
+.links a:nth-child(odd){transform:rotate(-1.5deg)}.links a:nth-child(even){transform:rotate(1.2deg)}
+.links a:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
+nav{display:flex;gap:.6rem;justify-content:center;align-items:center;padding:1.2rem 1rem;position:relative}
+nav .searchtoggle svg{display:block}
+/* print-scope popover, anchored under the nav's printer icon */
+.pwrap{position:relative;display:flex;flex:none}
+.pmenu{position:absolute;top:calc(100% + 8px);right:0;z-index:48;background:var(--card);
+  border:2px solid var(--hot);box-shadow:6px 6px 0 var(--hot);padding:.7rem;
+  display:flex;flex-direction:column;gap:.5rem;min-width:11.5rem}
+.pmenu[hidden]{display:none}
+.pmenu .dbtn{justify-content:center;white-space:nowrap}
+nav a{background:transparent;color:var(--ink);border:2px dashed var(--dim);padding:.45rem 1.1rem;
+  text-decoration:none;text-transform:uppercase;letter-spacing:.08em;font-size:.9rem}
+nav a:hover{border-color:var(--hot);color:var(--hot)}
+main{max-width:880px;margin:0 auto 2rem;padding:0 1rem}
+main section{display:none}
+main section:target{display:block}
+main:not(:has(section:target)) #list{display:block}
+/* sections are programmatic focus targets (focus moves here on view switch); they
+   aren't Tab-reachable controls, so they carry no visible focus ring. */
+main section[tabindex]:focus{outline:none}
+body:has(#list:target) a[href='#list'],body:not(:has(section:target)) a[href='#list'],
+body:has(#grid:target) a[href='#grid'],body:has(#archive:target) a[href='#archive']{border:2px solid var(--hot);background:var(--hot);color:var(--on-hot)}
+.controls{max-width:680px;margin:0 auto .3rem}
+.searchtoggle{background:var(--card);border:2px dashed var(--dim);color:var(--ink);cursor:pointer;
+  width:2.5rem;height:2.5rem;font:1.25rem/1 inherit;flex:none;display:flex;align-items:center;justify-content:center}
+.searchtoggle:hover{border-color:var(--hot);color:var(--hot)}
+.searchtoggle.on{background:var(--hot);color:var(--on-hot);border-style:solid;border-color:var(--hot)}
+.filterpanel{margin-top:.5rem}
+.filterpanel[hidden]{display:none}
+.vchips{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.5rem}
+.vchip{background:var(--card);border:2px dashed var(--dim);color:var(--ink);cursor:pointer;font:.78rem/1 inherit;
+  text-transform:uppercase;letter-spacing:.04em;padding:.45rem .7rem}
+.vchip:hover{border-color:var(--hot);color:var(--hot)}
+.vchip.on{background:var(--hot);color:var(--on-hot);border-style:solid;border-color:var(--hot)}
+.tagchips{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 .5rem;padding-top:.5rem;border-top:1px dashed var(--line)}
+.tagchip{background:var(--card);border:2px dashed var(--dim);color:var(--ink);cursor:pointer;font:.78rem/1 inherit;
+  text-transform:uppercase;letter-spacing:.04em;padding:.45rem .7rem}
+.tagchip:hover{border-color:var(--hot);color:var(--hot)}
+.tagchip.on{background:var(--hot);color:var(--on-hot);border-style:solid;border-color:var(--hot)}
+.search{margin:0}
+.search input{width:100%;height:2.3rem;background:var(--card);border:2px solid var(--hot);color:var(--ink);
+  font:inherit;padding:.4rem .9rem;text-transform:uppercase;letter-spacing:.05em}
+.search input:focus{outline:none}
+.search input::placeholder{color:var(--dim)}
+.bucket{max-width:680px;margin:0 auto}
+.bhead{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.03em;
+  font-size:1.5rem;margin:1.9rem 0 .9rem;color:var(--ink);display:flex;align-items:center;gap:.7rem}
+.bhead::after{content:"";flex:1;border-top:2px dashed var(--line)}
+.ht{background-image:radial-gradient(var(--hot) 30%,transparent 32%);background-size:6px 6px;width:34px;height:18px;display:inline-block;opacity:.85}
+#b-tonight .bhead{color:var(--hot);font-size:1.95rem}
+.cards{display:grid;gap:1.1rem}
+.show{display:flex;gap:1rem;background:var(--card);border:1px solid var(--line);padding:1rem;align-items:center;
+  box-shadow:5px 5px 0 var(--shadow);cursor:pointer;transition:box-shadow .12s ease,transform .12s ease}
+.show.past{display:none}
+.show:hover,.show:focus{outline:none;box-shadow:5px 5px 0 var(--hot)}
+.thumbwrap{position:relative;flex:none}
+.show img.thumb{width:84px;height:106px;object-fit:cover;border:2px solid var(--ink);display:block;background:#000}
+.show img.thumb.ph{object-fit:contain;padding:6px;filter:grayscale(.2) opacity(.85)}
+.info{min-width:0}
+.date{color:var(--hotink);font-weight:700;text-transform:uppercase;font-size:.85rem;letter-spacing:.06em}
+.show h3{margin:.2rem 0;font-family:"Anton","Special Elite",sans-serif;font-weight:400;font-size:1.05rem;
+  line-height:1.04;text-transform:uppercase;letter-spacing:.01em}
+.show h3 .more{color:var(--dim)}
+.meta{color:var(--dim);font-size:.92rem}
+#b-week .show img.thumb{width:108px;height:135px}
+#b-week .show h3{font-size:1.5rem}
+#b-tonight .show img.thumb{width:130px;height:163px;transform:rotate(-1.4deg)}
+#b-tonight .show h3{font-size:2rem}
+#b-tonight .show{box-shadow:6px 6px 0 var(--hot)}
+/* tonight cards already wear the hot shadow at rest, so they need their own
+   hover/focus state (higher specificity than the base rule) to still signal
+   they're clickable — otherwise hovering them does nothing. */
+#b-tonight .show:hover,#b-tonight .show:focus{box-shadow:10px 10px 0 var(--hot);transform:translate(-3px,-3px)}
+.stamp{position:absolute;font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;font-size:.68rem;
+  letter-spacing:.05em;padding:.1rem .38rem;border:2px solid currentColor;background:var(--scrim);line-height:1;pointer-events:none;text-shadow:0 1px 2px #000}
+.s-free{color:var(--free);bottom:6px;left:-7px;transform:rotate(-8deg)}
+.s-sliding{color:var(--sliding);bottom:6px;left:-7px;transform:rotate(-8deg)}
+.s-age{color:var(--age);top:6px;right:-7px;transform:rotate(7deg)}
+.s-benefit{color:var(--benefit);top:6px;left:-7px;transform:rotate(-7deg)}
+.s-soldout{color:var(--soldout);top:50%;left:50%;transform:translate(-50%,-50%) rotate(-12deg);font-size:1.05rem;border-width:3px}
+.mon{margin:2rem 0 .6rem;font-size:1.25rem;color:var(--hotink);font-family:"Rock Salt",cursive;transform:rotate(-1deg)}
+/* pinned "most active" tag(s) beside a wrapped month's archive header */
+.monbadge{display:inline-block;margin-left:.6rem;vertical-align:middle;font-family:"Special Elite","Courier New",monospace;
+  font-size:.7rem;font-weight:400;color:var(--dim);text-transform:none;letter-spacing:.02em;line-height:1.35}
+.monbadge b{color:var(--hotink);text-transform:uppercase;letter-spacing:.05em;font-weight:400;margin-right:.35rem}
+.monbadge.yr b{color:var(--age)}
+#agenda{display:none}
+.cal{width:100%;border-collapse:collapse;table-layout:fixed}
+.cal th{color:var(--dim);font-weight:400;font-size:.78rem;padding:.3rem;text-transform:uppercase}
+.cal td{border:1px dashed var(--line);vertical-align:top;height:86px;padding:3px;font-size:.75rem}
+.cal td.pad{border:none}.cal td.has{background:var(--card);border:1px solid var(--hot)}
+.cal td.today{border:2px solid var(--tape);box-shadow:inset 0 0 0 1px var(--tape)}
+.cal td.today .dnum{color:var(--tape);font-weight:700}
+.dnum{color:var(--dim);display:block}
+.cf{display:block;color:var(--ink);text-decoration:none;cursor:pointer}
+.cf img{width:100%;max-height:84px;object-fit:cover;display:block;border:1px solid var(--ink)}
+.cf img.ph{object-fit:contain;background:#000;filter:opacity(.7)}
+.cf span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.stats{display:flex;flex-wrap:wrap;gap:.5rem;margin:.2rem 0 1.5rem}
+.stat{background:var(--card);border:1px solid var(--line);padding:.5rem .8rem;font-size:.8rem;color:var(--dim)}
+.stat b{color:var(--hotink);font-size:1.05rem;display:block;font-family:"Anton","Special Elite",sans-serif;font-weight:400;letter-spacing:.02em}
+.arch{list-style:none;padding:0;margin:0}
+.arch li{display:flex;gap:.7rem;align-items:center;padding:.5rem 0;border-bottom:1px dashed var(--line)}
+.athumb{width:52px;height:65px;object-fit:cover;border:1px solid var(--ink);flex:none;cursor:pointer;background:#000}
+.athumb.ph{object-fit:contain;padding:3px;filter:opacity(.55);cursor:default}
+.arch .date{display:inline-block;width:4.2rem}
+.al strong{font-weight:400}
+.empty{color:var(--dim);text-align:center}
+.emptyline{margin:0 0 .9rem}
+/* first-use / no-shows state: a dashed-card onboarding moment in the zine
+   vocabulary — Anton head, typewriter body, tape-button CTAs. Not a SaaS blank. */
+.emptybig{max-width:520px;margin:2.4rem auto;padding:1.7rem 1.4rem;border:2px dashed var(--line);background:var(--card)}
+.emptybig .ehead{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  font-size:1.45rem;letter-spacing:.02em;color:var(--ink);margin:0 0 .7rem}
+.emptybig p{margin:0 0 1.15rem;line-height:1.6;color:var(--dim)}
+.eactions{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center}
+footer{text-align:center;color:var(--dim);padding:2.5rem 1rem;font-size:.85rem}
+footer b{color:var(--hot)}
+.flinks{margin:.7rem 0 0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;justify-content:center}
+.flinks a{color:var(--hotink);text-decoration:underline}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;
+  z-index:60;padding:1.5rem;cursor:zoom-out}
+.lb.open{display:flex}
+.lb img#lbimg{max-width:100%;max-height:90vh;border:3px solid var(--ink);box-shadow:0 0 0 6px var(--hot)}
+.lb .x{position:absolute;top:1rem;right:1.2rem;color:var(--ink);font-size:2rem;text-decoration:none;line-height:1;z-index:2}
+.detail{z-index:55;cursor:default}
+.dbox{background:var(--card);border:1px solid var(--line);box-shadow:8px 8px 0 var(--hot);max-width:680px;width:100%;
+  max-height:90vh;overflow:auto;display:flex;gap:1.1rem;padding:1.1rem;position:relative;flex-wrap:wrap}
+.dflyer{width:230px;max-width:42%;object-fit:contain;align-self:flex-start;border:2px solid var(--ink);background:#000;cursor:zoom-in}
+.dinfo{flex:1;min-width:14rem}
+.dinfo h2{margin:.1rem 0 .6rem;font-family:"Anton","Special Elite",sans-serif;font-weight:400;
+  text-transform:uppercase;font-size:1.7rem;line-height:1.05}
+.drow{color:var(--ink);font-size:.95rem;margin:.25rem 0}
+.dcap{color:var(--dim);font-size:.9rem;margin:.7rem 0;line-height:1.5}
+.dbenefit{color:var(--benefit);font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.submitlist{margin:.3rem 0 1.2rem;padding-left:1.2rem;line-height:1.7}
+.submitlist li{margin:.15rem 0}
+.dactions{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.9rem}
+.dbtn{display:inline-flex;align-items:center;gap:.4rem;background:var(--tape);color:#111;border:2px solid #111;
+  box-shadow:3px 3px 0 var(--hot);padding:.45rem .85rem;cursor:pointer;font:inherit;text-transform:uppercase;
+  letter-spacing:.05em;font-size:.82rem;text-decoration:none}
+.dbtn:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
+/* ---------- touch + mobile polish (premium feel, same zine look) ---------- */
+html{scroll-behavior:smooth}
+body{overflow-x:clip}
+a,button,.show,.cf,.vchip,.athumb{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+/* tactile press feedback — invisible at rest, so the static look is unchanged */
+.links a:active,.dbtn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--hot)}
+nav a:active,.vchip:active,.searchtoggle:active{transform:scale(.95)}
+.show:active{box-shadow:3px 3px 0 var(--hot);transform:translate(2px,2px)}
+.athumb:active,.cf:active{transform:scale(.96)}
+/* gentle entrance when switching views or popping a flyer */
+main section:target{animation:viewin .26s ease both}
+.lb.open #lbimg{animation:lbin .24s ease both}
+@keyframes viewin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes lbin{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:none}}
+@keyframes sheetup{from{transform:translateY(100%)}to{transform:translateY(0)}}
+
+/* back-to-top — a tilted tape button that fades in once you've scrolled down.
+   z-index sits below the modals (detail 55 / lightbox 60) so it hides behind an open modal. */
+.totop{position:fixed;right:1.2rem;bottom:1.2rem;z-index:45;width:3rem;height:3rem;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;
+  background:var(--tape);color:#111;border:2px solid #111;box-shadow:3px 3px 0 var(--hot);
+  font:1.5rem/1 "Anton","Special Elite",sans-serif;text-decoration:none;
+  transform:rotate(-3deg) translateY(10px);opacity:0;pointer-events:none;
+  transition:opacity .2s,transform .2s}
+.totop.on{opacity:1;pointer-events:auto;transform:rotate(-3deg) translateY(0)}
+.totop:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
+.totop:active{transform:rotate(-3deg) translate(2px,2px);box-shadow:1px 1px 0 var(--hot)}
+
+/* intent-timed support nudge: slides up after a high-intent action (sharing a
+   show, adding the calendar). Sits below the modals (50/55) so an open dialog
+   covers it; the CTA is the existing Venmo link, so the CSP is untouched. */
+.tip{position:fixed;left:1rem;bottom:1.2rem;z-index:46;max-width:330px;background:var(--card);
+  border:2px solid var(--hot);box-shadow:6px 6px 0 var(--hot);padding:1rem 1.05rem .95rem;
+  transform:rotate(-1deg) translateY(14px);opacity:0;pointer-events:none;
+  transition:opacity .22s,transform .22s}
+.tip.on{opacity:1;pointer-events:auto;transform:rotate(-1deg) translateY(0);
+  animation:sheetup .3s cubic-bezier(.2,.85,.25,1) both}
+.tip[hidden]{display:none}
+.tiptext{margin:0 0 .85rem;font-size:.9rem;line-height:1.5;padding-right:.8rem}
+.tiptext b{color:var(--hotink)}
+.tipact{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
+.tiplater{background:transparent;border:none;color:var(--dim);cursor:pointer;font:inherit;
+  font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;text-decoration:underline;padding:.45rem .2rem}
+.tiplater:hover{color:var(--hot)}
+.tipx{position:absolute;top:.3rem;right:.45rem;background:none;border:none;color:var(--dim);
+  font:1.3rem/1 inherit;line-height:1;cursor:pointer;padding:.1rem .3rem}
+.tipx:hover{color:var(--hot)}
+@media (max-width:640px){.tip{left:.7rem;right:.7rem;max-width:none;bottom:calc(.8rem + env(safe-area-inset-bottom))}}
+
+/* "add to home screen" banner: dismissible install nudge for mobile. Android/
+   Chrome gets a real install button (beforeinstallprompt); iOS Safari gets
+   Share-sheet instructions, since it has no install API. Slides down from the
+   top so it never collides with the bottom-corner support tip / back-to-top. */
+.a2hs{position:fixed;left:0;right:0;top:0;z-index:47;background:var(--card);
+  border-bottom:2px solid var(--hot);box-shadow:0 4px 0 var(--hot);
+  padding:calc(.7rem + env(safe-area-inset-top)) .9rem .7rem;display:flex;align-items:center;gap:.7rem;
+  transform:translateY(-110%);transition:transform .28s cubic-bezier(.2,.85,.25,1)}
+.a2hs.on{transform:translateY(0)}
+.a2hs[hidden]{display:none}
+.a2hsicon{width:34px;height:34px;flex:0 0 auto;border:1px solid var(--hot)}
+.a2hstext{margin:0;font-size:.82rem;line-height:1.4;flex:1 1 auto;color:var(--ink)}
+.a2hstext b{color:var(--hotink)}
+.a2hsgo{flex:0 0 auto;white-space:nowrap}
+.a2hsx{flex:0 0 auto;background:none;border:none;color:var(--dim);font:1.4rem/1 inherit;cursor:pointer;padding:.1rem .4rem}
+.a2hsx:hover{color:var(--hot)}
+@media (min-width:641px){.a2hs{left:auto;right:1rem;top:1rem;max-width:380px;border:2px solid var(--hot);box-shadow:6px 6px 0 var(--hot);transform:translateY(-160%)}}
+
+/* end-of-page support callout: an in-flow banner just above the footer that
+   fades in once it scrolls into view (reduced-motion users get it instantly). */
+.endtip{max-width:680px;margin:2.6rem auto .4rem;background:var(--card);border:2px dashed var(--hot);
+  padding:1.2rem 1.3rem;text-align:center;opacity:0;transform:translateY(12px);
+  transition:opacity .5s ease,transform .5s ease}
+.endtip.in{opacity:1;transform:none}
+.endtip p{margin:0 0 .95rem;color:var(--ink);font-size:.95rem;line-height:1.6}
+.endtip b{color:var(--hotink)}
+
+@media (max-width:640px){
+  #calgrid{display:none}#agenda{display:block}
+  .totop{display:none}  /* the sticky nav already covers this on phones */
+
+  /* header: tighter so shows are reachable sooner — same big punk type */
+  header{padding:1.5rem 1rem .2rem}
+  header .logo{width:126px;height:126px;margin-bottom:.5rem}
+  h1{font-size:clamp(2.2rem,11.5vw,3.05rem)}  /* fits "DIYPENSACOLA" (12ch, 7.23em wide) on phones down to 320px */
+  header .tag{font-size:.83rem;margin-top:.5rem;line-height:1.45}
+
+  .links{gap:.5rem;padding:.7rem .85rem .15rem}
+  .links a{font-size:.8rem;padding:.55rem .9rem}
+
+  /* sticky segmented view-switcher — always one tap away */
+  /* sticks below the install banner when it's up: --a2hs-h (set by JS to the
+     banner's height, else 0) keeps the view-switcher from hiding behind it. */
+  nav{position:sticky;top:var(--a2hs-h,0px);z-index:40;gap:.5rem;margin-bottom:.2rem;
+    transition:top .28s cubic-bezier(.2,.85,.25,1);
+    padding:.55rem .8rem;padding-top:calc(.55rem + env(safe-area-inset-top));
+    background:var(--scrim);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line)}
+  nav a{flex:1;text-align:center;padding:.58rem .3rem;font-size:.82rem}
+  main section{scroll-margin-top:calc(4.4rem + var(--a2hs-h,0px))}
+  main{padding:0 .85rem}
+
+  /* controls + chips: comfy 44px-ish tap targets */
+  .controls{padding:0}
+  .searchtoggle{width:2.7rem;height:2.7rem;font-size:1.35rem}
+  .vchip,.tagchip{padding:.6rem .8rem;font-size:.8rem;min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+  .search input{height:2.7rem}
+
+  .show{padding:.85rem;gap:.85rem}
+  #b-tonight .show img.thumb{width:112px;height:140px}
+
+  /* detail view becomes a slide-up bottom sheet with a grab handle */
+  .detail{align-items:flex-end;padding:0}
+  .detail .dbox{width:100%;max-width:100%;max-height:90vh;border:none;border-top:3px solid var(--hot);
+    border-radius:20px 20px 0 0;box-shadow:none;-webkit-overflow-scrolling:touch;
+    padding:1.6rem 1.05rem calc(1.3rem + env(safe-area-inset-bottom));
+    animation:sheetup .3s cubic-bezier(.2,.85,.25,1) both}
+  .detail .dbox::before{content:"";position:absolute;top:.6rem;left:50%;transform:translateX(-50%);
+    width:42px;height:5px;border-radius:3px;background:var(--dim);opacity:.55}
+  .dflyer{width:100%;max-width:100%}
+  .dinfo h2{font-size:1.5rem}
+  .dactions{gap:.5rem}
+  .dactions .dbtn{flex:1;justify-content:center;padding:.7rem .8rem}
+
+  /* roomier lightbox close, clear of the notch */
+  .lb .x{font-size:2.3rem;width:2.6rem;height:2.6rem;display:flex;align-items:center;justify-content:center;
+    top:calc(.5rem + env(safe-area-inset-top));right:.8rem}
+  .lb img#lbimg{max-height:84vh}
+
+  footer{padding:2rem 1rem calc(2rem + env(safe-area-inset-bottom))}
+
+  /* the photocopy poster is a desktop ritual; on phones the nav space is scarcer
+     than the feature is useful, so the print button sits this one out. */
+  .pwrap{display:none}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition:none!important}
+}
+
+/* ---------- accessibility: visible keyboard focus + skip link ---------- */
+/* The styles above strip outlines on :hover/:focus for the pressed-tape look,
+   which leaves keyboard users with no focus indicator. :focus-visible only
+   matches keyboard focus, so this restores a high-contrast ring for keyboard
+   and screen-reader users while mouse/touch users see the unchanged zine look. */
+a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visible,
+.show:focus-visible,.cf:focus-visible,.athumb:focus-visible,.vchip:focus-visible,
+.tagchip:focus-visible,.searchtoggle:focus-visible,.search input:focus-visible{
+  outline:3px solid var(--tape);outline-offset:2px}
+/* skip link: off-screen until a keyboard user Tabs to it, then a tape chip
+   top-left that jumps straight to the show list. */
+.skip{position:absolute;left:-9999px;top:0;z-index:60;background:var(--tape);color:#111;
+  border:2px solid #111;box-shadow:3px 3px 0 var(--hot);padding:.5rem .9rem;text-decoration:none;
+  text-transform:uppercase;letter-spacing:.05em;font-size:.85rem}
+.skip:focus{left:8px;top:8px}
+
+/* ---------- standalone per-show pages (site/s/<id>.html) ---------- */
+/* Real shareable URLs so a link previews with that show's flyer. They reuse the
+   zine tokens above and stay script-free (stricter CSP). */
+.showpage main.spwrap{max-width:760px}
+.showpage header{padding:1.6rem 1rem .2rem;text-align:left}
+.showpage .home{display:inline-flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--ink)}
+.showpage .home img{width:64px;height:64px;filter:drop-shadow(0 0 10px rgba(255,255,255,.16))}
+.showpage .home span{font-family:"Special Elite","Courier New",monospace;text-transform:uppercase;
+  letter-spacing:.03em;font-size:1.35rem;text-shadow:3px 3px 0 var(--hot)}
+.spcard{display:flex;gap:1.3rem;background:var(--card);border:1px solid var(--line);
+  box-shadow:8px 8px 0 var(--hot);padding:1.2rem;flex-wrap:wrap;margin-top:1.1rem}
+.spflyer{width:300px;max-width:100%;border:2px solid var(--ink);background:#000;display:block;
+  align-self:flex-start;cursor:zoom-in}
+.spinfo{flex:1;min-width:15rem}
+.spinfo h1{margin:.1rem 0 .7rem;font-family:"Anton","Special Elite",sans-serif;font-weight:400;
+  font-size:clamp(1.7rem,6vw,2.1rem);line-height:1.05;letter-spacing:.01em;text-transform:uppercase;
+  transform:none;text-shadow:none}
+.spback{text-align:center;margin:1.7rem 0 .5rem}
+.spback a{text-decoration:none}
+/* ---------- showgoer guide (site/guide.html) — blog-post layout ---------- */
+.guide{max-width:680px}
+.guide h1{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  font-size:clamp(2rem,8vw,3rem);line-height:1.08;letter-spacing:.01em;margin:.4rem 0 .95rem;
+  text-shadow:3px 3px 0 var(--hot)}
+.glead{color:var(--dim);margin:0 0 2.4rem;line-height:1.7;font-size:.92rem}
+.post h2{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  font-size:clamp(1.45rem,5.5vw,2rem);line-height:1.05;letter-spacing:.01em;color:var(--hotink);
+  margin:2.2rem 0 .7rem;padding-top:1.5rem;border-top:2px dashed var(--line)}
+.post h2:first-child{border-top:none;padding-top:0;margin-top:.5rem}
+.post p{margin:0 0 1.05rem;line-height:1.75}
+.post em{font-style:italic;color:var(--ink)}
+.post strong{color:var(--ink)}
+@media (max-width:640px){.showpage header{text-align:center}.spflyer{width:100%}.spcard{padding:1rem}}
+
+/* ---------- flyer wall: the telephone-pole view of the upcoming feed ----------
+   Toggleable; the list stays the default. Cards become layered posters: full-width
+   flyer, slight alternating rotations, a tape strip across the top corner, and a
+   caption strip underneath. Same DOM, same click-to-open detail. */
+#list.wall .cards{display:block;column-count:3;column-gap:1.2rem}
+#list.wall .bucket{max-width:880px}
+#list.wall .show{display:block;padding:0;background:transparent;border:none;box-shadow:none;
+  break-inside:avoid;margin:0 0 1.5rem;position:relative}
+#list.wall .show:nth-child(3n+1){transform:rotate(-1.6deg)}
+#list.wall .show:nth-child(3n+2){transform:rotate(1.2deg)}
+#list.wall .show:nth-child(3n){transform:rotate(-.5deg)}
+#list.wall .show:hover,#list.wall .show:focus{transform:rotate(0) scale(1.02);box-shadow:none;z-index:2}
+/* the tape sits ON the poster's top edge (like tape actually holding it up), so
+   it can never float loose in the gap between two stacked posters. */
+#list.wall .thumbwrap::before{content:"";position:absolute;top:2px;left:50%;transform:translateX(-50%) rotate(-2deg);
+  width:64px;height:18px;background:var(--tape);opacity:.8;z-index:3;box-shadow:0 1px 2px rgba(0,0,0,.4)}
+#list.wall .show img.thumb{width:100%;height:auto;max-height:none;border:3px solid var(--ink);
+  box-shadow:6px 6px 0 var(--shadow);background:#000}
+#list.wall .show img.thumb.ph{padding:1.4rem;opacity:.75}
+#list.wall .info{background:var(--card);border:1px solid var(--line);border-top:none;padding:.5rem .7rem .6rem;
+  margin:0 3px;box-shadow:6px 6px 0 var(--shadow)}
+#list.wall .show h3{font-size:1rem}
+/* tonight stays the same poster size as everything else (a blown-up flyer reads
+   badly); it's marked instead by the hot border + tape, and the TONIGHT header. */
+#list.wall #b-tonight .show img.thumb{transform:none;border-color:var(--hot);box-shadow:6px 6px 0 var(--hot)}
+#list.wall #b-tonight .show h3{font-size:1rem}
+#list.wall #b-tonight .thumbwrap::before{background:var(--hot)}
+@media (max-width:900px){#list.wall .cards{column-count:2}}
+@media (max-width:560px){#list.wall .cards{column-count:1}}
+
+/* ---------- print poster: "print this week" photocopy handout ---------- */
+.printhead{display:none}
+@media print{
+  body{background:#fff;color:#000;font:12pt/1.4 "Courier New",monospace}
+  header,.links,nav,.controls,#grid,#archive,.endtip,footer,.totop,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming{display:none!important}
+  main:not(:has(section:target)) #list{display:block}
+  main section{display:none!important}
+  main section#list{display:block!important}
+  .printhead{display:block;text-align:center;border-bottom:4px solid #000;margin-bottom:1rem;padding-bottom:.5rem}
+  .printhead .pt{font-size:26pt;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+  .printhead .ps{font-size:11pt;margin-top:.2rem}
+  .bhead{color:#000;border-bottom:2px dashed #000;font-size:15pt}
+  .bhead::after{display:none}
+  .ht{display:none}
+  .bucket{max-width:none}
+  .show{background:#fff;border:2px solid #000;box-shadow:none;color:#000;break-inside:avoid;padding:.5rem}
+  .show img.thumb{filter:grayscale(1) contrast(1.15);border-color:#000}
+  .date{color:#000}
+  .meta{color:#222}
+  .stamp{background:#fff;text-shadow:none}
+  .thumbwrap::before{display:none}   /* screen-only tape */
+  .bnone{display:none!important}     /* quiet-night line is screen-only */
+  body.printweek .show:not(.pw){display:none!important}
+  body.printweek .bucket:not(.pw-has){display:none!important}
+}
+
+/* ---------- band-page quick hits under the search box ---------- */
+#bandhits{margin-top:.45rem}
+#bandhits a{display:inline-block;font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
+  border:2px dashed var(--dim);padding:.35rem .6rem;margin:0 .35rem .35rem 0;text-transform:lowercase}
+#bandhits a:hover{border-color:var(--hot);color:var(--hot)}
+#bandhits a small{color:var(--dim)}
+
+/* ---------- band + venue pages (script-free, reuse zine tokens) ---------- */
+.dirwrap{max-width:760px}
+.dirhead{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  font-size:clamp(1.9rem,7vw,2.7rem);line-height:1.06;letter-spacing:.01em;margin:.4rem 0 .4rem;
+  text-shadow:3px 3px 0 var(--hot);transform:none}
+.dirsub{color:var(--dim);margin:0 0 1.4rem;font-size:.92rem;line-height:1.6}
+.dirsec{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.03em;
+  font-size:1.25rem;margin:1.8rem 0 .7rem;color:var(--hotink)}
+.actsec>.dirsec{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
+.sortsel{margin-left:auto;background:var(--card);color:var(--ink);border:2px dashed var(--dim);
+  font:.72rem/1.2 "Special Elite","Courier New",monospace;text-transform:uppercase;letter-spacing:.04em;
+  padding:.35rem 1.4rem .35rem .5rem;cursor:pointer;-webkit-appearance:none;appearance:none;
+  background-image:linear-gradient(45deg,transparent 50%,var(--dim) 50%),linear-gradient(135deg,var(--dim) 50%,transparent 50%);
+  background-position:calc(100% - .55rem) center,calc(100% - .35rem) center;background-size:.3rem .3rem,.3rem .3rem;background-repeat:no-repeat}
+.sortsel:hover{border-color:var(--hot);color:var(--hot)}
+.sortsel:focus{outline:none;border-color:var(--hot)}
+.dirlist{list-style:none;padding:0;margin:0}
+.dirlist li{display:flex;gap:.7rem;align-items:baseline;padding:.45rem 0;border-bottom:1px dashed var(--line);font-size:.95rem;flex-wrap:wrap}
+.dirlist .date{width:6.6rem;flex:none}
+.dirlist a{text-decoration:none}
+.dirlist a:hover{text-decoration:underline}
+.dirlist .meta{color:var(--dim);font-size:.85rem}
+.bandindex{columns:2;column-gap:2rem;max-width:760px}
+@media (max-width:560px){.bandindex{columns:1}}
+.bandindex a{display:block;padding:.32rem 0;border-bottom:1px dashed var(--line);text-decoration:none;color:var(--ink);break-inside:avoid}
+.bandindex a:hover{color:var(--hot)}
+.bandindex a small{color:var(--dim)}
+.bandindex .letter{font-family:"Rock Salt",cursive;color:var(--hotink);margin:1.1rem 0 .3rem;font-size:1.05rem;break-after:avoid}
+.dirnote{color:var(--dim);font-size:.85rem;border:2px dashed var(--line);background:var(--card);padding:.8rem 1rem;margin:1.6rem 0 0;line-height:1.6}
+/* instagram-style flyer grid on band/act pages */
+.flyergrid{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin:.4rem 0 .5rem}
+@media (min-width:560px){.flyergrid{grid-template-columns:repeat(4,1fr);gap:7px}}
+.fgtile{position:relative;display:block;aspect-ratio:1/1;overflow:hidden;background:#000;
+  border:2px solid var(--ink);box-shadow:3px 3px 0 var(--shadow);text-decoration:none}
+.fgtile img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .22s ease}
+.fgtile:hover img,.fgtile:focus img{transform:scale(1.07)}
+.fgtile:hover,.fgtile:focus{box-shadow:3px 3px 0 var(--hot);outline:none}
+.fgcap{position:absolute;left:0;right:0;bottom:0;font-family:"Special Elite","Courier New",monospace;
+  font-size:.6rem;letter-spacing:.03em;color:var(--ink);text-transform:uppercase;
+  background:linear-gradient(transparent,rgba(0,0,0,.85));padding:1.1rem .4rem .35rem;
+  opacity:0;transition:opacity .2s}
+.fgtile:hover .fgcap,.fgtile:focus .fgcap{opacity:1}
+
+/* ---------- zine polish: date stamp, venue links, act chips, list tape ---------- */
+/* the header's build date as an ink date stamp instead of dim inline text */
+.upstamp{display:inline-block;border:2px solid var(--hotink);color:var(--hotink);padding:.06rem .45rem;
+  transform:rotate(-2deg);text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;margin-left:.2rem}
+/* venue names in card/list meta link to their venue page */
+.meta a.vlink{color:inherit;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:2px}
+.meta a.vlink:hover{color:var(--hot)}
+/* quiet-night line under the TONIGHT header (shown only when nothing's on today) */
+.bnone{color:var(--dim);margin:.1rem 0 0;font-size:.95rem}
+.bnone a{color:var(--hotink)}
+/* act chips: each lineup name links to its band page (detail modal + show pages) */
+.actchips{display:flex;flex-wrap:wrap;gap:.35rem;margin:.1rem 0 .55rem}
+.actchips a{font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
+  border:2px dashed var(--dim);padding:.3rem .55rem;text-transform:lowercase}
+.actchips a:hover{border-color:var(--hot);color:var(--hot)}
+/* a little tape holding each list-card flyer down — echoes the wall view's tape
+   without changing the card layout. Wall view keeps its own bigger strip. */
+#list:not(.wall) .thumbwrap::before{content:"";position:absolute;top:-5px;left:50%;
+  transform:translateX(-50%) rotate(-4deg);width:38px;height:11px;background:var(--tape);
+  opacity:.5;z-index:2;box-shadow:0 1px 2px rgba(0,0,0,.35);pointer-events:none}
+/* a lone poster in a wall bucket centers instead of hugging the left column
+   ("no two non-past cards in this bucket"; active filters are a rare, benign miss) */
+#list.wall .cards:not(:has(.show:not(.past) ~ .show:not(.past))){column-count:1;max-width:430px;margin:0 auto}
+</style></head><body class="showpage">
+<header><a class="home" href="./"><img src="logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a></header>
+<main class="spwrap dirwrap">
+<h1 class="dirhead">bands &amp; acts</h1>
+<p class="dirsub">everyone who's played the diypensacola record. the local scene first (99 local
+bands plus the drag performers, poets, and recurring nights that keep it weird), then the 23 touring
+acts that have rolled through. sort any list by name, who's playing soonest, or most shows.</p>
+<div class='actsec'><h2 class='dirsec'>bands &amp; musicians <small style='color:var(--dim)'>(99)</small><select class='sortsel' aria-label='sort this list'><option value='alpha'>a–z</option><option value='soon'>playing soon</option><option value='most'>most shows</option></select></h2><div class='bandindex' data-list data-letters='1'><div class='letter'>#</div><a class='actitem' href='b/logik.html' data-name="_logik" data-count='1' data-next=''>_logik <small>1 show</small></a><div class='letter'>a</div><a class='actitem' href='b/afterdusk.html' data-name="afterdusk" data-count='1' data-next='2026-08-15'>afterdusk <small>1 show</small></a><a class='actitem' href='b/archers.html' data-name="archers" data-count='1' data-next='2026-09-14'>archers <small>1 show</small></a><a class='actitem' href='b/aumua.html' data-name="aumua" data-count='1' data-next=''>aumua <small>1 show</small></a><a class='actitem' href='b/autumn-kings.html' data-name="autumn kings" data-count='1' data-next='2026-09-14'>autumn kings <small>1 show</small></a><a class='actitem' href='b/azshara.html' data-name="azshara" data-count='1' data-next=''>azshara <small>1 show</small></a><div class='letter'>b</div><a class='actitem' href='b/birdz.html' data-name="birdz" data-count='1' data-next=''>birdz <small>1 show</small></a><a class='actitem' href='b/blight.html' data-name="blight" data-count='1' data-next=''>blight <small>1 show</small></a><div class='letter'>c</div><a class='actitem' href='b/caca-del-diablo.html' data-name="caca del diablo" data-count='1' data-next='2026-07-30'>caca del diablo <small>1 show</small></a><a class='actitem' href='b/carry-the-torch.html' data-name="carry the torch" data-count='1' data-next=''>carry the torch <small>1 show</small></a><a class='actitem' href='b/cavae-mundi.html' data-name="cavae mundi" data-count='1' data-next=''>cavae mundi <small>1 show</small></a><a class='actitem' href='b/caving-in.html' data-name="caving in" data-count='2' data-next='2026-08-15'>caving in <small>2 shows</small></a><a class='actitem' href='b/cdd.html' data-name="cdd" data-count='1' data-next=''>cdd <small>1 show</small></a><a class='actitem' href='b/children-of-judas.html' data-name="children of judas" data-count='1' data-next=''>children of judas <small>1 show</small></a><a class='actitem' href='b/coldstate.html' data-name="coldstate" data-count='1' data-next='2026-09-14'>coldstate <small>1 show</small></a><a class='actitem' href='b/color-the-void.html' data-name="color the void" data-count='1' data-next='2026-10-22'>color the void <small>1 show</small></a><a class='actitem' href='b/come-to-ruin.html' data-name="come to ruin" data-count='1' data-next=''>come to ruin <small>1 show</small></a><a class='actitem' href='b/command-voice.html' data-name="command voice" data-count='1' data-next=''>command voice <small>1 show</small></a><a class='actitem' href='b/conflict-of-interests.html' data-name="conflict of interests" data-count='1' data-next=''>conflict of interests <small>1 show</small></a><a class='actitem' href='b/contention.html' data-name="contention" data-count='1' data-next=''>contention <small>1 show</small></a><a class='actitem' href='b/cursed-body.html' data-name="cursed body" data-count='1' data-next=''>cursed body <small>1 show</small></a><div class='letter'>d</div><a class='actitem' href='b/dan-spencer.html' data-name="dan spencer" data-count='1' data-next=''>dan spencer <small>1 show</small></a><a class='actitem' href='b/dead-allies.html' data-name="dead allies" data-count='1' data-next=''>dead allies <small>1 show</small></a><a class='actitem' href='b/discrepancies.html' data-name="discrepancies" data-count='1' data-next='2026-10-10'>discrepancies <small>1 show</small></a><div class='letter'>e</div><a class='actitem' href='b/eric-melvin.html' data-name="eric melvin" data-count='1' data-next=''>eric melvin <small>1 show</small></a><a class='actitem' href='b/ex-teenage-rebels.html' data-name="ex-teenage rebels" data-count='1' data-next=''>ex-teenage rebels <small>1 show</small></a><a class='actitem' href='b/exformation.html' data-name="exformation" data-count='1' data-next=''>exformation <small>1 show</small></a><div class='letter'>f</div><a class='actitem' href='b/feed-lemon.html' data-name="feed lemon" data-count='1' data-next=''>feed lemon <small>1 show</small></a><a class='actitem' href='b/fire-came-disparity.html' data-name="fire came disparity" data-count='1' data-next='2026-07-19'>fire came disparity <small>1 show</small></a><a class='actitem' href='b/future-compost.html' data-name="future compost" data-count='1' data-next='2026-07-30'>future compost <small>1 show</small></a><div class='letter'>g</div><a class='actitem' href='b/glazed-eyes.html' data-name="glazed eyes" data-count='1' data-next=''>glazed eyes <small>1 show</small></a><a class='actitem' href='b/gnarled.html' data-name="gnarled" data-count='1' data-next='2026-09-23'>gnarled <small>1 show</small></a><a class='actitem' href='b/goldmine.html' data-name="goldmine" data-count='1' data-next=''>goldmine <small>1 show</small></a><a class='actitem' href='b/good-night-geezer.html' data-name="good night geezer" data-count='1' data-next='2026-08-27'>good night geezer <small>1 show</small></a><a class='actitem' href='b/goodwin-rainer.html' data-name="goodwin rainer" data-count='1' data-next='2026-07-17'>goodwin rainer <small>1 show</small></a><a class='actitem' href='b/grace-michelle.html' data-name="grace michelle" data-count='1' data-next=''>grace michelle <small>1 show</small></a><a class='actitem' href='b/grave-chorus.html' data-name="grave chorus" data-count='1' data-next=''>grave chorus <small>1 show</small></a><a class='actitem' href='b/gut-fucked.html' data-name="gut fucked" data-count='1' data-next='2026-07-28'>gut fucked <small>1 show</small></a><div class='letter'>h</div><a class='actitem' href='b/hemlock.html' data-name="hemlock" data-count='3' data-next=''>hemlock <small>3 shows</small></a><a class='actitem' href='b/holder.html' data-name="holder" data-count='1' data-next=''>holder <small>1 show</small></a><div class='letter'>i</div><a class='actitem' href='b/icantread.html' data-name="icantread" data-count='1' data-next=''>icantread <small>1 show</small></a><a class='actitem' href='b/ihatesundays.html' data-name="ihatesundays" data-count='2' data-next='2026-07-09'>ihatesundays <small>2 shows</small></a><a class='actitem' href='b/innerwounds.html' data-name="innerwounds" data-count='2' data-next='2026-07-19'>innerwounds <small>2 shows</small></a><a class='actitem' href='b/iwfs.html' data-name="iwfs" data-count='1' data-next=''>iwfs <small>1 show</small></a><div class='letter'>j</div><a class='actitem' href='b/j-mike.html' data-name="j. mike" data-count='1' data-next=''>j. mike <small>1 show</small></a><a class='actitem' href='b/jeremy-mclennon.html' data-name="jeremy mclennon" data-count='1' data-next='2026-07-03'>jeremy mclennon <small>1 show</small></a><a class='actitem' href='b/johanna-rose.html' data-name="johanna rose" data-count='1' data-next='2026-07-17'>johanna rose <small>1 show</small></a><div class='letter'>k</div><a class='actitem' href='b/katie-dineen.html' data-name="katie dineen" data-count='2' data-next=''>katie dineen <small>2 shows</small></a><a class='actitem' href='b/king-in-yellow.html' data-name="king in yellow" data-count='1' data-next='2026-07-22'>king in yellow <small>1 show</small></a><div class='letter'>l</div><a class='actitem' href='b/lesion.html' data-name="lesion" data-count='2' data-next='2026-07-04'>lesion <small>2 shows</small></a><a class='actitem' href='b/lunar-parque.html' data-name="lunar parque" data-count='1' data-next=''>lunar parque <small>1 show</small></a><div class='letter'>m</div><a class='actitem' href='b/machina.html' data-name="machina" data-count='1' data-next='2026-07-09'>machina <small>1 show</small></a><a class='actitem' href='b/maggot-sandwich.html' data-name="maggot sandwich" data-count='1' data-next='2026-07-04'>maggot sandwich <small>1 show</small></a><a class='actitem' href='b/miatropolis.html' data-name="miatropolis" data-count='1' data-next='2026-07-03'>miatropolis <small>1 show</small></a><a class='actitem' href='b/mourning-glories.html' data-name="mourning glories" data-count='1' data-next=''>mourning glories <small>1 show</small></a><a class='actitem' href='b/my-own-will.html' data-name="my own will" data-count='1' data-next=''>my own will <small>1 show</small></a><a class='actitem' href='b/mybrotha-van.html' data-name="mybrotha van" data-count='1' data-next='2026-07-03'>mybrotha van <small>1 show</small></a><div class='letter'>n</div><a class='actitem' href='b/neon-tomboy.html' data-name="neon tomboy" data-count='1' data-next=''>neon tomboy <small>1 show</small></a><a class='actitem' href='b/nights-of-malice.html' data-name="nights of malice" data-count='1' data-next=''>nights of malice <small>1 show</small></a><a class='actitem' href='b/nikki-forgione.html' data-name="nikki forgione" data-count='1' data-next=''>nikki forgione <small>1 show</small></a><a class='actitem' href='b/no-complications.html' data-name="no complications" data-count='1' data-next='2026-07-22'>no complications <small>1 show</small></a><a class='actitem' href='b/nomas.html' data-name="nomas" data-count='1' data-next='2026-09-27'>nomas <small>1 show</small></a><div class='letter'>o</div><a class='actitem' href='b/oinkliteration.html' data-name="oinkliteration" data-count='1' data-next=''>oinkliteration <small>1 show</small></a><a class='actitem' href='b/other.html' data-name="other" data-count='2' data-next=''>other <small>2 shows</small></a><div class='letter'>p</div><a class='actitem' href='b/pauper-s-grave.html' data-name="pauper&#39;s grave" data-count='1' data-next=''>pauper&#39;s grave <small>1 show</small></a><a class='actitem' href='b/pinknoise.html' data-name="pinknoise" data-count='1' data-next='2026-09-14'>pinknoise <small>1 show</small></a><a class='actitem' href='b/power-bomb.html' data-name="power bomb" data-count='1' data-next='2026-07-16'>power bomb <small>1 show</small></a><a class='actitem' href='b/psycho-frame.html' data-name="psycho-frame" data-count='1' data-next=''>psycho-frame <small>1 show</small></a><div class='letter'>q</div><a class='actitem' href='b/quintessence.html' data-name="quintessence" data-count='1' data-next=''>quintessence <small>1 show</small></a><div class='letter'>r</div><a class='actitem' href='b/rare-seed.html' data-name="rare seed" data-count='1' data-next=''>rare seed <small>1 show</small></a><a class='actitem' href='b/rotted-remains.html' data-name="rotted remains" data-count='1' data-next='2026-07-28'>rotted remains <small>1 show</small></a><div class='letter'>s</div><a class='actitem' href='b/scream-out-loud.html' data-name="scream out loud" data-count='1' data-next='2026-10-22'>scream out loud <small>1 show</small></a><a class='actitem' href='b/serrated.html' data-name="serrated" data-count='1' data-next=''>serrated <small>1 show</small></a><a class='actitem' href='b/shidded.html' data-name="shidded" data-count='1' data-next='2026-07-09'>shidded <small>1 show</small></a><a class='actitem' href='b/sick-century.html' data-name="sick century" data-count='1' data-next='2026-10-10'>sick century <small>1 show</small></a><a class='actitem' href='b/sick-room.html' data-name="sick room" data-count='1' data-next=''>sick room <small>1 show</small></a><a class='actitem' href='b/skiz.html' data-name="skiz" data-count='1' data-next='2026-07-03'>skiz <small>1 show</small></a><a class='actitem' href='b/slugger.html' data-name="slugger" data-count='1' data-next=''>slugger <small>1 show</small></a><a class='actitem' href='b/snake.html' data-name="snake" data-count='1' data-next=''>snake <small>1 show</small></a><a class='actitem' href='b/snow-halo.html' data-name="snow halo" data-count='1' data-next=''>snow halo <small>1 show</small></a><a class='actitem' href='b/southern-magnolia.html' data-name="southern magnolia" data-count='1' data-next=''>southern magnolia <small>1 show</small></a><a class='actitem' href='b/spidershed.html' data-name="spidershed" data-count='1' data-next='2026-07-30'>spidershed <small>1 show</small></a><a class='actitem' href='b/statement-of-pride.html' data-name="statement of pride" data-count='1' data-next=''>statement of pride <small>1 show</small></a><a class='actitem' href='b/still-alice.html' data-name="still alice" data-count='1' data-next=''>still alice <small>1 show</small></a><a class='actitem' href='b/strikeforce.html' data-name="strikeforce" data-count='1' data-next=''>strikeforce <small>1 show</small></a><a class='actitem' href='b/stufy.html' data-name="stufy" data-count='2' data-next='2026-07-17'>stufy <small>2 shows</small></a><a class='actitem' href='b/sungraz.html' data-name="sungraz" data-count='1' data-next=''>sungraz <small>1 show</small></a><a class='actitem' href='b/swell-rell.html' data-name="swell rell" data-count='1' data-next=''>swell rell <small>1 show</small></a><div class='letter'>t</div><a class='actitem' href='b/the-dreamboats.html' data-name="the dreamboats" data-count='1' data-next='2026-07-17'>the dreamboats <small>1 show</small></a><a class='actitem' href='b/the-glorious-flaws.html' data-name="the glorious flaws" data-count='1' data-next=''>the glorious flaws <small>1 show</small></a><a class='actitem' href='b/the-pallbearers.html' data-name="the pallbearers" data-count='1' data-next='2026-07-04'>the pallbearers <small>1 show</small></a><a class='actitem' href='b/the-rabbit.html' data-name="the rabbit" data-count='1' data-next=''>the rabbit <small>1 show</small></a><a class='actitem' href='b/tirra-lirra.html' data-name="tirra lirra" data-count='1' data-next='2026-07-22'>tirra lirra <small>1 show</small></a><a class='actitem' href='b/tremors.html' data-name="tremors" data-count='1' data-next='2026-07-16'>tremors <small>1 show</small></a><a class='actitem' href='b/tuffalo-the-treewalkers.html' data-name="tuffalo &amp; the treewalkers" data-count='1' data-next=''>tuffalo &amp; the treewalkers <small>1 show</small></a><div class='letter'>u</div><a class='actitem' href='b/user-assumes-risk.html' data-name="user assumes risk" data-count='1' data-next=''>user assumes risk <small>1 show</small></a><div class='letter'>w</div><a class='actitem' href='b/wraithbearer.html' data-name="wraithbearer" data-count='1' data-next='2026-07-19'>wraithbearer <small>1 show</small></a><a class='actitem' href='b/wynter.html' data-name="wynter" data-count='2' data-next='2026-07-05'>wynter <small>2 shows</small></a><div class='letter'>y</div><a class='actitem' href='b/yante.html' data-name="yante" data-count='1' data-next='2026-07-03'>yante <small>1 show</small></a></div></div><div class='actsec'><h2 class='dirsec'>drag performers &amp; hosts <small style='color:var(--dim)'>(18)</small><select class='sortsel' aria-label='sort this list'><option value='alpha'>a–z</option><option value='soon'>playing soon</option><option value='most'>most shows</option></select></h2><div class='bandindex' data-list data-letters='1'><div class='letter'>b</div><a class='actitem' href='b/becky-belle-bottoms.html' data-name="becky belle bottoms" data-count='1' data-next=''>becky belle bottoms <small>1 show</small></a><div class='letter'>c</div><a class='actitem' href='b/cryboy-cassanova.html' data-name="cryboy cassanova" data-count='1' data-next=''>cryboy cassanova <small>1 show</small></a><div class='letter'>d</div><a class='actitem' href='b/day-day-duvay.html' data-name="day day duvay" data-count='1' data-next=''>day day duvay <small>1 show</small></a><div class='letter'>f</div><a class='actitem' href='b/frankie-fontaine.html' data-name="frankie fontaine" data-count='1' data-next=''>frankie fontaine <small>1 show</small></a><div class='letter'>g</div><a class='actitem' href='b/gemini.html' data-name="gemini" data-count='1' data-next=''>gemini <small>1 show</small></a><a class='actitem' href='b/gloss.html' data-name="gloss" data-count='1' data-next=''>gloss <small>1 show</small></a><div class='letter'>h</div><a class='actitem' href='b/h8male.html' data-name="h8male" data-count='1' data-next=''>h8male <small>1 show</small></a><a class='actitem' href='b/host-andy-rodignous.html' data-name="host andy rodignous" data-count='1' data-next=''>host andy rodignous <small>1 show</small></a><a class='actitem' href='b/host-jay-jay-duvay.html' data-name="host jay jay duvay" data-count='1' data-next=''>host jay jay duvay <small>1 show</small></a><a class='actitem' href='b/h-male.html' data-name="hēmale" data-count='1' data-next=''>hēmale <small>1 show</small></a><div class='letter'>k</div><a class='actitem' href='b/keke-zorra.html' data-name="keke zorra" data-count='1' data-next=''>keke zorra <small>1 show</small></a><div class='letter'>m</div><a class='actitem' href='b/mon-cheri-legend.html' data-name="mon cheri legend" data-count='1' data-next=''>mon cheri legend <small>1 show</small></a><a class='actitem' href='b/mon-cherri-pop.html' data-name="mon cherri pop" data-count='1' data-next=''>mon cherri pop <small>1 show</small></a><div class='letter'>s</div><a class='actitem' href='b/strawberrie-zorra.html' data-name="strawberrie zorra" data-count='1' data-next=''>strawberrie zorra <small>1 show</small></a><div class='letter'>t</div><a class='actitem' href='b/thotherry-kingcake.html' data-name="thotherry kingcake" data-count='1' data-next=''>thotherry kingcake <small>1 show</small></a><div class='letter'>v</div><a class='actitem' href='b/vixen-valentine.html' data-name="vixen valentine" data-count='2' data-next='2026-07-10'>vixen valentine <small>2 shows</small></a><div class='letter'>w</div><a class='actitem' href='b/wanda-doomy.html' data-name="wanda doomy" data-count='1' data-next=''>wanda doomy <small>1 show</small></a><a class='actitem' href='b/whatier-kandee.html' data-name="whatier kandee" data-count='1' data-next=''>whatier kandee <small>1 show</small></a></div></div><div class='actsec'><h2 class='dirsec'>poets &amp; spoken word <small style='color:var(--dim)'>(4)</small><select class='sortsel' aria-label='sort this list'><option value='alpha'>a–z</option><option value='soon'>playing soon</option><option value='most'>most shows</option></select></h2><div class='bandindex' data-list data-letters='0'><a class='actitem' href='b/lachelle-johns.html' data-name="lachelle johns" data-count='1' data-next=''>lachelle johns <small>1 show</small></a><a class='actitem' href='b/patriot-x.html' data-name="patriot x" data-count='1' data-next=''>patriot x <small>1 show</small></a><a class='actitem' href='b/quincy-q-hull.html' data-name="quincy &quot;q&quot; hull" data-count='1' data-next=''>quincy &quot;q&quot; hull <small>1 show</small></a><a class='actitem' href='b/scott-satterwhite.html' data-name="scott satterwhite" data-count='1' data-next=''>scott satterwhite <small>1 show</small></a></div></div><div class='actsec'><h2 class='dirsec'>nights, series &amp; happenings <small style='color:var(--dim)'>(16)</small><select class='sortsel' aria-label='sort this list'><option value='alpha'>a–z</option><option value='soon'>playing soon</option><option value='most'>most shows</option></select></h2><div class='bandindex' data-list data-letters='1'><div class='letter'>#</div><a class='actitem' href='b/but-make-it-gay-night-market-pop-up.html' data-name="...but make it gay night market pop up" data-count='1' data-next=''>...but make it gay night market pop up <small>1 show</small></a><div class='letter'>c</div><a class='actitem' href='b/call-me-daddy-drag-show-drag-king-open-stage.html' data-name="call me daddy drag show (drag king open stage)" data-count='1' data-next=''>call me daddy drag show (drag king open stage) <small>1 show</small></a><div class='letter'>e</div><a class='actitem' href='b/earthly-delights-show.html' data-name="earthly delights show" data-count='1' data-next='2026-07-03'>earthly delights show <small>1 show</small></a><div class='letter'>f</div><a class='actitem' href='b/fetish-pride-night.html' data-name="fetish pride night" data-count='1' data-next=''>fetish pride night <small>1 show</small></a><div class='letter'>h</div><a class='actitem' href='b/heated-rivalry-night-dance-party-burwoodland.html' data-name="heated rivalry night dance party (burwoodland)" data-count='1' data-next=''>heated rivalry night dance party (burwoodland) <small>1 show</small></a><a class='actitem' href='b/house-of-androgyny-prismatic.html' data-name="house of androgyny: prismatic" data-count='1' data-next=''>house of androgyny: prismatic <small>1 show</small></a><div class='letter'>j</div><a class='actitem' href='b/just-dance-pensapride.html' data-name="just dance pensapride" data-count='1' data-next=''>just dance pensapride <small>1 show</small></a><div class='letter'>l</div><a class='actitem' href='b/lgbbq.html' data-name="lgbbq" data-count='1' data-next='2026-07-04'>lgbbq <small>1 show</small></a><div class='letter'>o</div><a class='actitem' href='b/open-mic-with-q.html' data-name="open mic with q" data-count='1' data-next=''>open mic with q <small>1 show</small></a><a class='actitem' href='b/our-house-in-progress-diy-art-exhibition.html' data-name="our house (in progress) - diy art exhibition" data-count='1' data-next='2026-07-24'>our house (in progress) - diy art exhibition <small>1 show</small></a><div class='letter'>p</div><a class='actitem' href='b/pensacola-pride-art-build.html' data-name="pensacola pride art build" data-count='1' data-next=''>pensacola pride art build <small>1 show</small></a><a class='actitem' href='b/pretty-baked-bad-b-tch-brunch.html' data-name="pretty baked / bad b!tch brunch" data-count='1' data-next='2026-07-12'>pretty baked / bad b!tch brunch <small>1 show</small></a><div class='letter'>t</div><a class='actitem' href='b/talamieka-brice-bootjack-and-red-film-screening-discussion.html' data-name="talamieka brice bootjack and red film screening + discussion" data-count='1' data-next=''>talamieka brice bootjack and red film screening + discussion <small>1 show</small></a><a class='actitem' href='b/tooth-gems-moving-sale.html' data-name="tooth gems + moving sale" data-count='1' data-next=''>tooth gems + moving sale <small>1 show</small></a><div class='letter'>w</div><a class='actitem' href='b/weirdo-mutual-aid-circus.html' data-name="weirdo mutual aid circus" data-count='1' data-next='2026-07-03'>weirdo mutual aid circus <small>1 show</small></a><a class='actitem' href='b/woody-guthrie-gathering.html' data-name="woody guthrie gathering" data-count='1' data-next='2026-07-12'>woody guthrie gathering <small>1 show</small></a></div></div><div class='actsec'><h2 class='dirsec'>touring &amp; out-of-town acts <small style='color:var(--dim)'>(23)</small><select class='sortsel' aria-label='sort this list'><option value='alpha'>a–z</option><option value='soon'>playing soon</option><option value='most'>most shows</option></select></h2><div class='bandindex' data-list data-letters='1'><div class='letter'>b</div><a class='actitem' href='b/bryan-raymond.html' data-name="bryan raymond" data-count='1' data-next='2026-08-27'>bryan raymond <small>1 show</small></a><a class='actitem' href='b/bunny-the-bear.html' data-name="bunny the bear" data-count='1' data-next=''>bunny the bear <small>1 show</small></a><div class='letter'>d</div><a class='actitem' href='b/dopethrone.html' data-name="dopethrone" data-count='1' data-next='2026-09-23'>dopethrone <small>1 show</small></a><div class='letter'>e</div><a class='actitem' href='b/exit-life.html' data-name="exit life" data-count='1' data-next=''>exit life <small>1 show</small></a><a class='actitem' href='b/eyehategod.html' data-name="eyehategod" data-count='1' data-next='2026-09-27'>eyehategod <small>1 show</small></a><div class='letter'>f</div><a class='actitem' href='b/fenix-tx.html' data-name="fenix tx" data-count='1' data-next='2026-10-22'>fenix tx <small>1 show</small></a><a class='actitem' href='b/fister.html' data-name="fister" data-count='1' data-next='2026-09-23'>fister <small>1 show</small></a><div class='letter'>h</div><a class='actitem' href='b/heroes-for-ghosts.html' data-name="heroes for ghosts" data-count='1' data-next='2026-08-15'>heroes for ghosts <small>1 show</small></a><a class='actitem' href='b/high-fade.html' data-name="high fade" data-count='1' data-next='2026-07-21'>high fade <small>1 show</small></a><div class='letter'>i</div><a class='actitem' href='b/in-gloom.html' data-name="in gloom" data-count='1' data-next='2026-07-19'>in gloom <small>1 show</small></a><a class='actitem' href='b/internal-suffering.html' data-name="internal suffering" data-count='1' data-next='2026-07-28'>internal suffering <small>1 show</small></a><div class='letter'>m</div><a class='actitem' href='b/mario-judah.html' data-name="mario judah" data-count='1' data-next=''>mario judah <small>1 show</small></a><a class='actitem' href='b/mc-chris.html' data-name="mc chris" data-count='1' data-next=''>mc chris <small>1 show</small></a><div class='letter'>o</div><a class='actitem' href='b/oolong.html' data-name="oolong" data-count='1' data-next=''>oolong <small>1 show</small></a><div class='letter'>p</div><a class='actitem' href='b/pentagram.html' data-name="pentagram" data-count='1' data-next=''>pentagram <small>1 show</small></a><div class='letter'>r</div><a class='actitem' href='b/ramblin-ricky-tate.html' data-name="ramblin ricky tate" data-count='1' data-next='2026-08-27'>ramblin ricky tate <small>1 show</small></a><div class='letter'>s</div><a class='actitem' href='b/second-place.html' data-name="second place" data-count='1' data-next=''>second place <small>1 show</small></a><a class='actitem' href='b/silent-theory.html' data-name="silent theory" data-count='1' data-next='2026-10-10'>silent theory <small>1 show</small></a><a class='actitem' href='b/spiritless.html' data-name="spiritless" data-count='1' data-next='2026-08-15'>spiritless <small>1 show</small></a><div class='letter'>t</div><a class='actitem' href='b/the-iron-roses.html' data-name="the iron roses" data-count='1' data-next=''>the iron roses <small>1 show</small></a><a class='actitem' href='b/the-soap-girls.html' data-name="the soap girls" data-count='1' data-next='2026-07-05'>the soap girls <small>1 show</small></a><div class='letter'>w</div><a class='actitem' href='b/whisper-party.html' data-name="whisper party" data-count='1' data-next='2026-07-01'>whisper party <small>1 show</small></a><a class='actitem' href='b/whores.html' data-name="whores" data-count='1' data-next='2026-09-27'>whores <small>1 show</small></a></div></div>
+<p class="dirnote">an act in the wrong section, or marked local vs touring wrong? want your listen link up
+(youtube or bandcamp)? <a href="submit.html">send it in</a>. we don't link spotify.</p>
+<p class="spback"><a href="./">&#8592; back to the calendar</a></p>
+</main>
+<footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>
+<script>(function(){
+  function a(el,k){return el.getAttribute(k)||'';}
+  [].slice.call(document.querySelectorAll('.actsec')).forEach(function(sec){
+    var sel=sec.querySelector('.sortsel'), box=sec.querySelector('[data-list]');
+    if(!sel||!box)return;
+    var letters=box.getAttribute('data-letters')==='1';
+    var items=[].slice.call(box.querySelectorAll('.actitem'));
+    function render(mode){
+      [].slice.call(box.querySelectorAll('.letter')).forEach(function(d){d.parentNode.removeChild(d);});
+      var arr=items.slice();
+      if(mode==='most'){
+        arr.sort(function(x,y){return (+a(y,'data-count'))-(+a(x,'data-count'))||a(x,'data-name').localeCompare(a(y,'data-name'));});
+      }else if(mode==='soon'){
+        arr.sort(function(x,y){
+          var p=a(x,'data-next'),q=a(y,'data-next');
+          if(p&&q)return p.localeCompare(q)||a(x,'data-name').localeCompare(a(y,'data-name'));
+          if(p)return -1; if(q)return 1;
+          return a(x,'data-name').localeCompare(a(y,'data-name'));
+        });
+      }else{
+        arr.sort(function(x,y){return a(x,'data-name').localeCompare(a(y,'data-name'));});
+      }
+      arr.forEach(function(el){box.appendChild(el);});
+      if(mode==='alpha'&&letters){
+        var cur=null;
+        arr.forEach(function(el){
+          var L=a(el,'data-name').charAt(0).toUpperCase();
+          if(!/[A-Z]/.test(L))L='#';
+          if(L!==cur){cur=L;var d=document.createElement('div');d.className='letter';d.textContent=L.toLowerCase();box.insertBefore(d,el);}
+        });
+      }
+    }
+    sel.addEventListener('change',function(){render(sel.value);});
+  });
+})();</script>
+</body></html>

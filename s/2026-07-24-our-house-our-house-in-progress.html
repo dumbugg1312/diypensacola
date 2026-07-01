@@ -1,20 +1,20 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Our House (in progress) - DIY art exhibition · FRI JUL 24 @ Our House (912 E Hernandez St) — DIYPensacola</title>
-<meta name="description" content="the undergrowth presents our house (in progress) — a diy art exhibition at our house, 912 e hernandez st. july 24th, 4-9pm. $10 entry, proceeds split with local orgs.">
+<title>Our House (in progress) - DIY art exhibition · FRI JUL 24 @ Our House (912 E Hernandez St) · DIYPensacola</title>
+<meta name="description" content="the undergrowth presents our house (in progress), a diy art exhibition at our house, 912 e hernandez st. july 24th, 4-9pm. $10 entry, proceeds split with local orgs.">
 <meta name="theme-color" content="#0c0c0d">
 <link rel="canonical" href="https://diypensacola.com/s/2026-07-24-our-house-our-house-in-progress.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="DIYPensacola">
-<meta property="og:title" content="Our House (in progress) - DIY art exhibition · FRI JUL 24 @ Our House (912 E Hernandez St) — DIYPensacola">
-<meta property="og:description" content="the undergrowth presents our house (in progress) — a diy art exhibition at our house, 912 e hernandez st. july 24th, 4-9pm. $10 entry, proceeds split with local orgs.">
+<meta property="og:title" content="Our House (in progress) - DIY art exhibition · FRI JUL 24 @ Our House (912 E Hernandez St) · DIYPensacola">
+<meta property="og:description" content="the undergrowth presents our house (in progress), a diy art exhibition at our house, 912 e hernandez st. july 24th, 4-9pm. $10 entry, proceeds split with local orgs.">
 <meta property="og:url" content="https://diypensacola.com/s/2026-07-24-our-house-our-house-in-progress.html">
 <meta property="og:image" content="https://diypensacola.com/flyers/2026-07-24_our-house_our-house-in-progress.jpg">
 <meta property="og:image:alt" content="Our House (in progress) - DIY art exhibition flyer">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Our House (in progress) - DIY art exhibition · FRI JUL 24 @ Our House (912 E Hernandez St) — DIYPensacola">
-<meta name="twitter:description" content="the undergrowth presents our house (in progress) — a diy art exhibition at our house, 912 e hernandez st. july 24th, 4-9pm. $10 entry, proceeds split with local orgs.">
+<meta name="twitter:title" content="Our House (in progress) - DIY art exhibition · FRI JUL 24 @ Our House (912 E Hernandez St) · DIYPensacola">
+<meta name="twitter:description" content="the undergrowth presents our house (in progress), a diy art exhibition at our house, 912 e hernandez st. july 24th, 4-9pm. $10 entry, proceeds split with local orgs.">
 <meta name="twitter:image" content="https://diypensacola.com/flyers/2026-07-24_our-house_our-house-in-progress.jpg">
 <link rel="icon" href="../logo.png">
 <link rel="manifest" href="../manifest.webmanifest">
@@ -31,7 +31,7 @@ body{margin:0;background-color:var(--bg);color:var(--ink);font:16px/1.5 "Special
   background-repeat:no-repeat,repeat}
 a{color:var(--hotink)}
 /* typography polish: balanced heading line-breaks + orphan-free prose. Progressive
-   enhancement — silently ignored where unsupported. */
+   enhancement, silently ignored where unsupported. */
 h1,h2,h3,.ehead{text-wrap:balance}
 .glead,.post p,.dcap,.emptybig p{text-wrap:pretty}
 header{padding:2.2rem 1rem .3rem;text-align:center}
@@ -48,7 +48,15 @@ header h1 a{color:inherit;text-decoration:none}
   border:2px solid #111;box-shadow:3px 3px 0 var(--hot);text-transform:uppercase;letter-spacing:.05em}
 .links a:nth-child(odd){transform:rotate(-1.5deg)}.links a:nth-child(even){transform:rotate(1.2deg)}
 .links a:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
-nav{display:flex;gap:.6rem;justify-content:center;align-items:center;padding:1.2rem 1rem}
+nav{display:flex;gap:.6rem;justify-content:center;align-items:center;padding:1.2rem 1rem;position:relative}
+nav .searchtoggle svg{display:block}
+/* print-scope popover, anchored under the nav's printer icon */
+.pwrap{position:relative;display:flex;flex:none}
+.pmenu{position:absolute;top:calc(100% + 8px);right:0;z-index:48;background:var(--card);
+  border:2px solid var(--hot);box-shadow:6px 6px 0 var(--hot);padding:.7rem;
+  display:flex;flex-direction:column;gap:.5rem;min-width:11.5rem}
+.pmenu[hidden]{display:none}
+.pmenu .dbtn{justify-content:center;white-space:nowrap}
 nav a{background:transparent;color:var(--ink);border:2px dashed var(--dim);padding:.45rem 1.1rem;
   text-decoration:none;text-transform:uppercase;letter-spacing:.08em;font-size:.9rem}
 nav a:hover{border-color:var(--hot);color:var(--hot)}
@@ -110,7 +118,7 @@ body:has(#grid:target) a[href='#grid'],body:has(#archive:target) a[href='#archiv
 #b-tonight .show{box-shadow:6px 6px 0 var(--hot)}
 /* tonight cards already wear the hot shadow at rest, so they need their own
    hover/focus state (higher specificity than the base rule) to still signal
-   they're clickable — otherwise hovering them does nothing. */
+   they're clickable, otherwise hovering them does nothing. */
 #b-tonight .show:hover,#b-tonight .show:focus{box-shadow:10px 10px 0 var(--hot);transform:translate(-3px,-3px)}
 .stamp{position:absolute;font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;font-size:.68rem;
   letter-spacing:.05em;padding:.1rem .38rem;border:2px solid currentColor;background:var(--scrim);line-height:1;pointer-events:none;text-shadow:0 1px 2px #000}
@@ -149,7 +157,7 @@ body:has(#grid:target) a[href='#grid'],body:has(#archive:target) a[href='#archiv
 .empty{color:var(--dim);text-align:center}
 .emptyline{margin:0 0 .9rem}
 /* first-use / no-shows state: a dashed-card onboarding moment in the zine
-   vocabulary — Anton head, typewriter body, tape-button CTAs. Not a SaaS blank. */
+   vocabulary, Anton head, typewriter body, tape-button CTAs. Not a SaaS blank. */
 .emptybig{max-width:520px;margin:2.4rem auto;padding:1.7rem 1.4rem;border:2px dashed var(--line);background:var(--card)}
 .emptybig .ehead{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
   font-size:1.45rem;letter-spacing:.02em;color:var(--ink);margin:0 0 .7rem}
@@ -185,7 +193,7 @@ footer b{color:var(--hot)}
 html{scroll-behavior:smooth}
 body{overflow-x:clip}
 a,button,.show,.cf,.vchip,.athumb{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
-/* tactile press feedback — invisible at rest, so the static look is unchanged */
+/* tactile press feedback, invisible at rest, so the static look is unchanged */
 .links a:active,.dbtn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--hot)}
 nav a:active,.vchip:active,.searchtoggle:active{transform:scale(.95)}
 .show:active{box-shadow:3px 3px 0 var(--hot);transform:translate(2px,2px)}
@@ -197,7 +205,7 @@ main section:target{animation:viewin .26s ease both}
 @keyframes lbin{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:none}}
 @keyframes sheetup{from{transform:translateY(100%)}to{transform:translateY(0)}}
 
-/* back-to-top — a tilted tape button that fades in once you've scrolled down.
+/* back-to-top, a tilted tape button that fades in once you've scrolled down.
    z-index sits below the modals (detail 55 / lightbox 60) so it hides behind an open modal. */
 .totop{position:fixed;right:1.2rem;bottom:1.2rem;z-index:45;width:3rem;height:3rem;
   display:flex;align-items:center;justify-content:center;cursor:pointer;
@@ -261,7 +269,7 @@ main section:target{animation:viewin .26s ease both}
   #calgrid{display:none}#agenda{display:block}
   .totop{display:none}  /* the sticky nav already covers this on phones */
 
-  /* header: tighter so shows are reachable sooner — same big punk type */
+  /* header: tighter so shows are reachable sooner, same big punk type */
   header{padding:1.5rem 1rem .2rem}
   header .logo{width:126px;height:126px;margin-bottom:.5rem}
   h1{font-size:clamp(2.2rem,11.5vw,3.05rem)}  /* fits "DIYPENSACOLA" (12ch, 7.23em wide) on phones down to 320px */
@@ -270,7 +278,7 @@ main section:target{animation:viewin .26s ease both}
   .links{gap:.5rem;padding:.7rem .85rem .15rem}
   .links a{font-size:.8rem;padding:.55rem .9rem}
 
-  /* sticky segmented view-switcher — always one tap away */
+  /* sticky segmented view-switcher, always one tap away */
   /* sticks below the install banner when it's up: --a2hs-h (set by JS to the
      banner's height, else 0) keeps the view-switcher from hiding behind it. */
   nav{position:sticky;top:var(--a2hs-h,0px);z-index:40;gap:.5rem;margin-bottom:.2rem;
@@ -310,6 +318,10 @@ main section:target{animation:viewin .26s ease both}
   .lb img#lbimg{max-height:84vh}
 
   footer{padding:2rem 1rem calc(2rem + env(safe-area-inset-bottom))}
+
+  /* the photocopy poster is a desktop ritual; on phones the nav space is scarcer
+     than the feature is useful, so the print button sits this one out. */
+  .pwrap{display:none}
 }
 
 @media (prefers-reduced-motion:reduce){
@@ -352,7 +364,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   transform:none;text-shadow:none}
 .spback{text-align:center;margin:1.7rem 0 .5rem}
 .spback a{text-decoration:none}
-/* ---------- showgoer guide (site/guide.html) — blog-post layout ---------- */
+/* ---------- showgoer guide (site/guide.html), blog-post layout ---------- */
 .guide{max-width:680px}
 .guide h1{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
   font-size:clamp(2rem,8vw,3rem);line-height:1.08;letter-spacing:.01em;margin:.4rem 0 .95rem;
@@ -366,6 +378,136 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .post em{font-style:italic;color:var(--ink)}
 .post strong{color:var(--ink)}
 @media (max-width:640px){.showpage header{text-align:center}.spflyer{width:100%}.spcard{padding:1rem}}
+
+/* ---------- flyer wall: the telephone-pole view of the upcoming feed ----------
+   Toggleable; the list stays the default. Cards become layered posters: full-width
+   flyer, slight alternating rotations, a tape strip across the top corner, and a
+   caption strip underneath. Same DOM, same click-to-open detail. */
+#list.wall .cards{display:block;column-count:3;column-gap:1.2rem}
+#list.wall .bucket{max-width:880px}
+#list.wall .show{display:block;padding:0;background:transparent;border:none;box-shadow:none;
+  break-inside:avoid;margin:0 0 1.5rem;position:relative}
+#list.wall .show:nth-child(3n+1){transform:rotate(-1.6deg)}
+#list.wall .show:nth-child(3n+2){transform:rotate(1.2deg)}
+#list.wall .show:nth-child(3n){transform:rotate(-.5deg)}
+#list.wall .show:hover,#list.wall .show:focus{transform:rotate(0) scale(1.02);box-shadow:none;z-index:2}
+/* the tape sits ON the poster's top edge (like tape actually holding it up), so
+   it can never float loose in the gap between two stacked posters. */
+#list.wall .thumbwrap::before{content:"";position:absolute;top:2px;left:50%;transform:translateX(-50%) rotate(-2deg);
+  width:64px;height:18px;background:var(--tape);opacity:.8;z-index:3;box-shadow:0 1px 2px rgba(0,0,0,.4)}
+#list.wall .show img.thumb{width:100%;height:auto;max-height:none;border:3px solid var(--ink);
+  box-shadow:6px 6px 0 var(--shadow);background:#000}
+#list.wall .show img.thumb.ph{padding:1.4rem;opacity:.75}
+#list.wall .info{background:var(--card);border:1px solid var(--line);border-top:none;padding:.5rem .7rem .6rem;
+  margin:0 3px;box-shadow:6px 6px 0 var(--shadow)}
+#list.wall .show h3{font-size:1rem}
+/* tonight stays the same poster size as everything else (a blown-up flyer reads
+   badly); it's marked instead by the hot border + tape, and the TONIGHT header. */
+#list.wall #b-tonight .show img.thumb{transform:none;border-color:var(--hot);box-shadow:6px 6px 0 var(--hot)}
+#list.wall #b-tonight .show h3{font-size:1rem}
+#list.wall #b-tonight .thumbwrap::before{background:var(--hot)}
+@media (max-width:900px){#list.wall .cards{column-count:2}}
+@media (max-width:560px){#list.wall .cards{column-count:1}}
+
+/* ---------- print poster: "print this week" photocopy handout ---------- */
+.printhead{display:none}
+@media print{
+  body{background:#fff;color:#000;font:12pt/1.4 "Courier New",monospace}
+  header,.links,nav,.controls,#grid,#archive,.endtip,footer,.totop,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming{display:none!important}
+  main:not(:has(section:target)) #list{display:block}
+  main section{display:none!important}
+  main section#list{display:block!important}
+  .printhead{display:block;text-align:center;border-bottom:4px solid #000;margin-bottom:1rem;padding-bottom:.5rem}
+  .printhead .pt{font-size:26pt;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+  .printhead .ps{font-size:11pt;margin-top:.2rem}
+  .bhead{color:#000;border-bottom:2px dashed #000;font-size:15pt}
+  .bhead::after{display:none}
+  .ht{display:none}
+  .bucket{max-width:none}
+  .show{background:#fff;border:2px solid #000;box-shadow:none;color:#000;break-inside:avoid;padding:.5rem}
+  .show img.thumb{filter:grayscale(1) contrast(1.15);border-color:#000}
+  .date{color:#000}
+  .meta{color:#222}
+  .stamp{background:#fff;text-shadow:none}
+  .thumbwrap::before{display:none}   /* screen-only tape */
+  .bnone{display:none!important}     /* quiet-night line is screen-only */
+  body.printweek .show:not(.pw){display:none!important}
+  body.printweek .bucket:not(.pw-has){display:none!important}
+}
+
+/* ---------- band-page quick hits under the search box ---------- */
+#bandhits{margin-top:.45rem}
+#bandhits a{display:inline-block;font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
+  border:2px dashed var(--dim);padding:.35rem .6rem;margin:0 .35rem .35rem 0;text-transform:lowercase}
+#bandhits a:hover{border-color:var(--hot);color:var(--hot)}
+#bandhits a small{color:var(--dim)}
+
+/* ---------- band + venue pages (script-free, reuse zine tokens) ---------- */
+.dirwrap{max-width:760px}
+.dirhead{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  font-size:clamp(1.9rem,7vw,2.7rem);line-height:1.06;letter-spacing:.01em;margin:.4rem 0 .4rem;
+  text-shadow:3px 3px 0 var(--hot);transform:none}
+.dirsub{color:var(--dim);margin:0 0 1.4rem;font-size:.92rem;line-height:1.6}
+.dirsec{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.03em;
+  font-size:1.25rem;margin:1.8rem 0 .7rem;color:var(--hotink)}
+.actsec>.dirsec{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
+.sortsel{margin-left:auto;background:var(--card);color:var(--ink);border:2px dashed var(--dim);
+  font:.72rem/1.2 "Special Elite","Courier New",monospace;text-transform:uppercase;letter-spacing:.04em;
+  padding:.35rem 1.4rem .35rem .5rem;cursor:pointer;-webkit-appearance:none;appearance:none;
+  background-image:linear-gradient(45deg,transparent 50%,var(--dim) 50%),linear-gradient(135deg,var(--dim) 50%,transparent 50%);
+  background-position:calc(100% - .55rem) center,calc(100% - .35rem) center;background-size:.3rem .3rem,.3rem .3rem;background-repeat:no-repeat}
+.sortsel:hover{border-color:var(--hot);color:var(--hot)}
+.sortsel:focus{outline:none;border-color:var(--hot)}
+.dirlist{list-style:none;padding:0;margin:0}
+.dirlist li{display:flex;gap:.7rem;align-items:baseline;padding:.45rem 0;border-bottom:1px dashed var(--line);font-size:.95rem;flex-wrap:wrap}
+.dirlist .date{width:6.6rem;flex:none}
+.dirlist a{text-decoration:none}
+.dirlist a:hover{text-decoration:underline}
+.dirlist .meta{color:var(--dim);font-size:.85rem}
+.bandindex{columns:2;column-gap:2rem;max-width:760px}
+@media (max-width:560px){.bandindex{columns:1}}
+.bandindex a{display:block;padding:.32rem 0;border-bottom:1px dashed var(--line);text-decoration:none;color:var(--ink);break-inside:avoid}
+.bandindex a:hover{color:var(--hot)}
+.bandindex a small{color:var(--dim)}
+.bandindex .letter{font-family:"Rock Salt",cursive;color:var(--hotink);margin:1.1rem 0 .3rem;font-size:1.05rem;break-after:avoid}
+.dirnote{color:var(--dim);font-size:.85rem;border:2px dashed var(--line);background:var(--card);padding:.8rem 1rem;margin:1.6rem 0 0;line-height:1.6}
+/* instagram-style flyer grid on band/act pages */
+.flyergrid{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin:.4rem 0 .5rem}
+@media (min-width:560px){.flyergrid{grid-template-columns:repeat(4,1fr);gap:7px}}
+.fgtile{position:relative;display:block;aspect-ratio:1/1;overflow:hidden;background:#000;
+  border:2px solid var(--ink);box-shadow:3px 3px 0 var(--shadow);text-decoration:none}
+.fgtile img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .22s ease}
+.fgtile:hover img,.fgtile:focus img{transform:scale(1.07)}
+.fgtile:hover,.fgtile:focus{box-shadow:3px 3px 0 var(--hot);outline:none}
+.fgcap{position:absolute;left:0;right:0;bottom:0;font-family:"Special Elite","Courier New",monospace;
+  font-size:.6rem;letter-spacing:.03em;color:var(--ink);text-transform:uppercase;
+  background:linear-gradient(transparent,rgba(0,0,0,.85));padding:1.1rem .4rem .35rem;
+  opacity:0;transition:opacity .2s}
+.fgtile:hover .fgcap,.fgtile:focus .fgcap{opacity:1}
+
+/* ---------- zine polish: date stamp, venue links, act chips, list tape ---------- */
+/* the header's build date as an ink date stamp instead of dim inline text */
+.upstamp{display:inline-block;border:2px solid var(--hotink);color:var(--hotink);padding:.06rem .45rem;
+  transform:rotate(-2deg);text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;margin-left:.2rem}
+/* venue names in card/list meta link to their venue page */
+.meta a.vlink{color:inherit;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:2px}
+.meta a.vlink:hover{color:var(--hot)}
+/* quiet-night line under the TONIGHT header (shown only when nothing's on today) */
+.bnone{color:var(--dim);margin:.1rem 0 0;font-size:.95rem}
+.bnone a{color:var(--hotink)}
+/* act chips: each lineup name links to its band page (detail modal + show pages) */
+.actchips{display:flex;flex-wrap:wrap;gap:.35rem;margin:.1rem 0 .55rem}
+.actchips a{font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
+  border:2px dashed var(--dim);padding:.3rem .55rem;text-transform:lowercase}
+.actchips a:hover{border-color:var(--hot);color:var(--hot)}
+/* a little tape holding each list-card flyer down, echoes the wall view's tape
+   without changing the card layout. Wall view keeps its own bigger strip. */
+#list:not(.wall) .thumbwrap::before{content:"";position:absolute;top:-5px;left:50%;
+  transform:translateX(-50%) rotate(-4deg);width:38px;height:11px;background:var(--tape);
+  opacity:.5;z-index:2;box-shadow:0 1px 2px rgba(0,0,0,.35);pointer-events:none}
+/* a lone poster in a wall bucket centers instead of hugging the left column
+   ("no two non-past cards in this bucket"; active filters are a rare, benign miss) */
+#list.wall .cards:not(:has(.show:not(.past) ~ .show:not(.past))){column-count:1;max-width:430px;margin:0 auto}
 </style></head><body class="showpage">
 <header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a></header>
 <main class="spwrap">
@@ -374,8 +516,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 <div class="spinfo">
 <div class="date">FRI JUL 24</div>
 <h1>Our House (in progress) - DIY art exhibition</h1>
-<div class="drow">Our House (912 E Hernandez St)</div><div class="drow dbenefit">&#9733; benefit show</div><div class="drow">4-9pm</div><div class="drow">$10</div><p class="dcap">the undergrowth presents our house (in progress) — a diy art exhibition at our house, 912 e hernandez st. july 24th, 4-9pm. $10 entry, proceeds split with local orgs.</p>
-<div class="dactions"><a class="dbtn" href="https://www.google.com/maps/search/?api=1&amp;query=Our%20House%20%28912%20E%20Hernandez%20St%29%20Pensacola%20FL" target="_blank" rel="noopener">open in maps</a><a class="dbtn" href="../">all shows &#8599;</a></div>
+<div class="actchips"><a href="../b/our-house-in-progress-diy-art-exhibition.html">our house (in progress) - diy art exhibition</a></div>
+<div class="drow"><a href="../v/our-house.html">Our House (912 E Hernandez St)</a></div><div class="drow dbenefit">&#9733; benefit show</div><div class="drow">4-9pm</div><div class="drow">$10</div><p class="dcap">the undergrowth presents our house (in progress), a diy art exhibition at our house, 912 e hernandez st. july 24th, 4-9pm. $10 entry, proceeds split with local orgs.</p>
+<div class="dactions"><a class="dbtn" href="https://www.google.com/maps/search/?api=1&amp;query=Our%20House%20%28912%20E%20Hernandez%20St%29%20Pensacola%20FL" target="_blank" rel="noopener">open in maps</a><a class="dbtn" href="2026-07-24-our-house-our-house-in-progress.ics" download>add to calendar</a><a class="dbtn" href="../">all shows &#8599;</a></div>
 </div>
 </article>
 <p class="spback"><a href="../">&#8592; back to the full punksacola calendar</a></p>
