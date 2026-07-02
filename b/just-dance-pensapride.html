@@ -34,6 +34,10 @@ header .logo.tr{transform:rotate(6deg) scale(1.04)}
 h1{margin:0;font-family:"Special Elite","Courier New",monospace;font-weight:400;font-size:clamp(2.4rem,11vw,4.4rem);letter-spacing:.02em;
   text-transform:uppercase;transform:rotate(-2deg);text-shadow:4px 4px 0 var(--hot)}
 header .tag{color:var(--dim);margin:.7rem 0 0;font-size:.95rem}
+/* one-line mission subtitle: reads as "what is this?" for a first-time visitor
+   and carries the real search terms (alt scene / genres / house + all-ages) in
+   crawlable body text, which ranks far harder than any meta tag */
+header .lede{color:var(--dim);max-width:54ch;margin:.5rem auto 0;font-size:.82rem;line-height:1.5}
 header h1 a{color:inherit;text-decoration:none}
 .homelink{display:block;text-decoration:none}
 .links{display:flex;flex-wrap:wrap;gap:1rem .6rem;justify-content:center;max-width:680px;margin:0 auto;padding:.8rem 1rem .2rem}
@@ -145,8 +149,12 @@ body:has(#grid:target) a[href='#grid'],body:has(#archive:target) a[href='#archiv
 .arch li{display:flex;gap:.7rem;align-items:center;padding:.5rem 0;border-bottom:1px dashed var(--line)}
 .athumb{width:52px;height:65px;object-fit:cover;border:1px solid var(--ink);flex:none;cursor:pointer;background:#000}
 .athumb.ph{object-fit:contain;padding:3px;filter:opacity(.55);cursor:default}
-.arch .date{display:inline-block;width:4.2rem}
-.al strong{font-weight:400}
+/* stack date / lineup / meta as their own lines; a fixed-width inline date
+   wraps inside itself on phones and the whole row runs together. */
+.al{min-width:0}
+.arch .date{display:block}
+.al strong{display:block;font-weight:400;margin:.1rem 0}
+.al .meta{display:block}
 .empty{color:var(--dim);text-align:center}
 .emptyline{margin:0 0 .9rem}
 /* first-use / no-shows state: a dashed-card onboarding moment in the zine
@@ -463,6 +471,42 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .dirlist a{text-decoration:none}
 .dirlist a:hover{text-decoration:underline}
 .dirlist .meta{color:var(--dim);font-size:.85rem}
+/* act dossier masthead: the band page opens like the act's file in the scene's
+   records. Tilted Anton name + a rotated inked stamp (local / on tour), the
+   show count as hand tally marks, the next gig as a cassette-tape banner, and
+   the venues they've hit as stamped chips linking to venue pages. All static,
+   script-free, and built from the same zine tokens as the rest of the site. */
+.actmast{display:flex;align-items:baseline;gap:.85rem;flex-wrap:wrap}
+.actmast .dirhead{transform:rotate(-1deg);margin-bottom:.15rem}
+.ostamp{font:.7rem/1.2 "Special Elite","Courier New",monospace;text-transform:uppercase;letter-spacing:.07em;
+  border:2px solid currentColor;padding:.24rem .55rem;background:var(--scrim);white-space:nowrap;
+  color:var(--hotink);transform:rotate(5deg);align-self:center}
+.ostamp.tour{color:var(--dim);transform:rotate(-4deg)}
+.tallyrow{display:flex;align-items:center;column-gap:.8rem;row-gap:.3rem;flex-wrap:wrap;margin:.55rem 0 .2rem}
+.tallyrow .marks{display:inline-flex;gap:.55rem;flex-wrap:wrap}
+.tgrp{display:inline-flex;gap:6px;position:relative;height:1.3rem;align-self:center}
+.tgrp i{width:4px;background:var(--ink);transform:rotate(2.5deg)}
+.tgrp i:nth-child(even){transform:rotate(-1.5deg)}
+.tgrp .x{position:absolute;left:-4px;right:-4px;top:45%;height:3px;width:auto;background:var(--hotink);
+  transform:rotate(-22deg);transform-origin:center}
+.tcap{color:var(--dim);font-size:.85rem}
+.tcap b{color:var(--ink);font-weight:400}
+.nextgig{display:inline-flex;align-items:baseline;gap:.55rem;background:var(--tape);color:#111;border:2px solid #111;
+  box-shadow:4px 4px 0 var(--hot);padding:.55rem .95rem;margin:.9rem 0 .3rem;text-decoration:none;
+  font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.04em;font-size:1.08rem;
+  transform:rotate(-1deg);transition:background .12s ease,color .12s ease,box-shadow .12s ease}
+.nextgig small{font-family:"Special Elite","Courier New",monospace;font-size:.68rem;letter-spacing:.08em}
+.nextgig:hover{background:var(--hot);color:var(--on-hot);box-shadow:4px 4px 0 var(--tape)}
+.nextgig:active{transform:rotate(-1deg) translate(2px,2px);box-shadow:1px 1px 0 var(--hot)}
+.nextgig:focus-visible{outline:3px solid var(--tape);outline-offset:2px}
+@media (max-width:560px){.nextgig{display:flex;justify-content:center;text-align:center;flex-wrap:wrap}}
+.vstamps{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:.9rem 0 .2rem}
+.vstamps .lead{color:var(--dim);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em}
+.vstamps a{font:.76rem/1.2 "Special Elite","Courier New",monospace;text-transform:lowercase;color:var(--ink);
+  text-decoration:none;border:2px dashed var(--line);padding:.32rem .6rem;background:var(--card)}
+.vstamps a:nth-child(even){transform:rotate(1.3deg)}
+.vstamps a:nth-child(odd){transform:rotate(-1.2deg)}
+.vstamps a:hover,.vstamps a:focus-visible{border-color:var(--hot);border-style:solid;color:var(--hotink)}
 .bandindex{columns:2;column-gap:2rem;max-width:760px}
 @media (max-width:560px){.bandindex{columns:1}}
 .bandindex a{display:block;padding:.32rem 0;border-bottom:1px dashed var(--line);text-decoration:none;color:var(--ink);break-inside:avoid}
@@ -483,6 +527,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   background:linear-gradient(transparent,rgba(0,0,0,.85));padding:1.1rem .4rem .35rem;
   opacity:0;transition:opacity .2s}
 .fgtile:hover .fgcap,.fgtile:focus .fgcap{opacity:1}
+/* youtube embeds on band/act pages (curated in band-videos.json at the root) */
+.ytgrid{display:grid;grid-template-columns:1fr;gap:.7rem;margin:.4rem 0 .5rem}
+@media (min-width:700px){.ytgrid{grid-template-columns:repeat(2,1fr)}}
+.ytwrap{position:relative;aspect-ratio:16/9;background:#000;border:2px solid var(--ink);box-shadow:3px 3px 0 var(--shadow)}
+.ytwrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 
 /* ---------- zine polish: date stamp, venue links, act chips, list tape ---------- */
 /* the header's build date as an ink date stamp instead of dim inline text */
@@ -510,11 +559,14 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 </style></head><body class="showpage">
 <header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a></header>
 <main class="spwrap dirwrap">
-<h1 class="dirhead">Just Dance Pensapride</h1>
-<p class="dirsub">recurring night / happening · 1 happening on the diypensacola record since 2026 · betty&#39;s</p>
+<div class="actmast"><h1 class="dirhead">Just Dance Pensapride</h1></div>
+<p class='dirsub'>recurring night / happening</p>
+<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i></span></span><span class='tcap'><b>1</b> happening on the diypensacola record since 2026</span></div>
+
+<div class='vstamps'><span class='lead'>stamped at</span><a href='../v/bettys.html'>betty&#39;s</a></div>
 
 <h2 class='dirsec'>flyers</h2><div class='flyergrid'><a class='fgtile' href='../flyers/flyer_2026-06-13_bettys_just-dance-pensapride.jpg' target='_blank' rel='noopener' title='Jun 13, 2026'><img loading='lazy' src='../flyers/thumbs/flyer_2026-06-13_bettys_just-dance-pensapride.webp' alt='flyer, Jun 13, 2026'><span class='fgcap'>Jun 13, 2026</span></a></div><h2 class='dirsec'>past happenings</h2><ul class='dirlist'><li><span class='date'>Jun 13 2026</span> <strong>Just Dance Pensapride</strong> <span class='meta'>Betty&#39;s</span></li></ul>
-<p class="dirnote">this page tracks a night, series, or happening from the show archive. wrong or missing info? <a href='../submit.html'>send it in</a>.</p>
+<p class="dirnote">this page tracks a night, series, or happening from the show archive. it's put together automatically from flyers and listings, so a name or detail might be off, no disrespect meant. wrong or missing info? <a href='../submit.html'>send it in</a>.</p>
 <p class="spback"><a href="../bands.html">&#8592; the scene index</a> · <a href="../">calendar</a></p>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>
