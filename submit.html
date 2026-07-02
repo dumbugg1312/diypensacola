@@ -415,9 +415,15 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   main:not(:has(section:target)) #list{display:block}
   main section{display:none!important}
   main section#list{display:block!important}
-  .printhead{display:block;text-align:center;border-bottom:4px solid #000;margin-bottom:1rem;padding-bottom:.5rem}
-  .printhead .pt{font-size:26pt;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
-  .printhead .ps{font-size:11pt;margin-top:.2rem}
+  /* masthead is a 3-column grid (empty gutter · centered title · QR) so the QR
+     is real layout, not an overlay, and the bottom rule always clears it */
+  .printhead{display:grid;grid-template-columns:.95in 1fr .95in;column-gap:.12in;align-items:start;text-align:center;border-bottom:4px solid #000;margin-bottom:1rem;padding-bottom:.5rem}
+  .printhead .pt{grid-column:2;font-size:26pt;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+  .printhead .ps{grid-column:2;font-size:11pt;margin-top:.2rem}
+  /* QR back to the site: paper on a pole should route people to the calendar */
+  .pqr{grid-column:3;grid-row:1/span 2;justify-self:end}
+  .pqr img{display:block;width:.78in;height:.78in;margin:0 auto}
+  .pqr small{display:block;font-size:6.5pt;letter-spacing:.08em;text-transform:uppercase;margin-top:.03in;text-align:center}
   .bhead{color:#000;border-bottom:2px dashed #000;font-size:15pt}
   .bhead::after{display:none}
   .ht{display:none}

@@ -410,9 +410,15 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   main:not(:has(section:target)) #list{display:block}
   main section{display:none!important}
   main section#list{display:block!important}
-  .printhead{display:block;text-align:center;border-bottom:4px solid #000;margin-bottom:1rem;padding-bottom:.5rem}
-  .printhead .pt{font-size:26pt;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
-  .printhead .ps{font-size:11pt;margin-top:.2rem}
+  /* masthead is a 3-column grid (empty gutter · centered title · QR) so the QR
+     is real layout, not an overlay, and the bottom rule always clears it */
+  .printhead{display:grid;grid-template-columns:.95in 1fr .95in;column-gap:.12in;align-items:start;text-align:center;border-bottom:4px solid #000;margin-bottom:1rem;padding-bottom:.5rem}
+  .printhead .pt{grid-column:2;font-size:26pt;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+  .printhead .ps{grid-column:2;font-size:11pt;margin-top:.2rem}
+  /* QR back to the site: paper on a pole should route people to the calendar */
+  .pqr{grid-column:3;grid-row:1/span 2;justify-self:end}
+  .pqr img{display:block;width:.78in;height:.78in;margin:0 auto}
+  .pqr small{display:block;font-size:6.5pt;letter-spacing:.08em;text-transform:uppercase;margin-top:.03in;text-align:center}
   .bhead{color:#000;border-bottom:2px dashed #000;font-size:15pt}
   .bhead::after{display:none}
   .ht{display:none}
@@ -505,9 +511,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 <header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a></header>
 <main class="spwrap dirwrap">
 <h1 class="dirhead">Exformation</h1>
-<p class="dirsub">1 show on the diypensacola record since 2026 · unconfirmed</p>
+<p class="dirsub">2 shows on the diypensacola record since 2026 · the handlebar, unconfirmed</p>
 
-<h2 class='dirsec'>flyers</h2><div class='flyergrid'><a class='fgtile' href='../flyers/flyer_2026-06-18_unconfirmed_nights-of-malice.jpg' target='_blank' rel='noopener' title='Jun 18, 2026'><img loading='lazy' src='../flyers/thumbs/flyer_2026-06-18_unconfirmed_nights-of-malice.webp' alt='flyer, Jun 18, 2026'><span class='fgcap'>Jun 18, 2026</span></a></div><h2 class='dirsec'>past shows</h2><ul class='dirlist'><li><span class='date'>Jun 18 2026</span> <strong>Nights Of Malice, My Own Will, Hemlock, Exformation</strong> <span class='meta'>UNCONFIRMED</span></li></ul>
+<h2 class='dirsec'>flyers</h2><div class='flyergrid'><a class='fgtile' href='../s/2026-07-24-handlebar-obituary-modown.html' title='Jul 24, 2026'><img loading='lazy' src='../flyers/thumbs/2026-07-24_handlebar_obituary.webp' alt='flyer, Jul 24, 2026'><span class='fgcap'>Jul 24, 2026</span></a><a class='fgtile' href='../flyers/flyer_2026-06-18_unconfirmed_nights-of-malice.jpg' target='_blank' rel='noopener' title='Jun 18, 2026'><img loading='lazy' src='../flyers/thumbs/flyer_2026-06-18_unconfirmed_nights-of-malice.webp' alt='flyer, Jun 18, 2026'><span class='fgcap'>Jun 18, 2026</span></a></div><h2 class='dirsec'>upcoming</h2><ul class='dirlist'><li><span class='date'>Jul 24 2026</span> <a href='../s/2026-07-24-handlebar-obituary-modown.html'><strong>Obituary, Modown, Exformation, D.R.E.A.D.</strong></a> <span class='meta'>The Handlebar</span></li></ul><h2 class='dirsec'>past shows</h2><ul class='dirlist'><li><span class='date'>Jun 18 2026</span> <strong>Nights Of Malice, My Own Will, Hemlock, Exformation</strong> <span class='meta'>UNCONFIRMED</span></li></ul>
 <p class="dirnote">act pages are built from the show archive. wrong type, wrong local/touring call, or want a listen link added (youtube or bandcamp)? <a href='../submit.html'>send it in</a>.</p>
 <p class="spback"><a href="../bands.html">&#8592; the scene index</a> · <a href="../">calendar</a></p>
 </main>
