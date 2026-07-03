@@ -85,6 +85,14 @@ DESCRIPTION:just-opposed zine release party at 309 punk project. friday july 10t
 LOCATION:309 Punk Project
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-07-11-bettys-pensacola-comedy-club@diypensacola
+DTSTART;TZID=America/Chicago:20260711T200000
+DTEND;TZID=America/Chicago:20260711T230000
+SUMMARY:Pensacola Comedy Club @ Betty's
+DESCRIPTION:pensacola comedy club opening night at betty's on belmont\, saturday july 11. two shows at 8 and 9:30. $10.
+LOCATION:Betty's
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-07-12-309-woody-guthrie-gathering@diypensacola
 DTSTART;TZID=America/Chicago:20260712T173000
 DTEND;TZID=America/Chicago:20260712T203000
@@ -131,6 +139,14 @@ DTEND;TZID=America/Chicago:20260719T220000
 SUMMARY:In Gloom\, Innerwounds\, Fire Came Disparity\, Wraithbearer @ The Handlebar
 DESCRIPTION:in gloom\, innerwounds\, with fire came disparity\, wraithbearer at the handlebar. sun jul 19\, doors 7 / music 8\, all ages. $10 adv / $15 door.
 LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-19-vinyl-music-hall-accursed-creator-rotted-remains@diypensacola
+DTSTART;TZID=America/Chicago:20260719T153000
+DTEND;TZID=America/Chicago:20260719T183000
+SUMMARY:Accursed Creator\, Rotted Remains\, Serrated FL\, Stress Wound\, Basilissa\, Pierce @ Vinyl Music Hall
+DESCRIPTION:accursed creator\, rotted remains\, serrated fl\, stress wound\, basilissa\, and pierce at vinyl music hall\, saturday july 19. doors 3:30\, show at 5. $10 suggested donation\, remembering nate flores.
+LOCATION:Vinyl Music Hall
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-07-21-handlebar-high-fade@diypensacola
