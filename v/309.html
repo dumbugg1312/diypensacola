@@ -10,8 +10,8 @@
 <meta property="og:title" content="309 · shows · DIYPensacola">
 <meta property="og:description" content="DIY and punk shows at 309 in Pensacola, FL: what&#39;s coming up and everything that&#39;s happened there.">
 <meta property="og:url" content="https://diypensacola.com/v/309.html">
-<meta property="og:image" content="https://diypensacola.com/logo.png">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://diypensacola.com/flyers/flyer_2026-07-04_309_maggot-sandwich.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="../logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -438,6 +438,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   .stamp{background:#fff;text-shadow:none}
   .thumbwrap::before{display:none}   /* screen-only tape */
   .bnone{display:none!important}     /* quiet-night line is screen-only */
+  /* the ticket-stub tonight header prints as plain ink */
+  #b-tonight .bhead{background:#fff;box-shadow:none;border:2px solid #000;color:#000;transform:none}
+  #list:not(.wall) .show img.thumb:not(.ph){filter:grayscale(1) contrast(1.15)}
+  .doorsin{display:none}
   body.printweek .show:not(.pw){display:none!important}
   body.printweek .bucket:not(.pw-has){display:none!important}
 }
@@ -618,13 +622,68 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 /* a lone poster in a wall bucket centers instead of hugging the left column
    ("no two non-past cards in this bucket"; active filters are a rare, benign miss) */
 #list.wall .cards:not(:has(.show:not(.past) ~ .show:not(.past))){column-count:1;max-width:430px;margin:0 auto}
+
+/* ---------- round 2: site-wide zine polish ---------- */
+/* tape-label subnav: every subpage carries the strip so nothing dead-ends */
+.showpage header{display:flex;align-items:center;justify-content:space-between;gap:.9rem 1.2rem;flex-wrap:wrap}
+.subnav{display:flex;gap:.55rem;flex-wrap:wrap}
+.subnav a{font-size:.72rem;text-decoration:none;color:#111;background:var(--tape);padding:.32rem .62rem;
+  border:2px solid #111;box-shadow:2px 2px 0 var(--hot);text-transform:uppercase;letter-spacing:.06em}
+.subnav a:nth-child(odd){transform:rotate(-1.6deg)}
+.subnav a:nth-child(even){transform:rotate(1.3deg)}
+.subnav a:hover{background:var(--hot);color:var(--on-hot);box-shadow:2px 2px 0 var(--tape)}
+.subnav a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 var(--hot)}
+@media (max-width:640px){.showpage header{justify-content:center;text-align:center}}
+/* halftone rest state on feed thumbs: inks wildly different flyer art into one
+   wall; the full-color art is a hover (or the open card) away */
+#list:not(.wall) .show img.thumb:not(.ph){transition:filter .18s ease;
+  filter:grayscale(.45) sepia(.22) hue-rotate(28deg) saturate(.75) contrast(1.05)}
+#list:not(.wall) .show:hover img.thumb,#list:not(.wall) .show:focus img.thumb{filter:none}
+/* tonight reads as a torn ticket stub: bone header + doors countdown */
+#b-tonight .bhead{color:#111;background:var(--tape);border:2px solid #111;box-shadow:5px 5px 0 var(--hot);
+  display:inline-flex;padding:.34rem .9rem .34rem .7rem;transform:rotate(-1.2deg);gap:.65rem}
+#b-tonight .bhead::after{content:"admit all";flex:none;border-top:none;border-left:2px dashed #111;
+  padding-left:.65rem;font-family:"Special Elite","Courier New",monospace;font-size:.6em;
+  letter-spacing:.14em;align-self:center;color:#26260f}
+#b-tonight .ht{background-image:radial-gradient(#111 30%,transparent 32%)}
+.doorsin{color:var(--age);white-space:nowrap}
+/* quiet-night stamp under the tonight header */
+.nstamp{--rot:-2deg;display:inline-block;border:2px solid var(--dim);color:var(--dim);padding:.16rem .55rem;
+  text-transform:uppercase;letter-spacing:.09em;font-size:.8rem;margin-right:.4rem;transform:rotate(-2deg)}
+/* pull-off tab fringe along the bottom of wall-view posters (one tab gone) */
+#list.wall .info::after{content:"";display:block;height:13px;margin:.5rem -.7rem -.6rem;
+  background:linear-gradient(var(--bg),var(--bg)) 62% 0/20px 100% no-repeat,
+  repeating-linear-gradient(90deg,var(--card) 0 19px,var(--bg) 19px 21px)}
+/* calendar: show days get circled by hand instead of boxed hot */
+.cal td.has{border:1px dashed var(--line)}
+.cal td.has .dnum{position:relative;display:inline-block;color:var(--ink);padding:0 .4em .05em .35em}
+.cal td.has .dnum::after{content:"";position:absolute;inset:-5px -6px -3px -6px;pointer-events:none;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 36'%3E%3Cpath d='M14 7C34 2 58 6 59 16c1 11-17 16-31 15C13 30 4 25 5 17 6 10 15 6 27 5' fill='none' stroke='%238f9850' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E") center/100% 100% no-repeat}
+/* stamp slam: inked stamps land once on page load (reduced motion collapses it) */
+.ostamp{--rot:5deg}
+.ostamp.tour{--rot:-4deg}
+.upstamp{--rot:-2deg}
+.ostamp,.upstamp,.nstamp{animation:stampslam .35s cubic-bezier(.16,1,.3,1) .12s both}
+@keyframes stampslam{from{opacity:0;transform:rotate(var(--rot)) scale(1.9)}to{opacity:1;transform:rotate(var(--rot)) scale(1)}}
+/* bands index roster: crate-divider letters + a stamp on acts playing this week */
+.soonstamp{display:inline-block;font-size:.62rem;color:var(--hotink);border:1px solid var(--hotink);
+  padding:.1rem .3rem;margin-left:.35rem;text-transform:uppercase;letter-spacing:.07em;transform:rotate(-2deg)}
+.bandindex .letter{display:inline-block;border:2px solid var(--line);background:var(--card);
+  padding:.15rem .65rem .25rem;transform:rotate(-2deg);box-shadow:3px 3px 0 var(--shadow)}
 </style></head><body class="showpage">
-<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a></header>
-<main class="spwrap dirwrap">
-<h1 class="dirhead">309</h1>
-<p class="dirsub">5 shows on the record</p>
+<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../bands.html">bands</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
+<main class="spwrap dirwrap actpage">
+<section class="acthero">
+<div class="heroinfo">
+<div class="actmast"><h1 class="dirhead">309</h1></div>
+
+<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i><i></i><i></i><i></i><i class='x'></i></span></span><span class='tcap'><b>5</b> shows on the diypensacola record since 2026</span></div>
+<a class='nextgig' href='../s/2026-07-04-309-maggot-sandwich.html'><small>next show</small> Jul 4 &middot; maggot sandwich, the pallbearers &#8594;</a>
 <div class="dactions"><a class="dbtn" href="https://www.google.com/maps/search/?api=1&amp;query=309%20Pensacola%20FL" target="_blank" rel="noopener">open in maps</a></div>
-<h2 class='dirsec'>upcoming</h2><ul class='dirlist'><li><span class='date'>Jul 4 2026</span> <a href='../s/2026-07-04-309-maggot-sandwich.html'><strong>Maggot Sandwich, The Pallbearers</strong></a></li><li><span class='date'>Jul 10 2026</span> <a href='../s/2026-07-10-309-just-opposed-release.html'><strong>Vixen Valentine</strong></a></li><li><span class='date'>Jul 12 2026</span> <a href='../s/2026-07-12-309-woody-guthrie-gathering.html'><strong>Woody Guthrie Gathering</strong></a></li></ul><h2 class='dirsec'>recent history</h2><ul class='dirlist'><li><span class='date'>Jun 26 2026</span> <strong>Talamieka Brice Bootjack and Red Film Screening + Discussion</strong></li><li><span class='date'>Jun 19 2026</span> <strong>Quincy &quot;Q&quot; Hull, Lachelle Johns, Patriot X, Scott Satterwhite</strong></li></ul>
+</div>
+<a class='heropost up' href='../s/2026-07-04-309-maggot-sandwich.html'><img src='../flyers/thumbs/flyer_2026-07-04_309_maggot-sandwich.webp' alt='309 flyer, Jul 4, 2026'><span class='hpcap'>up next &middot; Jul 4, 2026 &middot; maggot sandwich, the pallbearers</span></a>
+</section>
+<h2 class='dirsec'>upcoming</h2><ul class='gigledger'><li class='up'><span class='gdate'><b>4</b><i>Jul 2026</i></span><span class='gwho'><a href='../s/2026-07-04-309-maggot-sandwich.html'>Maggot Sandwich, The Pallbearers</a></span></li><li class='up'><span class='gdate'><b>10</b><i>Jul 2026</i></span><span class='gwho'><a href='../s/2026-07-10-309-just-opposed-release.html'>Vixen Valentine</a></span></li><li class='up'><span class='gdate'><b>12</b><i>Jul 2026</i></span><span class='gwho'><a href='../s/2026-07-12-309-woody-guthrie-gathering.html'>Woody Guthrie Gathering</a></span></li></ul><h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile up' href='../s/2026-07-12-309-woody-guthrie-gathering.html'><img loading='lazy' src='../flyers/thumbs/flyer_2026-07-12_309_woody-guthrie-gathering.webp' alt='flyer, Jul 12, 2026'><span class='pwcap'>Jul 12, 2026 &middot; woody guthrie gathering</span></a><a class='pwtile up' href='../s/2026-07-10-309-just-opposed-release.html'><img loading='lazy' src='../flyers/thumbs/2026-07-10_309_just-opposed-release.webp' alt='flyer, Jul 10, 2026'><span class='pwcap'>Jul 10, 2026 &middot; vixen valentine</span></a><a class='pwtile' href='../flyers/flyer_2026-06-26_309_talamieka-brice.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/flyer_2026-06-26_309_talamieka-brice.webp' alt='flyer, Jun 26, 2026'><span class='pwcap'>Jun 26, 2026 &middot; talamieka brice bootjack and red film screening + discussion</span></a><a class='pwtile' href='../flyers/flyer_2026-06-19_309_q-the-poet.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/flyer_2026-06-19_309_q-the-poet.webp' alt='flyer, Jun 19, 2026'><span class='pwcap'>Jun 19, 2026 &middot; quincy &quot;q&quot; hull, lachelle johns +2</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2026</span></li><li><span class='gdate'><b>26</b><i>Jun 2026</i></span><span class='gwho'><a href='../b/talamieka-brice-bootjack-and-red-film-screening-discussion.html'>Talamieka Brice Bootjack and Red Film Screening + Discussion</a></span></li><li><span class='gdate'><b>19</b><i>Jun 2026</i></span><span class='gwho'><a href='../b/quincy-q-hull.html'>Quincy &quot;Q&quot; Hull</a>, <a href='../b/lachelle-johns.html'>Lachelle Johns</a>, <a href='../b/patriot-x.html'>Patriot X</a>, <a href='../b/scott-satterwhite.html'>Scott Satterwhite</a></span></li></ul>
 <p class="spback"><a href="../">&#8592; back to the calendar</a></p>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>

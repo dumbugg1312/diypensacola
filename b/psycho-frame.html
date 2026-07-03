@@ -11,7 +11,7 @@
 <meta property="og:description" content="Every Psycho-Frame show on the DIYPensacola record: dates, venues, and flyers from the punksacola DIY scene.">
 <meta property="og:url" content="https://diypensacola.com/b/psycho-frame.html">
 <meta property="og:image" content="https://diypensacola.com/flyers/flyer_2026-06-22_handlebar_psycho-frame.jpg">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="../logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -438,6 +438,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   .stamp{background:#fff;text-shadow:none}
   .thumbwrap::before{display:none}   /* screen-only tape */
   .bnone{display:none!important}     /* quiet-night line is screen-only */
+  /* the ticket-stub tonight header prints as plain ink */
+  #b-tonight .bhead{background:#fff;box-shadow:none;border:2px solid #000;color:#000;transform:none}
+  #list:not(.wall) .show img.thumb:not(.ph){filter:grayscale(1) contrast(1.15)}
+  .doorsin{display:none}
   body.printweek .show:not(.pw){display:none!important}
   body.printweek .bucket:not(.pw-has){display:none!important}
 }
@@ -618,8 +622,56 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 /* a lone poster in a wall bucket centers instead of hugging the left column
    ("no two non-past cards in this bucket"; active filters are a rare, benign miss) */
 #list.wall .cards:not(:has(.show:not(.past) ~ .show:not(.past))){column-count:1;max-width:430px;margin:0 auto}
+
+/* ---------- round 2: site-wide zine polish ---------- */
+/* tape-label subnav: every subpage carries the strip so nothing dead-ends */
+.showpage header{display:flex;align-items:center;justify-content:space-between;gap:.9rem 1.2rem;flex-wrap:wrap}
+.subnav{display:flex;gap:.55rem;flex-wrap:wrap}
+.subnav a{font-size:.72rem;text-decoration:none;color:#111;background:var(--tape);padding:.32rem .62rem;
+  border:2px solid #111;box-shadow:2px 2px 0 var(--hot);text-transform:uppercase;letter-spacing:.06em}
+.subnav a:nth-child(odd){transform:rotate(-1.6deg)}
+.subnav a:nth-child(even){transform:rotate(1.3deg)}
+.subnav a:hover{background:var(--hot);color:var(--on-hot);box-shadow:2px 2px 0 var(--tape)}
+.subnav a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 var(--hot)}
+@media (max-width:640px){.showpage header{justify-content:center;text-align:center}}
+/* halftone rest state on feed thumbs: inks wildly different flyer art into one
+   wall; the full-color art is a hover (or the open card) away */
+#list:not(.wall) .show img.thumb:not(.ph){transition:filter .18s ease;
+  filter:grayscale(.45) sepia(.22) hue-rotate(28deg) saturate(.75) contrast(1.05)}
+#list:not(.wall) .show:hover img.thumb,#list:not(.wall) .show:focus img.thumb{filter:none}
+/* tonight reads as a torn ticket stub: bone header + doors countdown */
+#b-tonight .bhead{color:#111;background:var(--tape);border:2px solid #111;box-shadow:5px 5px 0 var(--hot);
+  display:inline-flex;padding:.34rem .9rem .34rem .7rem;transform:rotate(-1.2deg);gap:.65rem}
+#b-tonight .bhead::after{content:"admit all";flex:none;border-top:none;border-left:2px dashed #111;
+  padding-left:.65rem;font-family:"Special Elite","Courier New",monospace;font-size:.6em;
+  letter-spacing:.14em;align-self:center;color:#26260f}
+#b-tonight .ht{background-image:radial-gradient(#111 30%,transparent 32%)}
+.doorsin{color:var(--age);white-space:nowrap}
+/* quiet-night stamp under the tonight header */
+.nstamp{--rot:-2deg;display:inline-block;border:2px solid var(--dim);color:var(--dim);padding:.16rem .55rem;
+  text-transform:uppercase;letter-spacing:.09em;font-size:.8rem;margin-right:.4rem;transform:rotate(-2deg)}
+/* pull-off tab fringe along the bottom of wall-view posters (one tab gone) */
+#list.wall .info::after{content:"";display:block;height:13px;margin:.5rem -.7rem -.6rem;
+  background:linear-gradient(var(--bg),var(--bg)) 62% 0/20px 100% no-repeat,
+  repeating-linear-gradient(90deg,var(--card) 0 19px,var(--bg) 19px 21px)}
+/* calendar: show days get circled by hand instead of boxed hot */
+.cal td.has{border:1px dashed var(--line)}
+.cal td.has .dnum{position:relative;display:inline-block;color:var(--ink);padding:0 .4em .05em .35em}
+.cal td.has .dnum::after{content:"";position:absolute;inset:-5px -6px -3px -6px;pointer-events:none;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 36'%3E%3Cpath d='M14 7C34 2 58 6 59 16c1 11-17 16-31 15C13 30 4 25 5 17 6 10 15 6 27 5' fill='none' stroke='%238f9850' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E") center/100% 100% no-repeat}
+/* stamp slam: inked stamps land once on page load (reduced motion collapses it) */
+.ostamp{--rot:5deg}
+.ostamp.tour{--rot:-4deg}
+.upstamp{--rot:-2deg}
+.ostamp,.upstamp,.nstamp{animation:stampslam .35s cubic-bezier(.16,1,.3,1) .12s both}
+@keyframes stampslam{from{opacity:0;transform:rotate(var(--rot)) scale(1.9)}to{opacity:1;transform:rotate(var(--rot)) scale(1)}}
+/* bands index roster: crate-divider letters + a stamp on acts playing this week */
+.soonstamp{display:inline-block;font-size:.62rem;color:var(--hotink);border:1px solid var(--hotink);
+  padding:.1rem .3rem;margin-left:.35rem;text-transform:uppercase;letter-spacing:.07em;transform:rotate(-2deg)}
+.bandindex .letter{display:inline-block;border:2px solid var(--line);background:var(--card);
+  padding:.15rem .65rem .25rem;transform:rotate(-2deg);box-shadow:3px 3px 0 var(--shadow)}
 </style></head><body class="showpage">
-<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a></header>
+<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../bands.html">bands</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap dirwrap actpage">
 <section class="acthero">
 <div class="heroinfo">
