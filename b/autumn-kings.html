@@ -10,7 +10,7 @@
 <meta property="og:title" content="Autumn Kings · shows in Pensacola · DIYPensacola">
 <meta property="og:description" content="Every Autumn Kings show on the DIYPensacola record: dates, venues, and flyers from the punksacola DIY scene.">
 <meta property="og:url" content="https://diypensacola.com/b/autumn-kings.html">
-<meta property="og:image" content="https://diypensacola.com/logo.png">
+<meta property="og:image" content="https://diypensacola.com/flyers/flyer_2026-09-14_handlebar_archers.jpg">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="../logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -514,19 +514,81 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .bandindex a small{color:var(--dim)}
 .bandindex .letter{font-family:"Rock Salt",cursive;color:var(--hotink);margin:1.1rem 0 .3rem;font-size:1.05rem;break-after:avoid}
 .dirnote{color:var(--dim);font-size:.85rem;border:2px dashed var(--line);background:var(--card);padding:.8rem 1rem;margin:1.6rem 0 0;line-height:1.6}
-/* instagram-style flyer grid on band/act pages */
-.flyergrid{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin:.4rem 0 .5rem}
-@media (min-width:560px){.flyergrid{grid-template-columns:repeat(4,1fr);gap:7px}}
-.fgtile{position:relative;display:block;aspect-ratio:1/1;overflow:hidden;background:#000;
-  border:2px solid var(--ink);box-shadow:3px 3px 0 var(--shadow);text-decoration:none}
-.fgtile img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .22s ease}
-.fgtile:hover img,.fgtile:focus img{transform:scale(1.07)}
-.fgtile:hover,.fgtile:focus{box-shadow:3px 3px 0 var(--hot);outline:none}
-.fgcap{position:absolute;left:0;right:0;bottom:0;font-family:"Special Elite","Courier New",monospace;
-  font-size:.6rem;letter-spacing:.03em;color:var(--ink);text-transform:uppercase;
-  background:linear-gradient(transparent,rgba(0,0,0,.85));padding:1.1rem .4rem .35rem;
-  opacity:0;transition:opacity .2s}
-.fgtile:hover .fgcap,.fgtile:focus .fgcap{opacity:1}
+/* ---------- act pages: poster-led dossier (b/<slug>.html) ----------
+   The masthead pairs the act's file with its latest flyer taped up as a real
+   poster; the flyer archive is a telephone-pole wall (whole flyers, tape,
+   alternating tilt) instead of square crops; and the show record reads as a
+   dated gig ledger whose co-billed names link across the scene. Script-free,
+   built from the same zine tokens as everything else. */
+.actpage{max-width:980px}
+.acthero{display:flex;gap:2.4rem;align-items:flex-start;margin-top:1.1rem}
+.heroinfo{flex:1;min-width:0}
+.actpage .dirhead{font-size:clamp(2.3rem,8vw,3.8rem);text-shadow:4px 4px 0 var(--hot)}
+.heropost{flex:none;width:min(300px,36%);position:relative;display:block;text-decoration:none;
+  transform:rotate(1.8deg);margin-top:.5rem}
+.heropost::before{content:"";position:absolute;top:-7px;left:50%;transform:translateX(-50%) rotate(-3deg);
+  width:64px;height:17px;background:var(--tape);opacity:.8;z-index:2;box-shadow:0 1px 2px rgba(0,0,0,.4)}
+.heropost img{width:100%;height:auto;display:block;border:3px solid var(--ink);
+  box-shadow:8px 8px 0 var(--shadow);background:#000}
+.heropost .hpcap{display:block;background:var(--card);border:1px solid var(--line);border-top:none;
+  margin:0 3px;padding:.4rem .6rem;font:.7rem/1.4 "Special Elite","Courier New",monospace;
+  letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}
+.heropost:hover img,.heropost:focus-visible img{border-color:var(--hot);box-shadow:8px 8px 0 var(--hot)}
+.heropost:hover .hpcap{color:var(--ink)}
+.heropost:focus-visible{outline:3px solid var(--tape);outline-offset:3px}
+.heropost.up::before{background:var(--hot)}
+.heropost.up .hpcap{color:var(--hotink)}
+@media (max-width:700px){.acthero{flex-direction:column;gap:.4rem}
+  .heropost{width:min(320px,92%);align-self:center;margin:1.3rem 0 .4rem;transform:rotate(-1.5deg)}}
+/* flyer wall: every flyer this act is on, pinned up whole (no square crop) */
+.postwall{column-count:3;column-gap:1.1rem;margin:.5rem 0 .6rem}
+@media (max-width:820px){.postwall{column-count:2}}
+.pwtile{display:block;break-inside:avoid;position:relative;margin:0 0 1.2rem;text-decoration:none}
+.pwtile:nth-child(3n+1){transform:rotate(-1.4deg)}
+.pwtile:nth-child(3n+2){transform:rotate(1.1deg)}
+.pwtile:nth-child(3n){transform:rotate(-.4deg)}
+.pwtile::before{content:"";position:absolute;top:-6px;left:50%;transform:translateX(-50%) rotate(-4deg);
+  width:46px;height:13px;background:var(--tape);opacity:.7;z-index:2;box-shadow:0 1px 2px rgba(0,0,0,.4)}
+.pwtile img{width:100%;height:auto;display:block;border:2px solid var(--ink);
+  box-shadow:5px 5px 0 var(--shadow);background:#000}
+.pwcap{display:block;background:var(--card);border:1px solid var(--line);border-top:none;margin:0 3px;
+  padding:.32rem .55rem;font-size:.66rem;letter-spacing:.05em;text-transform:uppercase;color:var(--dim)}
+.pwtile:hover,.pwtile:focus-visible{transform:rotate(0);z-index:2}
+.pwtile:focus-visible{outline:3px solid var(--tape);outline-offset:3px}
+.pwtile:hover img,.pwtile:focus-visible img{box-shadow:5px 5px 0 var(--hot)}
+.pwtile:hover .pwcap{color:var(--ink)}
+.pwtile.up::before{background:var(--hot)}
+.pwtile.up img{border-color:var(--hot)}
+/* gig ledger: dated record rows; upcoming rows carry the hot ink */
+.gigledger{list-style:none;padding:0;margin:0}
+.gigledger li{display:flex;gap:.9rem;align-items:center;padding:.55rem 0;
+  border-bottom:1px dashed var(--line);flex-wrap:wrap}
+.gdate{flex:none;width:3.6rem;text-align:center;border:2px solid var(--line);background:var(--card);
+  padding:.28rem 0 .34rem}
+.gdate b{display:block;font-family:"Anton","Special Elite",sans-serif;font-weight:400;
+  font-size:1.3rem;line-height:1}
+.gdate i{display:block;font-style:normal;font-size:.6rem;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--dim);margin-top:.16rem}
+.gigledger li.up .gdate{border-color:var(--hot);box-shadow:3px 3px 0 var(--shadow)}
+.gwho{flex:1;min-width:12rem;line-height:1.6;font-size:.95rem}
+.gwho a{color:var(--ink);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px}
+.gwho a:hover,.gwho a:focus-visible{color:var(--hotink)}
+.gwho .self{font-weight:400;color:var(--hotink)}
+.gven{flex:none;font:.72rem/1.2 "Special Elite","Courier New",monospace;text-transform:lowercase;
+  border:2px dashed var(--line);padding:.26rem .55rem;color:var(--dim);text-decoration:none;background:var(--card)}
+.gven:hover,.gven:focus-visible{border-color:var(--hot);border-style:solid;color:var(--hotink)}
+.gigledger li.gyear{border-bottom:none;padding:1rem 0 .15rem}
+.gigledger li.gyear span{font-family:"Anton","Special Elite",sans-serif;font-weight:400;font-size:1rem;
+  letter-spacing:.06em;color:var(--dim);border:2px solid var(--line);padding:.12rem .55rem;
+  display:inline-block;transform:rotate(-2deg);text-transform:uppercase}
+/* shared bills: the co-billed web, stamped chips like the venue row */
+.bmates{display:flex;flex-wrap:wrap;gap:.55rem;margin:.3rem 0 .4rem}
+.bmates a{font:.8rem/1.3 "Special Elite","Courier New",monospace;text-transform:lowercase;color:var(--ink);
+  text-decoration:none;border:2px dashed var(--line);padding:.34rem .65rem;background:var(--card)}
+.bmates a:nth-child(even){transform:rotate(1.2deg)}
+.bmates a:nth-child(odd){transform:rotate(-1.1deg)}
+.bmates a small{color:var(--dim);font-size:.68rem}
+.bmates a:hover,.bmates a:focus-visible{border-color:var(--hot);border-style:solid;color:var(--hotink)}
 /* youtube embeds on band/act pages (curated in band-videos.json at the root) */
 .ytgrid{display:grid;grid-template-columns:1fr;gap:.7rem;margin:.4rem 0 .5rem}
 @media (min-width:700px){.ytgrid{grid-template-columns:repeat(2,1fr)}}
@@ -558,14 +620,19 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 #list.wall .cards:not(:has(.show:not(.past) ~ .show:not(.past))){column-count:1;max-width:430px;margin:0 auto}
 </style></head><body class="showpage">
 <header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a></header>
-<main class="spwrap dirwrap">
+<main class="spwrap dirwrap actpage">
+<section class="acthero">
+<div class="heroinfo">
 <div class="actmast"><h1 class="dirhead">Autumn Kings</h1><span class="ostamp">pcola local</span></div>
 
 <div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i></span></span><span class='tcap'><b>1</b> show on the diypensacola record since 2026</span></div>
 <a class='nextgig' href='../s/2026-09-14-handlebar-archers.html'><small>next gig</small> Sep 14 &middot; The Handlebar &#8594;</a>
 <div class='vstamps'><span class='lead'>stamped at</span><a href='../v/handlebar.html'>the handlebar</a></div>
 <div class="dactions"><a class="dbtn" href="https://autumnkings.bandcamp.com" target="_blank" rel="noopener">bandcamp &#8599;</a></div>
-<h2 class='dirsec'>watch</h2><div class='ytgrid'><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/AOnM4pbxR68' title='Autumn Kings - HELLBOUND (Official Music Video)' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div></div><h2 class='dirsec'>flyers</h2><div class='flyergrid'><a class='fgtile' href='../s/2026-09-14-handlebar-archers.html' title='Sep 14, 2026'><img loading='lazy' src='../flyers/thumbs/flyer_2026-09-14_handlebar_archers.webp' alt='flyer, Sep 14, 2026'><span class='fgcap'>Sep 14, 2026</span></a></div><h2 class='dirsec'>upcoming</h2><ul class='dirlist'><li><span class='date'>Sep 14 2026</span> <a href='../s/2026-09-14-handlebar-archers.html'><strong>Archers, Autumn Kings, Pinknoise, Coldstate</strong></a> <span class='meta'>The Handlebar</span></li></ul>
+</div>
+<a class='heropost up' href='../s/2026-09-14-handlebar-archers.html'><img src='../flyers/thumbs/flyer_2026-09-14_handlebar_archers.webp' alt='Autumn Kings flyer, Sep 14, 2026'><span class='hpcap'>up next &middot; Sep 14, 2026 &middot; the handlebar</span></a>
+</section>
+<h2 class='dirsec'>watch</h2><div class='ytgrid'><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/AOnM4pbxR68' title='Autumn Kings - HELLBOUND (Official Music Video)' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div></div><h2 class='dirsec'>upcoming</h2><ul class='gigledger'><li class='up'><span class='gdate'><b>14</b><i>Sep 2026</i></span><span class='gwho'><a href='../s/2026-09-14-handlebar-archers.html'>Archers, Autumn Kings, Pinknoise, Coldstate</a></span><a class='gven' href='../v/handlebar.html'>the handlebar</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='archers.html'>archers</a><a href='coldstate.html'>coldstate</a><a href='pinknoise.html'>pinknoise</a></div>
 <p class="dirnote">act pages are built automatically from the show archive, so a name might be misspelled, a link missing, or a detail wrong, no disrespect meant, just let us know and we'll fix it. wrong type, wrong local/touring call, a video that isn't you, or want a listen link (youtube or bandcamp) or live footage added? <a href='../submit.html'>send it in</a>.</p>
 <p class="spback"><a href="../bands.html">&#8592; the scene index</a> · <a href="../">calendar</a></p>
 </main>
