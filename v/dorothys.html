@@ -635,10 +635,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .subnav a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 var(--hot)}
 @media (max-width:640px){.showpage header{justify-content:center;text-align:center}}
 /* halftone rest state on feed thumbs: inks wildly different flyer art into one
-   wall; the full-color art is a hover (or the open card) away */
-#list:not(.wall) .show img.thumb:not(.ph){transition:filter .18s ease;
-  filter:grayscale(.45) sepia(.22) hue-rotate(28deg) saturate(.75) contrast(1.05)}
-#list:not(.wall) .show:hover img.thumb,#list:not(.wall) .show:focus img.thumb{filter:none}
+   wall; the full-color art is a hover (or the open card) away. hover-only so
+   touch devices, which can't hover it off, get full-color flyers straight away */
+@media (hover:hover){
+  #list:not(.wall) .show img.thumb:not(.ph){transition:filter .18s ease;
+    filter:grayscale(.4) sepia(.1) hue-rotate(28deg) saturate(.85) contrast(1.03)}
+  #list:not(.wall) .show:hover img.thumb,#list:not(.wall) .show:focus img.thumb{filter:none}
+}
 /* tonight reads as a torn ticket stub: bone header + doors countdown */
 #b-tonight .bhead{color:#111;background:var(--tape);border:2px solid #111;box-shadow:5px 5px 0 var(--hot);
   display:inline-flex;padding:.34rem .9rem .34rem .7rem;transform:rotate(-1.2deg);gap:.65rem}
@@ -675,12 +678,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 <div class="actmast"><h1 class="dirhead">Dorothy&#39;s</h1></div>
 
 <div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i></span></span><span class='tcap'><b>1</b> show on the diypensacola record since 2026</span></div>
-<a class='nextgig' href='../s/2026-07-04-dorothys-lgbbq.html'><small>next show</small> Jul 4 &middot; lgbbq &#8594;</a>
+
 <div class="dactions"><a class="dbtn" href="https://www.google.com/maps/search/?api=1&amp;query=Dorothy%27s%20Pensacola%20FL" target="_blank" rel="noopener">open in maps</a></div>
 </div>
-<a class='heropost up' href='../s/2026-07-04-dorothys-lgbbq.html'><img src='../flyers/thumbs/2026-07-04_dorothys_lgbbq.webp' alt='Dorothy&#39;s flyer, Jul 4, 2026'><span class='hpcap'>up next &middot; Jul 4, 2026 &middot; lgbbq</span></a>
+<a class='heropost' href='../flyers/2026-07-04_dorothys_lgbbq.jpg' target='_blank' rel='noopener'><img src='../flyers/thumbs/2026-07-04_dorothys_lgbbq.webp' alt='Dorothy&#39;s flyer, Jul 4, 2026'><span class='hpcap'>Jul 4, 2026 &middot; lgbbq</span></a>
 </section>
-<h2 class='dirsec'>upcoming</h2><ul class='gigledger'><li class='up'><span class='gdate'><b>4</b><i>Jul 2026</i></span><span class='gwho'><a href='../s/2026-07-04-dorothys-lgbbq.html'>LGBBQ</a></span></li></ul>
+<h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2026</span></li><li><span class='gdate'><b>4</b><i>Jul 2026</i></span><span class='gwho'><a href='../b/lgbbq.html'>LGBBQ</a></span></li></ul>
 <p class="spback"><a href="../">&#8592; back to the calendar</a></p>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>

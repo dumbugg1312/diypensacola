@@ -623,10 +623,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .subnav a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 var(--hot)}
 @media (max-width:640px){.showpage header{justify-content:center;text-align:center}}
 /* halftone rest state on feed thumbs: inks wildly different flyer art into one
-   wall; the full-color art is a hover (or the open card) away */
-#list:not(.wall) .show img.thumb:not(.ph){transition:filter .18s ease;
-  filter:grayscale(.45) sepia(.22) hue-rotate(28deg) saturate(.75) contrast(1.05)}
-#list:not(.wall) .show:hover img.thumb,#list:not(.wall) .show:focus img.thumb{filter:none}
+   wall; the full-color art is a hover (or the open card) away. hover-only so
+   touch devices, which can't hover it off, get full-color flyers straight away */
+@media (hover:hover){
+  #list:not(.wall) .show img.thumb:not(.ph){transition:filter .18s ease;
+    filter:grayscale(.4) sepia(.1) hue-rotate(28deg) saturate(.85) contrast(1.03)}
+  #list:not(.wall) .show:hover img.thumb,#list:not(.wall) .show:focus img.thumb{filter:none}
+}
 /* tonight reads as a torn ticket stub: bone header + doors countdown */
 #b-tonight .bhead{color:#111;background:var(--tape);border:2px solid #111;box-shadow:5px 5px 0 var(--hot);
   display:inline-flex;padding:.34rem .9rem .34rem .7rem;transform:rotate(-1.2deg);gap:.65rem}

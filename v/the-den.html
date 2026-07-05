@@ -10,7 +10,7 @@
 <meta property="og:title" content="The-Den · shows · DIYPensacola">
 <meta property="og:description" content="DIY and punk shows at The-Den in Pensacola, FL: what&#39;s coming up and everything that&#39;s happened there.">
 <meta property="og:url" content="https://diypensacola.com/v/the-den.html">
-<meta property="og:image" content="https://diypensacola.com/flyers/flyer_2026-07-04_the-den_lesion.jpg">
+<meta property="og:image" content="https://diypensacola.com/flyers/2026-07-30_the-den_spidershed.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="../logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -635,10 +635,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .subnav a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 var(--hot)}
 @media (max-width:640px){.showpage header{justify-content:center;text-align:center}}
 /* halftone rest state on feed thumbs: inks wildly different flyer art into one
-   wall; the full-color art is a hover (or the open card) away */
-#list:not(.wall) .show img.thumb:not(.ph){transition:filter .18s ease;
-  filter:grayscale(.45) sepia(.22) hue-rotate(28deg) saturate(.75) contrast(1.05)}
-#list:not(.wall) .show:hover img.thumb,#list:not(.wall) .show:focus img.thumb{filter:none}
+   wall; the full-color art is a hover (or the open card) away. hover-only so
+   touch devices, which can't hover it off, get full-color flyers straight away */
+@media (hover:hover){
+  #list:not(.wall) .show img.thumb:not(.ph){transition:filter .18s ease;
+    filter:grayscale(.4) sepia(.1) hue-rotate(28deg) saturate(.85) contrast(1.03)}
+  #list:not(.wall) .show:hover img.thumb,#list:not(.wall) .show:focus img.thumb{filter:none}
+}
 /* tonight reads as a torn ticket stub: bone header + doors countdown */
 #b-tonight .bhead{color:#111;background:var(--tape);border:2px solid #111;box-shadow:5px 5px 0 var(--hot);
   display:inline-flex;padding:.34rem .9rem .34rem .7rem;transform:rotate(-1.2deg);gap:.65rem}
@@ -675,12 +678,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 <div class="actmast"><h1 class="dirhead">The-Den</h1></div>
 <p class='dirsub'>9575 Bridlewood Rd, Beulah, FL 32526</p>
 <div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i><i></i><i></i></span></span><span class='tcap'><b>3</b> shows on the diypensacola record since 2026</span></div>
-<a class='nextgig' href='../s/2026-07-04-the-den-lesion.html'><small>next show</small> Jul 4 &middot; lesion &#8594;</a>
+<a class='nextgig' href='../s/2026-07-30-the-den-spidershed.html'><small>next show</small> Jul 30 &middot; spidershed, future compost &#8594;</a>
 <div class="dactions"><a class="dbtn" href="https://www.google.com/maps/dir/?api=1&amp;destination=9575%20Bridlewood%20Rd%2C%20Beulah%2C%20FL%2032526" target="_blank" rel="noopener">directions</a></div>
 </div>
-<a class='heropost up' href='../s/2026-07-04-the-den-lesion.html'><img src='../flyers/thumbs/flyer_2026-07-04_the-den_lesion.webp' alt='The-Den flyer, Jul 4, 2026'><span class='hpcap'>up next &middot; Jul 4, 2026 &middot; lesion</span></a>
+<a class='heropost up' href='../s/2026-07-30-the-den-spidershed.html'><img src='../flyers/thumbs/2026-07-30_the-den_spidershed.webp' alt='The-Den flyer, Jul 30, 2026'><span class='hpcap'>up next &middot; Jul 30, 2026 &middot; spidershed, future compost +1</span></a>
 </section>
-<h2 class='dirsec'>upcoming</h2><ul class='gigledger'><li class='up'><span class='gdate'><b>4</b><i>Jul 2026</i></span><span class='gwho'><a href='../s/2026-07-04-the-den-lesion.html'>Lesion</a></span></li><li class='up'><span class='gdate'><b>30</b><i>Jul 2026</i></span><span class='gwho'><a href='../s/2026-07-30-the-den-spidershed.html'>Spidershed, Future Compost, Caca del Diablo</a></span></li></ul><h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile up' href='../s/2026-07-30-the-den-spidershed.html'><img loading='lazy' src='../flyers/thumbs/2026-07-30_the-den_spidershed.webp' alt='flyer, Jul 30, 2026'><span class='pwcap'>Jul 30, 2026 &middot; spidershed, future compost +1</span></a><a class='pwtile' href='../flyers/flyer_2026-06-13_the-den_mario-judah.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/flyer_2026-06-13_the-den_mario-judah.webp' alt='flyer, Jun 13, 2026'><span class='pwcap'>Jun 13, 2026 &middot; mario judah, lesion +2</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2026</span></li><li><span class='gdate'><b>13</b><i>Jun 2026</i></span><span class='gwho'><a href='../b/mario-judah.html'>Mario Judah</a>, <a href='../b/lesion.html'>Lesion</a>, <a href='../b/cdd.html'>Cdd</a>, More</span></li></ul>
+<h2 class='dirsec'>upcoming</h2><ul class='gigledger'><li class='up'><span class='gdate'><b>30</b><i>Jul 2026</i></span><span class='gwho'><a href='../s/2026-07-30-the-den-spidershed.html'>Spidershed, Future Compost, Caca del Diablo</a></span></li></ul><h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/flyer_2026-07-04_the-den_lesion.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/flyer_2026-07-04_the-den_lesion.webp' alt='flyer, Jul 4, 2026'><span class='pwcap'>Jul 4, 2026 &middot; lesion</span></a><a class='pwtile' href='../flyers/flyer_2026-06-13_the-den_mario-judah.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/flyer_2026-06-13_the-den_mario-judah.webp' alt='flyer, Jun 13, 2026'><span class='pwcap'>Jun 13, 2026 &middot; mario judah, lesion +2</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2026</span></li><li><span class='gdate'><b>4</b><i>Jul 2026</i></span><span class='gwho'><a href='../b/lesion.html'>Lesion</a></span></li><li><span class='gdate'><b>13</b><i>Jun 2026</i></span><span class='gwho'><a href='../b/mario-judah.html'>Mario Judah</a>, <a href='../b/lesion.html'>Lesion</a>, <a href='../b/cdd.html'>Cdd</a>, More</span></li></ul>
 <p class="spback"><a href="../">&#8592; back to the calendar</a></p>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>

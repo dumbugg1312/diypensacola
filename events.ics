@@ -21,46 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-07-03-bettys-weirdo-circus@diypensacola
-DTSTART;TZID=America/Chicago:20260703T200000
-DTEND;TZID=America/Chicago:20260703T230000
-SUMMARY:Weirdo Mutual Aid Circus\, Earthly Delights Show @ Betty's
-DESCRIPTION:weirdo mutual aid circus: the earthly delights show at betty's july 3rd. games\, burlesque\, clown contest\, daring acts. shows at 8\, 9 & 10. $15\, benefitting free gaza circus.
-LOCATION:Betty's
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-07-03-handlebar-lost-wandering@diypensacola
-DTSTART;TZID=America/Chicago:20260703T200000
-DTEND;TZID=America/Chicago:20260703T230000
-SUMMARY:Skiz\, Yante\, MyBrotha Van\, Miatropolis\, Jeremy McLennon @ The Handlebar
-DESCRIPTION:lost wandering at the handlebar with skiz\, yante\, mybrotha van\, miatropolis\, and jeremy mclennon on live drums. july 3rd\, music at 8pm. 319 n tarragona.
-LOCATION:The Handlebar
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-07-04-the-den-lesion@diypensacola
-DTSTART;TZID=America/Chicago:20260704T180000
-DTEND;TZID=America/Chicago:20260704T210000
-SUMMARY:Lesion @ The-Den
-DESCRIPTION:insubordinate day: lesion\, charcoal\, and caca del diablo at the den (9575 bridlewood rd\, beulah). july 4th\, doors 6 / music 7. free show.
-LOCATION:The-Den
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-07-04-309-maggot-sandwich@diypensacola
-DTSTART;TZID=America/Chicago:20260704T180000
-DTEND;TZID=America/Chicago:20260704T210000
-SUMMARY:Maggot Sandwich\, The Pallbearers @ 309
-DESCRIPTION:maggot sandwich and the pallbearers at 309. sat jul 4\, doors 6pm. new orleans punk rock legends. 309 n 6th ave.
-LOCATION:309
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-07-04-dorothys-lgbbq@diypensacola
-DTSTART;TZID=America/Chicago:20260704T150000
-DTEND;TZID=America/Chicago:20260704T180000
-SUMMARY:LGBBQ @ Dorothy's
-DESCRIPTION:lgbbq at dorothy's\, july 4th from 3 to 8pm. drink specials\, $5 hot dogs\, games\, and a view of the fireworks at 8:30. liberty and justice for all.
-LOCATION:Dorothy's
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-07-05-handlebar-the-soap-girls@diypensacola
 DTSTART;TZID=America/Chicago:20260705T190000
 DTEND;TZID=America/Chicago:20260705T220000
@@ -181,6 +141,14 @@ DESCRIPTION:obituary at the handlebar with modown\, exformation\, and d.r.e.a.d.
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-07-25-309-closing-exhibition@diypensacola
+DTSTART;TZID=America/Chicago:20260725T180000
+DTEND;TZID=America/Chicago:20260725T210000
+SUMMARY:Rainn Forrest\, Bea Hurd @ 309
+DESCRIPTION:309 airs rainn forrest and bea hurd closing exhibition and film screening. 309 punk project\, saturday july 25th at 6pm.
+LOCATION:309
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-07-28-handlebar-internal-suffering@diypensacola
 DTSTART;TZID=America/Chicago:20260728T190000
 DTEND;TZID=America/Chicago:20260728T220000
@@ -195,6 +163,14 @@ DTEND;TZID=America/Chicago:20260730T210000
 SUMMARY:Spidershed\, Future Compost\, Caca del Diablo @ Beulah Den
 DESCRIPTION:spidershed\, future compost\, and caca del diablo at beulah den for freaky jone's big fat birthday. july 30th\, doors at 6. free show.
 LOCATION:Beulah Den
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-14-handlebar-katie-dineen@diypensacola
+DTSTART;TZID=America/Chicago:20260814T180000
+DTEND;TZID=America/Chicago:20260814T210000
+SUMMARY:Katie Dineen\, Logan Pilcher\, Tanner Lee Gray @ The Handlebar
+DESCRIPTION:katie dineen's album release show for 'simmer'\, with logan pilcher and tanner lee gray. the handlebar\, friday august 14th. doors 6pm\, music at 7. sliding scale $10-$20.
+LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-15-handlebar-heroes-for-ghosts@diypensacola
