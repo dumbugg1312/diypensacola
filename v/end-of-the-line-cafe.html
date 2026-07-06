@@ -739,9 +739,9 @@ main{max-width:940px}
 #list:not(.wall) #b-tonight .show,
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{
   display:grid;grid-template-columns:minmax(0,320px) 1fr;gap:1.5rem;align-items:center;padding:1.2rem}
-#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{grid-column:1 / -1;transform:rotate(-.4deg)}
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{flex-basis:100%;width:100%;transform:rotate(-.4deg)}
 #list:not(.wall) #b-tonight .thumbwrap,
-#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap{width:100%}
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap{width:100%;aspect-ratio:auto}
 #list:not(.wall) #b-tonight .show img.thumb,#list:not(.wall) #b-tonight .show img.thumb.ph,
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child img.thumb,
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child img.thumb.ph{
@@ -752,17 +752,19 @@ main{max-width:940px}
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap::before{
   left:26%;transform:translateX(-50%) rotate(-16deg);width:78px;height:22px;opacity:.72}
 
-/* --- THIS WEEK: full-flyer vertical posters --- */
-#list:not(.wall) #b-week .cards{display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:1.1rem;align-items:start}
-#list:not(.wall) #b-week .show{flex-direction:column;align-items:stretch;gap:.7rem;padding:.9rem}
+/* --- THIS WEEK: full-flyer vertical posters, uniform 4:5 frames so heights
+   line up; a centered flex wrap so a leftover card centers instead of
+   stranding empty space next to it --- */
+#list:not(.wall) #b-week .cards{display:flex;flex-wrap:wrap;justify-content:center;
+  align-items:flex-start;gap:1.2rem}
+#list:not(.wall) #b-week .show{flex:0 1 200px;flex-direction:column;align-items:stretch;gap:.7rem;padding:.9rem}
 #list:not(.wall) #b-week .show:nth-child(odd){transform:rotate(-.5deg)}
 #list:not(.wall) #b-week .show:nth-child(even){transform:rotate(.5deg)}
-#list:not(.wall) #b-week .thumbwrap{width:100%}
+#list:not(.wall) #b-week .thumbwrap{width:100%;aspect-ratio:4/5}
 #list:not(.wall) #b-week .show img.thumb,
-#list:not(.wall) #b-week .show img.thumb.ph{width:100%;height:auto;max-height:360px;
+#list:not(.wall) #b-week .show img.thumb.ph{width:100%;height:100%;max-height:none;
   object-fit:contain;background:#000}
-#list:not(.wall) #b-week .show h3{font-size:clamp(1.4rem,2.4vw,1.75rem);line-height:1}
+#list:not(.wall) #b-week .show h3{font-size:clamp(1.4rem,2.4vw,1.7rem);line-height:1}
 
 /* --- LATER: dense list, whole flyer in a small frame --- */
 #list:not(.wall) #b-later .cards{display:block;border:2px solid var(--line);
@@ -819,13 +821,13 @@ main{max-width:940px}
 <div class="heroinfo">
 <div class="actmast"><h1 class="dirhead">End of the Line Cafe</h1></div>
 
-<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i><i></i></span></span><span class='tcap'><b>2</b> shows on the diypensacola record since 2023</span></div>
+<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i><i></i><i></i></span></span><span class='tcap'><b>3</b> shows on the diypensacola record since 2023</span></div>
 
 <div class="dactions"><a class="dbtn" href="https://www.google.com/maps/search/?api=1&amp;query=End%20of%20the%20Line%20Cafe%20Pensacola%20FL" target="_blank" rel="noopener">open in maps</a></div>
 </div>
 <a class='heropost' href='../flyers/2025-02-15_end-of-the-line_dave-dondero.jpg' target='_blank' rel='noopener'><img src='../flyers/thumbs/2025-02-15_end-of-the-line_dave-dondero.webp' alt='End of the Line Cafe flyer, Feb 15, 2025'><span class='hpcap'>Feb 15, 2025 &middot; dave dondero</span></a>
 </section>
-<h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2023-02-20_end-of-the-line_movie-night.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-02-20_end-of-the-line_movie-night.webp' alt='flyer, Feb 20, 2023'><span class='pwcap'>Feb 20, 2023 &middot; punk rock vegan movie night</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2025</span></li><li><span class='gdate'><b>15</b><i>Feb 2025</i></span><span class='gwho'><a href='../b/dave-dondero.html'>Dave Dondero</a></span></li><li class='gyear'><span>2023</span></li><li><span class='gdate'><b>20</b><i>Feb 2023</i></span><span class='gwho'><a href='../b/punk-rock-vegan-movie-night.html'>Punk Rock Vegan Movie Night</a></span></li></ul>
+<h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2023-02-20_end-of-the-line_movie-night.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-02-20_end-of-the-line_movie-night.webp' alt='flyer, Feb 20, 2023'><span class='pwcap'>Feb 20, 2023 &middot; punk rock vegan movie night</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2026</span></li><li><span class='gdate'><b>17</b><i>Jun 2026</i></span><span class='gwho'><a href='../b/open-mic-with-q.html'>Open Mic with Q</a></span></li><li class='gyear'><span>2025</span></li><li><span class='gdate'><b>15</b><i>Feb 2025</i></span><span class='gwho'><a href='../b/dave-dondero.html'>Dave Dondero</a></span></li><li class='gyear'><span>2023</span></li><li><span class='gdate'><b>20</b><i>Feb 2023</i></span><span class='gwho'><a href='../b/punk-rock-vegan-movie-night.html'>Punk Rock Vegan Movie Night</a></span></li></ul>
 <p class="spback"><a href="../">&#8592; back to the calendar</a></p>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>

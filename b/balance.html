@@ -739,9 +739,9 @@ main{max-width:940px}
 #list:not(.wall) #b-tonight .show,
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{
   display:grid;grid-template-columns:minmax(0,320px) 1fr;gap:1.5rem;align-items:center;padding:1.2rem}
-#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{grid-column:1 / -1;transform:rotate(-.4deg)}
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{flex-basis:100%;width:100%;transform:rotate(-.4deg)}
 #list:not(.wall) #b-tonight .thumbwrap,
-#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap{width:100%}
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap{width:100%;aspect-ratio:auto}
 #list:not(.wall) #b-tonight .show img.thumb,#list:not(.wall) #b-tonight .show img.thumb.ph,
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child img.thumb,
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child img.thumb.ph{
@@ -752,17 +752,19 @@ main{max-width:940px}
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap::before{
   left:26%;transform:translateX(-50%) rotate(-16deg);width:78px;height:22px;opacity:.72}
 
-/* --- THIS WEEK: full-flyer vertical posters --- */
-#list:not(.wall) #b-week .cards{display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:1.1rem;align-items:start}
-#list:not(.wall) #b-week .show{flex-direction:column;align-items:stretch;gap:.7rem;padding:.9rem}
+/* --- THIS WEEK: full-flyer vertical posters, uniform 4:5 frames so heights
+   line up; a centered flex wrap so a leftover card centers instead of
+   stranding empty space next to it --- */
+#list:not(.wall) #b-week .cards{display:flex;flex-wrap:wrap;justify-content:center;
+  align-items:flex-start;gap:1.2rem}
+#list:not(.wall) #b-week .show{flex:0 1 200px;flex-direction:column;align-items:stretch;gap:.7rem;padding:.9rem}
 #list:not(.wall) #b-week .show:nth-child(odd){transform:rotate(-.5deg)}
 #list:not(.wall) #b-week .show:nth-child(even){transform:rotate(.5deg)}
-#list:not(.wall) #b-week .thumbwrap{width:100%}
+#list:not(.wall) #b-week .thumbwrap{width:100%;aspect-ratio:4/5}
 #list:not(.wall) #b-week .show img.thumb,
-#list:not(.wall) #b-week .show img.thumb.ph{width:100%;height:auto;max-height:360px;
+#list:not(.wall) #b-week .show img.thumb.ph{width:100%;height:100%;max-height:none;
   object-fit:contain;background:#000}
-#list:not(.wall) #b-week .show h3{font-size:clamp(1.4rem,2.4vw,1.75rem);line-height:1}
+#list:not(.wall) #b-week .show h3{font-size:clamp(1.4rem,2.4vw,1.7rem);line-height:1}
 
 /* --- LATER: dense list, whole flyer in a small frame --- */
 #list:not(.wall) #b-later .cards{display:block;border:2px solid var(--line);
@@ -819,14 +821,14 @@ main{max-width:940px}
 <div class="heroinfo">
 <div class="actmast"><h1 class="dirhead">Balance</h1><span class="ostamp">pcola local</span></div>
 
-<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i><i></i></span></span><span class='tcap'><b>2</b> shows on the diypensacola record since 2023</span></div>
+<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i><i></i><i></i></span></span><span class='tcap'><b>3</b> shows on the diypensacola record since 2023</span></div>
 
-<div class='vstamps'><span class='lead'>stamped at</span><a href='../v/easy-going-gallery.html'>easy going gallery</a><a href='../v/just-one-more-saloon.html'>just one more saloon</a></div>
+<div class='vstamps'><span class='lead'>stamped at</span><a href='../v/easy-going-gallery.html'>easy going gallery</a><a href='../v/just-one-more-saloon.html'>just one more saloon</a><a href='../v/the-handlebar.html'>the handlebar</a></div>
 
 </div>
 <a class='heropost' href='../flyers/2023-08-25_just-one-more-saloon_lovelight.jpg' target='_blank' rel='noopener'><img src='../flyers/thumbs/2023-08-25_just-one-more-saloon_lovelight.webp' alt='Balance flyer, Aug 25, 2023'><span class='hpcap'>Aug 25, 2023 &middot; just one more saloon</span></a>
 </section>
-<h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2023-05-13_easy-going-gallery_nervous-pulp.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-05-13_easy-going-gallery_nervous-pulp.webp' alt='flyer, May 13, 2023'><span class='pwcap'>May 13, 2023 &middot; easy going gallery</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2023</span></li><li><span class='gdate'><b>25</b><i>Aug 2023</i></span><span class='gwho'><a href='lovelight.html'>Lovelight</a>, <a href='don-frenchie-friends.html'>Don Frenchie &amp; friends</a>, <a href='elwood-folse.html'>Elwood Folse</a>, <a href='astral-lite.html'>Astral Lite</a>, <a href='chat-holley.html'>Chat Holley</a>, <b class='self'>Balance</b></span><a class='gven' href='../v/just-one-more-saloon.html'>just one more saloon</a></li><li><span class='gdate'><b>13</b><i>May 2023</i></span><span class='gwho'><a href='nervous-pulp.html'>Nervous Pulp</a>, <a href='wild-charge.html'>Wild Charge</a>, <b class='self'>Balance</b></span><a class='gven' href='../v/easy-going-gallery.html'>easy going gallery</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='astral-lite.html'>astral lite</a><a href='chat-holley.html'>chat holley</a><a href='don-frenchie-friends.html'>don frenchie &amp; friends</a><a href='elwood-folse.html'>elwood folse</a><a href='lovelight.html'>lovelight</a><a href='nervous-pulp.html'>nervous pulp</a><a href='wild-charge.html'>wild charge</a></div>
+<h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2023-05-13_easy-going-gallery_nervous-pulp.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-05-13_easy-going-gallery_nervous-pulp.webp' alt='flyer, May 13, 2023'><span class='pwcap'>May 13, 2023 &middot; easy going gallery</span></a><a class='pwtile' href='../flyers/2023-02-03_handlebar_forrest-philpot.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-02-03_handlebar_forrest-philpot.webp' alt='flyer, Feb 3, 2023'><span class='pwcap'>Feb 3, 2023 &middot; the handlebar</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2023</span></li><li><span class='gdate'><b>25</b><i>Aug 2023</i></span><span class='gwho'><a href='lovelight.html'>Lovelight</a>, <a href='don-frenchie-friends.html'>Don Frenchie &amp; friends</a>, <a href='elwood-folse.html'>Elwood Folse</a>, <a href='astral-lite.html'>Astral Lite</a>, <a href='chat-holley.html'>Chat Holley</a>, <b class='self'>Balance</b></span><a class='gven' href='../v/just-one-more-saloon.html'>just one more saloon</a></li><li><span class='gdate'><b>13</b><i>May 2023</i></span><span class='gwho'><a href='nervous-pulp.html'>Nervous Pulp</a>, <a href='wild-charge.html'>Wild Charge</a>, <b class='self'>Balance</b></span><a class='gven' href='../v/easy-going-gallery.html'>easy going gallery</a></li><li><span class='gdate'><b>3</b><i>Feb 2023</i></span><span class='gwho'><a href='forrest-philpot.html'>Forrest Philpot</a>, <b class='self'>Balance</b>, <a href='kairo.html'>Kairo</a>, <a href='nel-gatlin.html'>Nel Gatlin</a></span><a class='gven' href='../v/the-handlebar.html'>the handlebar</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='astral-lite.html'>astral lite</a><a href='chat-holley.html'>chat holley</a><a href='don-frenchie-friends.html'>don frenchie &amp; friends</a><a href='elwood-folse.html'>elwood folse</a><a href='forrest-philpot.html'>forrest philpot</a><a href='kairo.html'>kairo</a><a href='lovelight.html'>lovelight</a><a href='nel-gatlin.html'>nel gatlin</a><a href='nervous-pulp.html'>nervous pulp</a><a href='wild-charge.html'>wild charge</a></div>
 <p class="dirnote">act pages are built automatically from the show archive, so something may be off: a misspelled name, a missing link, the wrong type, or a bad local/touring call. no disrespect meant. wrong on any of that, or want a listen link (youtube or bandcamp) or live footage added? <a href='../submit.html'>send it in</a>.</p>
 <p class="spback"><a href="../bands.html">&#8592; the scene index</a> · <a href="../">calendar</a></p>
 </main>

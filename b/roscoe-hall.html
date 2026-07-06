@@ -739,9 +739,9 @@ main{max-width:940px}
 #list:not(.wall) #b-tonight .show,
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{
   display:grid;grid-template-columns:minmax(0,320px) 1fr;gap:1.5rem;align-items:center;padding:1.2rem}
-#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{grid-column:1 / -1;transform:rotate(-.4deg)}
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{flex-basis:100%;width:100%;transform:rotate(-.4deg)}
 #list:not(.wall) #b-tonight .thumbwrap,
-#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap{width:100%}
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap{width:100%;aspect-ratio:auto}
 #list:not(.wall) #b-tonight .show img.thumb,#list:not(.wall) #b-tonight .show img.thumb.ph,
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child img.thumb,
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child img.thumb.ph{
@@ -752,17 +752,19 @@ main{max-width:940px}
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap::before{
   left:26%;transform:translateX(-50%) rotate(-16deg);width:78px;height:22px;opacity:.72}
 
-/* --- THIS WEEK: full-flyer vertical posters --- */
-#list:not(.wall) #b-week .cards{display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:1.1rem;align-items:start}
-#list:not(.wall) #b-week .show{flex-direction:column;align-items:stretch;gap:.7rem;padding:.9rem}
+/* --- THIS WEEK: full-flyer vertical posters, uniform 4:5 frames so heights
+   line up; a centered flex wrap so a leftover card centers instead of
+   stranding empty space next to it --- */
+#list:not(.wall) #b-week .cards{display:flex;flex-wrap:wrap;justify-content:center;
+  align-items:flex-start;gap:1.2rem}
+#list:not(.wall) #b-week .show{flex:0 1 200px;flex-direction:column;align-items:stretch;gap:.7rem;padding:.9rem}
 #list:not(.wall) #b-week .show:nth-child(odd){transform:rotate(-.5deg)}
 #list:not(.wall) #b-week .show:nth-child(even){transform:rotate(.5deg)}
-#list:not(.wall) #b-week .thumbwrap{width:100%}
+#list:not(.wall) #b-week .thumbwrap{width:100%;aspect-ratio:4/5}
 #list:not(.wall) #b-week .show img.thumb,
-#list:not(.wall) #b-week .show img.thumb.ph{width:100%;height:auto;max-height:360px;
+#list:not(.wall) #b-week .show img.thumb.ph{width:100%;height:100%;max-height:none;
   object-fit:contain;background:#000}
-#list:not(.wall) #b-week .show h3{font-size:clamp(1.4rem,2.4vw,1.75rem);line-height:1}
+#list:not(.wall) #b-week .show h3{font-size:clamp(1.4rem,2.4vw,1.7rem);line-height:1}
 
 /* --- LATER: dense list, whole flyer in a small frame --- */
 #list:not(.wall) #b-later .cards{display:block;border:2px solid var(--line);
@@ -821,12 +823,12 @@ main{max-width:940px}
 <p class='dirsub'>recurring night / happening</p>
 <div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i><i></i></span></span><span class='tcap'><b>2</b> happenings on the diypensacola record since 2023</span></div>
 
-<div class='vstamps'><span class='lead'>stamped at</span><a href='../v/309-punk-project.html'>309 punk project</a></div>
+<div class='vstamps'><span class='lead'>stamped at</span><a href='../v/309.html'>309 punk project</a></div>
 
 </div>
 <a class='heropost' href='../flyers/2023-06-17_309_roscoe-hall.jpg' target='_blank' rel='noopener'><img src='../flyers/thumbs/2023-06-17_309_roscoe-hall.webp' alt='Roscoe Hall flyer, Jun 17, 2023'><span class='hpcap'>Jun 17, 2023 &middot; 309 punk project</span></a>
 </section>
-<h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2023-03-04_309_roscoe-hall.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-03-04_309_roscoe-hall.webp' alt='flyer, Mar 4, 2023'><span class='pwcap'>Mar 4, 2023 &middot; 309 punk project</span></a></div><h2 class='dirsec'>past happenings</h2><ul class='gigledger'><li class='gyear'><span>2023</span></li><li><span class='gdate'><b>17</b><i>Jun 2023</i></span><span class='gwho'><b class='self'>Roscoe Hall</b></span><a class='gven' href='../v/309-punk-project.html'>309 punk project</a></li><li><span class='gdate'><b>4</b><i>Mar 2023</i></span><span class='gwho'><b class='self'>Roscoe Hall</b></span><a class='gven' href='../v/309-punk-project.html'>309 punk project</a></li></ul>
+<h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2023-03-04_309_roscoe-hall.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-03-04_309_roscoe-hall.webp' alt='flyer, Mar 4, 2023'><span class='pwcap'>Mar 4, 2023 &middot; 309 punk project</span></a></div><h2 class='dirsec'>past happenings</h2><ul class='gigledger'><li class='gyear'><span>2023</span></li><li><span class='gdate'><b>17</b><i>Jun 2023</i></span><span class='gwho'><b class='self'>Roscoe Hall</b></span><a class='gven' href='../v/309.html'>309 punk project</a></li><li><span class='gdate'><b>4</b><i>Mar 2023</i></span><span class='gwho'><b class='self'>Roscoe Hall</b></span><a class='gven' href='../v/309.html'>309 punk project</a></li></ul>
 <p class="dirnote">this page tracks a night, series, or happening from the show archive. it's built automatically from flyers and listings, so a name or detail may be off. no disrespect meant. wrong or missing info? <a href='../submit.html'>send it in</a>.</p>
 <p class="spback"><a href="../bands.html">&#8592; the scene index</a> · <a href="../">calendar</a></p>
 </main>

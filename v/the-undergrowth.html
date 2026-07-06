@@ -10,7 +10,7 @@
 <meta property="og:title" content="The Undergrowth · shows · DIYPensacola">
 <meta property="og:description" content="DIY and punk shows at The Undergrowth in Pensacola, FL: what&#39;s coming up and everything that&#39;s happened there.">
 <meta property="og:url" content="https://diypensacola.com/v/the-undergrowth.html">
-<meta property="og:image" content="https://diypensacola.com/flyers/2026-03-31_undergrowth_clementine.jpg">
+<meta property="og:image" content="https://diypensacola.com/flyers/flyer_2026-06-26_undergrowth_other.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="../logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -739,9 +739,9 @@ main{max-width:940px}
 #list:not(.wall) #b-tonight .show,
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{
   display:grid;grid-template-columns:minmax(0,320px) 1fr;gap:1.5rem;align-items:center;padding:1.2rem}
-#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{grid-column:1 / -1;transform:rotate(-.4deg)}
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{flex-basis:100%;width:100%;transform:rotate(-.4deg)}
 #list:not(.wall) #b-tonight .thumbwrap,
-#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap{width:100%}
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap{width:100%;aspect-ratio:auto}
 #list:not(.wall) #b-tonight .show img.thumb,#list:not(.wall) #b-tonight .show img.thumb.ph,
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child img.thumb,
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child img.thumb.ph{
@@ -752,17 +752,19 @@ main{max-width:940px}
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap::before{
   left:26%;transform:translateX(-50%) rotate(-16deg);width:78px;height:22px;opacity:.72}
 
-/* --- THIS WEEK: full-flyer vertical posters --- */
-#list:not(.wall) #b-week .cards{display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:1.1rem;align-items:start}
-#list:not(.wall) #b-week .show{flex-direction:column;align-items:stretch;gap:.7rem;padding:.9rem}
+/* --- THIS WEEK: full-flyer vertical posters, uniform 4:5 frames so heights
+   line up; a centered flex wrap so a leftover card centers instead of
+   stranding empty space next to it --- */
+#list:not(.wall) #b-week .cards{display:flex;flex-wrap:wrap;justify-content:center;
+  align-items:flex-start;gap:1.2rem}
+#list:not(.wall) #b-week .show{flex:0 1 200px;flex-direction:column;align-items:stretch;gap:.7rem;padding:.9rem}
 #list:not(.wall) #b-week .show:nth-child(odd){transform:rotate(-.5deg)}
 #list:not(.wall) #b-week .show:nth-child(even){transform:rotate(.5deg)}
-#list:not(.wall) #b-week .thumbwrap{width:100%}
+#list:not(.wall) #b-week .thumbwrap{width:100%;aspect-ratio:4/5}
 #list:not(.wall) #b-week .show img.thumb,
-#list:not(.wall) #b-week .show img.thumb.ph{width:100%;height:auto;max-height:360px;
+#list:not(.wall) #b-week .show img.thumb.ph{width:100%;height:100%;max-height:none;
   object-fit:contain;background:#000}
-#list:not(.wall) #b-week .show h3{font-size:clamp(1.4rem,2.4vw,1.75rem);line-height:1}
+#list:not(.wall) #b-week .show h3{font-size:clamp(1.4rem,2.4vw,1.7rem);line-height:1}
 
 /* --- LATER: dense list, whole flyer in a small frame --- */
 #list:not(.wall) #b-later .cards{display:block;border:2px solid var(--line);
@@ -819,13 +821,13 @@ main{max-width:940px}
 <div class="heroinfo">
 <div class="actmast"><h1 class="dirhead">The Undergrowth</h1></div>
 
-<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i><i></i><i></i><i></i><i class='x'></i></span><span class='tgrp'><i></i><i></i></span></span><span class='tcap'><b>7</b> shows on the diypensacola record since 2025</span></div>
+<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i><i></i><i></i><i></i><i class='x'></i></span><span class='tgrp'><i></i><i></i><i></i></span></span><span class='tcap'><b>8</b> shows on the diypensacola record since 2025</span></div>
 
 <div class="dactions"><a class="dbtn" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Undergrowth%20Pensacola%20FL" target="_blank" rel="noopener">open in maps</a></div>
 </div>
-<a class='heropost' href='../flyers/2026-03-31_undergrowth_clementine.jpg' target='_blank' rel='noopener'><img src='../flyers/thumbs/2026-03-31_undergrowth_clementine.webp' alt='The Undergrowth flyer, Mar 31, 2026'><span class='hpcap'>Mar 31, 2026 &middot; clementine, other +1</span></a>
+<a class='heropost' href='../flyers/flyer_2026-06-26_undergrowth_other.jpg' target='_blank' rel='noopener'><img src='../flyers/thumbs/flyer_2026-06-26_undergrowth_other.webp' alt='The Undergrowth flyer, Jun 26, 2026'><span class='hpcap'>Jun 26, 2026 &middot; other</span></a>
 </section>
-<h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2026-03-27_undergrowth_undergrowth-poetry-slam.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2026-03-27_undergrowth_undergrowth-poetry-slam.webp' alt='flyer, Mar 27, 2026'><span class='pwcap'>Mar 27, 2026 &middot; undergrowth poetry slam</span></a><a class='pwtile' href='../flyers/2026-01-09_undergrowth_creature-feature.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2026-01-09_undergrowth_creature-feature.webp' alt='flyer, Jan 9, 2026'><span class='pwcap'>Jan 9, 2026 &middot; creature feature</span></a><a class='pwtile' href='../flyers/2025-12-22_undergrowth_pensacola-yoyo-club.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-12-22_undergrowth_pensacola-yoyo-club.webp' alt='flyer, Dec 22, 2025'><span class='pwcap'>Dec 22, 2025 &middot; pensacola yoyo club</span></a><a class='pwtile' href='../flyers/2025-12-19_undergrowth_mr-meister.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-12-19_undergrowth_mr-meister.webp' alt='flyer, Dec 19, 2025'><span class='pwcap'>Dec 19, 2025 &middot; mr. meister, holy anorexia! +8</span></a><a class='pwtile' href='../flyers/2025-11-28_undergrowth_over-the-garden-wall.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-11-28_undergrowth_over-the-garden-wall.webp' alt='flyer, Nov 28, 2025'><span class='pwcap'>Nov 28, 2025 &middot; over the garden wall</span></a><a class='pwtile' href='../flyers/2025-11-10_undergrowth_craft-night.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-11-10_undergrowth_craft-night.webp' alt='flyer, Nov 10, 2025'><span class='pwcap'>Nov 10, 2025 &middot; craft night, pensacola liberation center</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2026</span></li><li><span class='gdate'><b>31</b><i>Mar 2026</i></span><span class='gwho'><a href='../b/clementine.html'>Clementine</a>, <a href='../b/other.html'>Other</a>, <a href='../b/i-hate-sundays.html'>I Hate Sundays</a></span></li><li><span class='gdate'><b>27</b><i>Mar 2026</i></span><span class='gwho'><a href='../b/undergrowth-poetry-slam.html'>Undergrowth Poetry Slam</a></span></li><li><span class='gdate'><b>9</b><i>Jan 2026</i></span><span class='gwho'><a href='../b/creature-feature.html'>Creature Feature</a></span></li><li class='gyear'><span>2025</span></li><li><span class='gdate'><b>22</b><i>Dec 2025</i></span><span class='gwho'><a href='../b/pensacola-yoyo-club.html'>Pensacola Yoyo Club</a></span></li><li><span class='gdate'><b>19</b><i>Dec 2025</i></span><span class='gwho'><a href='../b/mr-meister.html'>Mr. Meister</a>, <a href='../b/holy-anorexia.html'>Holy Anorexia!</a>, <a href='../b/other.html'>Other</a>, <a href='../b/ihatesundays.html'>iHateSundays</a>, <a href='../b/kevin.html'>Kevin</a>, <a href='../b/we-re-still-alice.html'>We&#39;re Still Alice</a>, <a href='../b/steve-herwin.html'>Steve Herwin</a>, <a href='../b/katie-dineen.html'>Katie Dineen</a>, <a href='../b/tori-lucia.html'>Tori Lucia</a>, <a href='../b/video-slug.html'>Video_Slug</a></span></li><li><span class='gdate'><b>28</b><i>Nov 2025</i></span><span class='gwho'><a href='../b/over-the-garden-wall.html'>Over The Garden Wall</a></span></li><li><span class='gdate'><b>10</b><i>Nov 2025</i></span><span class='gwho'><a href='../b/craft-night.html'>Craft Night</a>, <a href='../b/pensacola-liberation-center.html'>Pensacola Liberation Center</a></span></li></ul>
+<h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2026-03-31_undergrowth_clementine.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2026-03-31_undergrowth_clementine.webp' alt='flyer, Mar 31, 2026'><span class='pwcap'>Mar 31, 2026 &middot; clementine, other +1</span></a><a class='pwtile' href='../flyers/2026-03-27_undergrowth_undergrowth-poetry-slam.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2026-03-27_undergrowth_undergrowth-poetry-slam.webp' alt='flyer, Mar 27, 2026'><span class='pwcap'>Mar 27, 2026 &middot; undergrowth poetry slam</span></a><a class='pwtile' href='../flyers/2026-01-09_undergrowth_creature-feature.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2026-01-09_undergrowth_creature-feature.webp' alt='flyer, Jan 9, 2026'><span class='pwcap'>Jan 9, 2026 &middot; creature feature</span></a><a class='pwtile' href='../flyers/2025-12-22_undergrowth_pensacola-yoyo-club.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-12-22_undergrowth_pensacola-yoyo-club.webp' alt='flyer, Dec 22, 2025'><span class='pwcap'>Dec 22, 2025 &middot; pensacola yoyo club</span></a><a class='pwtile' href='../flyers/2025-12-19_undergrowth_mr-meister.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-12-19_undergrowth_mr-meister.webp' alt='flyer, Dec 19, 2025'><span class='pwcap'>Dec 19, 2025 &middot; mr. meister, holy anorexia! +8</span></a><a class='pwtile' href='../flyers/2025-11-28_undergrowth_over-the-garden-wall.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-11-28_undergrowth_over-the-garden-wall.webp' alt='flyer, Nov 28, 2025'><span class='pwcap'>Nov 28, 2025 &middot; over the garden wall</span></a><a class='pwtile' href='../flyers/2025-11-10_undergrowth_craft-night.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-11-10_undergrowth_craft-night.webp' alt='flyer, Nov 10, 2025'><span class='pwcap'>Nov 10, 2025 &middot; craft night, pensacola liberation center</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2026</span></li><li><span class='gdate'><b>26</b><i>Jun 2026</i></span><span class='gwho'><a href='../b/other.html'>Other</a></span></li><li><span class='gdate'><b>31</b><i>Mar 2026</i></span><span class='gwho'><a href='../b/clementine.html'>Clementine</a>, <a href='../b/other.html'>Other</a>, <a href='../b/i-hate-sundays.html'>I Hate Sundays</a></span></li><li><span class='gdate'><b>27</b><i>Mar 2026</i></span><span class='gwho'><a href='../b/undergrowth-poetry-slam.html'>Undergrowth Poetry Slam</a></span></li><li><span class='gdate'><b>9</b><i>Jan 2026</i></span><span class='gwho'><a href='../b/creature-feature.html'>Creature Feature</a></span></li><li class='gyear'><span>2025</span></li><li><span class='gdate'><b>22</b><i>Dec 2025</i></span><span class='gwho'><a href='../b/pensacola-yoyo-club.html'>Pensacola Yoyo Club</a></span></li><li><span class='gdate'><b>19</b><i>Dec 2025</i></span><span class='gwho'><a href='../b/mr-meister.html'>Mr. Meister</a>, <a href='../b/holy-anorexia.html'>Holy Anorexia!</a>, <a href='../b/other.html'>Other</a>, <a href='../b/ihatesundays.html'>iHateSundays</a>, <a href='../b/kevin.html'>Kevin</a>, <a href='../b/we-re-still-alice.html'>We&#39;re Still Alice</a>, <a href='../b/steve-herwin.html'>Steve Herwin</a>, <a href='../b/katie-dineen.html'>Katie Dineen</a>, <a href='../b/tori-lucia.html'>Tori Lucia</a>, <a href='../b/video-slug.html'>Video_Slug</a></span></li><li><span class='gdate'><b>28</b><i>Nov 2025</i></span><span class='gwho'><a href='../b/over-the-garden-wall.html'>Over The Garden Wall</a></span></li><li><span class='gdate'><b>10</b><i>Nov 2025</i></span><span class='gwho'><a href='../b/craft-night.html'>Craft Night</a>, <a href='../b/pensacola-liberation-center.html'>Pensacola Liberation Center</a></span></li></ul>
 <p class="spback"><a href="../">&#8592; back to the calendar</a></p>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>

@@ -746,9 +746,9 @@ main{max-width:940px}
 #list:not(.wall) #b-tonight .show,
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{
   display:grid;grid-template-columns:minmax(0,320px) 1fr;gap:1.5rem;align-items:center;padding:1.2rem}
-#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{grid-column:1 / -1;transform:rotate(-.4deg)}
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{flex-basis:100%;width:100%;transform:rotate(-.4deg)}
 #list:not(.wall) #b-tonight .thumbwrap,
-#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap{width:100%}
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap{width:100%;aspect-ratio:auto}
 #list:not(.wall) #b-tonight .show img.thumb,#list:not(.wall) #b-tonight .show img.thumb.ph,
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child img.thumb,
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child img.thumb.ph{
@@ -759,17 +759,19 @@ main{max-width:940px}
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap::before{
   left:26%;transform:translateX(-50%) rotate(-16deg);width:78px;height:22px;opacity:.72}
 
-/* --- THIS WEEK: full-flyer vertical posters --- */
-#list:not(.wall) #b-week .cards{display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:1.1rem;align-items:start}
-#list:not(.wall) #b-week .show{flex-direction:column;align-items:stretch;gap:.7rem;padding:.9rem}
+/* --- THIS WEEK: full-flyer vertical posters, uniform 4:5 frames so heights
+   line up; a centered flex wrap so a leftover card centers instead of
+   stranding empty space next to it --- */
+#list:not(.wall) #b-week .cards{display:flex;flex-wrap:wrap;justify-content:center;
+  align-items:flex-start;gap:1.2rem}
+#list:not(.wall) #b-week .show{flex:0 1 200px;flex-direction:column;align-items:stretch;gap:.7rem;padding:.9rem}
 #list:not(.wall) #b-week .show:nth-child(odd){transform:rotate(-.5deg)}
 #list:not(.wall) #b-week .show:nth-child(even){transform:rotate(.5deg)}
-#list:not(.wall) #b-week .thumbwrap{width:100%}
+#list:not(.wall) #b-week .thumbwrap{width:100%;aspect-ratio:4/5}
 #list:not(.wall) #b-week .show img.thumb,
-#list:not(.wall) #b-week .show img.thumb.ph{width:100%;height:auto;max-height:360px;
+#list:not(.wall) #b-week .show img.thumb.ph{width:100%;height:100%;max-height:none;
   object-fit:contain;background:#000}
-#list:not(.wall) #b-week .show h3{font-size:clamp(1.4rem,2.4vw,1.75rem);line-height:1}
+#list:not(.wall) #b-week .show h3{font-size:clamp(1.4rem,2.4vw,1.7rem);line-height:1}
 
 /* --- LATER: dense list, whole flyer in a small frame --- */
 #list:not(.wall) #b-later .cards{display:block;border:2px solid var(--line);
@@ -828,7 +830,7 @@ main{max-width:940px}
 <div class="date">SUN SEP 27</div>
 <h1>Eyehategod, Whores, Nomas</h1>
 <div class="actchips"><a href="../b/eyehategod.html">eyehategod</a><a href="../b/whores.html">whores</a><a href="../b/nomas.html">nomas</a></div>
-<div class="drow"><a href="../v/handlebar.html">The Handlebar</a>  ·  319 N Tarragona St, Pensacola, FL</div><p class="dcap">eyehategod, whores, and nomas at the handlebar. september 27. tickets on sale now at thehandlebar850.com.</p>
+<div class="drow"><a href="../v/the-handlebar.html">The Handlebar</a>  ·  319 N Tarragona St, Pensacola, FL</div><p class="dcap">eyehategod, whores, and nomas at the handlebar. september 27. tickets on sale now at thehandlebar850.com.</p>
 <div class="dactions"><a class="dbtn" href="https://www.google.com/maps/dir/?api=1&amp;destination=319%20N%20Tarragona%20St%2C%20Pensacola%2C%20FL" target="_blank" rel="noopener">directions</a><a class="dbtn" href="2026-09-27-handlebar-eyehategod.ics" download>add to calendar</a><a class="dbtn" href="../">all shows &#8599;</a></div>
 </div>
 </article>
