@@ -696,6 +696,110 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   padding:.1rem .3rem;margin-left:.35rem;text-transform:uppercase;letter-spacing:.07em;transform:rotate(-2deg)}
 .bandindex .letter{display:inline-block;border:2px solid var(--line);background:var(--card);
   padding:.15rem .65rem .25rem;transform:rotate(-2deg);box-shadow:3px 3px 0 var(--shadow)}
+
+/* ==================== REDESIGN 2026: poster feed ====================
+   Default (list) view only — the flyer-wall toggle keeps its own look.
+   Tonight = hero, this week = full-flyer posters, later = dense list.
+   Flyers show WHOLE (object-fit:contain), only ~12% desaturated at rest,
+   full color on hover. Layered last so it overrides the base feed rules. */
+
+/* buttons: stretch to fill the masthead like a taped-up banner */
+header .links{max-width:840px}
+header .links a{flex:1 1 auto;text-align:center}
+
+/* the poster feed wants more room than the old 680px reading column */
+main{max-width:940px}
+#list .bucket{max-width:900px}
+
+/* section labels: torn-paper tape for every bucket (tonight label = green "now") */
+#list .bhead{display:flex;align-items:center;gap:.8rem;background:none;border:none;
+  box-shadow:none;transform:none;padding:0;color:var(--ink);font-size:1.7rem}
+#list .bhead .lab{display:inline-block;background:var(--tape);color:#111;line-height:1;
+  padding:.3rem .82rem .38rem;transform:rotate(-1.2deg);box-shadow:4px 4px 0 var(--hot);
+  clip-path:polygon(0 8%,4% 0,12% 6%,24% 1%,38% 7%,52% 1%,66% 6%,80% 1%,92% 6%,100% 2%,100% 92%,95% 100%,84% 95%,70% 100%,55% 94%,42% 100%,28% 95%,15% 100%,5% 96%,0 100%)}
+#list #b-tonight .bhead .lab{background:var(--free)}
+#list .bhead::after{content:"";flex:1;height:0;border-top:3px dashed var(--line);transform:translateY(1px)}
+#list .bhead .ht{display:none}
+
+/* date becomes a stamped, rotated block (feed only; archive lists untouched) */
+#list:not(.wall) .show .date{display:inline-block;font-family:"Anton","Special Elite",sans-serif;
+  border:2px solid var(--hotink);color:var(--hotink);background:rgba(12,12,13,.5);
+  padding:.2rem .5rem .24rem;transform:rotate(-3deg);letter-spacing:.05em;font-size:.86rem;
+  margin-bottom:.4rem;line-height:1}
+
+/* flyers: whole art, ~12% desaturated at rest, full color on hover */
+@media (hover:hover){
+  #list:not(.wall) .show img.thumb:not(.ph){filter:grayscale(.12);transition:filter .2s ease}
+  #list:not(.wall) .show:hover img.thumb,#list:not(.wall) .show:focus img.thumb{filter:none}
+}
+
+/* --- HERO: the very next show. Tonight's card, or (nothing tonight) the first
+   This Week poster. The :has() flips it live if the JS re-buckets by viewer date. --- */
+#list:not(.wall) #b-tonight .cards{display:block}
+#list:not(.wall) #b-tonight .show,
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{
+  display:grid;grid-template-columns:minmax(0,320px) 1fr;gap:1.5rem;align-items:center;padding:1.2rem}
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{grid-column:1 / -1;transform:rotate(-.4deg)}
+#list:not(.wall) #b-tonight .thumbwrap,
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap{width:100%}
+#list:not(.wall) #b-tonight .show img.thumb,#list:not(.wall) #b-tonight .show img.thumb.ph,
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child img.thumb,
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child img.thumb.ph{
+  width:100%;height:auto;max-height:440px;object-fit:contain;background:#000;border:3px solid var(--ink);transform:none;padding:0}
+#list:not(.wall) #b-tonight .show h3,
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child h3{font-size:clamp(2rem,4.5vw,3.4rem);line-height:.92}
+#list:not(.wall) #b-tonight .thumbwrap::before,
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap::before{
+  left:26%;transform:translateX(-50%) rotate(-16deg);width:78px;height:22px;opacity:.72}
+
+/* --- THIS WEEK: full-flyer vertical posters --- */
+#list:not(.wall) #b-week .cards{display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:1.1rem;align-items:start}
+#list:not(.wall) #b-week .show{flex-direction:column;align-items:stretch;gap:.7rem;padding:.9rem}
+#list:not(.wall) #b-week .show:nth-child(odd){transform:rotate(-.5deg)}
+#list:not(.wall) #b-week .show:nth-child(even){transform:rotate(.5deg)}
+#list:not(.wall) #b-week .thumbwrap{width:100%}
+#list:not(.wall) #b-week .show img.thumb,
+#list:not(.wall) #b-week .show img.thumb.ph{width:100%;height:auto;max-height:360px;
+  object-fit:contain;background:#000}
+#list:not(.wall) #b-week .show h3{font-size:clamp(1.4rem,2.4vw,1.75rem);line-height:1}
+
+/* --- LATER: dense list, whole flyer in a small frame --- */
+#list:not(.wall) #b-later .cards{display:block;border:2px solid var(--line);
+  background:var(--card);box-shadow:6px 6px 0 rgba(0,0,0,.45)}
+#list:not(.wall) #b-later .show{gap:.9rem;padding:.6rem .9rem;background:none;border:none;
+  border-bottom:2px dashed var(--line);box-shadow:none;transform:none;align-items:center}
+#list:not(.wall) #b-later .cards .show:last-child{border-bottom:none}
+#list:not(.wall) #b-later .show:hover{box-shadow:none;background:#1d1d20}
+#list:not(.wall) #b-later .thumbwrap{flex:none}
+#list:not(.wall) #b-later .thumbwrap::before{display:none}
+#list:not(.wall) #b-later .show img.thumb,
+#list:not(.wall) #b-later .show img.thumb.ph{width:54px;height:70px;object-fit:contain;background:#000;padding:0}
+#list:not(.wall) #b-later .show .date{font-size:.72rem;margin-bottom:.2rem;padding:.14rem .4rem}
+#list:not(.wall) #b-later .show h3{font-size:1.05rem}
+
+/* varied hand-torn tape across This Week posters */
+#list:not(.wall) #b-week .thumbwrap::before{clip-path:polygon(2% 8%,98% 0,96% 92%,4% 100%);height:20px;opacity:.72}
+#list:not(.wall) #b-week .show:nth-child(4n+1) .thumbwrap::before{left:32%;transform:translateX(-50%) rotate(-13deg);width:60px}
+#list:not(.wall) #b-week .show:nth-child(4n+2) .thumbwrap::before{left:66%;transform:translateX(-50%) rotate(9deg);width:54px}
+#list:not(.wall) #b-week .show:nth-child(4n+3) .thumbwrap::before{left:44%;transform:translateX(-50%) rotate(-5deg);width:46px}
+#list:not(.wall) #b-week .show:nth-child(4n) .thumbwrap::before{left:58%;transform:translateX(-50%) rotate(14deg);width:62px}
+
+/* tonight quiet-night line: a small green taped note */
+#list .bnone{display:inline-flex;align-items:center;gap:.65rem;flex-wrap:wrap;
+  border:2px solid var(--free);background:var(--card);box-shadow:5px 5px 0 rgba(107,112,54,.4);
+  padding:.7rem 1rem;transform:rotate(-.5deg);color:var(--dim);margin:.3rem 0 0;font-size:.95rem}
+#list .bnone .nstamp{border-color:#111;background:var(--free);color:#111;margin-right:.1rem}
+
+@media (max-width:640px){
+  /* the hero stacks (flyer over name) so the big name never clips on a phone */
+  #list:not(.wall) #b-tonight .show,
+  #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{grid-template-columns:1fr;gap:1rem}
+  #list:not(.wall) #b-tonight .thumbwrap,
+  #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap{max-width:280px}
+  #list:not(.wall) #b-tonight .show h3,
+  #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child h3{font-size:clamp(1.8rem,8vw,2.6rem)}
+}
 </style></head><body class="showpage">
 <header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../bands.html">bands</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap dirwrap actpage">
@@ -703,13 +807,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 <div class="heroinfo">
 <div class="actmast"><h1 class="dirhead">309 Punk Project</h1></div>
 
-<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i><i></i><i></i><i></i><i class='x'></i></span><span class='tgrp'><i></i><i></i><i></i><i></i><i class='x'></i></span><span class='tgrp'><i></i><i></i><i></i><i></i></span></span><span class='tcap'><b>14</b> shows on the diypensacola record since 2023</span></div>
+<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i><i></i><i></i><i></i><i class='x'></i></span><span class='tgrp'><i></i><i></i><i></i><i></i><i class='x'></i></span><span class='tgrp'><i></i><i></i><i></i><i></i><i class='x'></i></span><span class='tgrp'><i></i><i></i><i></i><i></i></span></span><span class='tcap'><b>19</b> shows on the diypensacola record since 2023</span></div>
 
 <div class="dactions"><a class="dbtn" href="https://www.google.com/maps/search/?api=1&amp;query=309%20Punk%20Project%20Pensacola%20FL" target="_blank" rel="noopener">open in maps</a></div>
 </div>
 <a class='heropost' href='../flyers/2025-12-07_309_pigeon-pit.jpg' target='_blank' rel='noopener'><img src='../flyers/thumbs/2025-12-07_309_pigeon-pit.webp' alt='309 Punk Project flyer, Dec 7, 2025'><span class='hpcap'>Dec 7, 2025 &middot; pigeon pit, june henry +2</span></a>
 </section>
-<h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2025-11-13_309_leather-painting-workshop.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-11-13_309_leather-painting-workshop.webp' alt='flyer, Nov 13, 2025'><span class='pwcap'>Nov 13, 2025 &middot; leather painting workshop, alyssa osceola</span></a><a class='pwtile' href='../flyers/2025-11-09_309_zine-explosion.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-11-09_309_zine-explosion.webp' alt='flyer, Nov 9, 2025'><span class='pwcap'>Nov 9, 2025 &middot; night on the tracks: zine explosion</span></a><a class='pwtile' href='../flyers/2025-06-07_309_the-living-lens.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-06-07_309_the-living-lens.webp' alt='flyer, Jun 7, 2025'><span class='pwcap'>Jun 7, 2025 &middot; the living lens, la reina</span></a><a class='pwtile' href='../flyers/2025-05-28_309_matt-pless.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-05-28_309_matt-pless.webp' alt='flyer, May 28, 2025'><span class='pwcap'>May 28, 2025 &middot; matt pless, little foot +3</span></a><a class='pwtile' href='../flyers/2025-05-25_309_crankie-fever-puppetry.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-05-25_309_crankie-fever-puppetry.webp' alt='flyer, May 25, 2025'><span class='pwcap'>May 25, 2025 &middot; crankie fever: puppetry workshop, miss pussycat</span></a><a class='pwtile' href='../flyers/2025-04-13_309_relief-printmaking-workshop.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-04-13_309_relief-printmaking-workshop.webp' alt='flyer, Apr 13, 2025'><span class='pwcap'>Apr 13, 2025 &middot; ali roudabush relief printmaking workshop</span></a><a class='pwtile' href='../flyers/2025-03-25_309_other-ego-death.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-03-25_309_other-ego-death.webp' alt='flyer, Mar 25, 2025'><span class='pwcap'>Mar 25, 2025 &middot; other, wanda doomy +1</span></a><a class='pwtile' href='../flyers/2025-03-20_309_daniel-kirk.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-03-20_309_daniel-kirk.webp' alt='flyer, Mar 20, 2025'><span class='pwcap'>Mar 20, 2025 &middot; daniel kirk, sunshine cigarettes +3</span></a><a class='pwtile' href='../flyers/2025-03-10_309_our-movement-starts-here.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-03-10_309_our-movement-starts-here.webp' alt='flyer, Mar 10, 2025'><span class='pwcap'>Mar 10, 2025 &middot; our movement starts here (film screening), john rash</span></a><a class='pwtile' href='../flyers/2023-06-19_309_bread-box-theatre.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-06-19_309_bread-box-theatre.webp' alt='flyer, Jun 19, 2023'><span class='pwcap'>Jun 19, 2023 &middot; bread box theatre</span></a><a class='pwtile' href='../flyers/2023-06-17_309_roscoe-hall.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-06-17_309_roscoe-hall.webp' alt='flyer, Jun 17, 2023'><span class='pwcap'>Jun 17, 2023 &middot; roscoe hall</span></a><a class='pwtile' href='../flyers/2023-06-03_309_alair-wm-johnson.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-06-03_309_alair-wm-johnson.webp' alt='flyer, Jun 3, 2023'><span class='pwcap'>Jun 3, 2023 &middot; alair wm johnson, felicia e gail</span></a><a class='pwtile' href='../flyers/2023-05-19_309_jenny-price-jimbo-easter.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-05-19_309_jenny-price-jimbo-easter.webp' alt='flyer, May 19, 2023'><span class='pwcap'>May 19, 2023 &middot; jenny price &amp; jimbo easter</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2025</span></li><li><span class='gdate'><b>7</b><i>Dec 2025</i></span><span class='gwho'><a href='../b/pigeon-pit.html'>Pigeon Pit</a>, <a href='../b/june-henry.html'>June Henry</a>, <a href='../b/sunflower-cigarettes.html'>Sunflower Cigarettes</a>, <a href='../b/steve-herwin.html'>Steve Herwin</a></span></li><li><span class='gdate'><b>13</b><i>Nov 2025</i></span><span class='gwho'><a href='../b/leather-painting-workshop.html'>Leather Painting Workshop</a>, <a href='../b/alyssa-osceola.html'>Alyssa Osceola</a></span></li><li><span class='gdate'><b>9</b><i>Nov 2025</i></span><span class='gwho'><a href='../b/night-on-the-tracks-zine-explosion.html'>Night on the Tracks: Zine Explosion</a></span></li><li><span class='gdate'><b>7</b><i>Jun 2025</i></span><span class='gwho'><a href='../b/the-living-lens.html'>The Living Lens</a>, <a href='../b/la-reina.html'>La Reina</a></span></li><li><span class='gdate'><b>28</b><i>May 2025</i></span><span class='gwho'><a href='../b/matt-pless.html'>Matt Pless</a>, <a href='../b/little-foot.html'>Little Foot</a>, <a href='../b/stufy.html'>Stufy</a>, <a href='../b/outlook-bleak.html'>Outlook Bleak</a>, <a href='../b/sunflower-cigarettes.html'>Sunflower Cigarettes</a></span></li><li><span class='gdate'><b>25</b><i>May 2025</i></span><span class='gwho'><a href='../b/crankie-fever-puppetry-workshop.html'>Crankie Fever: Puppetry Workshop</a>, <a href='../b/miss-pussycat.html'>Miss Pussycat</a></span></li><li><span class='gdate'><b>13</b><i>Apr 2025</i></span><span class='gwho'><a href='../b/ali-roudabush-relief-printmaking-workshop.html'>Ali Roudabush Relief Printmaking Workshop</a></span></li><li><span class='gdate'><b>25</b><i>Mar 2025</i></span><span class='gwho'><a href='../b/other.html'>Other</a>, <a href='../b/wanda-doomy.html'>Wanda Doomy</a>, <a href='../b/ego-death.html'>Ego Death</a></span></li><li><span class='gdate'><b>20</b><i>Mar 2025</i></span><span class='gwho'><a href='../b/daniel-kirk.html'>Daniel Kirk</a>, <a href='../b/sunshine-cigarettes.html'>Sunshine Cigarettes</a>, <a href='../b/jamey-jones.html'>Jamey Jones</a>, <a href='../b/dakota-parks.html'>Dakota Parks</a>, <a href='../b/julia-gorton.html'>Julia Gorton</a></span></li><li><span class='gdate'><b>10</b><i>Mar 2025</i></span><span class='gwho'><a href='../b/our-movement-starts-here-film-screening.html'>Our Movement Starts Here (Film Screening)</a>, <a href='../b/john-rash.html'>John Rash</a></span></li><li class='gyear'><span>2023</span></li><li><span class='gdate'><b>19</b><i>Jun 2023</i></span><span class='gwho'><a href='../b/bread-box-theatre.html'>Bread Box Theatre</a></span></li><li><span class='gdate'><b>17</b><i>Jun 2023</i></span><span class='gwho'><a href='../b/roscoe-hall.html'>Roscoe Hall</a></span></li><li><span class='gdate'><b>3</b><i>Jun 2023</i></span><span class='gwho'><a href='../b/alair-wm-johnson.html'>Alair Wm Johnson</a>, <a href='../b/felicia-e-gail.html'>Felicia E Gail</a></span></li><li><span class='gdate'><b>19</b><i>May 2023</i></span><span class='gwho'><a href='../b/jenny-price-jimbo-easter.html'>Jenny Price &amp; Jimbo Easter</a></span></li></ul>
+<h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2025-11-13_309_leather-painting-workshop.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-11-13_309_leather-painting-workshop.webp' alt='flyer, Nov 13, 2025'><span class='pwcap'>Nov 13, 2025 &middot; leather painting workshop, alyssa osceola</span></a><a class='pwtile' href='../flyers/2025-11-09_309_zine-explosion.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-11-09_309_zine-explosion.webp' alt='flyer, Nov 9, 2025'><span class='pwcap'>Nov 9, 2025 &middot; night on the tracks: zine explosion</span></a><a class='pwtile' href='../flyers/2025-06-07_309_the-living-lens.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-06-07_309_the-living-lens.webp' alt='flyer, Jun 7, 2025'><span class='pwcap'>Jun 7, 2025 &middot; the living lens, la reina</span></a><a class='pwtile' href='../flyers/2025-05-28_309_matt-pless.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-05-28_309_matt-pless.webp' alt='flyer, May 28, 2025'><span class='pwcap'>May 28, 2025 &middot; matt pless, little foot +3</span></a><a class='pwtile' href='../flyers/2025-05-25_309_crankie-fever-puppetry.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-05-25_309_crankie-fever-puppetry.webp' alt='flyer, May 25, 2025'><span class='pwcap'>May 25, 2025 &middot; crankie fever: puppetry workshop, miss pussycat</span></a><a class='pwtile' href='../flyers/2025-04-13_309_relief-printmaking-workshop.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-04-13_309_relief-printmaking-workshop.webp' alt='flyer, Apr 13, 2025'><span class='pwcap'>Apr 13, 2025 &middot; ali roudabush relief printmaking workshop</span></a><a class='pwtile' href='../flyers/2025-03-25_309_other-ego-death.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-03-25_309_other-ego-death.webp' alt='flyer, Mar 25, 2025'><span class='pwcap'>Mar 25, 2025 &middot; other, wanda doomy +1</span></a><a class='pwtile' href='../flyers/2025-03-20_309_daniel-kirk.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-03-20_309_daniel-kirk.webp' alt='flyer, Mar 20, 2025'><span class='pwcap'>Mar 20, 2025 &middot; daniel kirk, sunshine cigarettes +3</span></a><a class='pwtile' href='../flyers/2025-03-10_309_our-movement-starts-here.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-03-10_309_our-movement-starts-here.webp' alt='flyer, Mar 10, 2025'><span class='pwcap'>Mar 10, 2025 &middot; our movement starts here (film screening), john rash</span></a><a class='pwtile' href='../flyers/2023-06-19_309_bread-box-theatre.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-06-19_309_bread-box-theatre.webp' alt='flyer, Jun 19, 2023'><span class='pwcap'>Jun 19, 2023 &middot; bread box theatre</span></a><a class='pwtile' href='../flyers/2023-06-17_309_roscoe-hall.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-06-17_309_roscoe-hall.webp' alt='flyer, Jun 17, 2023'><span class='pwcap'>Jun 17, 2023 &middot; roscoe hall</span></a><a class='pwtile' href='../flyers/2023-06-03_309_alair-wm-johnson.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-06-03_309_alair-wm-johnson.webp' alt='flyer, Jun 3, 2023'><span class='pwcap'>Jun 3, 2023 &middot; alair wm johnson, felicia e gail</span></a><a class='pwtile' href='../flyers/2023-05-19_309_jenny-price-jimbo-easter.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-05-19_309_jenny-price-jimbo-easter.webp' alt='flyer, May 19, 2023'><span class='pwcap'>May 19, 2023 &middot; jenny price &amp; jimbo easter</span></a><a class='pwtile' href='../flyers/2023-05-12_309_felicia-e-gail.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-05-12_309_felicia-e-gail.webp' alt='flyer, May 12, 2023'><span class='pwcap'>May 12, 2023 &middot; felicia e gail</span></a><a class='pwtile' href='../flyers/2023-04-28_309_kim-darling.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-04-28_309_kim-darling.webp' alt='flyer, Apr 28, 2023'><span class='pwcap'>Apr 28, 2023 &middot; kim darling</span></a><a class='pwtile' href='../flyers/2023-04-20_309_zine-party.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-04-20_309_zine-party.webp' alt='flyer, Apr 20, 2023'><span class='pwcap'>Apr 20, 2023 &middot; zine party</span></a><a class='pwtile' href='../flyers/2023-04-06_309_comforter.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-04-06_309_comforter.webp' alt='flyer, Apr 6, 2023'><span class='pwcap'>Apr 6, 2023 &middot; comforter, boxcutter +1</span></a><a class='pwtile' href='../flyers/2023-03-24_309_diy-short-film-fest.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-03-24_309_diy-short-film-fest.webp' alt='flyer, Mar 24, 2023'><span class='pwcap'>Mar 24, 2023 &middot; diy short film fest</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2025</span></li><li><span class='gdate'><b>7</b><i>Dec 2025</i></span><span class='gwho'><a href='../b/pigeon-pit.html'>Pigeon Pit</a>, <a href='../b/june-henry.html'>June Henry</a>, <a href='../b/sunflower-cigarettes.html'>Sunflower Cigarettes</a>, <a href='../b/steve-herwin.html'>Steve Herwin</a></span></li><li><span class='gdate'><b>13</b><i>Nov 2025</i></span><span class='gwho'><a href='../b/leather-painting-workshop.html'>Leather Painting Workshop</a>, <a href='../b/alyssa-osceola.html'>Alyssa Osceola</a></span></li><li><span class='gdate'><b>9</b><i>Nov 2025</i></span><span class='gwho'><a href='../b/night-on-the-tracks-zine-explosion.html'>Night on the Tracks: Zine Explosion</a></span></li><li><span class='gdate'><b>7</b><i>Jun 2025</i></span><span class='gwho'><a href='../b/the-living-lens.html'>The Living Lens</a>, <a href='../b/la-reina.html'>La Reina</a></span></li><li><span class='gdate'><b>28</b><i>May 2025</i></span><span class='gwho'><a href='../b/matt-pless.html'>Matt Pless</a>, <a href='../b/little-foot.html'>Little Foot</a>, <a href='../b/stufy.html'>Stufy</a>, <a href='../b/outlook-bleak.html'>Outlook Bleak</a>, <a href='../b/sunflower-cigarettes.html'>Sunflower Cigarettes</a></span></li><li><span class='gdate'><b>25</b><i>May 2025</i></span><span class='gwho'><a href='../b/crankie-fever-puppetry-workshop.html'>Crankie Fever: Puppetry Workshop</a>, <a href='../b/miss-pussycat.html'>Miss Pussycat</a></span></li><li><span class='gdate'><b>13</b><i>Apr 2025</i></span><span class='gwho'><a href='../b/ali-roudabush-relief-printmaking-workshop.html'>Ali Roudabush Relief Printmaking Workshop</a></span></li><li><span class='gdate'><b>25</b><i>Mar 2025</i></span><span class='gwho'><a href='../b/other.html'>Other</a>, <a href='../b/wanda-doomy.html'>Wanda Doomy</a>, <a href='../b/ego-death.html'>Ego Death</a></span></li><li><span class='gdate'><b>20</b><i>Mar 2025</i></span><span class='gwho'><a href='../b/daniel-kirk.html'>Daniel Kirk</a>, <a href='../b/sunshine-cigarettes.html'>Sunshine Cigarettes</a>, <a href='../b/jamey-jones.html'>Jamey Jones</a>, <a href='../b/dakota-parks.html'>Dakota Parks</a>, <a href='../b/julia-gorton.html'>Julia Gorton</a></span></li><li><span class='gdate'><b>10</b><i>Mar 2025</i></span><span class='gwho'><a href='../b/our-movement-starts-here-film-screening.html'>Our Movement Starts Here (Film Screening)</a>, <a href='../b/john-rash.html'>John Rash</a></span></li><li class='gyear'><span>2023</span></li><li><span class='gdate'><b>19</b><i>Jun 2023</i></span><span class='gwho'><a href='../b/bread-box-theatre.html'>Bread Box Theatre</a></span></li><li><span class='gdate'><b>17</b><i>Jun 2023</i></span><span class='gwho'><a href='../b/roscoe-hall.html'>Roscoe Hall</a></span></li><li><span class='gdate'><b>3</b><i>Jun 2023</i></span><span class='gwho'><a href='../b/alair-wm-johnson.html'>Alair Wm Johnson</a>, <a href='../b/felicia-e-gail.html'>Felicia E Gail</a></span></li><li><span class='gdate'><b>19</b><i>May 2023</i></span><span class='gwho'><a href='../b/jenny-price-jimbo-easter.html'>Jenny Price &amp; Jimbo Easter</a></span></li><li><span class='gdate'><b>12</b><i>May 2023</i></span><span class='gwho'><a href='../b/felicia-e-gail.html'>Felicia E Gail</a></span></li></ul><p class='dirsub'>+ 4 more in the <a href='../#archive'>archive</a></p>
 <p class="spback"><a href="../">&#8592; back to the calendar</a></p>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>

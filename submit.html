@@ -701,6 +701,110 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   padding:.1rem .3rem;margin-left:.35rem;text-transform:uppercase;letter-spacing:.07em;transform:rotate(-2deg)}
 .bandindex .letter{display:inline-block;border:2px solid var(--line);background:var(--card);
   padding:.15rem .65rem .25rem;transform:rotate(-2deg);box-shadow:3px 3px 0 var(--shadow)}
+
+/* ==================== REDESIGN 2026: poster feed ====================
+   Default (list) view only — the flyer-wall toggle keeps its own look.
+   Tonight = hero, this week = full-flyer posters, later = dense list.
+   Flyers show WHOLE (object-fit:contain), only ~12% desaturated at rest,
+   full color on hover. Layered last so it overrides the base feed rules. */
+
+/* buttons: stretch to fill the masthead like a taped-up banner */
+header .links{max-width:840px}
+header .links a{flex:1 1 auto;text-align:center}
+
+/* the poster feed wants more room than the old 680px reading column */
+main{max-width:940px}
+#list .bucket{max-width:900px}
+
+/* section labels: torn-paper tape for every bucket (tonight label = green "now") */
+#list .bhead{display:flex;align-items:center;gap:.8rem;background:none;border:none;
+  box-shadow:none;transform:none;padding:0;color:var(--ink);font-size:1.7rem}
+#list .bhead .lab{display:inline-block;background:var(--tape);color:#111;line-height:1;
+  padding:.3rem .82rem .38rem;transform:rotate(-1.2deg);box-shadow:4px 4px 0 var(--hot);
+  clip-path:polygon(0 8%,4% 0,12% 6%,24% 1%,38% 7%,52% 1%,66% 6%,80% 1%,92% 6%,100% 2%,100% 92%,95% 100%,84% 95%,70% 100%,55% 94%,42% 100%,28% 95%,15% 100%,5% 96%,0 100%)}
+#list #b-tonight .bhead .lab{background:var(--free)}
+#list .bhead::after{content:"";flex:1;height:0;border-top:3px dashed var(--line);transform:translateY(1px)}
+#list .bhead .ht{display:none}
+
+/* date becomes a stamped, rotated block (feed only; archive lists untouched) */
+#list:not(.wall) .show .date{display:inline-block;font-family:"Anton","Special Elite",sans-serif;
+  border:2px solid var(--hotink);color:var(--hotink);background:rgba(12,12,13,.5);
+  padding:.2rem .5rem .24rem;transform:rotate(-3deg);letter-spacing:.05em;font-size:.86rem;
+  margin-bottom:.4rem;line-height:1}
+
+/* flyers: whole art, ~12% desaturated at rest, full color on hover */
+@media (hover:hover){
+  #list:not(.wall) .show img.thumb:not(.ph){filter:grayscale(.12);transition:filter .2s ease}
+  #list:not(.wall) .show:hover img.thumb,#list:not(.wall) .show:focus img.thumb{filter:none}
+}
+
+/* --- HERO: the very next show. Tonight's card, or (nothing tonight) the first
+   This Week poster. The :has() flips it live if the JS re-buckets by viewer date. --- */
+#list:not(.wall) #b-tonight .cards{display:block}
+#list:not(.wall) #b-tonight .show,
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{
+  display:grid;grid-template-columns:minmax(0,320px) 1fr;gap:1.5rem;align-items:center;padding:1.2rem}
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{grid-column:1 / -1;transform:rotate(-.4deg)}
+#list:not(.wall) #b-tonight .thumbwrap,
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap{width:100%}
+#list:not(.wall) #b-tonight .show img.thumb,#list:not(.wall) #b-tonight .show img.thumb.ph,
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child img.thumb,
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child img.thumb.ph{
+  width:100%;height:auto;max-height:440px;object-fit:contain;background:#000;border:3px solid var(--ink);transform:none;padding:0}
+#list:not(.wall) #b-tonight .show h3,
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child h3{font-size:clamp(2rem,4.5vw,3.4rem);line-height:.92}
+#list:not(.wall) #b-tonight .thumbwrap::before,
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap::before{
+  left:26%;transform:translateX(-50%) rotate(-16deg);width:78px;height:22px;opacity:.72}
+
+/* --- THIS WEEK: full-flyer vertical posters --- */
+#list:not(.wall) #b-week .cards{display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:1.1rem;align-items:start}
+#list:not(.wall) #b-week .show{flex-direction:column;align-items:stretch;gap:.7rem;padding:.9rem}
+#list:not(.wall) #b-week .show:nth-child(odd){transform:rotate(-.5deg)}
+#list:not(.wall) #b-week .show:nth-child(even){transform:rotate(.5deg)}
+#list:not(.wall) #b-week .thumbwrap{width:100%}
+#list:not(.wall) #b-week .show img.thumb,
+#list:not(.wall) #b-week .show img.thumb.ph{width:100%;height:auto;max-height:360px;
+  object-fit:contain;background:#000}
+#list:not(.wall) #b-week .show h3{font-size:clamp(1.4rem,2.4vw,1.75rem);line-height:1}
+
+/* --- LATER: dense list, whole flyer in a small frame --- */
+#list:not(.wall) #b-later .cards{display:block;border:2px solid var(--line);
+  background:var(--card);box-shadow:6px 6px 0 rgba(0,0,0,.45)}
+#list:not(.wall) #b-later .show{gap:.9rem;padding:.6rem .9rem;background:none;border:none;
+  border-bottom:2px dashed var(--line);box-shadow:none;transform:none;align-items:center}
+#list:not(.wall) #b-later .cards .show:last-child{border-bottom:none}
+#list:not(.wall) #b-later .show:hover{box-shadow:none;background:#1d1d20}
+#list:not(.wall) #b-later .thumbwrap{flex:none}
+#list:not(.wall) #b-later .thumbwrap::before{display:none}
+#list:not(.wall) #b-later .show img.thumb,
+#list:not(.wall) #b-later .show img.thumb.ph{width:54px;height:70px;object-fit:contain;background:#000;padding:0}
+#list:not(.wall) #b-later .show .date{font-size:.72rem;margin-bottom:.2rem;padding:.14rem .4rem}
+#list:not(.wall) #b-later .show h3{font-size:1.05rem}
+
+/* varied hand-torn tape across This Week posters */
+#list:not(.wall) #b-week .thumbwrap::before{clip-path:polygon(2% 8%,98% 0,96% 92%,4% 100%);height:20px;opacity:.72}
+#list:not(.wall) #b-week .show:nth-child(4n+1) .thumbwrap::before{left:32%;transform:translateX(-50%) rotate(-13deg);width:60px}
+#list:not(.wall) #b-week .show:nth-child(4n+2) .thumbwrap::before{left:66%;transform:translateX(-50%) rotate(9deg);width:54px}
+#list:not(.wall) #b-week .show:nth-child(4n+3) .thumbwrap::before{left:44%;transform:translateX(-50%) rotate(-5deg);width:46px}
+#list:not(.wall) #b-week .show:nth-child(4n) .thumbwrap::before{left:58%;transform:translateX(-50%) rotate(14deg);width:62px}
+
+/* tonight quiet-night line: a small green taped note */
+#list .bnone{display:inline-flex;align-items:center;gap:.65rem;flex-wrap:wrap;
+  border:2px solid var(--free);background:var(--card);box-shadow:5px 5px 0 rgba(107,112,54,.4);
+  padding:.7rem 1rem;transform:rotate(-.5deg);color:var(--dim);margin:.3rem 0 0;font-size:.95rem}
+#list .bnone .nstamp{border-color:#111;background:var(--free);color:#111;margin-right:.1rem}
+
+@media (max-width:640px){
+  /* the hero stacks (flyer over name) so the big name never clips on a phone */
+  #list:not(.wall) #b-tonight .show,
+  #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{grid-template-columns:1fr;gap:1rem}
+  #list:not(.wall) #b-tonight .thumbwrap,
+  #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap{max-width:280px}
+  #list:not(.wall) #b-tonight .show h3,
+  #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child h3{font-size:clamp(1.8rem,8vw,2.6rem)}
+}
 </style></head><body class="showpage">
 <header><a class="home" href="./"><img src="logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="./">shows</a><a href="bands.html">bands</a><a href="guide.html">guide</a><a href="submit.html">submit</a></nav></header>
 <main class="spwrap">
