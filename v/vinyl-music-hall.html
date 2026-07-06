@@ -45,6 +45,22 @@ header h1 a{color:inherit;text-decoration:none}
   border:2px solid #111;box-shadow:3px 3px 0 var(--hot);text-transform:uppercase;letter-spacing:.05em}
 .links a:nth-child(odd){transform:rotate(-1.5deg)}.links a:nth-child(even){transform:rotate(1.2deg)}
 .links a:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
+/* TONIGHT strip: a stapled-on "what's on tonight" slip above the feed. Hidden by
+   default; MAIN_JS reveals + fills it only when the VIEWER actually has a show
+   today (the page is static + re-buckets client-side), so a quiet night shows
+   nothing at all. One tap scrolls to the tonight bucket. */
+.tstrip{display:flex;align-items:center;gap:.55rem;width:max-content;max-width:min(92%,560px);
+  margin:.75rem auto .1rem;padding:.4rem .7rem;text-decoration:none;color:var(--on-hot);
+  background:var(--hot);border:2.5px solid var(--ink);box-shadow:5px 5px 0 var(--shadow);
+  transform:rotate(-.8deg)}
+.tstrip:hover{box-shadow:6px 7px 0 var(--shadow)}
+.tstrip:active{transform:rotate(-.8deg) translate(2px,2px);box-shadow:2px 2px 0 var(--shadow)}
+.tstrip-tag{flex:none;font-family:'Anton',Impact,sans-serif;text-transform:uppercase;
+  letter-spacing:.08em;font-size:1rem;line-height:1;background:var(--ink);color:var(--hotink);
+  padding:.28rem .5rem .22rem;transform:rotate(1.6deg)}
+.tstrip-body{font-family:'Special Elite',monospace;font-size:.9rem;line-height:1.15;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tstrip-go{flex:none;font-size:1rem;line-height:1;margin-left:.05rem}
 nav{display:flex;gap:.6rem;justify-content:center;align-items:center;padding:1.2rem 1rem;position:relative}
 nav .searchtoggle svg{display:block}
 /* print-scope popover, anchored under the nav's printer icon */
@@ -414,7 +430,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .printhead{display:none}
 @media print{
   body{background:#fff;color:#000;font:12pt/1.4 "Courier New",monospace}
-  header,.links,nav,.controls,#grid,#archive,.endtip,footer,.totop,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming{display:none!important}
+  header,.links,nav,.controls,#grid,#archive,.endtip,footer,.totop,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming,.tstrip{display:none!important}
   main:not(:has(section:target)) #list{display:block}
   main section{display:none!important}
   main section#list{display:block!important}
@@ -677,13 +693,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 <div class="heroinfo">
 <div class="actmast"><h1 class="dirhead">Vinyl Music Hall</h1></div>
 
-<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i><i></i><i></i></span></span><span class='tcap'><b>3</b> shows on the diypensacola record since 2024</span></div>
+<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i><i></i><i></i><i></i></span></span><span class='tcap'><b>4</b> shows on the diypensacola record since 2024</span></div>
 <a class='nextgig' href='../s/2026-07-19-vinyl-music-hall-accursed-creator-rotted-remains.html'><small>next show</small> Jul 19 &middot; accursed creator, rotted remains &#8594;</a>
 <div class="dactions"><a class="dbtn" href="https://www.google.com/maps/search/?api=1&amp;query=Vinyl%20Music%20Hall%20Pensacola%20FL" target="_blank" rel="noopener">open in maps</a></div>
 </div>
 <a class='heropost up' href='../s/2026-07-19-vinyl-music-hall-accursed-creator-rotted-remains.html'><img src='../flyers/thumbs/2026-07-19_vinyl-music-hall_accursed-creator.webp' alt='Vinyl Music Hall flyer, Jul 19, 2026'><span class='hpcap'>up next &middot; Jul 19, 2026 &middot; accursed creator, rotted remains +4</span></a>
 </section>
-<h2 class='dirsec'>upcoming</h2><ul class='gigledger'><li class='up'><span class='gdate'><b>19</b><i>Jul 2026</i></span><span class='gwho'><a href='../s/2026-07-19-vinyl-music-hall-accursed-creator-rotted-remains.html'>Accursed Creator, Rotted Remains, Serrated FL, Stress Wound, Basilissa, Pierce</a></span></li></ul><h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2025-12-20_vinyl-music-hall_heart-of-glass.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-12-20_vinyl-music-hall_heart-of-glass.webp' alt='flyer, Dec 20, 2025'><span class='pwcap'>Dec 20, 2025 &middot; heart of glass, morones</span></a><a class='pwtile' href='../flyers/2024-09-12_vinyl-music-hall_dead-kennedys.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2024-09-12_vinyl-music-hall_dead-kennedys.webp' alt='flyer, Sep 12, 2024'><span class='pwcap'>Sep 12, 2024 &middot; dead kennedys, makewar +1</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2025</span></li><li><span class='gdate'><b>20</b><i>Dec 2025</i></span><span class='gwho'><a href='../b/heart-of-glass.html'>Heart of Glass</a>, <a href='../b/morones.html'>Morones</a></span></li><li class='gyear'><span>2024</span></li><li><span class='gdate'><b>12</b><i>Sep 2024</i></span><span class='gwho'><a href='../b/dead-kennedys.html'>Dead Kennedys</a>, <a href='../b/makewar.html'>MakeWar</a>, <a href='../b/billy-batts-the-made-men.html'>Billy Batts &amp; The Made Men</a></span></li></ul>
+<h2 class='dirsec'>upcoming</h2><ul class='gigledger'><li class='up'><span class='gdate'><b>19</b><i>Jul 2026</i></span><span class='gwho'><a href='../s/2026-07-19-vinyl-music-hall-accursed-creator-rotted-remains.html'>Accursed Creator, Rotted Remains, Serrated FL, Stress Wound, Basilissa, Pierce</a></span></li></ul><h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2025-12-20_vinyl-music-hall_heart-of-glass.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-12-20_vinyl-music-hall_heart-of-glass.webp' alt='flyer, Dec 20, 2025'><span class='pwcap'>Dec 20, 2025 &middot; heart of glass, morones</span></a><a class='pwtile' href='../flyers/2024-09-12_vinyl-music-hall_dead-kennedys.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2024-09-12_vinyl-music-hall_dead-kennedys.webp' alt='flyer, Sep 12, 2024'><span class='pwcap'>Sep 12, 2024 &middot; dead kennedys, makewar +1</span></a><a class='pwtile' href='../flyers/2024-04-12_vinyl-music-hall_precubed.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2024-04-12_vinyl-music-hall_precubed.webp' alt='flyer, Apr 12, 2024'><span class='pwcap'>Apr 12, 2024 &middot; precubed, ego death +2</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2025</span></li><li><span class='gdate'><b>20</b><i>Dec 2025</i></span><span class='gwho'><a href='../b/heart-of-glass.html'>Heart of Glass</a>, <a href='../b/morones.html'>Morones</a></span></li><li class='gyear'><span>2024</span></li><li><span class='gdate'><b>12</b><i>Sep 2024</i></span><span class='gwho'><a href='../b/dead-kennedys.html'>Dead Kennedys</a>, <a href='../b/makewar.html'>MakeWar</a>, <a href='../b/billy-batts-the-made-men.html'>Billy Batts &amp; The Made Men</a></span></li><li><span class='gdate'><b>12</b><i>Apr 2024</i></span><span class='gwho'><a href='../b/precubed.html'>Precubed</a>, <a href='../b/ego-death.html'>Ego Death</a>, <a href='../b/ynicorns.html'>Ynicorns</a>, <a href='../b/grave-chorus.html'>Grave Chorus</a></span></li></ul>
 <p class="spback"><a href="../">&#8592; back to the calendar</a></p>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>
