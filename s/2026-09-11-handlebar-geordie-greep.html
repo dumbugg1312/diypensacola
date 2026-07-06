@@ -807,8 +807,20 @@ main{max-width:940px}
   #list:not(.wall) #b-tonight .show h3,
   #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child h3{font-size:clamp(1.8rem,8vw,2.6rem)}
 }
+
+/* venues index (venues.html): a stamped directory sorted by recent activity */
+.venuelist{list-style:none;padding:0;margin:.5rem 0 0}
+.venuelist li{display:flex;align-items:baseline;gap:.7rem;flex-wrap:wrap;padding:.6rem 0;border-bottom:1px dashed var(--line)}
+.venuelist a.vn{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
+  font-size:1.2rem;color:var(--ink);text-decoration:none}
+.venuelist a.vn:hover,.venuelist a.vn:focus-visible{color:var(--hotink)}
+.venuelist .vc{color:var(--dim);font-size:.85rem}
+.venuelist li.ret a.vn{color:var(--dim)}
+.retstamp{font-family:"Special Elite","Courier New",monospace;font-size:.62rem;text-transform:uppercase;
+  letter-spacing:.07em;border:2px solid var(--dim);color:var(--dim);padding:.1rem .42rem;
+  transform:rotate(-3deg);white-space:nowrap}
 </style></head><body class="showpage">
-<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../bands.html">bands</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
+<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap">
 <article class="spcard">
 <a href="../flyers/2026-09-11_handlebar_geordie-greep.jpg" target="_blank" rel="noopener"><img class="spflyer" src="../flyers/2026-09-11_handlebar_geordie-greep.jpg" alt="Geordie Greep flyer"></a>

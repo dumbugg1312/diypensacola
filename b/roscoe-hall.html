@@ -800,21 +800,33 @@ main{max-width:940px}
   #list:not(.wall) #b-tonight .show h3,
   #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child h3{font-size:clamp(1.8rem,8vw,2.6rem)}
 }
+
+/* venues index (venues.html): a stamped directory sorted by recent activity */
+.venuelist{list-style:none;padding:0;margin:.5rem 0 0}
+.venuelist li{display:flex;align-items:baseline;gap:.7rem;flex-wrap:wrap;padding:.6rem 0;border-bottom:1px dashed var(--line)}
+.venuelist a.vn{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
+  font-size:1.2rem;color:var(--ink);text-decoration:none}
+.venuelist a.vn:hover,.venuelist a.vn:focus-visible{color:var(--hotink)}
+.venuelist .vc{color:var(--dim);font-size:.85rem}
+.venuelist li.ret a.vn{color:var(--dim)}
+.retstamp{font-family:"Special Elite","Courier New",monospace;font-size:.62rem;text-transform:uppercase;
+  letter-spacing:.07em;border:2px solid var(--dim);color:var(--dim);padding:.1rem .42rem;
+  transform:rotate(-3deg);white-space:nowrap}
 </style></head><body class="showpage">
-<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../bands.html">bands</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
+<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap dirwrap actpage">
 <section class="acthero">
 <div class="heroinfo">
 <div class="actmast"><h1 class="dirhead">Roscoe Hall</h1></div>
 <p class='dirsub'>recurring night / happening</p>
-<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i></span></span><span class='tcap'><b>1</b> happening on the diypensacola record since 2023</span></div>
+<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i><i></i></span></span><span class='tcap'><b>2</b> happenings on the diypensacola record since 2023</span></div>
 
 <div class='vstamps'><span class='lead'>stamped at</span><a href='../v/309-punk-project.html'>309 punk project</a></div>
 
 </div>
 <a class='heropost' href='../flyers/2023-06-17_309_roscoe-hall.jpg' target='_blank' rel='noopener'><img src='../flyers/thumbs/2023-06-17_309_roscoe-hall.webp' alt='Roscoe Hall flyer, Jun 17, 2023'><span class='hpcap'>Jun 17, 2023 &middot; 309 punk project</span></a>
 </section>
-<h2 class='dirsec'>past happenings</h2><ul class='gigledger'><li class='gyear'><span>2023</span></li><li><span class='gdate'><b>17</b><i>Jun 2023</i></span><span class='gwho'><b class='self'>Roscoe Hall</b></span><a class='gven' href='../v/309-punk-project.html'>309 punk project</a></li></ul>
+<h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2023-03-04_309_roscoe-hall.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-03-04_309_roscoe-hall.webp' alt='flyer, Mar 4, 2023'><span class='pwcap'>Mar 4, 2023 &middot; 309 punk project</span></a></div><h2 class='dirsec'>past happenings</h2><ul class='gigledger'><li class='gyear'><span>2023</span></li><li><span class='gdate'><b>17</b><i>Jun 2023</i></span><span class='gwho'><b class='self'>Roscoe Hall</b></span><a class='gven' href='../v/309-punk-project.html'>309 punk project</a></li><li><span class='gdate'><b>4</b><i>Mar 2023</i></span><span class='gwho'><b class='self'>Roscoe Hall</b></span><a class='gven' href='../v/309-punk-project.html'>309 punk project</a></li></ul>
 <p class="dirnote">this page tracks a night, series, or happening from the show archive. it's built automatically from flyers and listings, so a name or detail may be off. no disrespect meant. wrong or missing info? <a href='../submit.html'>send it in</a>.</p>
 <p class="spback"><a href="../bands.html">&#8592; the scene index</a> · <a href="../">calendar</a></p>
 </main>
