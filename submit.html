@@ -166,6 +166,16 @@ body:has(#grid:target) a[href='#grid'],body:has(#archive:target) a[href='#archiv
 .stats{display:flex;flex-wrap:wrap;gap:.5rem;margin:.2rem 0 1.5rem}
 .stat{background:var(--card);border:1px solid var(--line);padding:.5rem .8rem;font-size:.8rem;color:var(--dim)}
 .stat b{color:var(--hotink);font-size:1.05rem;display:block;font-family:"Anton","Special Elite",sans-serif;font-weight:400;letter-spacing:.02em}
+/* archive year-nav: tape-label jump-links into each era of the archive */
+.yearnav{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;margin:0 0 1.4rem}
+.ynlab{font-family:"Special Elite","Courier New",monospace;font-size:.72rem;text-transform:uppercase;
+  letter-spacing:.09em;color:var(--dim);margin-right:.1rem}
+.yearnav a{font-family:"Anton",Impact,sans-serif;font-size:.95rem;letter-spacing:.03em;text-decoration:none;
+  color:#111;background:var(--tape);border:2px solid #111;padding:.12rem .6rem .18rem;
+  box-shadow:2px 2px 0 var(--shadow);transform:rotate(-1deg)}
+.yearnav a:nth-child(even){transform:rotate(1.3deg)}
+.yearnav a:hover,.yearnav a:focus-visible{background:var(--hot);color:var(--on-hot);box-shadow:2px 2px 0 var(--tape)}
+.mon[id]{scroll-margin-top:.8rem}
 .arch{list-style:none;padding:0;margin:0}
 .arch li{display:flex;gap:.7rem;align-items:center;padding:.5rem 0;border-bottom:1px dashed var(--line)}
 .athumb{width:52px;height:65px;object-fit:cover;border:1px solid var(--ink);flex:none;cursor:pointer;background:#000}

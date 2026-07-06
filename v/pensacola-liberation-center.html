@@ -161,6 +161,16 @@ body:has(#grid:target) a[href='#grid'],body:has(#archive:target) a[href='#archiv
 .stats{display:flex;flex-wrap:wrap;gap:.5rem;margin:.2rem 0 1.5rem}
 .stat{background:var(--card);border:1px solid var(--line);padding:.5rem .8rem;font-size:.8rem;color:var(--dim)}
 .stat b{color:var(--hotink);font-size:1.05rem;display:block;font-family:"Anton","Special Elite",sans-serif;font-weight:400;letter-spacing:.02em}
+/* archive year-nav: tape-label jump-links into each era of the archive */
+.yearnav{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;margin:0 0 1.4rem}
+.ynlab{font-family:"Special Elite","Courier New",monospace;font-size:.72rem;text-transform:uppercase;
+  letter-spacing:.09em;color:var(--dim);margin-right:.1rem}
+.yearnav a{font-family:"Anton",Impact,sans-serif;font-size:.95rem;letter-spacing:.03em;text-decoration:none;
+  color:#111;background:var(--tape);border:2px solid #111;padding:.12rem .6rem .18rem;
+  box-shadow:2px 2px 0 var(--shadow);transform:rotate(-1deg)}
+.yearnav a:nth-child(even){transform:rotate(1.3deg)}
+.yearnav a:hover,.yearnav a:focus-visible{background:var(--hot);color:var(--on-hot);box-shadow:2px 2px 0 var(--tape)}
+.mon[id]{scroll-margin-top:.8rem}
 .arch{list-style:none;padding:0;margin:0}
 .arch li{display:flex;gap:.7rem;align-items:center;padding:.5rem 0;border-bottom:1px dashed var(--line)}
 .athumb{width:52px;height:65px;object-fit:cover;border:1px solid var(--ink);flex:none;cursor:pointer;background:#000}
@@ -693,13 +703,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 <div class="heroinfo">
 <div class="actmast"><h1 class="dirhead">Pensacola Liberation Center</h1></div>
 
-<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i><i></i></span></span><span class='tcap'><b>2</b> shows on the diypensacola record since 2026</span></div>
+<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i><i></i><i></i></span></span><span class='tcap'><b>3</b> shows on the diypensacola record since 2024</span></div>
 
 <div class="dactions"><a class="dbtn" href="https://www.google.com/maps/search/?api=1&amp;query=Pensacola%20Liberation%20Center%20Pensacola%20FL" target="_blank" rel="noopener">open in maps</a></div>
 </div>
 <a class='heropost' href='../flyers/2026-01-20_pensacola-liberation-center_average-joey.jpg' target='_blank' rel='noopener'><img src='../flyers/thumbs/2026-01-20_pensacola-liberation-center_average-joey.webp' alt='Pensacola Liberation Center flyer, Jan 20, 2026'><span class='hpcap'>Jan 20, 2026 &middot; average joey, stufy +2</span></a>
 </section>
-<h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2026-01-09_pensacola-liberation-center_dumpster-meds.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2026-01-09_pensacola-liberation-center_dumpster-meds.webp' alt='flyer, Jan 9, 2026'><span class='pwcap'>Jan 9, 2026 &middot; dumpster meds, paul petrol +3</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2026</span></li><li><span class='gdate'><b>20</b><i>Jan 2026</i></span><span class='gwho'><a href='../b/average-joey.html'>Average Joey</a>, <a href='../b/stufy.html'>Stufy</a>, <a href='../b/outlook-bleak.html'>Outlook Bleak</a>, <a href='../b/dentada.html'>Dentada</a></span></li><li><span class='gdate'><b>9</b><i>Jan 2026</i></span><span class='gwho'><a href='../b/dumpster-meds.html'>Dumpster Meds</a>, <a href='../b/paul-petrol.html'>Paul Petrol</a>, <a href='../b/steve-herwin.html'>Steve Herwin</a>, <a href='../b/sunflower-cigarettes.html'>Sunflower Cigarettes</a>, <a href='../b/sideswept-bangs.html'>Sideswept Bangs</a></span></li></ul>
+<h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2026-01-09_pensacola-liberation-center_dumpster-meds.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2026-01-09_pensacola-liberation-center_dumpster-meds.webp' alt='flyer, Jan 9, 2026'><span class='pwcap'>Jan 9, 2026 &middot; dumpster meds, paul petrol +3</span></a><a class='pwtile' href='../flyers/2024-02-09_pensacola-liberation-center_open-mic.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2024-02-09_pensacola-liberation-center_open-mic.webp' alt='flyer, Feb 9, 2024'><span class='pwcap'>Feb 9, 2024 &middot; a love for the people open mic</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2026</span></li><li><span class='gdate'><b>20</b><i>Jan 2026</i></span><span class='gwho'><a href='../b/average-joey.html'>Average Joey</a>, <a href='../b/stufy.html'>Stufy</a>, <a href='../b/outlook-bleak.html'>Outlook Bleak</a>, <a href='../b/dentada.html'>Dentada</a></span></li><li><span class='gdate'><b>9</b><i>Jan 2026</i></span><span class='gwho'><a href='../b/dumpster-meds.html'>Dumpster Meds</a>, <a href='../b/paul-petrol.html'>Paul Petrol</a>, <a href='../b/steve-herwin.html'>Steve Herwin</a>, <a href='../b/sunflower-cigarettes.html'>Sunflower Cigarettes</a>, <a href='../b/sideswept-bangs.html'>Sideswept Bangs</a></span></li><li class='gyear'><span>2024</span></li><li><span class='gdate'><b>9</b><i>Feb 2024</i></span><span class='gwho'><a href='../b/a-love-for-the-people-open-mic.html'>A Love for the People Open Mic</a></span></li></ul>
 <p class="spback"><a href="../">&#8592; back to the calendar</a></p>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>
