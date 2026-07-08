@@ -21,20 +21,20 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-07-09-bettys-shidded@diypensacola
+UID:2026-07-09-betty-s-shidded-machina@diypensacola
 DTSTART;TZID=America/Chicago:20260709T200000
 DTEND;TZID=America/Chicago:20260709T230000
-SUMMARY:Shidded\, Machina\, Ihatesundays @ Betty's
+SUMMARY:Shidded\, Machina\, I Hate Sundays @ Betty's
 DESCRIPTION:shidded\, machina\, and ihatesundays at betty's on belmont thursday july 9th. doors 8pm.
 LOCATION:Betty's
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-07-10-309-just-opposed-release@diypensacola
+UID:2026-07-10-309-vixen-valentine@diypensacola
 DTSTART;TZID=America/Chicago:20260710T180000
 DTEND;TZID=America/Chicago:20260710T210000
-SUMMARY:Vixen Valentine @ 309 Punk Project
+SUMMARY:Vixen Valentine @ 309
 DESCRIPTION:just-opposed zine release party at 309 punk project. friday july 10th\, 6-9pm. vixen valentine at 6:30\, plus perfect day books\, phantasma\, pensacola pflag\, emerald waves squares\, upward intuition\, and pensacola poetry.
-LOCATION:309 Punk Project
+LOCATION:309
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-07-11-bettys-pensacola-comedy-club@diypensacola
@@ -48,9 +48,9 @@ BEGIN:VEVENT
 UID:2026-07-12-309-woody-guthrie-gathering@diypensacola
 DTSTART;TZID=America/Chicago:20260712T173000
 DTEND;TZID=America/Chicago:20260712T203000
-SUMMARY:Woody Guthrie Gathering @ 309 Punk Project
+SUMMARY:Woody Guthrie Gathering @ 309
 DESCRIPTION:woody guthrie birthday gathering with shuttle punx at 309. sun jul 12\, doors 5:30 / show 6\, all ages. donations welcome.
-LOCATION:309 Punk Project
+LOCATION:309
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-07-12-bettys-bad-bitch-brunches@diypensacola
@@ -85,10 +85,10 @@ DESCRIPTION:oversight\, other\, and spiral live at the handlebar this friday. do
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-07-19-handlebar-in-gloom@diypensacola
+UID:2026-07-19-the-handlebar-in-gloom-inner-wounds@diypensacola
 DTSTART;TZID=America/Chicago:20260719T190000
 DTEND;TZID=America/Chicago:20260719T220000
-SUMMARY:In Gloom\, Innerwounds\, Fire Came Disparity\, Wraithbearer @ The Handlebar
+SUMMARY:In Gloom\, Inner Wounds\, With Fire Came Disparity\, Wraithbearer @ The Handlebar
 DESCRIPTION:in gloom\, innerwounds\, with fire came disparity\, wraithbearer at the handlebar. sun jul 19\, doors 7 / music 8\, all ages. $10 adv / $15 door.
 LOCATION:The Handlebar
 END:VEVENT
@@ -96,7 +96,7 @@ BEGIN:VEVENT
 UID:2026-07-19-vinyl-music-hall-accursed-creator-rotted-remains@diypensacola
 DTSTART;TZID=America/Chicago:20260719T153000
 DTEND;TZID=America/Chicago:20260719T183000
-SUMMARY:Accursed Creator\, Rotted Remains\, Serrated FL\, Stress Wound\, Basilissa\, Pierce @ Vinyl Music Hall
+SUMMARY:Accursed Creator\, Rotted Remains\, Serrated\, Stress Wound\, Basilissa\, Pierce @ Vinyl Music Hall
 DESCRIPTION:accursed creator\, rotted remains\, serrated fl\, stress wound\, basilissa\, and pierce at vinyl music hall\, saturday july 19. doors 3:30\, show at 5. $10 suggested donation\, remembering nate flores.
 LOCATION:Vinyl Music Hall
 END:VEVENT
@@ -117,28 +117,28 @@ DESCRIPTION:no complications\, king in yellow\, tirra lirra at the handlebar. we
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-07-24-our-house-our-house-in-progress@diypensacola
+UID:2026-07-24-the-undergrowth-our-house-in-progress-diy-art-exhibition@diypensacola
 DTSTART;TZID=America/Chicago:20260724T160000
 DTEND;TZID=America/Chicago:20260724T190000
-SUMMARY:Our House (in progress) - DIY art exhibition @ Our House (912 E Hernandez St)
+SUMMARY:Our House (in progress) - DIY art exhibition @ The Undergrowth
 DESCRIPTION:the undergrowth presents our house (in progress) — a diy art exhibition at our house\, 912 e hernandez st. july 24th\, 4-9pm. $10 entry\, proceeds split with local orgs.
-LOCATION:Our House (912 E Hernandez St)
+LOCATION:The Undergrowth
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-07-24-handlebar-obituary-modown@diypensacola
+UID:2026-07-24-the-handlebar-obituary-modown@diypensacola
 DTSTART;TZID=America/Chicago:20260724T190000
 DTEND;TZID=America/Chicago:20260724T220000
-SUMMARY:Obituary\, Modown\, Exformation\, D.R.E.A.D. @ The Handlebar
+SUMMARY:Obituary\, Modown\, Exformation\, Dread @ The Handlebar
 DESCRIPTION:obituary at the handlebar with modown\, exformation\, and d.r.e.a.d. july 24th.
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-07-25-309-closing-exhibition@diypensacola
+UID:2026-07-25-309-rainn-forrest-bea-hurd@diypensacola
 DTSTART;TZID=America/Chicago:20260725T180000
 DTEND;TZID=America/Chicago:20260725T210000
-SUMMARY:Rainn Forrest\, Bea Hurd @ 309 Punk Project
+SUMMARY:Rainn Forrest\, Bea Hurd @ 309
 DESCRIPTION:309 airs rainn forrest and bea hurd closing exhibition and film screening. 309 punk project\, saturday july 25th at 6pm.
-LOCATION:309 Punk Project
+LOCATION:309
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-07-28-handlebar-internal-suffering@diypensacola
@@ -173,10 +173,10 @@ DESCRIPTION:heroes for ghosts and spiritless at the handlebar saturday august 15
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-08-27-bettys-ramblin-ricky-tate@diypensacola
+UID:2026-08-27-betty-s-bryan-raymond-ramblin-ricky-tate@diypensacola
 DTSTART;TZID=America/Chicago:20260827T190000
 DTEND;TZID=America/Chicago:20260827T220000
-SUMMARY:Bryan Raymond\, Ramblin Ricky Tate\, STUFY\, Good Night Geezer @ Betty's
+SUMMARY:Bryan Raymond\, Ramblin Ricky Tate\, Stufy\, Good Night Geezer @ Betty's
 DESCRIPTION:bryan raymond and ramblin ricky tate bring the hot sauce hell raisers tour to betty's. thursday august 27\, 506 w belmont. with stufy and good night geezer.
 LOCATION:Betty's
 END:VEVENT
@@ -192,7 +192,7 @@ BEGIN:VEVENT
 UID:2026-09-12-the-handlebar-nvsn-the-autumn-descent@diypensacola
 DTSTART;TZID=America/Chicago:20260912T190000
 DTEND;TZID=America/Chicago:20260912T220000
-SUMMARY:NVSN\, The Autumn Descent\, Caving In\, Hopout @ The Handlebar
+SUMMARY:NVSN\, The Autumn Descent\, Caving In\, HOPOUT @ The Handlebar
 DESCRIPTION:nvsn with the autumn descent\, caving in\, and hopout at the handlebar. september 12th\, doors 7 and music at 8. $12 advance / $15 day of.
 LOCATION:The Handlebar
 END:VEVENT
@@ -221,10 +221,10 @@ DESCRIPTION:panhandle slam jam 2 at the handlebar. lilith's demise\, delta hate\
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-09-27-handlebar-eyehategod@diypensacola
+UID:2026-09-27-the-handlebar-eyehategod-whores@diypensacola
 DTSTART;TZID=America/Chicago:20260927T190000
 DTEND;TZID=America/Chicago:20260927T220000
-SUMMARY:Eyehategod\, Whores\, Nomas @ The Handlebar
+SUMMARY:Eyehategod\, Whores\, no/mas @ The Handlebar
 DESCRIPTION:eyehategod\, whores\, and nomas at the handlebar. september 27. tickets on sale now at thehandlebar850.com.
 LOCATION:The Handlebar
 END:VEVENT
@@ -237,10 +237,10 @@ DESCRIPTION:silent theory at the handlebar saturday october 10 with discrepancie
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-22-handlebar-fenix-tx@diypensacola
+UID:2026-10-22-the-handlebar-fenix-tx-scream-out-loud@diypensacola
 DTSTART;TZID=America/Chicago:20261022T190000
 DTEND;TZID=America/Chicago:20261022T220000
-SUMMARY:Fenix Tx\, Scream Out Loud\, Color The Void @ The Handlebar
+SUMMARY:Fenix Tx\, Scream Out Loud\, Color the Void @ The Handlebar
 DESCRIPTION:fenix tx with scream out loud and color the void at the handlebar. thursday october 22. tickets at thehandlebar850.com.
 LOCATION:The Handlebar
 END:VEVENT
