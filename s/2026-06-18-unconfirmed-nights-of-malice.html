@@ -58,11 +58,13 @@ header h1 a{color:inherit;text-decoration:none}
    links across. */
 .modebar{position:sticky;top:var(--a2hs-h,0px);z-index:44;display:flex;justify-content:center;
   background:var(--bg);border-bottom:2px solid var(--line);
-  padding:.32rem 1rem;padding-top:calc(.32rem + env(safe-area-inset-top))}
-.modetabs{display:flex;width:max-content;max-width:100%}
+  padding:.22rem 1rem;padding-top:calc(.22rem + env(safe-area-inset-top))}
+/* .modetabs is a <nav>, so zero out the global nav{padding:1.2rem;gap:.6rem} that
+   was otherwise inflating this strip to ~55px tall regardless of the tab size. */
+.modetabs{display:flex;width:max-content;max-width:100%;padding:0;gap:0}
 .modetab{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
-  letter-spacing:.13em;font-size:.9rem;text-decoration:none;color:var(--dim);background:transparent;
-  border:0;padding:.32rem 1.15rem .28rem;line-height:1.1;transition:background .12s,color .12s}
+  letter-spacing:.13em;font-size:.72rem;text-decoration:none;color:var(--dim);background:transparent;
+  border:0;padding:.12rem .95rem .1rem;line-height:1.02;transition:background .12s,color .12s}
 .modetab.on{background:var(--hot);color:var(--on-hot)}
 .modetab:not(.on):hover{color:var(--ink)}
 .modetab:active{transform:none}
@@ -76,7 +78,7 @@ header h1 a{color:inherit;text-decoration:none}
 .bighead .tag{color:var(--dim);margin:.6rem 0 0;font-size:.9rem}
 @media (max-width:640px){
   .bighead .logo{width:120px;height:120px}
-  .modetab{font-size:.88rem;padding:.34rem 1rem .3rem}
+  .modetab{font-size:.72rem;padding:.14rem .85rem .12rem}
 }
 /* TONIGHT strip: a stapled-on "what's on tonight" slip above the feed. Hidden by
    default; MAIN_JS reveals + fills it only when the VIEWER actually has a show
@@ -103,6 +105,11 @@ nav .searchtoggle svg{display:block}
   display:flex;flex-direction:column;gap:.5rem;min-width:11.5rem}
 .pmenu[hidden]{display:none}
 .pmenu .dbtn{justify-content:center;white-space:nowrap}
+/* the print control now lives in a bar down at the bottom of the feed; its menu
+   opens upward and centered so it never runs off the bottom of the page. */
+.printbar{display:flex;justify-content:center;margin:1.7rem 0 .2rem}
+.printbar .dbtn{display:inline-flex;align-items:center;gap:.45rem}
+.pwrap.up .pmenu{top:auto;bottom:calc(100% + 8px);right:auto;left:50%;transform:translateX(-50%)}
 nav a{background:transparent;color:var(--ink);border:2px dashed var(--dim);padding:.45rem 1.1rem;
   text-decoration:none;text-transform:uppercase;letter-spacing:.08em;font-size:.9rem}
 nav a:hover{border-color:var(--hot);color:var(--hot)}
@@ -166,13 +173,16 @@ body:has(#grid:target) a[href='#grid']{border:2px solid var(--hot);background:va
    hover/focus state (higher specificity than the base rule) to still signal
    they're clickable — otherwise hovering them does nothing. */
 #b-tonight .show:hover,#b-tonight .show:focus{box-shadow:10px 10px 0 var(--hot);transform:translate(-3px,-3px)}
-.stamp{position:absolute;font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;font-size:.68rem;
-  letter-spacing:.05em;padding:.1rem .38rem;border:2px solid currentColor;background:var(--scrim);line-height:1;pointer-events:none;text-shadow:0 1px 2px #000}
-.s-free{color:var(--free);bottom:6px;left:-7px;transform:rotate(-8deg)}
-.s-sliding{color:var(--sliding);bottom:6px;left:-7px;transform:rotate(-8deg)}
-.s-age{color:var(--age);top:6px;right:-7px;transform:rotate(7deg)}
-.s-benefit{color:var(--benefit);top:6px;left:-7px;transform:rotate(-7deg)}
-.s-soldout{color:var(--soldout);top:50%;left:50%;transform:translate(-50%,-50%) rotate(-12deg);font-size:1.05rem;border-width:3px}
+/* price/age tags now ride in the card next to the date badge (not over the
+   flyer). .daterow lays the date + its tags on one line with a small gap. */
+.daterow{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem;margin-bottom:.12rem}
+.stamp{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;font-size:.62rem;
+  letter-spacing:.05em;padding:.12rem .36rem;border:2px solid currentColor;line-height:1;white-space:nowrap}
+.s-free{color:var(--free)}
+.s-sliding{color:var(--sliding)}
+.s-age{color:var(--age)}
+.s-benefit{color:var(--benefit)}
+.s-soldout{color:var(--soldout)}
 .mon{margin:2rem 0 .6rem;font-size:1.25rem;color:var(--hotink);font-family:"Rock Salt",cursive;transform:rotate(-1deg)}
 /* pinned "most active" tag(s) beside a wrapped month's archive header */
 .monbadge{display:inline-block;margin-left:.6rem;vertical-align:middle;font-family:"Special Elite","Courier New",monospace;
@@ -233,6 +243,13 @@ footer b{color:var(--hot)}
 .lb img#lbimg{max-width:100%;max-height:90vh;border:3px solid var(--ink);box-shadow:0 0 0 6px var(--hot)}
 .lb .x{position:absolute;top:1rem;right:1.2rem;color:var(--ink);font-size:2rem;text-decoration:none;line-height:1;z-index:2}
 .detail{z-index:55;cursor:default}
+/* desktop close: a clear little corner button in the dbox's top-right (the flyer
+   sits on the left, so it never covers the art). Hidden on mobile in favor of the
+   swipe-down grab handle. */
+.detail .x{top:.55rem;right:.6rem;width:1.9rem;height:1.9rem;display:flex;align-items:center;
+  justify-content:center;background:var(--card);border:2px solid var(--line);font-size:1.4rem;z-index:4}
+.detail .x:hover,.detail .x:focus-visible{border-color:var(--hot);color:var(--hot)}
+.detail .dinfo{padding-right:1.4rem}
 .dbox{background:var(--card);border:1px solid var(--line);box-shadow:8px 8px 0 var(--hot);max-width:680px;width:100%;
   max-height:90vh;overflow:auto;display:flex;gap:1.1rem;padding:1.1rem;position:relative;flex-wrap:wrap}
 .dflyer{width:230px;max-width:42%;object-fit:contain;align-self:flex-start;border:2px solid var(--ink);background:#000;cursor:zoom-in}
@@ -366,8 +383,13 @@ main section:target{animation:viewin .26s ease both}
     padding:1.6rem 1.05rem calc(1.3rem + env(safe-area-inset-bottom));
     animation:sheetup .3s cubic-bezier(.2,.85,.25,1) both}
   .detail .dbox::before{content:"";position:absolute;top:.6rem;left:50%;transform:translateX(-50%);
-    width:42px;height:5px;border-radius:3px;background:var(--dim);opacity:.55}
-  .dflyer{width:100%;max-width:100%}
+    width:44px;height:5px;border-radius:3px;background:var(--dim);opacity:.6;z-index:3}
+  /* on mobile the grab handle IS the close affordance (swipe the sheet down), so
+     drop the X — it otherwise sits on top of the full-width flyer. #detail wins
+     over the later .lb .x rule (the detail sheet also carries the .lb class). */
+  #detail .x{display:none}
+  .dflyer{width:100%;max-width:100%;margin-top:.4rem}
+  .detail .dinfo{padding-right:0}
   .dinfo h2{font-size:1.5rem}
   .dactions{gap:.5rem}
   .dactions .dbtn{flex:1;justify-content:center;padding:.7rem .8rem}
@@ -473,7 +495,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .printhead{display:none}
 @media print{
   body{background:#fff;color:#000;font:12pt/1.4 "Courier New",monospace}
-  header,.links,.modebar,nav,.controls,#grid,.endtip,footer,.totop,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming,.tstrip{display:none!important}
+  header,.links,.modebar,nav,.controls,#grid,.endtip,footer,.totop,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming,.tstrip,.printbar{display:none!important}
   main:not(:has(section:target)) #list{display:block}
   main section{display:none!important}
   main section#list{display:block!important}
@@ -518,6 +540,26 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   font-size:clamp(1.9rem,7vw,2.7rem);line-height:1.06;letter-spacing:.01em;margin:.4rem 0 .4rem;
   text-shadow:3px 3px 0 var(--hot);transform:none}
 .dirsub{color:var(--dim);margin:0 0 1.4rem;font-size:.92rem;line-height:1.6}
+/* the archive hub stacks the taped link cluster right above the big SEARCH THE
+   SCENE headline; the shared .links row sits tight by default, so give the whole
+   archive main air up top and a touch more space under the headline. */
+.arcwrap{padding-top:2rem}
+.arcwrap .dirhead{margin:0 0 .7rem}
+.arcwrap .dirsub{margin-bottom:1.6rem}
+/* the "?" help badge next to SEARCH THE SCENE, linking to archive-help.html */
+.helpq{display:inline-flex;align-items:center;justify-content:center;width:1.5rem;height:1.5rem;
+  margin-left:.5rem;vertical-align:.28em;border:2px solid var(--hot);color:var(--hot);border-radius:50%;
+  font-family:"Special Elite",monospace;font-size:.9rem;line-height:1;text-decoration:none;
+  text-shadow:none;box-shadow:none;flex:none}
+.helpq:hover,.helpq:focus-visible{background:var(--hot);color:var(--on-hot)}
+/* the archive-help page: readable prose cards + the "try this" recipe list */
+.archelp .dirhead{margin:.2rem 0 1rem}
+.archelp .spcard{margin:0 0 1.1rem}
+.archelp .spcard h2{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  letter-spacing:.02em;color:var(--hotink);font-size:1.35rem;margin:0 0 .6rem}
+.archelp p{line-height:1.6;margin:.5rem 0}
+.archelp .caselist li{margin-bottom:.7rem;line-height:1.55}
+.archelp .caselist li b{color:var(--hotink)}
 .dirsec{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.03em;
   font-size:1.25rem;margin:1.8rem 0 .7rem;color:var(--hotink)}
 .actsec>.dirsec{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
@@ -661,7 +703,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 /* ---------- zine polish: date stamp, venue links, act chips, list tape ---------- */
 /* the header's build date as an ink date stamp instead of dim inline text */
 .upstamp{display:inline-block;border:2px solid var(--hotink);color:var(--hotink);padding:.06rem .45rem;
-  transform:rotate(-2deg);text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;margin-left:.2rem}
+  transform:none;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;margin-left:.2rem}
 /* venue names in card/list meta link to their venue page */
 .meta a.vlink{color:inherit;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:2px}
 .meta a.vlink:hover{color:var(--hot)}
@@ -721,7 +763,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 /* stamp slam: inked stamps land once on page load (reduced motion collapses it) */
 .ostamp{--rot:5deg}
 .ostamp.tour{--rot:-4deg}
-.upstamp{--rot:-2deg}
+.upstamp{--rot:0deg}
 .ostamp,.upstamp,.nstamp{animation:stampslam .35s cubic-bezier(.16,1,.3,1) .12s both}
 @keyframes stampslam{from{opacity:0;transform:rotate(var(--rot)) scale(1.9)}to{opacity:1;transform:rotate(var(--rot)) scale(1)}}
 /* bands index roster: crate-divider letters + a stamp on acts playing this week */
@@ -800,18 +842,18 @@ main{max-width:940px}
 #list:not(.wall) #b-week .show h3{font-size:clamp(1.4rem,2.4vw,1.7rem);line-height:1}
 
 /* --- LATER: dense list, whole flyer in a small frame --- */
-#list:not(.wall) #b-later .cards{display:block;border:2px solid var(--line);
+#list:not(.wall) .bucket.dense .cards{display:block;border:2px solid var(--line);
   background:var(--card);box-shadow:6px 6px 0 rgba(0,0,0,.45)}
-#list:not(.wall) #b-later .show{gap:.9rem;padding:.6rem .9rem;background:none;border:none;
+#list:not(.wall) .bucket.dense .show{gap:.9rem;padding:.6rem .9rem;background:none;border:none;
   border-bottom:2px dashed var(--line);box-shadow:none;transform:none;align-items:center}
-#list:not(.wall) #b-later .cards .show:last-child{border-bottom:none}
-#list:not(.wall) #b-later .show:hover{box-shadow:none;background:#1d1d20}
-#list:not(.wall) #b-later .thumbwrap{flex:none}
-#list:not(.wall) #b-later .thumbwrap::before{display:none}
-#list:not(.wall) #b-later .show img.thumb,
-#list:not(.wall) #b-later .show img.thumb.ph{width:54px;height:70px;object-fit:contain;background:#000;padding:0}
-#list:not(.wall) #b-later .show .date{font-size:.72rem;margin-bottom:.2rem;padding:.14rem .4rem}
-#list:not(.wall) #b-later .show h3{font-size:1.05rem}
+#list:not(.wall) .bucket.dense .cards .show:last-child{border-bottom:none}
+#list:not(.wall) .bucket.dense .show:hover{box-shadow:none;background:#1d1d20}
+#list:not(.wall) .bucket.dense .thumbwrap{flex:none}
+#list:not(.wall) .bucket.dense .thumbwrap::before{display:none}
+#list:not(.wall) .bucket.dense .show img.thumb,
+#list:not(.wall) .bucket.dense .show img.thumb.ph{width:54px;height:70px;object-fit:contain;background:#000;padding:0}
+#list:not(.wall) .bucket.dense .show .date{font-size:.72rem;margin-bottom:.2rem;padding:.14rem .4rem}
+#list:not(.wall) .bucket.dense .show h3{font-size:1.05rem}
 
 /* varied hand-torn tape across This Week posters */
 #list:not(.wall) #b-week .thumbwrap::before{clip-path:polygon(2% 8%,98% 0,96% 92%,4% 100%);height:20px;opacity:.72}
@@ -821,19 +863,34 @@ main{max-width:940px}
 #list:not(.wall) #b-week .show:nth-child(4n) .thumbwrap::before{left:58%;transform:translateX(-50%) rotate(14deg);width:62px}
 
 /* tonight quiet-night line: a small green taped note */
-#list .bnone{display:inline-flex;align-items:center;gap:.65rem;flex-wrap:wrap;
+/* :not([hidden]) so the JS `hidden` attribute actually wins — an id+class rule
+   otherwise out-specifies the UA [hidden] rule and the strip shows on nights that
+   DO have a show. */
+#list .bnone{display:none}
+#list .bnone:not([hidden]){display:inline-flex;align-items:center;gap:.65rem;flex-wrap:wrap;
   border:2px solid var(--free);background:var(--card);box-shadow:5px 5px 0 rgba(107,112,54,.4);
   padding:.7rem 1rem;transform:rotate(-.5deg);color:var(--dim);margin:.3rem 0 0;font-size:.95rem}
 #list .bnone .nstamp{border-color:#111;background:var(--free);color:#111;margin-right:.1rem}
 
 @media (max-width:640px){
-  /* the hero stacks (flyer over name) so the big name never clips on a phone */
+  /* the hero stacks (flyer over name) so the big name never clips on a phone. The
+     flyer HUGS its own art and centers, so a portrait poster no longer strands a
+     big black gutter down one side of the card. */
   #list:not(.wall) #b-tonight .show,
-  #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{grid-template-columns:1fr;gap:1rem}
+  #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{grid-template-columns:1fr;gap:1rem;padding:1rem}
   #list:not(.wall) #b-tonight .thumbwrap,
-  #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap{max-width:280px}
+  #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap{width:100%;max-width:min(88%,340px);margin:0 auto}
+  #list:not(.wall) #b-tonight .show img.thumb,#list:not(.wall) #b-tonight .show img.thumb.ph,
+  #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child img.thumb,
+  #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child img.thumb.ph{width:100%;height:auto;max-height:none}
   #list:not(.wall) #b-tonight .show h3,
   #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child h3{font-size:clamp(1.8rem,8vw,2.6rem)}
+  /* THIS WEEK posters: always two per row on a phone (a lone odd card centers
+     under them), instead of one giant single column with the page half empty. */
+  #list:not(.wall) #b-week .cards{gap:.6rem}
+  #list:not(.wall) #b-week .show{flex:0 1 calc(50% - .3rem);padding:.5rem;gap:.45rem}
+  #list:not(.wall) #b-week .show h3{font-size:clamp(1rem,4.6vw,1.35rem)}
+  #list:not(.wall) #b-week .show .daterow{gap:.4rem}
 }
 
 /* venue detail pages (v/<slug>.html): stamped directory rows */
@@ -902,6 +959,70 @@ main{max-width:940px}
 .flashback li:last-child{border-bottom:none}
 .flashback a{text-decoration:none}
 .flashback .yr{color:var(--dim);font-size:.72rem;margin-right:.4rem}
+/* ---- one-search refine: quick-pick presets, control bar, active chips, facet rail ---- */
+.activechips[hidden],.clearall[hidden],.filtn[hidden]{display:none!important}
+.arcpresets{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;margin:0 0 .5rem}
+.arcpresets .ptag{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;
+  letter-spacing:.06em;font-size:.7rem;color:var(--dim);margin-right:.1rem}
+.preset{background:var(--card);border:2px dashed var(--dim);color:var(--ink);cursor:pointer;
+  font:.76rem/1 inherit;text-transform:lowercase;letter-spacing:.02em;padding:.4rem .6rem}
+.preset:hover{border-color:var(--hot);color:var(--hot)}
+.preset.on{background:var(--hot);color:var(--on-hot);border-style:solid;border-color:var(--hot)}
+.arcbar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.refinebtn{background:var(--card);border:2px solid var(--hot);color:var(--ink);cursor:pointer;
+  font:.8rem/1 inherit;text-transform:uppercase;letter-spacing:.05em;padding:.45rem .8rem;
+  display:inline-flex;align-items:center;gap:.4rem}
+.refinebtn:hover{background:var(--hot);color:var(--on-hot)}
+.refinebtn .filtn{background:var(--hot);color:var(--on-hot);font-size:.72rem;
+  min-width:1.2rem;text-align:center;padding:.05rem .3rem;line-height:1.25}
+.refinebtn:hover .filtn{background:var(--on-hot);color:var(--hot)}
+.arcsortwrap{font-size:.74rem;color:var(--dim);text-transform:uppercase;letter-spacing:.04em;
+  display:inline-flex;align-items:center}
+.activechips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.4rem}
+.achip{background:var(--hot);color:var(--on-hot);border:2px solid var(--ink);cursor:pointer;
+  font:.74rem/1 inherit;padding:.35rem .5rem;display:inline-flex;align-items:center;gap:.35rem;
+  text-transform:lowercase}
+.achip .ax{font-weight:700;font-size:.85rem}
+.achip:hover{box-shadow:2px 2px 0 var(--shadow)}
+.achip-q{background:var(--card);color:var(--ink)}
+.arclayout{display:block}
+.arcfacets{border:2px dashed var(--line);background:var(--card);padding:0 .8rem .8rem;margin:0 0 1.1rem}
+.facetstop{display:flex;align-items:center;justify-content:space-between;
+  padding:.55rem 0 .3rem;border-bottom:2px solid var(--line);margin-bottom:.3rem}
+.facetstitle{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;
+  letter-spacing:.05em;font-size:1rem;color:var(--hotink)}
+.clearall{background:transparent;border:0;color:var(--hot);cursor:pointer;
+  font:.74rem/1 inherit;text-transform:uppercase;letter-spacing:.04em;text-decoration:underline}
+.facetgroup{padding:.5rem 0;border-bottom:1px dashed var(--line)}
+.facetgroup:last-child{border-bottom:none}
+.facethead{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  letter-spacing:.05em;font-size:.76rem;color:var(--dim);margin:0 0 .3rem}
+.facetlist{display:flex;flex-direction:column;gap:.02rem}
+.facet{display:flex;align-items:center;gap:.5rem;background:transparent;border:0;cursor:pointer;
+  color:var(--ink);font:.82rem/1.2 inherit;text-align:left;padding:.26rem .15rem;width:100%}
+.facet .fx{flex:none;width:.85rem;height:.85rem;border:2px solid var(--dim);background:var(--bg)}
+.facet .flabel{flex:1;text-transform:lowercase}
+.facet .fcount{flex:none;color:var(--dim);font-size:.73rem;font-variant-numeric:tabular-nums}
+.facet:hover .flabel{color:var(--hot)}
+.facet:hover .fx{border-color:var(--hot)}
+.facet.on .fx{background:var(--hot);border-color:var(--hot);box-shadow:inset 0 0 0 2px var(--card)}
+.facet.on .flabel{color:var(--hotink);font-weight:700}
+.facet.on .fcount{color:var(--ink)}
+.facet-extra{display:none}
+.facetgroup.expanded .facet-extra{display:flex}
+.facet-zero{display:none}
+.facetmore{background:transparent;border:0;color:var(--hot);cursor:pointer;font:.76rem/1 inherit;
+  text-decoration:underline;padding:.3rem .15rem;text-align:left}
+@media(min-width:820px){
+  .arclayout{display:grid;grid-template-columns:236px minmax(0,1fr);gap:1.5rem;align-items:start}
+  .arcfacets{position:sticky;top:calc(var(--modebar-h,0px) + .4rem);margin:0;
+    max-height:calc(100vh - var(--modebar-h,0px) - .8rem);overflow:auto}
+  .refinebtn{display:none}
+}
+@media(max-width:819px){
+  .arcfacets{display:none}
+  .arcfacets.open{display:block}
+}
 
 /* ---------- scene stats (archive.html panel): typewriter bar charts + leaderboards ---------- */
 .statbig{display:flex;flex-wrap:wrap;gap:.6rem;margin:.4rem 0 1.6rem}
@@ -931,7 +1052,7 @@ main{max-width:940px}
 <h1>Nights Of Malice, My Own Will, Hemlock, Exformation</h1>
 <div class="actchips"><a href="../b/nights-of-malice.html">nights of malice</a><a href="../b/my-own-will.html">my own will</a><a href="../b/hemlock.html">hemlock</a><a href="../b/exformation.html">exformation</a></div>
 <div class="drow"><a href="../v/unconfirmed.html">UNCONFIRMED</a></div><div class="drow">doors 7</div><div class="drow">$10 / $15</div><p class="dcap">nights of malice, my own will, hemlock, exformation at the handlebar. thu jun 18, doors 7 / music 8. $10 adv / $15 door.</p>
-<div class="samenight"><span class="lead">also that night</span><a href="2026-06-18-bettys-tooth-gems.html">tooth gems + moving sale <small>@ betty&#39;s</small></a></div>
+<div class="samenight"><span class="lead">also that night</span><a href="2026-06-18-bettys-tooth-gems.html">tooth gems + moving sale <small>@ betty&#39;s on belmont</small></a></div>
 <div class="dactions"><a class="dbtn" href="https://www.google.com/maps/search/?api=1&amp;query=UNCONFIRMED%20Pensacola%20FL" target="_blank" rel="noopener">open in maps</a><a class="dbtn" href="../archive.html">the archive &#8599;</a></div>
 </div>
 </article>
