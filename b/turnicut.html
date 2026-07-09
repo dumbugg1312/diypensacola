@@ -842,11 +842,34 @@ main{max-width:940px}
 .arcsel:hover{border-color:var(--hot)}
 .viewtoggle{display:flex;gap:.3rem;margin-left:auto}
 .arccount{color:var(--dim);font-size:.76rem;white-space:nowrap;align-self:center}
-#archits{margin-top:.45rem;display:flex;flex-wrap:wrap;gap:.35rem}
-#archits a{display:inline-block;font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
-  border:1px solid var(--line);padding:.24rem .5rem}
-#archits a:hover,#archits a:focus-visible{border-color:var(--hot);color:var(--hot)}
-#archits a small{color:var(--dim)}
+/* the one search box: a big hero field whose results drop into a grouped panel */
+.arcsearch{position:relative;margin:.2rem 0 1.1rem}
+.arcsearch>input{font-size:1rem;padding:.65rem .8rem}
+.archits{display:none}
+.archits.open{display:block;margin-top:.4rem;background:var(--card);border:2px solid var(--line);
+  box-shadow:3px 3px 0 var(--tape);max-height:60vh;overflow:auto;padding:.3rem 0}
+.archits .ahgroup{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.05em;
+  font-size:.7rem;color:var(--dim);padding:.5rem .8rem .2rem;border-top:1px dashed var(--line)}
+.archits .ahgroup:first-child{border-top:none}
+.archits a{display:block;font-size:.85rem;text-decoration:none;color:var(--ink);padding:.34rem .8rem}
+.archits a:hover,.archits a:focus-visible{background:var(--hot);color:var(--on-hot)}
+.archits a:hover small,.archits a:focus-visible small{color:var(--on-hot)}
+.archits a small{color:var(--dim)}
+.archits .ahnone{color:var(--dim);font-size:.82rem;padding:.5rem .8rem}
+/* scene-stats panel: folded into the archive as a collapsible section */
+.statspanel{border:2px dashed var(--line);background:var(--card);margin:1.6rem 0 0}
+.statspanel>summary{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.03em;
+  font-size:1rem;padding:.7rem .9rem;cursor:pointer;color:var(--hotink);list-style:none}
+.statspanel>summary::-webkit-details-marker{display:none}
+.statspanel>summary::after{content:" ▸";color:var(--dim)}
+.statspanel[open]>summary::after{content:" ▾"}
+.statsbody{padding:0 .9rem 1rem}
+/* homepage archive teaser (the inline scroll moved to archive.html) */
+.homearc-h{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  letter-spacing:.02em;font-size:1.5rem;margin:.2rem 0 .3rem}
+.homearc-sub{color:var(--dim);font-size:.88rem;margin:0 0 1rem;max-width:44rem}
+.arcbannerlink{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
+  font-size:1.05rem}
 .arch li a.arow{color:var(--ink);text-decoration:none}
 .arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
 .arch li strong a{color:var(--ink);text-decoration:none}
@@ -878,7 +901,7 @@ main{max-width:940px}
 .statcols{display:grid;grid-template-columns:1fr;gap:1.6rem}
 @media(min-width:680px){.statcols{grid-template-columns:1fr 1fr}}
 </style></head><body class="showpage">
-<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../stats.html">stats</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
+<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive &amp; search</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap dirwrap actpage">
 <section class="acthero">
 <div class="heroinfo">
@@ -893,7 +916,7 @@ main{max-width:940px}
 </section>
 <h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2018-03-07_chizuko_turnicut.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2018-03-07_chizuko_turnicut.webp' alt='flyer, Mar 8, 2018'><span class='pwcap'>Mar 8, 2018 &middot; chizuko</span></a><a class='pwtile' href='../flyers/2017-10-09_chizuko_af-the-naysayer.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2017-10-09_chizuko_af-the-naysayer.webp' alt='flyer, Oct 14, 2017'><span class='pwcap'>Oct 14, 2017 &middot; chizuko</span></a><a class='pwtile' href='../flyers/2017-02-11_chizuko_paul-the-p-funk-fresh.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2017-02-11_chizuko_paul-the-p-funk-fresh.webp' alt='flyer, Feb 11, 2017'><span class='pwcap'>Feb 11, 2017 &middot; chizuko</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2019</span></li><li><span class='gdate'><a href='../s/2019-01-13-chizuko-jordanzacola-turnicut.html'><b>13</b><i>Jan 2019</i></a></span><span class='gwho'><a href='jordanzacola.html'>jordanzacola</a>, <b class='self'>turnicut</b></span><a class='gven' href='../v/chizuko.html'>chizuko</a></li><li class='gyear'><span>2018</span></li><li><span class='gdate'><a href='../s/2018-03-08-chizuko-turnicut-delicate-chaos.html'><b>8</b><i>Mar 2018</i></a></span><span class='gwho'><b class='self'>Turnicut</b>, <a href='delicate-chaos.html'>Delicate Chaos</a>, <a href='panda-panax.html'>Panda Panax</a></span><a class='gven' href='../v/chizuko.html'>chizuko</a></li><li><span class='gdate'><a href='../s/2018-01-13-chizuko-earl-s-killer-squirrel-big-lo.html'><b>13</b><i>Jan 2018</i></a></span><span class='gwho'><a href='earl-s-killer-squirrel.html'>Earl&#39;s Killer Squirrel</a>, <a href='big-lo.html'>Big Lo</a>, <a href='cookies-and-cake.html'>Cookies and Cake</a>, <a href='company-of-ghosts.html'>Company of Ghosts</a>, <a href='johnny-panic.html'>Johnny Panic</a>, <a href='rezolve.html'>Rezolve</a>, <b class='self'>Turnicut</b></span><a class='gven' href='../v/chizuko.html'>chizuko</a></li><li class='gyear'><span>2017</span></li><li><span class='gdate'><a href='../s/2017-10-14-chizuko-af-the-naysayer-cookies-and-cake.html'><b>14</b><i>Oct 2017</i></a></span><span class='gwho'><a href='af-the-naysayer.html'>AF THE NAYSAYER</a>, <a href='cookies-and-cake.html'>COOKIES AND CAKE</a>, <a href='jamal-steele.html'>JAMAL STEELE</a>, <b class='self'>TURNICUT</b></span><a class='gven' href='../v/chizuko.html'>chizuko</a></li><li><span class='gdate'><a href='../s/2017-02-11-chizuko-paul-the-p-funk-fresh-sour.html'><b>11</b><i>Feb 2017</i></a></span><span class='gwho'><a href='paul-the-p-funk-fresh.html'>Paul the P-Funk Fresh</a>, <a href='sour.html'>Sour</a>, <b class='self'>turnicut</b>, <a href='dj-cister-akt.html'>DJ Cister Akt</a></span><a class='gven' href='../v/chizuko.html'>chizuko</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='cookies-and-cake.html'>cookies and cake <small>&times;2</small></a><a href='af-the-naysayer.html'>af the naysayer</a><a href='big-lo.html'>big lo</a><a href='company-of-ghosts.html'>company of ghosts</a><a href='delicate-chaos.html'>delicate chaos</a><a href='dj-cister-akt.html'>dj cister akt</a><a href='earl-s-killer-squirrel.html'>earl&#39;s killer squirrel</a><a href='jamal-steele.html'>jamal steele</a><a href='johnny-panic.html'>johnny panic</a><a href='jordanzacola.html'>jordanzacola</a><a href='panda-panax.html'>panda panax</a><a href='paul-the-p-funk-fresh.html'>paul the p-funk fresh</a></div>
 <p class="dirnote">act pages are built automatically from the show archive, so something may be off: a misspelled name, a missing link, the wrong type, or a bad local/touring call. no disrespect meant. wrong on any of that, or want a listen link (youtube or bandcamp) or live footage added? <a href='../submit.html'>send it in</a>.</p>
-<p class="spback"><a href="../bands.html">&#8592; the scene index</a> · <a href="../">calendar</a></p>
+<p class="spback"><a href="../archive.html">&#8592; search the archive</a> · <a href="../">calendar</a></p>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>
 

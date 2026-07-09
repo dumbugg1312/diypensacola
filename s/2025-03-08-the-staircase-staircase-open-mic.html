@@ -848,11 +848,34 @@ main{max-width:940px}
 .arcsel:hover{border-color:var(--hot)}
 .viewtoggle{display:flex;gap:.3rem;margin-left:auto}
 .arccount{color:var(--dim);font-size:.76rem;white-space:nowrap;align-self:center}
-#archits{margin-top:.45rem;display:flex;flex-wrap:wrap;gap:.35rem}
-#archits a{display:inline-block;font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
-  border:1px solid var(--line);padding:.24rem .5rem}
-#archits a:hover,#archits a:focus-visible{border-color:var(--hot);color:var(--hot)}
-#archits a small{color:var(--dim)}
+/* the one search box: a big hero field whose results drop into a grouped panel */
+.arcsearch{position:relative;margin:.2rem 0 1.1rem}
+.arcsearch>input{font-size:1rem;padding:.65rem .8rem}
+.archits{display:none}
+.archits.open{display:block;margin-top:.4rem;background:var(--card);border:2px solid var(--line);
+  box-shadow:3px 3px 0 var(--tape);max-height:60vh;overflow:auto;padding:.3rem 0}
+.archits .ahgroup{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.05em;
+  font-size:.7rem;color:var(--dim);padding:.5rem .8rem .2rem;border-top:1px dashed var(--line)}
+.archits .ahgroup:first-child{border-top:none}
+.archits a{display:block;font-size:.85rem;text-decoration:none;color:var(--ink);padding:.34rem .8rem}
+.archits a:hover,.archits a:focus-visible{background:var(--hot);color:var(--on-hot)}
+.archits a:hover small,.archits a:focus-visible small{color:var(--on-hot)}
+.archits a small{color:var(--dim)}
+.archits .ahnone{color:var(--dim);font-size:.82rem;padding:.5rem .8rem}
+/* scene-stats panel: folded into the archive as a collapsible section */
+.statspanel{border:2px dashed var(--line);background:var(--card);margin:1.6rem 0 0}
+.statspanel>summary{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.03em;
+  font-size:1rem;padding:.7rem .9rem;cursor:pointer;color:var(--hotink);list-style:none}
+.statspanel>summary::-webkit-details-marker{display:none}
+.statspanel>summary::after{content:" ▸";color:var(--dim)}
+.statspanel[open]>summary::after{content:" ▾"}
+.statsbody{padding:0 .9rem 1rem}
+/* homepage archive teaser (the inline scroll moved to archive.html) */
+.homearc-h{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  letter-spacing:.02em;font-size:1.5rem;margin:.2rem 0 .3rem}
+.homearc-sub{color:var(--dim);font-size:.88rem;margin:0 0 1rem;max-width:44rem}
+.arcbannerlink{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
+  font-size:1.05rem}
 .arch li a.arow{color:var(--ink);text-decoration:none}
 .arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
 .arch li strong a{color:var(--ink);text-decoration:none}
@@ -884,7 +907,7 @@ main{max-width:940px}
 .statcols{display:grid;grid-template-columns:1fr;gap:1.6rem}
 @media(min-width:680px){.statcols{grid-template-columns:1fr 1fr}}
 </style></head><body class="showpage">
-<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../stats.html">stats</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
+<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive &amp; search</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap">
 <article class="spcard">
 <a href="../flyers/2025-03-08_staircase_open-mic.jpg" target="_blank" rel="noopener"><img class="spflyer" src="../flyers/2025-03-08_staircase_open-mic.jpg" alt="Staircase Open Mic flyer"></a>

@@ -842,11 +842,34 @@ main{max-width:940px}
 .arcsel:hover{border-color:var(--hot)}
 .viewtoggle{display:flex;gap:.3rem;margin-left:auto}
 .arccount{color:var(--dim);font-size:.76rem;white-space:nowrap;align-self:center}
-#archits{margin-top:.45rem;display:flex;flex-wrap:wrap;gap:.35rem}
-#archits a{display:inline-block;font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
-  border:1px solid var(--line);padding:.24rem .5rem}
-#archits a:hover,#archits a:focus-visible{border-color:var(--hot);color:var(--hot)}
-#archits a small{color:var(--dim)}
+/* the one search box: a big hero field whose results drop into a grouped panel */
+.arcsearch{position:relative;margin:.2rem 0 1.1rem}
+.arcsearch>input{font-size:1rem;padding:.65rem .8rem}
+.archits{display:none}
+.archits.open{display:block;margin-top:.4rem;background:var(--card);border:2px solid var(--line);
+  box-shadow:3px 3px 0 var(--tape);max-height:60vh;overflow:auto;padding:.3rem 0}
+.archits .ahgroup{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.05em;
+  font-size:.7rem;color:var(--dim);padding:.5rem .8rem .2rem;border-top:1px dashed var(--line)}
+.archits .ahgroup:first-child{border-top:none}
+.archits a{display:block;font-size:.85rem;text-decoration:none;color:var(--ink);padding:.34rem .8rem}
+.archits a:hover,.archits a:focus-visible{background:var(--hot);color:var(--on-hot)}
+.archits a:hover small,.archits a:focus-visible small{color:var(--on-hot)}
+.archits a small{color:var(--dim)}
+.archits .ahnone{color:var(--dim);font-size:.82rem;padding:.5rem .8rem}
+/* scene-stats panel: folded into the archive as a collapsible section */
+.statspanel{border:2px dashed var(--line);background:var(--card);margin:1.6rem 0 0}
+.statspanel>summary{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.03em;
+  font-size:1rem;padding:.7rem .9rem;cursor:pointer;color:var(--hotink);list-style:none}
+.statspanel>summary::-webkit-details-marker{display:none}
+.statspanel>summary::after{content:" ▸";color:var(--dim)}
+.statspanel[open]>summary::after{content:" ▾"}
+.statsbody{padding:0 .9rem 1rem}
+/* homepage archive teaser (the inline scroll moved to archive.html) */
+.homearc-h{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  letter-spacing:.02em;font-size:1.5rem;margin:.2rem 0 .3rem}
+.homearc-sub{color:var(--dim);font-size:.88rem;margin:0 0 1rem;max-width:44rem}
+.arcbannerlink{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
+  font-size:1.05rem}
 .arch li a.arow{color:var(--ink);text-decoration:none}
 .arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
 .arch li strong a{color:var(--ink);text-decoration:none}
@@ -878,7 +901,7 @@ main{max-width:940px}
 .statcols{display:grid;grid-template-columns:1fr;gap:1.6rem}
 @media(min-width:680px){.statcols{grid-template-columns:1fr 1fr}}
 </style></head><body class="showpage">
-<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../stats.html">stats</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
+<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive &amp; search</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap dirwrap actpage">
 <section class="acthero">
 <div class="heroinfo">
@@ -893,7 +916,7 @@ main{max-width:940px}
 </section>
 <h2 class='dirsec'>watch</h2><div class='ytgrid'><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/JZF0jS1ARCs' title='Pensacola Living.... | Sun, Beaches, &amp; Sharks! | Home is Where we Park It!' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div></div><h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2024-11-16_subculture_creighfish.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2024-11-16_subculture_creighfish.webp' alt='flyer, Nov 16, 2024'><span class='pwcap'>Nov 16, 2024 &middot; subculture</span></a><a class='pwtile' href='../flyers/2024-08-02_subculture_park-it.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2024-08-02_subculture_park-it.webp' alt='flyer, Aug 2, 2024'><span class='pwcap'>Aug 2, 2024 &middot; subculture</span></a><a class='pwtile' href='../flyers/2024-05-24_subculture_t1lt3d.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2024-05-24_subculture_t1lt3d.webp' alt='flyer, May 24, 2024'><span class='pwcap'>May 24, 2024 &middot; subculture</span></a><a class='pwtile' href='../flyers/2024-03-16_subculture_cam-the-sella.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2024-03-16_subculture_cam-the-sella.webp' alt='flyer, Mar 16, 2024'><span class='pwcap'>Mar 16, 2024 &middot; subculture</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2024</span></li><li><span class='gdate'><a href='../s/2024-12-20-subculture-miatropolis-split.html'><b>20</b><i>Dec 2024</i></a></span><span class='gwho'><a href='miatropolis.html'>Miatropolis</a>, <a href='split.html'>Split</a>, <a href='mr-brooks.html'>Mr Brooks</a>, <b class='self'>Park It</b>, <a href='jomo.html'>Jomo</a>, <a href='creighfish.html'>Creighfish</a></span><a class='gven' href='../v/subculture.html'>subculture</a></li><li><span class='gdate'><a href='../s/2024-11-16-subculture-creighfish-cole-trickle.html'><b>16</b><i>Nov 2024</i></a></span><span class='gwho'><a href='creighfish.html'>Creighfish</a>, <a href='cole-trickle.html'>Cole Trickle</a>, <b class='self'>Park It</b>, <a href='shawnzy.html'>Shawnzy</a>, <a href='t1lt3d.html'>T1lt3d</a></span><a class='gven' href='../v/subculture.html'>subculture</a></li><li><span class='gdate'><a href='../s/2024-08-02-subculture-park-it-selapack.html'><b>2</b><i>Aug 2024</i></a></span><span class='gwho'><b class='self'>Park It</b>, <a href='selapack.html'>Selapack</a>, <a href='jamr.html'>Jamr</a>, <a href='slier.html'>Slier</a>, <a href='motiv8.html'>Motiv8</a>, <a href='matty-ice.html'>Matty Ice</a>, <a href='error.html'>Error</a>, <a href='mxmxmxm.html'>MXMXMXM</a></span><a class='gven' href='../v/subculture.html'>subculture</a></li><li><span class='gdate'><a href='../s/2024-07-05-subculture-lykwid-creighfish.html'><b>5</b><i>Jul 2024</i></a></span><span class='gwho'><a href='lykwid.html'>Lykwid</a>, <a href='creighfish.html'>Creighfish</a>, <a href='spicy-ashaan.html'>Spicy Ashaan</a>, <b class='self'>Park It</b>, <a href='motiv8.html'>Motiv8</a>, <a href='bt-wubz.html'>Bt Wubz</a></span><a class='gven' href='../v/subculture.html'>subculture</a></li><li><span class='gdate'><a href='../s/2024-05-24-subculture-t1lt3d-jamr.html'><b>24</b><i>May 2024</i></a></span><span class='gwho'><a href='t1lt3d.html'>T1lt3d</a>, <a href='jamr.html'>Jamr</a>, <a href='rude.html'>Rude.</a>, <b class='self'>Park It</b>, <a href='filth.html'>Filth</a>, <a href='asper.html'>Asper</a></span><a class='gven' href='../v/subculture.html'>subculture</a></li><li><span class='gdate'><a href='../s/2024-03-16-subculture-cam-the-sella-lalaland.html'><b>16</b><i>Mar 2024</i></a></span><span class='gwho'><a href='cam-the-sella.html'>Cam the Sella</a>, <a href='lalaland.html'>Lalaland</a>, <a href='jigglypuff.html'>Jigglypuff</a>, <a href='t1lt3d.html'>T1lt3d</a>, <a href='motiv8.html'>Motiv8</a>, <a href='pyro.html'>Pyro</a>, <b class='self'>Park It</b>, <a href='kinzi.html'>Kinzi</a></span><a class='gven' href='../v/subculture.html'>subculture</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='creighfish.html'>creighfish <small>&times;3</small></a><a href='motiv8.html'>motiv8 <small>&times;3</small></a><a href='t1lt3d.html'>t1lt3d <small>&times;3</small></a><a href='jamr.html'>jamr <small>&times;2</small></a><a href='asper.html'>asper</a><a href='bt-wubz.html'>bt wubz</a><a href='cam-the-sella.html'>cam the sella</a><a href='cole-trickle.html'>cole trickle</a><a href='error.html'>error</a><a href='filth.html'>filth</a><a href='jigglypuff.html'>jigglypuff</a><a href='jomo.html'>jomo</a></div>
 <p class="dirnote">act pages are built automatically from the show archive, so something may be off: a misspelled name, a missing link, the wrong type, or a bad local/touring call. no disrespect meant. wrong on any of that, or want a listen link (youtube or bandcamp) or live footage added? <a href='../submit.html'>send it in</a>.</p>
-<p class="spback"><a href="../bands.html">&#8592; the scene index</a> · <a href="../">calendar</a></p>
+<p class="spback"><a href="../archive.html">&#8592; search the archive</a> · <a href="../">calendar</a></p>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>
 

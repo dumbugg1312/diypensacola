@@ -842,11 +842,34 @@ main{max-width:940px}
 .arcsel:hover{border-color:var(--hot)}
 .viewtoggle{display:flex;gap:.3rem;margin-left:auto}
 .arccount{color:var(--dim);font-size:.76rem;white-space:nowrap;align-self:center}
-#archits{margin-top:.45rem;display:flex;flex-wrap:wrap;gap:.35rem}
-#archits a{display:inline-block;font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
-  border:1px solid var(--line);padding:.24rem .5rem}
-#archits a:hover,#archits a:focus-visible{border-color:var(--hot);color:var(--hot)}
-#archits a small{color:var(--dim)}
+/* the one search box: a big hero field whose results drop into a grouped panel */
+.arcsearch{position:relative;margin:.2rem 0 1.1rem}
+.arcsearch>input{font-size:1rem;padding:.65rem .8rem}
+.archits{display:none}
+.archits.open{display:block;margin-top:.4rem;background:var(--card);border:2px solid var(--line);
+  box-shadow:3px 3px 0 var(--tape);max-height:60vh;overflow:auto;padding:.3rem 0}
+.archits .ahgroup{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.05em;
+  font-size:.7rem;color:var(--dim);padding:.5rem .8rem .2rem;border-top:1px dashed var(--line)}
+.archits .ahgroup:first-child{border-top:none}
+.archits a{display:block;font-size:.85rem;text-decoration:none;color:var(--ink);padding:.34rem .8rem}
+.archits a:hover,.archits a:focus-visible{background:var(--hot);color:var(--on-hot)}
+.archits a:hover small,.archits a:focus-visible small{color:var(--on-hot)}
+.archits a small{color:var(--dim)}
+.archits .ahnone{color:var(--dim);font-size:.82rem;padding:.5rem .8rem}
+/* scene-stats panel: folded into the archive as a collapsible section */
+.statspanel{border:2px dashed var(--line);background:var(--card);margin:1.6rem 0 0}
+.statspanel>summary{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.03em;
+  font-size:1rem;padding:.7rem .9rem;cursor:pointer;color:var(--hotink);list-style:none}
+.statspanel>summary::-webkit-details-marker{display:none}
+.statspanel>summary::after{content:" ▸";color:var(--dim)}
+.statspanel[open]>summary::after{content:" ▾"}
+.statsbody{padding:0 .9rem 1rem}
+/* homepage archive teaser (the inline scroll moved to archive.html) */
+.homearc-h{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  letter-spacing:.02em;font-size:1.5rem;margin:.2rem 0 .3rem}
+.homearc-sub{color:var(--dim);font-size:.88rem;margin:0 0 1rem;max-width:44rem}
+.arcbannerlink{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
+  font-size:1.05rem}
 .arch li a.arow{color:var(--ink);text-decoration:none}
 .arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
 .arch li strong a{color:var(--ink);text-decoration:none}
@@ -878,7 +901,7 @@ main{max-width:940px}
 .statcols{display:grid;grid-template-columns:1fr;gap:1.6rem}
 @media(min-width:680px){.statcols{grid-template-columns:1fr 1fr}}
 </style></head><body class="showpage">
-<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../stats.html">stats</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
+<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive &amp; search</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap dirwrap actpage">
 <section class="acthero">
 <div class="heroinfo">
@@ -893,7 +916,7 @@ main{max-width:940px}
 </section>
 <h2 class='dirsec'>watch</h2><div class='ytgrid'><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/Eu7ZM3HTfP4' title='SNAKE AND THE RABBIT - Live at The Handlebar - Pensacola, FL - January 21, 2023' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div></div><h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2026-02-28_alga-beer-co_snake-and-the-rabbit.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2026-02-28_alga-beer-co_snake-and-the-rabbit.webp' alt='flyer, Feb 28, 2026'><span class='pwcap'>Feb 28, 2026 &middot; alga beer co.</span></a><a class='pwtile' href='../flyers/2025-11-20_the-handlebar_katie-jacob.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-11-20_the-handlebar_katie-jacob.webp' alt='flyer, Nov 20, 2025'><span class='pwcap'>Nov 20, 2025 &middot; the handlebar</span></a><a class='pwtile' href='../flyers/2025-11-15_bettys_bettys-fest.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-11-15_bettys_bettys-fest.webp' alt='flyer, Nov 15, 2025'><span class='pwcap'>Nov 15, 2025 &middot; betty&#39;s</span></a><a class='pwtile' href='../flyers/2023-01-21_handlebar_feed-lemon.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-01-21_handlebar_feed-lemon.webp' alt='flyer, Jan 21, 2023'><span class='pwcap'>Jan 21, 2023 &middot; the handlebar</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2026</span></li><li><span class='gdate'><a href='../s/2026-04-18-bayview-park-bryan-flemate-earth-of-tomorrow.html'><b>18</b><i>Apr 2026</i></a></span><span class='gwho'><a href='bryan-flemate.html'>Bryan Flemate</a>, <a href='earth-of-tomorrow.html'>Earth of Tomorrow</a>, <a href='jesse-bumann.html'>Jesse Bumann</a>, <a href='james-floyd.html'>James Floyd</a>, <b class='self'>Snake and the Rabbit</b>, <a href='jonathan-puzan.html'>Jonathan Puzan</a>, <a href='michael-garcia.html'>Michael Garcia</a>, <a href='jeff-glickman.html'>Jeff Glickman</a>, <a href='katie-jacob.html'>Katie &amp; Jacob</a>, <a href='jacob-kirkland.html'>Jacob Kirkland</a></span><a class='gven' href='../v/bayview-park.html'>bayview park</a></li><li><span class='gdate'><a href='../s/2026-02-28-alga-beer-co-snake-and-the-rabbit-dalton-wright-trio.html'><b>28</b><i>Feb 2026</i></a></span><span class='gwho'><b class='self'>Snake and the Rabbit</b>, <a href='dalton-wright-trio.html'>Dalton Wright Trio</a></span><a class='gven' href='../v/alga-beer-co.html'>alga beer co.</a></li><li class='gyear'><span>2025</span></li><li><span class='gdate'><a href='../s/2025-11-20-the-handlebar-katie-jacob-snake-and-the-rabbit.html'><b>20</b><i>Nov 2025</i></a></span><span class='gwho'><a href='katie-jacob.html'>Katie &amp; Jacob</a>, <b class='self'>Snake and the Rabbit</b>, <a href='cosmic-rascals.html'>Cosmic Rascals</a></span><a class='gven' href='../v/the-handlebar.html'>the handlebar</a></li><li><span class='gdate'><a href='../s/2025-11-15-bettys-betty-s-fest-goodwin-rainer.html'><b>15</b><i>Nov 2025</i></a></span><span class='gwho'><a href='betty-s-fest.html'>Betty&#39;s Fest</a>, <a href='goodwin-rainer.html'>Goodwin Rainer</a>, <a href='cursed-body.html'>Cursed Body</a>, <b class='self'>Snake and the Rabbit</b>, <a href='garden-dweller.html'>Garden Dweller</a>, <a href='the-basilantros.html'>The Basilantros</a>, <a href='grave-chorus.html'>Grave Chorus</a>, <a href='crystal-plumage.html'>Crystal Plumage</a>, <a href='other.html'>Other</a>, <a href='dj-balance.html'>DJ Balance</a>, <a href='clarity.html'>Clarity</a>, <a href='dj-brody.html'>DJ Brody</a>, <a href='j-mike.html'>J.Mike</a>, <a href='cezar.html'>Cezar</a>, <a href='linezo.html'>Linezo</a>, <a href='spilker.html'>Spilker</a></span><a class='gven' href='../v/bettys.html'>betty&#39;s</a></li><li class='gyear'><span>2024</span></li><li><span class='gdate'><a href='../s/2024-12-10-the-handlebar-emily-nenni-jarred-mcconnell-and-the-high-aces.html'><b>10</b><i>Dec 2024</i></a></span><span class='gwho'><a href='emily-nenni.html'>Emily Nenni</a>, <a href='jarred-mcconnell-and-the-high-aces.html'>Jarred McConnell and the High Aces</a>, <b class='self'>Snake and the Rabbit</b></span><a class='gven' href='../v/the-handlebar.html'>the handlebar</a></li><li class='gyear'><span>2023</span></li><li><span class='gdate'><a href='../s/2023-01-21-the-handlebar-feed-lemon-the-mid-evil-times.html'><b>21</b><i>Jan 2023</i></a></span><span class='gwho'><a href='feed-lemon.html'>Feed Lemon</a>, <a href='the-mid-evil-times.html'>The Mid Evil Times</a>, <b class='self'>Snake and the Rabbit</b>, <a href='astral-lite.html'>Astral Lite</a></span><a class='gven' href='../v/the-handlebar.html'>the handlebar</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='katie-jacob.html'>katie &amp; jacob <small>&times;2</small></a><a href='astral-lite.html'>astral lite</a><a href='betty-s-fest.html'>betty&#39;s fest</a><a href='bryan-flemate.html'>bryan flemate</a><a href='cezar.html'>cezar</a><a href='clarity.html'>clarity</a><a href='cosmic-rascals.html'>cosmic rascals</a><a href='crystal-plumage.html'>crystal plumage</a><a href='cursed-body.html'>cursed body</a><a href='dalton-wright-trio.html'>dalton wright trio</a><a href='dj-balance.html'>dj balance</a><a href='dj-brody.html'>dj brody</a></div>
 <p class="dirnote">act pages are built automatically from the show archive, so something may be off: a misspelled name, a missing link, the wrong type, or a bad local/touring call. no disrespect meant. wrong on any of that, or want a listen link (youtube or bandcamp) or live footage added? <a href='../submit.html'>send it in</a>.</p>
-<p class="spback"><a href="../bands.html">&#8592; the scene index</a> · <a href="../">calendar</a></p>
+<p class="spback"><a href="../archive.html">&#8592; search the archive</a> · <a href="../">calendar</a></p>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>
 

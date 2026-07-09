@@ -842,11 +842,34 @@ main{max-width:940px}
 .arcsel:hover{border-color:var(--hot)}
 .viewtoggle{display:flex;gap:.3rem;margin-left:auto}
 .arccount{color:var(--dim);font-size:.76rem;white-space:nowrap;align-self:center}
-#archits{margin-top:.45rem;display:flex;flex-wrap:wrap;gap:.35rem}
-#archits a{display:inline-block;font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
-  border:1px solid var(--line);padding:.24rem .5rem}
-#archits a:hover,#archits a:focus-visible{border-color:var(--hot);color:var(--hot)}
-#archits a small{color:var(--dim)}
+/* the one search box: a big hero field whose results drop into a grouped panel */
+.arcsearch{position:relative;margin:.2rem 0 1.1rem}
+.arcsearch>input{font-size:1rem;padding:.65rem .8rem}
+.archits{display:none}
+.archits.open{display:block;margin-top:.4rem;background:var(--card);border:2px solid var(--line);
+  box-shadow:3px 3px 0 var(--tape);max-height:60vh;overflow:auto;padding:.3rem 0}
+.archits .ahgroup{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.05em;
+  font-size:.7rem;color:var(--dim);padding:.5rem .8rem .2rem;border-top:1px dashed var(--line)}
+.archits .ahgroup:first-child{border-top:none}
+.archits a{display:block;font-size:.85rem;text-decoration:none;color:var(--ink);padding:.34rem .8rem}
+.archits a:hover,.archits a:focus-visible{background:var(--hot);color:var(--on-hot)}
+.archits a:hover small,.archits a:focus-visible small{color:var(--on-hot)}
+.archits a small{color:var(--dim)}
+.archits .ahnone{color:var(--dim);font-size:.82rem;padding:.5rem .8rem}
+/* scene-stats panel: folded into the archive as a collapsible section */
+.statspanel{border:2px dashed var(--line);background:var(--card);margin:1.6rem 0 0}
+.statspanel>summary{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.03em;
+  font-size:1rem;padding:.7rem .9rem;cursor:pointer;color:var(--hotink);list-style:none}
+.statspanel>summary::-webkit-details-marker{display:none}
+.statspanel>summary::after{content:" ▸";color:var(--dim)}
+.statspanel[open]>summary::after{content:" ▾"}
+.statsbody{padding:0 .9rem 1rem}
+/* homepage archive teaser (the inline scroll moved to archive.html) */
+.homearc-h{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  letter-spacing:.02em;font-size:1.5rem;margin:.2rem 0 .3rem}
+.homearc-sub{color:var(--dim);font-size:.88rem;margin:0 0 1rem;max-width:44rem}
+.arcbannerlink{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
+  font-size:1.05rem}
 .arch li a.arow{color:var(--ink);text-decoration:none}
 .arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
 .arch li strong a{color:var(--ink);text-decoration:none}
@@ -878,7 +901,7 @@ main{max-width:940px}
 .statcols{display:grid;grid-template-columns:1fr;gap:1.6rem}
 @media(min-width:680px){.statcols{grid-template-columns:1fr 1fr}}
 </style></head><body class="showpage">
-<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../stats.html">stats</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
+<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive &amp; search</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap dirwrap actpage">
 <section class="acthero">
 <div class="heroinfo">
@@ -893,7 +916,7 @@ main{max-width:940px}
 </section>
 <h2 class='dirsec'>watch</h2><div class='ytgrid'><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/101rOirkpgc' title='CAVING IN 🔸 PREMONITIONS (Official Music Video)' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div></div><h2 class='dirsec'>upcoming</h2><ul class='gigledger'><li class='up'><span class='gdate'><b>15</b><i>Aug 2026</i></span><span class='gwho'><a href='../s/2026-08-15-handlebar-heroes-for-ghosts.html'>Heroes For Ghosts, Spiritless, Afterdusk, Caving In</a></span><a class='gven' href='../v/the-handlebar.html'>the handlebar</a></li><li class='up'><span class='gdate'><b>12</b><i>Sep 2026</i></span><span class='gwho'><a href='../s/2026-09-12-the-handlebar-nvsn-the-autumn-descent.html'>NVSN, The Autumn Descent, Caving In, HOPOUT</a></span><a class='gven' href='../v/the-handlebar.html'>the handlebar</a></li></ul><h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile up' href='../s/2026-09-12-the-handlebar-nvsn-the-autumn-descent.html'><img loading='lazy' src='../flyers/thumbs/2026-09-12_the-handlebar_nvsn.webp' alt='flyer, Sep 12, 2026'><span class='pwcap'>Sep 12, 2026 &middot; the handlebar</span></a><a class='pwtile' href='../flyers/flyer_2026-06-22_handlebar_psycho-frame.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/flyer_2026-06-22_handlebar_psycho-frame.webp' alt='flyer, Jun 22, 2026'><span class='pwcap'>Jun 22, 2026 &middot; the handlebar</span></a><a class='pwtile' href='../flyers/2026-01-20_handlebar_wiltwither.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2026-01-20_handlebar_wiltwither.webp' alt='flyer, Jan 20, 2026'><span class='pwcap'>Jan 20, 2026 &middot; the handlebar</span></a><a class='pwtile' href='../flyers/2025-12-09_handlebar_fall-fifty-feet.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-12-09_handlebar_fall-fifty-feet.webp' alt='flyer, Dec 9, 2025'><span class='pwcap'>Dec 9, 2025 &middot; the handlebar</span></a><a class='pwtile' href='../flyers/2025-10-03_the-handlebar_afterdusk.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-10-03_the-handlebar_afterdusk.webp' alt='flyer, Oct 3, 2025'><span class='pwcap'>Oct 3, 2025 &middot; the handlebar</span></a><a class='pwtile' href='../flyers/2024-11-24_subculture_in-gloom.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2024-11-24_subculture_in-gloom.webp' alt='flyer, Nov 24, 2024'><span class='pwcap'>Nov 24, 2024 &middot; subculture</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2026</span></li><li><span class='gdate'><a href='../s/2026-06-22-handlebar-psycho-frame.html'><b>22</b><i>Jun 2026</i></a></span><span class='gwho'><a href='psycho-frame.html'>Psycho-Frame</a>, <a href='oinkliteration.html'>Oinkliteration</a>, <b class='self'>Caving In</b>, <a href='hemlock.html'>Hemlock</a></span><a class='gven' href='../v/the-handlebar.html'>the handlebar</a></li><li><span class='gdate'><a href='../s/2026-01-20-the-handlebar-wiltwither-god-glitch.html'><b>20</b><i>Jan 2026</i></a></span><span class='gwho'><a href='wiltwither.html'>Wiltwither</a>, <a href='god-glitch.html'>God Glitch</a>, <a href='with-fire-came-disparity.html'>With Fire Came Disparity</a>, <b class='self'>Caving In</b>, <a href='hangnail-ripoff.html'>Hangnail Ripoff</a></span><a class='gven' href='../v/the-handlebar.html'>the handlebar</a></li><li class='gyear'><span>2025</span></li><li><span class='gdate'><a href='../s/2025-12-09-the-handlebar-fall-fifty-feet-human-instinct.html'><b>9</b><i>Dec 2025</i></a></span><span class='gwho'><a href='fall-fifty-feet.html'>Fall Fifty Feet</a>, <a href='human-instinct.html'>Human Instinct</a>, <a href='spiral.html'>Spiral</a>, <a href='exformation.html'>Exformation</a>, <b class='self'>Caving In</b></span><a class='gven' href='../v/the-handlebar.html'>the handlebar</a></li><li><span class='gdate'><a href='../s/2025-10-03-the-handlebar-afterdusk-caving-in.html'><b>3</b><i>Oct 2025</i></a></span><span class='gwho'><a href='afterdusk.html'>Afterdusk</a>, <b class='self'>Caving In</b>, <a href='dead-etiquette.html'>Dead Etiquette</a>, <a href='nick-nasty.html'>Nick Nasty</a></span><a class='gven' href='../v/the-handlebar.html'>the handlebar</a></li><li class='gyear'><span>2024</span></li><li><span class='gdate'><a href='../s/2024-11-24-subculture-in-gloom-spiritual-chaos.html'><b>24</b><i>Nov 2024</i></a></span><span class='gwho'><a href='in-gloom.html'>In Gloom</a>, <a href='spiritual-chaos.html'>Spiritual Chaos</a>, <a href='catcher-and-the-rye.html'>Catcher and the Rye</a>, <a href='blown-apart.html'>Blown Apart</a>, <a href='noctus.html'>Noctus</a>, <b class='self'>Caving In</b></span><a class='gven' href='../v/subculture.html'>subculture</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='afterdusk.html'>afterdusk <small>&times;2</small></a><a href='blown-apart.html'>blown apart</a><a href='catcher-and-the-rye.html'>catcher and the rye</a><a href='dead-etiquette.html'>dead etiquette</a><a href='exformation.html'>exformation</a><a href='fall-fifty-feet.html'>fall fifty feet</a><a href='god-glitch.html'>god glitch</a><a href='hangnail-ripoff.html'>hangnail ripoff</a><a href='hemlock.html'>hemlock</a><a href='heroes-for-ghosts.html'>heroes for ghosts</a><a href='hopout.html'>hopout</a><a href='human-instinct.html'>human instinct</a></div>
 <p class="dirnote">act pages are built automatically from the show archive, so something may be off: a misspelled name, a missing link, the wrong type, or a bad local/touring call. no disrespect meant. wrong on any of that, or want a listen link (youtube or bandcamp) or live footage added? <a href='../submit.html'>send it in</a>.</p>
-<p class="spback"><a href="../bands.html">&#8592; the scene index</a> · <a href="../">calendar</a></p>
+<p class="spback"><a href="../archive.html">&#8592; search the archive</a> · <a href="../">calendar</a></p>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>
 

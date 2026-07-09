@@ -842,11 +842,34 @@ main{max-width:940px}
 .arcsel:hover{border-color:var(--hot)}
 .viewtoggle{display:flex;gap:.3rem;margin-left:auto}
 .arccount{color:var(--dim);font-size:.76rem;white-space:nowrap;align-self:center}
-#archits{margin-top:.45rem;display:flex;flex-wrap:wrap;gap:.35rem}
-#archits a{display:inline-block;font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
-  border:1px solid var(--line);padding:.24rem .5rem}
-#archits a:hover,#archits a:focus-visible{border-color:var(--hot);color:var(--hot)}
-#archits a small{color:var(--dim)}
+/* the one search box: a big hero field whose results drop into a grouped panel */
+.arcsearch{position:relative;margin:.2rem 0 1.1rem}
+.arcsearch>input{font-size:1rem;padding:.65rem .8rem}
+.archits{display:none}
+.archits.open{display:block;margin-top:.4rem;background:var(--card);border:2px solid var(--line);
+  box-shadow:3px 3px 0 var(--tape);max-height:60vh;overflow:auto;padding:.3rem 0}
+.archits .ahgroup{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.05em;
+  font-size:.7rem;color:var(--dim);padding:.5rem .8rem .2rem;border-top:1px dashed var(--line)}
+.archits .ahgroup:first-child{border-top:none}
+.archits a{display:block;font-size:.85rem;text-decoration:none;color:var(--ink);padding:.34rem .8rem}
+.archits a:hover,.archits a:focus-visible{background:var(--hot);color:var(--on-hot)}
+.archits a:hover small,.archits a:focus-visible small{color:var(--on-hot)}
+.archits a small{color:var(--dim)}
+.archits .ahnone{color:var(--dim);font-size:.82rem;padding:.5rem .8rem}
+/* scene-stats panel: folded into the archive as a collapsible section */
+.statspanel{border:2px dashed var(--line);background:var(--card);margin:1.6rem 0 0}
+.statspanel>summary{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.03em;
+  font-size:1rem;padding:.7rem .9rem;cursor:pointer;color:var(--hotink);list-style:none}
+.statspanel>summary::-webkit-details-marker{display:none}
+.statspanel>summary::after{content:" ▸";color:var(--dim)}
+.statspanel[open]>summary::after{content:" ▾"}
+.statsbody{padding:0 .9rem 1rem}
+/* homepage archive teaser (the inline scroll moved to archive.html) */
+.homearc-h{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  letter-spacing:.02em;font-size:1.5rem;margin:.2rem 0 .3rem}
+.homearc-sub{color:var(--dim);font-size:.88rem;margin:0 0 1rem;max-width:44rem}
+.arcbannerlink{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
+  font-size:1.05rem}
 .arch li a.arow{color:var(--ink);text-decoration:none}
 .arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
 .arch li strong a{color:var(--ink);text-decoration:none}
@@ -878,7 +901,7 @@ main{max-width:940px}
 .statcols{display:grid;grid-template-columns:1fr;gap:1.6rem}
 @media(min-width:680px){.statcols{grid-template-columns:1fr 1fr}}
 </style></head><body class="showpage">
-<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../stats.html">stats</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
+<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive &amp; search</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap dirwrap actpage">
 <section class="acthero">
 <div class="heroinfo">
@@ -893,7 +916,7 @@ main{max-width:940px}
 </section>
 <h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2025-11-29_betty-s_club-kid-lip-sync-smack-down.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-11-29_betty-s_club-kid-lip-sync-smack-down.webp' alt='flyer, Nov 29, 2025'><span class='pwcap'>Nov 29, 2025 &middot; betty&#39;s</span></a><a class='pwtile' href='../flyers/2025-03-22_the-handlebar_andy-rodginous.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-03-22_the-handlebar_andy-rodginous.webp' alt='flyer, Mar 22, 2025'><span class='pwcap'>Mar 22, 2025 &middot; the handlebar</span></a><a class='pwtile' href='../flyers/2024-11-01_the-handlebar_jamal-steele.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2024-11-01_the-handlebar_jamal-steele.webp' alt='flyer, Nov 1, 2024'><span class='pwcap'>Nov 1, 2024 &middot; the handlebar</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2026</span></li><li><span class='gdate'><a href='../s/2026-06-26-betty-s-wanda-doomy-vixen-valentine.html'><b>26</b><i>Jun 2026</i></a></span><span class='gwho'><a href='wanda-doomy.html'>Wanda Doomy</a>, <a href='vixen-valentine.html'>Vixen Valentine</a>, <a href='mon-cherri-pop.html'>Mon Cherri Pop</a>, <a href='gemini.html'>Gemini</a>, <a href='h8male.html'>H8Male</a>, <b class='self'>Day Day DuVay</b></span><a class='gven' href='../v/bettys.html'>betty&#39;s</a></li><li class='gyear'><span>2025</span></li><li><span class='gdate'><a href='../s/2025-11-29-betty-s-club-kid-lip-sync-smack-down-wanda-doomy.html'><b>29</b><i>Nov 2025</i></a></span><span class='gwho'><a href='club-kid-lip-sync-smack-down.html'>Club-Kid Lip-Sync Smack-Down</a>, <a href='wanda-doomy.html'>Wanda Doomy</a>, <a href='evan-manson.html'>Evan Manson</a>, <b class='self'>Day Day DuVay</b>, <a href='slashly-hoorhees.html'>Slashly &amp; Hoorhees</a>, <a href='h8male.html'>H8Male</a>, <a href='hotberry-hurricane.html'>Hotberry Hurricane</a>, <a href='beba-b-dupree.html'>Beba B. Dupree</a>, <a href='titanium.html'>Titanium</a></span><a class='gven' href='../v/bettys.html'>betty&#39;s</a></li><li><span class='gdate'><a href='../s/2025-03-22-the-handlebar-andy-rodginous-wynter-kandiey.html'><b>22</b><i>Mar 2025</i></a></span><span class='gwho'><a href='andy-rodginous.html'>Andy Rodginous</a>, <a href='wynter-kandiey.html'>Wynter Kandiey</a>, <b class='self'>Day Day DuVay</b>, <a href='thotberry-shortcake.html'>Thotberry Shortcake</a>, <a href='h8male.html'>H8Male</a>, <a href='madame-hex.html'>Madame Hex</a>, <a href='alastina-jade-samore.html'>Alastina Jade Samore</a></span><a class='gven' href='../v/the-handlebar.html'>the handlebar</a></li><li class='gyear'><span>2024</span></li><li><span class='gdate'><a href='../s/2024-11-01-the-handlebar-jamal-steele-pauper-s-grave.html'><b>1</b><i>Nov 2024</i></a></span><span class='gwho'><a href='jamal-steele.html'>Jamal Steele</a>, <a href='pauper-s-grave.html'>Pauper&#39;s Grave</a>, <a href='the-mid-evil-times.html'>The Mid Evil Times</a>, <a href='terrah-card.html'>Terrah Card</a>, <a href='cookies-cake.html'>Cookies &amp; Cake</a>, <a href='andy-rodginous.html'>Andy Rodginous</a>, <a href='braxton-hicks.html'>Braxton Hicks</a>, <b class='self'>Day Day DuVay</b></span><a class='gven' href='../v/the-handlebar.html'>the handlebar</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='h8male.html'>h8male <small>&times;3</small></a><a href='andy-rodginous.html'>andy rodginous <small>&times;2</small></a><a href='wanda-doomy.html'>wanda doomy <small>&times;2</small></a><a href='alastina-jade-samore.html'>alastina jade samore</a><a href='beba-b-dupree.html'>beba b. dupree</a><a href='braxton-hicks.html'>braxton hicks</a><a href='club-kid-lip-sync-smack-down.html'>club-kid lip-sync smack-down</a><a href='cookies-cake.html'>cookies &amp; cake</a><a href='evan-manson.html'>evan manson</a><a href='gemini.html'>gemini</a><a href='hotberry-hurricane.html'>hotberry hurricane</a><a href='jamal-steele.html'>jamal steele</a></div>
 <p class="dirnote">act pages are built automatically from the show archive, so something may be off: a misspelled name, a missing link, the wrong type, or a bad local/touring call. no disrespect meant. wrong on any of that, or want a listen link (youtube or bandcamp) or live footage added? <a href='../submit.html'>send it in</a>.</p>
-<p class="spback"><a href="../bands.html">&#8592; the scene index</a> · <a href="../">calendar</a></p>
+<p class="spback"><a href="../archive.html">&#8592; search the archive</a> · <a href="../">calendar</a></p>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>
 

@@ -842,11 +842,34 @@ main{max-width:940px}
 .arcsel:hover{border-color:var(--hot)}
 .viewtoggle{display:flex;gap:.3rem;margin-left:auto}
 .arccount{color:var(--dim);font-size:.76rem;white-space:nowrap;align-self:center}
-#archits{margin-top:.45rem;display:flex;flex-wrap:wrap;gap:.35rem}
-#archits a{display:inline-block;font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
-  border:1px solid var(--line);padding:.24rem .5rem}
-#archits a:hover,#archits a:focus-visible{border-color:var(--hot);color:var(--hot)}
-#archits a small{color:var(--dim)}
+/* the one search box: a big hero field whose results drop into a grouped panel */
+.arcsearch{position:relative;margin:.2rem 0 1.1rem}
+.arcsearch>input{font-size:1rem;padding:.65rem .8rem}
+.archits{display:none}
+.archits.open{display:block;margin-top:.4rem;background:var(--card);border:2px solid var(--line);
+  box-shadow:3px 3px 0 var(--tape);max-height:60vh;overflow:auto;padding:.3rem 0}
+.archits .ahgroup{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.05em;
+  font-size:.7rem;color:var(--dim);padding:.5rem .8rem .2rem;border-top:1px dashed var(--line)}
+.archits .ahgroup:first-child{border-top:none}
+.archits a{display:block;font-size:.85rem;text-decoration:none;color:var(--ink);padding:.34rem .8rem}
+.archits a:hover,.archits a:focus-visible{background:var(--hot);color:var(--on-hot)}
+.archits a:hover small,.archits a:focus-visible small{color:var(--on-hot)}
+.archits a small{color:var(--dim)}
+.archits .ahnone{color:var(--dim);font-size:.82rem;padding:.5rem .8rem}
+/* scene-stats panel: folded into the archive as a collapsible section */
+.statspanel{border:2px dashed var(--line);background:var(--card);margin:1.6rem 0 0}
+.statspanel>summary{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.03em;
+  font-size:1rem;padding:.7rem .9rem;cursor:pointer;color:var(--hotink);list-style:none}
+.statspanel>summary::-webkit-details-marker{display:none}
+.statspanel>summary::after{content:" ▸";color:var(--dim)}
+.statspanel[open]>summary::after{content:" ▾"}
+.statsbody{padding:0 .9rem 1rem}
+/* homepage archive teaser (the inline scroll moved to archive.html) */
+.homearc-h{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  letter-spacing:.02em;font-size:1.5rem;margin:.2rem 0 .3rem}
+.homearc-sub{color:var(--dim);font-size:.88rem;margin:0 0 1rem;max-width:44rem}
+.arcbannerlink{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
+  font-size:1.05rem}
 .arch li a.arow{color:var(--ink);text-decoration:none}
 .arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
 .arch li strong a{color:var(--ink);text-decoration:none}
@@ -878,7 +901,7 @@ main{max-width:940px}
 .statcols{display:grid;grid-template-columns:1fr;gap:1.6rem}
 @media(min-width:680px){.statcols{grid-template-columns:1fr 1fr}}
 </style></head><body class="showpage">
-<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../stats.html">stats</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
+<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive &amp; search</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap dirwrap actpage">
 <section class="acthero">
 <div class="heroinfo">
@@ -893,7 +916,7 @@ main{max-width:940px}
 </section>
 <h2 class='dirsec'>watch</h2><div class='ytgrid'><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/tKE6NiSJBvo' title='Lost Wandering opening for Tape B @ Maritime Park' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/I0I-KqFp7fo' title='Big Stage Steppin Opening for Ravenscoon @ Lagunas Beach Bar &amp; Grill Dec' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div></div><h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2025-01-24_subculture_lost-wandering.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-01-24_subculture_lost-wandering.webp' alt='flyer, Jan 24, 2025'><span class='pwcap'>Jan 24, 2025 &middot; subculture</span></a><a class='pwtile' href='../flyers/2024-12-07_subculture_anoe.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2024-12-07_subculture_anoe.webp' alt='flyer, Dec 7, 2024'><span class='pwcap'>Dec 7, 2024 &middot; subculture</span></a><a class='pwtile' href='../flyers/2022-10-01_easy-going-gallery_kvbm.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2022-10-01_easy-going-gallery_kvbm.webp' alt='flyer, Oct 1, 2022'><span class='pwcap'>Oct 1, 2022 &middot; easy going gallery</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2025</span></li><li><span class='gdate'><a href='../s/2025-05-24-subculture-indobeats-skiz.html'><b>24</b><i>May 2025</i></a></span><span class='gwho'><a href='indobeats.html'>Indobeats</a>, <a href='skiz.html'>Skiz</a>, <a href='wasabi-jackson.html'>Wasabi Jackson</a>, <a href='miatropolis.html'>Miatropolis</a>, <a href='yante.html'>Yante</a>, <b class='self'>Lost Wandering</b></span><a class='gven' href='../v/subculture.html'>subculture</a></li><li><span class='gdate'><a href='../s/2025-01-24-subculture-lost-wandering-noxious.html'><b>24</b><i>Jan 2025</i></a></span><span class='gwho'><b class='self'>Lost Wandering</b>, <a href='noxious.html'>Noxious</a>, <a href='brody.html'>Brody</a>, <a href='spence-b.html'>Spence B</a></span><a class='gven' href='../v/subculture.html'>subculture</a></li><li class='gyear'><span>2024</span></li><li><span class='gdate'><a href='../s/2024-12-07-subculture-anoe-bowser.html'><b>7</b><i>Dec 2024</i></a></span><span class='gwho'><a href='anoe.html'>Anoe</a>, <a href='bowser.html'>Bowser</a>, <a href='cam-the-sella.html'>Cam the Sella</a>, <a href='cole-trickle.html'>Cole Trickle</a>, <a href='fifth-density.html'>Fifth Density</a>, <a href='hypnoz.html'>Hypnoz</a>, <a href='infernal-racket.html'>Infernal Racket</a>, <b class='self'>Lost Wandering</b>, <a href='skiz.html'>Skiz</a>, <a href='skribble.html'>Skribble</a>, <a href='spicy-ashaan.html'>Spicy Ashaan</a>, <a href='wub-control.html'>Wub Control</a>, <a href='yante.html'>Yante</a></span><a class='gven' href='../v/subculture.html'>subculture</a></li><li><span class='gdate'><a href='../s/2024-01-05-subculture-hilux-infernal-racket.html'><b>5</b><i>Jan 2024</i></a></span><span class='gwho'><a href='hilux.html'>Hilux</a>, <a href='infernal-racket.html'>Infernal Racket</a>, <b class='self'>Lost Wandering</b>, <a href='yante.html'>Yante</a></span><a class='gven' href='../v/subculture.html'>subculture</a></li><li class='gyear'><span>2022</span></li><li><span class='gdate'><a href='../s/2022-10-01-easy-going-gallery-kvbm-skiz.html'><b>1</b><i>Oct 2022</i></a></span><span class='gwho'><a href='kvbm.html'>KVBM</a>, <a href='skiz.html'>Skiz</a>, <a href='phunk.html'>Phunk</a>, <b class='self'>Lost Wandering</b></span><a class='gven' href='../v/easy-going-gallery.html'>easy going gallery</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='skiz.html'>skiz <small>&times;3</small></a><a href='yante.html'>yante <small>&times;3</small></a><a href='infernal-racket.html'>infernal racket <small>&times;2</small></a><a href='anoe.html'>anoe</a><a href='bowser.html'>bowser</a><a href='brody.html'>brody</a><a href='cam-the-sella.html'>cam the sella</a><a href='cole-trickle.html'>cole trickle</a><a href='fifth-density.html'>fifth density</a><a href='hilux.html'>hilux</a><a href='hypnoz.html'>hypnoz</a><a href='indobeats.html'>indobeats</a></div>
 <p class="dirnote">act pages are built automatically from the show archive, so something may be off: a misspelled name, a missing link, the wrong type, or a bad local/touring call. no disrespect meant. wrong on any of that, or want a listen link (youtube or bandcamp) or live footage added? <a href='../submit.html'>send it in</a>.</p>
-<p class="spback"><a href="../bands.html">&#8592; the scene index</a> · <a href="../">calendar</a></p>
+<p class="spback"><a href="../archive.html">&#8592; search the archive</a> · <a href="../">calendar</a></p>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>
 

@@ -842,11 +842,34 @@ main{max-width:940px}
 .arcsel:hover{border-color:var(--hot)}
 .viewtoggle{display:flex;gap:.3rem;margin-left:auto}
 .arccount{color:var(--dim);font-size:.76rem;white-space:nowrap;align-self:center}
-#archits{margin-top:.45rem;display:flex;flex-wrap:wrap;gap:.35rem}
-#archits a{display:inline-block;font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
-  border:1px solid var(--line);padding:.24rem .5rem}
-#archits a:hover,#archits a:focus-visible{border-color:var(--hot);color:var(--hot)}
-#archits a small{color:var(--dim)}
+/* the one search box: a big hero field whose results drop into a grouped panel */
+.arcsearch{position:relative;margin:.2rem 0 1.1rem}
+.arcsearch>input{font-size:1rem;padding:.65rem .8rem}
+.archits{display:none}
+.archits.open{display:block;margin-top:.4rem;background:var(--card);border:2px solid var(--line);
+  box-shadow:3px 3px 0 var(--tape);max-height:60vh;overflow:auto;padding:.3rem 0}
+.archits .ahgroup{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.05em;
+  font-size:.7rem;color:var(--dim);padding:.5rem .8rem .2rem;border-top:1px dashed var(--line)}
+.archits .ahgroup:first-child{border-top:none}
+.archits a{display:block;font-size:.85rem;text-decoration:none;color:var(--ink);padding:.34rem .8rem}
+.archits a:hover,.archits a:focus-visible{background:var(--hot);color:var(--on-hot)}
+.archits a:hover small,.archits a:focus-visible small{color:var(--on-hot)}
+.archits a small{color:var(--dim)}
+.archits .ahnone{color:var(--dim);font-size:.82rem;padding:.5rem .8rem}
+/* scene-stats panel: folded into the archive as a collapsible section */
+.statspanel{border:2px dashed var(--line);background:var(--card);margin:1.6rem 0 0}
+.statspanel>summary{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.03em;
+  font-size:1rem;padding:.7rem .9rem;cursor:pointer;color:var(--hotink);list-style:none}
+.statspanel>summary::-webkit-details-marker{display:none}
+.statspanel>summary::after{content:" ▸";color:var(--dim)}
+.statspanel[open]>summary::after{content:" ▾"}
+.statsbody{padding:0 .9rem 1rem}
+/* homepage archive teaser (the inline scroll moved to archive.html) */
+.homearc-h{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  letter-spacing:.02em;font-size:1.5rem;margin:.2rem 0 .3rem}
+.homearc-sub{color:var(--dim);font-size:.88rem;margin:0 0 1rem;max-width:44rem}
+.arcbannerlink{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
+  font-size:1.05rem}
 .arch li a.arow{color:var(--ink);text-decoration:none}
 .arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
 .arch li strong a{color:var(--ink);text-decoration:none}
@@ -878,7 +901,7 @@ main{max-width:940px}
 .statcols{display:grid;grid-template-columns:1fr;gap:1.6rem}
 @media(min-width:680px){.statcols{grid-template-columns:1fr 1fr}}
 </style></head><body class="showpage">
-<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../stats.html">stats</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
+<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive &amp; search</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap dirwrap actpage">
 <section class="acthero">
 <div class="heroinfo">
@@ -893,7 +916,7 @@ main{max-width:940px}
 </section>
 <h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2024-04-06_subculture_tenet.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2024-04-06_subculture_tenet.webp' alt='flyer, Apr 6, 2024'><span class='pwcap'>Apr 6, 2024 &middot; subculture</span></a><a class='pwtile' href='../flyers/2023-12-22_800wmichigan_outlook-bleak.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-12-22_800wmichigan_outlook-bleak.webp' alt='flyer, Dec 22, 2023'><span class='pwcap'>Dec 22, 2023 &middot; sisi&#39;s store</span></a><a class='pwtile' href='../flyers/2023-12-08_alabama-music-box_slow-degrade.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-12-08_alabama-music-box_slow-degrade.webp' alt='flyer, Dec 8, 2023'><span class='pwcap'>Dec 8, 2023 &middot; alabama music box</span></a><a class='pwtile' href='../flyers/2023-11-25_800wmichigan_the-taint.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-11-25_800wmichigan_the-taint.webp' alt='flyer, Nov 25, 2023'><span class='pwcap'>Nov 25, 2023 &middot; sisi&#39;s store</span></a><a class='pwtile' href='../flyers/2023-11-14_handlebar_portrayal-of-guilt.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-11-14_handlebar_portrayal-of-guilt.webp' alt='flyer, Nov 14, 2023'><span class='pwcap'>Nov 14, 2023 &middot; the handlebar</span></a><a class='pwtile' href='../flyers/2023-10-28_subculture_ego-death.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-10-28_subculture_ego-death.webp' alt='flyer, Oct 28, 2023'><span class='pwcap'>Oct 28, 2023 &middot; subculture</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2024</span></li><li><span class='gdate'><a href='../s/2024-05-05-the-bugghouse-ethereal-tomb-sanguin.html'><b>5</b><i>May 2024</i></a></span><span class='gwho'><a href='ethereal-tomb.html'>Ethereal Tomb</a>, <b class='self'>Sanguin</b>, <a href='dentada.html'>Dentada</a></span><a class='gven' href='../v/the-bugghouse.html'>the bugghouse</a></li><li><span class='gdate'><a href='../s/2024-04-06-subculture-tenet-outlook-bleak.html'><b>6</b><i>Apr 2024</i></a></span><span class='gwho'><a href='tenet.html'>Tenet</a>, <a href='outlook-bleak.html'>Outlook Bleak</a>, <a href='ocean-rot.html'>Ocean Rot</a>, <a href='dread.html'>Dread</a>, <a href='oh-dang.html'>Oh Dang</a>, <b class='self'>Sanguin</b>, <a href='white-phosphorus.html'>White Phosphorus</a></span><a class='gven' href='../v/subculture.html'>subculture</a></li><li class='gyear'><span>2023</span></li><li><span class='gdate'><a href='../s/2023-12-22-sisi-s-store-outlook-bleak-sanguin.html'><b>22</b><i>Dec 2023</i></a></span><span class='gwho'><a href='outlook-bleak.html'>Outlook Bleak</a>, <b class='self'>Sanguin</b>, <a href='white-phosphorus.html'>White Phosphorus</a>, <a href='infernem.html'>Infernem</a>, <a href='ocean-rot.html'>Ocean Rot</a></span><a class='gven' href='../v/sisi-s-store.html'>sisi&#39;s store</a></li><li><span class='gdate'><a href='../s/2023-12-08-alabama-music-box-slow-degrade-the-taints.html'><b>8</b><i>Dec 2023</i></a></span><span class='gwho'><a href='slow-degrade.html'>Slow Degrade</a>, <a href='the-taints.html'>The Taints</a>, <a href='crow-road.html'>Crow Road</a>, <b class='self'>Sanguin</b></span><a class='gven' href='../v/alabama-music-box.html'>alabama music box</a></li><li><span class='gdate'><a href='../s/2023-11-25-sisi-s-store-the-taints-outlook-bleak.html'><b>25</b><i>Nov 2023</i></a></span><span class='gwho'><a href='the-taints.html'>The Taints</a>, <a href='outlook-bleak.html'>Outlook Bleak</a>, <a href='crow-road.html'>Crow Road</a>, <a href='aneurysm.html'>Aneurysm</a>, <b class='self'>Sanguin</b></span><a class='gven' href='../v/sisi-s-store.html'>sisi&#39;s store</a></li><li><span class='gdate'><a href='../s/2023-11-14-the-handlebar-portrayal-of-guilt-true-body.html'><b>14</b><i>Nov 2023</i></a></span><span class='gwho'><a href='portrayal-of-guilt.html'>Portrayal of Guilt</a>, <a href='true-body.html'>True Body</a>, <a href='the-taints.html'>The Taints</a>, <b class='self'>Sanguin</b></span><a class='gven' href='../v/the-handlebar.html'>the handlebar</a></li><li><span class='gdate'><a href='../s/2023-10-28-subculture-ego-death-aneurysm.html'><b>28</b><i>Oct 2023</i></a></span><span class='gwho'><a href='ego-death.html'>Ego Death</a>, <a href='aneurysm.html'>Aneurysm</a>, <a href='the-nobodies.html'>The Nobodies</a>, <b class='self'>Sanguin</b></span><a class='gven' href='../v/subculture.html'>subculture</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='outlook-bleak.html'>outlook bleak <small>&times;3</small></a><a href='the-taints.html'>the taints <small>&times;3</small></a><a href='aneurysm.html'>aneurysm <small>&times;2</small></a><a href='crow-road.html'>crow road <small>&times;2</small></a><a href='ocean-rot.html'>ocean rot <small>&times;2</small></a><a href='white-phosphorus.html'>white phosphorus <small>&times;2</small></a><a href='dentada.html'>dentada</a><a href='dread.html'>dread</a><a href='ego-death.html'>ego death</a><a href='ethereal-tomb.html'>ethereal tomb</a><a href='infernem.html'>infernem</a><a href='oh-dang.html'>oh dang</a></div>
 <p class="dirnote">act pages are built automatically from the show archive, so something may be off: a misspelled name, a missing link, the wrong type, or a bad local/touring call. no disrespect meant. wrong on any of that, or want a listen link (youtube or bandcamp) or live footage added? <a href='../submit.html'>send it in</a>.</p>
-<p class="spback"><a href="../bands.html">&#8592; the scene index</a> · <a href="../">calendar</a></p>
+<p class="spback"><a href="../archive.html">&#8592; search the archive</a> · <a href="../">calendar</a></p>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>
 

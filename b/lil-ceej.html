@@ -842,11 +842,34 @@ main{max-width:940px}
 .arcsel:hover{border-color:var(--hot)}
 .viewtoggle{display:flex;gap:.3rem;margin-left:auto}
 .arccount{color:var(--dim);font-size:.76rem;white-space:nowrap;align-self:center}
-#archits{margin-top:.45rem;display:flex;flex-wrap:wrap;gap:.35rem}
-#archits a{display:inline-block;font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
-  border:1px solid var(--line);padding:.24rem .5rem}
-#archits a:hover,#archits a:focus-visible{border-color:var(--hot);color:var(--hot)}
-#archits a small{color:var(--dim)}
+/* the one search box: a big hero field whose results drop into a grouped panel */
+.arcsearch{position:relative;margin:.2rem 0 1.1rem}
+.arcsearch>input{font-size:1rem;padding:.65rem .8rem}
+.archits{display:none}
+.archits.open{display:block;margin-top:.4rem;background:var(--card);border:2px solid var(--line);
+  box-shadow:3px 3px 0 var(--tape);max-height:60vh;overflow:auto;padding:.3rem 0}
+.archits .ahgroup{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.05em;
+  font-size:.7rem;color:var(--dim);padding:.5rem .8rem .2rem;border-top:1px dashed var(--line)}
+.archits .ahgroup:first-child{border-top:none}
+.archits a{display:block;font-size:.85rem;text-decoration:none;color:var(--ink);padding:.34rem .8rem}
+.archits a:hover,.archits a:focus-visible{background:var(--hot);color:var(--on-hot)}
+.archits a:hover small,.archits a:focus-visible small{color:var(--on-hot)}
+.archits a small{color:var(--dim)}
+.archits .ahnone{color:var(--dim);font-size:.82rem;padding:.5rem .8rem}
+/* scene-stats panel: folded into the archive as a collapsible section */
+.statspanel{border:2px dashed var(--line);background:var(--card);margin:1.6rem 0 0}
+.statspanel>summary{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.03em;
+  font-size:1rem;padding:.7rem .9rem;cursor:pointer;color:var(--hotink);list-style:none}
+.statspanel>summary::-webkit-details-marker{display:none}
+.statspanel>summary::after{content:" ▸";color:var(--dim)}
+.statspanel[open]>summary::after{content:" ▾"}
+.statsbody{padding:0 .9rem 1rem}
+/* homepage archive teaser (the inline scroll moved to archive.html) */
+.homearc-h{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  letter-spacing:.02em;font-size:1.5rem;margin:.2rem 0 .3rem}
+.homearc-sub{color:var(--dim);font-size:.88rem;margin:0 0 1rem;max-width:44rem}
+.arcbannerlink{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
+  font-size:1.05rem}
 .arch li a.arow{color:var(--ink);text-decoration:none}
 .arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
 .arch li strong a{color:var(--ink);text-decoration:none}
@@ -878,7 +901,7 @@ main{max-width:940px}
 .statcols{display:grid;grid-template-columns:1fr;gap:1.6rem}
 @media(min-width:680px){.statcols{grid-template-columns:1fr 1fr}}
 </style></head><body class="showpage">
-<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../stats.html">stats</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
+<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive &amp; search</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap dirwrap actpage">
 <section class="acthero">
 <div class="heroinfo">
@@ -893,7 +916,7 @@ main{max-width:940px}
 </section>
 <h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2023-07-01_easy-going-gallery_crow-road.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-07-01_easy-going-gallery_crow-road.webp' alt='flyer, Jul 1, 2023'><span class='pwcap'>Jul 1, 2023 &middot; easy going gallery</span></a><a class='pwtile' href='../flyers/2022-11-19_the-blind-chef_broke-florida-boys.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2022-11-19_the-blind-chef_broke-florida-boys.webp' alt='flyer, Nov 19, 2022'><span class='pwcap'>Nov 19, 2022 &middot; the blind chef</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2024</span></li><li><span class='gdate'><a href='../s/2024-07-12-subculture-broke-florida-boys-stinky-pete.html'><b>12</b><i>Jul 2024</i></a></span><span class='gwho'><a href='broke-florida-boys.html'>Broke Florida Boys</a>, <a href='stinky-pete.html'>Stinky Pete</a>, <a href='lokee-santana.html'>Lokee Santana</a>, <b class='self'>Lil Ceej</b>, <a href='luh-troof.html'>Luh Troof</a>, <a href='spktidus.html'>SPKTidus</a>, <a href='j-rose.html'>J. Rose</a>, <a href='uoksane.html'>Uoksane</a>, <a href='keezy.html'>Keezy</a>, <a href='tigg.html'>Tigg</a>, <a href='demi.html'>Demi</a>, <a href='nigo.html'>Nigo</a>, <a href='zae.html'>Zae</a></span><a class='gven' href='../v/subculture.html'>subculture</a></li><li class='gyear'><span>2023</span></li><li><span class='gdate'><a href='../s/2023-07-01-easy-going-gallery-crow-road-valleyfire.html'><b>1</b><i>Jul 2023</i></a></span><span class='gwho'><a href='crow-road.html'>Crow Road</a>, <a href='valleyfire.html'>Valleyfire</a>, <a href='slow-degrade.html'>Slow Degrade</a>, <b class='self'>Lil Ceej</b>, <a href='broke-florida-boys.html'>Broke Florida Boys</a>, <a href='nagahiro.html'>nagahiro</a>, <a href='spida-mane.html'>Spida-Mane</a>, <a href='t-bair.html'>T Bair</a>, <a href='tiss.html'>TiSS</a>, <a href='spktidus.html'>SPKTidus</a>, <a href='slumberwell.html'>Slumberwell</a></span><a class='gven' href='../v/easy-going-gallery.html'>easy going gallery</a></li><li class='gyear'><span>2022</span></li><li><span class='gdate'><a href='../s/2022-11-19-the-blind-chef-broke-florida-boys-stopitzack.html'><b>19</b><i>Nov 2022</i></a></span><span class='gwho'><a href='broke-florida-boys.html'>Broke Florida Boys</a>, <a href='stopitzack.html'>STOPITZACK</a>, <a href='d-mo-ifyounasty.html'>D-MO IFYOUNASTY</a>, <b class='self'>Lil Ceej</b>, <a href='t-bair.html'>T Bair</a>, <a href='stinky-pete.html'>Stinky Pete</a>, <a href='850-milly.html'>850 Milly</a>, <a href='spktidus.html'>SPKTidus</a>, <a href='skretch.html'>SKRETCH</a>, <a href='justcallmetony.html'>JUSTCALLMETONY</a>, <a href='j-rose-hxnore.html'>J ROSE &amp; HXNORE</a>, <a href='d13c4ught4.html'>D13C4UGHT4</a>, <a href='trazii.html'>TRAZII</a>, <a href='waitmadethebeat.html'>WAITMADETHEBEAT</a></span><a class='gven' href='../v/the-blind-chef.html'>the blind chef</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='broke-florida-boys.html'>broke florida boys <small>&times;3</small></a><a href='spktidus.html'>spktidus <small>&times;3</small></a><a href='stinky-pete.html'>stinky pete <small>&times;2</small></a><a href='t-bair.html'>t bair <small>&times;2</small></a><a href='850-milly.html'>850 milly</a><a href='crow-road.html'>crow road</a><a href='d-mo-ifyounasty.html'>d-mo ifyounasty</a><a href='d13c4ught4.html'>d13c4ught4</a><a href='demi.html'>demi</a><a href='j-rose-hxnore.html'>j rose &amp; hxnore</a><a href='j-rose.html'>j. rose</a><a href='justcallmetony.html'>justcallmetony</a></div>
 <p class="dirnote">act pages are built automatically from the show archive, so something may be off: a misspelled name, a missing link, the wrong type, or a bad local/touring call. no disrespect meant. wrong on any of that, or want a listen link (youtube or bandcamp) or live footage added? <a href='../submit.html'>send it in</a>.</p>
-<p class="spback"><a href="../bands.html">&#8592; the scene index</a> · <a href="../">calendar</a></p>
+<p class="spback"><a href="../archive.html">&#8592; search the archive</a> · <a href="../">calendar</a></p>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>
 

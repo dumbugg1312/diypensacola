@@ -842,11 +842,34 @@ main{max-width:940px}
 .arcsel:hover{border-color:var(--hot)}
 .viewtoggle{display:flex;gap:.3rem;margin-left:auto}
 .arccount{color:var(--dim);font-size:.76rem;white-space:nowrap;align-self:center}
-#archits{margin-top:.45rem;display:flex;flex-wrap:wrap;gap:.35rem}
-#archits a{display:inline-block;font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
-  border:1px solid var(--line);padding:.24rem .5rem}
-#archits a:hover,#archits a:focus-visible{border-color:var(--hot);color:var(--hot)}
-#archits a small{color:var(--dim)}
+/* the one search box: a big hero field whose results drop into a grouped panel */
+.arcsearch{position:relative;margin:.2rem 0 1.1rem}
+.arcsearch>input{font-size:1rem;padding:.65rem .8rem}
+.archits{display:none}
+.archits.open{display:block;margin-top:.4rem;background:var(--card);border:2px solid var(--line);
+  box-shadow:3px 3px 0 var(--tape);max-height:60vh;overflow:auto;padding:.3rem 0}
+.archits .ahgroup{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.05em;
+  font-size:.7rem;color:var(--dim);padding:.5rem .8rem .2rem;border-top:1px dashed var(--line)}
+.archits .ahgroup:first-child{border-top:none}
+.archits a{display:block;font-size:.85rem;text-decoration:none;color:var(--ink);padding:.34rem .8rem}
+.archits a:hover,.archits a:focus-visible{background:var(--hot);color:var(--on-hot)}
+.archits a:hover small,.archits a:focus-visible small{color:var(--on-hot)}
+.archits a small{color:var(--dim)}
+.archits .ahnone{color:var(--dim);font-size:.82rem;padding:.5rem .8rem}
+/* scene-stats panel: folded into the archive as a collapsible section */
+.statspanel{border:2px dashed var(--line);background:var(--card);margin:1.6rem 0 0}
+.statspanel>summary{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.03em;
+  font-size:1rem;padding:.7rem .9rem;cursor:pointer;color:var(--hotink);list-style:none}
+.statspanel>summary::-webkit-details-marker{display:none}
+.statspanel>summary::after{content:" ▸";color:var(--dim)}
+.statspanel[open]>summary::after{content:" ▾"}
+.statsbody{padding:0 .9rem 1rem}
+/* homepage archive teaser (the inline scroll moved to archive.html) */
+.homearc-h{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  letter-spacing:.02em;font-size:1.5rem;margin:.2rem 0 .3rem}
+.homearc-sub{color:var(--dim);font-size:.88rem;margin:0 0 1rem;max-width:44rem}
+.arcbannerlink{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
+  font-size:1.05rem}
 .arch li a.arow{color:var(--ink);text-decoration:none}
 .arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
 .arch li strong a{color:var(--ink);text-decoration:none}
@@ -878,7 +901,7 @@ main{max-width:940px}
 .statcols{display:grid;grid-template-columns:1fr;gap:1.6rem}
 @media(min-width:680px){.statcols{grid-template-columns:1fr 1fr}}
 </style></head><body class="showpage">
-<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../stats.html">stats</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
+<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive &amp; search</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap dirwrap actpage">
 <section class="acthero">
 <div class="heroinfo">
@@ -893,7 +916,7 @@ main{max-width:940px}
 </section>
 <h2 class='dirsec'>watch</h2><div class='ytgrid'><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/E9jQwe2AVcc' title='Memphis Shooting: 4 killed, man arrested after grisly live stream' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/C3l1-mkRl54' title='Insidious Delivery By Grisly Savage' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2022</span></li><li><span class='gdate'><a href='../s/2022-04-22-pensacola-interstate-fairgrounds-marshmello-kaskade.html'><b>22</b><i>Apr 2022</i></a></span><span class='gwho'><a href='marshmello.html'>Marshmello</a>, <a href='kaskade.html'>Kaskade</a>, <a href='deadmau5.html'>deadmau5</a>, <a href='adventure-club.html'>Adventure Club</a>, <a href='dillon-francis.html'>Dillon Francis</a>, <a href='ganja-white-night.html'>Ganja White Night</a>, <a href='rl-grime.html'>RL Grime</a>, <a href='zomboy.html'>Zomboy</a>, <a href='baauer.html'>Baauer</a>, <a href='bonnie-x-clyde.html'>Bonnie X Clyde</a>, <a href='cheat-codes.html'>Cheat Codes</a>, <a href='cray.html'>Cray</a>, <a href='deorro.html'>Deorro</a>, <a href='dr-fresch.html'>Dr. Fresch</a>, <a href='habstrakt.html'>Habstrakt</a>, <a href='joyryde.html'>Joyryde</a>, <a href='leah-culver.html'>Leah Culver</a>, <a href='autokorekt-b2b-weird-waifu.html'>Autokorekt B2B Weird Waifu</a>, <a href='airglo.html'>Airglo</a>, <a href='bobby-duque.html'>Bobby Duque</a>, <a href='celo.html'>Celo</a>, <a href='danny-time.html'>Danny Time</a>, <a href='dirtysnatcha-b2b-rico-act.html'>Dirtysnatcha B2B Rico Act</a>, <a href='diskull.html'>Diskull</a>, <a href='drinkurwater.html'>Drinkurwater</a>, <a href='eddie-gold.html'>Eddie Gold</a>, <a href='freaky.html'>Freaky</a>, <a href='kendoll.html'>Kendoll</a>, <a href='kle-patra.html'>Kleøpatra</a>, <a href='mantis.html'>Mantis</a>, <a href='otica.html'>Otica</a>, <a href='sam-wolfe.html'>Sam Wolfe</a>, <a href='silentknight.html'>Silentknight</a>, <a href='teminite.html'>Teminite</a>, <a href='azella.html'>Azella</a>, <a href='bt-wubz.html'>Bt Wubz</a>, <a href='charlie-b.html'>Charlie-B</a>, <a href='chozen.html'>Chozen</a>, <a href='deer-wolf.html'>Deer Wolf</a>, <a href='diced-up.html'>Diced-Up</a>, <a href='doc-roc.html'>Doc Roc</a>, <a href='drone.html'>Drone</a>, <b class='self'>Grisly</b>, <a href='hydcvt.html'>Hydcvt</a>, <a href='jd-farrell.html'>JD Farrell</a>, <a href='kvbm.html'>KVBM</a>, <a href='kaventg.html'>Kaventg</a>, <a href='loaded-gunn.html'>Loaded Gunn</a>, <a href='neon-tiger.html'>Neon Tiger</a>, <a href='noxious.html'>Noxious</a>, <a href='onnoitsdoug.html'>Onnoitsdoug</a>, <a href='rest-in-pieces.html'>Rest in Pieces</a>, <a href='reydex.html'>Reydex</a>, <a href='rippa.html'>Rippa</a>, <a href='rudashi.html'>Rudashi</a>, <a href='saylindz.html'>Saylindz</a>, <a href='unicorn-fukr.html'>Unicorn Fukr</a>, <a href='wermzer.html'>Wermzer</a>, <a href='yokai.html'>Yokai</a>, <a href='steve-aoki.html'>Steve Aoki</a></span><a class='gven' href='../v/pensacola-interstate-fairgrounds.html'>pensacola interstate fairgrounds</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='adventure-club.html'>adventure club</a><a href='airglo.html'>airglo</a><a href='autokorekt-b2b-weird-waifu.html'>autokorekt b2b weird waifu</a><a href='azella.html'>azella</a><a href='baauer.html'>baauer</a><a href='bobby-duque.html'>bobby duque</a><a href='bonnie-x-clyde.html'>bonnie x clyde</a><a href='bt-wubz.html'>bt wubz</a><a href='celo.html'>celo</a><a href='charlie-b.html'>charlie-b</a><a href='cheat-codes.html'>cheat codes</a><a href='chozen.html'>chozen</a></div>
 <p class="dirnote">act pages are built automatically from the show archive, so something may be off: a misspelled name, a missing link, the wrong type, or a bad local/touring call. no disrespect meant. wrong on any of that, or want a listen link (youtube or bandcamp) or live footage added? <a href='../submit.html'>send it in</a>.</p>
-<p class="spback"><a href="../bands.html">&#8592; the scene index</a> · <a href="../">calendar</a></p>
+<p class="spback"><a href="../archive.html">&#8592; search the archive</a> · <a href="../">calendar</a></p>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>
 
