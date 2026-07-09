@@ -814,8 +814,71 @@ main{max-width:940px}
 .retstamp{font-family:"Special Elite","Courier New",monospace;font-size:.62rem;text-transform:uppercase;
   letter-spacing:.07em;border:2px solid var(--dim);color:var(--dim);padding:.1rem .42rem;
   transform:rotate(-3deg);white-space:nowrap}
+
+/* ---------- show page: past-show flag + "also that night" links ---------- */
+.pastflag{display:inline-block;margin-left:.6rem;font-size:.6rem;text-transform:uppercase;letter-spacing:.09em;
+  color:var(--dim);border:2px solid var(--line);padding:.08rem .4rem;transform:rotate(-2deg);vertical-align:middle}
+.samenight{margin:.9rem 0 .2rem;display:flex;flex-wrap:wrap;gap:.4rem;align-items:baseline}
+.samenight .lead{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);width:100%}
+.samenight a{display:inline-block;font-size:.8rem;text-decoration:none;color:var(--ink);background:var(--card);
+  border:1px solid var(--line);padding:.22rem .5rem}
+.samenight a:hover,.samenight a:focus-visible{border-color:var(--hot);color:var(--hot)}
+.samenight a small{color:var(--dim)}
+
+/* homepage archive banner: points into the searchable full archive */
+.arcbanner{margin:.2rem 0 1.1rem;font-size:.85rem;border:2px dashed var(--line);background:var(--card);padding:.6rem .9rem}
+.arcbanner a{font-weight:bold;text-decoration:none}
+.arcbanner a:hover,.arcbanner a:focus-visible{color:var(--hot)}
+.arcbanner span{color:var(--dim)}
+
+/* ---------- archive hub (archive.html): filter/search toolbar over the record ---------- */
+.filt-out{display:none!important}
+.arctoolbar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:2px solid var(--line);
+  padding:.7rem 0 .8rem;margin:.4rem 0 1rem;display:flex;flex-direction:column;gap:.55rem}
+.arctoolbar .search{margin:0}
+.arcrow{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.arcsel{background:var(--card);border:2px dashed var(--dim);color:var(--ink);font:.78rem/1 inherit;
+  padding:.32rem .5rem;cursor:pointer;max-width:15rem}
+.arcsel:hover{border-color:var(--hot)}
+.viewtoggle{display:flex;gap:.3rem;margin-left:auto}
+.arccount{color:var(--dim);font-size:.76rem;white-space:nowrap;align-self:center}
+#archits{margin-top:.45rem;display:flex;flex-wrap:wrap;gap:.35rem}
+#archits a{display:inline-block;font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
+  border:1px solid var(--line);padding:.24rem .5rem}
+#archits a:hover,#archits a:focus-visible{border-color:var(--hot);color:var(--hot)}
+#archits a small{color:var(--dim)}
+.arch li a.arow{color:var(--ink);text-decoration:none}
+.arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
+.arch li strong a{color:var(--ink);text-decoration:none}
+.flashback{border:2px dashed var(--line);background:var(--card);padding:.7rem .9rem;margin:0 0 1.1rem}
+.flashback h2{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  letter-spacing:.03em;font-size:.95rem;margin:0 0 .5rem;color:var(--hotink)}
+.flashback ul{list-style:none;padding:0;margin:0}
+.flashback li{padding:.3rem 0;border-bottom:1px dashed var(--line);font-size:.85rem}
+.flashback li:last-child{border-bottom:none}
+.flashback a{text-decoration:none}
+.flashback .yr{color:var(--dim);font-size:.72rem;margin-right:.4rem}
+
+/* ---------- scene stats (stats.html): typewriter bar charts + leaderboards ---------- */
+.statbig{display:flex;flex-wrap:wrap;gap:.6rem;margin:.4rem 0 1.6rem}
+.statbig .stat{font-size:.86rem}
+.monthbars{list-style:none;padding:0;margin:.3rem 0 0;display:flex;flex-direction:column;gap:.18rem}
+.mbar{display:grid;grid-template-columns:5.4rem 1fr auto;align-items:center;gap:.5rem;font-size:.76rem}
+.mbar .ml{color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mbar .mt{height:.82rem;background:linear-gradient(90deg,var(--hot),var(--hotink));min-width:2px}
+.mbar .mn{color:var(--dim);font-size:.72rem}
+.mbar.peak .mt{background:linear-gradient(90deg,var(--hotink),var(--free))}
+.leaders{list-style:none;padding:0;margin:.3rem 0 0}
+.leaders li{display:flex;align-items:baseline;gap:.6rem;padding:.4rem 0;border-bottom:1px dashed var(--line)}
+.leaders .rank{font-family:"Anton","Special Elite",sans-serif;color:var(--dim);width:1.8rem;font-size:1rem}
+.leaders a,.leaders .nm{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
+  font-size:1.05rem;color:var(--ink);text-decoration:none}
+.leaders a:hover,.leaders a:focus-visible{color:var(--hotink)}
+.leaders .ct{color:var(--dim);font-size:.8rem;margin-left:auto;white-space:nowrap}
+.statcols{display:grid;grid-template-columns:1fr;gap:1.6rem}
+@media(min-width:680px){.statcols{grid-template-columns:1fr 1fr}}
 </style></head><body class="showpage">
-<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
+<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../stats.html">stats</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap dirwrap actpage">
 <section class="acthero">
 <div class="heroinfo">
@@ -827,7 +890,7 @@ main{max-width:940px}
 </div>
 <a class='heropost' href='../flyers/2025-12-13_sisis_dead-devils.jpg' target='_blank' rel='noopener'><img src='../flyers/thumbs/2025-12-13_sisis_dead-devils.webp' alt='Sisi&#39;s Store flyer, Dec 13, 2025'><span class='hpcap'>Dec 13, 2025 &middot; dead devils, dead allies +2</span></a>
 </section>
-<h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2025-03-08_sisis_days-n-daze.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-03-08_sisis_days-n-daze.webp' alt='flyer, Mar 8, 2025'><span class='pwcap'>Mar 8, 2025 &middot; days n daze, local news legend +2</span></a><a class='pwtile' href='../flyers/2024-10-26_sisis_paupers-grave.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2024-10-26_sisis_paupers-grave.webp' alt='flyer, Oct 26, 2024'><span class='pwcap'>Oct 26, 2024 &middot; pauper&#39;s grave, chasses +4</span></a><a class='pwtile' href='../flyers/2024-07-12_sisis_white-phosphorous.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2024-07-12_sisis_white-phosphorous.webp' alt='flyer, Jul 12, 2024'><span class='pwcap'>Jul 12, 2024 &middot; white phosphorus, pauper&#39;s grave +1</span></a><a class='pwtile' href='../flyers/2023-12-22_800wmichigan_outlook-bleak.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-12-22_800wmichigan_outlook-bleak.webp' alt='flyer, Dec 22, 2023'><span class='pwcap'>Dec 22, 2023 &middot; outlook bleak, sanguin +3</span></a><a class='pwtile' href='../flyers/2023-11-25_800wmichigan_the-taint.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-11-25_800wmichigan_the-taint.webp' alt='flyer, Nov 25, 2023'><span class='pwcap'>Nov 25, 2023 &middot; the taints, outlook bleak +3</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2025</span></li><li><span class='gdate'><b>13</b><i>Dec 2025</i></span><span class='gwho'><a href='../b/dead-devils.html'>Dead Devils</a>, <a href='../b/dead-allies.html'>Dead Allies</a>, <a href='../b/deadjacket.html'>DeadJacket</a>, <a href='../b/dead-look-bleak.html'>Dead Look Bleak</a></span></li><li><span class='gdate'><b>8</b><i>Mar 2025</i></span><span class='gwho'><a href='../b/days-n-daze.html'>Days N Daze</a>, <a href='../b/local-news-legend.html'>Local News Legend</a>, <a href='../b/outlook-bleak.html'>Outlook Bleak</a>, <a href='../b/mindii-romanii.html'>Mindii Romanii</a></span></li><li class='gyear'><span>2024</span></li><li><span class='gdate'><b>26</b><i>Oct 2024</i></span><span class='gwho'><a href='../b/pauper-s-grave.html'>Pauper&#39;s Grave</a>, <a href='../b/chasses.html'>Chasses</a>, <a href='../b/jersey-shore-shark-attack.html'>Jersey Shore Shark Attack</a>, <a href='../b/head-cannon.html'>Head Cannon</a>, <a href='../b/cookies-cake.html'>Cookies &amp; Cake</a>, <a href='../b/skretch-and-time.html'>Skretch and Time</a></span></li><li><span class='gdate'><b>12</b><i>Jul 2024</i></span><span class='gwho'><a href='../b/white-phosphorus.html'>White Phosphorus</a>, <a href='../b/pauper-s-grave.html'>Pauper&#39;s Grave</a>, <a href='../b/outlook-bleak.html'>Outlook Bleak</a></span></li><li class='gyear'><span>2023</span></li><li><span class='gdate'><b>22</b><i>Dec 2023</i></span><span class='gwho'><a href='../b/outlook-bleak.html'>Outlook Bleak</a>, <a href='../b/sanguin.html'>Sanguin</a>, <a href='../b/white-phosphorus.html'>White Phosphorus</a>, <a href='../b/infernem.html'>Infernem</a>, <a href='../b/ocean-rot.html'>Ocean Rot</a></span></li><li><span class='gdate'><b>25</b><i>Nov 2023</i></span><span class='gwho'><a href='../b/the-taints.html'>The Taints</a>, <a href='../b/outlook-bleak.html'>Outlook Bleak</a>, <a href='../b/crow-road.html'>Crow Road</a>, <a href='../b/aneurysm.html'>Aneurysm</a>, <a href='../b/sanguin.html'>Sanguin</a></span></li></ul>
+<h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2025-03-08_sisis_days-n-daze.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-03-08_sisis_days-n-daze.webp' alt='flyer, Mar 8, 2025'><span class='pwcap'>Mar 8, 2025 &middot; days n daze, local news legend +2</span></a><a class='pwtile' href='../flyers/2024-10-26_sisis_paupers-grave.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2024-10-26_sisis_paupers-grave.webp' alt='flyer, Oct 26, 2024'><span class='pwcap'>Oct 26, 2024 &middot; pauper&#39;s grave, chasses +4</span></a><a class='pwtile' href='../flyers/2024-07-12_sisis_white-phosphorous.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2024-07-12_sisis_white-phosphorous.webp' alt='flyer, Jul 12, 2024'><span class='pwcap'>Jul 12, 2024 &middot; white phosphorus, pauper&#39;s grave +1</span></a><a class='pwtile' href='../flyers/2023-12-22_800wmichigan_outlook-bleak.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-12-22_800wmichigan_outlook-bleak.webp' alt='flyer, Dec 22, 2023'><span class='pwcap'>Dec 22, 2023 &middot; outlook bleak, sanguin +3</span></a><a class='pwtile' href='../flyers/2023-11-25_800wmichigan_the-taint.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-11-25_800wmichigan_the-taint.webp' alt='flyer, Nov 25, 2023'><span class='pwcap'>Nov 25, 2023 &middot; the taints, outlook bleak +3</span></a></div><h2 class='dirsec'>past shows <small style='color:var(--dim)'>(6)</small></h2><ul class='gigledger'><li class='gyear'><span>2025</span></li><li><span class='gdate'><a href='../s/2025-12-13-sisi-s-store-dead-devils-dead-allies.html'><b>13</b><i>Dec 2025</i></a></span><span class='gwho'><a href='../b/dead-devils.html'>Dead Devils</a>, <a href='../b/dead-allies.html'>Dead Allies</a>, <a href='../b/deadjacket.html'>DeadJacket</a>, <a href='../b/dead-look-bleak.html'>Dead Look Bleak</a></span></li><li><span class='gdate'><a href='../s/2025-03-08-sisi-s-store-days-n-daze-local-news-legend.html'><b>8</b><i>Mar 2025</i></a></span><span class='gwho'><a href='../b/days-n-daze.html'>Days N Daze</a>, <a href='../b/local-news-legend.html'>Local News Legend</a>, <a href='../b/outlook-bleak.html'>Outlook Bleak</a>, <a href='../b/mindii-romanii.html'>Mindii Romanii</a></span></li><li class='gyear'><span>2024</span></li><li><span class='gdate'><a href='../s/2024-10-26-sisi-s-store-pauper-s-grave-chasses.html'><b>26</b><i>Oct 2024</i></a></span><span class='gwho'><a href='../b/pauper-s-grave.html'>Pauper&#39;s Grave</a>, <a href='../b/chasses.html'>Chasses</a>, <a href='../b/jersey-shore-shark-attack.html'>Jersey Shore Shark Attack</a>, <a href='../b/head-cannon.html'>Head Cannon</a>, <a href='../b/cookies-cake.html'>Cookies &amp; Cake</a>, <a href='../b/skretch-and-time.html'>Skretch and Time</a></span></li><li><span class='gdate'><a href='../s/2024-07-12-sisi-s-store-white-phosphorus-pauper-s-grave.html'><b>12</b><i>Jul 2024</i></a></span><span class='gwho'><a href='../b/white-phosphorus.html'>White Phosphorus</a>, <a href='../b/pauper-s-grave.html'>Pauper&#39;s Grave</a>, <a href='../b/outlook-bleak.html'>Outlook Bleak</a></span></li><li class='gyear'><span>2023</span></li><li><span class='gdate'><a href='../s/2023-12-22-sisi-s-store-outlook-bleak-sanguin.html'><b>22</b><i>Dec 2023</i></a></span><span class='gwho'><a href='../b/outlook-bleak.html'>Outlook Bleak</a>, <a href='../b/sanguin.html'>Sanguin</a>, <a href='../b/white-phosphorus.html'>White Phosphorus</a>, <a href='../b/infernem.html'>Infernem</a>, <a href='../b/ocean-rot.html'>Ocean Rot</a></span></li><li><span class='gdate'><a href='../s/2023-11-25-sisi-s-store-the-taints-outlook-bleak.html'><b>25</b><i>Nov 2023</i></a></span><span class='gwho'><a href='../b/the-taints.html'>The Taints</a>, <a href='../b/outlook-bleak.html'>Outlook Bleak</a>, <a href='../b/crow-road.html'>Crow Road</a>, <a href='../b/aneurysm.html'>Aneurysm</a>, <a href='../b/sanguin.html'>Sanguin</a></span></li></ul>
 <p class="spback"><a href="../">&#8592; back to the calendar</a></p>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>

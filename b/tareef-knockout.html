@@ -814,21 +814,84 @@ main{max-width:940px}
 .retstamp{font-family:"Special Elite","Courier New",monospace;font-size:.62rem;text-transform:uppercase;
   letter-spacing:.07em;border:2px solid var(--dim);color:var(--dim);padding:.1rem .42rem;
   transform:rotate(-3deg);white-space:nowrap}
+
+/* ---------- show page: past-show flag + "also that night" links ---------- */
+.pastflag{display:inline-block;margin-left:.6rem;font-size:.6rem;text-transform:uppercase;letter-spacing:.09em;
+  color:var(--dim);border:2px solid var(--line);padding:.08rem .4rem;transform:rotate(-2deg);vertical-align:middle}
+.samenight{margin:.9rem 0 .2rem;display:flex;flex-wrap:wrap;gap:.4rem;align-items:baseline}
+.samenight .lead{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);width:100%}
+.samenight a{display:inline-block;font-size:.8rem;text-decoration:none;color:var(--ink);background:var(--card);
+  border:1px solid var(--line);padding:.22rem .5rem}
+.samenight a:hover,.samenight a:focus-visible{border-color:var(--hot);color:var(--hot)}
+.samenight a small{color:var(--dim)}
+
+/* homepage archive banner: points into the searchable full archive */
+.arcbanner{margin:.2rem 0 1.1rem;font-size:.85rem;border:2px dashed var(--line);background:var(--card);padding:.6rem .9rem}
+.arcbanner a{font-weight:bold;text-decoration:none}
+.arcbanner a:hover,.arcbanner a:focus-visible{color:var(--hot)}
+.arcbanner span{color:var(--dim)}
+
+/* ---------- archive hub (archive.html): filter/search toolbar over the record ---------- */
+.filt-out{display:none!important}
+.arctoolbar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:2px solid var(--line);
+  padding:.7rem 0 .8rem;margin:.4rem 0 1rem;display:flex;flex-direction:column;gap:.55rem}
+.arctoolbar .search{margin:0}
+.arcrow{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.arcsel{background:var(--card);border:2px dashed var(--dim);color:var(--ink);font:.78rem/1 inherit;
+  padding:.32rem .5rem;cursor:pointer;max-width:15rem}
+.arcsel:hover{border-color:var(--hot)}
+.viewtoggle{display:flex;gap:.3rem;margin-left:auto}
+.arccount{color:var(--dim);font-size:.76rem;white-space:nowrap;align-self:center}
+#archits{margin-top:.45rem;display:flex;flex-wrap:wrap;gap:.35rem}
+#archits a{display:inline-block;font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
+  border:1px solid var(--line);padding:.24rem .5rem}
+#archits a:hover,#archits a:focus-visible{border-color:var(--hot);color:var(--hot)}
+#archits a small{color:var(--dim)}
+.arch li a.arow{color:var(--ink);text-decoration:none}
+.arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
+.arch li strong a{color:var(--ink);text-decoration:none}
+.flashback{border:2px dashed var(--line);background:var(--card);padding:.7rem .9rem;margin:0 0 1.1rem}
+.flashback h2{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  letter-spacing:.03em;font-size:.95rem;margin:0 0 .5rem;color:var(--hotink)}
+.flashback ul{list-style:none;padding:0;margin:0}
+.flashback li{padding:.3rem 0;border-bottom:1px dashed var(--line);font-size:.85rem}
+.flashback li:last-child{border-bottom:none}
+.flashback a{text-decoration:none}
+.flashback .yr{color:var(--dim);font-size:.72rem;margin-right:.4rem}
+
+/* ---------- scene stats (stats.html): typewriter bar charts + leaderboards ---------- */
+.statbig{display:flex;flex-wrap:wrap;gap:.6rem;margin:.4rem 0 1.6rem}
+.statbig .stat{font-size:.86rem}
+.monthbars{list-style:none;padding:0;margin:.3rem 0 0;display:flex;flex-direction:column;gap:.18rem}
+.mbar{display:grid;grid-template-columns:5.4rem 1fr auto;align-items:center;gap:.5rem;font-size:.76rem}
+.mbar .ml{color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mbar .mt{height:.82rem;background:linear-gradient(90deg,var(--hot),var(--hotink));min-width:2px}
+.mbar .mn{color:var(--dim);font-size:.72rem}
+.mbar.peak .mt{background:linear-gradient(90deg,var(--hotink),var(--free))}
+.leaders{list-style:none;padding:0;margin:.3rem 0 0}
+.leaders li{display:flex;align-items:baseline;gap:.6rem;padding:.4rem 0;border-bottom:1px dashed var(--line)}
+.leaders .rank{font-family:"Anton","Special Elite",sans-serif;color:var(--dim);width:1.8rem;font-size:1rem}
+.leaders a,.leaders .nm{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
+  font-size:1.05rem;color:var(--ink);text-decoration:none}
+.leaders a:hover,.leaders a:focus-visible{color:var(--hotink)}
+.leaders .ct{color:var(--dim);font-size:.8rem;margin-left:auto;white-space:nowrap}
+.statcols{display:grid;grid-template-columns:1fr;gap:1.6rem}
+@media(min-width:680px){.statcols{grid-template-columns:1fr 1fr}}
 </style></head><body class="showpage">
-<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
+<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../stats.html">stats</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap dirwrap actpage">
 <section class="acthero">
 <div class="heroinfo">
 <div class="actmast"><h1 class="dirhead">Tareef Knockout</h1><span class="ostamp tour">on tour</span></div>
 <p class='dirsub'>touring / out-of-town band</p>
-<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i></span></span><span class='tcap'><b>1</b> show on the diypensacola record since 2022</span></div>
+<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i><i></i></span></span><span class='tcap'><b>2</b> shows on the diypensacola record since 2019</span></div>
 
-<div class='vstamps'><span class='lead'>stamped at</span><a href='../v/emerald-republic-brewing.html'>emerald republic brewing</a></div>
+<div class='vstamps'><span class='lead'>stamped at</span><a href='../v/chizuko.html'>chizuko</a><a href='../v/emerald-republic-brewing.html'>emerald republic brewing</a></div>
 
 </div>
 <a class='heropost' href='../flyers/2022-03-04_emerald-republic-brewing_big-lo.jpg' target='_blank' rel='noopener'><img src='../flyers/thumbs/2022-03-04_emerald-republic-brewing_big-lo.webp' alt='Tareef Knockout flyer, Mar 4, 2022'><span class='hpcap'>Mar 4, 2022 &middot; emerald republic brewing</span></a>
 </section>
-<h2 class='dirsec'>watch</h2><div class='ytgrid'><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/7oqqo1unP6Y' title='TaReef KnockOut - ONE TRIBE (Official Video)' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2022</span></li><li><span class='gdate'><b>4</b><i>Mar 2022</i></span><span class='gwho'><a href='big-lo.html'>Big Lo</a>, <a href='soultru.html'>Soultru</a>, <b class='self'>Tareef Knockout</b>, <a href='benny-hue.html'>Benny Hue</a>, <a href='lil-gucci-the-don.html'>Lil Gucci The Don</a>, <a href='king-hale.html'>King Hale</a>, <a href='dj-slim-fka-bodyslanga.html'>DJ Slim FKA Bodyslanga</a></span><a class='gven' href='../v/emerald-republic-brewing.html'>emerald republic brewing</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='benny-hue.html'>benny hue</a><a href='big-lo.html'>big lo</a><a href='dj-slim-fka-bodyslanga.html'>dj slim fka bodyslanga</a><a href='king-hale.html'>king hale</a><a href='lil-gucci-the-don.html'>lil gucci the don</a><a href='soultru.html'>soultru</a></div>
+<h2 class='dirsec'>watch</h2><div class='ytgrid'><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/7oqqo1unP6Y' title='TaReef KnockOut - ONE TRIBE (Official Video)' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div></div><h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2019-04-20_chizuko_movement-of-the-minds.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2019-04-20_chizuko_movement-of-the-minds.webp' alt='flyer, Apr 20, 2019'><span class='pwcap'>Apr 20, 2019 &middot; chizuko</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2022</span></li><li><span class='gdate'><a href='../s/2022-03-04-emerald-republic-brewing-big-lo-soultru.html'><b>4</b><i>Mar 2022</i></a></span><span class='gwho'><a href='big-lo.html'>Big Lo</a>, <a href='soultru.html'>Soultru</a>, <b class='self'>Tareef Knockout</b>, <a href='benny-hue.html'>Benny Hue</a>, <a href='lil-gucci-the-don.html'>Lil Gucci The Don</a>, <a href='king-hale.html'>King Hale</a>, <a href='dj-slim-fka-bodyslanga.html'>DJ Slim FKA Bodyslanga</a></span><a class='gven' href='../v/emerald-republic-brewing.html'>emerald republic brewing</a></li><li class='gyear'><span>2019</span></li><li><span class='gdate'><a href='../s/2019-04-20-chizuko-movement-of-the-minds-tareef-knockout.html'><b>20</b><i>Apr 2019</i></a></span><span class='gwho'><a href='movement-of-the-minds.html'>Movement of the Minds</a>, <b class='self'>Tareef Knockout</b>, <a href='baxter-dashingrod.html'>Baxter Dashingrod</a>, <a href='paid-in-amerikkka.html'>Paid in Amerikkka</a>, <a href='big-lo.html'>Big Lo</a>, <a href='zalasia.html'>Zalasia</a>, <a href='cookies-and-cake.html'>Cookies and Cake</a></span><a class='gven' href='../v/chizuko.html'>chizuko</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='big-lo.html'>big lo <small>&times;2</small></a><a href='baxter-dashingrod.html'>baxter dashingrod</a><a href='benny-hue.html'>benny hue</a><a href='cookies-and-cake.html'>cookies and cake</a><a href='dj-slim-fka-bodyslanga.html'>dj slim fka bodyslanga</a><a href='king-hale.html'>king hale</a><a href='lil-gucci-the-don.html'>lil gucci the don</a><a href='movement-of-the-minds.html'>movement of the minds</a><a href='paid-in-amerikkka.html'>paid in amerikkka</a><a href='soultru.html'>soultru</a><a href='zalasia.html'>zalasia</a></div>
 <p class="dirnote">act pages are built automatically from the show archive, so something may be off: a misspelled name, a missing link, the wrong type, or a bad local/touring call. no disrespect meant. wrong on any of that, or want a listen link (youtube or bandcamp) or live footage added? <a href='../submit.html'>send it in</a>.</p>
 <p class="spback"><a href="../bands.html">&#8592; the scene index</a> · <a href="../">calendar</a></p>
 </main>

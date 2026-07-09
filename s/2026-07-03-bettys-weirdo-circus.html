@@ -15,14 +15,13 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Weirdo Mutual Aid Circus, Earthly Delights Show · FRI JUL 3 @ Betty&#39;s · DIYPensacola">
 <meta name="twitter:description" content="weirdo mutual aid circus: the earthly delights show at betty&#39;s july 3rd. games, burlesque, clown contest, daring acts. shows at 8, 9 &amp; 10. $15, benefitting free gaza circus.">
-<meta name="twitter:image" content="https://diypensacola.com/flyers/2026-07-03_bettys_weirdo-circus.jpg">
 <link rel="icon" href="../logo.png">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Special+Elite&family=Rock+Salt&display=swap" rel="stylesheet">
-<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Event", "name": "Weirdo Mutual Aid Circus, Earthly Delights Show", "startDate": "2026-07-03T20:00:00-05:00", "endDate": "2026-07-03T23:00:00-05:00", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Betty's", "address": {"@type": "PostalAddress", "addressLocality": "Pensacola", "addressRegion": "FL", "addressCountry": "US"}}, "image": "https://diypensacola.com/flyers/2026-07-03_bettys_weirdo-circus.jpg", "url": "https://diypensacola.com/s/2026-07-03-bettys-weirdo-circus.html", "organizer": {"@type": "Organization", "name": "DIYPensacola", "url": "https://diypensacola.com/"}, "performer": [{"@type": "MusicGroup", "name": "Weirdo Mutual Aid Circus"}, {"@type": "MusicGroup", "name": "Earthly Delights Show"}], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "url": "https://diypensacola.com/s/2026-07-03-bettys-weirdo-circus.html", "availability": "https://schema.org/InStock", "validFrom": "2026-07-03"}}]</script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Event", "name": "Weirdo Mutual Aid Circus, Earthly Delights Show", "startDate": "2026-07-03T20:00:00-05:00", "endDate": "2026-07-03T23:00:00-05:00", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Betty's", "address": {"@type": "PostalAddress", "addressLocality": "Pensacola", "addressRegion": "FL", "addressCountry": "US"}}, "image": "https://diypensacola.com/flyers/2026-07-03_bettys_weirdo-circus.jpg", "url": "https://diypensacola.com/s/2026-07-03-bettys-weirdo-circus.html", "organizer": {"@type": "Organization", "name": "DIYPensacola", "url": "https://diypensacola.com/"}, "performer": [{"@type": "MusicGroup", "name": "Weirdo Mutual Aid Circus"}, {"@type": "MusicGroup", "name": "Earthly Delights Show"}]}]</script>
 <style>
 :root{--bg:#0c0c0d;--card:#17171a;--ink:#f2f2ee;--dim:#9b9b94;--hot:#6b7036;--hotink:#8f9850;--on-hot:#f2f2ee;--line:#2c2c31;--tape:#d8d4c5;--free:#aebf5a;--soldout:#e06464;--sliding:#7fb0a8;--age:#d59b46;--benefit:#d98cb0;--shadow:rgba(107,112,54,.5);--scrim:rgba(12,12,13,.82)}
 *{box-sizing:border-box}
@@ -31,7 +30,7 @@ body{margin:0;background-color:var(--bg);color:var(--ink);font:16px/1.5 "Special
   background-repeat:no-repeat,repeat}
 a{color:var(--hotink)}
 /* typography polish: balanced heading line-breaks + orphan-free prose. Progressive
-   enhancement, silently ignored where unsupported. */
+   enhancement — silently ignored where unsupported. */
 h1,h2,h3,.ehead{text-wrap:balance}
 .glead,.post p,.dcap,.emptybig p{text-wrap:pretty}
 header{padding:2.2rem 1rem .3rem;text-align:center}
@@ -52,6 +51,22 @@ header h1 a{color:inherit;text-decoration:none}
   border:2px solid #111;box-shadow:3px 3px 0 var(--hot);text-transform:uppercase;letter-spacing:.05em}
 .links a:nth-child(odd){transform:rotate(-1.5deg)}.links a:nth-child(even){transform:rotate(1.2deg)}
 .links a:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
+/* TONIGHT strip: a stapled-on "what's on tonight" slip above the feed. Hidden by
+   default; MAIN_JS reveals + fills it only when the VIEWER actually has a show
+   today (the page is static + re-buckets client-side), so a quiet night shows
+   nothing at all. One tap scrolls to the tonight bucket. */
+.tstrip{display:flex;align-items:center;gap:.55rem;width:max-content;max-width:min(92%,560px);
+  margin:.75rem auto .1rem;padding:.4rem .7rem;text-decoration:none;color:var(--on-hot);
+  background:var(--hot);border:2.5px solid var(--ink);box-shadow:5px 5px 0 var(--shadow);
+  transform:rotate(-.8deg)}
+.tstrip:hover{box-shadow:6px 7px 0 var(--shadow)}
+.tstrip:active{transform:rotate(-.8deg) translate(2px,2px);box-shadow:2px 2px 0 var(--shadow)}
+.tstrip-tag{flex:none;font-family:'Anton',Impact,sans-serif;text-transform:uppercase;
+  letter-spacing:.08em;font-size:1rem;line-height:1;background:var(--ink);color:var(--hotink);
+  padding:.28rem .5rem .22rem;transform:rotate(1.6deg)}
+.tstrip-body{font-family:'Special Elite',monospace;font-size:.9rem;line-height:1.15;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tstrip-go{flex:none;font-size:1rem;line-height:1;margin-left:.05rem}
 nav{display:flex;gap:.6rem;justify-content:center;align-items:center;padding:1.2rem 1rem;position:relative}
 nav .searchtoggle svg{display:block}
 /* print-scope popover, anchored under the nav's printer icon */
@@ -122,7 +137,7 @@ body:has(#grid:target) a[href='#grid'],body:has(#archive:target) a[href='#archiv
 #b-tonight .show{box-shadow:6px 6px 0 var(--hot)}
 /* tonight cards already wear the hot shadow at rest, so they need their own
    hover/focus state (higher specificity than the base rule) to still signal
-   they're clickable, otherwise hovering them does nothing. */
+   they're clickable — otherwise hovering them does nothing. */
 #b-tonight .show:hover,#b-tonight .show:focus{box-shadow:10px 10px 0 var(--hot);transform:translate(-3px,-3px)}
 .stamp{position:absolute;font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;font-size:.68rem;
   letter-spacing:.05em;padding:.1rem .38rem;border:2px solid currentColor;background:var(--scrim);line-height:1;pointer-events:none;text-shadow:0 1px 2px #000}
@@ -152,6 +167,16 @@ body:has(#grid:target) a[href='#grid'],body:has(#archive:target) a[href='#archiv
 .stats{display:flex;flex-wrap:wrap;gap:.5rem;margin:.2rem 0 1.5rem}
 .stat{background:var(--card);border:1px solid var(--line);padding:.5rem .8rem;font-size:.8rem;color:var(--dim)}
 .stat b{color:var(--hotink);font-size:1.05rem;display:block;font-family:"Anton","Special Elite",sans-serif;font-weight:400;letter-spacing:.02em}
+/* archive year-nav: tape-label jump-links into each era of the archive */
+.yearnav{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;margin:0 0 1.4rem}
+.ynlab{font-family:"Special Elite","Courier New",monospace;font-size:.72rem;text-transform:uppercase;
+  letter-spacing:.09em;color:var(--dim);margin-right:.1rem}
+.yearnav a{font-family:"Anton",Impact,sans-serif;font-size:.95rem;letter-spacing:.03em;text-decoration:none;
+  color:#111;background:var(--tape);border:2px solid #111;padding:.12rem .6rem .18rem;
+  box-shadow:2px 2px 0 var(--shadow);transform:rotate(-1deg)}
+.yearnav a:nth-child(even){transform:rotate(1.3deg)}
+.yearnav a:hover,.yearnav a:focus-visible{background:var(--hot);color:var(--on-hot);box-shadow:2px 2px 0 var(--tape)}
+.mon[id]{scroll-margin-top:.8rem}
 .arch{list-style:none;padding:0;margin:0}
 .arch li{display:flex;gap:.7rem;align-items:center;padding:.5rem 0;border-bottom:1px dashed var(--line)}
 .athumb{width:52px;height:65px;object-fit:cover;border:1px solid var(--ink);flex:none;cursor:pointer;background:#000}
@@ -165,7 +190,7 @@ body:has(#grid:target) a[href='#grid'],body:has(#archive:target) a[href='#archiv
 .empty{color:var(--dim);text-align:center}
 .emptyline{margin:0 0 .9rem}
 /* first-use / no-shows state: a dashed-card onboarding moment in the zine
-   vocabulary, Anton head, typewriter body, tape-button CTAs. Not a SaaS blank. */
+   vocabulary — Anton head, typewriter body, tape-button CTAs. Not a SaaS blank. */
 .emptybig{max-width:520px;margin:2.4rem auto;padding:1.7rem 1.4rem;border:2px dashed var(--line);background:var(--card)}
 .emptybig .ehead{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
   font-size:1.45rem;letter-spacing:.02em;color:var(--ink);margin:0 0 .7rem}
@@ -201,7 +226,7 @@ footer b{color:var(--hot)}
 html{scroll-behavior:smooth}
 body{overflow-x:clip}
 a,button,.show,.cf,.vchip,.athumb{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
-/* tactile press feedback, invisible at rest, so the static look is unchanged */
+/* tactile press feedback — invisible at rest, so the static look is unchanged */
 .links a:active,.dbtn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--hot)}
 nav a:active,.vchip:active,.searchtoggle:active{transform:scale(.95)}
 .show:active{box-shadow:3px 3px 0 var(--hot);transform:translate(2px,2px)}
@@ -213,7 +238,7 @@ main section:target{animation:viewin .26s ease both}
 @keyframes lbin{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:none}}
 @keyframes sheetup{from{transform:translateY(100%)}to{transform:translateY(0)}}
 
-/* back-to-top, a tilted tape button that fades in once you've scrolled down.
+/* back-to-top — a tilted tape button that fades in once you've scrolled down.
    z-index sits below the modals (detail 55 / lightbox 60) so it hides behind an open modal. */
 .totop{position:fixed;right:1.2rem;bottom:1.2rem;z-index:45;width:3rem;height:3rem;
   display:flex;align-items:center;justify-content:center;cursor:pointer;
@@ -277,7 +302,7 @@ main section:target{animation:viewin .26s ease both}
   #calgrid{display:none}#agenda{display:block}
   .totop{display:none}  /* the sticky nav already covers this on phones */
 
-  /* header: tighter so shows are reachable sooner, same big punk type */
+  /* header: tighter so shows are reachable sooner — same big punk type */
   header{padding:1.5rem 1rem .2rem}
   header .logo{width:126px;height:126px;margin-bottom:.5rem}
   h1{font-size:clamp(2.2rem,11.5vw,3.05rem)}  /* fits "DIYPENSACOLA" (12ch, 7.23em wide) on phones down to 320px */
@@ -286,7 +311,7 @@ main section:target{animation:viewin .26s ease both}
   .links{gap:.5rem;padding:.7rem .85rem .15rem}
   .links a{font-size:.8rem;padding:.55rem .9rem}
 
-  /* sticky segmented view-switcher, always one tap away */
+  /* sticky segmented view-switcher — always one tap away */
   /* sticks below the install banner when it's up: --a2hs-h (set by JS to the
      banner's height, else 0) keeps the view-switcher from hiding behind it. */
   nav{position:sticky;top:var(--a2hs-h,0px);z-index:40;gap:.5rem;margin-bottom:.2rem;
@@ -372,7 +397,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   transform:none;text-shadow:none}
 .spback{text-align:center;margin:1.7rem 0 .5rem}
 .spback a{text-decoration:none}
-/* ---------- showgoer guide (site/guide.html), blog-post layout ---------- */
+/* ---------- showgoer guide (site/guide.html) — blog-post layout ---------- */
 .guide{max-width:680px}
 .guide h1{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
   font-size:clamp(2rem,8vw,3rem);line-height:1.08;letter-spacing:.01em;margin:.4rem 0 .95rem;
@@ -421,7 +446,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .printhead{display:none}
 @media print{
   body{background:#fff;color:#000;font:12pt/1.4 "Courier New",monospace}
-  header,.links,nav,.controls,#grid,#archive,.endtip,footer,.totop,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming{display:none!important}
+  header,.links,nav,.controls,#grid,#archive,.endtip,footer,.totop,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming,.tstrip{display:none!important}
   main:not(:has(section:target)) #list{display:block}
   main section{display:none!important}
   main section#list{display:block!important}
@@ -621,7 +646,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .actchips a{font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
   border:2px dashed var(--dim);padding:.3rem .55rem;text-transform:lowercase}
 .actchips a:hover{border-color:var(--hot);color:var(--hot)}
-/* a little tape holding each list-card flyer down, echoes the wall view's tape
+/* a little tape holding each list-card flyer down — echoes the wall view's tape
    without changing the card layout. Wall view keeps its own bigger strip. */
 #list:not(.wall) .thumbwrap::before{content:"";position:absolute;top:-5px;left:50%;
   transform:translateX(-50%) rotate(-4deg);width:38px;height:11px;background:var(--tape);
@@ -642,10 +667,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .subnav a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 var(--hot)}
 @media (max-width:640px){.showpage header{justify-content:center;text-align:center}}
 /* halftone rest state on feed thumbs: inks wildly different flyer art into one
-   wall; the full-color art is a hover (or the open card) away */
-#list:not(.wall) .show img.thumb:not(.ph){transition:filter .18s ease;
-  filter:grayscale(.45) sepia(.22) hue-rotate(28deg) saturate(.75) contrast(1.05)}
-#list:not(.wall) .show:hover img.thumb,#list:not(.wall) .show:focus img.thumb{filter:none}
+   wall; the full-color art is a hover (or the open card) away. hover-only so
+   touch devices, which can't hover it off, get full-color flyers straight away */
+@media (hover:hover){
+  #list:not(.wall) .show img.thumb:not(.ph){transition:filter .18s ease;
+    filter:grayscale(.4) sepia(.1) hue-rotate(28deg) saturate(.85) contrast(1.03)}
+  #list:not(.wall) .show:hover img.thumb,#list:not(.wall) .show:focus img.thumb{filter:none}
+}
 /* tonight reads as a torn ticket stub: bone header + doors countdown */
 #b-tonight .bhead{color:#111;background:var(--tape);border:2px solid #111;box-shadow:5px 5px 0 var(--hot);
   display:inline-flex;padding:.34rem .9rem .34rem .7rem;transform:rotate(-1.2deg);gap:.65rem}
@@ -674,20 +702,202 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   padding:.1rem .3rem;margin-left:.35rem;text-transform:uppercase;letter-spacing:.07em;transform:rotate(-2deg)}
 .bandindex .letter{display:inline-block;border:2px solid var(--line);background:var(--card);
   padding:.15rem .65rem .25rem;transform:rotate(-2deg);box-shadow:3px 3px 0 var(--shadow)}
+
+/* ==================== REDESIGN 2026: poster feed ====================
+   Default (list) view only — the flyer-wall toggle keeps its own look.
+   Tonight = hero, this week = full-flyer posters, later = dense list.
+   Flyers show WHOLE (object-fit:contain), only ~12% desaturated at rest,
+   full color on hover. Layered last so it overrides the base feed rules. */
+
+/* buttons: stretch to fill the masthead like a taped-up banner */
+header .links{max-width:840px}
+header .links a{flex:1 1 auto;text-align:center}
+
+/* the poster feed wants more room than the old 680px reading column */
+main{max-width:940px}
+#list .bucket{max-width:900px}
+
+/* section labels: torn-paper tape for every bucket (tonight label = green "now") */
+#list .bhead{display:flex;align-items:center;gap:.8rem;background:none;border:none;
+  box-shadow:none;transform:none;padding:0;color:var(--ink);font-size:1.7rem}
+#list .bhead .lab{display:inline-block;background:var(--tape);color:#111;line-height:1;
+  padding:.3rem .82rem .38rem;transform:rotate(-1.2deg);box-shadow:4px 4px 0 var(--hot);
+  clip-path:polygon(0 8%,4% 0,12% 6%,24% 1%,38% 7%,52% 1%,66% 6%,80% 1%,92% 6%,100% 2%,100% 92%,95% 100%,84% 95%,70% 100%,55% 94%,42% 100%,28% 95%,15% 100%,5% 96%,0 100%)}
+#list #b-tonight .bhead .lab{background:var(--free)}
+#list .bhead::after{content:"";flex:1;height:0;border-top:3px dashed var(--line);transform:translateY(1px)}
+#list .bhead .ht{display:none}
+
+/* date becomes a stamped, rotated block (feed only; archive lists untouched) */
+#list:not(.wall) .show .date{display:inline-block;font-family:"Anton","Special Elite",sans-serif;
+  border:2px solid var(--hotink);color:var(--hotink);background:rgba(12,12,13,.5);
+  padding:.2rem .5rem .24rem;transform:rotate(-3deg);letter-spacing:.05em;font-size:.86rem;
+  margin-bottom:.4rem;line-height:1}
+
+/* flyers: whole art, ~12% desaturated at rest, full color on hover */
+@media (hover:hover){
+  #list:not(.wall) .show img.thumb:not(.ph){filter:grayscale(.12);transition:filter .2s ease}
+  #list:not(.wall) .show:hover img.thumb,#list:not(.wall) .show:focus img.thumb{filter:none}
+}
+
+/* --- HERO: the very next show. Tonight's card, or (nothing tonight) the first
+   This Week poster. The :has() flips it live if the JS re-buckets by viewer date. --- */
+#list:not(.wall) #b-tonight .cards{display:block}
+#list:not(.wall) #b-tonight .show,
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{
+  display:grid;grid-template-columns:minmax(0,320px) 1fr;gap:1.5rem;align-items:center;padding:1.2rem}
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{flex-basis:100%;width:100%;transform:rotate(-.4deg)}
+#list:not(.wall) #b-tonight .thumbwrap,
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap{width:100%;aspect-ratio:auto}
+#list:not(.wall) #b-tonight .show img.thumb,#list:not(.wall) #b-tonight .show img.thumb.ph,
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child img.thumb,
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child img.thumb.ph{
+  width:100%;height:auto;max-height:440px;object-fit:contain;background:#000;border:3px solid var(--ink);transform:none;padding:0}
+#list:not(.wall) #b-tonight .show h3,
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child h3{font-size:clamp(2rem,4.5vw,3.4rem);line-height:.92}
+#list:not(.wall) #b-tonight .thumbwrap::before,
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap::before{
+  left:26%;transform:translateX(-50%) rotate(-16deg);width:78px;height:22px;opacity:.72}
+
+/* --- THIS WEEK: full-flyer vertical posters, uniform 4:5 frames so heights
+   line up; a centered flex wrap so a leftover card centers instead of
+   stranding empty space next to it --- */
+#list:not(.wall) #b-week .cards{display:flex;flex-wrap:wrap;justify-content:center;
+  align-items:flex-start;gap:1.2rem}
+#list:not(.wall) #b-week .show{flex:0 1 200px;flex-direction:column;align-items:stretch;gap:.7rem;padding:.9rem}
+#list:not(.wall) #b-week .show:nth-child(odd){transform:rotate(-.5deg)}
+#list:not(.wall) #b-week .show:nth-child(even){transform:rotate(.5deg)}
+#list:not(.wall) #b-week .thumbwrap{width:100%;aspect-ratio:4/5}
+#list:not(.wall) #b-week .show img.thumb,
+#list:not(.wall) #b-week .show img.thumb.ph{width:100%;height:100%;max-height:none;
+  object-fit:contain;background:#000}
+#list:not(.wall) #b-week .show h3{font-size:clamp(1.4rem,2.4vw,1.7rem);line-height:1}
+
+/* --- LATER: dense list, whole flyer in a small frame --- */
+#list:not(.wall) #b-later .cards{display:block;border:2px solid var(--line);
+  background:var(--card);box-shadow:6px 6px 0 rgba(0,0,0,.45)}
+#list:not(.wall) #b-later .show{gap:.9rem;padding:.6rem .9rem;background:none;border:none;
+  border-bottom:2px dashed var(--line);box-shadow:none;transform:none;align-items:center}
+#list:not(.wall) #b-later .cards .show:last-child{border-bottom:none}
+#list:not(.wall) #b-later .show:hover{box-shadow:none;background:#1d1d20}
+#list:not(.wall) #b-later .thumbwrap{flex:none}
+#list:not(.wall) #b-later .thumbwrap::before{display:none}
+#list:not(.wall) #b-later .show img.thumb,
+#list:not(.wall) #b-later .show img.thumb.ph{width:54px;height:70px;object-fit:contain;background:#000;padding:0}
+#list:not(.wall) #b-later .show .date{font-size:.72rem;margin-bottom:.2rem;padding:.14rem .4rem}
+#list:not(.wall) #b-later .show h3{font-size:1.05rem}
+
+/* varied hand-torn tape across This Week posters */
+#list:not(.wall) #b-week .thumbwrap::before{clip-path:polygon(2% 8%,98% 0,96% 92%,4% 100%);height:20px;opacity:.72}
+#list:not(.wall) #b-week .show:nth-child(4n+1) .thumbwrap::before{left:32%;transform:translateX(-50%) rotate(-13deg);width:60px}
+#list:not(.wall) #b-week .show:nth-child(4n+2) .thumbwrap::before{left:66%;transform:translateX(-50%) rotate(9deg);width:54px}
+#list:not(.wall) #b-week .show:nth-child(4n+3) .thumbwrap::before{left:44%;transform:translateX(-50%) rotate(-5deg);width:46px}
+#list:not(.wall) #b-week .show:nth-child(4n) .thumbwrap::before{left:58%;transform:translateX(-50%) rotate(14deg);width:62px}
+
+/* tonight quiet-night line: a small green taped note */
+#list .bnone{display:inline-flex;align-items:center;gap:.65rem;flex-wrap:wrap;
+  border:2px solid var(--free);background:var(--card);box-shadow:5px 5px 0 rgba(107,112,54,.4);
+  padding:.7rem 1rem;transform:rotate(-.5deg);color:var(--dim);margin:.3rem 0 0;font-size:.95rem}
+#list .bnone .nstamp{border-color:#111;background:var(--free);color:#111;margin-right:.1rem}
+
+@media (max-width:640px){
+  /* the hero stacks (flyer over name) so the big name never clips on a phone */
+  #list:not(.wall) #b-tonight .show,
+  #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{grid-template-columns:1fr;gap:1rem}
+  #list:not(.wall) #b-tonight .thumbwrap,
+  #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap{max-width:280px}
+  #list:not(.wall) #b-tonight .show h3,
+  #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child h3{font-size:clamp(1.8rem,8vw,2.6rem)}
+}
+
+/* venues index (venues.html): a stamped directory sorted by recent activity */
+.venuelist{list-style:none;padding:0;margin:.5rem 0 0}
+.venuelist li{display:flex;align-items:baseline;gap:.7rem;flex-wrap:wrap;padding:.6rem 0;border-bottom:1px dashed var(--line)}
+.venuelist a.vn{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
+  font-size:1.2rem;color:var(--ink);text-decoration:none}
+.venuelist a.vn:hover,.venuelist a.vn:focus-visible{color:var(--hotink)}
+.venuelist .vc{color:var(--dim);font-size:.85rem}
+.venuelist li.ret a.vn{color:var(--dim)}
+.retstamp{font-family:"Special Elite","Courier New",monospace;font-size:.62rem;text-transform:uppercase;
+  letter-spacing:.07em;border:2px solid var(--dim);color:var(--dim);padding:.1rem .42rem;
+  transform:rotate(-3deg);white-space:nowrap}
+
+/* ---------- show page: past-show flag + "also that night" links ---------- */
+.pastflag{display:inline-block;margin-left:.6rem;font-size:.6rem;text-transform:uppercase;letter-spacing:.09em;
+  color:var(--dim);border:2px solid var(--line);padding:.08rem .4rem;transform:rotate(-2deg);vertical-align:middle}
+.samenight{margin:.9rem 0 .2rem;display:flex;flex-wrap:wrap;gap:.4rem;align-items:baseline}
+.samenight .lead{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);width:100%}
+.samenight a{display:inline-block;font-size:.8rem;text-decoration:none;color:var(--ink);background:var(--card);
+  border:1px solid var(--line);padding:.22rem .5rem}
+.samenight a:hover,.samenight a:focus-visible{border-color:var(--hot);color:var(--hot)}
+.samenight a small{color:var(--dim)}
+
+/* homepage archive banner: points into the searchable full archive */
+.arcbanner{margin:.2rem 0 1.1rem;font-size:.85rem;border:2px dashed var(--line);background:var(--card);padding:.6rem .9rem}
+.arcbanner a{font-weight:bold;text-decoration:none}
+.arcbanner a:hover,.arcbanner a:focus-visible{color:var(--hot)}
+.arcbanner span{color:var(--dim)}
+
+/* ---------- archive hub (archive.html): filter/search toolbar over the record ---------- */
+.filt-out{display:none!important}
+.arctoolbar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:2px solid var(--line);
+  padding:.7rem 0 .8rem;margin:.4rem 0 1rem;display:flex;flex-direction:column;gap:.55rem}
+.arctoolbar .search{margin:0}
+.arcrow{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.arcsel{background:var(--card);border:2px dashed var(--dim);color:var(--ink);font:.78rem/1 inherit;
+  padding:.32rem .5rem;cursor:pointer;max-width:15rem}
+.arcsel:hover{border-color:var(--hot)}
+.viewtoggle{display:flex;gap:.3rem;margin-left:auto}
+.arccount{color:var(--dim);font-size:.76rem;white-space:nowrap;align-self:center}
+#archits{margin-top:.45rem;display:flex;flex-wrap:wrap;gap:.35rem}
+#archits a{display:inline-block;font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
+  border:1px solid var(--line);padding:.24rem .5rem}
+#archits a:hover,#archits a:focus-visible{border-color:var(--hot);color:var(--hot)}
+#archits a small{color:var(--dim)}
+.arch li a.arow{color:var(--ink);text-decoration:none}
+.arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
+.arch li strong a{color:var(--ink);text-decoration:none}
+.flashback{border:2px dashed var(--line);background:var(--card);padding:.7rem .9rem;margin:0 0 1.1rem}
+.flashback h2{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  letter-spacing:.03em;font-size:.95rem;margin:0 0 .5rem;color:var(--hotink)}
+.flashback ul{list-style:none;padding:0;margin:0}
+.flashback li{padding:.3rem 0;border-bottom:1px dashed var(--line);font-size:.85rem}
+.flashback li:last-child{border-bottom:none}
+.flashback a{text-decoration:none}
+.flashback .yr{color:var(--dim);font-size:.72rem;margin-right:.4rem}
+
+/* ---------- scene stats (stats.html): typewriter bar charts + leaderboards ---------- */
+.statbig{display:flex;flex-wrap:wrap;gap:.6rem;margin:.4rem 0 1.6rem}
+.statbig .stat{font-size:.86rem}
+.monthbars{list-style:none;padding:0;margin:.3rem 0 0;display:flex;flex-direction:column;gap:.18rem}
+.mbar{display:grid;grid-template-columns:5.4rem 1fr auto;align-items:center;gap:.5rem;font-size:.76rem}
+.mbar .ml{color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mbar .mt{height:.82rem;background:linear-gradient(90deg,var(--hot),var(--hotink));min-width:2px}
+.mbar .mn{color:var(--dim);font-size:.72rem}
+.mbar.peak .mt{background:linear-gradient(90deg,var(--hotink),var(--free))}
+.leaders{list-style:none;padding:0;margin:.3rem 0 0}
+.leaders li{display:flex;align-items:baseline;gap:.6rem;padding:.4rem 0;border-bottom:1px dashed var(--line)}
+.leaders .rank{font-family:"Anton","Special Elite",sans-serif;color:var(--dim);width:1.8rem;font-size:1rem}
+.leaders a,.leaders .nm{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
+  font-size:1.05rem;color:var(--ink);text-decoration:none}
+.leaders a:hover,.leaders a:focus-visible{color:var(--hotink)}
+.leaders .ct{color:var(--dim);font-size:.8rem;margin-left:auto;white-space:nowrap}
+.statcols{display:grid;grid-template-columns:1fr;gap:1.6rem}
+@media(min-width:680px){.statcols{grid-template-columns:1fr 1fr}}
 </style></head><body class="showpage">
-<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../bands.html">bands</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
+<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../stats.html">stats</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap">
 <article class="spcard">
 <a href="../flyers/2026-07-03_bettys_weirdo-circus.jpg" target="_blank" rel="noopener"><img class="spflyer" src="../flyers/2026-07-03_bettys_weirdo-circus.jpg" alt="Weirdo Mutual Aid Circus, Earthly Delights Show flyer"></a>
 <div class="spinfo">
-<div class="date">FRI JUL 3</div>
+<div class="date">FRI JUL 3<span class="pastflag">from the archive</span></div>
 <h1>Weirdo Mutual Aid Circus, Earthly Delights Show</h1>
 <div class="actchips"><a href="../b/weirdo-mutual-aid-circus.html">weirdo mutual aid circus</a><a href="../b/earthly-delights-show.html">earthly delights show</a></div>
 <div class="drow"><a href="../v/bettys.html">Betty&#39;s</a>  ·  506 W Belmont St, Pensacola, FL</div><div class="drow dbenefit">&#9733; benefit show</div><div class="drow">shows 8, 9 &amp; 10pm</div><div class="drow">$15</div><p class="dcap">weirdo mutual aid circus: the earthly delights show at betty&#39;s july 3rd. games, burlesque, clown contest, daring acts. shows at 8, 9 &amp; 10. $15, benefitting free gaza circus.</p>
-<div class="dactions"><a class="dbtn" href="https://www.google.com/maps/dir/?api=1&amp;destination=506%20W%20Belmont%20St%2C%20Pensacola%2C%20FL" target="_blank" rel="noopener">directions</a><a class="dbtn" href="2026-07-03-bettys-weirdo-circus.ics" download>add to calendar</a><a class="dbtn" href="../">all shows &#8599;</a></div>
+<div class="samenight"><span class="lead">also that night</span><a href="2026-07-03-handlebar-lost-wandering.html">skiz, yante, mybrotha van, miatropolis, jeremy mclennon <small>@ the handlebar</small></a></div>
+<div class="dactions"><a class="dbtn" href="https://www.google.com/maps/dir/?api=1&amp;destination=506%20W%20Belmont%20St%2C%20Pensacola%2C%20FL" target="_blank" rel="noopener">directions</a><a class="dbtn" href="../archive.html">the archive &#8599;</a></div>
 </div>
 </article>
-<p class="spback"><a href="../">&#8592; back to the full punksacola calendar</a></p>
+<p class="spback"><a href="../archive.html">&#8592; back to the punksacola archive</a></p>
 </main>
 <footer>flyer info comes straight from the venues. <b>support your local scene.</b><br>proudly ran out of punksacola, fl</footer>
 </body></html>

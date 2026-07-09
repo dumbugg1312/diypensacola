@@ -814,8 +814,71 @@ main{max-width:940px}
 .retstamp{font-family:"Special Elite","Courier New",monospace;font-size:.62rem;text-transform:uppercase;
   letter-spacing:.07em;border:2px solid var(--dim);color:var(--dim);padding:.1rem .42rem;
   transform:rotate(-3deg);white-space:nowrap}
+
+/* ---------- show page: past-show flag + "also that night" links ---------- */
+.pastflag{display:inline-block;margin-left:.6rem;font-size:.6rem;text-transform:uppercase;letter-spacing:.09em;
+  color:var(--dim);border:2px solid var(--line);padding:.08rem .4rem;transform:rotate(-2deg);vertical-align:middle}
+.samenight{margin:.9rem 0 .2rem;display:flex;flex-wrap:wrap;gap:.4rem;align-items:baseline}
+.samenight .lead{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);width:100%}
+.samenight a{display:inline-block;font-size:.8rem;text-decoration:none;color:var(--ink);background:var(--card);
+  border:1px solid var(--line);padding:.22rem .5rem}
+.samenight a:hover,.samenight a:focus-visible{border-color:var(--hot);color:var(--hot)}
+.samenight a small{color:var(--dim)}
+
+/* homepage archive banner: points into the searchable full archive */
+.arcbanner{margin:.2rem 0 1.1rem;font-size:.85rem;border:2px dashed var(--line);background:var(--card);padding:.6rem .9rem}
+.arcbanner a{font-weight:bold;text-decoration:none}
+.arcbanner a:hover,.arcbanner a:focus-visible{color:var(--hot)}
+.arcbanner span{color:var(--dim)}
+
+/* ---------- archive hub (archive.html): filter/search toolbar over the record ---------- */
+.filt-out{display:none!important}
+.arctoolbar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:2px solid var(--line);
+  padding:.7rem 0 .8rem;margin:.4rem 0 1rem;display:flex;flex-direction:column;gap:.55rem}
+.arctoolbar .search{margin:0}
+.arcrow{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.arcsel{background:var(--card);border:2px dashed var(--dim);color:var(--ink);font:.78rem/1 inherit;
+  padding:.32rem .5rem;cursor:pointer;max-width:15rem}
+.arcsel:hover{border-color:var(--hot)}
+.viewtoggle{display:flex;gap:.3rem;margin-left:auto}
+.arccount{color:var(--dim);font-size:.76rem;white-space:nowrap;align-self:center}
+#archits{margin-top:.45rem;display:flex;flex-wrap:wrap;gap:.35rem}
+#archits a{display:inline-block;font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
+  border:1px solid var(--line);padding:.24rem .5rem}
+#archits a:hover,#archits a:focus-visible{border-color:var(--hot);color:var(--hot)}
+#archits a small{color:var(--dim)}
+.arch li a.arow{color:var(--ink);text-decoration:none}
+.arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
+.arch li strong a{color:var(--ink);text-decoration:none}
+.flashback{border:2px dashed var(--line);background:var(--card);padding:.7rem .9rem;margin:0 0 1.1rem}
+.flashback h2{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  letter-spacing:.03em;font-size:.95rem;margin:0 0 .5rem;color:var(--hotink)}
+.flashback ul{list-style:none;padding:0;margin:0}
+.flashback li{padding:.3rem 0;border-bottom:1px dashed var(--line);font-size:.85rem}
+.flashback li:last-child{border-bottom:none}
+.flashback a{text-decoration:none}
+.flashback .yr{color:var(--dim);font-size:.72rem;margin-right:.4rem}
+
+/* ---------- scene stats (stats.html): typewriter bar charts + leaderboards ---------- */
+.statbig{display:flex;flex-wrap:wrap;gap:.6rem;margin:.4rem 0 1.6rem}
+.statbig .stat{font-size:.86rem}
+.monthbars{list-style:none;padding:0;margin:.3rem 0 0;display:flex;flex-direction:column;gap:.18rem}
+.mbar{display:grid;grid-template-columns:5.4rem 1fr auto;align-items:center;gap:.5rem;font-size:.76rem}
+.mbar .ml{color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mbar .mt{height:.82rem;background:linear-gradient(90deg,var(--hot),var(--hotink));min-width:2px}
+.mbar .mn{color:var(--dim);font-size:.72rem}
+.mbar.peak .mt{background:linear-gradient(90deg,var(--hotink),var(--free))}
+.leaders{list-style:none;padding:0;margin:.3rem 0 0}
+.leaders li{display:flex;align-items:baseline;gap:.6rem;padding:.4rem 0;border-bottom:1px dashed var(--line)}
+.leaders .rank{font-family:"Anton","Special Elite",sans-serif;color:var(--dim);width:1.8rem;font-size:1rem}
+.leaders a,.leaders .nm{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
+  font-size:1.05rem;color:var(--ink);text-decoration:none}
+.leaders a:hover,.leaders a:focus-visible{color:var(--hotink)}
+.leaders .ct{color:var(--dim);font-size:.8rem;margin-left:auto;white-space:nowrap}
+.statcols{display:grid;grid-template-columns:1fr;gap:1.6rem}
+@media(min-width:680px){.statcols{grid-template-columns:1fr 1fr}}
 </style></head><body class="showpage">
-<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
+<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../stats.html">stats</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap dirwrap actpage">
 <section class="acthero">
 <div class="heroinfo">
@@ -828,7 +891,7 @@ main{max-width:940px}
 </div>
 <a class='heropost' href='../flyers/2022-11-19_the-blind-chef_broke-florida-boys.jpg' target='_blank' rel='noopener'><img src='../flyers/thumbs/2022-11-19_the-blind-chef_broke-florida-boys.webp' alt='850 Milly flyer, Nov 19, 2022'><span class='hpcap'>Nov 19, 2022 &middot; the blind chef</span></a>
 </section>
-<h2 class='dirsec'>watch</h2><div class='ytgrid'><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/5es_5GTZugo' title='850 Milly - HeartBlack (Official Music Video) Shot by TOP Films' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/D4G8qeNUfc0' title='850 Milly &quot;Excuse Me&quot; (Official Video) Dir. by @T.O.P._Films' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div></div><h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2022-10-15_easy-going-gallery_850-milly.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2022-10-15_easy-going-gallery_850-milly.webp' alt='flyer, Oct 15, 2022'><span class='pwcap'>Oct 15, 2022 &middot; easy going gallery</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2022</span></li><li><span class='gdate'><b>19</b><i>Nov 2022</i></span><span class='gwho'><a href='broke-florida-boys.html'>Broke Florida Boys</a>, <a href='stopitzack.html'>STOPITZACK</a>, <a href='d-mo-ifyounasty.html'>D-MO IFYOUNASTY</a>, <a href='lil-ceej.html'>Lil Ceej</a>, <a href='t-bair.html'>T Bair</a>, <a href='stinky-pete.html'>Stinky Pete</a>, <b class='self'>850 Milly</b>, <a href='spktidus.html'>SPKTidus</a>, <a href='skretch.html'>SKRETCH</a>, <a href='justcallmetony.html'>JUSTCALLMETONY</a>, <a href='j-rose-hxnore.html'>J ROSE &amp; HXNORE</a>, <a href='d13c4ught4.html'>D13C4UGHT4</a>, <a href='trazii.html'>TRAZII</a>, <a href='waitmadethebeat.html'>WAITMADETHEBEAT</a></span><a class='gven' href='../v/the-blind-chef.html'>the blind chef</a></li><li><span class='gdate'><b>15</b><i>Oct 2022</i></span><span class='gwho'><b class='self'>850 Milly</b>, <a href='your-exxx.html'>Your Exxx</a>, <a href='jay-zen-jahsidiq.html'>Jay Zen &amp; Jahsidiq</a>, <a href='30-cal.html'>30.cal</a>, <a href='mol3.html'>MOL3</a>, <a href='danquish.html'>Danquish</a>, <a href='hazydior-don-frenchie.html'>HazyDior &amp; Don Frenchie</a>, <a href='sammie-beare.html'>Sammie Beare</a>, <a href='nick-2.html'>Nick 2</a></span><a class='gven' href='../v/easy-going-gallery.html'>easy going gallery</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='30-cal.html'>30.cal</a><a href='broke-florida-boys.html'>broke florida boys</a><a href='d-mo-ifyounasty.html'>d-mo ifyounasty</a><a href='d13c4ught4.html'>d13c4ught4</a><a href='danquish.html'>danquish</a><a href='hazydior-don-frenchie.html'>hazydior &amp; don frenchie</a><a href='j-rose-hxnore.html'>j rose &amp; hxnore</a><a href='jay-zen-jahsidiq.html'>jay zen &amp; jahsidiq</a><a href='justcallmetony.html'>justcallmetony</a><a href='lil-ceej.html'>lil ceej</a><a href='mol3.html'>mol3</a><a href='nick-2.html'>nick 2</a></div>
+<h2 class='dirsec'>watch</h2><div class='ytgrid'><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/5es_5GTZugo' title='850 Milly - HeartBlack (Official Music Video) Shot by TOP Films' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/D4G8qeNUfc0' title='850 Milly &quot;Excuse Me&quot; (Official Video) Dir. by @T.O.P._Films' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div></div><h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2022-10-15_easy-going-gallery_850-milly.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2022-10-15_easy-going-gallery_850-milly.webp' alt='flyer, Oct 15, 2022'><span class='pwcap'>Oct 15, 2022 &middot; easy going gallery</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2022</span></li><li><span class='gdate'><a href='../s/2022-11-19-the-blind-chef-broke-florida-boys-stopitzack.html'><b>19</b><i>Nov 2022</i></a></span><span class='gwho'><a href='broke-florida-boys.html'>Broke Florida Boys</a>, <a href='stopitzack.html'>STOPITZACK</a>, <a href='d-mo-ifyounasty.html'>D-MO IFYOUNASTY</a>, <a href='lil-ceej.html'>Lil Ceej</a>, <a href='t-bair.html'>T Bair</a>, <a href='stinky-pete.html'>Stinky Pete</a>, <b class='self'>850 Milly</b>, <a href='spktidus.html'>SPKTidus</a>, <a href='skretch.html'>SKRETCH</a>, <a href='justcallmetony.html'>JUSTCALLMETONY</a>, <a href='j-rose-hxnore.html'>J ROSE &amp; HXNORE</a>, <a href='d13c4ught4.html'>D13C4UGHT4</a>, <a href='trazii.html'>TRAZII</a>, <a href='waitmadethebeat.html'>WAITMADETHEBEAT</a></span><a class='gven' href='../v/the-blind-chef.html'>the blind chef</a></li><li><span class='gdate'><a href='../s/2022-10-15-easy-going-gallery-850-milly-your-exxx.html'><b>15</b><i>Oct 2022</i></a></span><span class='gwho'><b class='self'>850 Milly</b>, <a href='your-exxx.html'>Your Exxx</a>, <a href='jay-zen-jahsidiq.html'>Jay Zen &amp; Jahsidiq</a>, <a href='30-cal.html'>30.cal</a>, <a href='mol3.html'>MOL3</a>, <a href='danquish.html'>Danquish</a>, <a href='hazydior-don-frenchie.html'>HazyDior &amp; Don Frenchie</a>, <a href='sammie-beare.html'>Sammie Beare</a>, <a href='nick-2.html'>Nick 2</a></span><a class='gven' href='../v/easy-going-gallery.html'>easy going gallery</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='30-cal.html'>30.cal</a><a href='broke-florida-boys.html'>broke florida boys</a><a href='d-mo-ifyounasty.html'>d-mo ifyounasty</a><a href='d13c4ught4.html'>d13c4ught4</a><a href='danquish.html'>danquish</a><a href='hazydior-don-frenchie.html'>hazydior &amp; don frenchie</a><a href='j-rose-hxnore.html'>j rose &amp; hxnore</a><a href='jay-zen-jahsidiq.html'>jay zen &amp; jahsidiq</a><a href='justcallmetony.html'>justcallmetony</a><a href='lil-ceej.html'>lil ceej</a><a href='mol3.html'>mol3</a><a href='nick-2.html'>nick 2</a></div>
 <p class="dirnote">act pages are built automatically from the show archive, so something may be off: a misspelled name, a missing link, the wrong type, or a bad local/touring call. no disrespect meant. wrong on any of that, or want a listen link (youtube or bandcamp) or live footage added? <a href='../submit.html'>send it in</a>.</p>
 <p class="spback"><a href="../bands.html">&#8592; the scene index</a> · <a href="../">calendar</a></p>
 </main>

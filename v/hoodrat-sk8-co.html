@@ -814,8 +814,71 @@ main{max-width:940px}
 .retstamp{font-family:"Special Elite","Courier New",monospace;font-size:.62rem;text-transform:uppercase;
   letter-spacing:.07em;border:2px solid var(--dim);color:var(--dim);padding:.1rem .42rem;
   transform:rotate(-3deg);white-space:nowrap}
+
+/* ---------- show page: past-show flag + "also that night" links ---------- */
+.pastflag{display:inline-block;margin-left:.6rem;font-size:.6rem;text-transform:uppercase;letter-spacing:.09em;
+  color:var(--dim);border:2px solid var(--line);padding:.08rem .4rem;transform:rotate(-2deg);vertical-align:middle}
+.samenight{margin:.9rem 0 .2rem;display:flex;flex-wrap:wrap;gap:.4rem;align-items:baseline}
+.samenight .lead{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);width:100%}
+.samenight a{display:inline-block;font-size:.8rem;text-decoration:none;color:var(--ink);background:var(--card);
+  border:1px solid var(--line);padding:.22rem .5rem}
+.samenight a:hover,.samenight a:focus-visible{border-color:var(--hot);color:var(--hot)}
+.samenight a small{color:var(--dim)}
+
+/* homepage archive banner: points into the searchable full archive */
+.arcbanner{margin:.2rem 0 1.1rem;font-size:.85rem;border:2px dashed var(--line);background:var(--card);padding:.6rem .9rem}
+.arcbanner a{font-weight:bold;text-decoration:none}
+.arcbanner a:hover,.arcbanner a:focus-visible{color:var(--hot)}
+.arcbanner span{color:var(--dim)}
+
+/* ---------- archive hub (archive.html): filter/search toolbar over the record ---------- */
+.filt-out{display:none!important}
+.arctoolbar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:2px solid var(--line);
+  padding:.7rem 0 .8rem;margin:.4rem 0 1rem;display:flex;flex-direction:column;gap:.55rem}
+.arctoolbar .search{margin:0}
+.arcrow{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.arcsel{background:var(--card);border:2px dashed var(--dim);color:var(--ink);font:.78rem/1 inherit;
+  padding:.32rem .5rem;cursor:pointer;max-width:15rem}
+.arcsel:hover{border-color:var(--hot)}
+.viewtoggle{display:flex;gap:.3rem;margin-left:auto}
+.arccount{color:var(--dim);font-size:.76rem;white-space:nowrap;align-self:center}
+#archits{margin-top:.45rem;display:flex;flex-wrap:wrap;gap:.35rem}
+#archits a{display:inline-block;font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
+  border:1px solid var(--line);padding:.24rem .5rem}
+#archits a:hover,#archits a:focus-visible{border-color:var(--hot);color:var(--hot)}
+#archits a small{color:var(--dim)}
+.arch li a.arow{color:var(--ink);text-decoration:none}
+.arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
+.arch li strong a{color:var(--ink);text-decoration:none}
+.flashback{border:2px dashed var(--line);background:var(--card);padding:.7rem .9rem;margin:0 0 1.1rem}
+.flashback h2{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  letter-spacing:.03em;font-size:.95rem;margin:0 0 .5rem;color:var(--hotink)}
+.flashback ul{list-style:none;padding:0;margin:0}
+.flashback li{padding:.3rem 0;border-bottom:1px dashed var(--line);font-size:.85rem}
+.flashback li:last-child{border-bottom:none}
+.flashback a{text-decoration:none}
+.flashback .yr{color:var(--dim);font-size:.72rem;margin-right:.4rem}
+
+/* ---------- scene stats (stats.html): typewriter bar charts + leaderboards ---------- */
+.statbig{display:flex;flex-wrap:wrap;gap:.6rem;margin:.4rem 0 1.6rem}
+.statbig .stat{font-size:.86rem}
+.monthbars{list-style:none;padding:0;margin:.3rem 0 0;display:flex;flex-direction:column;gap:.18rem}
+.mbar{display:grid;grid-template-columns:5.4rem 1fr auto;align-items:center;gap:.5rem;font-size:.76rem}
+.mbar .ml{color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mbar .mt{height:.82rem;background:linear-gradient(90deg,var(--hot),var(--hotink));min-width:2px}
+.mbar .mn{color:var(--dim);font-size:.72rem}
+.mbar.peak .mt{background:linear-gradient(90deg,var(--hotink),var(--free))}
+.leaders{list-style:none;padding:0;margin:.3rem 0 0}
+.leaders li{display:flex;align-items:baseline;gap:.6rem;padding:.4rem 0;border-bottom:1px dashed var(--line)}
+.leaders .rank{font-family:"Anton","Special Elite",sans-serif;color:var(--dim);width:1.8rem;font-size:1rem}
+.leaders a,.leaders .nm{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
+  font-size:1.05rem;color:var(--ink);text-decoration:none}
+.leaders a:hover,.leaders a:focus-visible{color:var(--hotink)}
+.leaders .ct{color:var(--dim);font-size:.8rem;margin-left:auto;white-space:nowrap}
+.statcols{display:grid;grid-template-columns:1fr;gap:1.6rem}
+@media(min-width:680px){.statcols{grid-template-columns:1fr 1fr}}
 </style></head><body class="showpage">
-<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
+<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../stats.html">stats</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap dirwrap actpage">
 <section class="acthero">
 <div class="heroinfo">
@@ -827,7 +890,7 @@ main{max-width:940px}
 </div>
 <a class='heropost' href='../flyers/2022-02-04_hoodrat-sk8-co_the-cryptics.jpg' target='_blank' rel='noopener'><img src='../flyers/thumbs/2022-02-04_hoodrat-sk8-co_the-cryptics.webp' alt='Hoodrat Sk8 Co. flyer, Feb 4, 2022'><span class='hpcap'>Feb 4, 2022 &middot; the cryptics, the taints +1</span></a>
 </section>
-<h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2021-12-12_hoodrat-sk8-co_ego-death.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2021-12-12_hoodrat-sk8-co_ego-death.webp' alt='flyer, Dec 12, 2021'><span class='pwcap'>Dec 12, 2021 &middot; ego death, the nobodies +1</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2022</span></li><li><span class='gdate'><b>4</b><i>Feb 2022</i></span><span class='gwho'><a href='../b/the-cryptics.html'>The Cryptics</a>, <a href='../b/the-taints.html'>The Taints</a>, <a href='../b/crow-road.html'>Crow Road</a></span></li><li class='gyear'><span>2021</span></li><li><span class='gdate'><b>12</b><i>Dec 2021</i></span><span class='gwho'><a href='../b/ego-death.html'>Ego Death</a>, <a href='../b/the-nobodies.html'>The Nobodies</a>, <a href='../b/wild-charge.html'>Wild Charge</a></span></li></ul>
+<h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2021-12-12_hoodrat-sk8-co_ego-death.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2021-12-12_hoodrat-sk8-co_ego-death.webp' alt='flyer, Dec 12, 2021'><span class='pwcap'>Dec 12, 2021 &middot; ego death, the nobodies +1</span></a></div><h2 class='dirsec'>past shows <small style='color:var(--dim)'>(2)</small></h2><ul class='gigledger'><li class='gyear'><span>2022</span></li><li><span class='gdate'><a href='../s/2022-02-04-hoodrat-sk8-co-the-cryptics-the-taints.html'><b>4</b><i>Feb 2022</i></a></span><span class='gwho'><a href='../b/the-cryptics.html'>The Cryptics</a>, <a href='../b/the-taints.html'>The Taints</a>, <a href='../b/crow-road.html'>Crow Road</a></span></li><li class='gyear'><span>2021</span></li><li><span class='gdate'><a href='../s/2021-12-12-hoodrat-sk8-co-ego-death-the-nobodies.html'><b>12</b><i>Dec 2021</i></a></span><span class='gwho'><a href='../b/ego-death.html'>Ego Death</a>, <a href='../b/the-nobodies.html'>The Nobodies</a>, <a href='../b/wild-charge.html'>Wild Charge</a></span></li></ul>
 <p class="spback"><a href="../">&#8592; back to the calendar</a></p>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>

@@ -10,8 +10,8 @@
 <meta property="og:title" content="Ryan Pfeiffer · shows in Pensacola · DIYPensacola">
 <meta property="og:description" content="Every Ryan Pfeiffer show on the DIYPensacola record: dates, venues, and flyers from the punksacola DIY scene.">
 <meta property="og:url" content="https://diypensacola.com/b/ryan-pfeiffer.html">
-<meta property="og:image" content="https://diypensacola.com/logo.png">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://diypensacola.com/flyers/2017-06-24_chizuko_andrew-ferrara.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="../logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -814,21 +814,84 @@ main{max-width:940px}
 .retstamp{font-family:"Special Elite","Courier New",monospace;font-size:.62rem;text-transform:uppercase;
   letter-spacing:.07em;border:2px solid var(--dim);color:var(--dim);padding:.1rem .42rem;
   transform:rotate(-3deg);white-space:nowrap}
+
+/* ---------- show page: past-show flag + "also that night" links ---------- */
+.pastflag{display:inline-block;margin-left:.6rem;font-size:.6rem;text-transform:uppercase;letter-spacing:.09em;
+  color:var(--dim);border:2px solid var(--line);padding:.08rem .4rem;transform:rotate(-2deg);vertical-align:middle}
+.samenight{margin:.9rem 0 .2rem;display:flex;flex-wrap:wrap;gap:.4rem;align-items:baseline}
+.samenight .lead{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);width:100%}
+.samenight a{display:inline-block;font-size:.8rem;text-decoration:none;color:var(--ink);background:var(--card);
+  border:1px solid var(--line);padding:.22rem .5rem}
+.samenight a:hover,.samenight a:focus-visible{border-color:var(--hot);color:var(--hot)}
+.samenight a small{color:var(--dim)}
+
+/* homepage archive banner: points into the searchable full archive */
+.arcbanner{margin:.2rem 0 1.1rem;font-size:.85rem;border:2px dashed var(--line);background:var(--card);padding:.6rem .9rem}
+.arcbanner a{font-weight:bold;text-decoration:none}
+.arcbanner a:hover,.arcbanner a:focus-visible{color:var(--hot)}
+.arcbanner span{color:var(--dim)}
+
+/* ---------- archive hub (archive.html): filter/search toolbar over the record ---------- */
+.filt-out{display:none!important}
+.arctoolbar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:2px solid var(--line);
+  padding:.7rem 0 .8rem;margin:.4rem 0 1rem;display:flex;flex-direction:column;gap:.55rem}
+.arctoolbar .search{margin:0}
+.arcrow{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.arcsel{background:var(--card);border:2px dashed var(--dim);color:var(--ink);font:.78rem/1 inherit;
+  padding:.32rem .5rem;cursor:pointer;max-width:15rem}
+.arcsel:hover{border-color:var(--hot)}
+.viewtoggle{display:flex;gap:.3rem;margin-left:auto}
+.arccount{color:var(--dim);font-size:.76rem;white-space:nowrap;align-self:center}
+#archits{margin-top:.45rem;display:flex;flex-wrap:wrap;gap:.35rem}
+#archits a{display:inline-block;font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
+  border:1px solid var(--line);padding:.24rem .5rem}
+#archits a:hover,#archits a:focus-visible{border-color:var(--hot);color:var(--hot)}
+#archits a small{color:var(--dim)}
+.arch li a.arow{color:var(--ink);text-decoration:none}
+.arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
+.arch li strong a{color:var(--ink);text-decoration:none}
+.flashback{border:2px dashed var(--line);background:var(--card);padding:.7rem .9rem;margin:0 0 1.1rem}
+.flashback h2{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  letter-spacing:.03em;font-size:.95rem;margin:0 0 .5rem;color:var(--hotink)}
+.flashback ul{list-style:none;padding:0;margin:0}
+.flashback li{padding:.3rem 0;border-bottom:1px dashed var(--line);font-size:.85rem}
+.flashback li:last-child{border-bottom:none}
+.flashback a{text-decoration:none}
+.flashback .yr{color:var(--dim);font-size:.72rem;margin-right:.4rem}
+
+/* ---------- scene stats (stats.html): typewriter bar charts + leaderboards ---------- */
+.statbig{display:flex;flex-wrap:wrap;gap:.6rem;margin:.4rem 0 1.6rem}
+.statbig .stat{font-size:.86rem}
+.monthbars{list-style:none;padding:0;margin:.3rem 0 0;display:flex;flex-direction:column;gap:.18rem}
+.mbar{display:grid;grid-template-columns:5.4rem 1fr auto;align-items:center;gap:.5rem;font-size:.76rem}
+.mbar .ml{color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mbar .mt{height:.82rem;background:linear-gradient(90deg,var(--hot),var(--hotink));min-width:2px}
+.mbar .mn{color:var(--dim);font-size:.72rem}
+.mbar.peak .mt{background:linear-gradient(90deg,var(--hotink),var(--free))}
+.leaders{list-style:none;padding:0;margin:.3rem 0 0}
+.leaders li{display:flex;align-items:baseline;gap:.6rem;padding:.4rem 0;border-bottom:1px dashed var(--line)}
+.leaders .rank{font-family:"Anton","Special Elite",sans-serif;color:var(--dim);width:1.8rem;font-size:1rem}
+.leaders a,.leaders .nm{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
+  font-size:1.05rem;color:var(--ink);text-decoration:none}
+.leaders a:hover,.leaders a:focus-visible{color:var(--hotink)}
+.leaders .ct{color:var(--dim);font-size:.8rem;margin-left:auto;white-space:nowrap}
+.statcols{display:grid;grid-template-columns:1fr;gap:1.6rem}
+@media(min-width:680px){.statcols{grid-template-columns:1fr 1fr}}
 </style></head><body class="showpage">
-<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
+<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../stats.html">stats</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap dirwrap actpage">
 <section class="acthero">
 <div class="heroinfo">
 <div class="actmast"><h1 class="dirhead">Ryan Pfeiffer</h1><span class="ostamp">pcola local</span></div>
 <p class='dirsub'>comedy</p>
-<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i></span></span><span class='tcap'><b>1</b> show on the diypensacola record since 2024</span></div>
+<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i><i></i></span></span><span class='tcap'><b>2</b> shows on the diypensacola record since 2017</span></div>
 
-<div class='vstamps'><span class='lead'>stamped at</span><a href='../v/subculture.html'>subculture</a></div>
+<div class='vstamps'><span class='lead'>stamped at</span><a href='../v/chizuko.html'>chizuko</a><a href='../v/subculture.html'>subculture</a></div>
 
 </div>
-
+<a class='heropost' href='../flyers/2017-06-24_chizuko_andrew-ferrara.jpg' target='_blank' rel='noopener'><img src='../flyers/thumbs/2017-06-24_chizuko_andrew-ferrara.webp' alt='Ryan Pfeiffer flyer, Jun 25, 2017'><span class='hpcap'>Jun 25, 2017 &middot; chizuko</span></a>
 </section>
-<h2 class='dirsec'>watch</h2><div class='ytgrid'><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/piuI_omCG1I' title='Sons Of Maria at Nicci Beach Ultra Lounge' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/ME1LZ2Lsf8c' title='Das Kapital' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/JxvSIPQ_ipE' title='Marilyn Manson-Beautiful People- 3/25/15 Portland' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2024</span></li><li><span class='gdate'><b>4</b><i>Jan 2024</i></span><span class='gwho'><a href='delisia-nicholas.html'>Delisia Nicholas</a>, <a href='olivia-searcy.html'>Olivia Searcy</a>, <a href='cameron-smith.html'>Cameron Smith</a>, <b class='self'>Ryan Pfeiffer</b>, <a href='malcolm-xavier.html'>Malcolm Xavier</a></span><a class='gven' href='../v/subculture.html'>subculture</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='cameron-smith.html'>cameron smith</a><a href='delisia-nicholas.html'>delisia nicholas</a><a href='malcolm-xavier.html'>malcolm xavier</a><a href='olivia-searcy.html'>olivia searcy</a></div>
+<h2 class='dirsec'>watch</h2><div class='ytgrid'><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/piuI_omCG1I' title='Sons Of Maria at Nicci Beach Ultra Lounge' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/ME1LZ2Lsf8c' title='Das Kapital' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/JxvSIPQ_ipE' title='Marilyn Manson-Beautiful People- 3/25/15 Portland' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2024</span></li><li><span class='gdate'><a href='../s/2024-01-04-subculture-delisia-nicholas-olivia-searcy.html'><b>4</b><i>Jan 2024</i></a></span><span class='gwho'><a href='delisia-nicholas.html'>Delisia Nicholas</a>, <a href='olivia-searcy.html'>Olivia Searcy</a>, <a href='cameron-smith.html'>Cameron Smith</a>, <b class='self'>Ryan Pfeiffer</b>, <a href='malcolm-xavier.html'>Malcolm Xavier</a></span><a class='gven' href='../v/subculture.html'>subculture</a></li><li class='gyear'><span>2017</span></li><li><span class='gdate'><a href='../s/2017-06-25-chizuko-andrew-ferrara-brynne-mac.html'><b>25</b><i>Jun 2017</i></a></span><span class='gwho'><a href='andrew-ferrara.html'>Andrew Ferrara</a>, <a href='brynne-mac.html'>Brynne Mac</a>, <a href='charlie-bay-sikes.html'>Charlie Bay Sikes</a>, <a href='graham-clark.html'>Graham Clark</a>, <a href='jason-switzer.html'>Jason Switzer</a>, <a href='norm-deplume.html'>Norm dePlume</a>, <a href='olivia-searcy.html'>Olivia Searcy</a>, <b class='self'>Ryan Pfeiffer</b>, <a href='thomas-white.html'>Thomas White</a>, <a href='tony-burkett.html'>Tony Burkett</a>, <a href='wiley-farrar.html'>Wiley Farrar</a>, <a href='zach-van-gestel.html'>Zach Van Gestel</a></span><a class='gven' href='../v/chizuko.html'>chizuko</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='olivia-searcy.html'>olivia searcy <small>&times;2</small></a><a href='andrew-ferrara.html'>andrew ferrara</a><a href='brynne-mac.html'>brynne mac</a><a href='cameron-smith.html'>cameron smith</a><a href='charlie-bay-sikes.html'>charlie bay sikes</a><a href='delisia-nicholas.html'>delisia nicholas</a><a href='graham-clark.html'>graham clark</a><a href='jason-switzer.html'>jason switzer</a><a href='malcolm-xavier.html'>malcolm xavier</a><a href='norm-deplume.html'>norm deplume</a><a href='thomas-white.html'>thomas white</a><a href='tony-burkett.html'>tony burkett</a></div>
 <p class="dirnote">act pages are built automatically from the show archive, so something may be off: a misspelled name, a missing link, the wrong type, or a bad local/touring call. no disrespect meant. wrong on any of that, or want a listen link (youtube or bandcamp) or live footage added? <a href='../submit.html'>send it in</a>.</p>
 <p class="spback"><a href="../bands.html">&#8592; the scene index</a> · <a href="../">calendar</a></p>
 </main>

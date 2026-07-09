@@ -15,7 +15,6 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Oversight, Other, Spiral · FRI JUL 17 @ The Handlebar · DIYPensacola">
 <meta name="twitter:description" content="oversight, other, and spiral live at the handlebar this friday. doors at 7, music at 8.">
-<meta name="twitter:image" content="https://diypensacola.com/flyers/2026-07-17_handlebar_oversight.jpg">
 <link rel="icon" href="../logo.png">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
@@ -31,7 +30,7 @@ body{margin:0;background-color:var(--bg);color:var(--ink);font:16px/1.5 "Special
   background-repeat:no-repeat,repeat}
 a{color:var(--hotink)}
 /* typography polish: balanced heading line-breaks + orphan-free prose. Progressive
-   enhancement, silently ignored where unsupported. */
+   enhancement — silently ignored where unsupported. */
 h1,h2,h3,.ehead{text-wrap:balance}
 .glead,.post p,.dcap,.emptybig p{text-wrap:pretty}
 header{padding:2.2rem 1rem .3rem;text-align:center}
@@ -138,7 +137,7 @@ body:has(#grid:target) a[href='#grid'],body:has(#archive:target) a[href='#archiv
 #b-tonight .show{box-shadow:6px 6px 0 var(--hot)}
 /* tonight cards already wear the hot shadow at rest, so they need their own
    hover/focus state (higher specificity than the base rule) to still signal
-   they're clickable, otherwise hovering them does nothing. */
+   they're clickable — otherwise hovering them does nothing. */
 #b-tonight .show:hover,#b-tonight .show:focus{box-shadow:10px 10px 0 var(--hot);transform:translate(-3px,-3px)}
 .stamp{position:absolute;font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;font-size:.68rem;
   letter-spacing:.05em;padding:.1rem .38rem;border:2px solid currentColor;background:var(--scrim);line-height:1;pointer-events:none;text-shadow:0 1px 2px #000}
@@ -191,7 +190,7 @@ body:has(#grid:target) a[href='#grid'],body:has(#archive:target) a[href='#archiv
 .empty{color:var(--dim);text-align:center}
 .emptyline{margin:0 0 .9rem}
 /* first-use / no-shows state: a dashed-card onboarding moment in the zine
-   vocabulary, Anton head, typewriter body, tape-button CTAs. Not a SaaS blank. */
+   vocabulary — Anton head, typewriter body, tape-button CTAs. Not a SaaS blank. */
 .emptybig{max-width:520px;margin:2.4rem auto;padding:1.7rem 1.4rem;border:2px dashed var(--line);background:var(--card)}
 .emptybig .ehead{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
   font-size:1.45rem;letter-spacing:.02em;color:var(--ink);margin:0 0 .7rem}
@@ -227,7 +226,7 @@ footer b{color:var(--hot)}
 html{scroll-behavior:smooth}
 body{overflow-x:clip}
 a,button,.show,.cf,.vchip,.athumb{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
-/* tactile press feedback, invisible at rest, so the static look is unchanged */
+/* tactile press feedback — invisible at rest, so the static look is unchanged */
 .links a:active,.dbtn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--hot)}
 nav a:active,.vchip:active,.searchtoggle:active{transform:scale(.95)}
 .show:active{box-shadow:3px 3px 0 var(--hot);transform:translate(2px,2px)}
@@ -239,7 +238,7 @@ main section:target{animation:viewin .26s ease both}
 @keyframes lbin{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:none}}
 @keyframes sheetup{from{transform:translateY(100%)}to{transform:translateY(0)}}
 
-/* back-to-top, a tilted tape button that fades in once you've scrolled down.
+/* back-to-top — a tilted tape button that fades in once you've scrolled down.
    z-index sits below the modals (detail 55 / lightbox 60) so it hides behind an open modal. */
 .totop{position:fixed;right:1.2rem;bottom:1.2rem;z-index:45;width:3rem;height:3rem;
   display:flex;align-items:center;justify-content:center;cursor:pointer;
@@ -303,7 +302,7 @@ main section:target{animation:viewin .26s ease both}
   #calgrid{display:none}#agenda{display:block}
   .totop{display:none}  /* the sticky nav already covers this on phones */
 
-  /* header: tighter so shows are reachable sooner, same big punk type */
+  /* header: tighter so shows are reachable sooner — same big punk type */
   header{padding:1.5rem 1rem .2rem}
   header .logo{width:126px;height:126px;margin-bottom:.5rem}
   h1{font-size:clamp(2.2rem,11.5vw,3.05rem)}  /* fits "DIYPENSACOLA" (12ch, 7.23em wide) on phones down to 320px */
@@ -312,7 +311,7 @@ main section:target{animation:viewin .26s ease both}
   .links{gap:.5rem;padding:.7rem .85rem .15rem}
   .links a{font-size:.8rem;padding:.55rem .9rem}
 
-  /* sticky segmented view-switcher, always one tap away */
+  /* sticky segmented view-switcher — always one tap away */
   /* sticks below the install banner when it's up: --a2hs-h (set by JS to the
      banner's height, else 0) keeps the view-switcher from hiding behind it. */
   nav{position:sticky;top:var(--a2hs-h,0px);z-index:40;gap:.5rem;margin-bottom:.2rem;
@@ -398,7 +397,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   transform:none;text-shadow:none}
 .spback{text-align:center;margin:1.7rem 0 .5rem}
 .spback a{text-decoration:none}
-/* ---------- showgoer guide (site/guide.html), blog-post layout ---------- */
+/* ---------- showgoer guide (site/guide.html) — blog-post layout ---------- */
 .guide{max-width:680px}
 .guide h1{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
   font-size:clamp(2rem,8vw,3rem);line-height:1.08;letter-spacing:.01em;margin:.4rem 0 .95rem;
@@ -647,7 +646,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .actchips a{font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
   border:2px dashed var(--dim);padding:.3rem .55rem;text-transform:lowercase}
 .actchips a:hover{border-color:var(--hot);color:var(--hot)}
-/* a little tape holding each list-card flyer down, echoes the wall view's tape
+/* a little tape holding each list-card flyer down — echoes the wall view's tape
    without changing the card layout. Wall view keeps its own bigger strip. */
 #list:not(.wall) .thumbwrap::before{content:"";position:absolute;top:-5px;left:50%;
   transform:translateX(-50%) rotate(-4deg);width:38px;height:11px;background:var(--tape);
@@ -705,7 +704,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   padding:.15rem .65rem .25rem;transform:rotate(-2deg);box-shadow:3px 3px 0 var(--shadow)}
 
 /* ==================== REDESIGN 2026: poster feed ====================
-   Default (list) view only, the flyer-wall toggle keeps its own look.
+   Default (list) view only — the flyer-wall toggle keeps its own look.
    Tonight = hero, this week = full-flyer posters, later = dense list.
    Flyers show WHOLE (object-fit:contain), only ~12% desaturated at rest,
    full color on hover. Layered last so it overrides the base feed rules. */
@@ -821,8 +820,71 @@ main{max-width:940px}
 .retstamp{font-family:"Special Elite","Courier New",monospace;font-size:.62rem;text-transform:uppercase;
   letter-spacing:.07em;border:2px solid var(--dim);color:var(--dim);padding:.1rem .42rem;
   transform:rotate(-3deg);white-space:nowrap}
+
+/* ---------- show page: past-show flag + "also that night" links ---------- */
+.pastflag{display:inline-block;margin-left:.6rem;font-size:.6rem;text-transform:uppercase;letter-spacing:.09em;
+  color:var(--dim);border:2px solid var(--line);padding:.08rem .4rem;transform:rotate(-2deg);vertical-align:middle}
+.samenight{margin:.9rem 0 .2rem;display:flex;flex-wrap:wrap;gap:.4rem;align-items:baseline}
+.samenight .lead{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);width:100%}
+.samenight a{display:inline-block;font-size:.8rem;text-decoration:none;color:var(--ink);background:var(--card);
+  border:1px solid var(--line);padding:.22rem .5rem}
+.samenight a:hover,.samenight a:focus-visible{border-color:var(--hot);color:var(--hot)}
+.samenight a small{color:var(--dim)}
+
+/* homepage archive banner: points into the searchable full archive */
+.arcbanner{margin:.2rem 0 1.1rem;font-size:.85rem;border:2px dashed var(--line);background:var(--card);padding:.6rem .9rem}
+.arcbanner a{font-weight:bold;text-decoration:none}
+.arcbanner a:hover,.arcbanner a:focus-visible{color:var(--hot)}
+.arcbanner span{color:var(--dim)}
+
+/* ---------- archive hub (archive.html): filter/search toolbar over the record ---------- */
+.filt-out{display:none!important}
+.arctoolbar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:2px solid var(--line);
+  padding:.7rem 0 .8rem;margin:.4rem 0 1rem;display:flex;flex-direction:column;gap:.55rem}
+.arctoolbar .search{margin:0}
+.arcrow{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.arcsel{background:var(--card);border:2px dashed var(--dim);color:var(--ink);font:.78rem/1 inherit;
+  padding:.32rem .5rem;cursor:pointer;max-width:15rem}
+.arcsel:hover{border-color:var(--hot)}
+.viewtoggle{display:flex;gap:.3rem;margin-left:auto}
+.arccount{color:var(--dim);font-size:.76rem;white-space:nowrap;align-self:center}
+#archits{margin-top:.45rem;display:flex;flex-wrap:wrap;gap:.35rem}
+#archits a{display:inline-block;font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
+  border:1px solid var(--line);padding:.24rem .5rem}
+#archits a:hover,#archits a:focus-visible{border-color:var(--hot);color:var(--hot)}
+#archits a small{color:var(--dim)}
+.arch li a.arow{color:var(--ink);text-decoration:none}
+.arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
+.arch li strong a{color:var(--ink);text-decoration:none}
+.flashback{border:2px dashed var(--line);background:var(--card);padding:.7rem .9rem;margin:0 0 1.1rem}
+.flashback h2{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  letter-spacing:.03em;font-size:.95rem;margin:0 0 .5rem;color:var(--hotink)}
+.flashback ul{list-style:none;padding:0;margin:0}
+.flashback li{padding:.3rem 0;border-bottom:1px dashed var(--line);font-size:.85rem}
+.flashback li:last-child{border-bottom:none}
+.flashback a{text-decoration:none}
+.flashback .yr{color:var(--dim);font-size:.72rem;margin-right:.4rem}
+
+/* ---------- scene stats (stats.html): typewriter bar charts + leaderboards ---------- */
+.statbig{display:flex;flex-wrap:wrap;gap:.6rem;margin:.4rem 0 1.6rem}
+.statbig .stat{font-size:.86rem}
+.monthbars{list-style:none;padding:0;margin:.3rem 0 0;display:flex;flex-direction:column;gap:.18rem}
+.mbar{display:grid;grid-template-columns:5.4rem 1fr auto;align-items:center;gap:.5rem;font-size:.76rem}
+.mbar .ml{color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mbar .mt{height:.82rem;background:linear-gradient(90deg,var(--hot),var(--hotink));min-width:2px}
+.mbar .mn{color:var(--dim);font-size:.72rem}
+.mbar.peak .mt{background:linear-gradient(90deg,var(--hotink),var(--free))}
+.leaders{list-style:none;padding:0;margin:.3rem 0 0}
+.leaders li{display:flex;align-items:baseline;gap:.6rem;padding:.4rem 0;border-bottom:1px dashed var(--line)}
+.leaders .rank{font-family:"Anton","Special Elite",sans-serif;color:var(--dim);width:1.8rem;font-size:1rem}
+.leaders a,.leaders .nm{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
+  font-size:1.05rem;color:var(--ink);text-decoration:none}
+.leaders a:hover,.leaders a:focus-visible{color:var(--hotink)}
+.leaders .ct{color:var(--dim);font-size:.8rem;margin-left:auto;white-space:nowrap}
+.statcols{display:grid;grid-template-columns:1fr;gap:1.6rem}
+@media(min-width:680px){.statcols{grid-template-columns:1fr 1fr}}
 </style></head><body class="showpage">
-<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
+<header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive</a><a href="../bands.html">bands</a><a href="../venues.html">venues</a><a href="../stats.html">stats</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap">
 <article class="spcard">
 <a href="../flyers/2026-07-17_handlebar_oversight.jpg" target="_blank" rel="noopener"><img class="spflyer" src="../flyers/2026-07-17_handlebar_oversight.jpg" alt="Oversight, Other, Spiral flyer"></a>
@@ -831,6 +893,7 @@ main{max-width:940px}
 <h1>Oversight, Other, Spiral</h1>
 <div class="actchips"><a href="../b/oversight.html">oversight</a><a href="../b/other.html">other</a><a href="../b/spiral.html">spiral</a></div>
 <div class="drow"><a href="../v/the-handlebar.html">The Handlebar</a>  ·  319 N Tarragona St, Pensacola, FL</div><div class="drow">doors 7pm, show 8pm</div><p class="dcap">oversight, other, and spiral live at the handlebar this friday. doors at 7, music at 8.</p>
+<div class="samenight"><span class="lead">also that night</span><a href="2026-07-17-bettys-johanna-rose.html">johanna rose, the dreamboats, goodwin rainer, stufy <small>@ betty&#39;s</small></a></div>
 <div class="dactions"><a class="dbtn" href="https://www.google.com/maps/dir/?api=1&amp;destination=319%20N%20Tarragona%20St%2C%20Pensacola%2C%20FL" target="_blank" rel="noopener">directions</a><a class="dbtn" href="2026-07-17-handlebar-oversight-other.ics" download>add to calendar</a><a class="dbtn" href="../">all shows &#8599;</a></div>
 </div>
 </article>
