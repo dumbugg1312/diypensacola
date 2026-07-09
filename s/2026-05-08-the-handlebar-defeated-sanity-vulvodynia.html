@@ -66,6 +66,33 @@ header h1 a{color:inherit;text-decoration:none}
   border:2px solid #111;box-shadow:3px 3px 0 var(--hot);text-transform:uppercase;letter-spacing:.05em}
 .links a:nth-child(odd){transform:rotate(-1.5deg)}.links a:nth-child(even){transform:rotate(1.2deg)}
 .links a:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
+/* the CALENDAR / ARCHIVE mode switch under the wordmark: the site's two halves
+   as one segmented control. Deliberately NOT a tape button (those are the
+   off-site links) but a single stamped ink box split down the middle, two equal
+   halves, no tilt. The half you're on is filled green; the other reads dim and
+   links across. */
+.modebar{position:sticky;top:var(--a2hs-h,0px);z-index:44;display:flex;justify-content:center;
+  background:var(--bg);border-bottom:2px solid var(--line);
+  padding:.32rem 1rem;padding-top:calc(.32rem + env(safe-area-inset-top))}
+.modetabs{display:flex;width:max-content;max-width:100%}
+.modetab{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  letter-spacing:.13em;font-size:.9rem;text-decoration:none;color:var(--dim);background:transparent;
+  border:0;padding:.32rem 1.15rem .28rem;line-height:1.1;transition:background .12s,color .12s}
+.modetab.on{background:var(--hot);color:var(--on-hot)}
+.modetab:not(.on):hover{color:var(--ink)}
+.modetab:active{transform:none}
+/* the archive reuses the homepage's big centered masthead (logo + wordmark +
+   mode tabs + standard links) instead of the compact subpage header, so neither
+   half of the site reads as a lesser page. .bighead overrides .showpage header. */
+.showpage header.bighead{display:block;text-align:center;padding:2.2rem 1rem .3rem}
+.bighead .logo{width:150px;height:150px;display:block;margin:0 auto .5rem;filter:drop-shadow(0 0 14px rgba(255,255,255,.18))}
+.bighead h1{margin:0}
+.bighead h1 a{color:inherit;text-decoration:none}
+.bighead .tag{color:var(--dim);margin:.6rem 0 0;font-size:.9rem}
+@media (max-width:640px){
+  .bighead .logo{width:120px;height:120px}
+  .modetab{font-size:.88rem;padding:.34rem 1rem .3rem}
+}
 /* TONIGHT strip: a stapled-on "what's on tonight" slip above the feed. Hidden by
    default; MAIN_JS reveals + fills it only when the VIEWER actually has a show
    today (the page is static + re-buckets client-side), so a quiet night shows
@@ -102,7 +129,7 @@ main:not(:has(section:target)) #list{display:block}
    aren't Tab-reachable controls, so they carry no visible focus ring. */
 main section[tabindex]:focus{outline:none}
 body:has(#list:target) a[href='#list'],body:not(:has(section:target)) a[href='#list'],
-body:has(#grid:target) a[href='#grid'],body:has(#archive:target) a[href='#archive']{border:2px solid var(--hot);background:var(--hot);color:var(--on-hot)}
+body:has(#grid:target) a[href='#grid']{border:2px solid var(--hot);background:var(--hot);color:var(--on-hot)}
 .controls{max-width:680px;margin:0 auto .3rem}
 .searchtoggle{background:var(--card);border:2px dashed var(--dim);color:var(--ink);cursor:pointer;
   width:2.5rem;height:2.5rem;font:1.25rem/1 inherit;flex:none;display:flex;align-items:center;justify-content:center}
@@ -329,13 +356,13 @@ main section:target{animation:viewin .26s ease both}
   /* sticky segmented view-switcher — always one tap away */
   /* sticks below the install banner when it's up: --a2hs-h (set by JS to the
      banner's height, else 0) keeps the view-switcher from hiding behind it. */
-  nav{position:sticky;top:var(--a2hs-h,0px);z-index:40;gap:.5rem;margin-bottom:.2rem;
+  nav{position:sticky;top:calc(var(--a2hs-h,0px) + var(--modebar-h,0px));z-index:40;gap:.5rem;margin-bottom:.2rem;
     transition:top .28s cubic-bezier(.2,.85,.25,1);
     padding:.55rem .8rem;padding-top:calc(.55rem + env(safe-area-inset-top));
     background:var(--scrim);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
     border-bottom:1px solid var(--line)}
   nav a{flex:1;text-align:center;padding:.58rem .3rem;font-size:.82rem}
-  main section{scroll-margin-top:calc(4.4rem + var(--a2hs-h,0px))}
+  main section{scroll-margin-top:calc(4.4rem + var(--a2hs-h,0px) + var(--modebar-h,0px))}
   main{padding:0 .85rem}
 
   /* controls + chips: comfy 44px-ish tap targets */
@@ -461,7 +488,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .printhead{display:none}
 @media print{
   body{background:#fff;color:#000;font:12pt/1.4 "Courier New",monospace}
-  header,.links,nav,.controls,#grid,#archive,.endtip,footer,.totop,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming,.tstrip{display:none!important}
+  header,.links,.modebar,nav,.controls,#grid,.endtip,footer,.totop,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming,.tstrip{display:none!important}
   main:not(:has(section:target)) #list{display:block}
   main section{display:none!important}
   main section#list{display:block!important}
@@ -824,7 +851,7 @@ main{max-width:940px}
   #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child h3{font-size:clamp(1.8rem,8vw,2.6rem)}
 }
 
-/* venues index (venues.html): a stamped directory sorted by recent activity */
+/* venue detail pages (v/<slug>.html): stamped directory rows */
 .venuelist{list-style:none;padding:0;margin:.5rem 0 0}
 .venuelist li{display:flex;align-items:baseline;gap:.7rem;flex-wrap:wrap;padding:.6rem 0;border-bottom:1px dashed var(--line)}
 .venuelist a.vn{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
@@ -846,15 +873,9 @@ main{max-width:940px}
 .samenight a:hover,.samenight a:focus-visible{border-color:var(--hot);color:var(--hot)}
 .samenight a small{color:var(--dim)}
 
-/* homepage archive banner: points into the searchable full archive */
-.arcbanner{margin:.2rem 0 1.1rem;font-size:.85rem;border:2px dashed var(--line);background:var(--card);padding:.6rem .9rem}
-.arcbanner a{font-weight:bold;text-decoration:none}
-.arcbanner a:hover,.arcbanner a:focus-visible{color:var(--hot)}
-.arcbanner span{color:var(--dim)}
-
 /* ---------- archive hub (archive.html): filter/search toolbar over the record ---------- */
 .filt-out{display:none!important}
-.arctoolbar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:2px solid var(--line);
+.arctoolbar{position:sticky;top:var(--modebar-h,0px);z-index:5;background:var(--bg);border-bottom:2px solid var(--line);
   padding:.7rem 0 .8rem;margin:.4rem 0 1rem;display:flex;flex-direction:column;gap:.55rem}
 .arctoolbar .search{margin:0}
 .arcrow{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
@@ -885,12 +906,6 @@ main{max-width:940px}
 .statspanel>summary::after{content:" ▸";color:var(--dim)}
 .statspanel[open]>summary::after{content:" ▾"}
 .statsbody{padding:0 .9rem 1rem}
-/* homepage archive teaser (the inline scroll moved to archive.html) */
-.homearc-h{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
-  letter-spacing:.02em;font-size:1.5rem;margin:.2rem 0 .3rem}
-.homearc-sub{color:var(--dim);font-size:.88rem;margin:0 0 1rem;max-width:44rem}
-.arcbannerlink{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
-  font-size:1.05rem}
 .arch li a.arow{color:var(--ink);text-decoration:none}
 .arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
 .arch li strong a{color:var(--ink);text-decoration:none}
@@ -903,7 +918,7 @@ main{max-width:940px}
 .flashback a{text-decoration:none}
 .flashback .yr{color:var(--dim);font-size:.72rem;margin-right:.4rem}
 
-/* ---------- scene stats (stats.html): typewriter bar charts + leaderboards ---------- */
+/* ---------- scene stats (archive.html panel): typewriter bar charts + leaderboards ---------- */
 .statbig{display:flex;flex-wrap:wrap;gap:.6rem;margin:.4rem 0 1.6rem}
 .statbig .stat{font-size:.86rem}
 .monthbars{list-style:none;padding:0;margin:.3rem 0 0;display:flex;flex-direction:column;gap:.18rem}

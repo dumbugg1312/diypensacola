@@ -45,6 +45,33 @@ header h1 a{color:inherit;text-decoration:none}
   border:2px solid #111;box-shadow:3px 3px 0 var(--hot);text-transform:uppercase;letter-spacing:.05em}
 .links a:nth-child(odd){transform:rotate(-1.5deg)}.links a:nth-child(even){transform:rotate(1.2deg)}
 .links a:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
+/* the CALENDAR / ARCHIVE mode switch under the wordmark: the site's two halves
+   as one segmented control. Deliberately NOT a tape button (those are the
+   off-site links) but a single stamped ink box split down the middle, two equal
+   halves, no tilt. The half you're on is filled green; the other reads dim and
+   links across. */
+.modebar{position:sticky;top:var(--a2hs-h,0px);z-index:44;display:flex;justify-content:center;
+  background:var(--bg);border-bottom:2px solid var(--line);
+  padding:.32rem 1rem;padding-top:calc(.32rem + env(safe-area-inset-top))}
+.modetabs{display:flex;width:max-content;max-width:100%}
+.modetab{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
+  letter-spacing:.13em;font-size:.9rem;text-decoration:none;color:var(--dim);background:transparent;
+  border:0;padding:.32rem 1.15rem .28rem;line-height:1.1;transition:background .12s,color .12s}
+.modetab.on{background:var(--hot);color:var(--on-hot)}
+.modetab:not(.on):hover{color:var(--ink)}
+.modetab:active{transform:none}
+/* the archive reuses the homepage's big centered masthead (logo + wordmark +
+   mode tabs + standard links) instead of the compact subpage header, so neither
+   half of the site reads as a lesser page. .bighead overrides .showpage header. */
+.showpage header.bighead{display:block;text-align:center;padding:2.2rem 1rem .3rem}
+.bighead .logo{width:150px;height:150px;display:block;margin:0 auto .5rem;filter:drop-shadow(0 0 14px rgba(255,255,255,.18))}
+.bighead h1{margin:0}
+.bighead h1 a{color:inherit;text-decoration:none}
+.bighead .tag{color:var(--dim);margin:.6rem 0 0;font-size:.9rem}
+@media (max-width:640px){
+  .bighead .logo{width:120px;height:120px}
+  .modetab{font-size:.88rem;padding:.34rem 1rem .3rem}
+}
 /* TONIGHT strip: a stapled-on "what's on tonight" slip above the feed. Hidden by
    default; MAIN_JS reveals + fills it only when the VIEWER actually has a show
    today (the page is static + re-buckets client-side), so a quiet night shows
@@ -81,7 +108,7 @@ main:not(:has(section:target)) #list{display:block}
    aren't Tab-reachable controls, so they carry no visible focus ring. */
 main section[tabindex]:focus{outline:none}
 body:has(#list:target) a[href='#list'],body:not(:has(section:target)) a[href='#list'],
-body:has(#grid:target) a[href='#grid'],body:has(#archive:target) a[href='#archive']{border:2px solid var(--hot);background:var(--hot);color:var(--on-hot)}
+body:has(#grid:target) a[href='#grid']{border:2px solid var(--hot);background:var(--hot);color:var(--on-hot)}
 .controls{max-width:680px;margin:0 auto .3rem}
 .searchtoggle{background:var(--card);border:2px dashed var(--dim);color:var(--ink);cursor:pointer;
   width:2.5rem;height:2.5rem;font:1.25rem/1 inherit;flex:none;display:flex;align-items:center;justify-content:center}
@@ -308,13 +335,13 @@ main section:target{animation:viewin .26s ease both}
   /* sticky segmented view-switcher — always one tap away */
   /* sticks below the install banner when it's up: --a2hs-h (set by JS to the
      banner's height, else 0) keeps the view-switcher from hiding behind it. */
-  nav{position:sticky;top:var(--a2hs-h,0px);z-index:40;gap:.5rem;margin-bottom:.2rem;
+  nav{position:sticky;top:calc(var(--a2hs-h,0px) + var(--modebar-h,0px));z-index:40;gap:.5rem;margin-bottom:.2rem;
     transition:top .28s cubic-bezier(.2,.85,.25,1);
     padding:.55rem .8rem;padding-top:calc(.55rem + env(safe-area-inset-top));
     background:var(--scrim);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
     border-bottom:1px solid var(--line)}
   nav a{flex:1;text-align:center;padding:.58rem .3rem;font-size:.82rem}
-  main section{scroll-margin-top:calc(4.4rem + var(--a2hs-h,0px))}
+  main section{scroll-margin-top:calc(4.4rem + var(--a2hs-h,0px) + var(--modebar-h,0px))}
   main{padding:0 .85rem}
 
   /* controls + chips: comfy 44px-ish tap targets */
@@ -440,7 +467,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .printhead{display:none}
 @media print{
   body{background:#fff;color:#000;font:12pt/1.4 "Courier New",monospace}
-  header,.links,nav,.controls,#grid,#archive,.endtip,footer,.totop,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming,.tstrip{display:none!important}
+  header,.links,.modebar,nav,.controls,#grid,.endtip,footer,.totop,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming,.tstrip{display:none!important}
   main:not(:has(section:target)) #list{display:block}
   main section{display:none!important}
   main section#list{display:block!important}
@@ -803,7 +830,7 @@ main{max-width:940px}
   #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child h3{font-size:clamp(1.8rem,8vw,2.6rem)}
 }
 
-/* venues index (venues.html): a stamped directory sorted by recent activity */
+/* venue detail pages (v/<slug>.html): stamped directory rows */
 .venuelist{list-style:none;padding:0;margin:.5rem 0 0}
 .venuelist li{display:flex;align-items:baseline;gap:.7rem;flex-wrap:wrap;padding:.6rem 0;border-bottom:1px dashed var(--line)}
 .venuelist a.vn{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
@@ -825,15 +852,9 @@ main{max-width:940px}
 .samenight a:hover,.samenight a:focus-visible{border-color:var(--hot);color:var(--hot)}
 .samenight a small{color:var(--dim)}
 
-/* homepage archive banner: points into the searchable full archive */
-.arcbanner{margin:.2rem 0 1.1rem;font-size:.85rem;border:2px dashed var(--line);background:var(--card);padding:.6rem .9rem}
-.arcbanner a{font-weight:bold;text-decoration:none}
-.arcbanner a:hover,.arcbanner a:focus-visible{color:var(--hot)}
-.arcbanner span{color:var(--dim)}
-
 /* ---------- archive hub (archive.html): filter/search toolbar over the record ---------- */
 .filt-out{display:none!important}
-.arctoolbar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:2px solid var(--line);
+.arctoolbar{position:sticky;top:var(--modebar-h,0px);z-index:5;background:var(--bg);border-bottom:2px solid var(--line);
   padding:.7rem 0 .8rem;margin:.4rem 0 1rem;display:flex;flex-direction:column;gap:.55rem}
 .arctoolbar .search{margin:0}
 .arcrow{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
@@ -864,12 +885,6 @@ main{max-width:940px}
 .statspanel>summary::after{content:" ▸";color:var(--dim)}
 .statspanel[open]>summary::after{content:" ▾"}
 .statsbody{padding:0 .9rem 1rem}
-/* homepage archive teaser (the inline scroll moved to archive.html) */
-.homearc-h{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
-  letter-spacing:.02em;font-size:1.5rem;margin:.2rem 0 .3rem}
-.homearc-sub{color:var(--dim);font-size:.88rem;margin:0 0 1rem;max-width:44rem}
-.arcbannerlink{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
-  font-size:1.05rem}
 .arch li a.arow{color:var(--ink);text-decoration:none}
 .arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
 .arch li strong a{color:var(--ink);text-decoration:none}
@@ -882,7 +897,7 @@ main{max-width:940px}
 .flashback a{text-decoration:none}
 .flashback .yr{color:var(--dim);font-size:.72rem;margin-right:.4rem}
 
-/* ---------- scene stats (stats.html): typewriter bar charts + leaderboards ---------- */
+/* ---------- scene stats (archive.html panel): typewriter bar charts + leaderboards ---------- */
 .statbig{display:flex;flex-wrap:wrap;gap:.6rem;margin:.4rem 0 1.6rem}
 .statbig .stat{font-size:.86rem}
 .monthbars{list-style:none;padding:0;margin:.3rem 0 0;display:flex;flex-direction:column;gap:.18rem}
@@ -907,14 +922,14 @@ main{max-width:940px}
 <div class="heroinfo">
 <div class="actmast"><h1 class="dirhead">Johnny Panic</h1><span class="ostamp">pcola local</span></div>
 
-<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i><i></i><i></i><i></i></span></span><span class='tcap'><b>4</b> shows on the diypensacola record since 2017</span></div>
+<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i><i></i><i></i><i></i><i class='x'></i></span><span class='tgrp'><i></i><i></i></span></span><span class='tcap'><b>7</b> shows on the diypensacola record since 2016</span></div>
 
-<div class='vstamps'><span class='lead'>stamped at</span><a href='../v/chizuko.html'>chizuko</a></div>
+<div class='vstamps'><span class='lead'>stamped at</span><a href='../v/chizuko.html'>chizuko</a><a href='../v/sluggo-s.html'>sluggo&#39;s</a></div>
 
 </div>
 <a class='heropost' href='../flyers/2018-10-26_chizuko_company-of-ghosts.jpg' target='_blank' rel='noopener'><img src='../flyers/thumbs/2018-10-26_chizuko_company-of-ghosts.webp' alt='Johnny Panic flyer, Oct 26, 2018'><span class='hpcap'>Oct 26, 2018 &middot; chizuko</span></a>
 </section>
-<h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2017-11-02_chizuko_kid-dead.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2017-11-02_chizuko_kid-dead.webp' alt='flyer, Nov 2, 2017'><span class='pwcap'>Nov 2, 2017 &middot; chizuko</span></a><a class='pwtile' href='../flyers/2017-07-26_chizuko_crunk-witch.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2017-07-26_chizuko_crunk-witch.webp' alt='flyer, Jul 26, 2017'><span class='pwcap'>Jul 26, 2017 &middot; chizuko</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2018</span></li><li><span class='gdate'><a href='../s/2018-10-26-chizuko-company-of-ghosts-johnny-panic.html'><b>26</b><i>Oct 2018</i></a></span><span class='gwho'><a href='company-of-ghosts.html'>Company of Ghosts</a>, <b class='self'>Johnny Panic</b>, <a href='spillers.html'>Spillers</a>, <a href='big-lo.html'>Big Lo</a>, <a href='future-hate.html'>Future Hate</a>, <a href='jamal-steele.html'>Jamal Steele</a>, <a href='dark-star-coven.html'>Dark Star Coven</a>, <a href='cyborganics.html'>Cyborganics</a></span><a class='gven' href='../v/chizuko.html'>chizuko</a></li><li><span class='gdate'><a href='../s/2018-01-13-chizuko-earl-s-killer-squirrel-big-lo.html'><b>13</b><i>Jan 2018</i></a></span><span class='gwho'><a href='earl-s-killer-squirrel.html'>Earl&#39;s Killer Squirrel</a>, <a href='big-lo.html'>Big Lo</a>, <a href='cookies-and-cake.html'>Cookies and Cake</a>, <a href='company-of-ghosts.html'>Company of Ghosts</a>, <b class='self'>Johnny Panic</b>, <a href='rezolve.html'>Rezolve</a>, <a href='turnicut.html'>Turnicut</a></span><a class='gven' href='../v/chizuko.html'>chizuko</a></li><li class='gyear'><span>2017</span></li><li><span class='gdate'><a href='../s/2017-11-02-chizuko-kid-dead-adam-selene.html'><b>2</b><i>Nov 2017</i></a></span><span class='gwho'><a href='kid-dead.html'>kid DEAD</a>, <a href='adam-selene.html'>Adam Selene</a>, <a href='blacksuperheromuzik.html'>BlackSuperHeroMuzik</a>, <b class='self'>Johnny Panic</b>, <a href='eterniti-everlasting.html'>Eterniti Everlasting</a></span><a class='gven' href='../v/chizuko.html'>chizuko</a></li><li><span class='gdate'><a href='../s/2017-07-26-chizuko-crunk-witch-cookies-cake.html'><b>26</b><i>Jul 2017</i></a></span><span class='gwho'><a href='crunk-witch.html'>Crunk Witch</a>, <a href='cookies-cake.html'>Cookies &amp; Cake</a>, <b class='self'>Johnny Panic</b></span><a class='gven' href='../v/chizuko.html'>chizuko</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='big-lo.html'>big lo <small>&times;2</small></a><a href='company-of-ghosts.html'>company of ghosts <small>&times;2</small></a><a href='adam-selene.html'>adam selene</a><a href='blacksuperheromuzik.html'>blacksuperheromuzik</a><a href='cookies-cake.html'>cookies &amp; cake</a><a href='cookies-and-cake.html'>cookies and cake</a><a href='crunk-witch.html'>crunk witch</a><a href='cyborganics.html'>cyborganics</a><a href='dark-star-coven.html'>dark star coven</a><a href='earl-s-killer-squirrel.html'>earl&#39;s killer squirrel</a><a href='eterniti-everlasting.html'>eterniti everlasting</a><a href='future-hate.html'>future hate</a></div>
+<h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2017-11-02_chizuko_kid-dead.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2017-11-02_chizuko_kid-dead.webp' alt='flyer, Nov 2, 2017'><span class='pwcap'>Nov 2, 2017 &middot; chizuko</span></a><a class='pwtile' href='../flyers/2017-07-26_chizuko_crunk-witch.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2017-07-26_chizuko_crunk-witch.webp' alt='flyer, Jul 26, 2017'><span class='pwcap'>Jul 26, 2017 &middot; chizuko</span></a><a class='pwtile' href='../flyers/2016-07-11_sluggo-s_deacon-bill.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2016-07-11_sluggo-s_deacon-bill.webp' alt='flyer, Jul 11, 2016'><span class='pwcap'>Jul 11, 2016 &middot; sluggo&#39;s</span></a><a class='pwtile' href='../flyers/2016-04-18_sluggo-s_foster-care.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2016-04-18_sluggo-s_foster-care.webp' alt='flyer, Apr 18, 2016'><span class='pwcap'>Apr 18, 2016 &middot; sluggo&#39;s</span></a><a class='pwtile' href='../flyers/2016-03-22_sluggo-s_dirty-dishes.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2016-03-22_sluggo-s_dirty-dishes.webp' alt='flyer, Mar 22, 2016'><span class='pwcap'>Mar 22, 2016 &middot; sluggo&#39;s</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2018</span></li><li><span class='gdate'><a href='../s/2018-10-26-chizuko-company-of-ghosts-johnny-panic.html'><b>26</b><i>Oct 2018</i></a></span><span class='gwho'><a href='company-of-ghosts.html'>Company of Ghosts</a>, <b class='self'>Johnny Panic</b>, <a href='spillers.html'>Spillers</a>, <a href='big-lo.html'>Big Lo</a>, <a href='future-hate.html'>Future Hate</a>, <a href='jamal-steele.html'>Jamal Steele</a>, <a href='dark-star-coven.html'>Dark Star Coven</a>, <a href='cyborganics.html'>Cyborganics</a></span><a class='gven' href='../v/chizuko.html'>chizuko</a></li><li><span class='gdate'><a href='../s/2018-01-13-chizuko-earl-s-killer-squirrel-big-lo.html'><b>13</b><i>Jan 2018</i></a></span><span class='gwho'><a href='earl-s-killer-squirrel.html'>Earl&#39;s Killer Squirrel</a>, <a href='big-lo.html'>Big Lo</a>, <a href='cookies-and-cake.html'>Cookies and Cake</a>, <a href='company-of-ghosts.html'>Company of Ghosts</a>, <b class='self'>Johnny Panic</b>, <a href='rezolve.html'>Rezolve</a>, <a href='turnicut.html'>Turnicut</a></span><a class='gven' href='../v/chizuko.html'>chizuko</a></li><li class='gyear'><span>2017</span></li><li><span class='gdate'><a href='../s/2017-11-02-chizuko-kid-dead-adam-selene.html'><b>2</b><i>Nov 2017</i></a></span><span class='gwho'><a href='kid-dead.html'>kid DEAD</a>, <a href='adam-selene.html'>Adam Selene</a>, <a href='blacksuperheromuzik.html'>BlackSuperHeroMuzik</a>, <b class='self'>Johnny Panic</b>, <a href='eterniti-everlasting.html'>Eterniti Everlasting</a></span><a class='gven' href='../v/chizuko.html'>chizuko</a></li><li><span class='gdate'><a href='../s/2017-07-26-chizuko-crunk-witch-cookies-cake.html'><b>26</b><i>Jul 2017</i></a></span><span class='gwho'><a href='crunk-witch.html'>Crunk Witch</a>, <a href='cookies-cake.html'>Cookies &amp; Cake</a>, <b class='self'>Johnny Panic</b></span><a class='gven' href='../v/chizuko.html'>chizuko</a></li><li class='gyear'><span>2016</span></li><li><span class='gdate'><a href='../s/2016-07-11-sluggo-s-deacon-bill-splatter.html'><b>11</b><i>Jul 2016</i></a></span><span class='gwho'><a href='deacon-bill.html'>Deacon Bill</a>, <a href='splatter.html'>Splatter</a>, <b class='self'>Johnny Panic</b>, <a href='roswell.html'>Roswell</a></span><a class='gven' href='../v/sluggo-s.html'>sluggo&#39;s</a></li><li><span class='gdate'><a href='../s/2016-04-18-sluggo-s-foster-care-jonathan-brown.html'><b>18</b><i>Apr 2016</i></a></span><span class='gwho'><a href='foster-care.html'>Foster Care</a>, <a href='jonathan-brown.html'>Jonathan Brown</a>, <b class='self'>Johnny Panic</b>, <a href='splatter.html'>Splatter</a></span><a class='gven' href='../v/sluggo-s.html'>sluggo&#39;s</a></li><li><span class='gdate'><a href='../s/2016-03-22-sluggo-s-dirty-dishes-johnny-panic.html'><b>22</b><i>Mar 2016</i></a></span><span class='gwho'><a href='dirty-dishes.html'>Dirty Dishes</a>, <b class='self'>Johnny Panic</b>, <a href='what-moon-things.html'>What Moon Things</a>, <a href='motivves.html'>Motivves</a></span><a class='gven' href='../v/sluggo-s.html'>sluggo&#39;s</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='big-lo.html'>big lo <small>&times;2</small></a><a href='company-of-ghosts.html'>company of ghosts <small>&times;2</small></a><a href='splatter.html'>splatter <small>&times;2</small></a><a href='adam-selene.html'>adam selene</a><a href='blacksuperheromuzik.html'>blacksuperheromuzik</a><a href='cookies-cake.html'>cookies &amp; cake</a><a href='cookies-and-cake.html'>cookies and cake</a><a href='crunk-witch.html'>crunk witch</a><a href='cyborganics.html'>cyborganics</a><a href='dark-star-coven.html'>dark star coven</a><a href='deacon-bill.html'>deacon bill</a><a href='dirty-dishes.html'>dirty dishes</a></div>
 <p class="dirnote">act pages are built automatically from the show archive, so something may be off: a misspelled name, a missing link, the wrong type, or a bad local/touring call. no disrespect meant. wrong on any of that, or want a listen link (youtube or bandcamp) or live footage added? <a href='../submit.html'>send it in</a>.</p>
 <p class="spback"><a href="../archive.html">&#8592; search the archive</a> · <a href="../">calendar</a></p>
 </main>
