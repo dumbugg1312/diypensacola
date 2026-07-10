@@ -333,12 +333,13 @@ main section:target{animation:viewin .26s ease both}
   h1{font-size:clamp(2.2rem,11.5vw,3.05rem)}  /* fits "DIYPENSACOLA" (12ch, 7.23em wide) on phones down to 320px */
   header .tag{font-size:.83rem;margin-top:.5rem;line-height:1.45}
 
-  /* 8 buttons, always 2 rows of 4 (never the 3-4 ragged rows flex-wrap gave us):
-     a fixed 4-col grid + shrunk type that wraps within the button instead of
-     forcing the button wider than its column. */
-  .links{display:grid;grid-template-columns:repeat(4,1fr);gap:.45rem .35rem;padding:.7rem .85rem .15rem;max-width:100%}
-  .links a{font-size:.62rem;padding:.5rem .3rem;text-align:center;line-height:1.25}
-  .links a:nth-child(odd),.links a:nth-child(even){transform:none}
+  /* 8 buttons, 2 rows of 4 — but still taped-up scraps, not a tidy grid:
+     each keeps its border/shadow/tilt, alternating rotation so the row reads
+     hand-placed even though the columns line up. */
+  .links{display:grid;grid-template-columns:repeat(4,1fr);gap:.65rem .5rem;padding:.7rem .85rem .15rem;max-width:100%}
+  .links a{font-size:.64rem;padding:.5rem .35rem;text-align:center;line-height:1.25;box-shadow:2px 2px 0 var(--hot)}
+  .links a:nth-child(4n+1),.links a:nth-child(4n+3){transform:rotate(-1.4deg)}
+  .links a:nth-child(4n+2),.links a:nth-child(4n){transform:rotate(1.3deg)}
 
   /* sticky segmented view-switcher — always one tap away */
   /* sticks below the install banner when it's up: --a2hs-h (set by JS to the
@@ -642,14 +643,16 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .heropost::before{content:"";position:absolute;top:-7px;left:50%;transform:translateX(-50%) rotate(-3deg);
   width:64px;height:17px;background:var(--tape);opacity:.8;z-index:2;box-shadow:0 1px 2px rgba(0,0,0,.4)}
 .heropost img{width:100%;height:auto;display:block;border:3px solid var(--ink);
-  box-shadow:8px 8px 0 var(--shadow);background:#000}
+  box-shadow:8px 8px 0 rgba(0,0,0,.5);background:#000}
 .heropost .hpcap{display:block;background:var(--card);border:1px solid var(--line);border-top:none;
   margin:0 3px;padding:.4rem .6rem;font:.7rem/1.4 "Special Elite","Courier New",monospace;
   letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}
 .heropost:hover img,.heropost:focus-visible img{border-color:var(--hot);box-shadow:8px 8px 0 var(--hot)}
 .heropost:hover .hpcap{color:var(--ink)}
 .heropost:focus-visible{outline:3px solid var(--tape);outline-offset:3px}
-.heropost.up::before{background:var(--hot)}
+/* upcoming posters keep the SAME cream masking-tape as every other poster (a
+   solid green bar read as clip-art, not tape); the "up next" signal lives in the
+   green caption text and the hot hover border instead. */
 .heropost.up .hpcap{color:var(--hotink)}
 @media (max-width:700px){.acthero{flex-direction:column;gap:.4rem}
   .heropost{width:min(320px,92%);align-self:center;margin:1.3rem 0 .4rem;transform:rotate(-1.5deg)}
@@ -671,7 +674,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .pwtile:focus-visible{outline:3px solid var(--tape);outline-offset:3px}
 .pwtile:hover img,.pwtile:focus-visible img{box-shadow:5px 5px 0 var(--hot)}
 .pwtile:hover .pwcap{color:var(--ink)}
-.pwtile.up::before{background:var(--hot)}
 .pwtile.up img{border-color:var(--hot)}
 /* gig ledger: dated record rows; upcoming rows carry the hot ink */
 .gigledger{list-style:none;padding:0;margin:0}

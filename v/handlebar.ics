@@ -1,0 +1,167 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola: The Handlebar
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-07-16-handlebar-maylene-and-the-sons-of-disaster-across-five-aprils@diypensacola
+DTSTART;TZID=America/Chicago:20260716T180000
+DTEND;TZID=America/Chicago:20260716T210000
+SUMMARY:Maylene and the Sons of Disaster\, Across Five Aprils\, Atomic Rule\, New Rituals\, Son of a Gun @ The Handlebar
+DESCRIPTION:maylene and the sons of disaster at the handlebar this thursday\, july 16. across five aprils\, atomic rule\, new rituals\, and son of a gun round out the bill. doors at 6pm.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-17-handlebar-oversight-other@diypensacola
+DTSTART;TZID=America/Chicago:20260717T190000
+DTEND;TZID=America/Chicago:20260717T220000
+SUMMARY:Oversight\, Other\, Spiral @ The Handlebar
+DESCRIPTION:oversight\, other\, and spiral live at the handlebar this friday. doors at 7\, music at 8.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-19-handlebar-in-gloom@diypensacola
+DTSTART;TZID=America/Chicago:20260719T190000
+DTEND;TZID=America/Chicago:20260719T220000
+SUMMARY:In Gloom\, Innerwounds\, Fire Came Disparity\, Wraithbearer @ The Handlebar
+DESCRIPTION:in gloom\, innerwounds\, with fire came disparity\, wraithbearer at the handlebar. sun jul 19\, doors 7 / music 8\, all ages. $10 adv / $15 door.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-21-handlebar-high-fade@diypensacola
+DTSTART;TZID=America/Chicago:20260721T190000
+DTEND;TZID=America/Chicago:20260721T220000
+SUMMARY:High Fade @ The Handlebar
+DESCRIPTION:high fade on the twice as nice tour at the handlebar. tue jul 21\, doors 7pm. tickets at thehandlebar850.com.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-22-handlebar-no-complications@diypensacola
+DTSTART;TZID=America/Chicago:20260722T180000
+DTEND;TZID=America/Chicago:20260722T210000
+SUMMARY:No Complications\, King In Yellow\, Tirra Lirra @ The Handlebar
+DESCRIPTION:no complications\, king in yellow\, tirra lirra at the handlebar. wed jul 22\, 6pm. $15.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-24-handlebar-obituary-modown@diypensacola
+DTSTART;TZID=America/Chicago:20260724T190000
+DTEND;TZID=America/Chicago:20260724T220000
+SUMMARY:Obituary\, Modown\, Exformation\, D.R.E.A.D. @ The Handlebar
+DESCRIPTION:obituary at the handlebar with modown\, exformation\, and d.r.e.a.d. july 24th.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-28-handlebar-internal-suffering@diypensacola
+DTSTART;TZID=America/Chicago:20260728T190000
+DTEND;TZID=America/Chicago:20260728T220000
+SUMMARY:Internal Suffering\, Gut Fucked\, Rotted Remains @ The Handlebar
+DESCRIPTION:internal suffering\, gut fucked\, rotted remains at the handlebar tuesday july 28th. doors 7pm\, show 8pm. $15\, all ages. 30 years of chaos\, dominion of the xul tour.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-14-handlebar-katie-dineen@diypensacola
+DTSTART;TZID=America/Chicago:20260814T180000
+DTEND;TZID=America/Chicago:20260814T210000
+SUMMARY:Katie Dineen\, Logan Pilcher\, Tanner Lee Gray @ The Handlebar
+DESCRIPTION:katie dineen's album release show for 'simmer'\, with logan pilcher and tanner lee gray. the handlebar\, friday august 14th. doors 6pm\, music at 7. sliding scale $10-$20.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-15-handlebar-heroes-for-ghosts@diypensacola
+DTSTART;TZID=America/Chicago:20260815T180000
+DTEND;TZID=America/Chicago:20260815T210000
+SUMMARY:Heroes For Ghosts\, Spiritless\, Afterdusk\, Caving In @ The Handlebar
+DESCRIPTION:heroes for ghosts and spiritless at the handlebar saturday august 15\, with local support from afterdusk and caving in. doors 6\, show 7. $15 at the door.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-27-handlebar-foxtide-braymores@diypensacola
+DTSTART;TZID=America/Chicago:20260827T190000
+DTEND;TZID=America/Chicago:20260827T220000
+SUMMARY:Foxtide\, Braymores @ The Handlebar
+DESCRIPTION:foxtide brings the entropy tour to the handlebar thursday\, august 27\, with braymores opening.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-11-handlebar-geordie-greep@diypensacola
+DTSTART;TZID=America/Chicago:20260911T190000
+DTEND;TZID=America/Chicago:20260911T220000
+SUMMARY:Geordie Greep @ The Handlebar
+DESCRIPTION:geordie greep live at the handlebar. friday\, september 11th.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-12-handlebar-nvsn-the-autumn-descent@diypensacola
+DTSTART;TZID=America/Chicago:20260912T190000
+DTEND;TZID=America/Chicago:20260912T220000
+SUMMARY:NVSN\, The Autumn Descent\, Caving In\, Hopout @ The Handlebar
+DESCRIPTION:nvsn with the autumn descent\, caving in\, and hopout at the handlebar. september 12th\, doors 7 and music at 8. $12 advance / $15 day of.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-14-handlebar-archers@diypensacola
+DTSTART;TZID=America/Chicago:20260914T190000
+DTEND;TZID=America/Chicago:20260914T220000
+SUMMARY:Archers\, Autumn Kings\, Pinknoise\, Coldstate @ The Handlebar
+DESCRIPTION:archers\, autumn kings\, pinknoise\, and coldstate at the handlebar. september 14. tickets at thehandlebar850.com.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-23-handlebar-dopethrone@diypensacola
+DTSTART;TZID=America/Chicago:20260923T190000
+DTEND;TZID=America/Chicago:20260923T220000
+SUMMARY:Dopethrone\, Fister\, Gnarled @ The Handlebar
+DESCRIPTION:dopethrone brings the uniworse usa tour part ii to the handlebar\, wednesday september 23. with support from fister and gnarled.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-26-handlebar-liliths-demise-delta-hate@diypensacola
+DTSTART;TZID=America/Chicago:20260926T150000
+DTEND;TZID=America/Chicago:20260926T180000
+SUMMARY:Lilith's Demise\, Delta Hate\, Claymore\, Stay Lost @ The Handlebar
+DESCRIPTION:panhandle slam jam 2 at the handlebar. lilith's demise\, delta hate\, and more all day long. september 26th\, doors 3 show 4. $20 advance / $30 door.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-27-handlebar-eyehategod@diypensacola
+DTSTART;TZID=America/Chicago:20260927T190000
+DTEND;TZID=America/Chicago:20260927T220000
+SUMMARY:Eyehategod\, Whores\, Nomas @ The Handlebar
+DESCRIPTION:eyehategod\, whores\, and nomas at the handlebar. september 27. tickets on sale now at thehandlebar850.com.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-10-handlebar-silent-theory@diypensacola
+DTSTART;TZID=America/Chicago:20261010T190000
+DTEND;TZID=America/Chicago:20261010T220000
+SUMMARY:Silent Theory\, Discrepancies\, Sick Century @ The Handlebar
+DESCRIPTION:silent theory at the handlebar saturday october 10 with discrepancies and sick century. tickets at silenttheory.com.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-22-handlebar-fenix-tx@diypensacola
+DTSTART;TZID=America/Chicago:20261022T190000
+DTEND;TZID=America/Chicago:20261022T220000
+SUMMARY:Fenix Tx\, Scream Out Loud\, Color The Void @ The Handlebar
+DESCRIPTION:fenix tx with scream out loud and color the void at the handlebar. thursday october 22. tickets at thehandlebar850.com.
+LOCATION:The Handlebar
+END:VEVENT
+END:VCALENDAR

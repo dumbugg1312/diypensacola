@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola: The Undergrowth
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-07-24-the-undergrowth-our-house-in-progress-diy-art-exhibition@diypensacola
+DTSTART;TZID=America/Chicago:20260724T160000
+DTEND;TZID=America/Chicago:20260724T190000
+SUMMARY:Our House (in progress) - DIY art exhibition @ The Undergrowth
+DESCRIPTION:the undergrowth presents our house (in progress)\, a diy art exhibition at our house\, 912 e hernandez st. july 24th\, 4-9pm. $10 entry\, proceeds split with local orgs.
+LOCATION:The Undergrowth
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-24-our-house-our-house-in-progress@diypensacola
+DTSTART;TZID=America/Chicago:20260724T160000
+DTEND;TZID=America/Chicago:20260724T190000
+SUMMARY:Our House (in progress) - DIY art exhibition @ The Undergrowth
+DESCRIPTION:the undergrowth presents our house (in progress)\, a diy art exhibition at our house\, 912 e hernandez st. july 24th\, 4-9pm. $10 entry\, proceeds split with local orgs.
+LOCATION:The Undergrowth
+END:VEVENT
+END:VCALENDAR

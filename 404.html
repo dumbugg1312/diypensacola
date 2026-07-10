@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-DyLHfa9eZexqhfl2jd5kHxgMfq+0hg8SnGgICwE4XdM='">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>page not found · DIYPensacola</title>
 <meta name="description" content="That page isn&#39;t on the wall anymore. The Pensacola DIY show calendar still is.">
@@ -22,6 +22,7 @@
 <div class="empty emptybig">
 <p class="ehead">this flyer got ripped down</p>
 <p>whatever was here is gone, moved, or the link's misspelled. the shows are still on, though.</p>
+<div id="didyoumean" hidden></div>
 <div class="eactions">
 <a class="dbtn" href="/">the calendar</a>
 <a class="dbtn" href="/archive.html">search the archive</a>
@@ -30,5 +31,43 @@
 </div>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>
-
+<script>(function(){
+function norm(s){return (s||'').toLowerCase().replace(/[^a-z0-9]+/g,'');}
+function grams(s){var b={},i;for(i=0;i<s.length-1;i++){var g=s.slice(i,i+2);b[g]=(b[g]||0)+1;}return b;}
+function dice(a,b){if(!a||!b)return 0;if(a===b)return 1;if(a.length<2||b.length<2)return 0;
+ var A=grams(a),B=grams(b),inter=0,ca=0,cb=0,k;
+ for(k in A){ca+=A[k];if(B[k])inter+=Math.min(A[k],B[k]);}for(k in B)cb+=B[k];
+ return (ca+cb)?2*inter/(ca+cb):0;}
+var seg=location.pathname.replace(/\/+$/,'').split('/').filter(Boolean);
+if(!seg.length)return;
+var cat=seg.length>1?seg[0]:'';
+var q=norm(seg[seg.length-1].replace(/\.[a-z0-9]+$/i,''));
+if(q.length<2)return;
+fetch('/search-index.json').then(function(r){return r.json();}).then(function(idx){
+ var pool=[];
+ (idx.bands||[]).forEach(function(x){pool.push({n:x.n,u:x.u,cat:'b'});});
+ (idx.venues||[]).forEach(function(x){pool.push({n:x.n,u:x.u,cat:'v'});});
+ (idx.shows||[]).forEach(function(x){pool.push({n:x.t+' '+x.v,u:x.u,cat:'s',d:x.d});});
+ var scored=[];
+ pool.forEach(function(x){
+  var slug=norm(x.u.split('/').pop().replace(/\.html$/,''));
+  var s=Math.max(dice(q,slug),dice(q,norm(x.n)));
+  if(cat&&x.cat===cat)s+=0.15;
+  if(s>0.34)scored.push({x:x,s:s});
+ });
+ scored.sort(function(a,b){return b.s-a.s;});
+ var top=scored.slice(0,6);
+ if(!top.length)return;
+ var box=document.getElementById('didyoumean');if(!box)return;
+ var h=document.createElement('p');h.className='ehead';h.style.fontSize='1rem';h.style.marginBottom='.6rem';
+ h.textContent='did you mean';
+ var wrap=document.createElement('div');wrap.className='eactions';
+ top.forEach(function(o){
+  var a=document.createElement('a');a.className='dbtn';a.href='/'+o.x.u;
+  var label=o.x.n;if(o.x.cat==='s'&&o.x.d)label=o.x.d+' · '+o.x.n;
+  a.textContent=label;wrap.appendChild(a);
+ });
+ box.appendChild(h);box.appendChild(wrap);box.hidden=false;
+}).catch(function(){});
+})();</script>
 </body></html>
