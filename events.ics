@@ -133,14 +133,6 @@ DESCRIPTION:obituary at the handlebar with modown\, exformation\, and d.r.e.a.d.
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-07-24-our-house-our-house-in-progress@diypensacola
-DTSTART;TZID=America/Chicago:20260724T160000
-DTEND;TZID=America/Chicago:20260724T190000
-SUMMARY:Our House (in progress) - DIY art exhibition @ Our House (912 E Hernandez St)
-DESCRIPTION:the undergrowth presents our house (in progress)\, a diy art exhibition at our house\, 912 e hernandez st. july 24th\, 4-9pm. $10 entry\, proceeds split with local orgs.
-LOCATION:Our House (912 E Hernandez St)
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-07-25-309-rainn-forrest-bea-hurd@diypensacola
 DTSTART;TZID=America/Chicago:20260725T180000
 DTEND;TZID=America/Chicago:20260725T210000
