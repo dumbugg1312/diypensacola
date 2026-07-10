@@ -594,6 +594,16 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .vstamps a:nth-child(even){transform:rotate(1.3deg)}
 .vstamps a:nth-child(odd){transform:rotate(-1.2deg)}
 .vstamps a:hover,.vstamps a:focus-visible{border-color:var(--hot);border-style:solid;color:var(--hotink)}
+.resume{list-style:none;margin:.9rem 0 .15rem;padding:0;max-width:36rem}
+.resume li{display:flex;align-items:baseline;gap:.85rem;padding:.32rem 0;border-bottom:1px dashed var(--line);
+  font:.86rem/1.5 "Special Elite","Courier New",monospace}
+.resume li:last-child{border-bottom:none}
+.resume .rk{flex:none;min-width:7.4rem;color:var(--dim);font-size:.66rem;text-transform:uppercase;letter-spacing:.09em}
+.resume .rv{color:var(--ink)}
+.resume .rv small{color:var(--dim);font-size:.72rem}
+.resume .rv a{color:var(--hotink);text-decoration-style:dotted;text-underline-offset:3px}
+.resume .rv a:hover,.resume .rv a:focus-visible{color:var(--ink);text-decoration-style:solid}
+@media (max-width:560px){.resume .rk{min-width:6rem}}
 .bandindex{columns:2;column-gap:2rem;max-width:760px}
 @media (max-width:560px){.bandindex{columns:1}}
 .bandindex a{display:block;padding:.32rem 0;border-bottom:1px dashed var(--line);text-decoration:none;color:var(--ink);break-inside:avoid}

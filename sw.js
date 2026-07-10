@@ -1,4 +1,4 @@
-var CACHE='diypensacola-10561d262d22';
+var CACHE='diypensacola-f0ac642d2b17';
 var CORE=['./','index.html','offline.html','logo.png','manifest.webmanifest','icon-192.png','icon-512.png','apple-touch-icon.png'];
 self.addEventListener('install',function(e){
   self.skipWaiting();
