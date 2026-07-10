@@ -24,7 +24,7 @@ BEGIN:VEVENT
 UID:2026-10-22-handlebar-fenix-tx@diypensacola
 DTSTART;TZID=America/Chicago:20261022T190000
 DTEND;TZID=America/Chicago:20261022T220000
-SUMMARY:Fenix Tx\, Scream Out Loud\, Color The Void @ The Handlebar
+SUMMARY:Fenix Tx\, Scream Out Loud\, Color the Void @ The Handlebar
 DESCRIPTION:fenix tx with scream out loud and color the void at the handlebar. thursday october 22. tickets at thehandlebar850.com.
 LOCATION:The Handlebar
 END:VEVENT

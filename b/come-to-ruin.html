@@ -575,8 +575,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .dirlist .meta{color:var(--dim);font-size:.85rem}
 /* act dossier masthead: the band page opens like the act's file in the scene's
    records. Tilted Anton name + a rotated inked stamp (local / on tour), the
-   show count as hand tally marks, the next gig as a cassette-tape banner, and
-   the venues they've hit as stamped chips linking to venue pages. All static,
+   show count as plain text, the next gig as a cassette-tape banner, and
+   the venues they've hit as chips linking to venue pages. All static,
    script-free, and built from the same zine tokens as the rest of the site. */
 .actmast{display:flex;align-items:baseline;gap:.85rem;flex-wrap:wrap}
 .actmast .dirhead{transform:rotate(-1deg);margin-bottom:.15rem}
@@ -585,12 +585,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   color:var(--hotink);transform:rotate(5deg);align-self:center}
 .ostamp.tour{color:var(--dim);transform:rotate(-4deg)}
 .tallyrow{display:flex;align-items:center;column-gap:.8rem;row-gap:.3rem;flex-wrap:wrap;margin:.55rem 0 .2rem}
-.tallyrow .marks{display:inline-flex;gap:.55rem;flex-wrap:wrap}
-.tgrp{display:inline-flex;gap:6px;position:relative;height:1.3rem;align-self:center}
-.tgrp i{width:4px;background:var(--ink);transform:rotate(2.5deg)}
-.tgrp i:nth-child(even){transform:rotate(-1.5deg)}
-.tgrp .x{position:absolute;left:-4px;right:-4px;top:45%;height:3px;width:auto;background:var(--hotink);
-  transform:rotate(-22deg);transform-origin:center}
 .tcap{color:var(--dim);font-size:.85rem}
 .tcap b{color:var(--ink);font-weight:400}
 .nextgig{display:inline-flex;align-items:baseline;gap:.55rem;background:var(--tape);color:#111;border:2px solid #111;
@@ -937,28 +931,25 @@ main{max-width:940px}
 .arcempty{border:2px dashed var(--line);background:var(--card);padding:1rem 1.2rem;margin:.6rem 0 1rem;
   font:.9rem/1.7 "Special Elite","Courier New",monospace;color:var(--dim);max-width:44rem}
 .arcempty .clearall{font:inherit;font-size:.8rem}
-/* the one search box: a big hero field whose results drop into a grouped panel */
+/* the one search box: a big hero field. In "search all" scope, typing surfaces
+   a few matching bands/venues inline right underneath (not a floating popover,
+   not a separate search) as a fast jump to a specific act or room. */
 .arcsearch{position:relative;margin:.2rem 0 1.1rem}
 .arcsearch>input{font-size:1rem;padding:.65rem .8rem}
-.archits{display:none}
-.archits.open{display:block;margin-top:.4rem;background:var(--card);border:2px solid var(--line);
+.quickmatch[hidden]{display:none}
+.quickmatch{margin-top:.4rem;background:var(--card);border:2px solid var(--line);
   box-shadow:3px 3px 0 var(--tape);max-height:60vh;overflow:auto;padding:.3rem 0}
-.archits .ahgroup{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.05em;
-  font-size:.7rem;color:var(--dim);padding:.5rem .8rem .2rem;border-top:1px dashed var(--line)}
-.archits .ahgroup:first-child{border-top:none}
-.archits a{display:block;font-size:.85rem;text-decoration:none;color:var(--ink);padding:.34rem .8rem}
-.archits a:hover,.archits a:focus-visible{background:var(--hot);color:var(--on-hot)}
-.archits a:hover small,.archits a:focus-visible small{color:var(--on-hot)}
-.archits a small{color:var(--dim)}
-.archits .ahnone{color:var(--dim);font-size:.82rem;padding:.5rem .8rem}
-/* scene-stats panel: folded into the archive as a collapsible section */
-.statspanel{border:2px dashed var(--line);background:var(--card);margin:1.6rem 0 0}
-.statspanel>summary{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.03em;
-  font-size:1rem;padding:.7rem .9rem;cursor:pointer;color:var(--hotink);list-style:none}
-.statspanel>summary::-webkit-details-marker{display:none}
-.statspanel>summary::after{content:" ▸";color:var(--dim)}
-.statspanel[open]>summary::after{content:" ▾"}
-.statsbody{padding:0 .9rem 1rem}
+.quickmatch .qmgroup{padding:0}
+.quickmatch h3{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.05em;
+  font-size:.7rem;color:var(--dim);margin:0;padding:.5rem .8rem .2rem;border-top:1px dashed var(--line);
+  display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+.quickmatch .qmgroup:first-child h3{border-top:none}
+.quickmatch a{display:block;font-size:.85rem;text-decoration:none;color:var(--ink);padding:.34rem .8rem}
+.quickmatch a:hover,.quickmatch a:focus-visible{background:var(--hot);color:var(--on-hot)}
+.quickmatch a:hover small,.quickmatch a:focus-visible small{color:var(--on-hot)}
+.quickmatch a small{color:var(--dim)}
+.qmmore{background:transparent;border:0;color:var(--hot);cursor:pointer;font:.68rem/1 inherit;
+  text-decoration:underline;text-transform:none;letter-spacing:0;white-space:nowrap}
 .arch li a.arow{color:var(--ink);text-decoration:none}
 .arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
 .arch li strong a{color:var(--ink);text-decoration:none}
@@ -970,20 +961,15 @@ main{max-width:940px}
 .flashback li:last-child{border-bottom:none}
 .flashback a{text-decoration:none}
 .flashback .yr{color:var(--dim);font-size:.72rem;margin-right:.4rem}
-/* manual browse-by: three tape-button accordion toggles above the search box,
-   for anyone who'd rather narrow by clicking into "bands/acts", "venues", or
-   "shows" than type one query. Each opens (only one at a time) a panel with its
-   own filter input over that category's full list, hidden until clicked so
-   they cost no room on the page until wanted. The main one-search box below is
-   untouched and always visible. */
+/* scope tabs: "search all" / "bands" / "venues" — tape-button tabs that pick
+   which dataset the one search box + refine rail + results pane below is
+   slicing. Not a separate panel: everything stays put, only the active tab
+   and the results underneath change. */
 .arcbrowse{display:flex;flex-wrap:wrap;gap:.6rem;margin:0 0 1rem}
 .browsetoggle{font:inherit;font-size:.85rem;cursor:pointer;color:#111;background:var(--tape);padding:.4rem .9rem;
   border:2px solid #111;box-shadow:3px 3px 0 var(--hot);text-transform:uppercase;letter-spacing:.05em}
 .browsetoggle:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
 .browsetoggle.on{background:var(--hot);color:var(--on-hot);box-shadow:1px 1px 0 var(--tape)}
-.bpanel{margin:0 0 1.1rem;background:var(--card);border:2px dashed var(--line);padding:.8rem}
-.bpanel .search{margin:0 0 .5rem}
-.bpcount{color:var(--dim);font-size:.78rem;margin:0 0 .4rem}
 /* ---- one-search refine: quick-pick presets, control bar, active chips, facet rail ---- */
 .activechips[hidden],.clearall[hidden],.filtn[hidden]{display:none!important}
 .arcpresets{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;margin:0 0 .5rem}
@@ -1074,10 +1060,10 @@ main{max-width:940px}
 <div class="heroinfo">
 <div class="actmast"><h1 class="dirhead">Come to Ruin</h1><span class="ostamp tour">on tour</span></div>
 <p class='dirsub'>touring / out-of-town band</p>
-<div class='tallyrow'><span class='marks' aria-hidden='true'><span class='tgrp'><i></i></span></span><span class='tcap'><b>1</b> show on the diypensacola record since 2026</span></div>
+<div class='tallyrow'><span class='tcap'><b>1</b> show on the diypensacola record since 2026</span></div>
 
 
-<div class='vstamps'><span class='lead'>stamped at</span><a href='../v/the-handlebar.html'>the handlebar</a></div>
+<div class='vstamps'><span class='lead'>played at</span><a href='../v/the-handlebar.html'>the handlebar</a></div>
 <div class="dactions"><a class="dbtn" href="https://cometoruin.bandcamp.com" target="_blank" rel="noopener">bandcamp &#8599;</a></div>
 </div>
 <a class='heropost' href='../flyers/2026-06-28_handlebar_children-of-judas.jpg' target='_blank' rel='noopener'><img src='../flyers/thumbs/2026-06-28_handlebar_children-of-judas.webp' alt='Come to Ruin flyer, Jun 28, 2026'><span class='hpcap'>Jun 28, 2026 &middot; the handlebar</span></a>

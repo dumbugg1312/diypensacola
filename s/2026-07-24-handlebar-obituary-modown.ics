@@ -24,7 +24,7 @@ BEGIN:VEVENT
 UID:2026-07-24-handlebar-obituary-modown@diypensacola
 DTSTART;TZID=America/Chicago:20260724T190000
 DTEND;TZID=America/Chicago:20260724T220000
-SUMMARY:Obituary\, Modown\, Exformation\, D.R.E.A.D. @ The Handlebar
+SUMMARY:Obituary\, Modown\, Exformation\, Dread @ The Handlebar
 DESCRIPTION:obituary at the handlebar with modown\, exformation\, and d.r.e.a.d. july 24th.
 LOCATION:The Handlebar
 END:VEVENT

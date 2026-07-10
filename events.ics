@@ -80,7 +80,7 @@ BEGIN:VEVENT
 UID:2026-07-19-handlebar-in-gloom@diypensacola
 DTSTART;TZID=America/Chicago:20260719T190000
 DTEND;TZID=America/Chicago:20260719T220000
-SUMMARY:In Gloom\, Innerwounds\, Fire Came Disparity\, Wraithbearer @ The Handlebar
+SUMMARY:In Gloom\, Innerwounds\, With Fire Came Disparity\, Wraithbearer @ The Handlebar
 DESCRIPTION:in gloom\, innerwounds\, with fire came disparity\, wraithbearer at the handlebar. sun jul 19\, doors 7 / music 8\, all ages. $10 adv / $15 door.
 LOCATION:The Handlebar
 END:VEVENT
@@ -88,7 +88,7 @@ BEGIN:VEVENT
 UID:2026-07-19-vinyl-music-hall-accursed-creator-rotted-remains@diypensacola
 DTSTART;TZID=America/Chicago:20260719T153000
 DTEND;TZID=America/Chicago:20260719T183000
-SUMMARY:Accursed Creator\, Rotted Remains\, Serrated FL\, Stress Wound\, Basilissa\, Pierce @ Vinyl Music Hall
+SUMMARY:Accursed Creator\, Rotted Remains\, Serrated\, Stress Wound\, Basilissa\, Pierce @ Vinyl Music Hall
 DESCRIPTION:accursed creator\, rotted remains\, serrated fl\, stress wound\, basilissa\, and pierce at vinyl music hall\, saturday july 19. doors 3:30\, show at 5. $10 suggested donation\, remembering nate flores.
 LOCATION:Vinyl Music Hall
 END:VEVENT
@@ -120,7 +120,7 @@ BEGIN:VEVENT
 UID:2026-07-24-handlebar-obituary-modown@diypensacola
 DTSTART;TZID=America/Chicago:20260724T190000
 DTEND;TZID=America/Chicago:20260724T220000
-SUMMARY:Obituary\, Modown\, Exformation\, D.R.E.A.D. @ The Handlebar
+SUMMARY:Obituary\, Modown\, Exformation\, Dread @ The Handlebar
 DESCRIPTION:obituary at the handlebar with modown\, exformation\, and d.r.e.a.d. july 24th.
 LOCATION:The Handlebar
 END:VEVENT
@@ -168,7 +168,7 @@ BEGIN:VEVENT
 UID:2026-08-27-bettys-ramblin-ricky-tate@diypensacola
 DTSTART;TZID=America/Chicago:20260827T190000
 DTEND;TZID=America/Chicago:20260827T220000
-SUMMARY:Bryan Raymond\, Ramblin Ricky Tate\, STUFY\, Good Night Geezer @ Betty's
+SUMMARY:Bryan Raymond\, Ramblin Ricky Tate\, Stufy\, Good Night Geezer @ Betty's
 DESCRIPTION:bryan raymond and ramblin ricky tate bring the hot sauce hell raisers tour to betty's. thursday august 27\, 506 w belmont. with stufy and good night geezer.
 LOCATION:Betty's
 END:VEVENT
@@ -216,7 +216,7 @@ BEGIN:VEVENT
 UID:2026-09-27-handlebar-eyehategod@diypensacola
 DTSTART;TZID=America/Chicago:20260927T190000
 DTEND;TZID=America/Chicago:20260927T220000
-SUMMARY:Eyehategod\, Whores\, Nomas @ The Handlebar
+SUMMARY:Eyehategod\, Whores\, No Mas @ The Handlebar
 DESCRIPTION:eyehategod\, whores\, and nomas at the handlebar. september 27. tickets on sale now at thehandlebar850.com.
 LOCATION:The Handlebar
 END:VEVENT
@@ -232,7 +232,7 @@ BEGIN:VEVENT
 UID:2026-10-22-handlebar-fenix-tx@diypensacola
 DTSTART;TZID=America/Chicago:20261022T190000
 DTEND;TZID=America/Chicago:20261022T220000
-SUMMARY:Fenix Tx\, Scream Out Loud\, Color The Void @ The Handlebar
+SUMMARY:Fenix Tx\, Scream Out Loud\, Color the Void @ The Handlebar
 DESCRIPTION:fenix tx with scream out loud and color the void at the handlebar. thursday october 22. tickets at thehandlebar850.com.
 LOCATION:The Handlebar
 END:VEVENT

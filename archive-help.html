@@ -579,8 +579,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .dirlist .meta{color:var(--dim);font-size:.85rem}
 /* act dossier masthead: the band page opens like the act's file in the scene's
    records. Tilted Anton name + a rotated inked stamp (local / on tour), the
-   show count as hand tally marks, the next gig as a cassette-tape banner, and
-   the venues they've hit as stamped chips linking to venue pages. All static,
+   show count as plain text, the next gig as a cassette-tape banner, and
+   the venues they've hit as chips linking to venue pages. All static,
    script-free, and built from the same zine tokens as the rest of the site. */
 .actmast{display:flex;align-items:baseline;gap:.85rem;flex-wrap:wrap}
 .actmast .dirhead{transform:rotate(-1deg);margin-bottom:.15rem}
@@ -589,12 +589,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   color:var(--hotink);transform:rotate(5deg);align-self:center}
 .ostamp.tour{color:var(--dim);transform:rotate(-4deg)}
 .tallyrow{display:flex;align-items:center;column-gap:.8rem;row-gap:.3rem;flex-wrap:wrap;margin:.55rem 0 .2rem}
-.tallyrow .marks{display:inline-flex;gap:.55rem;flex-wrap:wrap}
-.tgrp{display:inline-flex;gap:6px;position:relative;height:1.3rem;align-self:center}
-.tgrp i{width:4px;background:var(--ink);transform:rotate(2.5deg)}
-.tgrp i:nth-child(even){transform:rotate(-1.5deg)}
-.tgrp .x{position:absolute;left:-4px;right:-4px;top:45%;height:3px;width:auto;background:var(--hotink);
-  transform:rotate(-22deg);transform-origin:center}
 .tcap{color:var(--dim);font-size:.85rem}
 .tcap b{color:var(--ink);font-weight:400}
 .nextgig{display:inline-flex;align-items:baseline;gap:.55rem;background:var(--tape);color:#111;border:2px solid #111;
@@ -941,28 +935,25 @@ main{max-width:940px}
 .arcempty{border:2px dashed var(--line);background:var(--card);padding:1rem 1.2rem;margin:.6rem 0 1rem;
   font:.9rem/1.7 "Special Elite","Courier New",monospace;color:var(--dim);max-width:44rem}
 .arcempty .clearall{font:inherit;font-size:.8rem}
-/* the one search box: a big hero field whose results drop into a grouped panel */
+/* the one search box: a big hero field. In "search all" scope, typing surfaces
+   a few matching bands/venues inline right underneath (not a floating popover,
+   not a separate search) as a fast jump to a specific act or room. */
 .arcsearch{position:relative;margin:.2rem 0 1.1rem}
 .arcsearch>input{font-size:1rem;padding:.65rem .8rem}
-.archits{display:none}
-.archits.open{display:block;margin-top:.4rem;background:var(--card);border:2px solid var(--line);
+.quickmatch[hidden]{display:none}
+.quickmatch{margin-top:.4rem;background:var(--card);border:2px solid var(--line);
   box-shadow:3px 3px 0 var(--tape);max-height:60vh;overflow:auto;padding:.3rem 0}
-.archits .ahgroup{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.05em;
-  font-size:.7rem;color:var(--dim);padding:.5rem .8rem .2rem;border-top:1px dashed var(--line)}
-.archits .ahgroup:first-child{border-top:none}
-.archits a{display:block;font-size:.85rem;text-decoration:none;color:var(--ink);padding:.34rem .8rem}
-.archits a:hover,.archits a:focus-visible{background:var(--hot);color:var(--on-hot)}
-.archits a:hover small,.archits a:focus-visible small{color:var(--on-hot)}
-.archits a small{color:var(--dim)}
-.archits .ahnone{color:var(--dim);font-size:.82rem;padding:.5rem .8rem}
-/* scene-stats panel: folded into the archive as a collapsible section */
-.statspanel{border:2px dashed var(--line);background:var(--card);margin:1.6rem 0 0}
-.statspanel>summary{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.03em;
-  font-size:1rem;padding:.7rem .9rem;cursor:pointer;color:var(--hotink);list-style:none}
-.statspanel>summary::-webkit-details-marker{display:none}
-.statspanel>summary::after{content:" ▸";color:var(--dim)}
-.statspanel[open]>summary::after{content:" ▾"}
-.statsbody{padding:0 .9rem 1rem}
+.quickmatch .qmgroup{padding:0}
+.quickmatch h3{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.05em;
+  font-size:.7rem;color:var(--dim);margin:0;padding:.5rem .8rem .2rem;border-top:1px dashed var(--line);
+  display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+.quickmatch .qmgroup:first-child h3{border-top:none}
+.quickmatch a{display:block;font-size:.85rem;text-decoration:none;color:var(--ink);padding:.34rem .8rem}
+.quickmatch a:hover,.quickmatch a:focus-visible{background:var(--hot);color:var(--on-hot)}
+.quickmatch a:hover small,.quickmatch a:focus-visible small{color:var(--on-hot)}
+.quickmatch a small{color:var(--dim)}
+.qmmore{background:transparent;border:0;color:var(--hot);cursor:pointer;font:.68rem/1 inherit;
+  text-decoration:underline;text-transform:none;letter-spacing:0;white-space:nowrap}
 .arch li a.arow{color:var(--ink);text-decoration:none}
 .arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
 .arch li strong a{color:var(--ink);text-decoration:none}
@@ -974,20 +965,15 @@ main{max-width:940px}
 .flashback li:last-child{border-bottom:none}
 .flashback a{text-decoration:none}
 .flashback .yr{color:var(--dim);font-size:.72rem;margin-right:.4rem}
-/* manual browse-by: three tape-button accordion toggles above the search box,
-   for anyone who'd rather narrow by clicking into "bands/acts", "venues", or
-   "shows" than type one query. Each opens (only one at a time) a panel with its
-   own filter input over that category's full list, hidden until clicked so
-   they cost no room on the page until wanted. The main one-search box below is
-   untouched and always visible. */
+/* scope tabs: "search all" / "bands" / "venues" — tape-button tabs that pick
+   which dataset the one search box + refine rail + results pane below is
+   slicing. Not a separate panel: everything stays put, only the active tab
+   and the results underneath change. */
 .arcbrowse{display:flex;flex-wrap:wrap;gap:.6rem;margin:0 0 1rem}
 .browsetoggle{font:inherit;font-size:.85rem;cursor:pointer;color:#111;background:var(--tape);padding:.4rem .9rem;
   border:2px solid #111;box-shadow:3px 3px 0 var(--hot);text-transform:uppercase;letter-spacing:.05em}
 .browsetoggle:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
 .browsetoggle.on{background:var(--hot);color:var(--on-hot);box-shadow:1px 1px 0 var(--tape)}
-.bpanel{margin:0 0 1.1rem;background:var(--card);border:2px dashed var(--line);padding:.8rem}
-.bpanel .search{margin:0 0 .5rem}
-.bpcount{color:var(--dim);font-size:.78rem;margin:0 0 .4rem}
 /* ---- one-search refine: quick-pick presets, control bar, active chips, facet rail ---- */
 .activechips[hidden],.clearall[hidden],.filtn[hidden]{display:none!important}
 .arcpresets{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;margin:0 0 .5rem}
@@ -1075,7 +1061,7 @@ main{max-width:940px}
 <header><a class="home" href="./"><img src="logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="./">shows</a><a href="archive.html">archive &amp; search</a><a href="guide.html">guide</a><a href="submit.html">submit</a></nav></header>
 <main class="spwrap archelp">
 <h1 class="dirhead">how to use the archive</h1>
-<p class="dcap">the archive is more than a list of old flyers. it works like the "one search" tool at a library: type to jump straight to a band, venue, or night, or open <b>refine</b> and stack filters to carve the whole record down to exactly the shows you mean. every count updates as you go, so you are never guessing what is left. here is how to get the most out of it.</p><article class="spcard"><div class="spinfo"><h2>the search box</h2><p>start typing a name and the box surfaces three kinds of match at once:</p><ul class="submitlist"><li><b>bands &amp; acts</b> &rarr; jumps to that act’s page (every show they played, plus links and any live video)</li><li><b>venues</b> &rarr; jumps to that room’s page</li><li><b>shows</b> &rarr; opens that specific night</li></ul><p>it also narrows the list below as you type, so even a partial name (&ldquo;man&rdquo;, &ldquo;308&rdquo;) is enough to close in.</p></div></article><article class="spcard"><div class="spinfo"><h2>the refine panel</h2><p>tap <b>filters</b> (or use the rail on a wide screen) to open the facets. each one slices the record a different way:</p><ul class="submitlist"><li><b>year</b> &mdash; every year we have flyers for</li><li><b>where</b> &mdash; the venue / room</li><li><b>who played</b> &mdash; bands, drag &amp; cabaret, poetry &amp; spoken word, comedy, djs, performers, or recurring happenings</li><li><b>scene</b> &mdash; local acts vs touring acts</li><li><b>cover</b> &mdash; free, sliding scale / donation, or paid</li><li><b>ages</b> &mdash; all ages, 18+, or 21+</li><li><b>night of the week</b> &mdash; monday through sunday</li></ul><p>two rules make it powerful:</p><ul class="submitlist"><li>pick <b>more than one value in the same facet</b> and it means <b>either</b> (drag <em>or</em> poetry).</li><li>pick values <b>across different facets</b> and it means <b>all of them</b> (all-ages <em>and</em> free <em>and</em> at Betty’s).</li></ul><p>the number next to every value is a <b>live count</b>: it always shows how many shows you would get if you added that filter to the ones already on, so a zero-count option just disappears. the chips across the top are your active filters &mdash; tap any to drop it, or hit <b>clear all</b> to start over.</p></div></article><article class="spcard"><div class="spinfo"><h2>quick picks &amp; sorting</h2><p><b>quick picks</b> are one-tap shortcuts for the most common searches (free shows, all-ages, touring acts, drag, poetry, has-a-flyer). they set the same facets you could set by hand &mdash; just faster.</p><p><b>sort</b> flips the whole list newest-first or oldest-first. oldest-first is the one to use when you want to read a run of history in order.</p><p><b>flyer wall</b> swaps the list for a wall of every flyer at once &mdash; great for a nostalgia scroll or to spot a show by its art.</p></div></article><article class="spcard"><div class="spinfo"><h2>try this &mdash; real digs</h2><p class="dcap">a few things people actually come to the archive for, and the fastest way to pull each one:</p><ul class="submitlist caselist"><li><b>i went to a show but forgot who played</b><br>pick the <b>year</b>, the <b>venue</b>, and the <b>night of the week</b> you remember. that usually cuts 1,000+ shows down to a handful you can eyeball.</li><li><b>what touring bands have rolled through pensacola</b><br>open <b>scene &rarr; touring acts</b>, then set <b>sort</b> to oldest-first to read them in the order they came through.</li><li><b>shows at a venue that are marked all-ages</b><br>pick the room under <b>where</b>, then <b>all ages</b> under <b>ages</b>. add <b>free</b> under cover if you only want the no-cover ones &mdash; note this only catches shows whose flyer actually stated an age policy, not every all-ages show that room has hosted.</li><li><b>free drag or cabaret nights</b><br>tap the <b>drag / cabaret</b> and <b>free shows</b> quick picks. the counts show how common they are, and the flyer wall shows them off.</li><li><b>what was happening the year i moved here</b><br>pick that <b>year</b>. flip to the <b>flyer wall</b> for the whole season at a glance, or search a venue you remember to narrow it.</li><li><b>track one band’s whole history with the scene</b><br>type their name in the search box and open their act page &mdash; it lists every night they played, who they shared bills with, and where.</li><li><b>which room booked the most punk in a given year</b><br>pick the <b>year</b>, then read the counts in the <b>where</b> facet: they re-rank to that year, so the busiest room floats to the top.</li></ul></div></article><article class="spcard"><div class="spinfo"><h2>good to know</h2><ul class="submitlist"><li>the archive is built <b>from the flyers we have logged</b>, so the early years are thinner &mdash; the shape of the scene is real, but it is not every show that ever happened.</li><li>a facet like <b>ages</b>, <b>cover</b>, or <b>scene</b> only fills in when a flyer or post stated it outright. no tag is not a no &mdash; it usually just means that flyer did not say, so filtering by a facet can undercount shows that would qualify but were not marked.</li><li>every show, even an old one, has <b>its own permanent page</b> you can link or share.</li><li>spot something wrong &mdash; a mislabeled act, a missing show? <a href="submit.html">send it in</a> and we will fix the record.</li></ul></div></article><p class="spback"><a href="archive.html">&#8592; back to the archive</a> &middot; <a href="./">the calendar</a></p>
+<p class="dcap">the archive is more than a list of old flyers. it works like the "one search" tool at a library: type to narrow in on a band, venue, or night, or open <b>refine</b> and stack filters to carve the record down to exactly what you mean. every count updates as you go, so you are never guessing what is left. here is how to get the most out of it.</p><article class="spcard"><div class="spinfo"><h2>one search, three scopes</h2><p>three tabs above the search box pick what it (and the refine panel below) is looking at:</p><ul class="submitlist"><li><b>search all</b>, the default &rarr; the show list, the record night by night</li><li><b>bands / acts</b> &rarr; every act on the record, a to z, instead of every night</li><li><b>venues</b> &rarr; every room, a to z</li></ul><p>switching tabs does not open a new page or a popup. it is the same search box, the same refine panel, the same results pane below &mdash; just pointed at a different list. type a name and it narrows whichever list is active; stack refine filters and they narrow that same list too, so <b>drag &amp; cabaret</b> under <b>who played</b> while on the <b>bands</b> tab shows every drag/cabaret act on the record, not just their individual shows.</p><p>while you are on <b>search all</b>, typing also surfaces a few matching bands and venues right under the box, with a <b>see all</b> link that jumps to that tab with your search still in it.</p></div></article><article class="spcard"><div class="spinfo"><h2>the refine panel</h2><p>tap <b>filters</b> (or use the rail on a wide screen) to open the facets. each one slices whichever list the current tab is showing:</p><ul class="submitlist"><li><b>year</b>: every year we have flyers for</li><li><b>where</b>: the venue / room</li><li><b>who played</b>: bands, drag &amp; cabaret, poetry &amp; spoken word, comedy, djs, performers, or recurring happenings</li><li><b>scene</b>: local acts vs touring acts</li><li><b>cover</b>: free, sliding scale / donation, or paid</li><li><b>ages</b>: all ages, 18+, or 21+</li><li><b>night of the week</b>: monday through sunday</li></ul><p>two rules make it powerful:</p><ul class="submitlist"><li>pick <b>more than one value in the same facet</b> and it means <b>either</b> (drag <em>or</em> poetry).</li><li>pick values <b>across different facets</b> and it means <b>all of them</b> (all-ages <em>and</em> free <em>and</em> at Betty’s).</li></ul><p>the number next to every value is a <b>live count</b>: it always shows how many results you would get &mdash; shows, bands, or venues, whichever tab is active &mdash; if you added that filter to the ones already on, so a zero-count option just disappears. on the <b>venues</b> tab the <b>where</b> facet drops out, since narrowing venues by venue is not useful. the chips across the top are your active filters. tap any to drop it, or hit <b>clear all</b> to start over.</p></div></article><article class="spcard"><div class="spinfo"><h2>quick picks &amp; sorting</h2><p><b>quick picks</b> are one-tap shortcuts for the most common searches (free shows, all-ages, touring acts, drag, poetry, has-a-flyer). they set the same facets you could set by hand, just faster, on whichever tab you are on.</p><p><b>sort</b> flips the show list newest-first or oldest-first; on the <b>bands</b> or <b>venues</b> tab it instead reads a to z or most shows first. oldest-first is the one to use when you want to read a run of history in order.</p><p><b>flyer wall</b> (search all tab only) swaps the list for a wall of every flyer at once, great for a nostalgia scroll or to spot a show by its art.</p></div></article><article class="spcard"><div class="spinfo"><h2>try this: real digs</h2><p class="dcap">a few things people actually come to the archive for, and the fastest way to pull each one:</p><ul class="submitlist caselist"><li><b>i went to a show but forgot who played</b><br>pick the <b>year</b>, the <b>venue</b>, and the <b>night of the week</b> you remember. that usually cuts 1,000+ shows down to a handful you can eyeball.</li><li><b>what touring bands have rolled through pensacola</b><br>open <b>scene &rarr; touring acts</b>, then set <b>sort</b> to oldest-first to read them in the order they came through.</li><li><b>shows at a venue that are marked all-ages</b><br>pick the room under <b>where</b>, then <b>all ages</b> under <b>ages</b>. add <b>free</b> under cover if you only want the no-cover ones. note this only catches shows whose flyer actually stated an age policy, not every all-ages show that room has hosted.</li><li><b>free drag or cabaret nights</b><br>tap the <b>drag / cabaret</b> and <b>free shows</b> quick picks. the counts show how common they are, and the flyer wall shows them off.</li><li><b>what was happening the year i moved here</b><br>pick that <b>year</b>. flip to the <b>flyer wall</b> for the whole season at a glance, or search a venue you remember to narrow it.</li><li><b>track one band’s whole history with the scene</b><br>type their name in the search box and open their act page. it lists every night they played, who they shared bills with, and where.</li><li><b>which room booked the most punk in a given year</b><br>pick the <b>year</b>, then read the counts in the <b>where</b> facet: they re-rank to that year, so the busiest room floats to the top.</li></ul></div></article><article class="spcard"><div class="spinfo"><h2>good to know</h2><ul class="submitlist"><li>the archive is built <b>from the flyers we have logged</b>, so the early years are thinner. the shape of the scene is real, but it is not every show that ever happened.</li><li>a facet like <b>ages</b>, <b>cover</b>, or <b>scene</b> only fills in when a flyer or post stated it outright. no tag is not a no, it usually just means that flyer did not say, so filtering by a facet can undercount shows that would qualify but were not marked.</li><li>every show, even an old one, has <b>its own permanent page</b> you can link or share.</li><li>spot something wrong: a mislabeled act, a missing show? <a href="submit.html">send it in</a> and we will fix the record.</li></ul></div></article><p class="spback"><a href="archive.html">&#8592; back to the archive</a> &middot; <a href="./">the calendar</a></p>
 </main>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>
 </body></html>
