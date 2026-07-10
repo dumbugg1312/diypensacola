@@ -21,14 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-07-09-bettys-shidded@diypensacola
-DTSTART;TZID=America/Chicago:20260709T200000
-DTEND;TZID=America/Chicago:20260709T230000
-SUMMARY:Shidded\, Machina\, Ihatesundays @ Betty's
-DESCRIPTION:shidded\, machina\, and ihatesundays at betty's on belmont thursday july 9th. doors 8pm.
-LOCATION:Betty's
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-07-10-309-vixen-valentine@diypensacola
 DTSTART;TZID=America/Chicago:20260710T180000
 DTEND;TZID=America/Chicago:20260710T210000
