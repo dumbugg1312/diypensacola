@@ -63,15 +63,14 @@ header h1 a{color:inherit;text-decoration:none}
 .modetab:not(.on):hover{color:var(--ink)}
 .modetab:active{transform:none}
 /* the archive reuses the homepage's big centered masthead (logo + wordmark +
-   mode tabs + standard links) instead of the compact subpage header, so neither
-   half of the site reads as a lesser page. .bighead overrides .showpage header. */
+   mode tabs + standard links) instead of the compact left-aligned flex header
+   ".showpage header" below gets on every other subpage, so neither half of the
+   site reads as a lesser page. .bighead re-overrides display/text-align back to
+   the homepage's centered block layout; it must NOT touch logo/tag sizing (that
+   used to drift the archive's masthead smaller than the calendar's — removed,
+   so both pages inherit the exact same header/.logo/.tag rules above). */
 .showpage header.bighead{display:block;text-align:center;padding:2.2rem 1rem .3rem}
-.bighead .logo{width:150px;height:150px;display:block;margin:0 auto .5rem;filter:drop-shadow(0 0 14px rgba(255,255,255,.18))}
-.bighead h1{margin:0}
-.bighead h1 a{color:inherit;text-decoration:none}
-.bighead .tag{color:var(--dim);margin:.6rem 0 0;font-size:.9rem}
 @media (max-width:640px){
-  .bighead .logo{width:120px;height:120px}
   .modetab{font-size:.72rem;padding:.14rem .85rem .12rem}
 }
 /* TONIGHT strip: a stapled-on "what's on tonight" slip above the feed. Hidden by
@@ -346,8 +345,12 @@ main section:target{animation:viewin .26s ease both}
   h1{font-size:clamp(2.2rem,11.5vw,3.05rem)}  /* fits "DIYPENSACOLA" (12ch, 7.23em wide) on phones down to 320px */
   header .tag{font-size:.83rem;margin-top:.5rem;line-height:1.45}
 
-  .links{gap:.5rem;padding:.7rem .85rem .15rem}
-  .links a{font-size:.8rem;padding:.55rem .9rem}
+  /* 8 buttons, always 2 rows of 4 (never the 3-4 ragged rows flex-wrap gave us):
+     a fixed 4-col grid + shrunk type that wraps within the button instead of
+     forcing the button wider than its column. */
+  .links{display:grid;grid-template-columns:repeat(4,1fr);gap:.45rem .35rem;padding:.7rem .85rem .15rem;max-width:100%}
+  .links a{font-size:.62rem;padding:.5rem .3rem;text-align:center;line-height:1.25}
+  .links a:nth-child(odd),.links a:nth-child(even){transform:none}
 
   /* sticky segmented view-switcher — always one tap away */
   /* sticks below the install banner when it's up: --a2hs-h (set by JS to the
@@ -967,6 +970,20 @@ main{max-width:940px}
 .flashback li:last-child{border-bottom:none}
 .flashback a{text-decoration:none}
 .flashback .yr{color:var(--dim);font-size:.72rem;margin-right:.4rem}
+/* manual browse-by: three tape-button accordion toggles above the search box,
+   for anyone who'd rather narrow by clicking into "bands/acts", "venues", or
+   "shows" than type one query. Each opens (only one at a time) a panel with its
+   own filter input over that category's full list, hidden until clicked so
+   they cost no room on the page until wanted. The main one-search box below is
+   untouched and always visible. */
+.arcbrowse{display:flex;flex-wrap:wrap;gap:.6rem;margin:0 0 1rem}
+.browsetoggle{font:inherit;font-size:.85rem;cursor:pointer;color:#111;background:var(--tape);padding:.4rem .9rem;
+  border:2px solid #111;box-shadow:3px 3px 0 var(--hot);text-transform:uppercase;letter-spacing:.05em}
+.browsetoggle:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
+.browsetoggle.on{background:var(--hot);color:var(--on-hot);box-shadow:1px 1px 0 var(--tape)}
+.bpanel{margin:0 0 1.1rem;background:var(--card);border:2px dashed var(--line);padding:.8rem}
+.bpanel .search{margin:0 0 .5rem}
+.bpcount{color:var(--dim);font-size:.78rem;margin:0 0 .4rem}
 /* ---- one-search refine: quick-pick presets, control bar, active chips, facet rail ---- */
 .activechips[hidden],.clearall[hidden],.filtn[hidden]{display:none!important}
 .arcpresets{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;margin:0 0 .5rem}
@@ -1069,7 +1086,7 @@ main{max-width:940px}
 <p class="dirnote">act pages are built automatically from the show archive, so something may be off: a misspelled name, a missing link, the wrong type, or a bad local/touring call. no disrespect meant. wrong on any of that, or want a listen link (youtube or bandcamp) or live footage added? <a href='../submit.html'>send it in</a>.</p>
 <p class="spback"><a href="../archive.html">&#8592; search the archive</a> · <a href="../">calendar</a></p>
 </main>
-<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "MusicGroup", "name": "Dropout Kings", "url": "https://diypensacola.com/b/dropout-kings.html", "sameAs": ["https://dropoutkings.bandcamp.com"], "image": "https://diypensacola.com/flyers/2026-05-17_the-handlebar_dropout-kings.jpg"}]</script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "MusicGroup", "name": "Dropout Kings", "url": "https://diypensacola.com/b/dropout-kings.html", "sameAs": ["https://dropoutkings.bandcamp.com"], "image": "https://diypensacola.com/flyers/2026-05-17_the-handlebar_dropout-kings.jpg"}]</script><script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "diypensacola", "item": "https://diypensacola.com/"}, {"@type": "ListItem", "position": 2, "name": "archive", "item": "https://diypensacola.com/archive.html"}, {"@type": "ListItem", "position": 3, "name": "Dropout Kings"}]}]</script>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>
 
 </body></html>

@@ -2,13 +2,13 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Vinyl Music Hall · shows · DIYPensacola</title>
-<meta name="description" content="DIY and punk shows at Vinyl Music Hall in Pensacola, FL: what&#39;s coming up and everything that&#39;s happened there.">
+<meta name="description" content="Vinyl Music Hall on the DIYPensacola record: 13 DIY and punk shows since 2021 in Pensacola, FL. Dates, flyers, and directions.">
 <meta name="theme-color" content="#0c0c0d">
 <link rel="canonical" href="https://diypensacola.com/v/vinyl-music-hall.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DIYPensacola">
 <meta property="og:title" content="Vinyl Music Hall · shows · DIYPensacola">
-<meta property="og:description" content="DIY and punk shows at Vinyl Music Hall in Pensacola, FL: what&#39;s coming up and everything that&#39;s happened there.">
+<meta property="og:description" content="Vinyl Music Hall on the DIYPensacola record: 13 DIY and punk shows since 2021 in Pensacola, FL. Dates, flyers, and directions.">
 <meta property="og:url" content="https://diypensacola.com/v/vinyl-music-hall.html">
 <meta property="og:image" content="https://diypensacola.com/flyers/2026-07-19_vinyl-music-hall_accursed-creator.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -63,15 +63,14 @@ header h1 a{color:inherit;text-decoration:none}
 .modetab:not(.on):hover{color:var(--ink)}
 .modetab:active{transform:none}
 /* the archive reuses the homepage's big centered masthead (logo + wordmark +
-   mode tabs + standard links) instead of the compact subpage header, so neither
-   half of the site reads as a lesser page. .bighead overrides .showpage header. */
+   mode tabs + standard links) instead of the compact left-aligned flex header
+   ".showpage header" below gets on every other subpage, so neither half of the
+   site reads as a lesser page. .bighead re-overrides display/text-align back to
+   the homepage's centered block layout; it must NOT touch logo/tag sizing (that
+   used to drift the archive's masthead smaller than the calendar's — removed,
+   so both pages inherit the exact same header/.logo/.tag rules above). */
 .showpage header.bighead{display:block;text-align:center;padding:2.2rem 1rem .3rem}
-.bighead .logo{width:150px;height:150px;display:block;margin:0 auto .5rem;filter:drop-shadow(0 0 14px rgba(255,255,255,.18))}
-.bighead h1{margin:0}
-.bighead h1 a{color:inherit;text-decoration:none}
-.bighead .tag{color:var(--dim);margin:.6rem 0 0;font-size:.9rem}
 @media (max-width:640px){
-  .bighead .logo{width:120px;height:120px}
   .modetab{font-size:.72rem;padding:.14rem .85rem .12rem}
 }
 /* TONIGHT strip: a stapled-on "what's on tonight" slip above the feed. Hidden by
@@ -346,8 +345,12 @@ main section:target{animation:viewin .26s ease both}
   h1{font-size:clamp(2.2rem,11.5vw,3.05rem)}  /* fits "DIYPENSACOLA" (12ch, 7.23em wide) on phones down to 320px */
   header .tag{font-size:.83rem;margin-top:.5rem;line-height:1.45}
 
-  .links{gap:.5rem;padding:.7rem .85rem .15rem}
-  .links a{font-size:.8rem;padding:.55rem .9rem}
+  /* 8 buttons, always 2 rows of 4 (never the 3-4 ragged rows flex-wrap gave us):
+     a fixed 4-col grid + shrunk type that wraps within the button instead of
+     forcing the button wider than its column. */
+  .links{display:grid;grid-template-columns:repeat(4,1fr);gap:.45rem .35rem;padding:.7rem .85rem .15rem;max-width:100%}
+  .links a{font-size:.62rem;padding:.5rem .3rem;text-align:center;line-height:1.25}
+  .links a:nth-child(odd),.links a:nth-child(even){transform:none}
 
   /* sticky segmented view-switcher — always one tap away */
   /* sticks below the install banner when it's up: --a2hs-h (set by JS to the
@@ -967,6 +970,20 @@ main{max-width:940px}
 .flashback li:last-child{border-bottom:none}
 .flashback a{text-decoration:none}
 .flashback .yr{color:var(--dim);font-size:.72rem;margin-right:.4rem}
+/* manual browse-by: three tape-button accordion toggles above the search box,
+   for anyone who'd rather narrow by clicking into "bands/acts", "venues", or
+   "shows" than type one query. Each opens (only one at a time) a panel with its
+   own filter input over that category's full list, hidden until clicked so
+   they cost no room on the page until wanted. The main one-search box below is
+   untouched and always visible. */
+.arcbrowse{display:flex;flex-wrap:wrap;gap:.6rem;margin:0 0 1rem}
+.browsetoggle{font:inherit;font-size:.85rem;cursor:pointer;color:#111;background:var(--tape);padding:.4rem .9rem;
+  border:2px solid #111;box-shadow:3px 3px 0 var(--hot);text-transform:uppercase;letter-spacing:.05em}
+.browsetoggle:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
+.browsetoggle.on{background:var(--hot);color:var(--on-hot);box-shadow:1px 1px 0 var(--tape)}
+.bpanel{margin:0 0 1.1rem;background:var(--card);border:2px dashed var(--line);padding:.8rem}
+.bpanel .search{margin:0 0 .5rem}
+.bpcount{color:var(--dim);font-size:.78rem;margin:0 0 .4rem}
 /* ---- one-search refine: quick-pick presets, control bar, active chips, facet rail ---- */
 .activechips[hidden],.clearall[hidden],.filtn[hidden]{display:none!important}
 .arcpresets{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;margin:0 0 .5rem}
@@ -1066,6 +1083,7 @@ main{max-width:940px}
 <h2 class='dirsec'>upcoming</h2><ul class='gigledger'><li class='up'><span class='gdate'><b>19</b><i>Jul 2026</i></span><span class='gwho'><a href='../s/2026-07-19-vinyl-music-hall-accursed-creator-rotted-remains.html'>Accursed Creator, Rotted Remains, Serrated FL, Stress Wound, Basilissa, Pierce</a></span></li></ul><h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2025-12-20_vinyl-music-hall_heart-of-glass.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-12-20_vinyl-music-hall_heart-of-glass.webp' alt='flyer, Dec 20, 2025'><span class='pwcap'>Dec 20, 2025 &middot; heart of glass, morones</span></a><a class='pwtile' href='../flyers/2024-09-12_vinyl-music-hall_dead-kennedys.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2024-09-12_vinyl-music-hall_dead-kennedys.webp' alt='flyer, Sep 12, 2024'><span class='pwcap'>Sep 12, 2024 &middot; dead kennedys, makewar +1</span></a><a class='pwtile' href='../flyers/2024-04-12_vinyl-music-hall_precubed.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2024-04-12_vinyl-music-hall_precubed.webp' alt='flyer, Apr 12, 2024'><span class='pwcap'>Apr 12, 2024 &middot; precubed, ego death +2</span></a><a class='pwtile' href='../flyers/2023-07-09_vinyl-music-hall_9th-ave-brass-band.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-07-09_vinyl-music-hall_9th-ave-brass-band.webp' alt='flyer, Jul 9, 2023'><span class='pwcap'>Jul 9, 2023 &middot; 9th ave brass band, gnarled +4</span></a><a class='pwtile' href='../flyers/2023-05-23_vinyl-music-hall_voivod.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-05-23_vinyl-music-hall_voivod.webp' alt='flyer, May 23, 2023'><span class='pwcap'>May 23, 2023 &middot; voivod, faux / fox +1</span></a><a class='pwtile' href='../flyers/2023-04-19_vinyl-music-hall_beabadoobee.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-04-19_vinyl-music-hall_beabadoobee.webp' alt='flyer, Apr 19, 2023'><span class='pwcap'>Apr 19, 2023 &middot; beabadoobee, the nitty gritties</span></a><a class='pwtile' href='../flyers/2023-03-04_vinyl-music-hall_all-vinyl-show.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-03-04_vinyl-music-hall_all-vinyl-show.webp' alt='flyer, Mar 4, 2023'><span class='pwcap'>Mar 4, 2023 &middot; dj i.e., charlie-b +1</span></a><a class='pwtile' href='../flyers/2022-12-18_vinyl-music-hall_ego-death.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2022-12-18_vinyl-music-hall_ego-death.webp' alt='flyer, Dec 18, 2022'><span class='pwcap'>Dec 18, 2022 &middot; ego death, pagu +7</span></a><a class='pwtile' href='../flyers/2022-07-22_vinyl-music-hall_the-monster-ball-drag-show.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2022-07-22_vinyl-music-hall_the-monster-ball-drag-show.webp' alt='flyer, Jul 22, 2022'><span class='pwcap'>Jul 22, 2022 &middot; the monster ball drag show</span></a><a class='pwtile' href='../flyers/2022-07-02_vinyl-music-hall_noiseheads.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2022-07-02_vinyl-music-hall_noiseheads.webp' alt='flyer, Jul 2, 2022'><span class='pwcap'>Jul 2, 2022 &middot; noiseheads, ynicorns +1</span></a><a class='pwtile' href='../flyers/2022-06-03_vinyl-music-hall_vagrants.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2022-06-03_vinyl-music-hall_vagrants.webp' alt='flyer, Jun 3, 2022'><span class='pwcap'>Jun 3, 2022 &middot; vagrants, afterdusk +3</span></a><a class='pwtile' href='../flyers/2021-12-10_vinyl-music-hall_vagrants.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2021-12-10_vinyl-music-hall_vagrants.webp' alt='flyer, Dec 10, 2021'><span class='pwcap'>Dec 10, 2021 &middot; vagrants, brave new world +2</span></a></div><h2 class='dirsec'>past shows <small style='color:var(--dim)'>(12)</small></h2><ul class='gigledger'><li class='gyear'><span>2025</span></li><li><span class='gdate'><a href='../s/2025-12-20-vinyl-music-hall-heart-of-glass-morones.html'><b>20</b><i>Dec 2025</i></a></span><span class='gwho'><a href='../b/heart-of-glass.html'>Heart of Glass</a>, <a href='../b/morones.html'>Morones</a></span></li><li class='gyear'><span>2024</span></li><li><span class='gdate'><a href='../s/2024-09-12-vinyl-music-hall-dead-kennedys-makewar.html'><b>12</b><i>Sep 2024</i></a></span><span class='gwho'><a href='../b/dead-kennedys.html'>Dead Kennedys</a>, <a href='../b/makewar.html'>MakeWar</a>, <a href='../b/billy-batts-the-made-men.html'>Billy Batts &amp; The Made Men</a></span></li><li><span class='gdate'><a href='../s/2024-04-12-vinyl-music-hall-precubed-ego-death.html'><b>12</b><i>Apr 2024</i></a></span><span class='gwho'><a href='../b/precubed.html'>Precubed</a>, <a href='../b/ego-death.html'>Ego Death</a>, <a href='../b/ynicorns.html'>Ynicorns</a>, <a href='../b/grave-chorus.html'>Grave Chorus</a></span></li><li class='gyear'><span>2023</span></li><li><span class='gdate'><a href='../s/2023-07-09-vinyl-music-hall-9th-ave-brass-band-gnarled.html'><b>9</b><i>Jul 2023</i></a></span><span class='gwho'><a href='../b/9th-ave-brass-band.html'>9th Ave Brass Band</a>, <a href='../b/gnarled.html'>Gnarled</a>, <a href='../b/big-lo.html'>Big Lo</a>, <a href='../b/glorious-flaws.html'>Glorious Flaws</a>, <a href='../b/pmrc.html'>PMRC</a>, <a href='../b/bangarang-peter.html'>Bangarang Peter</a></span></li><li><span class='gdate'><a href='../s/2023-05-23-vinyl-music-hall-voivod-faux-fox.html'><b>23</b><i>May 2023</i></a></span><span class='gwho'><a href='../b/voivod.html'>Voivod</a>, <a href='../b/faux-fox.html'>Faux / Fox</a>, <a href='../b/surrounder.html'>Surrounder</a></span></li><li><span class='gdate'><a href='../s/2023-04-19-vinyl-music-hall-beabadoobee-the-nitty-gritties.html'><b>19</b><i>Apr 2023</i></a></span><span class='gwho'><a href='../b/beabadoobee.html'>Beabadoobee</a>, <a href='../b/the-nitty-gritties.html'>The Nitty Gritties</a></span></li><li><span class='gdate'><a href='../s/2023-03-04-vinyl-music-hall-dj-i-e-charlie-b.html'><b>4</b><i>Mar 2023</i></a></span><span class='gwho'><a href='../b/dj-i-e.html'>DJ I.E.</a>, <a href='../b/charlie-b.html'>Charlie-B</a>, <a href='../b/daugma.html'>Daugma</a></span></li><li class='gyear'><span>2022</span></li><li><span class='gdate'><a href='../s/2022-12-18-vinyl-music-hall-ego-death-pagu.html'><b>18</b><i>Dec 2022</i></a></span><span class='gwho'><a href='../b/ego-death.html'>Ego Death</a>, <a href='../b/pagu.html'>Pagu</a>, <a href='../b/crow-road.html'>Crow Road</a>, <a href='../b/howdy-pouty.html'>Howdy Pouty</a>, <a href='../b/dj-dad.html'>DJ Dad</a>, <a href='../b/birchwood-emoji.html'>Birchwood Emoji</a>, <a href='../b/midkid-and-the-masterplan.html'>Midkid and the Masterplan</a>, <a href='../b/gwety-mernans.html'>Gwety Mernans</a>, <a href='../b/pg-villain.html'>PG Villain</a></span></li><li><span class='gdate'><a href='../s/2022-07-22-vinyl-music-hall-the-monster-ball-drag-show.html'><b>22</b><i>Jul 2022</i></a></span><span class='gwho'><a href='../b/the-monster-ball-drag-show.html'>The Monster Ball Drag Show</a></span></li><li><span class='gdate'><a href='../s/2022-07-02-vinyl-music-hall-noiseheads-ynicorns.html'><b>2</b><i>Jul 2022</i></a></span><span class='gwho'><a href='../b/noiseheads.html'>Noiseheads</a>, <a href='../b/ynicorns.html'>Ynicorns</a>, <a href='../b/feed-lemon.html'>Feed Lemon</a></span></li><li><span class='gdate'><a href='../s/2022-06-03-vinyl-music-hall-vagrants-afterdusk.html'><b>3</b><i>Jun 2022</i></a></span><span class='gwho'><a href='../b/vagrants.html'>Vagrants</a>, <a href='../b/afterdusk.html'>Afterdusk</a>, <a href='../b/burning-strong.html'>Burning Strong</a>, <a href='../b/faux-fox.html'>Faux / Fox</a>, <a href='../b/kairo.html'>Kairo</a></span></li><li class='gyear'><span>2021</span></li><li><span class='gdate'><a href='../s/2021-12-10-vinyl-music-hall-vagrants-brave-new-world.html'><b>10</b><i>Dec 2021</i></a></span><span class='gwho'><a href='../b/vagrants.html'>Vagrants</a>, <a href='../b/brave-new-world.html'>Brave New World</a>, <a href='../b/rise-up-lights.html'>Rise Up Lights</a>, <a href='../b/afterdusk.html'>Afterdusk</a></span></li></ul>
 <p class="spback"><a href="../">&#8592; back to the calendar</a></p>
 </main>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "diypensacola", "item": "https://diypensacola.com/"}, {"@type": "ListItem", "position": 2, "name": "archive", "item": "https://diypensacola.com/archive.html"}, {"@type": "ListItem", "position": 3, "name": "Vinyl Music Hall"}]}]</script>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>
 
 </body></html>

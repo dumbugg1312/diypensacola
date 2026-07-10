@@ -2,13 +2,13 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sisi&#39;s Store · shows · DIYPensacola</title>
-<meta name="description" content="DIY and punk shows at Sisi&#39;s Store in Pensacola, FL: what&#39;s coming up and everything that&#39;s happened there.">
+<meta name="description" content="Sisi&#39;s Store on the DIYPensacola record: 6 DIY and punk shows since 2023 in Pensacola, FL. Dates, flyers, and directions.">
 <meta name="theme-color" content="#0c0c0d">
 <link rel="canonical" href="https://diypensacola.com/v/sisi-s-store.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DIYPensacola">
 <meta property="og:title" content="Sisi&#39;s Store · shows · DIYPensacola">
-<meta property="og:description" content="DIY and punk shows at Sisi&#39;s Store in Pensacola, FL: what&#39;s coming up and everything that&#39;s happened there.">
+<meta property="og:description" content="Sisi&#39;s Store on the DIYPensacola record: 6 DIY and punk shows since 2023 in Pensacola, FL. Dates, flyers, and directions.">
 <meta property="og:url" content="https://diypensacola.com/v/sisi-s-store.html">
 <meta property="og:image" content="https://diypensacola.com/flyers/2025-12-13_sisis_dead-devils.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -63,15 +63,14 @@ header h1 a{color:inherit;text-decoration:none}
 .modetab:not(.on):hover{color:var(--ink)}
 .modetab:active{transform:none}
 /* the archive reuses the homepage's big centered masthead (logo + wordmark +
-   mode tabs + standard links) instead of the compact subpage header, so neither
-   half of the site reads as a lesser page. .bighead overrides .showpage header. */
+   mode tabs + standard links) instead of the compact left-aligned flex header
+   ".showpage header" below gets on every other subpage, so neither half of the
+   site reads as a lesser page. .bighead re-overrides display/text-align back to
+   the homepage's centered block layout; it must NOT touch logo/tag sizing (that
+   used to drift the archive's masthead smaller than the calendar's — removed,
+   so both pages inherit the exact same header/.logo/.tag rules above). */
 .showpage header.bighead{display:block;text-align:center;padding:2.2rem 1rem .3rem}
-.bighead .logo{width:150px;height:150px;display:block;margin:0 auto .5rem;filter:drop-shadow(0 0 14px rgba(255,255,255,.18))}
-.bighead h1{margin:0}
-.bighead h1 a{color:inherit;text-decoration:none}
-.bighead .tag{color:var(--dim);margin:.6rem 0 0;font-size:.9rem}
 @media (max-width:640px){
-  .bighead .logo{width:120px;height:120px}
   .modetab{font-size:.72rem;padding:.14rem .85rem .12rem}
 }
 /* TONIGHT strip: a stapled-on "what's on tonight" slip above the feed. Hidden by
@@ -346,8 +345,12 @@ main section:target{animation:viewin .26s ease both}
   h1{font-size:clamp(2.2rem,11.5vw,3.05rem)}  /* fits "DIYPENSACOLA" (12ch, 7.23em wide) on phones down to 320px */
   header .tag{font-size:.83rem;margin-top:.5rem;line-height:1.45}
 
-  .links{gap:.5rem;padding:.7rem .85rem .15rem}
-  .links a{font-size:.8rem;padding:.55rem .9rem}
+  /* 8 buttons, always 2 rows of 4 (never the 3-4 ragged rows flex-wrap gave us):
+     a fixed 4-col grid + shrunk type that wraps within the button instead of
+     forcing the button wider than its column. */
+  .links{display:grid;grid-template-columns:repeat(4,1fr);gap:.45rem .35rem;padding:.7rem .85rem .15rem;max-width:100%}
+  .links a{font-size:.62rem;padding:.5rem .3rem;text-align:center;line-height:1.25}
+  .links a:nth-child(odd),.links a:nth-child(even){transform:none}
 
   /* sticky segmented view-switcher — always one tap away */
   /* sticks below the install banner when it's up: --a2hs-h (set by JS to the
@@ -967,6 +970,20 @@ main{max-width:940px}
 .flashback li:last-child{border-bottom:none}
 .flashback a{text-decoration:none}
 .flashback .yr{color:var(--dim);font-size:.72rem;margin-right:.4rem}
+/* manual browse-by: three tape-button accordion toggles above the search box,
+   for anyone who'd rather narrow by clicking into "bands/acts", "venues", or
+   "shows" than type one query. Each opens (only one at a time) a panel with its
+   own filter input over that category's full list, hidden until clicked so
+   they cost no room on the page until wanted. The main one-search box below is
+   untouched and always visible. */
+.arcbrowse{display:flex;flex-wrap:wrap;gap:.6rem;margin:0 0 1rem}
+.browsetoggle{font:inherit;font-size:.85rem;cursor:pointer;color:#111;background:var(--tape);padding:.4rem .9rem;
+  border:2px solid #111;box-shadow:3px 3px 0 var(--hot);text-transform:uppercase;letter-spacing:.05em}
+.browsetoggle:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
+.browsetoggle.on{background:var(--hot);color:var(--on-hot);box-shadow:1px 1px 0 var(--tape)}
+.bpanel{margin:0 0 1.1rem;background:var(--card);border:2px dashed var(--line);padding:.8rem}
+.bpanel .search{margin:0 0 .5rem}
+.bpcount{color:var(--dim);font-size:.78rem;margin:0 0 .4rem}
 /* ---- one-search refine: quick-pick presets, control bar, active chips, facet rail ---- */
 .activechips[hidden],.clearall[hidden],.filtn[hidden]{display:none!important}
 .arcpresets{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;margin:0 0 .5rem}
@@ -1066,6 +1083,7 @@ main{max-width:940px}
 <h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2025-03-08_sisis_days-n-daze.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2025-03-08_sisis_days-n-daze.webp' alt='flyer, Mar 8, 2025'><span class='pwcap'>Mar 8, 2025 &middot; days n daze, local news legend +2</span></a><a class='pwtile' href='../flyers/2024-10-26_sisis_paupers-grave.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2024-10-26_sisis_paupers-grave.webp' alt='flyer, Oct 26, 2024'><span class='pwcap'>Oct 26, 2024 &middot; pauper&#39;s grave, chasses +4</span></a><a class='pwtile' href='../flyers/2024-07-12_sisis_white-phosphorous.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2024-07-12_sisis_white-phosphorous.webp' alt='flyer, Jul 12, 2024'><span class='pwcap'>Jul 12, 2024 &middot; white phosphorus, pauper&#39;s grave +1</span></a><a class='pwtile' href='../flyers/2023-12-22_800wmichigan_outlook-bleak.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-12-22_800wmichigan_outlook-bleak.webp' alt='flyer, Dec 22, 2023'><span class='pwcap'>Dec 22, 2023 &middot; outlook bleak, sanguin +3</span></a><a class='pwtile' href='../flyers/2023-11-25_800wmichigan_the-taint.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2023-11-25_800wmichigan_the-taint.webp' alt='flyer, Nov 25, 2023'><span class='pwcap'>Nov 25, 2023 &middot; the taints, outlook bleak +3</span></a></div><h2 class='dirsec'>past shows <small style='color:var(--dim)'>(6)</small></h2><ul class='gigledger'><li class='gyear'><span>2025</span></li><li><span class='gdate'><a href='../s/2025-12-13-sisi-s-store-dead-devils-dead-allies.html'><b>13</b><i>Dec 2025</i></a></span><span class='gwho'><a href='../b/dead-devils.html'>Dead Devils</a>, <a href='../b/dead-allies.html'>Dead Allies</a>, <a href='../b/deadjacket.html'>DeadJacket</a>, <a href='../b/dead-look-bleak.html'>Dead Look Bleak</a></span></li><li><span class='gdate'><a href='../s/2025-03-08-sisi-s-store-days-n-daze-local-news-legend.html'><b>8</b><i>Mar 2025</i></a></span><span class='gwho'><a href='../b/days-n-daze.html'>Days N Daze</a>, <a href='../b/local-news-legend.html'>Local News Legend</a>, <a href='../b/outlook-bleak.html'>Outlook Bleak</a>, <a href='../b/mindii-romanii.html'>Mindii Romanii</a></span></li><li class='gyear'><span>2024</span></li><li><span class='gdate'><a href='../s/2024-10-26-sisi-s-store-pauper-s-grave-chasses.html'><b>26</b><i>Oct 2024</i></a></span><span class='gwho'><a href='../b/pauper-s-grave.html'>Pauper&#39;s Grave</a>, <a href='../b/chasses.html'>Chasses</a>, <a href='../b/jersey-shore-shark-attack.html'>Jersey Shore Shark Attack</a>, <a href='../b/head-cannon.html'>Head Cannon</a>, <a href='../b/cookies-cake.html'>Cookies &amp; Cake</a>, <a href='../b/skretch-and-time.html'>Skretch and Time</a></span></li><li><span class='gdate'><a href='../s/2024-07-12-sisi-s-store-white-phosphorus-pauper-s-grave.html'><b>12</b><i>Jul 2024</i></a></span><span class='gwho'><a href='../b/white-phosphorus.html'>White Phosphorus</a>, <a href='../b/pauper-s-grave.html'>Pauper&#39;s Grave</a>, <a href='../b/outlook-bleak.html'>Outlook Bleak</a></span></li><li class='gyear'><span>2023</span></li><li><span class='gdate'><a href='../s/2023-12-22-sisi-s-store-outlook-bleak-sanguin.html'><b>22</b><i>Dec 2023</i></a></span><span class='gwho'><a href='../b/outlook-bleak.html'>Outlook Bleak</a>, <a href='../b/sanguin.html'>Sanguin</a>, <a href='../b/white-phosphorus.html'>White Phosphorus</a>, <a href='../b/infernem.html'>Infernem</a>, <a href='../b/ocean-rot.html'>Ocean Rot</a></span></li><li><span class='gdate'><a href='../s/2023-11-25-sisi-s-store-the-taints-outlook-bleak.html'><b>25</b><i>Nov 2023</i></a></span><span class='gwho'><a href='../b/the-taints.html'>The Taints</a>, <a href='../b/outlook-bleak.html'>Outlook Bleak</a>, <a href='../b/crow-road.html'>Crow Road</a>, <a href='../b/aneurysm.html'>Aneurysm</a>, <a href='../b/sanguin.html'>Sanguin</a></span></li></ul>
 <p class="spback"><a href="../">&#8592; back to the calendar</a></p>
 </main>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "diypensacola", "item": "https://diypensacola.com/"}, {"@type": "ListItem", "position": 2, "name": "archive", "item": "https://diypensacola.com/archive.html"}, {"@type": "ListItem", "position": 3, "name": "Sisi's Store"}]}]</script>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>
 
 </body></html>
