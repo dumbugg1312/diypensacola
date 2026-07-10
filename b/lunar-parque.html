@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Special+Elite&family=Rock+Salt&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0c0c0d;--card:#17171a;--ink:#f2f2ee;--dim:#9b9b94;--hot:#6b7036;--hotink:#8f9850;--on-hot:#f2f2ee;--line:#2c2c31;--tape:#d8d4c5;--free:#aebf5a;--soldout:#e06464;--sliding:#7fb0a8;--age:#d59b46;--benefit:#d98cb0;--shadow:rgba(107,112,54,.5);--scrim:rgba(12,12,13,.82)}
+:root{--bg:#0c0c0d;--card:#17171a;--ink:#f2f2ee;--dim:#9b9b94;--hot:#6b7036;--hotink:#8f9850;--on-hot:#f2f2ee;--line:#2c2c31;--tape:#d8d4c5;--free:#aebf5a;--sliding:#7fb0a8;--age:#d59b46;--benefit:#d98cb0;--soldout:#9b9b94;--shadow:rgba(107,112,54,.5);--scrim:rgba(12,12,13,.82)}
 *{box-sizing:border-box}
 body{margin:0;background-color:var(--bg);color:var(--ink);font:16px/1.5 "Special Elite","Courier New",monospace;
   background-image:radial-gradient(1000px 520px at 50% -140px,rgba(107,112,54,.32),rgba(107,112,54,0) 72%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.11'/%3E%3C/svg%3E");
@@ -613,6 +613,21 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .resume .rv a{color:var(--hotink);text-decoration-style:dotted;text-underline-offset:3px}
 .resume .rv a:hover,.resume .rv a:focus-visible{color:var(--ink);text-decoration-style:solid}
 @media (max-width:560px){.resume .rk{min-width:6rem}}
+/* scene-history line on act + venue pages (derived from the record at build time) */
+.actstory{max-width:36rem;margin:.55rem 0 .2rem;color:var(--ink);
+  font:.88rem/1.7 "Special Elite","Courier New",monospace}
+/* cited pull-quotes (band-research.json): torn-clipping blockquotes with source links */
+.pressrow{display:flex;flex-wrap:wrap;gap:1rem;max-width:760px}
+.pressq{flex:1 1 20rem;margin:0;padding:.9rem 1rem .7rem;background:var(--card);
+  border:1px solid var(--line);border-left:4px solid var(--hot)}
+.pressq:nth-child(even){transform:rotate(.4deg)}
+.pressq:nth-child(odd){transform:rotate(-.35deg)}
+.pressq blockquote{margin:0 0 .5rem;color:var(--ink);
+  font:.92rem/1.65 "Special Elite","Courier New",monospace}
+.pressq figcaption{color:var(--dim);font-size:.68rem;text-transform:uppercase;letter-spacing:.09em}
+.pressq figcaption a{color:var(--hotink);text-decoration-style:dotted;text-underline-offset:3px}
+.pressq figcaption a:hover,.pressq figcaption a:focus-visible{color:var(--ink);text-decoration-style:solid}
+.pressq figcaption small{text-transform:none;letter-spacing:0}
 .bandindex{columns:2;column-gap:2rem;max-width:760px}
 @media (max-width:560px){.bandindex{columns:1}}
 .bandindex a{display:block;padding:.32rem 0;border-bottom:1px dashed var(--line);text-decoration:none;color:var(--ink);break-inside:avoid}
@@ -1061,14 +1076,15 @@ main{max-width:940px}
 <div class="actmast"><h1 class="dirhead">Lunar Parque</h1><span class="ostamp">pcola local</span></div>
 
 <div class='tallyrow'><span class='tcap'><b>2</b> shows on the diypensacola record since 2026</span></div>
+<p class='actstory'>on the record since January 2026, first seen at the handlebar on a bill with katie dineen and mourning glories. most recently at the handlebar, June 2026.</p>
 
 
-<div class='vstamps'><span class='lead'>played at</span><a href='../v/the-handlebar.html'>the handlebar</a></div>
+<div class='vstamps'><span class='lead'>played at</span><a href='../v/handlebar.html'>the handlebar</a></div>
 
 </div>
 <a class='heropost' href='../flyers/flyer_2026-06-19_handlebar_goldmine.jpg' target='_blank' rel='noopener'><img src='../flyers/thumbs/flyer_2026-06-19_handlebar_goldmine.webp' alt='Lunar Parque flyer, Jun 19, 2026'><span class='hpcap'>Jun 19, 2026 &middot; the handlebar</span></a>
 </section>
-<h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2026-01-23_handlebar_katie-dineen.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2026-01-23_handlebar_katie-dineen.webp' alt='flyer, Jan 23, 2026'><span class='pwcap'>Jan 23, 2026 &middot; the handlebar</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2026</span></li><li><span class='gdate'><a href='../s/2026-06-19-handlebar-goldmine.html'><b>19</b><i>Jun 2026</i></a></span><span class='gwho'><a href='goldmine.html'>Goldmine</a>, <b class='self'>Lunar Parque</b>, <a href='southern-magnolia.html'>Southern Magnolia</a></span><a class='gven' href='../v/the-handlebar.html'>the handlebar</a></li><li><span class='gdate'><a href='../s/2026-01-23-the-handlebar-katie-dineen-lunar-parque.html'><b>23</b><i>Jan 2026</i></a></span><span class='gwho'><a href='katie-dineen.html'>Katie Dineen</a>, <b class='self'>Lunar Parque</b>, <a href='mourning-glories.html'>Mourning Glories</a>, <a href='other.html'>Other</a></span><a class='gven' href='../v/the-handlebar.html'>the handlebar</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='goldmine.html'>goldmine</a><a href='katie-dineen.html'>katie dineen</a><a href='mourning-glories.html'>mourning glories</a><a href='other.html'>other</a><a href='southern-magnolia.html'>southern magnolia</a></div>
+<h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2026-01-23_handlebar_katie-dineen.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2026-01-23_handlebar_katie-dineen.webp' alt='flyer, Jan 23, 2026'><span class='pwcap'>Jan 23, 2026 &middot; the handlebar</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2026</span></li><li><span class='gdate'><a href='../s/2026-06-19-handlebar-goldmine.html'><b>19</b><i>Jun 2026</i></a></span><span class='gwho'><a href='goldmine.html'>Goldmine</a>, <b class='self'>Lunar Parque</b>, <a href='southern-magnolia.html'>Southern Magnolia</a></span><a class='gven' href='../v/handlebar.html'>the handlebar</a></li><li><span class='gdate'><a href='../s/2026-01-23-the-handlebar-katie-dineen-lunar-parque.html'><b>23</b><i>Jan 2026</i></a></span><span class='gwho'><a href='katie-dineen.html'>Katie Dineen</a>, <b class='self'>Lunar Parque</b>, <a href='mourning-glories.html'>Mourning Glories</a>, <a href='other.html'>Other</a></span><a class='gven' href='../v/handlebar.html'>the handlebar</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='goldmine.html'>goldmine</a><a href='katie-dineen.html'>katie dineen</a><a href='mourning-glories.html'>mourning glories</a><a href='other.html'>other</a><a href='southern-magnolia.html'>southern magnolia</a></div>
 <p class="dirnote">act pages are built automatically from the show archive, so something may be off: a misspelled name, a missing link, the wrong type, or a bad local/touring call. no disrespect meant. wrong on any of that, or want a listen link (youtube or bandcamp) or live footage added? <a href='../submit.html'>send it in</a>.</p>
 <p class="spback"><a href="../archive.html">&#8592; search the archive</a> · <a href="../">calendar</a></p>
 </main>
