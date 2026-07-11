@@ -29,6 +29,14 @@ DESCRIPTION:pensacola comedy club opening night at betty's on belmont\, saturday
 LOCATION:Betty's
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-07-11-bettys-cockfight-tirra-lirra@diypensacola
+DTSTART;TZID=America/Chicago:20260711T200000
+DTEND;TZID=America/Chicago:20260711T230000
+SUMMARY:Cockfight\, Tirra Lirra\, Caca Del Diablo\, Rat Daughter @ Betty's
+DESCRIPTION:zine release show with cockfight\, tirra lirra\, caca del diablo\, and rat daughter at betty's tonight\, july 11th. doors 8\, music 9. $5-$10 sliding scale.
+LOCATION:Betty's
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-07-12-bettys-bad-bitch-brunches@diypensacola
 DTSTART;TZID=America/Chicago:20260712T130000
 DTEND;TZID=America/Chicago:20260712T160000

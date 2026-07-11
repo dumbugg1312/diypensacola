@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Come To Ruin
+X-WR-CALNAME:DIYPensacola: Come to Ruin
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago

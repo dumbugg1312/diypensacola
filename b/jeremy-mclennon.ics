@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Jeremy Mclennon
+X-WR-CALNAME:DIYPensacola: Jeremy McLennon
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago

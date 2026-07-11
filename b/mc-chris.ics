@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Mc Chris
+X-WR-CALNAME:DIYPensacola: MC Chris
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago

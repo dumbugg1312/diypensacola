@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola Shows
+X-WR-CALNAME:DIYPensacola: Nomas
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago
@@ -21,11 +21,11 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-07-10-309-vixen-valentine@diypensacola
-DTSTART;TZID=America/Chicago:20260710T180000
-DTEND;TZID=America/Chicago:20260710T210000
-SUMMARY:Vixen Valentine @ 309
-DESCRIPTION:just-opposed zine release party at 309 punk project. friday july 10th\, 6-9pm. vixen valentine at 6:30\, plus perfect day books\, phantasma\, pensacola pflag\, emerald waves squares\, upward intuition\, and pensacola poetry.
-LOCATION:309
+UID:2026-09-27-handlebar-eyehategod@diypensacola
+DTSTART;TZID=America/Chicago:20260927T190000
+DTEND;TZID=America/Chicago:20260927T220000
+SUMMARY:Eyehategod\, Whores\, Nomas @ The Handlebar
+DESCRIPTION:eyehategod\, whores\, and nomas at the handlebar. september 27. tickets on sale now at thehandlebar850.com.
+LOCATION:The Handlebar
 END:VEVENT
 END:VCALENDAR

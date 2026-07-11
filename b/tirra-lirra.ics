@@ -28,4 +28,12 @@ SUMMARY:No Complications\, King In Yellow\, Tirra Lirra @ The Handlebar
 DESCRIPTION:no complications\, king in yellow\, tirra lirra at the handlebar. wed jul 22\, 6pm. $15.
 LOCATION:The Handlebar
 END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-11-bettys-cockfight-tirra-lirra@diypensacola
+DTSTART;TZID=America/Chicago:20260711T200000
+DTEND;TZID=America/Chicago:20260711T230000
+SUMMARY:Cockfight\, Tirra Lirra\, Caca Del Diablo\, Rat Daughter @ Betty's
+DESCRIPTION:zine release show with cockfight\, tirra lirra\, caca del diablo\, and rat daughter at betty's tonight\, july 11th. doors 8\, music 9. $5-$10 sliding scale.
+LOCATION:Betty's
+END:VEVENT
 END:VCALENDAR

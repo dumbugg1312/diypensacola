@@ -21,14 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-07-10-309-vixen-valentine@diypensacola
-DTSTART;TZID=America/Chicago:20260710T180000
-DTEND;TZID=America/Chicago:20260710T210000
-SUMMARY:Vixen Valentine @ 309
-DESCRIPTION:just-opposed zine release party at 309 punk project. friday july 10th\, 6-9pm. vixen valentine at 6:30\, plus perfect day books\, phantasma\, pensacola pflag\, emerald waves squares\, upward intuition\, and pensacola poetry.
-LOCATION:309
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-07-12-309-woody-guthrie-gathering@diypensacola
 DTSTART;TZID=America/Chicago:20260712T173000
 DTEND;TZID=America/Chicago:20260712T203000
@@ -43,5 +35,13 @@ DTEND;TZID=America/Chicago:20260725T210000
 SUMMARY:Rainn Forrest\, Bea Hurd @ 309
 DESCRIPTION:309 airs rainn forrest and bea hurd closing exhibition and film screening. 309 punk project\, saturday july 25th at 6pm.
 LOCATION:309
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-08-309-caca-del-diabo-mourning-glories@diypensacola
+DTSTART;TZID=America/Chicago:20260808T180000
+DTEND;TZID=America/Chicago:20260808T210000
+SUMMARY:Caca Del Diabo\, Mourning Glories\, Bangarang Peter\, Spider Bucket\, Sideswept Bangs @ 309 Punk Project
+DESCRIPTION:caca del diabo\, mourning glories\, bangarang peter\, spider bucket\, and sideswept bangs at 309 punk project this saturday\, august 8th. doors 6\, music 6:30. $5-$20 suggested donation\, a benefit and celebration of life for the family of aleka ash ellis-chambers.
+LOCATION:309 Punk Project
 END:VEVENT
 END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola: Caca Del Diabo
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-08-08-309-caca-del-diabo-mourning-glories@diypensacola
+DTSTART;TZID=America/Chicago:20260808T180000
+DTEND;TZID=America/Chicago:20260808T210000
+SUMMARY:Caca Del Diabo\, Mourning Glories\, Bangarang Peter\, Spider Bucket\, Sideswept Bangs @ 309 Punk Project
+DESCRIPTION:caca del diabo\, mourning glories\, bangarang peter\, spider bucket\, and sideswept bangs at 309 punk project this saturday\, august 8th. doors 6\, music 6:30. $5-$20 suggested donation\, a benefit and celebration of life for the family of aleka ash ellis-chambers.
+LOCATION:309 Punk Project
+END:VEVENT
+END:VCALENDAR
