@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Katie Dineen
+X-WR-CALNAME:DIYPensacola: Alex Rogers
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago
@@ -20,14 +20,6 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-UID:2026-08-14-handlebar-katie-dineen@diypensacola
-DTSTART;TZID=America/Chicago:20260814T180000
-DTEND;TZID=America/Chicago:20260814T210000
-SUMMARY:Katie Dineen\, Logan Pilcher\, Tanner Lee Gray @ The Handlebar
-DESCRIPTION:katie dineen's album release show for 'simmer'\, with logan pilcher and tanner lee gray. the handlebar\, friday august 14th. doors 6pm\, music at 7. sliding scale $10-$20.
-LOCATION:The Handlebar
-END:VEVENT
 BEGIN:VEVENT
 UID:2026-07-30-handlebar-katie-dineen-alex-rogers@diypensacola
 DTSTART;TZID=America/Chicago:20260730T180000

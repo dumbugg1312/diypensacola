@@ -20,4 +20,12 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-09-04-handlebar-broadway-rave@diypensacola
+DTSTART;TZID=America/Chicago:20260904T190000
+DTEND;TZID=America/Chicago:20260904T220000
+SUMMARY:Broadway Rave @ The Handlebar
+DESCRIPTION:broadway rave\, a musical theater dance party\, comes to the handlebar. fri sep 4.
+LOCATION:The Handlebar
+END:VEVENT
 END:VCALENDAR

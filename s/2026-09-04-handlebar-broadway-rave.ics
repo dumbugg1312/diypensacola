@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Danny Worsnop
+X-WR-CALNAME:DIYPensacola Shows
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago
@@ -21,11 +21,11 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-25-handlebar-goodbye-june-danny-worsnop@diypensacola
-DTSTART;TZID=America/Chicago:20261025T190000
-DTEND;TZID=America/Chicago:20261025T220000
-SUMMARY:Goodbye June\, Danny Worsnop @ The Handlebar
-DESCRIPTION:goodbye june brings the trouble for all tour to the handlebar with special guest danny worsnop. sun oct 25. tickets at thehandlebar850.com.
+UID:2026-09-04-handlebar-broadway-rave@diypensacola
+DTSTART;TZID=America/Chicago:20260904T190000
+DTEND;TZID=America/Chicago:20260904T220000
+SUMMARY:Broadway Rave @ The Handlebar
+DESCRIPTION:broadway rave\, a musical theater dance party\, comes to the handlebar. fri sep 4.
 LOCATION:The Handlebar
 END:VEVENT
 END:VCALENDAR

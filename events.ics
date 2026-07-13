@@ -149,6 +149,14 @@ DESCRIPTION:spidershed\, future compost\, and caca del diablo at beulah den for 
 LOCATION:Beulah Den
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-07-30-handlebar-katie-dineen-alex-rogers@diypensacola
+DTSTART;TZID=America/Chicago:20260730T180000
+DTEND;TZID=America/Chicago:20260730T210000
+SUMMARY:Katie Dineen\, Alex Rogers\, John Common\, Riley Lynn @ The Handlebar
+DESCRIPTION:pensacola songwriter rounds series with katie dineen\, alex rogers\, john common\, and riley lynn at the handlebar. thu jul 30\, 6pm\, $10.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-08-08-309-caca-del-diabo-mourning-glories@diypensacola
 DTSTART;TZID=America/Chicago:20260808T180000
 DTEND;TZID=America/Chicago:20260808T210000
@@ -186,6 +194,14 @@ DTSTART;TZID=America/Chicago:20260827T190000
 DTEND;TZID=America/Chicago:20260827T220000
 SUMMARY:Foxtide\, Braymores @ The Handlebar
 DESCRIPTION:foxtide brings the entropy tour to the handlebar thursday\, august 27\, with braymores opening.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-04-handlebar-broadway-rave@diypensacola
+DTSTART;TZID=America/Chicago:20260904T190000
+DTEND;TZID=America/Chicago:20260904T220000
+SUMMARY:Broadway Rave @ The Handlebar
+DESCRIPTION:broadway rave\, a musical theater dance party\, comes to the handlebar. fri sep 4.
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
@@ -250,6 +266,22 @@ DTSTART;TZID=America/Chicago:20261022T190000
 DTEND;TZID=America/Chicago:20261022T220000
 SUMMARY:Fenix Tx\, Scream Out Loud\, Color The Void @ The Handlebar
 DESCRIPTION:fenix tx with scream out loud and color the void at the handlebar. thursday october 22. tickets at thehandlebar850.com.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-handlebar-goodbye-june-danny-worsnop@diypensacola
+DTSTART;TZID=America/Chicago:20261025T190000
+DTEND;TZID=America/Chicago:20261025T220000
+SUMMARY:Goodbye June\, Danny Worsnop @ The Handlebar
+DESCRIPTION:goodbye june brings the trouble for all tour to the handlebar with special guest danny worsnop. sun oct 25. tickets at thehandlebar850.com.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-14-handlebar-chrissy-chlapecka@diypensacola
+DTSTART;TZID=America/Chicago:20261114T190000
+DTEND;TZID=America/Chicago:20261114T220000
+SUMMARY:Chrissy Chlapecka @ The Handlebar
+DESCRIPTION:chrissy chlapecka at the handlebar. sat nov 14.
 LOCATION:The Handlebar
 END:VEVENT
 END:VCALENDAR
