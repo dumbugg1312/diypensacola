@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-VKW/wxxzhm3CscSksGMhtG0AE/wx6gagQpJAiN2ivg0='">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Skribble · shows in Pensacola · DIYPensacola</title>
 <meta name="description" content="Skribble on the DIYPensacola record: 7 shows since 2023 across 1 venue. Dates, flyers, and shared bills from the punksacola DIY scene.">
@@ -40,5 +40,101 @@
 </main>
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "MusicGroup", "name": "Skribble", "url": "https://diypensacola.com/b/skribble.html", "image": "https://diypensacola.com/flyers/2024-12-07_subculture_anoe.jpg"}]</script><script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "diypensacola", "item": "https://diypensacola.com/"}, {"@type": "ListItem", "position": 2, "name": "archive", "item": "https://diypensacola.com/archive.html"}, {"@type": "ListItem", "position": 3, "name": "Skribble"}]}]</script>
 <footer>support your local scene. <b>go to shows.</b><br>proudly ran out of punksacola, fl</footer>
+<script>(function(){
+  var DCX_PASSCODE='1017';
+  var logoEl=document.querySelector('.home,.homelink');
+  var fab=document.createElement('button');
+  fab.className='dcx-fab';fab.type='button';fab.textContent='⚑';fab.setAttribute('aria-label','flag an issue');
+  fab.hidden=true;
+  var scrim=document.createElement('div');scrim.className='dcx-scrim';scrim.hidden=true;
+  var panel=document.createElement('div');panel.className='dcx-panel';panel.hidden=true;
+  panel.innerHTML='<textarea placeholder="what\'s wrong?"></textarea>'
+    +'<div class="dcx-row">'
+    +'<button type="button" data-a="save">save</button>'
+    +'<button type="button" data-a="cancel">cancel</button>'
+    +'<button type="button" data-a="toggle-log">log (0)</button>'
+    +'<button type="button" data-a="copy">copy all</button>'
+    +'<button type="button" data-a="clear">clear all</button>'
+    +'</div><div class="dcx-log" hidden></div>';
+  document.body.appendChild(scrim);document.body.appendChild(panel);document.body.appendChild(fab);
 
+  var ta=panel.querySelector('textarea');
+  var logBox=panel.querySelector('.dcx-log');
+  var logBtn=panel.querySelector('[data-a="toggle-log"]');
+
+  function flags(){try{return JSON.parse(localStorage.getItem('diy_flags')||'[]');}catch(e){return [];}}
+  function saveFlags(a){localStorage.setItem('diy_flags',JSON.stringify(a));}
+  function esc(s){var d=document.createElement('div');d.textContent=String(s);return d.innerHTML;}
+
+  function renderLog(){
+    var a=flags();
+    logBtn.textContent='log ('+a.length+')';
+    if(logBox.hidden)return;
+    var html='';
+    for(var i=a.length-1;i>=0;i--){var f=a[i];
+      html+='<div class="dcx-item" data-i="'+i+'"><button type="button" class="dcx-x" data-a="del">×</button>'
+        +'<div class="dcx-ts">'+esc(f.ts)+' &middot; '+esc(f.title||f.url)+'</div>'
+        +(f.nowPlaying?'<div class="dcx-np">playing: '+esc(f.nowPlaying.act)+' — '+esc(f.nowPlaying.title)+'</div>':'')
+        +'<div>'+esc(f.note)+'</div></div>';}
+    logBox.innerHTML=html;}
+
+  function openPanel(){scrim.hidden=false;panel.hidden=false;ta.value='';ta.focus();renderLog();}
+  function closePanel(){scrim.hidden=true;panel.hidden=true;}
+
+  var DCX_TTL=24*60*60*1000;
+  function unlock(){
+    fab.hidden=false;localStorage.setItem('dcx_unlocked_at',String(Date.now()));}
+  var unlockedAt=parseInt(localStorage.getItem('dcx_unlocked_at')||'0',10);
+  if(unlockedAt&&Date.now()-unlockedAt<DCX_TTL)unlock();
+  else if(unlockedAt){
+    localStorage.removeItem('dcx_unlocked_at');
+    var code0=window.prompt('login expired — enter passcode:');
+    if(code0===DCX_PASSCODE)unlock();}
+
+  if(logoEl){
+    var clicks=0,timer=null;
+    logoEl.addEventListener('click',function(e){
+      if(fab.hidden){
+        e.preventDefault();
+        clicks++;
+        if(timer)clearTimeout(timer);
+        timer=setTimeout(function(){clicks=0;},3000);
+        if(clicks>=5){clicks=0;
+          var code=window.prompt('passcode:');
+          if(code===DCX_PASSCODE)unlock();}}});}
+
+  fab.addEventListener('click',function(){
+    if(fab.textContent==='✓')return;
+    openPanel();});
+  scrim.addEventListener('click',closePanel);
+  panel.addEventListener('click',function(e){
+    var a=e.target.getAttribute('data-a');
+    if(!a)return;
+    if(a==='cancel'){closePanel();return;}
+    if(a==='save'){
+      var note=ta.value.trim();if(!note)return;
+      var entry={ts:new Date().toISOString(),url:location.href,title:document.title,note:note};
+      if(window.__diyNowPlaying)entry.nowPlaying=window.__diyNowPlaying;
+      var all=flags();all.push(entry);saveFlags(all);
+      closePanel();
+      var old=fab.textContent;fab.textContent='✓';
+      setTimeout(function(){fab.textContent=old;},900);
+      return;}
+    if(a==='toggle-log'){logBox.hidden=!logBox.hidden;renderLog();return;}
+    if(a==='copy'){
+      var a2=flags(),lines=[];
+      for(var i=a2.length-1;i>=0;i--){var f=a2[i];
+        lines.push(f.ts+' — '+f.title+' ('+f.url+')'
+          +(f.nowPlaying?'\nplaying: '+f.nowPlaying.act+' — '+f.nowPlaying.title+' ('+f.nowPlaying.url+')':'')
+          +'\n'+f.note);}
+      if(navigator.clipboard)navigator.clipboard.writeText(lines.join('\n\n'));
+      return;}
+    if(a==='clear'){
+      if(window.confirm('Clear all flagged issues?')){saveFlags([]);renderLog();}
+      return;}
+    if(a==='del'){
+      var item=e.target.closest('.dcx-item');var idx=parseInt(item.getAttribute('data-i'),10);
+      var a3=flags();a3.splice(idx,1);saveFlags(a3);renderLog();
+      return;}});
+})();</script>
 </body></html>
