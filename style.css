@@ -44,15 +44,6 @@ header h1 a{color:inherit;text-decoration:none}
 .modetab.on{background:var(--hot);color:var(--on-hot)}
 .modetab:not(.on):hover{color:var(--ink)}
 .modetab:active{transform:none}
-/* scene radio: a small icon button pinned to the modebar's right edge (sticky
-   is a positioned element, so it anchors this absolutely without extra markup)
-   instead of a 9th tile in .links, which used to strand a lone tile on its own row. */
-.radiobtn{position:absolute;right:1rem;top:50%;transform:translateY(-50%);display:flex;
-  align-items:center;justify-content:center;width:1.7rem;height:1.7rem;color:var(--dim);
-  border:1.5px solid var(--dim);border-radius:50%;text-decoration:none}
-.radiobtn:hover{color:var(--hotink);border-color:var(--hotink)}
-.radiobtn svg{display:block}
-@media (max-width:640px){.radiobtn{right:.6rem;width:1.5rem;height:1.5rem}}
 /* the archive reuses the homepage's big centered masthead (logo + wordmark +
    mode tabs + standard links) instead of the compact left-aligned flex header
    ".showpage header" below gets on every other subpage, so neither half of the
