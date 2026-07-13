@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-VKW/wxxzhm3CscSksGMhtG0AE/wx6gagQpJAiN2ivg0='">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-dbQr0/udZyVzn+egTh3Sj+tgQkq3TNiY8de+gQOiQNk='">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Austin Miller, Al Mirabella &amp; The Mid-life Crises, Casper · FRI JUL 29 @ Sluggo&#39;s · DIYPensacola</title>
 <meta name="description" content="From the first jangled notes ringing out from his acoustic guitar, you can tell that Austin Miller is a craftsman.\n\nThe Orlando native\u2019s warm folk-rock evokes an image of a bright-eyed, flannel-clad, bearded Brooklynite. And Miller\u2019s appearance doesn\u2019t disappoint (indeed, his beard is something to behold!).\n\nBut unlike his contemporaries from more hip art scenes in Brooklyn or Oakland, there\u2019s nothing pretentious in his music; you get the sense that he\u2019s not doing it to be cool, he\u2019s doing it for himself. As a result, his music contains an honesty that is often imitated, but impossible to fake. He sings and plays like a man deeply invested in his craft, an artist for other artists and casual listeners alike.\n....\nTaken as a whole, Miller\u2019s music sounds like changing seasons across a variety of American landscapes\u2013from cold, drizzly November nights in the city, to the lonely, open roads through Midwestern prairielands, to a backyard show on a warm summer night. \n(Selections from Moose Dribble&#39;s Mike Vangel on Austin Miller)\nhttps:\/\/moosedribble.com\/2014\/10\/10\/austin-miller-splashes-into-the-pool\/\n\nAustin Miller (Folk)\nhttps:\/\/austinmiller.bandcamp.com\/album\/engine\n\nAl Mirabella &amp; the Mid-Life Crises (Folk punk turned rock n&#39; roll)\nhttp:\/\/al-mirabella.bandcamp.com\/\n\nCasper (Full band)\nhttps:\/\/kideternity.bandcamp.com\/album\/night-moves">
@@ -41,7 +41,9 @@
 <footer>flyer info comes straight from the venues. <b>support your local scene.</b><br>proudly ran out of punksacola, fl</footer>
 <script>(function(){
   var DCX_PASSCODE='1017';
-  var logoEl=document.querySelector('.home,.homelink');
+  var canonEl=document.querySelector('link[rel="canonical"]');
+  var isHome=!!canonEl&&/\/$/.test(canonEl.getAttribute('href')||'');
+  var logoEl=isHome?document.querySelector('.home,.homelink'):null;
   var fab=document.createElement('button');
   fab.className='dcx-fab';fab.type='button';fab.textContent='⚑';fab.setAttribute('aria-label','flag an issue');
   fab.hidden=true;
@@ -91,16 +93,21 @@
     if(code0===DCX_PASSCODE)unlock();}
 
   if(logoEl){
-    var clicks=0,timer=null;
+    var pressTimer=null,longPressed=false;
+    var startPress=function(){longPressed=false;
+      pressTimer=setTimeout(function(){longPressed=true;},3000);};
+    var endPress=function(){if(pressTimer)clearTimeout(pressTimer);};
+    logoEl.addEventListener('mousedown',startPress);
+    logoEl.addEventListener('touchstart',startPress,{passive:true});
+    logoEl.addEventListener('mouseup',endPress);
+    logoEl.addEventListener('mouseleave',endPress);
+    logoEl.addEventListener('touchend',endPress);
+    logoEl.addEventListener('contextmenu',function(e){e.preventDefault();});
     logoEl.addEventListener('click',function(e){
-      if(fab.hidden){
-        e.preventDefault();
-        clicks++;
-        if(timer)clearTimeout(timer);
-        timer=setTimeout(function(){clicks=0;},3000);
-        if(clicks>=5){clicks=0;
-          var code=window.prompt('passcode:');
-          if(code===DCX_PASSCODE)unlock();}}});}
+      if(fab.hidden&&longPressed){
+        e.preventDefault();longPressed=false;
+        var code=window.prompt('passcode:');
+        if(code===DCX_PASSCODE)unlock();}});}
 
   fab.addEventListener('click',function(){
     if(fab.textContent==='✓')return;

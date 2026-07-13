@@ -1141,7 +1141,9 @@ main{max-width:940px}
 .rempty{text-align:center;color:var(--dim);padding:1.4rem;border:2px dashed var(--line);font-size:.88rem}
 .rempty[hidden]{display:none}
 
-/* dcx: hidden owner-only flag tool, unlocked by a click sequence on the logo */
+/* dcx: hidden owner-only flag tool, unlocked by a long-press on the logo;
+   suppress the mobile "save image" callout so the press isn't interrupted */
+.home img,.homelink img{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
 .dcx-fab{position:fixed;right:1rem;bottom:1rem;z-index:9999;width:2.2rem;height:2.2rem;
   border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--dim);
   font-size:1rem;line-height:2.1rem;text-align:center;cursor:pointer;opacity:.18;

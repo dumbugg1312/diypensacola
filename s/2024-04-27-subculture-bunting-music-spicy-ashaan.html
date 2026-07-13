@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-VKW/wxxzhm3CscSksGMhtG0AE/wx6gagQpJAiN2ivg0='">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-dbQr0/udZyVzn+egTh3Sj+tgQkq3TNiY8de+gQOiQNk='">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Bunting Music, Spicy Ashaan, Skribble, Fifth Density, Spank[y], Infernal Racket, Galactic Eye Kandi · SAT APR 27 @ Subculture · DIYPensacola</title>
 <meta name="description" content="Subculture is introducing a new reoccurring event called The Drop Shop which focuses on bringing the community together to learn and grow as musicians, producers, and sound designers! To celebrate the official launch of The Drop Shop, we’re kicking things off by bringing none other than YouTube Content Creator, Sound Designer, and Music Producer Bunting Music from Baltimore, Maryland to Pensacola right here at Subculture. Bunting Music will be providing us an exclusive in-person masterclass where he’ll dive into the secrets of sound design and audio production. Known for his YouTube videos which dissect a variety of EDM production and sound design techniques, he’ll be be here to answer your questions directly and provide a tour de force of bass creation! Directly following The Drop Shop, we’ll be hosting a massive afterparty featuring some of Pensacola’s own outstanding DJs &amp; Producers to show Bunting Music how’s it done down here in the panhandle. This stacked local lineup includes none other than Spicy Ashaan, Skribble, Fifthdensity, spank(Y), and Infernal Racket. The phenomenal Galactic Eye Kandi will be in the house taking us on a one of kind, mesmerizing journey of visual delight! Tickets are available if you’ll to just like to attend The Drop Shop Masterclass or if you’d just like to attend the Afterparty. Seating is very limited for The Drop Shop Masterclass. Get your tickets early at www.pensacolasubculture.com/drop-shop Save $10 if you’d like to attend both!">
@@ -41,7 +41,9 @@
 <footer>flyer info comes straight from the venues. <b>support your local scene.</b><br>proudly ran out of punksacola, fl</footer>
 <script>(function(){
   var DCX_PASSCODE='1017';
-  var logoEl=document.querySelector('.home,.homelink');
+  var canonEl=document.querySelector('link[rel="canonical"]');
+  var isHome=!!canonEl&&/\/$/.test(canonEl.getAttribute('href')||'');
+  var logoEl=isHome?document.querySelector('.home,.homelink'):null;
   var fab=document.createElement('button');
   fab.className='dcx-fab';fab.type='button';fab.textContent='⚑';fab.setAttribute('aria-label','flag an issue');
   fab.hidden=true;
@@ -91,16 +93,21 @@
     if(code0===DCX_PASSCODE)unlock();}
 
   if(logoEl){
-    var clicks=0,timer=null;
+    var pressTimer=null,longPressed=false;
+    var startPress=function(){longPressed=false;
+      pressTimer=setTimeout(function(){longPressed=true;},3000);};
+    var endPress=function(){if(pressTimer)clearTimeout(pressTimer);};
+    logoEl.addEventListener('mousedown',startPress);
+    logoEl.addEventListener('touchstart',startPress,{passive:true});
+    logoEl.addEventListener('mouseup',endPress);
+    logoEl.addEventListener('mouseleave',endPress);
+    logoEl.addEventListener('touchend',endPress);
+    logoEl.addEventListener('contextmenu',function(e){e.preventDefault();});
     logoEl.addEventListener('click',function(e){
-      if(fab.hidden){
-        e.preventDefault();
-        clicks++;
-        if(timer)clearTimeout(timer);
-        timer=setTimeout(function(){clicks=0;},3000);
-        if(clicks>=5){clicks=0;
-          var code=window.prompt('passcode:');
-          if(code===DCX_PASSCODE)unlock();}}});}
+      if(fab.hidden&&longPressed){
+        e.preventDefault();longPressed=false;
+        var code=window.prompt('passcode:');
+        if(code===DCX_PASSCODE)unlock();}});}
 
   fab.addEventListener('click',function(){
     if(fab.textContent==='✓')return;

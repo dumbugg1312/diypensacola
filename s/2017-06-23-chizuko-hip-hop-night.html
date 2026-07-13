@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-VKW/wxxzhm3CscSksGMhtG0AE/wx6gagQpJAiN2ivg0='">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-dbQr0/udZyVzn+egTh3Sj+tgQkq3TNiY8de+gQOiQNk='">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Hip Hop Night · FRI JUN 23 @ Chizuko · DIYPensacola</title>
 <meta name="description" content="IT&#39;S. ABOUT. TO. GO. DOWN. chizuko&#39;s first ever Hip Hop Night starts at 8!">
@@ -41,7 +41,9 @@
 <footer>flyer info comes straight from the venues. <b>support your local scene.</b><br>proudly ran out of punksacola, fl</footer>
 <script>(function(){
   var DCX_PASSCODE='1017';
-  var logoEl=document.querySelector('.home,.homelink');
+  var canonEl=document.querySelector('link[rel="canonical"]');
+  var isHome=!!canonEl&&/\/$/.test(canonEl.getAttribute('href')||'');
+  var logoEl=isHome?document.querySelector('.home,.homelink'):null;
   var fab=document.createElement('button');
   fab.className='dcx-fab';fab.type='button';fab.textContent='⚑';fab.setAttribute('aria-label','flag an issue');
   fab.hidden=true;
@@ -91,16 +93,21 @@
     if(code0===DCX_PASSCODE)unlock();}
 
   if(logoEl){
-    var clicks=0,timer=null;
+    var pressTimer=null,longPressed=false;
+    var startPress=function(){longPressed=false;
+      pressTimer=setTimeout(function(){longPressed=true;},3000);};
+    var endPress=function(){if(pressTimer)clearTimeout(pressTimer);};
+    logoEl.addEventListener('mousedown',startPress);
+    logoEl.addEventListener('touchstart',startPress,{passive:true});
+    logoEl.addEventListener('mouseup',endPress);
+    logoEl.addEventListener('mouseleave',endPress);
+    logoEl.addEventListener('touchend',endPress);
+    logoEl.addEventListener('contextmenu',function(e){e.preventDefault();});
     logoEl.addEventListener('click',function(e){
-      if(fab.hidden){
-        e.preventDefault();
-        clicks++;
-        if(timer)clearTimeout(timer);
-        timer=setTimeout(function(){clicks=0;},3000);
-        if(clicks>=5){clicks=0;
-          var code=window.prompt('passcode:');
-          if(code===DCX_PASSCODE)unlock();}}});}
+      if(fab.hidden&&longPressed){
+        e.preventDefault();longPressed=false;
+        var code=window.prompt('passcode:');
+        if(code===DCX_PASSCODE)unlock();}});}
 
   fab.addEventListener('click',function(){
     if(fab.textContent==='✓')return;
