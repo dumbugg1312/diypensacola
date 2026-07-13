@@ -21,22 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-07-12-309-woody-guthrie-gathering@diypensacola
-DTSTART;TZID=America/Chicago:20260712T173000
-DTEND;TZID=America/Chicago:20260712T203000
-SUMMARY:Woody Guthrie Gathering @ 309
-DESCRIPTION:woody guthrie birthday gathering with shuttle punx at 309. sun jul 12\, doors 5:30 / show 6\, all ages. donations welcome.
-LOCATION:309
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-07-12-bettys-bad-bitch-brunches@diypensacola
-DTSTART;TZID=America/Chicago:20260712T130000
-DTEND;TZID=America/Chicago:20260712T160000
-SUMMARY:Pretty Baked / Bad B!tch Brunch @ Betty's
-DESCRIPTION:pretty baked presents bad b!tch brunch at betty's. sunday july 12\, 1-4pm. all vegan menu\, tiramisu french toast\, drunk monty cristo\, krabby patties\, cheeze grits and more.
-LOCATION:Betty's
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-07-16-bettys-wynter@diypensacola
 DTSTART;TZID=America/Chicago:20260716T190000
 DTEND;TZID=America/Chicago:20260716T220000

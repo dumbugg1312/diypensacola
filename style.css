@@ -1080,3 +1080,60 @@ main{max-width:940px}
 .leaders .ct{color:var(--dim);font-size:.8rem;margin-left:auto;white-space:nowrap}
 .statcols{display:grid;grid-template-columns:1fr;gap:1.6rem}
 @media(min-width:680px){.statcols{grid-template-columns:1fr 1fr}}
+/* ---- scene radio (radio.html): the shuffle jukebox over every curated clip ---- */
+.radiowrap{max-width:900px;margin:0 auto;padding:0 1rem 3rem}
+.radiolede{color:var(--dim);font-size:.9rem;max-width:60ch;margin:.2rem auto 1.4rem;text-align:center;line-height:1.55}
+.radiolede b{color:var(--hotink)}
+.rstage{position:relative;aspect-ratio:16/9;background:#000;border:3px solid #111;box-shadow:6px 6px 0 var(--hot);margin-bottom:.7rem}
+.rstage iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+/* start overlay: nothing plays until a tap (browsers block autoplay-with-sound) */
+.rstart{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;
+  background:radial-gradient(120% 120% at 50% 30%,rgba(107,112,54,.30),rgba(12,12,13,.94));cursor:pointer;border:0;color:var(--ink);
+  font-family:"Special Elite","Courier New",monospace;text-align:center;padding:1rem}
+.rstart .rbig{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.06em;font-size:clamp(1.4rem,6vw,2.4rem);
+  color:var(--ink);text-shadow:3px 3px 0 var(--hot)}
+.rstart .rsub{color:var(--dim);font-size:.85rem;max-width:34ch}
+.rstart:hover .rbig{color:var(--hotink)}
+.rstart[hidden]{display:none}
+.rcount{text-align:center;color:var(--dim);font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;margin:.1rem 0 .9rem}
+/* now playing: hot-ink act name + clip title, badges for type/scene */
+.rnow{background:var(--card);border:2px solid var(--line);padding:.8rem 1rem;margin-bottom:.7rem}
+.rnow .rnlabel{color:var(--dim);font-size:.68rem;text-transform:uppercase;letter-spacing:.14em;display:block;margin-bottom:.2rem}
+.rnow .rnact{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;font-size:1.3rem;
+  color:var(--hotink);text-decoration:none;line-height:1.1}
+.rnow .rnact:hover{text-decoration:underline}
+.rnow .rntitle{color:var(--ink);font-size:.9rem;margin:.15rem 0 .35rem;overflow-wrap:anywhere}
+.rbadge{display:inline-block;font-size:.64rem;text-transform:uppercase;letter-spacing:.08em;padding:.12rem .5rem;
+  border:1px solid var(--line);color:var(--dim);margin-right:.35rem}
+.rbadge.tour{color:var(--age);border-color:var(--age)}
+.rbadge.local{color:var(--free);border-color:var(--free)}
+/* transport controls: tape buttons like the rest of the site */
+.rcontrols{display:flex;gap:.6rem .7rem;flex-wrap:wrap;justify-content:center;margin-bottom:1.3rem}
+.rbtn{font-family:"Special Elite","Courier New",monospace;font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;
+  color:#111;background:var(--tape);border:2px solid #111;box-shadow:3px 3px 0 var(--hot);padding:.45rem 1rem;cursor:pointer}
+.rbtn:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
+.rbtn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--hot)}
+/* filter rail: chip toggles per dimension + a venue select. Compact — each
+   dimension is ONE row (label pinned left, chips flowing right), boxed tight so
+   the controls read as a small console, not half the page. */
+.rfilters{margin-bottom:1.1rem;border:2px solid var(--line);padding:.15rem .7rem}
+.rfgroup{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem .5rem;padding:.32rem 0;border-bottom:1px dashed var(--line)}
+.rfgroup:last-child{border-bottom:0}
+.rflabel{color:var(--dim);font-size:.62rem;text-transform:uppercase;letter-spacing:.13em;margin:0;flex:0 0 auto;min-width:3.6rem;white-space:nowrap}
+.rchips{display:flex;flex-wrap:wrap;gap:.3rem .35rem}
+.rchip{font-family:"Special Elite","Courier New",monospace;font-size:.72rem;text-transform:lowercase;letter-spacing:.02em;
+  color:var(--ink);background:transparent;border:2px solid var(--line);padding:.16rem .55rem;cursor:pointer;transition:background .12s,color .12s,border-color .12s}
+.rchip:hover{border-color:var(--hotink)}
+.rchip.on{background:var(--hot);color:var(--on-hot);border-color:var(--hot)}
+.rvenue{font-family:"Special Elite","Courier New",monospace;font-size:.76rem;color:var(--ink);background:var(--card);
+  border:2px solid var(--line);padding:.2rem .5rem;min-width:12rem;max-width:100%}
+.rvenue:focus-visible{outline:2px solid var(--hotink)}
+/* up next queue */
+.rnext{margin-top:.4rem}
+.rnext ol{list-style:none;padding:0;margin:.3rem 0 0;counter-reset:rq}
+.rnext li{display:flex;gap:.6rem;align-items:baseline;padding:.35rem 0;border-bottom:1px dashed var(--line);font-size:.85rem}
+.rnext li::before{counter-increment:rq;content:counter(rq);font-family:"Anton","Special Elite",sans-serif;color:var(--dim);width:1.4rem;flex:none}
+.rnext .rqact{color:var(--ink);font-weight:400}
+.rnext .rqt{color:var(--dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rempty{text-align:center;color:var(--dim);padding:1.4rem;border:2px dashed var(--line);font-size:.88rem}
+.rempty[hidden]{display:none}
