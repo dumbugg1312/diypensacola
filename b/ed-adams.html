@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-dbQr0/udZyVzn+egTh3Sj+tgQkq3TNiY8de+gQOiQNk='; frame-src https://www.youtube-nocookie.com">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-/eCjl8mvU6+iDRvj9V4HXpq5t1HHBDFFLE8Hq9vcMW4='; frame-src https://www.youtube-nocookie.com">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Ed Adams · shows in Pensacola · DIYPensacola</title>
 <meta name="description" content="Ed Adams on the DIYPensacola record: 1 show since 2022 across 1 venue. Dates, flyers, and shared bills from the punksacola DIY scene.">
@@ -51,6 +51,12 @@
   var scrim=document.createElement('div');scrim.className='dcx-scrim';scrim.hidden=true;
   var panel=document.createElement('div');panel.className='dcx-panel';panel.hidden=true;
   panel.innerHTML='<textarea placeholder="what\'s wrong?"></textarea>'
+    +'<div class="dcx-row dcx-quick">'
+    +'<button type="button" data-a="quick" data-tag="remove this video">remove video</button>'
+    +'<button type="button" data-a="quick" data-tag="mark as touring">mark as touring</button>'
+    +'<button type="button" data-a="quick" data-tag="mark as dj">mark as dj</button>'
+    +'<button type="button" data-a="quick" data-tag="mark as local">mark as local</button>'
+    +'</div>'
     +'<div class="dcx-row">'
     +'<button type="button" data-a="save">save</button>'
     +'<button type="button" data-a="cancel">cancel</button>'
@@ -110,6 +116,15 @@
         var code=window.prompt('passcode:');
         if(code===DCX_PASSCODE)unlock();}});}
 
+  function doSave(note){
+    note=note.trim();if(!note)return;
+    var entry={ts:new Date().toISOString(),url:location.href,title:document.title,note:note};
+    if(window.__diyNowPlaying)entry.nowPlaying=window.__diyNowPlaying;
+    var all=flags();all.push(entry);saveFlags(all);
+    closePanel();
+    var old=fab.textContent;fab.textContent='✓';
+    setTimeout(function(){fab.textContent=old;},900);}
+
   fab.addEventListener('click',function(){
     if(fab.textContent==='✓')return;
     openPanel();});
@@ -118,15 +133,8 @@
     var a=e.target.getAttribute('data-a');
     if(!a)return;
     if(a==='cancel'){closePanel();return;}
-    if(a==='save'){
-      var note=ta.value.trim();if(!note)return;
-      var entry={ts:new Date().toISOString(),url:location.href,title:document.title,note:note};
-      if(window.__diyNowPlaying)entry.nowPlaying=window.__diyNowPlaying;
-      var all=flags();all.push(entry);saveFlags(all);
-      closePanel();
-      var old=fab.textContent;fab.textContent='✓';
-      setTimeout(function(){fab.textContent=old;},900);
-      return;}
+    if(a==='save'){doSave(ta.value);return;}
+    if(a==='quick'){doSave(e.target.getAttribute('data-tag')||'');return;}
     if(a==='toggle-log'){logBox.hidden=!logBox.hidden;renderLog();return;}
     if(a==='copy'){
       var a2=flags(),lines=[];

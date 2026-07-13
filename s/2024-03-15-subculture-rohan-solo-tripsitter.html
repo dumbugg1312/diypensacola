@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-dbQr0/udZyVzn+egTh3Sj+tgQkq3TNiY8de+gQOiQNk='">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-/eCjl8mvU6+iDRvj9V4HXpq5t1HHBDFFLE8Hq9vcMW4='">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Rohan Solo, Tripsitter, Skiz, Spicy Ashaan, Infernal Racket · FRI MAR 15 @ Subculture · DIYPensacola</title>
 <meta name="description" content="March 15th hold onto your hats!  2024 ain&#39;t stopping even for a minute as we have ROHAN SOLO dropping in from Atlanta, GA with direct support from Skiz, Tripsitter, Spicy Ashaan &amp; Infernal Racket with an incredible visual and laser light show presented by Invazzion Entertainment along with our Resident Gallery Artists slinging colors all night.  Limited Discount Presale Tickets are available immediately for $10 off admission so grab yours now at www.pensacolasubculture.com/rohan-solo (Link in our bio). 
@@ -58,6 +58,12 @@ We hope y&#39;all rested up in 2023 because we&#39;re just getting started. 🤣
   var scrim=document.createElement('div');scrim.className='dcx-scrim';scrim.hidden=true;
   var panel=document.createElement('div');panel.className='dcx-panel';panel.hidden=true;
   panel.innerHTML='<textarea placeholder="what\'s wrong?"></textarea>'
+    +'<div class="dcx-row dcx-quick">'
+    +'<button type="button" data-a="quick" data-tag="remove this video">remove video</button>'
+    +'<button type="button" data-a="quick" data-tag="mark as touring">mark as touring</button>'
+    +'<button type="button" data-a="quick" data-tag="mark as dj">mark as dj</button>'
+    +'<button type="button" data-a="quick" data-tag="mark as local">mark as local</button>'
+    +'</div>'
     +'<div class="dcx-row">'
     +'<button type="button" data-a="save">save</button>'
     +'<button type="button" data-a="cancel">cancel</button>'
@@ -117,6 +123,15 @@ We hope y&#39;all rested up in 2023 because we&#39;re just getting started. 🤣
         var code=window.prompt('passcode:');
         if(code===DCX_PASSCODE)unlock();}});}
 
+  function doSave(note){
+    note=note.trim();if(!note)return;
+    var entry={ts:new Date().toISOString(),url:location.href,title:document.title,note:note};
+    if(window.__diyNowPlaying)entry.nowPlaying=window.__diyNowPlaying;
+    var all=flags();all.push(entry);saveFlags(all);
+    closePanel();
+    var old=fab.textContent;fab.textContent='✓';
+    setTimeout(function(){fab.textContent=old;},900);}
+
   fab.addEventListener('click',function(){
     if(fab.textContent==='✓')return;
     openPanel();});
@@ -125,15 +140,8 @@ We hope y&#39;all rested up in 2023 because we&#39;re just getting started. 🤣
     var a=e.target.getAttribute('data-a');
     if(!a)return;
     if(a==='cancel'){closePanel();return;}
-    if(a==='save'){
-      var note=ta.value.trim();if(!note)return;
-      var entry={ts:new Date().toISOString(),url:location.href,title:document.title,note:note};
-      if(window.__diyNowPlaying)entry.nowPlaying=window.__diyNowPlaying;
-      var all=flags();all.push(entry);saveFlags(all);
-      closePanel();
-      var old=fab.textContent;fab.textContent='✓';
-      setTimeout(function(){fab.textContent=old;},900);
-      return;}
+    if(a==='save'){doSave(ta.value);return;}
+    if(a==='quick'){doSave(e.target.getAttribute('data-tag')||'');return;}
     if(a==='toggle-log'){logBox.hidden=!logBox.hidden;renderLog();return;}
     if(a==='copy'){
       var a2=flags(),lines=[];

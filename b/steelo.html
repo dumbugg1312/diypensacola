@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-dbQr0/udZyVzn+egTh3Sj+tgQkq3TNiY8de+gQOiQNk='; frame-src https://www.youtube-nocookie.com">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-/eCjl8mvU6+iDRvj9V4HXpq5t1HHBDFFLE8Hq9vcMW4='; frame-src https://www.youtube-nocookie.com">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Steelo · shows in Pensacola · DIYPensacola</title>
 <meta name="description" content="Steelo on the DIYPensacola record: 1 show since 2022 across 1 venue. Dates, flyers, and shared bills from the punksacola DIY scene.">
@@ -23,7 +23,7 @@
 <div class="actcard">
 <div class="heroinfo">
 <div class="actmast"><h1 class="dirhead">Steelo</h1><span class="ostamp">pcola local</span></div>
-
+<p class='dirsub'>dj</p>
 <div class='tallyrow'><span class='tcap'><b>1</b> show on the diypensacola record since 2022</span></div>
 <p class='actstory'>on the record since June 2022, first seen at emerald republic brewing on a bill with heir max and jamal steele.</p>
 
@@ -31,7 +31,7 @@
 <div class='vstamps'><span class='lead'>played at</span><a href='../v/emerald-republic-brewing.html'>emerald republic brewing</a></div>
 
 </div>
-<div class='ytgrid'><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/9xcXhGAlBtA' title='STEELO | Unit 48: DJ Set' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/VEs346F77qM' title='STEELO - FUCK EM ALL' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/YjxKcDWuJfE' title='The Abstract Steelo Show/Topic #01 (What&#39;s Your Scene Like?)' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div></div>
+<div class='ytgrid'><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/9xcXhGAlBtA' title='STEELO | Unit 48: DJ Set' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/VEs346F77qM' title='STEELO - FUCK EM ALL' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div></div>
 </div>
 </section>
 <h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2022-06-10_emerald-republic-brewing_heir-max.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2022-06-10_emerald-republic-brewing_heir-max.webp' alt='flyer, Jun 10, 2022'><span class='pwcap'>Jun 10, 2022 &middot; emerald republic brewing</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2022</span></li><li><span class='gdate'><a href='../s/2022-06-10-emerald-republic-brewing-heir-max-jamal-steele.html'><b>10</b><i>Jun 2022</i></a></span><span class='gwho'><a href='heir-max.html'>Heir Max</a>, <a href='jamal-steele.html'>Jamal Steele</a>, <a href='big-lo.html'>Big Lo</a>, <a href='kluslim.html'>Kluslim</a>, <b class='self'>Steelo</b>, <a href='king-hale.html'>King Hale</a>, <a href='dj-slim.html'>Dj Slim</a></span><a class='gven' href='../v/emerald-republic-brewing.html'>emerald republic brewing</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='big-lo.html'>big lo</a><a href='dj-slim.html'>dj slim</a><a href='heir-max.html'>heir max</a><a href='jamal-steele.html'>jamal steele</a><a href='king-hale.html'>king hale</a><a href='kluslim.html'>kluslim</a></div>
@@ -51,6 +51,12 @@
   var scrim=document.createElement('div');scrim.className='dcx-scrim';scrim.hidden=true;
   var panel=document.createElement('div');panel.className='dcx-panel';panel.hidden=true;
   panel.innerHTML='<textarea placeholder="what\'s wrong?"></textarea>'
+    +'<div class="dcx-row dcx-quick">'
+    +'<button type="button" data-a="quick" data-tag="remove this video">remove video</button>'
+    +'<button type="button" data-a="quick" data-tag="mark as touring">mark as touring</button>'
+    +'<button type="button" data-a="quick" data-tag="mark as dj">mark as dj</button>'
+    +'<button type="button" data-a="quick" data-tag="mark as local">mark as local</button>'
+    +'</div>'
     +'<div class="dcx-row">'
     +'<button type="button" data-a="save">save</button>'
     +'<button type="button" data-a="cancel">cancel</button>'
@@ -110,6 +116,15 @@
         var code=window.prompt('passcode:');
         if(code===DCX_PASSCODE)unlock();}});}
 
+  function doSave(note){
+    note=note.trim();if(!note)return;
+    var entry={ts:new Date().toISOString(),url:location.href,title:document.title,note:note};
+    if(window.__diyNowPlaying)entry.nowPlaying=window.__diyNowPlaying;
+    var all=flags();all.push(entry);saveFlags(all);
+    closePanel();
+    var old=fab.textContent;fab.textContent='✓';
+    setTimeout(function(){fab.textContent=old;},900);}
+
   fab.addEventListener('click',function(){
     if(fab.textContent==='✓')return;
     openPanel();});
@@ -118,15 +133,8 @@
     var a=e.target.getAttribute('data-a');
     if(!a)return;
     if(a==='cancel'){closePanel();return;}
-    if(a==='save'){
-      var note=ta.value.trim();if(!note)return;
-      var entry={ts:new Date().toISOString(),url:location.href,title:document.title,note:note};
-      if(window.__diyNowPlaying)entry.nowPlaying=window.__diyNowPlaying;
-      var all=flags();all.push(entry);saveFlags(all);
-      closePanel();
-      var old=fab.textContent;fab.textContent='✓';
-      setTimeout(function(){fab.textContent=old;},900);
-      return;}
+    if(a==='save'){doSave(ta.value);return;}
+    if(a==='quick'){doSave(e.target.getAttribute('data-tag')||'');return;}
     if(a==='toggle-log'){logBox.hidden=!logBox.hidden;renderLog();return;}
     if(a==='copy'){
       var a2=flags(),lines=[];

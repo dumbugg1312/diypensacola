@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-dbQr0/udZyVzn+egTh3Sj+tgQkq3TNiY8de+gQOiQNk='; frame-src https://www.youtube-nocookie.com">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-/eCjl8mvU6+iDRvj9V4HXpq5t1HHBDFFLE8Hq9vcMW4='">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Loudness War · shows in Pensacola · DIYPensacola</title>
 <meta name="description" content="Loudness War on the DIYPensacola record: 1 show since 2018 across 1 venue. Dates, flyers, and shared bills from the punksacola DIY scene.">
@@ -22,8 +22,8 @@
 <section class="acthero">
 <div class="actcard">
 <div class="heroinfo">
-<div class="actmast"><h1 class="dirhead">Loudness War</h1><span class="ostamp">pcola local</span></div>
-
+<div class="actmast"><h1 class="dirhead">Loudness War</h1><span class="ostamp tour">on tour</span></div>
+<p class='dirsub'>touring / out-of-town band</p>
 <div class='tallyrow'><span class='tcap'><b>1</b> show on the diypensacola record since 2018</span></div>
 <p class='actstory'>on the record since July 2018, first seen at the bugghouse on a bill with kent stanton and deadbuggs.</p>
 
@@ -31,7 +31,7 @@
 <div class='vstamps'><span class='lead'>played at</span><a href='../v/the-bugghouse.html'>the bugghouse</a></div>
 
 </div>
-<div class='ytgrid'><div class='ytwrap'><iframe loading='lazy' src='https://www.youtube-nocookie.com/embed/qD0aDVdZbQs' title='Loudness War live at Spanish Moon (Baton Rouge) 2/21/15' referrerpolicy='origin' allow='encrypted-media; fullscreen; picture-in-picture' allowfullscreen></iframe></div><a class='bcembed' href='https://loudnesswarband.bandcamp.com' target='_blank' rel='noopener'><span class='bcart'><img class='bclogoimg' src='../bandcamp-logo.png' alt=''><span class='bcplay'>&#9658;</span></span><span class='bcbody'><span class='bclabel'>bandcamp</span><b class='bcname'>loudness war</b><span class='bcscrub'><span class='bcfill'></span></span><span class='bccta'>listen on bandcamp &#8599;</span></span></a></div>
+<div class='ytgrid'><a class='bcembed' href='https://loudnesswarband.bandcamp.com' target='_blank' rel='noopener'><span class='bcart'><img class='bclogoimg' src='../bandcamp-logo.png' alt=''><span class='bcplay'>&#9658;</span></span><span class='bcbody'><span class='bclabel'>bandcamp</span><b class='bcname'>loudness war</b><span class='bcscrub'><span class='bcfill'></span></span><span class='bccta'>listen on bandcamp &#8599;</span></span></a></div>
 </div>
 </section>
 <h2 class='dirsec'>flyer wall</h2><div class='postwall'><a class='pwtile' href='../flyers/2018-07-19_the-bugghouse_kent-stanton.jpg' target='_blank' rel='noopener'><img loading='lazy' src='../flyers/thumbs/2018-07-19_the-bugghouse_kent-stanton.webp' alt='flyer, Jul 19, 2018'><span class='pwcap'>Jul 19, 2018 &middot; the bugghouse</span></a></div><h2 class='dirsec'>past shows</h2><ul class='gigledger'><li class='gyear'><span>2018</span></li><li><span class='gdate'><a href='../s/2018-07-19-the-bugghouse-kent-stanton-loudness-war.html'><b>19</b><i>Jul 2018</i></a></span><span class='gwho'><a href='kent-stanton.html'>Kent Stanton</a>, <b class='self'>Loudness War</b>, <a href='deadbuggs.html'>Deadbuggs</a></span><a class='gven' href='../v/the-bugghouse.html'>the bugghouse</a></li></ul><h2 class='dirsec'>shared bills with</h2><div class='bmates'><a href='deadbuggs.html'>deadbuggs</a><a href='kent-stanton.html'>kent stanton</a></div>
@@ -51,6 +51,12 @@
   var scrim=document.createElement('div');scrim.className='dcx-scrim';scrim.hidden=true;
   var panel=document.createElement('div');panel.className='dcx-panel';panel.hidden=true;
   panel.innerHTML='<textarea placeholder="what\'s wrong?"></textarea>'
+    +'<div class="dcx-row dcx-quick">'
+    +'<button type="button" data-a="quick" data-tag="remove this video">remove video</button>'
+    +'<button type="button" data-a="quick" data-tag="mark as touring">mark as touring</button>'
+    +'<button type="button" data-a="quick" data-tag="mark as dj">mark as dj</button>'
+    +'<button type="button" data-a="quick" data-tag="mark as local">mark as local</button>'
+    +'</div>'
     +'<div class="dcx-row">'
     +'<button type="button" data-a="save">save</button>'
     +'<button type="button" data-a="cancel">cancel</button>'
@@ -110,6 +116,15 @@
         var code=window.prompt('passcode:');
         if(code===DCX_PASSCODE)unlock();}});}
 
+  function doSave(note){
+    note=note.trim();if(!note)return;
+    var entry={ts:new Date().toISOString(),url:location.href,title:document.title,note:note};
+    if(window.__diyNowPlaying)entry.nowPlaying=window.__diyNowPlaying;
+    var all=flags();all.push(entry);saveFlags(all);
+    closePanel();
+    var old=fab.textContent;fab.textContent='✓';
+    setTimeout(function(){fab.textContent=old;},900);}
+
   fab.addEventListener('click',function(){
     if(fab.textContent==='✓')return;
     openPanel();});
@@ -118,15 +133,8 @@
     var a=e.target.getAttribute('data-a');
     if(!a)return;
     if(a==='cancel'){closePanel();return;}
-    if(a==='save'){
-      var note=ta.value.trim();if(!note)return;
-      var entry={ts:new Date().toISOString(),url:location.href,title:document.title,note:note};
-      if(window.__diyNowPlaying)entry.nowPlaying=window.__diyNowPlaying;
-      var all=flags();all.push(entry);saveFlags(all);
-      closePanel();
-      var old=fab.textContent;fab.textContent='✓';
-      setTimeout(function(){fab.textContent=old;},900);
-      return;}
+    if(a==='save'){doSave(ta.value);return;}
+    if(a==='quick'){doSave(e.target.getAttribute('data-tag')||'');return;}
     if(a==='toggle-log'){logBox.hidden=!logBox.hidden;renderLog();return;}
     if(a==='copy'){
       var a2=flags(),lines=[];
