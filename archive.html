@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-/eCjl8mvU6+iDRvj9V4HXpq5t1HHBDFFLE8Hq9vcMW4=' 'sha256-J1UBu+GqM5ec1VlhAW0sIF2DdG2AbrG1dkKR2SCmVmE='">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-/eCjl8mvU6+iDRvj9V4HXpq5t1HHBDFFLE8Hq9vcMW4=' 'sha256-xpq1vElZ2/PW/kr3Hp2d0yzSCoIZKw+PU2absZ5SjjQ='">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>search the scene · the DIYPensacola archive</title>
 <meta name="description" content="Search the whole DIYPensacola record: 1179 past DIY and punk shows, 2297 bands and acts, and 82 venues in Pensacola, FL across 15 years, with a flyer wall and browsable bands and venues.">
@@ -23,7 +23,7 @@
 <h1><a href="./">diypensacola</a></h1>
 <p class="tag">the punksacola show archive &middot; every flyer we could dig up</p>
 </header>
-<div class="links"><a href="https://instagram.com/diypensacola" target="_blank" rel="noopener">instagram</a><a href="https://discord.com/invite/Ckn2j53Bqm" target="_blank" rel="noopener">join our discord</a><a href="https://facebook.com/diypensacola" target="_blank" rel="noopener">facebook</a><a href="guide.html">showgoer guide</a><a href="submit.html">submit a show</a><a href="https://youtube.com/playlist?list=PLVw-bAWseWcR5fmJF4vu6zbBVT1m0Lf7q" target="_blank" rel="noopener">local music streams</a><a href="https://lnk.bio/diypensacola" target="_blank" rel="noopener">our links</a><a href="https://venmo.com/code?user_id=2602561043431424773&amp;created=1782154144" target="_blank" rel="noopener">donate</a></div>
+<div class="links"><a href="https://instagram.com/diypensacola" target="_blank" rel="noopener">instagram</a><a href="https://discord.com/invite/Ckn2j53Bqm" target="_blank" rel="noopener">join our discord</a><a href="https://facebook.com/diypensacola" target="_blank" rel="noopener">facebook</a><a href="guide.html">showgoer guide</a><a href="submit.html">submit a show</a><a href="https://youtube.com/playlist?list=PLVw-bAWseWcR5fmJF4vu6zbBVT1m0Lf7q" target="_blank" rel="noopener">local mixtapes</a><a href="https://lnk.bio/diypensacola" target="_blank" rel="noopener">our links</a><a href="https://venmo.com/code?user_id=2602561043431424773&amp;created=1782154144" target="_blank" rel="noopener">donate</a></div>
 <main class="spwrap dirwrap arcwrap">
 <h2 class="dirhead">search the scene<a class="helpq" href="archive-help.html" aria-label="how to use the archive" title="how to use the archive">?</a></h2>
 <p class="dirsub">one place for the whole record: 1179 past shows, 2297 bands &amp; acts, and
@@ -92,7 +92,10 @@ missing show? <a href="submit.html">send it in</a>.</p>
   function esc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 
   // ---- facet dimensions: AND across, OR within a dimension ----
-  var DIMS=['year','venue','type','scene','price','age','dow','flyer','has_videos'];
+  // ["year", "venue", "type", "scene", "price", "age", "dow", "flyer", "has_videos"] is injected at build time from build.py's FACET_DIMS (single
+  // source of truth also used by _blank_fac()/fcount) so the JS and Python
+  // dimension lists can never drift apart.
+  var DIMS=["year", "venue", "type", "scene", "price", "age", "dow", "flyer", "has_videos"];
   var sel={}; DIMS.forEach(function(d){sel[d]=Object.create(null);sel[d].__n=0;});
   function selHas(d,v){return !!sel[d][v];}
   function selAdd(d,v){if(!sel[d][v]){sel[d][v]=1;sel[d].__n++;}}

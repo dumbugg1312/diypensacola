@@ -328,6 +328,14 @@ main section:target{animation:viewin .26s ease both}
   padding:1.2rem 1.3rem;text-align:center}
 .radiopromo p{margin:0 0 .95rem;color:var(--ink);font-size:.95rem;line-height:1.6}
 .radiopromo b{color:var(--hotink)}
+/* local mixtapes callout: sits between .radiopromo and .endtip, deliberately
+   NOT another flat dashed card (three of those back to back reads as one
+   blurred ask). Solid tape-colored border + full offset shadow + a tilt, like
+   a physical mixtape dropped between the two flatter cards. */
+.localmixtapes{max-width:680px;margin:2.6rem auto .4rem;background:var(--card);border:2px solid var(--tape);
+  box-shadow:6px 6px 0 var(--hot);padding:1.2rem 1.3rem;text-align:center;transform:rotate(-1deg)}
+.localmixtapes p{margin:0 0 .95rem;color:var(--ink);font-size:.95rem;line-height:1.6}
+.localmixtapes b{color:var(--hotink)}
 
 @media (max-width:640px){
   #calgrid{display:none}#agenda{display:block}
@@ -487,7 +495,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .printhead{display:none}
 @media print{
   body{background:#fff;color:#000;font:12pt/1.4 "Courier New",monospace}
-  header,.links,.modebar,nav,.controls,#grid,.endtip,.radiopromo,footer,.totop,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming,.tstrip,.printbar{display:none!important}
+  header,.links,.modebar,nav,.controls,#grid,.endtip,.radiopromo,.localmixtapes,footer,.totop,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming,.tstrip,.printbar{display:none!important}
   main:not(:has(section:target)) #list{display:block}
   main section{display:none!important}
   main section#list{display:block!important}
