@@ -20,4 +20,12 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-08-04-handlebar-trh-saidan@diypensacola
+DTSTART;TZID=America/Chicago:20260804T190000
+DTEND;TZID=America/Chicago:20260804T220000
+SUMMARY:Trhä\, Saidan\, Barbelith @ The Handlebar
+DESCRIPTION:trhä\, saidan and barbelith at the handlebar this tuesday\, august 4th. summer tour stop in pensacola.
+LOCATION:The Handlebar
+END:VEVENT
 END:VCALENDAR

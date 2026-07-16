@@ -85,6 +85,14 @@ DESCRIPTION:pensacola songwriter rounds series with katie dineen\, alex rogers\,
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-08-04-handlebar-trh-saidan@diypensacola
+DTSTART;TZID=America/Chicago:20260804T190000
+DTEND;TZID=America/Chicago:20260804T220000
+SUMMARY:Trhä\, Saidan\, Barbelith @ The Handlebar
+DESCRIPTION:trhä\, saidan and barbelith at the handlebar this tuesday\, august 4th. summer tour stop in pensacola.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-08-14-handlebar-katie-dineen@diypensacola
 DTSTART;TZID=America/Chicago:20260814T180000
 DTEND;TZID=America/Chicago:20260814T210000
@@ -101,11 +109,27 @@ DESCRIPTION:heroes for ghosts and spiritless at the handlebar saturday august 15
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-08-18-handlebar-southpaw-arcline@diypensacola
+DTSTART;TZID=America/Chicago:20260818T190000
+DTEND;TZID=America/Chicago:20260818T220000
+SUMMARY:Southpaw\, Arcline @ The Handlebar
+DESCRIPTION:southpaw and arcline at the handlebar\, tuesday august 18th.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-08-27-handlebar-foxtide-braymores@diypensacola
 DTSTART;TZID=America/Chicago:20260827T190000
 DTEND;TZID=America/Chicago:20260827T220000
 SUMMARY:Foxtide\, Braymores @ The Handlebar
 DESCRIPTION:foxtide brings the entropy tour to the handlebar thursday\, august 27\, with braymores opening.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-01-handlebar-cheekface-catbite@diypensacola
+DTSTART;TZID=America/Chicago:20260901T190000
+DTEND;TZID=America/Chicago:20260901T220000
+SUMMARY:Cheekface\, Catbite @ The Handlebar
+DESCRIPTION:cheekface and catbite at the handlebar\, tuesday september 1st.
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
@@ -138,6 +162,14 @@ DTSTART;TZID=America/Chicago:20260914T190000
 DTEND;TZID=America/Chicago:20260914T220000
 SUMMARY:Archers\, Autumn Kings\, Pinknoise\, Coldstate @ The Handlebar
 DESCRIPTION:archers\, autumn kings\, pinknoise\, and coldstate at the handlebar. september 14. tickets at thehandlebar850.com.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-18-handlebar-glitterer-bleary-eyed@diypensacola
+DTSTART;TZID=America/Chicago:20260918T190000
+DTEND;TZID=America/Chicago:20260918T220000
+SUMMARY:Glitterer\, Bleary Eyed\, Guttered @ The Handlebar
+DESCRIPTION:glitterer\, bleary eyed and guttered at the handlebar\, friday september 18th. on tour\, come out.
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT

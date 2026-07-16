@@ -53,6 +53,14 @@ DESCRIPTION:oversight\, other\, and spiral live at the handlebar this friday. do
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-07-18-garden-palafox-ice-out-now-justice-for-lorenzo-joan-and-all-victims-of-ice-terror@diypensacola
+DTSTART;TZID=America/Chicago:20260718T180000
+DTEND;TZID=America/Chicago:20260718T210000
+SUMMARY:ICE Out Now! Justice for Lorenzo\, Joan and All Victims of ICE Terror @ Garden & Palafox
+DESCRIPTION:ice out now. justice for lorenzo\, joan and all victims of ice terror. saturday july 18th\, 6pm\, garden & palafox.
+LOCATION:Garden & Palafox
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-07-19-handlebar-in-gloom@diypensacola
 DTSTART;TZID=America/Chicago:20260719T190000
 DTEND;TZID=America/Chicago:20260719T220000
@@ -101,6 +109,14 @@ DESCRIPTION:obituary at the handlebar with modown\, exformation\, and d.r.e.a.d.
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-07-24-bettys-rabbithole-ghostlings@diypensacola
+DTSTART;TZID=America/Chicago:20260724T200000
+DTEND;TZID=America/Chicago:20260724T230000
+SUMMARY:Rabbithole\, Ghostlings\, Lucid\, Pamm @ Betty's
+DESCRIPTION:rabbithole\, ghostlings\, lucid and pamm at betty's this friday\, july 24th. doors 8pm\, $10/pwyc.
+LOCATION:Betty's
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-07-25-309-rainn-forrest-bea-hurd@diypensacola
 DTSTART;TZID=America/Chicago:20260725T180000
 DTEND;TZID=America/Chicago:20260725T210000
@@ -141,6 +157,14 @@ DESCRIPTION:pensacola songwriter rounds series with katie dineen\, alex rogers\,
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-08-04-handlebar-trh-saidan@diypensacola
+DTSTART;TZID=America/Chicago:20260804T190000
+DTEND;TZID=America/Chicago:20260804T220000
+SUMMARY:Trhä\, Saidan\, Barbelith @ The Handlebar
+DESCRIPTION:trhä\, saidan and barbelith at the handlebar this tuesday\, august 4th. summer tour stop in pensacola.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-08-08-309-caca-del-diabo-mourning-glories@diypensacola
 DTSTART;TZID=America/Chicago:20260808T180000
 DTEND;TZID=America/Chicago:20260808T210000
@@ -165,6 +189,14 @@ DESCRIPTION:heroes for ghosts and spiritless at the handlebar saturday august 15
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-08-18-handlebar-southpaw-arcline@diypensacola
+DTSTART;TZID=America/Chicago:20260818T190000
+DTEND;TZID=America/Chicago:20260818T220000
+SUMMARY:Southpaw\, Arcline @ The Handlebar
+DESCRIPTION:southpaw and arcline at the handlebar\, tuesday august 18th.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-08-27-bettys-ramblin-ricky-tate@diypensacola
 DTSTART;TZID=America/Chicago:20260827T190000
 DTEND;TZID=America/Chicago:20260827T220000
@@ -178,6 +210,14 @@ DTSTART;TZID=America/Chicago:20260827T190000
 DTEND;TZID=America/Chicago:20260827T220000
 SUMMARY:Foxtide\, Braymores @ The Handlebar
 DESCRIPTION:foxtide brings the entropy tour to the handlebar thursday\, august 27\, with braymores opening.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-01-handlebar-cheekface-catbite@diypensacola
+DTSTART;TZID=America/Chicago:20260901T190000
+DTEND;TZID=America/Chicago:20260901T220000
+SUMMARY:Cheekface\, Catbite @ The Handlebar
+DESCRIPTION:cheekface and catbite at the handlebar\, tuesday september 1st.
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
@@ -197,6 +237,14 @@ DESCRIPTION:geordie greep live at the handlebar. friday\, september 11th.
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-09-11-309-we-cant-help-it-if-were-from-florida@diypensacola
+DTSTART;TZID=America/Chicago:20260911T180000
+DTEND;TZID=America/Chicago:20260911T210000
+SUMMARY:We Can’t Help It If We’re From Florida @ 309 Punk Project
+DESCRIPTION:we can't help it if we're from florida\, a group photography exhibition at the 309 punk project. friday september 11th\, 6-9pm.
+LOCATION:309 Punk Project
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-09-12-handlebar-nvsn-the-autumn-descent@diypensacola
 DTSTART;TZID=America/Chicago:20260912T190000
 DTEND;TZID=America/Chicago:20260912T220000
@@ -210,6 +258,14 @@ DTSTART;TZID=America/Chicago:20260914T190000
 DTEND;TZID=America/Chicago:20260914T220000
 SUMMARY:Archers\, Autumn Kings\, Pinknoise\, Coldstate @ The Handlebar
 DESCRIPTION:archers\, autumn kings\, pinknoise\, and coldstate at the handlebar. september 14. tickets at thehandlebar850.com.
+LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-18-handlebar-glitterer-bleary-eyed@diypensacola
+DTSTART;TZID=America/Chicago:20260918T190000
+DTEND;TZID=America/Chicago:20260918T220000
+SUMMARY:Glitterer\, Bleary Eyed\, Guttered @ The Handlebar
+DESCRIPTION:glitterer\, bleary eyed and guttered at the handlebar\, friday september 18th. on tour\, come out.
 LOCATION:The Handlebar
 END:VEVENT
 BEGIN:VEVENT
@@ -267,6 +323,14 @@ DTEND;TZID=America/Chicago:20261029T213000
 SUMMARY:The Linda Lindas @ The Handlebar
 DESCRIPTION:the linda lindas at the handlebar. thursday oct 29\, 6:30pm. part of hallozine fest\, presented by 309 punk project and foo foo fest. tickets at thehandlebar850.com.
 LOCATION:The Handlebar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-29-voices-of-pensacola-multicultural-center-2nd-annual-hallozine-fest@diypensacola
+DTSTART;TZID=America/Chicago:20261029T190000
+DTEND;TZID=America/Chicago:20261029T220000
+SUMMARY:2nd Annual HalloZine Fest @ Voices of Pensacola Multicultural Center
+DESCRIPTION:2nd annual hallozine fest\, october 29th-30th at voices of pensacola multicultural center. save the date\, presented by 309 punk project.
+LOCATION:Voices of Pensacola Multicultural Center
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-14-handlebar-chrissy-chlapecka@diypensacola
