@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.github.com; style-src 'self' 'unsafe-inline'; script-src 'sha256-K4KzsGPP4U2H7uCmzAjLcaxhij8sqmebT0tzlRHp8YU=' 'sha256-RCkR64QPsKNGuWgzPQ9Lhq3QOc/7eMh+/slhgn58OF0=' 'sha256-3CIccJdBa2T6HHyhvc5n4k3rX717d4kPLaa+Db/XbqU='">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; connect-src 'self' https://api.github.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-SwzMxhWONOX8KRZuFlUFqCtBmCTBUtcumbTRfVWv9Z4=' 'sha256-RCkR64QPsKNGuWgzPQ9Lhq3QOc/7eMh+/slhgn58OF0=' 'sha256-3CIccJdBa2T6HHyhvc5n4k3rX717d4kPLaa+Db/XbqU='">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Nature Boys, Zerox &#39;82, Company Of Ghosts · FRI JUN 17 @ Sluggo&#39;s · DIYPensacola</title>
 <meta name="description" content="$5 21+\/\/$7 under 21: Nature Boys (melodic punk from Kansas City), Zerox &#39;82 (local hardcore punk with Japanese\/British influences), and Company of Ghosts (local folk\/punk).">
@@ -18,7 +18,9 @@
 <link rel="icon" href="../logo.png">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="preload" href="/fonts/special-elite.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Special+Elite&family=Rock+Salt&display=swap" rel="stylesheet">
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Event", "name": "Nature Boys, Zerox '82, Company Of Ghosts", "startDate": "2011-06-17T19:00:00-05:00", "endDate": "2011-06-17T22:00:00-05:00", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Sluggo's", "address": {"@type": "PostalAddress", "addressLocality": "Pensacola", "addressRegion": "FL", "addressCountry": "US"}}, "image": "https://diypensacola.com/flyers/2011-06-17_sluggo-s_nature-boys.jpg", "url": "https://diypensacola.com/s/2011-06-17-sluggo-s-nature-boys-zerox-82.html", "organizer": {"@type": "Organization", "name": "DIYPensacola", "url": "https://diypensacola.com/"}, "performer": [{"@type": "MusicGroup", "name": "Nature Boys"}, {"@type": "MusicGroup", "name": "Zerox '82"}, {"@type": "MusicGroup", "name": "Company Of Ghosts"}]}]</script><script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "diypensacola", "item": "https://diypensacola.com/"}, {"@type": "ListItem", "position": 2, "name": "archive", "item": "https://diypensacola.com/archive.html"}, {"@type": "ListItem", "position": 3, "name": "Sluggo's", "item": "https://diypensacola.com/v/sluggo-s.html"}, {"@type": "ListItem", "position": 4, "name": "Nature Boys, Zerox '82, Company Of Ghosts"}]}]</script>
 <link rel="stylesheet" href="../style.css"></head><body class="showpage">
 <header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive &amp; search</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
@@ -61,7 +63,10 @@
     if(!m)return;
     var card=document.querySelector('.spcard');
     if(!card||card.classList.contains('off'))return;
-    fetch('../overrides.json?t='+Date.now(),{cache:'no-store'})
+    var ctl=window.AbortController?new AbortController():null;
+    if(ctl)setTimeout(function(){try{ctl.abort();}catch(e){}},4000);
+    fetch('../overrides.json?t='+Date.now(),
+          ctl?{cache:'no-store',signal:ctl.signal}:{cache:'no-store'})
       .then(function(r){return r.ok?r.json():null;})
       .then(function(o){
         var st=o&&o.shows&&o.shows[m[1]]&&o.shows[m[1]].status;

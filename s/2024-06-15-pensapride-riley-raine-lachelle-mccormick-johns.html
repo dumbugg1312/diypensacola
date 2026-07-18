@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.github.com; style-src 'self' 'unsafe-inline'; script-src 'sha256-K4KzsGPP4U2H7uCmzAjLcaxhij8sqmebT0tzlRHp8YU=' 'sha256-RCkR64QPsKNGuWgzPQ9Lhq3QOc/7eMh+/slhgn58OF0=' 'sha256-3CIccJdBa2T6HHyhvc5n4k3rX717d4kPLaa+Db/XbqU='">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; connect-src 'self' https://api.github.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-SwzMxhWONOX8KRZuFlUFqCtBmCTBUtcumbTRfVWv9Z4=' 'sha256-RCkR64QPsKNGuWgzPQ9Lhq3QOc/7eMh+/slhgn58OF0=' 'sha256-3CIccJdBa2T6HHyhvc5n4k3rX717d4kPLaa+Db/XbqU='">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Riley Raine, Lachelle Mccormick Johns, Arlo Angeles, Greg Bond, Hannah Burns, Dakota Parks, Lachlan Woodson, Katie Dineen, Hane Skot · SAT JUN 15 @ PensaPride · DIYPensacola</title>
 <meta name="description" content="PensaPride. Saturday, June 15, 10 a.m. - 6 p.m. 6655 Mobile Hwy Pensacola FL. Acoustic &amp; Poetry Stage presented by 309 Punk Project. 10:00 Riley Raine, 10:25 LaChelle McCormick Johns (poetry), 10:35 Arlo Angeles (poetry), 10:45 Greg Bond, 11:10 Hannah Burns (poetry), 11:15 Dakota Parks (poetry), 11:25 Lachlan Woodson (poetry), 11:35 Katie Dineen, 12:00 Hane Skot.">
@@ -18,7 +18,9 @@
 <link rel="icon" href="../logo.png">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="preload" href="/fonts/special-elite.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Special+Elite&family=Rock+Salt&display=swap" rel="stylesheet">
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Event", "name": "Riley Raine, Lachelle Mccormick Johns, Arlo Angeles, Greg Bond, Hannah Burns, Dakota Parks, Lachlan Woodson, Katie Dineen, Hane Skot", "startDate": "2024-06-15T10:00:00-05:00", "endDate": "2024-06-15T13:00:00-05:00", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "PensaPride", "address": {"@type": "PostalAddress", "addressLocality": "Pensacola", "addressRegion": "FL", "addressCountry": "US"}}, "image": "https://diypensacola.com/flyers/2024-06-15_pensapride_riley-raine.jpg", "url": "https://diypensacola.com/s/2024-06-15-pensapride-riley-raine-lachelle-mccormick-johns.html", "organizer": {"@type": "Organization", "name": "DIYPensacola", "url": "https://diypensacola.com/"}, "performer": [{"@type": "MusicGroup", "name": "Riley Raine"}, {"@type": "MusicGroup", "name": "Lachelle Mccormick Johns"}, {"@type": "MusicGroup", "name": "Arlo Angeles"}, {"@type": "MusicGroup", "name": "Greg Bond"}, {"@type": "MusicGroup", "name": "Hannah Burns"}, {"@type": "MusicGroup", "name": "Dakota Parks"}, {"@type": "MusicGroup", "name": "Lachlan Woodson"}, {"@type": "MusicGroup", "name": "Katie Dineen"}, {"@type": "MusicGroup", "name": "Hane Skot"}]}]</script><script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "diypensacola", "item": "https://diypensacola.com/"}, {"@type": "ListItem", "position": 2, "name": "archive", "item": "https://diypensacola.com/archive.html"}, {"@type": "ListItem", "position": 3, "name": "PensaPride", "item": "https://diypensacola.com/v/pensapride.html"}, {"@type": "ListItem", "position": 4, "name": "Riley Raine, Lachelle Mccormick Johns, Arlo Angeles, Greg Bond, Hannah Burns, Dakota Parks, Lachlan Woodson, Katie Dineen, Hane Skot"}]}]</script>
 <link rel="stylesheet" href="../style.css"></head><body class="showpage">
 <header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive &amp; search</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
@@ -61,7 +63,10 @@
     if(!m)return;
     var card=document.querySelector('.spcard');
     if(!card||card.classList.contains('off'))return;
-    fetch('../overrides.json?t='+Date.now(),{cache:'no-store'})
+    var ctl=window.AbortController?new AbortController():null;
+    if(ctl)setTimeout(function(){try{ctl.abort();}catch(e){}},4000);
+    fetch('../overrides.json?t='+Date.now(),
+          ctl?{cache:'no-store',signal:ctl.signal}:{cache:'no-store'})
       .then(function(r){return r.ok?r.json():null;})
       .then(function(o){
         var st=o&&o.shows&&o.shows[m[1]]&&o.shows[m[1]].status;
