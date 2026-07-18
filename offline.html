@@ -328,20 +328,33 @@ main section:target{animation:viewin .26s ease both}
 .endtip.in{opacity:1;transform:none}
 .endtip p{margin:0 0 .95rem;color:var(--ink);font-size:.95rem;line-height:1.6}
 .endtip b{color:var(--hotink)}
-/* radio promo callout: same shape as .endtip, sits just above it, plain
-   border so the two don't compete for attention. */
-.radiopromo{max-width:680px;margin:2.6rem auto .4rem;background:var(--card);border:2px dashed var(--dim);
-  padding:1.2rem 1.3rem;text-align:center}
-.radiopromo p{margin:0 0 .95rem;color:var(--ink);font-size:.95rem;line-height:1.6}
-.radiopromo b{color:var(--hotink)}
-/* local mixtapes callout: sits between .radiopromo and .endtip, deliberately
-   NOT another flat dashed card (three of those back to back reads as one
-   blurred ask). Solid tape-colored border + full offset shadow + a tilt, like
-   a physical mixtape dropped between the two flatter cards. */
-.localmixtapes{max-width:680px;margin:2.6rem auto .4rem;background:var(--card);border:2px solid var(--tape);
-  box-shadow:6px 6px 0 var(--hot);padding:1.2rem 1.3rem;text-align:center;transform:rotate(-1deg)}
-.localmixtapes p{margin:0 0 .95rem;color:var(--ink);font-size:.95rem;line-height:1.6}
-.localmixtapes b{color:var(--hotink)}
+/* ---- tape deck: radio + mixtapes as ONE object ---- */
+/* These were two separate centered callouts stacked above the donate callout,
+   which read as three of the same box back to back. They are the same intent
+   (hear the scene), so they are now one cassette J-card: a titled label band
+   over an A-side / B-side split. Deliberately a different SHAPE from the donate
+   callout below it (banded + two-column, vs centered + dashed) so the page stops
+   repeating one rhythm. Square corners, 0-blur offset shadow, olive band. */
+.tapedeck{max-width:760px;margin:2.8rem auto .4rem;background:var(--card);
+  border:2px solid var(--tape);box-shadow:5px 5px 0 var(--hot)}
+.tdhead{display:flex;align-items:baseline;flex-wrap:wrap;gap:.2rem .7rem;
+  background:var(--hot);color:var(--on-hot);padding:.45rem .85rem;border-bottom:2px solid var(--tape)}
+.tdtitle{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;
+  letter-spacing:.07em;font-size:1.05rem;line-height:1}
+.tdsub{font-size:.72rem;letter-spacing:.02em}
+.tdsides{display:grid;grid-template-columns:1fr 1fr}
+.tdside{padding:1rem .95rem 1.1rem;text-align:center;display:flex;flex-direction:column}
+/* a divider between two equal columns, not a decorative side accent */
+.tdside+.tdside{border-left:2px dashed var(--line)}
+.tdlabel{display:block;font-family:"Anton","Special Elite",sans-serif;font-size:.68rem;
+  text-transform:uppercase;letter-spacing:.18em;color:var(--hotink);margin-bottom:.4rem}
+.tdside p{margin:0 0 .9rem;color:var(--ink);font-size:.9rem;line-height:1.55;flex:1}
+.tdside b{color:var(--hotink)}
+.tdside .dbtn{align-self:center}
+@media (max-width:560px){
+  .tdsides{grid-template-columns:1fr}
+  .tdside+.tdside{border-left:0;border-top:2px dashed var(--line)}
+}
 
 @media (max-width:640px){
   #calgrid{display:none}#agenda{display:block}
@@ -501,7 +514,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .printhead{display:none}
 @media print{
   body{background:#fff;color:#000;font:12pt/1.4 "Courier New",monospace}
-  header,.links,.modebar,nav,.controls,#grid,.endtip,.radiopromo,.localmixtapes,footer,.totop,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming,.tstrip,.printbar{display:none!important}
+  header,.links,.modebar,nav,.controls,#grid,.endtip,.tapedeck,footer,.totop,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming,.tstrip,.printbar{display:none!important}
   main:not(:has(section:target)) #list{display:block}
   main section{display:none!important}
   main section#list{display:block!important}
@@ -1220,18 +1233,23 @@ main{max-width:940px}
    site's dashed=inactive / solid=active rule; a hit-area pseudo-element brings the
    32px glyph up to a 44px touch target without changing the visual size. */
 .show{position:relative}
-.savebtn{position:absolute;top:.4rem;right:.4rem;width:2rem;height:2rem;z-index:2;
-  background:var(--card);border:2px dashed var(--dim);color:var(--dim);cursor:pointer;
-  font-size:1rem;line-height:1;padding:0;box-shadow:3px 3px 0 rgba(0,0,0,.4);
-  transition:transform .12s}
+/* Just a mark, not a button: no border, no background, no shadow. The hollow vs
+   filled star IS the state, so the box chrome was only adding noise to the card
+   corner. Visually ~13px; the invisible ::after still gives it a 44px tap target. */
+.savebtn{position:absolute;top:.3rem;right:.4rem;z-index:2;
+  background:none;border:0;color:var(--dim);cursor:pointer;
+  font-size:.82rem;line-height:1;padding:0;opacity:.75;transition:opacity .12s,color .12s}
 .savebtn::before{content:"\2606"}          /* hollow star = not saved */
-.savebtn::after{content:"";position:absolute;inset:-7px}   /* expands hit area to ~44px */
-.savebtn.on{border-style:solid;border-color:var(--hotink);color:var(--hotink)}
+.savebtn::after{content:"";position:absolute;inset:-15px}  /* invisible 44px hit area */
+.savebtn.on{color:var(--hotink);opacity:1}
 .savebtn.on::before{content:"\2605"}       /* filled star = saved */
-@media (hover:hover){.savebtn:hover{transform:translate(-1px,-1px)}}
-#list.wall .savebtn{top:.3rem;right:.3rem}
+@media (hover:hover){.savebtn:hover{opacity:1;color:var(--hotink)}}
+#list.wall .savebtn{top:.25rem;right:.3rem}
 .savetoggle.on{background:var(--hot);color:var(--on-hot);border-color:var(--hot)}
-.yoursbtn{width:auto;padding:0 .7rem;font-size:.82rem;white-space:nowrap}
+/* star only, no label: it sits with the other square nav buttons and the star
+   already reads as "saved". The accessible name still says "show only shows you
+   saved" via aria-label. */
+.yoursbtn{font-size:.95rem;line-height:1}
 .yoursbtn.on{background:var(--hot);color:var(--on-hot);border-color:var(--hot)}
 /* the nav buttons set an explicit display, which beats the UA [hidden] rule, so
    spell out that a hidden "yours" button stays hidden until a show is saved. */
