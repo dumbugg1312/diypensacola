@@ -562,46 +562,57 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   .bhead{display:block;background:#000!important;color:#fff!important;
     -webkit-print-color-adjust:exact;print-color-adjust:exact;
     border:0!important;box-shadow:none!important;transform:none!important;
-    font-family:"Anton","Special Elite",sans-serif;font-weight:400;font-size:13pt;
-    letter-spacing:.14em;text-transform:uppercase;padding:.035in .1in;margin:.14in 0 .1in;break-after:avoid}
+    font-family:"Anton","Special Elite",sans-serif;font-weight:400;font-size:12pt;
+    letter-spacing:.18em;text-transform:uppercase;padding:.03in .09in;margin:.22in 0 .02in;break-after:avoid}
+  #b-tonight .bhead{margin-top:.04in}
   .bhead::after{display:none}
   .bhead .lab{background:none!important;color:#fff!important;padding:0;transform:none!important;box-shadow:none!important;border:0!important}
-  /* ---- the wall: three columns of tilted flyer tiles ---- */
-  /* !important throughout: the screen poster-feed rules
+  /* ---- the gig guide: a date-led ledger, not a collage of boxes ---- */
+  /* One fluent chronological flow, set like a zine listings page: flyer at
+     left in a fixed column, typography at right (date line, lineup in big
+     condensed caps, venue-time-price in typewriter), a dashed rule between
+     rows, and no card boxes at all. Tonight's rows run a double-size flyer —
+     the headline act. Rows never split across pages; a single flow means no
+     multicol holes.
+     !important throughout: the screen poster-feed rules
      (#list:not(.wall) #b-tonight .show{display:grid}, per-bucket thumb sizes,
      the dense-list frame, clamp()'d h3 sizes...) sit LATER in this sheet with
      id-level specificity, so plain print declarations lose to them. Print is
      the one place a blanket !important is the honest tool. */
-  .cards{display:block!important;column-count:3!important;column-gap:.16in!important;
+  .cards{display:block!important;column-count:auto!important;
     border:0!important;background:none!important;box-shadow:none!important;gap:0!important}
-  /* tonight is the headline act: two wide columns, so its flyer prints big */
-  #b-tonight .cards{column-count:2!important}
-  .show{display:inline-block!important;width:100%!important;break-inside:avoid;
-    margin:0 0 .16in!important;padding:0!important;flex:none!important;
-    background:#fff!important;border:2.5px solid #000!important;border-bottom:2.5px solid #000!important;
-    box-shadow:none!important;color:#000!important;grid-template-columns:none!important;gap:0!important}
-  .show:nth-child(3n+1){transform:rotate(-.7deg)!important}
-  .show:nth-child(3n){transform:rotate(.8deg)!important}
-  .show:nth-child(3n+2){transform:none!important}
+  .show{display:grid!important;grid-template-columns:1in 1fr!important;gap:.16in!important;
+    align-items:center!important;width:auto!important;break-inside:avoid;
+    margin:0!important;padding:.1in .02in!important;flex:none!important;
+    background:none!important;border:0!important;border-bottom:1.5px dashed #000!important;
+    box-shadow:none!important;color:#000!important;transform:none!important}
+  .cards .show:last-child{border-bottom:0!important}
+  #b-tonight .show{grid-template-columns:2.2in 1fr!important;padding:.14in .02in!important}
   .thumbwrap{display:block!important;width:100%!important;max-width:none!important;
     aspect-ratio:auto!important;margin:0!important;padding:0!important;flex:none!important}
   .thumbwrap::before{display:none!important}   /* screen-only tape */
   .show img.thumb{display:block!important;width:100%!important;height:auto!important;
     max-height:none!important;object-fit:contain!important;transform:none!important;
-    filter:grayscale(1) contrast(1.2)!important;background:#fff!important;
-    border:0!important;border-bottom:2.5px solid #000!important;padding:0!important}
-  .show .info{display:block!important;padding:.05in .08in .07in!important}
-  .show .daterow{display:flex!important;flex-wrap:wrap;gap:.04in;align-items:baseline}
-  .show .date{display:inline!important;background:none!important;border:0!important;box-shadow:none!important;
-    padding:0!important;transform:none!important;color:#000!important;font-weight:700;
-    font-family:"Special Elite","Courier New",monospace!important;font-size:9pt!important;letter-spacing:.04em}
+    filter:grayscale(1) contrast(1.15)!important;background:#fff!important;
+    border:1.5px solid #000!important;padding:0!important}
+  .show .info{display:block!important;min-width:0}
+  .show .daterow{display:flex!important;flex-wrap:wrap;gap:.06in;align-items:center;margin-bottom:.02in}
+  .show .date{display:inline-block!important;background:#000!important;color:#fff!important;
+    -webkit-print-color-adjust:exact;print-color-adjust:exact;
+    border:0!important;box-shadow:none!important;transform:none!important;
+    padding:.015in .05in!important;font-weight:400;
+    font-family:"Special Elite","Courier New",monospace!important;
+    font-size:8.5pt!important;letter-spacing:.12em;text-transform:uppercase}
   .stamp{position:static!important;transform:none!important;color:#000!important;
-    border:1.5px solid #000!important;background:#fff!important;text-shadow:none!important;font-size:6.5pt!important}
-  .show h3{margin:.02in 0 .015in!important;font-family:"Anton","Special Elite",sans-serif!important;font-weight:400!important;
-    font-size:12pt!important;line-height:1.08!important;text-transform:uppercase;letter-spacing:.01em!important}
-  .show h3 .more{font-size:8pt!important}
-  .meta{color:#000!important;font-size:8pt!important;line-height:1.35!important}
-  .meta a.vlink{color:#000!important;text-decoration:none!important}
+    border:1.5px solid #000!important;background:#fff!important;text-shadow:none!important;
+    font-size:6.5pt!important;letter-spacing:.08em}
+  .show h3{margin:.015in 0!important;font-family:"Anton","Special Elite",sans-serif!important;font-weight:400!important;
+    font-size:15pt!important;line-height:1.05!important;text-transform:uppercase;letter-spacing:.015em!important;
+    text-wrap:balance}
+  #b-tonight .show h3{font-size:21pt!important}
+  .show h3 .more{font-size:9pt!important;color:#333!important}
+  .meta{color:#000!important;font-size:9pt!important;line-height:1.4!important;letter-spacing:.02em}
+  .meta a.vlink{color:#000!important;text-decoration:none!important;border:0!important}
   .show.off h3{text-decoration:line-through!important}
   /* ---- footer: sign-off + YOUR SHOW HERE recruitment box ---- */
   .printfoot{display:grid;grid-template-columns:1fr auto;gap:.24in;align-items:center;
