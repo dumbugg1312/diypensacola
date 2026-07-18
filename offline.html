@@ -1243,6 +1243,13 @@ main{max-width:940px}
 .show.followed .date::before{content:"\2605 ";color:var(--hotink)}
 .followbtn.on{background:var(--hot);color:var(--on-hot);border-color:var(--hot)}
 
+/* The masthead logo is the owner-mode unlock (long press). On iOS a long press on
+   a linked image pops the native "Save Image"/share callout, which eats the
+   gesture, so suppress the callout and text selection on the logo only. Normal
+   tapping (navigate home) is unaffected. */
+header .homelink,header .home,header .logo,header .home img{
+  -webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+
 /* ---- owner mode bar (only rendered when the ⚑ passcode is unlocked) ---- */
 /* Deliberately reads as a utility strip, not site UI: mono-ish caps label, hard
    olive rule, no tape/tilt. It should never be mistaken for something a visitor

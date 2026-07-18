@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.github.com; style-src 'self' 'unsafe-inline'; script-src 'sha256-K4KzsGPP4U2H7uCmzAjLcaxhij8sqmebT0tzlRHp8YU=' 'sha256-RCkR64QPsKNGuWgzPQ9Lhq3QOc/7eMh+/slhgn58OF0=' 'sha256-/eCjl8mvU6+iDRvj9V4HXpq5t1HHBDFFLE8Hq9vcMW4='">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.github.com; style-src 'self' 'unsafe-inline'; script-src 'sha256-K4KzsGPP4U2H7uCmzAjLcaxhij8sqmebT0tzlRHp8YU=' 'sha256-RCkR64QPsKNGuWgzPQ9Lhq3QOc/7eMh+/slhgn58OF0=' 'sha256-3CIccJdBa2T6HHyhvc5n4k3rX717d4kPLaa+Db/XbqU='">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Catbite, Jaywood, Pauper&#39;s Grave · FRI DEC 19 @ The Handlebar · DIYPensacola</title>
 <meta name="description" content="Support @paupersgravepunkrock">
@@ -271,21 +271,37 @@
     if(code0===DCX_PASSCODE)unlock();}
 
   if(logoEl){
+    // Long-press the masthead logo to reveal the owner tools.
+    // MOBILE: the logo is an <a> wrapping an <img>, so iOS pops its native
+    // callout ("Save Image"/share) on a long press and SWALLOWS the click that
+    // follows. Waiting for a click therefore never unlocked on a phone. So the
+    // prompt is fired from the hold timer itself, and the click that may or may
+    // not arrive afterwards is only used to cancel the link navigation. The
+    // callout is suppressed in CSS (-webkit-touch-callout on .homelink/.home).
     var pressTimer=null,longPressed=false;
-    var startPress=function(){longPressed=false;
-      pressTimer=setTimeout(function(){longPressed=true;},3000);};
-    var endPress=function(){if(pressTimer)clearTimeout(pressTimer);};
+    var fire=function(){
+      longPressed=true;
+      if(!fab.hidden)return;              // already unlocked
+      var code=window.prompt('passcode:');
+      if(code===DCX_PASSCODE)unlock();
+    };
+    var startPress=function(){
+      longPressed=false;
+      if(pressTimer)clearTimeout(pressTimer);
+      pressTimer=setTimeout(fire,1500);   // 3s was long enough that people gave up
+    };
+    var endPress=function(){if(pressTimer){clearTimeout(pressTimer);pressTimer=null;}};
     logoEl.addEventListener('mousedown',startPress);
     logoEl.addEventListener('touchstart',startPress,{passive:true});
     logoEl.addEventListener('mouseup',endPress);
     logoEl.addEventListener('mouseleave',endPress);
     logoEl.addEventListener('touchend',endPress);
+    logoEl.addEventListener('touchmove',endPress,{passive:true});   // scrolling cancels
+    logoEl.addEventListener('touchcancel',endPress);
     logoEl.addEventListener('contextmenu',function(e){e.preventDefault();});
     logoEl.addEventListener('click',function(e){
-      if(fab.hidden&&longPressed){
-        e.preventDefault();longPressed=false;
-        var code=window.prompt('passcode:');
-        if(code===DCX_PASSCODE)unlock();}});}
+      // a completed long press must not also follow the link back to the homepage
+      if(longPressed){e.preventDefault();longPressed=false;}});}
 
   function doSave(note){
     note=note.trim();if(!note)return;
