@@ -21,227 +21,305 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-07-16-handlebar-maylene-and-the-sons-of-disaster-across-five-aprils@diypensacola
-DTSTART;TZID=America/Chicago:20260716T180000
-DTEND;TZID=America/Chicago:20260716T210000
-SUMMARY:Maylene and the Sons of Disaster\, Across Five Aprils\, Atomic Rule\, New Rituals\, Son of a Gun @ The Handlebar
-DESCRIPTION:maylene and the sons of disaster at the handlebar this thursday\, july 16. across five aprils\, atomic rule\, new rituals\, and son of a gun round out the bill. doors at 6pm.
-LOCATION:The Handlebar
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-07-17-handlebar-oversight-other@diypensacola
-DTSTART;TZID=America/Chicago:20260717T190000
-DTEND;TZID=America/Chicago:20260717T220000
-SUMMARY:Oversight\, Other\, Spiral @ The Handlebar
-DESCRIPTION:oversight\, other\, and spiral live at the handlebar this friday. doors at 7\, music at 8.
-LOCATION:The Handlebar
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-07-19-handlebar-in-gloom@diypensacola
+DTSTAMP:20260719T000000Z
 DTSTART;TZID=America/Chicago:20260719T190000
 DTEND;TZID=America/Chicago:20260719T220000
-SUMMARY:In Gloom\, Innerwounds\, Fire Came Disparity\, Wraithbearer @ The Handlebar
-DESCRIPTION:in gloom\, innerwounds\, with fire came disparity\, wraithbearer at the handlebar. sun jul 19\, doors 7 / music 8\, all ages. $10 adv / $15 door.
-LOCATION:The Handlebar
+SUMMARY:In Gloom\, Innerwounds\, Fire Came Disparity\, Wraithbearer @ The H
+ andlebar
+DESCRIPTION:in gloom\, innerwounds\, with fire came disparity\, wraithbeare
+ r at the handlebar. sun jul 19\, doors 7 / music 8\, all ages. $10 adv / $
+ 15 door.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-07-19-handlebar-in-gloom.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-07-21-handlebar-high-fade@diypensacola
+DTSTAMP:20260721T000000Z
 DTSTART;TZID=America/Chicago:20260721T190000
 DTEND;TZID=America/Chicago:20260721T220000
 SUMMARY:High Fade @ The Handlebar
-DESCRIPTION:high fade on the twice as nice tour at the handlebar. tue jul 21\, doors 7pm. tickets at thehandlebar850.com.
-LOCATION:The Handlebar
+DESCRIPTION:high fade on the twice as nice tour at the handlebar. tue jul 2
+ 1\, doors 7pm. tickets at thehandlebar850.com.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-07-21-handlebar-high-fade.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-07-22-handlebar-no-complications@diypensacola
+DTSTAMP:20260722T000000Z
 DTSTART;TZID=America/Chicago:20260722T180000
 DTEND;TZID=America/Chicago:20260722T210000
 SUMMARY:No Complications\, King In Yellow\, Tirra Lirra @ The Handlebar
-DESCRIPTION:no complications\, king in yellow\, tirra lirra at the handlebar. wed jul 22\, 6pm. $15.
-LOCATION:The Handlebar
+DESCRIPTION:no complications\, king in yellow\, tirra lirra at the handleba
+ r. wed jul 22\, 6pm. $15.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-07-22-handlebar-no-complications.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-07-24-handlebar-obituary-modown@diypensacola
+DTSTAMP:20260724T000000Z
 DTSTART;TZID=America/Chicago:20260724T190000
 DTEND;TZID=America/Chicago:20260724T220000
 SUMMARY:Obituary\, Modown\, Exformation\, D.R.E.A.D. @ The Handlebar
-DESCRIPTION:obituary at the handlebar with modown\, exformation\, and d.r.e.a.d. july 24th.
-LOCATION:The Handlebar
+DESCRIPTION:obituary at the handlebar with modown\, exformation\, and d.r.e
+ .a.d. july 24th.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-07-24-handlebar-obituary-modown.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-07-28-handlebar-internal-suffering@diypensacola
+DTSTAMP:20260728T000000Z
 DTSTART;TZID=America/Chicago:20260728T190000
 DTEND;TZID=America/Chicago:20260728T220000
 SUMMARY:Internal Suffering\, Gut Fucked\, Rotted Remains @ The Handlebar
-DESCRIPTION:internal suffering\, gut fucked\, rotted remains at the handlebar tuesday july 28th. doors 7pm\, show 8pm. $15\, all ages. 30 years of chaos\, dominion of the xul tour.
-LOCATION:The Handlebar
+DESCRIPTION:internal suffering\, gut fucked\, rotted remains at the handleb
+ ar tuesday july 28th. doors 7pm\, show 8pm. $15\, all ages. 30 years of ch
+ aos\, dominion of the xul tour.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-07-28-handlebar-internal-suffering.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-07-30-handlebar-katie-dineen-alex-rogers@diypensacola
+DTSTAMP:20260730T000000Z
 DTSTART;TZID=America/Chicago:20260730T180000
 DTEND;TZID=America/Chicago:20260730T210000
-SUMMARY:Katie Dineen\, Alex Rogers\, John Common\, Riley Lynn @ The Handlebar
-DESCRIPTION:pensacola songwriter rounds series with katie dineen\, alex rogers\, john common\, and riley lynn at the handlebar. thu jul 30\, 6pm\, $10.
-LOCATION:The Handlebar
+SUMMARY:Katie Dineen\, Alex Rogers\, John Common\, Riley Lynn @ The Handleb
+ ar
+DESCRIPTION:pensacola songwriter rounds series with katie dineen\, alex rog
+ ers\, john common\, and riley lynn at the handlebar. thu jul 30\, 6pm\, $1
+ 0.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-07-30-handlebar-katie-dineen-alex-roger
+ s.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-04-handlebar-trh-saidan@diypensacola
+DTSTAMP:20260804T000000Z
 DTSTART;TZID=America/Chicago:20260804T190000
 DTEND;TZID=America/Chicago:20260804T220000
 SUMMARY:Trhä\, Saidan\, Barbelith @ The Handlebar
-DESCRIPTION:trhä\, saidan and barbelith at the handlebar this tuesday\, august 4th. summer tour stop in pensacola.
-LOCATION:The Handlebar
+DESCRIPTION:trhä\, saidan and barbelith at the handlebar this tuesday\, au
+ gust 4th. summer tour stop in pensacola.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-04-handlebar-trh-saidan.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-14-handlebar-katie-dineen@diypensacola
+DTSTAMP:20260814T000000Z
 DTSTART;TZID=America/Chicago:20260814T180000
 DTEND;TZID=America/Chicago:20260814T210000
 SUMMARY:Katie Dineen\, Logan Pilcher\, Tanner Lee Gray @ The Handlebar
-DESCRIPTION:katie dineen's album release show for 'simmer'\, with logan pilcher and tanner lee gray. the handlebar\, friday august 14th. doors 6pm\, music at 7. sliding scale $10-$20.
-LOCATION:The Handlebar
+DESCRIPTION:katie dineen's album release show for 'simmer'\, with logan pil
+ cher and tanner lee gray. the handlebar\, friday august 14th. doors 6pm\, 
+ music at 7. sliding scale $10-$20.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-14-handlebar-katie-dineen.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-15-handlebar-heroes-for-ghosts@diypensacola
+DTSTAMP:20260815T000000Z
 DTSTART;TZID=America/Chicago:20260815T180000
 DTEND;TZID=America/Chicago:20260815T210000
-SUMMARY:Heroes For Ghosts\, Spiritless\, Afterdusk\, Caving In @ The Handlebar
-DESCRIPTION:heroes for ghosts and spiritless at the handlebar saturday august 15\, with local support from afterdusk and caving in. doors 6\, show 7. $15 at the door.
-LOCATION:The Handlebar
+SUMMARY:Heroes For Ghosts\, Spiritless\, Afterdusk\, Caving In @ The Handle
+ bar
+DESCRIPTION:heroes for ghosts and spiritless at the handlebar saturday augu
+ st 15\, with local support from afterdusk and caving in. doors 6\, show 7.
+  $15 at the door.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-15-handlebar-heroes-for-ghosts.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-18-handlebar-southpaw-arcline@diypensacola
+DTSTAMP:20260818T000000Z
 DTSTART;TZID=America/Chicago:20260818T190000
 DTEND;TZID=America/Chicago:20260818T220000
 SUMMARY:Southpaw\, Arcline @ The Handlebar
 DESCRIPTION:southpaw and arcline at the handlebar\, tuesday august 18th.
-LOCATION:The Handlebar
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-18-handlebar-southpaw-arcline.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-20-handlebar-grave-chorus-conflict-of-interests@diypensacola
+DTSTAMP:20260820T000000Z
 DTSTART;TZID=America/Chicago:20260820T180000
 DTEND;TZID=America/Chicago:20260820T210000
-SUMMARY:Grave Chorus\, Conflict of Interests\, Coastal High School\, IHATESUNDAYS @ The Handlebar
-DESCRIPTION:grave chorus\, conflict of interests\, coastal high school\, ihatesundays at the handlebar this thursday\, august 20th. doors 6\, music 7. $10.
-LOCATION:The Handlebar
+SUMMARY:Grave Chorus\, Conflict of Interests\, Coastal High School\, IHATES
+ UNDAYS @ The Handlebar
+DESCRIPTION:grave chorus\, conflict of interests\, coastal high school\, ih
+ atesundays at the handlebar this thursday\, august 20th. doors 6\, music 7
+ . $10.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-20-handlebar-grave-chorus-conflict-o
+ f-interests.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-27-handlebar-foxtide-braymores@diypensacola
+DTSTAMP:20260827T000000Z
 DTSTART;TZID=America/Chicago:20260827T190000
 DTEND;TZID=America/Chicago:20260827T220000
 SUMMARY:Foxtide\, Braymores @ The Handlebar
-DESCRIPTION:foxtide brings the entropy tour to the handlebar thursday\, august 27\, with braymores opening.
-LOCATION:The Handlebar
+DESCRIPTION:foxtide brings the entropy tour to the handlebar thursday\, aug
+ ust 27\, with braymores opening.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-27-handlebar-foxtide-braymores.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-01-handlebar-cheekface-catbite@diypensacola
+DTSTAMP:20260901T000000Z
 DTSTART;TZID=America/Chicago:20260901T190000
 DTEND;TZID=America/Chicago:20260901T220000
 SUMMARY:Cheekface\, Catbite @ The Handlebar
 DESCRIPTION:cheekface and catbite at the handlebar\, tuesday september 1st.
-LOCATION:The Handlebar
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-01-handlebar-cheekface-catbite.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-04-handlebar-broadway-rave@diypensacola
+DTSTAMP:20260904T000000Z
 DTSTART;TZID=America/Chicago:20260904T190000
 DTEND;TZID=America/Chicago:20260904T220000
 SUMMARY:Broadway Rave @ The Handlebar
-DESCRIPTION:broadway rave\, a musical theater dance party\, comes to the handlebar. fri sep 4.
-LOCATION:The Handlebar
+DESCRIPTION:broadway rave\, a musical theater dance party\, comes to the ha
+ ndlebar. fri sep 4.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-04-handlebar-broadway-rave.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-11-handlebar-geordie-greep@diypensacola
+DTSTAMP:20260911T000000Z
 DTSTART;TZID=America/Chicago:20260911T190000
 DTEND;TZID=America/Chicago:20260911T220000
 SUMMARY:Geordie Greep @ The Handlebar
 DESCRIPTION:geordie greep live at the handlebar. friday\, september 11th.
-LOCATION:The Handlebar
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-11-handlebar-geordie-greep.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-12-handlebar-nvsn-the-autumn-descent@diypensacola
+DTSTAMP:20260912T000000Z
 DTSTART;TZID=America/Chicago:20260912T190000
 DTEND;TZID=America/Chicago:20260912T220000
 SUMMARY:NVSN\, The Autumn Descent\, Caving In\, Hopout @ The Handlebar
-DESCRIPTION:nvsn with the autumn descent\, caving in\, and hopout at the handlebar. september 12th\, doors 7 and music at 8. $12 advance / $15 day of.
-LOCATION:The Handlebar
+DESCRIPTION:nvsn with the autumn descent\, caving in\, and hopout at the ha
+ ndlebar. september 12th\, doors 7 and music at 8. $12 advance / $15 day of
+ .
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-12-handlebar-nvsn-the-autumn-descent
+ .html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-14-handlebar-archers@diypensacola
+DTSTAMP:20260914T000000Z
 DTSTART;TZID=America/Chicago:20260914T190000
 DTEND;TZID=America/Chicago:20260914T220000
 SUMMARY:Archers\, Autumn Kings\, Pinknoise\, Coldstate @ The Handlebar
-DESCRIPTION:archers\, autumn kings\, pinknoise\, and coldstate at the handlebar. september 14. tickets at thehandlebar850.com.
-LOCATION:The Handlebar
+DESCRIPTION:archers\, autumn kings\, pinknoise\, and coldstate at the handl
+ ebar. september 14. tickets at thehandlebar850.com.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-14-handlebar-archers.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-18-handlebar-glitterer-bleary-eyed@diypensacola
+DTSTAMP:20260918T000000Z
 DTSTART;TZID=America/Chicago:20260918T190000
 DTEND;TZID=America/Chicago:20260918T220000
 SUMMARY:Glitterer\, Bleary Eyed\, Guttered @ The Handlebar
-DESCRIPTION:glitterer\, bleary eyed and guttered at the handlebar\, friday september 18th. on tour\, come out.
-LOCATION:The Handlebar
+DESCRIPTION:glitterer\, bleary eyed and guttered at the handlebar\, friday 
+ september 18th. on tour\, come out.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-18-handlebar-glitterer-bleary-eyed.h
+ tml
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-23-handlebar-dopethrone@diypensacola
+DTSTAMP:20260923T000000Z
 DTSTART;TZID=America/Chicago:20260923T190000
 DTEND;TZID=America/Chicago:20260923T220000
 SUMMARY:Dopethrone\, Fister\, Gnarled @ The Handlebar
-DESCRIPTION:dopethrone brings the uniworse usa tour part ii to the handlebar\, wednesday september 23. with support from fister and gnarled.
-LOCATION:The Handlebar
+DESCRIPTION:dopethrone brings the uniworse usa tour part ii to the handleba
+ r\, wednesday september 23. with support from fister and gnarled.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-23-handlebar-dopethrone.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-26-handlebar-liliths-demise-delta-hate@diypensacola
+DTSTAMP:20260926T000000Z
 DTSTART;TZID=America/Chicago:20260926T150000
 DTEND;TZID=America/Chicago:20260926T180000
 SUMMARY:Lilith's Demise\, Delta Hate\, Claymore\, Stay Lost @ The Handlebar
-DESCRIPTION:panhandle slam jam 2 at the handlebar. lilith's demise\, delta hate\, and more all day long. september 26th\, doors 3 show 4. $20 advance / $30 door.
-LOCATION:The Handlebar
+DESCRIPTION:panhandle slam jam 2 at the handlebar. lilith's demise\, delta 
+ hate\, and more all day long. september 26th\, doors 3 show 4. $20 advance
+  / $30 door.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-26-handlebar-liliths-demise-delta-ha
+ te.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-27-handlebar-eyehategod@diypensacola
+DTSTAMP:20260927T000000Z
 DTSTART;TZID=America/Chicago:20260927T190000
 DTEND;TZID=America/Chicago:20260927T220000
 SUMMARY:Eyehategod\, Whores\, Nomas @ The Handlebar
-DESCRIPTION:eyehategod\, whores\, and nomas at the handlebar. september 27. tickets on sale now at thehandlebar850.com.
-LOCATION:The Handlebar
+DESCRIPTION:eyehategod\, whores\, and nomas at the handlebar. september 27.
+  tickets on sale now at thehandlebar850.com.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-27-handlebar-eyehategod.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-10-handlebar-silent-theory@diypensacola
+DTSTAMP:20261010T000000Z
 DTSTART;TZID=America/Chicago:20261010T190000
 DTEND;TZID=America/Chicago:20261010T220000
 SUMMARY:Silent Theory\, Discrepancies\, Sick Century @ The Handlebar
-DESCRIPTION:silent theory at the handlebar saturday october 10 with discrepancies and sick century. tickets at silenttheory.com.
-LOCATION:The Handlebar
+DESCRIPTION:silent theory at the handlebar saturday october 10 with discrep
+ ancies and sick century. tickets at silenttheory.com.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-10-handlebar-silent-theory.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-22-handlebar-fenix-tx@diypensacola
+DTSTAMP:20261022T000000Z
 DTSTART;TZID=America/Chicago:20261022T190000
 DTEND;TZID=America/Chicago:20261022T220000
 SUMMARY:Fenix Tx\, Scream Out Loud\, Color The Void @ The Handlebar
-DESCRIPTION:fenix tx with scream out loud and color the void at the handlebar. thursday october 22. tickets at thehandlebar850.com.
-LOCATION:The Handlebar
+DESCRIPTION:fenix tx with scream out loud and color the void at the handleb
+ ar. thursday october 22. tickets at thehandlebar850.com.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-22-handlebar-fenix-tx.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-25-handlebar-goodbye-june-danny-worsnop@diypensacola
+DTSTAMP:20261025T000000Z
 DTSTART;TZID=America/Chicago:20261025T190000
 DTEND;TZID=America/Chicago:20261025T220000
 SUMMARY:Goodbye June\, Danny Worsnop @ The Handlebar
-DESCRIPTION:goodbye june brings the trouble for all tour to the handlebar with special guest danny worsnop. sun oct 25. tickets at thehandlebar850.com.
-LOCATION:The Handlebar
+DESCRIPTION:goodbye june brings the trouble for all tour to the handlebar w
+ ith special guest danny worsnop. sun oct 25. tickets at thehandlebar850.co
+ m.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-25-handlebar-goodbye-june-danny-wors
+ nop.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-29-handlebar-the-linda-lindas@diypensacola
+DTSTAMP:20261029T000000Z
 DTSTART;TZID=America/Chicago:20261029T183000
 DTEND;TZID=America/Chicago:20261029T213000
 SUMMARY:The Linda Lindas @ The Handlebar
-DESCRIPTION:the linda lindas at the handlebar. thursday oct 29\, 6:30pm. part of hallozine fest\, presented by 309 punk project and foo foo fest. tickets at thehandlebar850.com.
-LOCATION:The Handlebar
+DESCRIPTION:the linda lindas at the handlebar. thursday oct 29\, 6:30pm. pa
+ rt of hallozine fest\, presented by 309 punk project and foo foo fest. tic
+ kets at thehandlebar850.com.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-29-handlebar-the-linda-lindas.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-14-handlebar-chrissy-chlapecka@diypensacola
+DTSTAMP:20261114T000000Z
 DTSTART;TZID=America/Chicago:20261114T190000
 DTEND;TZID=America/Chicago:20261114T220000
 SUMMARY:Chrissy Chlapecka @ The Handlebar
 DESCRIPTION:chrissy chlapecka at the handlebar. sat nov 14.
-LOCATION:The Handlebar
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-14-handlebar-chrissy-chlapecka.html
 END:VEVENT
 END:VCALENDAR

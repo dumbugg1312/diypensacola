@@ -1,7 +1,8 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Ayinde Hurrey: Acting\, Performance And African Drum/dance
+X-WR-CALNAME:DIYPensacola: Ayinde Hurrey: Acting\, Performance And African 
+ Drum/dance
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago

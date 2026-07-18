@@ -22,10 +22,15 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-10-25-handlebar-goodbye-june-danny-worsnop@diypensacola
+DTSTAMP:20261025T000000Z
 DTSTART;TZID=America/Chicago:20261025T190000
 DTEND;TZID=America/Chicago:20261025T220000
 SUMMARY:Goodbye June\, Danny Worsnop @ The Handlebar
-DESCRIPTION:goodbye june brings the trouble for all tour to the handlebar with special guest danny worsnop. sun oct 25. tickets at thehandlebar850.com.
-LOCATION:The Handlebar
+DESCRIPTION:goodbye june brings the trouble for all tour to the handlebar w
+ ith special guest danny worsnop. sun oct 25. tickets at thehandlebar850.co
+ m.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-25-handlebar-goodbye-june-danny-wors
+ nop.html
 END:VEVENT
 END:VCALENDAR

@@ -22,10 +22,13 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-09-27-handlebar-eyehategod@diypensacola
+DTSTAMP:20260927T000000Z
 DTSTART;TZID=America/Chicago:20260927T190000
 DTEND;TZID=America/Chicago:20260927T220000
 SUMMARY:Eyehategod\, Whores\, Nomas @ The Handlebar
-DESCRIPTION:eyehategod\, whores\, and nomas at the handlebar. september 27. tickets on sale now at thehandlebar850.com.
-LOCATION:The Handlebar
+DESCRIPTION:eyehategod\, whores\, and nomas at the handlebar. september 27.
+  tickets on sale now at thehandlebar850.com.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-27-handlebar-eyehategod.html
 END:VEVENT
 END:VCALENDAR

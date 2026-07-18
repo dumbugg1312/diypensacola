@@ -22,10 +22,17 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-11-14-handlebar-chrissy-chlapecka@diypensacola
+DTSTAMP:20261114T000000Z
 DTSTART;TZID=America/Chicago:20261114T190000
 DTEND;TZID=America/Chicago:20261114T220000
 SUMMARY:Chrissy Chlapecka @ The Handlebar
 DESCRIPTION:chrissy chlapecka at the handlebar. sat nov 14.
-LOCATION:The Handlebar
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-14-handlebar-chrissy-chlapecka.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: Chrissy Chlapecka @ The Handlebar
+TRIGGER:-PT2H
+END:VALARM
 END:VEVENT
 END:VCALENDAR

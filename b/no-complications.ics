@@ -22,10 +22,13 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-07-22-handlebar-no-complications@diypensacola
+DTSTAMP:20260722T000000Z
 DTSTART;TZID=America/Chicago:20260722T180000
 DTEND;TZID=America/Chicago:20260722T210000
 SUMMARY:No Complications\, King In Yellow\, Tirra Lirra @ The Handlebar
-DESCRIPTION:no complications\, king in yellow\, tirra lirra at the handlebar. wed jul 22\, 6pm. $15.
-LOCATION:The Handlebar
+DESCRIPTION:no complications\, king in yellow\, tirra lirra at the handleba
+ r. wed jul 22\, 6pm. $15.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-07-22-handlebar-no-complications.html
 END:VEVENT
 END:VCALENDAR

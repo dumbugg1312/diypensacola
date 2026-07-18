@@ -20,12 +20,4 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-UID:2026-07-16-handlebar-maylene-and-the-sons-of-disaster-across-five-aprils@diypensacola
-DTSTART;TZID=America/Chicago:20260716T180000
-DTEND;TZID=America/Chicago:20260716T210000
-SUMMARY:Maylene and the Sons of Disaster\, Across Five Aprils\, Atomic Rule\, New Rituals\, Son of a Gun @ The Handlebar
-DESCRIPTION:maylene and the sons of disaster at the handlebar this thursday\, july 16. across five aprils\, atomic rule\, new rituals\, and son of a gun round out the bill. doors at 6pm.
-LOCATION:The Handlebar
-END:VEVENT
 END:VCALENDAR

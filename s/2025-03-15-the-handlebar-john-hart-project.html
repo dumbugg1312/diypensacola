@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-/eCjl8mvU6+iDRvj9V4HXpq5t1HHBDFFLE8Hq9vcMW4='">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.github.com; style-src 'self' 'unsafe-inline'; script-src 'sha256-K4KzsGPP4U2H7uCmzAjLcaxhij8sqmebT0tzlRHp8YU=' 'sha256-RCkR64QPsKNGuWgzPQ9Lhq3QOc/7eMh+/slhgn58OF0=' 'sha256-/eCjl8mvU6+iDRvj9V4HXpq5t1HHBDFFLE8Hq9vcMW4='">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>John Hart · SAT MAR 15 @ The Handlebar · DIYPensacola</title>
 <meta name="description" content="Roses are red, violets are blue, March 15th, we’ve got a date with you">
@@ -18,27 +18,199 @@
 <link rel="icon" href="../logo.png">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Special+Elite&family=Rock+Salt&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/special-elite.woff2" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Event", "name": "John Hart", "startDate": "2025-03-15T19:00:00-05:00", "endDate": "2025-03-15T22:00:00-05:00", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "The Handlebar", "address": {"@type": "PostalAddress", "addressLocality": "Pensacola", "addressRegion": "FL", "addressCountry": "US"}}, "image": "https://diypensacola.com/flyers/2025-03-15_the-handlebar_john-hart-project.jpg", "url": "https://diypensacola.com/s/2025-03-15-the-handlebar-john-hart-project.html", "organizer": {"@type": "Organization", "name": "DIYPensacola", "url": "https://diypensacola.com/"}, "performer": [{"@type": "MusicGroup", "name": "John Hart"}]}]</script><script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "diypensacola", "item": "https://diypensacola.com/"}, {"@type": "ListItem", "position": 2, "name": "archive", "item": "https://diypensacola.com/archive.html"}, {"@type": "ListItem", "position": 3, "name": "The Handlebar", "item": "https://diypensacola.com/v/handlebar.html"}, {"@type": "ListItem", "position": 4, "name": "John Hart"}]}]</script>
 <link rel="stylesheet" href="../style.css"></head><body class="showpage">
 <header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive &amp; search</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
 <main class="spwrap">
 <article class="spcard">
-<a href="../flyers/2025-03-15_the-handlebar_john-hart-project.jpg" target="_blank" rel="noopener"><img class="spflyer" src="../flyers/2025-03-15_the-handlebar_john-hart-project.jpg" alt="John Hart flyer"></a>
+<a class="spflyerlink" id="spflyerlink" href="../flyers/2025-03-15_the-handlebar_john-hart-project.jpg" target="_blank" rel="noopener"><img class="spflyer" src="../flyers/2025-03-15_the-handlebar_john-hart-project.jpg" alt="John Hart flyer"></a>
 <div class="spinfo">
 <div class="date">SAT MAR 15<span class="pastflag">from the archive</span></div>
 <h1>John Hart</h1>
 <div class="actchips"><a href="../b/john-hart.html">john hart</a></div>
 <div class="drow"><a href="../v/handlebar.html">The Handlebar</a>  ·  319 N Tarragona St, Pensacola, FL</div><p class="dcap">Roses are red, violets are blue, March 15th, we’ve got a date with you</p>
 
-<div class="dactions"><a class="dbtn" href="https://www.google.com/maps/dir/?api=1&amp;destination=319%20N%20Tarragona%20St%2C%20Pensacola%2C%20FL" target="_blank" rel="noopener">directions</a><a class="dbtn" href="../archive.html">the archive &#8599;</a></div>
+<div class="dactions"><a class="dbtn" href="https://www.google.com/maps/dir/?api=1&amp;destination=319%20N%20Tarragona%20St%2C%20Pensacola%2C%20FL" target="_blank" rel="noopener">directions</a><button class="dbtn" type="button" id="spshare">share this flyer</button><a class="dbtn" href="../archive.html">the archive &#8599;</a></div>
 </div>
 </article>
 <p class="spback"><a href="../archive.html">&#8592; back to the punksacola archive</a></p>
 </main>
-<footer>flyer info comes straight from the venues. <b>support your local scene.</b><br>proudly ran out of punksacola, fl</footer>
+<footer>flyer info comes straight from the venues. <b>support your local scene.</b><br>proudly ran out of punksacola, fl<br><span class="built">last stapled july 18, 2026</span></footer>
+<div class="lb" id="splb" role="dialog" aria-modal="true" aria-label="flyer image"><a class="x" href="#" id="splbx" aria-label="close">×</a><img id="splbimg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="John Hart flyer"></div>
+<script>(function(){
+  var lb=document.getElementById('splb'),img=document.getElementById('splbimg'),
+      link=document.getElementById('spflyerlink'),x=document.getElementById('splbx'),ret=null;
+  function openLb(src){ret=document.activeElement;img.src=src;lb.classList.add('open');if(x)x.focus();}
+  function closeLb(){lb.classList.remove('open');img.src='';if(ret&&ret.focus)ret.focus();ret=null;}
+  if(link&&lb){
+    link.addEventListener('click',function(e){
+      if(e.metaKey||e.ctrlKey||e.shiftKey||e.button)return; // let power users open in a tab
+      e.preventDefault();openLb(link.getAttribute('href'));
+    });
+    lb.addEventListener('click',function(e){if(e.target===lb||e.target===x){e.preventDefault();closeLb();}});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&lb.classList.contains('open'))closeLb();});
+  }
+  // live overrides: a cancellation published from a phone (overrides.json, see
+  // OWNER_JS) applies here too, so the permalink people got texted tells the truth
+  // before any rebuild. Only ADDS a cancellation; the built page already reflects
+  // anything baked in at build time.
+  (function(){
+    var c=document.querySelector('link[rel="canonical"]');
+    var m=/\/s\/([^\/]+)\.html$/.exec((c?c.getAttribute('href'):location.pathname)||'');
+    if(!m)return;
+    var card=document.querySelector('.spcard');
+    if(!card||card.classList.contains('off'))return;
+    fetch('../overrides.json?t='+Date.now(),{cache:'no-store'})
+      .then(function(r){return r.ok?r.json():null;})
+      .then(function(o){
+        var st=o&&o.shows&&o.shows[m[1]]&&o.shows[m[1]].status;
+        if(st!=='cancelled'&&st!=='postponed')return;
+        card.classList.add('off');
+        var d=card.querySelector('.date');
+        if(d){var s=document.createElement('span');s.className='pastflag off';s.textContent=st;d.appendChild(s);}
+        var info=card.querySelector('.spinfo'),h=card.querySelector('h1');
+        if(info&&h){
+          var row=document.createElement('div');row.className='drow dcancel';
+          row.textContent='╳ this show was '+st;
+          info.insertBefore(row,h.nextSibling);
+        }
+        var cal=card.querySelector('a[download]');
+        if(st==='cancelled'&&cal)cal.remove();
+      }).catch(function(){});
+  })();
+
+  var sh=document.getElementById('spshare');
+  if(sh){
+    var canon=document.querySelector('link[rel="canonical"]');
+    var url=canon?canon.getAttribute('href'):location.href;
+    var title=document.title.replace(/ · DIYPensacola$/,'');
+    function done(){sh.textContent='link copied';setTimeout(function(){sh.textContent='share this flyer';},1600);}
+    function copy(){if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(url).then(done,done);}else{window.prompt('copy this link',url);}}
+    sh.addEventListener('click',function(){
+      if(navigator.share){navigator.share({title:title,url:url}).then(function(){},function(err){if(!(err&&err.name==='AbortError'))copy();});}
+      else{copy();}
+    });
+  }
+})();</script>
+<script>(function(){
+  var REPO='dumbugg1312/diypensacola', BRANCH='main', FILE='overrides.json';
+  var TTL=24*60*60*1000, TKEY='dcx_gh_token';
+  function unlocked(){
+    var t=parseInt(localStorage.getItem('dcx_unlocked_at')||'0',10);
+    return !!t&&(Date.now()-t)<TTL;
+  }
+  if(!unlocked())return;
+
+  function token(){try{return localStorage.getItem(TKEY)||'';}catch(e){return '';}}
+  function b64(s){return btoa(unescape(encodeURIComponent(s)));}
+  function unb64(s){try{return decodeURIComponent(escape(atob(s.replace(/\s/g,''))));}catch(e){return '';}}
+
+  function api(path,opts){
+    opts=opts||{};opts.headers=opts.headers||{};
+    opts.headers['Authorization']='Bearer '+token();
+    opts.headers['Accept']='application/vnd.github+json';
+    return fetch('https://api.github.com/repos/'+REPO+'/contents/'+path,opts);
+  }
+
+  // read overrides.json (returns {json, sha}); a missing file is a valid empty start
+  function readOverrides(){
+    return api(FILE+'?ref='+BRANCH+'&t='+Date.now(),{cache:'no-store'}).then(function(r){
+      if(r.status===404)return {json:{shows:{}},sha:null};
+      if(!r.ok)throw new Error('read failed ('+r.status+')');
+      return r.json().then(function(d){
+        var parsed={shows:{}};
+        try{parsed=JSON.parse(unb64(d.content))||{shows:{}};}catch(e){}
+        if(!parsed.shows)parsed.shows={};
+        return {json:parsed,sha:d.sha};
+      });
+    });
+  }
+
+  function publish(id,status,label,say){
+    if(!token()){say('connect a token first');return Promise.resolve(false);}
+    say('reading…');
+    return readOverrides().then(function(cur){
+      if(status){cur.json.shows[id]={status:status};}
+      else{delete cur.json.shows[id];}
+      cur.json.updated=new Date().toISOString();
+      var body={message:(status||'back on')+': '+label,
+                content:b64(JSON.stringify(cur.json,null,2)+'\n'),
+                branch:BRANCH};
+      if(cur.sha)body.sha=cur.sha;
+      say('publishing…');
+      return api(FILE,{method:'PUT',body:JSON.stringify(body)}).then(function(r){
+        if(!r.ok)return r.text().then(function(t){throw new Error('publish failed ('+r.status+') '+t.slice(0,120));});
+        say('published — live in about a minute');
+        return true;
+      });
+    }).catch(function(e){say(String(e.message||e));return false;});
+  }
+
+  function bar(id,label,curState,onDone){
+    var wrap=document.createElement('div');
+    wrap.className='dcx-owner';
+    wrap.innerHTML='<span class="dcx-olab">owner</span>'
+      +'<button type="button" data-o="cancelled">cancel show</button>'
+      +'<button type="button" data-o="postponed">postpone</button>'
+      +'<button type="button" data-o="">back on</button>'
+      +'<button type="button" data-o="tok">'+(token()?'forget token':'connect token')+'</button>'
+      +'<span class="dcx-osay"></span>';
+    var say=function(m){wrap.querySelector('.dcx-osay').textContent=m;};
+    if(curState)say('currently '+curState);
+    wrap.addEventListener('click',function(e){
+      var b=e.target.closest('button[data-o]');if(!b)return;
+      e.preventDefault();e.stopPropagation();
+      var v=b.getAttribute('data-o');
+      if(v==='tok'){
+        if(token()){localStorage.removeItem(TKEY);b.textContent='connect token';say('token forgotten');}
+        else{
+          var t=window.prompt('paste a GitHub fine-grained token\n(repo: '+REPO+', contents: write, set an expiry)');
+          if(t){localStorage.setItem(TKEY,t.trim());b.textContent='forget token';say('token saved on this device');}
+        }
+        return;
+      }
+      if(v&&!window.confirm('mark this show '+v+' for everyone?\n\n'+label))return;
+      if(!v&&!window.confirm('put this show back on for everyone?\n\n'+label))return;
+      publish(id,v,label,say).then(function(ok){if(ok&&onDone)onDone(v);});
+    });
+    return wrap;
+  }
+
+  // --- per-show page (s/<id>.html): one bar under the actions ---
+  var canon=document.querySelector('link[rel="canonical"]');
+  var href=canon?canon.getAttribute('href'):location.pathname;
+  var m=/\/s\/([^\/]+)\.html$/.exec(href||'');
+  if(m){
+    var acts=document.querySelector('.spcard .dactions');
+    if(acts){
+      var lab=(document.querySelector('.spcard h1')||{}).textContent||m[1];
+      var st=document.querySelector('.spcard.off')?'cancelled/postponed':'';
+      acts.parentNode.insertBefore(bar(m[1],lab,st,function(){location.reload();}),acts.nextSibling);
+    }
+    return;
+  }
+
+  // --- homepage: a bar inside the detail sheet, refreshed each time it opens ---
+  var dt=document.getElementById('detail');
+  if(!dt)return;
+  var info=dt.querySelector('.dinfo');if(!info)return;
+  var slot=document.createElement('div');info.appendChild(slot);
+  function sync(){
+    var id=dt.getAttribute('data-id')||'';
+    slot.innerHTML='';
+    if(!dt.classList.contains('open')||!id)return;
+    var card=document.querySelector('#list .show[data-id="'+id.replace(/["\\]/g,'')+'"]');
+    var lab=(dt.getAttribute('data-sharelineup')||id)+' ('+(dt.getAttribute('data-sharewhen')||'')+')';
+    var cur=card?(card.getAttribute('data-state')||''):'';
+    slot.appendChild(bar(id,lab,cur,function(v){
+      if(card&&window.DPC_APPLY_OVERRIDES){
+        var o={shows:{}};o.shows[id]={status:v};window.DPC_APPLY_OVERRIDES(o);
+      }
+    }));
+  }
+  new MutationObserver(sync).observe(dt,{attributes:true,attributeFilter:['class','data-id']});
+})();</script>
 <script>(function(){
   var DCX_PASSCODE='1017';
   var canonEl=document.querySelector('link[rel="canonical"]');

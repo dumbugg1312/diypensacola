@@ -22,10 +22,13 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-09-23-handlebar-dopethrone@diypensacola
+DTSTAMP:20260923T000000Z
 DTSTART;TZID=America/Chicago:20260923T190000
 DTEND;TZID=America/Chicago:20260923T220000
 SUMMARY:Dopethrone\, Fister\, Gnarled @ The Handlebar
-DESCRIPTION:dopethrone brings the uniworse usa tour part ii to the handlebar\, wednesday september 23. with support from fister and gnarled.
-LOCATION:The Handlebar
+DESCRIPTION:dopethrone brings the uniworse usa tour part ii to the handleba
+ r\, wednesday september 23. with support from fister and gnarled.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-23-handlebar-dopethrone.html
 END:VEVENT
 END:VCALENDAR

@@ -22,10 +22,13 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-07-25-bettys-sapphic-saturday@diypensacola
+DTSTAMP:20260725T000000Z
 DTSTART;TZID=America/Chicago:20260725T210000
 DTEND;TZID=America/Chicago:20260726T000000
 SUMMARY:Sapphic Saturday @ Betty's
-DESCRIPTION:sapphic saturday at betty's\, july 25. two shows\, 9pm and 11pm. come out.
-LOCATION:Betty's
+DESCRIPTION:sapphic saturday at betty's\, july 25. two shows\, 9pm and 11pm
+ . come out.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-07-25-bettys-sapphic-saturday.html
 END:VEVENT
 END:VCALENDAR

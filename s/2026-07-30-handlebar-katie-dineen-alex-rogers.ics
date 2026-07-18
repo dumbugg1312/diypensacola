@@ -22,10 +22,22 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-07-30-handlebar-katie-dineen-alex-rogers@diypensacola
+DTSTAMP:20260730T000000Z
 DTSTART;TZID=America/Chicago:20260730T180000
 DTEND;TZID=America/Chicago:20260730T210000
-SUMMARY:Katie Dineen\, Alex Rogers\, John Common\, Riley Lynn @ The Handlebar
-DESCRIPTION:pensacola songwriter rounds series with katie dineen\, alex rogers\, john common\, and riley lynn at the handlebar. thu jul 30\, 6pm\, $10.
-LOCATION:The Handlebar
+SUMMARY:Katie Dineen\, Alex Rogers\, John Common\, Riley Lynn @ The Handleb
+ ar
+DESCRIPTION:pensacola songwriter rounds series with katie dineen\, alex rog
+ ers\, john common\, and riley lynn at the handlebar. thu jul 30\, 6pm\, $1
+ 0.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-07-30-handlebar-katie-dineen-alex-roger
+ s.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: Katie Dineen\, Alex Rogers\, John Common\, Riley Lynn 
+ @ The Handlebar
+TRIGGER:-PT2H
+END:VALARM
 END:VEVENT
 END:VCALENDAR

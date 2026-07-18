@@ -21,11 +21,23 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-29-voices-of-pensacola-multicultural-center-2nd-annual-hallozine-fest@diypensacola
+UID:2026-10-29-voices-of-pensacola-multicultural-center-2nd-annual-hallozin
+ e-fest@diypensacola
+DTSTAMP:20261029T000000Z
 DTSTART;TZID=America/Chicago:20261029T190000
 DTEND;TZID=America/Chicago:20261029T220000
-SUMMARY:2nd Annual HalloZine Fest @ Voices of Pensacola Multicultural Center
-DESCRIPTION:2nd annual hallozine fest\, october 29th-30th at voices of pensacola multicultural center. save the date\, presented by 309 punk project.
+SUMMARY:2nd Annual HalloZine Fest @ Voices of Pensacola Multicultural Cente
+ r
+DESCRIPTION:2nd annual hallozine fest\, october 29th-30th at voices of pens
+ acola multicultural center. save the date\, presented by 309 punk project.
 LOCATION:Voices of Pensacola Multicultural Center
+URL:https://diypensacola.com/s/2026-10-29-voices-of-pensacola-multicultural
+ -center-2nd-annual-hallozine-fest.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: 2nd Annual HalloZine Fest @ Voices of Pensacola Multic
+ ultural Center
+TRIGGER:-PT2H
+END:VALARM
 END:VEVENT
 END:VCALENDAR

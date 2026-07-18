@@ -22,10 +22,21 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-09-26-handlebar-liliths-demise-delta-hate@diypensacola
+DTSTAMP:20260926T000000Z
 DTSTART;TZID=America/Chicago:20260926T150000
 DTEND;TZID=America/Chicago:20260926T180000
 SUMMARY:Lilith's Demise\, Delta Hate\, Claymore\, Stay Lost @ The Handlebar
-DESCRIPTION:panhandle slam jam 2 at the handlebar. lilith's demise\, delta hate\, and more all day long. september 26th\, doors 3 show 4. $20 advance / $30 door.
-LOCATION:The Handlebar
+DESCRIPTION:panhandle slam jam 2 at the handlebar. lilith's demise\, delta 
+ hate\, and more all day long. september 26th\, doors 3 show 4. $20 advance
+  / $30 door.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-26-handlebar-liliths-demise-delta-ha
+ te.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: Lilith's Demise\, Delta Hate\, Claymore\, Stay Lost @ 
+ The Handlebar
+TRIGGER:-PT2H
+END:VALARM
 END:VEVENT
 END:VCALENDAR

@@ -22,10 +22,22 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-08-20-handlebar-grave-chorus-conflict-of-interests@diypensacola
+DTSTAMP:20260820T000000Z
 DTSTART;TZID=America/Chicago:20260820T180000
 DTEND;TZID=America/Chicago:20260820T210000
-SUMMARY:Grave Chorus\, Conflict of Interests\, Coastal High School\, IHATESUNDAYS @ The Handlebar
-DESCRIPTION:grave chorus\, conflict of interests\, coastal high school\, ihatesundays at the handlebar this thursday\, august 20th. doors 6\, music 7. $10.
-LOCATION:The Handlebar
+SUMMARY:Grave Chorus\, Conflict of Interests\, Coastal High School\, IHATES
+ UNDAYS @ The Handlebar
+DESCRIPTION:grave chorus\, conflict of interests\, coastal high school\, ih
+ atesundays at the handlebar this thursday\, august 20th. doors 6\, music 7
+ . $10.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-20-handlebar-grave-chorus-conflict-o
+ f-interests.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: Grave Chorus\, Conflict of Interests\, Coastal High Sc
+ hool\, IHATESUNDAYS @ The Handlebar
+TRIGGER:-PT2H
+END:VALARM
 END:VEVENT
 END:VCALENDAR
