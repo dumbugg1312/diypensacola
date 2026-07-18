@@ -22,10 +22,21 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-07-19-handlebar-in-gloom@diypensacola
+DTSTAMP:20260719T000000Z
 DTSTART;TZID=America/Chicago:20260719T190000
 DTEND;TZID=America/Chicago:20260719T220000
-SUMMARY:In Gloom\, Innerwounds\, Fire Came Disparity\, Wraithbearer @ The Handlebar
-DESCRIPTION:in gloom\, innerwounds\, with fire came disparity\, wraithbearer at the handlebar. sun jul 19\, doors 7 / music 8\, all ages. $10 adv / $15 door.
-LOCATION:The Handlebar
+SUMMARY:In Gloom\, Innerwounds\, Fire Came Disparity\, Wraithbearer @ The H
+ andlebar
+DESCRIPTION:in gloom\, innerwounds\, with fire came disparity\, wraithbeare
+ r at the handlebar. sun jul 19\, doors 7 / music 8\, all ages. $10 adv / $
+ 15 door.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-07-19-handlebar-in-gloom.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: In Gloom\, Innerwounds\, Fire Came Disparity\, Wraithb
+ earer @ The Handlebar
+TRIGGER:-PT2H
+END:VALARM
 END:VEVENT
 END:VCALENDAR

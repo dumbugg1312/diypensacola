@@ -22,10 +22,19 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-10-29-handlebar-the-linda-lindas@diypensacola
+DTSTAMP:20261029T000000Z
 DTSTART;TZID=America/Chicago:20261029T183000
 DTEND;TZID=America/Chicago:20261029T213000
 SUMMARY:The Linda Lindas @ The Handlebar
-DESCRIPTION:the linda lindas at the handlebar. thursday oct 29\, 6:30pm. part of hallozine fest\, presented by 309 punk project and foo foo fest. tickets at thehandlebar850.com.
-LOCATION:The Handlebar
+DESCRIPTION:the linda lindas at the handlebar. thursday oct 29\, 6:30pm. pa
+ rt of hallozine fest\, presented by 309 punk project and foo foo fest. tic
+ kets at thehandlebar850.com.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-29-handlebar-the-linda-lindas.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: The Linda Lindas @ The Handlebar
+TRIGGER:-PT2H
+END:VALARM
 END:VEVENT
 END:VCALENDAR

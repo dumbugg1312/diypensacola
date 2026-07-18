@@ -1,7 +1,8 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Roman Gabriel Todd's Beast Rising Up Out Of The Sea
+X-WR-CALNAME:DIYPensacola: Roman Gabriel Todd's Beast Rising Up Out Of The 
+ Sea
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago

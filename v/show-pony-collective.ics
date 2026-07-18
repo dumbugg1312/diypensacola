@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola Shows
+X-WR-CALNAME:DIYPensacola: Show Pony Collective
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago
@@ -20,12 +20,4 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-UID:2026-07-16-bettys-wynter@diypensacola
-DTSTART;TZID=America/Chicago:20260716T190000
-DTEND;TZID=America/Chicago:20260716T220000
-SUMMARY:Wynter\, Tremors\, Power Bomb @ Betty's
-DESCRIPTION:wynter\, tremors\, and power bomb at betty's thursday july 16. 506 w belmont st. doors 7.
-LOCATION:Betty's
-END:VEVENT
 END:VCALENDAR

@@ -22,10 +22,20 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-08-14-handlebar-katie-dineen@diypensacola
+DTSTAMP:20260814T000000Z
 DTSTART;TZID=America/Chicago:20260814T180000
 DTEND;TZID=America/Chicago:20260814T210000
 SUMMARY:Katie Dineen\, Logan Pilcher\, Tanner Lee Gray @ The Handlebar
-DESCRIPTION:katie dineen's album release show for 'simmer'\, with logan pilcher and tanner lee gray. the handlebar\, friday august 14th. doors 6pm\, music at 7. sliding scale $10-$20.
-LOCATION:The Handlebar
+DESCRIPTION:katie dineen's album release show for 'simmer'\, with logan pil
+ cher and tanner lee gray. the handlebar\, friday august 14th. doors 6pm\, 
+ music at 7. sliding scale $10-$20.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-14-handlebar-katie-dineen.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: Katie Dineen\, Logan Pilcher\, Tanner Lee Gray @ The H
+ andlebar
+TRIGGER:-PT2H
+END:VALARM
 END:VEVENT
 END:VCALENDAR

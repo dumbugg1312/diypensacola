@@ -21,43 +21,38 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-07-16-bettys-wynter@diypensacola
-DTSTART;TZID=America/Chicago:20260716T190000
-DTEND;TZID=America/Chicago:20260716T220000
-SUMMARY:Wynter\, Tremors\, Power Bomb @ Betty's
-DESCRIPTION:wynter\, tremors\, and power bomb at betty's thursday july 16. 506 w belmont st. doors 7.
-LOCATION:Betty's
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-07-17-bettys-johanna-rose@diypensacola
-DTSTART;TZID=America/Chicago:20260717T200000
-DTEND;TZID=America/Chicago:20260717T230000
-SUMMARY:Johanna Rose\, The Dreamboats\, Goodwin Rainer\, Stufy @ Betty's
-DESCRIPTION:johanna rose & the dreamboats\, goodwin rainer\, stufy at betty's. fri jul 17\, doors 8 / music 9. $12.
-LOCATION:Betty's
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-07-24-bettys-rabbithole-ghostlings@diypensacola
+DTSTAMP:20260724T000000Z
 DTSTART;TZID=America/Chicago:20260724T200000
 DTEND;TZID=America/Chicago:20260724T230000
 SUMMARY:Rabbithole\, Ghostlings\, Lucid\, Pamm @ Betty's
-DESCRIPTION:rabbithole\, ghostlings\, lucid and pamm at betty's this friday\, july 24th. doors 8pm\, $10/pwyc.
-LOCATION:Betty's
+DESCRIPTION:rabbithole\, ghostlings\, lucid and pamm at betty's this friday
+ \, july 24th. doors 8pm\, $10/pwyc.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-07-24-bettys-rabbithole-ghostlings.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-07-25-bettys-sapphic-saturday@diypensacola
+DTSTAMP:20260725T000000Z
 DTSTART;TZID=America/Chicago:20260725T210000
 DTEND;TZID=America/Chicago:20260726T000000
 SUMMARY:Sapphic Saturday @ Betty's
-DESCRIPTION:sapphic saturday at betty's\, july 25. two shows\, 9pm and 11pm. come out.
-LOCATION:Betty's
+DESCRIPTION:sapphic saturday at betty's\, july 25. two shows\, 9pm and 11pm
+ . come out.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-07-25-bettys-sapphic-saturday.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-27-bettys-ramblin-ricky-tate@diypensacola
+DTSTAMP:20260827T000000Z
 DTSTART;TZID=America/Chicago:20260827T190000
 DTEND;TZID=America/Chicago:20260827T220000
-SUMMARY:Bryan Raymond\, Ramblin Ricky Tate\, STUFY\, Good Night Geezer @ Betty's
-DESCRIPTION:bryan raymond and ramblin ricky tate bring the hot sauce hell raisers tour to betty's. thursday august 27\, 506 w belmont. with stufy and good night geezer.
-LOCATION:Betty's
+SUMMARY:Bryan Raymond\, Ramblin Ricky Tate\, STUFY\, Good Night Geezer @ Be
+ tty's
+DESCRIPTION:bryan raymond and ramblin ricky tate bring the hot sauce hell r
+ aisers tour to betty's. thursday august 27\, 506 w belmont. with stufy and
+  good night geezer.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-27-bettys-ramblin-ricky-tate.html
 END:VEVENT
 END:VCALENDAR

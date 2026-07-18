@@ -22,10 +22,15 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-09-12-handlebar-nvsn-the-autumn-descent@diypensacola
+DTSTAMP:20260912T000000Z
 DTSTART;TZID=America/Chicago:20260912T190000
 DTEND;TZID=America/Chicago:20260912T220000
 SUMMARY:NVSN\, The Autumn Descent\, Caving In\, Hopout @ The Handlebar
-DESCRIPTION:nvsn with the autumn descent\, caving in\, and hopout at the handlebar. september 12th\, doors 7 and music at 8. $12 advance / $15 day of.
-LOCATION:The Handlebar
+DESCRIPTION:nvsn with the autumn descent\, caving in\, and hopout at the ha
+ ndlebar. september 12th\, doors 7 and music at 8. $12 advance / $15 day of
+ .
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-12-handlebar-nvsn-the-autumn-descent
+ .html
 END:VEVENT
 END:VCALENDAR

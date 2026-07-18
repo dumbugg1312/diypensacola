@@ -22,10 +22,17 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-08-08-309-caca-del-diabo-mourning-glories@diypensacola
+DTSTAMP:20260808T000000Z
 DTSTART;TZID=America/Chicago:20260808T180000
 DTEND;TZID=America/Chicago:20260808T210000
-SUMMARY:Caca Del Diabo\, Mourning Glories\, Bangarang Peter\, Spider Bucket\, Sideswept Bangs @ 309 Punk Project
-DESCRIPTION:caca del diabo\, mourning glories\, bangarang peter\, spider bucket\, and sideswept bangs at 309 punk project this saturday\, august 8th. doors 6\, music 6:30. $5-$20 suggested donation\, a benefit and celebration of life for the family of aleka ash ellis-chambers.
+SUMMARY:Caca Del Diabo\, Mourning Glories\, Bangarang Peter\, Spider Bucket
+ \, Sideswept Bangs @ 309 Punk Project
+DESCRIPTION:caca del diabo\, mourning glories\, bangarang peter\, spider bu
+ cket\, and sideswept bangs at 309 punk project this saturday\, august 8th.
+  doors 6\, music 6:30. $5-$20 suggested donation\, a benefit and celebrati
+ on of life for the family of aleka ash ellis-chambers.
 LOCATION:309 Punk Project
+URL:https://diypensacola.com/s/2026-08-08-309-caca-del-diabo-mourning-glori
+ es.html
 END:VEVENT
 END:VCALENDAR

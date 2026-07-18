@@ -1,5 +1,12 @@
-var CACHE='diypensacola-f0831a68510e';
+var CACHE='diypensacola-ff045d36463d';
+// CORE is the app shell (always precached). PRECACHE is this build's fonts plus
+// the flyers for tonight + this week, injected by build.py so someone who opens
+// the site fresh at a venue with no signal still sees this week's flyers instead
+// of logo placeholders. The versioned CACHE name means an old week's flyers evict
+// themselves on the next deploy. Both lists are added best-effort at install.
 var CORE=['./','index.html','offline.html','style.css','logo.png','manifest.webmanifest','icon-192.png','icon-512.png','apple-touch-icon.png'];
+var PRECACHE=["fonts/special-elite.woff2", "fonts/anton.woff2", "fonts/rock-salt.woff2", "flyers/thumbs/2026-07-19_the-handlebar_in-gloom.webp", "flyers/thumbs/2026-07-19_vinyl-music-hall_accursed-creator.webp", "flyers/thumbs/flyer_2026-07-21_handlebar_high-fade.webp", "flyers/thumbs/flyer_2026-07-22_handlebar_no-complications.webp", "flyers/thumbs/2026-07-24_the-undergrowth_our-house-in-progress-diy-art-exhibition.webp", "flyers/thumbs/2026-07-24_the-handlebar_obituary.webp", "flyers/thumbs/2026-07-24_bettys_rabbithole.webp", "flyers/thumbs/2026-07-25_309_rainn-forrest.webp", "flyers/thumbs/2026-07-25_bettys_sapphic-saturday.webp"];
+CORE=CORE.concat(PRECACHE);
 self.addEventListener('install',function(e){
   self.skipWaiting();
   e.waitUntil(caches.open(CACHE).then(function(c){
@@ -14,6 +21,16 @@ self.addEventListener('activate',function(e){
 self.addEventListener('fetch',function(e){
   var req=e.request; if(req.method!=='GET'){return;}
   var url=new URL(req.url); if(url.origin!==location.origin){return;}
+  // overrides.json is the live "this show just fell through" channel, published
+  // straight to the repo from a phone. It MUST be network-first or a cached copy
+  // would keep showing a cancelled show as on, which is the exact failure the
+  // file exists to prevent. Falls back to cache only when genuinely offline.
+  if(/overrides\.json$/.test(url.pathname)){
+    e.respondWith(fetch(req).then(function(res){
+      var copy=res.clone(); caches.open(CACHE).then(function(c){c.put(req,copy);}); return res;
+    }).catch(function(){return caches.match(req);}));
+    return;
+  }
   if(req.mode==='navigate'){
     e.respondWith(fetch(req).then(function(res){
       var copy=res.clone(); caches.open(CACHE).then(function(c){c.put(req,copy);}); return res;

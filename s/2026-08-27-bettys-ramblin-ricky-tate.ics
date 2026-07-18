@@ -22,10 +22,21 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-08-27-bettys-ramblin-ricky-tate@diypensacola
+DTSTAMP:20260827T000000Z
 DTSTART;TZID=America/Chicago:20260827T190000
 DTEND;TZID=America/Chicago:20260827T220000
-SUMMARY:Bryan Raymond\, Ramblin Ricky Tate\, STUFY\, Good Night Geezer @ Betty's
-DESCRIPTION:bryan raymond and ramblin ricky tate bring the hot sauce hell raisers tour to betty's. thursday august 27\, 506 w belmont. with stufy and good night geezer.
-LOCATION:Betty's
+SUMMARY:Bryan Raymond\, Ramblin Ricky Tate\, STUFY\, Good Night Geezer @ Be
+ tty's
+DESCRIPTION:bryan raymond and ramblin ricky tate bring the hot sauce hell r
+ aisers tour to betty's. thursday august 27\, 506 w belmont. with stufy and
+  good night geezer.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-27-bettys-ramblin-ricky-tate.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: Bryan Raymond\, Ramblin Ricky Tate\, STUFY\, Good Nigh
+ t Geezer @ Betty's
+TRIGGER:-PT2H
+END:VALARM
 END:VEVENT
 END:VCALENDAR

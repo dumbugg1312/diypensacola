@@ -22,10 +22,21 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-08-15-handlebar-heroes-for-ghosts@diypensacola
+DTSTAMP:20260815T000000Z
 DTSTART;TZID=America/Chicago:20260815T180000
 DTEND;TZID=America/Chicago:20260815T210000
-SUMMARY:Heroes For Ghosts\, Spiritless\, Afterdusk\, Caving In @ The Handlebar
-DESCRIPTION:heroes for ghosts and spiritless at the handlebar saturday august 15\, with local support from afterdusk and caving in. doors 6\, show 7. $15 at the door.
-LOCATION:The Handlebar
+SUMMARY:Heroes For Ghosts\, Spiritless\, Afterdusk\, Caving In @ The Handle
+ bar
+DESCRIPTION:heroes for ghosts and spiritless at the handlebar saturday augu
+ st 15\, with local support from afterdusk and caving in. doors 6\, show 7.
+  $15 at the door.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-15-handlebar-heroes-for-ghosts.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: Heroes For Ghosts\, Spiritless\, Afterdusk\, Caving In
+  @ The Handlebar
+TRIGGER:-PT2H
+END:VALARM
 END:VEVENT
 END:VCALENDAR

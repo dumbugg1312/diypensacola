@@ -22,10 +22,13 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-07-25-309-rainn-forrest-bea-hurd@diypensacola
+DTSTAMP:20260725T000000Z
 DTSTART;TZID=America/Chicago:20260725T180000
 DTEND;TZID=America/Chicago:20260725T210000
 SUMMARY:Rainn Forrest\, Bea Hurd @ 309
-DESCRIPTION:309 airs rainn forrest and bea hurd closing exhibition and film screening. 309 punk project\, saturday july 25th at 6pm.
+DESCRIPTION:309 airs rainn forrest and bea hurd closing exhibition and film
+  screening. 309 punk project\, saturday july 25th at 6pm.
 LOCATION:309
+URL:https://diypensacola.com/s/2026-07-25-309-rainn-forrest-bea-hurd.html
 END:VEVENT
 END:VCALENDAR

@@ -22,10 +22,13 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-09-04-handlebar-broadway-rave@diypensacola
+DTSTAMP:20260904T000000Z
 DTSTART;TZID=America/Chicago:20260904T190000
 DTEND;TZID=America/Chicago:20260904T220000
 SUMMARY:Broadway Rave @ The Handlebar
-DESCRIPTION:broadway rave\, a musical theater dance party\, comes to the handlebar. fri sep 4.
-LOCATION:The Handlebar
+DESCRIPTION:broadway rave\, a musical theater dance party\, comes to the ha
+ ndlebar. fri sep 4.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-04-handlebar-broadway-rave.html
 END:VEVENT
 END:VCALENDAR

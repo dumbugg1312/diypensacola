@@ -22,10 +22,13 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-07-30-the-den-spidershed@diypensacola
+DTSTAMP:20260730T000000Z
 DTSTART;TZID=America/Chicago:20260730T180000
 DTEND;TZID=America/Chicago:20260730T210000
 SUMMARY:Spidershed\, Future Compost\, Caca del Diablo @ Beulah Den
-DESCRIPTION:spidershed\, future compost\, and caca del diablo at beulah den for freaky jone's big fat birthday. july 30th\, doors at 6. free show.
-LOCATION:Beulah Den
+DESCRIPTION:spidershed\, future compost\, and caca del diablo at beulah den
+  for freaky jone's big fat birthday. july 30th\, doors at 6. free show.
+LOCATION:Beulah Den\, 9575 Bridlewood Rd\, Beulah\, FL 32526
+URL:https://diypensacola.com/s/2026-07-30-the-den-spidershed.html
 END:VEVENT
 END:VCALENDAR

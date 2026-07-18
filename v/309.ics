@@ -22,26 +22,40 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-07-25-309-rainn-forrest-bea-hurd@diypensacola
+DTSTAMP:20260725T000000Z
 DTSTART;TZID=America/Chicago:20260725T180000
 DTEND;TZID=America/Chicago:20260725T210000
 SUMMARY:Rainn Forrest\, Bea Hurd @ 309
-DESCRIPTION:309 airs rainn forrest and bea hurd closing exhibition and film screening. 309 punk project\, saturday july 25th at 6pm.
+DESCRIPTION:309 airs rainn forrest and bea hurd closing exhibition and film
+  screening. 309 punk project\, saturday july 25th at 6pm.
 LOCATION:309
+URL:https://diypensacola.com/s/2026-07-25-309-rainn-forrest-bea-hurd.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-08-309-caca-del-diabo-mourning-glories@diypensacola
+DTSTAMP:20260808T000000Z
 DTSTART;TZID=America/Chicago:20260808T180000
 DTEND;TZID=America/Chicago:20260808T210000
-SUMMARY:Caca Del Diabo\, Mourning Glories\, Bangarang Peter\, Spider Bucket\, Sideswept Bangs @ 309 Punk Project
-DESCRIPTION:caca del diabo\, mourning glories\, bangarang peter\, spider bucket\, and sideswept bangs at 309 punk project this saturday\, august 8th. doors 6\, music 6:30. $5-$20 suggested donation\, a benefit and celebration of life for the family of aleka ash ellis-chambers.
+SUMMARY:Caca Del Diabo\, Mourning Glories\, Bangarang Peter\, Spider Bucket
+ \, Sideswept Bangs @ 309 Punk Project
+DESCRIPTION:caca del diabo\, mourning glories\, bangarang peter\, spider bu
+ cket\, and sideswept bangs at 309 punk project this saturday\, august 8th.
+  doors 6\, music 6:30. $5-$20 suggested donation\, a benefit and celebrati
+ on of life for the family of aleka ash ellis-chambers.
 LOCATION:309 Punk Project
+URL:https://diypensacola.com/s/2026-08-08-309-caca-del-diabo-mourning-glori
+ es.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-11-309-we-cant-help-it-if-were-from-florida@diypensacola
+DTSTAMP:20260911T000000Z
 DTSTART;TZID=America/Chicago:20260911T180000
 DTEND;TZID=America/Chicago:20260911T210000
 SUMMARY:We Can’t Help It If We’re From Florida @ 309 Punk Project
-DESCRIPTION:we can't help it if we're from florida\, a group photography exhibition at the 309 punk project. friday september 11th\, 6-9pm.
+DESCRIPTION:we can't help it if we're from florida\, a group photography ex
+ hibition at the 309 punk project. friday september 11th\, 6-9pm.
 LOCATION:309 Punk Project
+URL:https://diypensacola.com/s/2026-09-11-309-we-cant-help-it-if-were-from-
+ florida.html
 END:VEVENT
 END:VCALENDAR
