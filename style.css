@@ -559,11 +559,14 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   .pqr small{display:block;font-size:6.5pt;letter-spacing:.08em;text-transform:uppercase;margin-top:.04in;text-align:center}
   /* ---- section bars: solid ink, condensed caps ---- */
   .bucket{max-width:none;margin:0}
+  /* section bars in Rock Salt: the site's hand-scrawl is reserved for period
+     headers (month headers on screen), and tonight/this week/next week ARE
+     period headers — white scrawl on an ink bar reads like marker on gaff tape */
   .bhead{display:block;background:#000!important;color:#fff!important;
     -webkit-print-color-adjust:exact;print-color-adjust:exact;
     border:0!important;box-shadow:none!important;transform:none!important;
-    font-family:"Anton","Special Elite",sans-serif;font-weight:400;font-size:12pt;
-    letter-spacing:.18em;text-transform:uppercase;padding:.03in .09in;margin:.22in 0 .02in;break-after:avoid}
+    font-family:"Rock Salt","Special Elite",cursive;font-weight:400;font-size:11pt;
+    letter-spacing:.06em;text-transform:lowercase;padding:.05in .1in .07in;margin:.22in 0 .02in;break-after:avoid}
   #b-tonight .bhead{margin-top:.04in}
   .bhead::after{display:none}
   .bhead .lab{background:none!important;color:#fff!important;padding:0;transform:none!important;box-shadow:none!important;border:0!important}
@@ -614,11 +617,25 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   .meta{color:#000!important;font-size:9pt!important;line-height:1.4!important;letter-spacing:.02em}
   .meta a.vlink{color:#000!important;text-decoration:none!important;border:0!important}
   .show.off h3{text-decoration:line-through!important}
-  /* ---- footer: sign-off + YOUR SHOW HERE recruitment box ---- */
-  .printfoot{display:grid;grid-template-columns:1fr auto;gap:.24in;align-items:center;
-    border-top:6px double #000;margin-top:.16in;padding-top:.12in;break-inside:avoid}
-  .pfbig{font-family:"Anton","Special Elite",sans-serif;font-size:16pt;text-transform:uppercase;letter-spacing:.03em}
-  .pfsmall{font-size:8pt;letter-spacing:.05em;margin-top:.04in}
+  /* ---- footer: the recruitment rail. This poster gets handed out at shows,
+     so the bottom sells the site: a scrawled "there's more" lead, three boxed
+     teasers with real archive numbers, then the sign-off + YOUR SHOW HERE. ---- */
+  .printfoot{display:block;border-top:6px double #000;margin-top:.16in;padding-top:.1in;break-inside:avoid}
+  .pfmore{font-family:"Rock Salt","Special Elite",cursive;font-size:11pt;margin:.02in 0 .09in;text-align:center}
+  .pfpromos{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.14in}
+  .pfpromo{border:2px solid #000;padding:.07in .09in .08in;text-align:center}
+  .pfpromo:nth-child(1){transform:rotate(-.6deg)}
+  .pfpromo:nth-child(3){transform:rotate(.6deg)}
+  .pfphead{font-family:"Anton","Special Elite",sans-serif;font-size:11.5pt;text-transform:uppercase;letter-spacing:.06em;
+    border-bottom:1.5px dashed #000;padding-bottom:.03in;margin-bottom:.045in}
+  .pfptext{font-size:7.4pt;line-height:1.45}
+  .pfpurl{font-size:7.6pt;font-weight:700;letter-spacing:.04em;margin-top:.045in;
+    background:#000;color:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact;
+    display:inline-block;padding:.015in .05in}
+  .pfrow{display:grid;grid-template-columns:1fr auto;gap:.24in;align-items:center;
+    border-top:1.5px dashed #000;margin-top:.12in;padding-top:.09in}
+  .pfbig{font-family:"Rock Salt","Special Elite",cursive;font-size:13pt}
+  .pfsmall{font-size:8pt;letter-spacing:.05em;margin-top:.05in}
   .pfsubmit{border:2.5px dashed #000;padding:.08in .16in;text-align:center;transform:rotate(1deg)}
   .pfsubhead{font-family:"Anton","Special Elite",sans-serif;font-size:12pt;text-transform:uppercase;letter-spacing:.1em}
   .pfsubtxt{font-size:7.5pt;margin-top:.03in;line-height:1.45}
