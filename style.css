@@ -1,12 +1,10 @@
 
-/* Self-hosted, latin-subset webfonts (fonts/ is written by the build). No
-   third-party font call — the site makes zero cross-origin requests — and they
-   are precached by the service worker so type survives offline. Paths resolve
-   relative to style.css, which lives at the site root, so they work from every
-   subdirectory (s/ b/ v/). font-display:swap keeps text visible immediately. */
-@font-face{font-family:"Special Elite";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/special-elite.woff2) format("woff2")}
-@font-face{font-family:"Anton";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/anton.woff2) format("woff2")}
-@font-face{font-family:"Rock Salt";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/rock-salt.woff2) format("woff2")}
+/* Fonts load from Google Fonts via the <link> in every page head. Self-hosting was
+   tried on 2026-07-18 and reverted the same day: the /fonts/*.woff2 paths hung
+   behind the GitHub Pages CDN on the custom domain (origin served them fine, the
+   edge did not), and a font preload in <head> pointing at a hanging URL stalled
+   page loads badly enough that phones timed out. Do not re-self-host without
+   first confirming the custom domain serves a brand-new path reliably. */
 :root{--bg:#0c0c0d;--card:#17171a;--ink:#f2f2ee;--dim:#9b9b94;--hot:#6b7036;--hotink:#8f9850;--on-hot:#f2f2ee;--line:#2c2c31;--tape:#d8d4c5;--free:#aebf5a;--sliding:#7fb0a8;--age:#d59b46;--benefit:#d98cb0;--soldout:#9b9b94;--shadow:rgba(107,112,54,.5);--scrim:rgba(12,12,13,.82)}
 *{box-sizing:border-box}
 body{margin:0;background-color:var(--bg);color:var(--ink);font:16px/1.5 "Special Elite","Courier New",monospace;

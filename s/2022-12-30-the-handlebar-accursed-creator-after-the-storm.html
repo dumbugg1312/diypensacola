@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.github.com; style-src 'self' 'unsafe-inline'; script-src 'sha256-K4KzsGPP4U2H7uCmzAjLcaxhij8sqmebT0tzlRHp8YU=' 'sha256-RCkR64QPsKNGuWgzPQ9Lhq3QOc/7eMh+/slhgn58OF0=' 'sha256-3CIccJdBa2T6HHyhvc5n4k3rX717d4kPLaa+Db/XbqU='">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; connect-src 'self' https://api.github.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-SwzMxhWONOX8KRZuFlUFqCtBmCTBUtcumbTRfVWv9Z4=' 'sha256-RCkR64QPsKNGuWgzPQ9Lhq3QOc/7eMh+/slhgn58OF0=' 'sha256-3CIccJdBa2T6HHyhvc5n4k3rX717d4kPLaa+Db/XbqU='">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Accursed Creator, After The Storm, Exformation, Blindfold Knife Fight · FRI DEC 30 @ The Handlebar · DIYPensacola</title>
 <meta name="description" content="Accursed Creator, After The Storm, Exformation, Blindfold Knife Fight played The Handlebar in Pensacola, FL on Friday, December 30, 2022. A past DIY show archived by DIYPensacola.">
@@ -18,7 +18,9 @@
 <link rel="icon" href="../logo.png">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="preload" href="/fonts/special-elite.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Special+Elite&family=Rock+Salt&display=swap" rel="stylesheet">
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Event", "name": "Accursed Creator, After The Storm, Exformation, Blindfold Knife Fight", "startDate": "2022-12-30T20:00:00-06:00", "endDate": "2022-12-30T23:00:00-06:00", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "The Handlebar", "address": {"@type": "PostalAddress", "addressLocality": "Pensacola", "addressRegion": "FL", "addressCountry": "US"}}, "image": "https://diypensacola.com/flyers/2022-12-30_handlebar_accursed-creator.jpg", "url": "https://diypensacola.com/s/2022-12-30-the-handlebar-accursed-creator-after-the-storm.html", "organizer": {"@type": "Organization", "name": "DIYPensacola", "url": "https://diypensacola.com/"}, "performer": [{"@type": "MusicGroup", "name": "Accursed Creator"}, {"@type": "MusicGroup", "name": "After The Storm"}, {"@type": "MusicGroup", "name": "Exformation"}, {"@type": "MusicGroup", "name": "Blindfold Knife Fight"}]}]</script><script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "diypensacola", "item": "https://diypensacola.com/"}, {"@type": "ListItem", "position": 2, "name": "archive", "item": "https://diypensacola.com/archive.html"}, {"@type": "ListItem", "position": 3, "name": "The Handlebar", "item": "https://diypensacola.com/v/handlebar.html"}, {"@type": "ListItem", "position": 4, "name": "Accursed Creator, After The Storm, Exformation, Blindfold Knife Fight"}]}]</script>
 <link rel="stylesheet" href="../style.css"></head><body class="showpage">
 <header><a class="home" href="../"><img src="../logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="../">shows</a><a href="../archive.html">archive &amp; search</a><a href="../guide.html">guide</a><a href="../submit.html">submit</a></nav></header>
@@ -61,7 +63,10 @@
     if(!m)return;
     var card=document.querySelector('.spcard');
     if(!card||card.classList.contains('off'))return;
-    fetch('../overrides.json?t='+Date.now(),{cache:'no-store'})
+    var ctl=window.AbortController?new AbortController():null;
+    if(ctl)setTimeout(function(){try{ctl.abort();}catch(e){}},4000);
+    fetch('../overrides.json?t='+Date.now(),
+          ctl?{cache:'no-store',signal:ctl.signal}:{cache:'no-store'})
       .then(function(r){return r.ok?r.json():null;})
       .then(function(o){
         var st=o&&o.shows&&o.shows[m[1]]&&o.shows[m[1]].status;
