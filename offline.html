@@ -335,34 +335,49 @@ main section:target{animation:viewin .26s ease both}
    over an A-side / B-side split. Deliberately a different SHAPE from the donate
    callout below it (banded + two-column, vs centered + dashed) so the page stops
    repeating one rhythm. Square corners, 0-blur offset shadow, olive band. */
-/* Built like the paper insert from a cassette case: a printed SPINE running up the
-   left edge, a dashed FOLD line, then a typed tracklist with dot leaders out to a
-   running time. All straight lines, so it keeps the square-corner rule (a cassette
-   shell's round hubs would break it). Left-aligned like a real tracklist, and a
-   completely different object from the dashed centered donate callout below it. */
+/* Laid out with the real anatomy of a cassette J-card, unfolded: COVER panel |
+   dotted fold | narrow SPINE with the title running vertically | dotted fold |
+   INTERIOR panel with the catalog number and tracklist. The folds are dotted
+   (like a print template's crease marks), the spine carries a small solid color
+   bar at its foot the way pressed tapes do, and the interior reads top to
+   bottom: catalog no., title, tracklist with dot leaders, format line. */
 .tapedeck{max-width:760px;margin:2.8rem auto .4rem;background:var(--card);
-  border:2px solid var(--tape);box-shadow:5px 5px 0 var(--hot);display:flex}
-.tdspine{flex:none;width:2.3rem;background:var(--hot);color:var(--on-hot);
-  display:flex;align-items:center;justify-content:center;
-  font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;
-  font-size:.88rem;letter-spacing:.24em}
-.tdspine span{writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap}
-/* the fold between spine and panel, not a decorative side accent */
-.tdbody{flex:1;min-width:0;padding:.85rem 1rem 1rem;border-left:2px dashed var(--line)}
-.tdcap{margin:0 0 .5rem;font-size:.74rem;color:var(--dim);letter-spacing:.03em}
-.tdtrack{padding:.7rem 0 .1rem}
-.tdtrack+.tdtrack{border-top:2px dashed var(--line)}
-.tdline{display:flex;align-items:baseline;gap:.5rem;margin-bottom:.35rem}
-.tdside{flex:none;font-family:"Anton","Special Elite",sans-serif;font-size:.66rem;
-  letter-spacing:.14em;text-transform:uppercase;color:var(--on-hot);
-  background:var(--hot);padding:.1rem .34rem;line-height:1.25}
+  border:2px solid var(--tape);box-shadow:5px 5px 0 var(--hot);display:flex;overflow:hidden}
+/* cover panel: the "front" art — logo pressed on black */
+.tdcover{flex:none;width:34%;background:#000;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:.45rem;padding:1.1rem .8rem;text-align:center}
+.tdcover img{width:60%;max-width:130px;display:block}
+.tdcovertitle{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;
+  letter-spacing:.1em;font-size:1.15rem;color:var(--ink);line-height:1.1}
+.tdcoversub{font-size:.66rem;color:var(--dim);letter-spacing:.14em;text-transform:uppercase}
+/* spine: vertical title strip between two fold lines, color bar at the foot */
+.tdspine{flex:none;width:2.1rem;border-left:2px dotted var(--line);border-right:2px dotted var(--line);
+  display:flex;flex-direction:column;align-items:center;padding:.6rem 0 .5rem}
+.tdspinetext{writing-mode:vertical-rl;white-space:nowrap;font-size:.62rem;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+.tdspinebar{margin-top:auto;width:.5rem;height:2.4rem;background:var(--hot)}
+/* interior panel: catalog no., title, tracklist, format line */
+.tdbody{flex:1;min-width:0;padding:.85rem 1.05rem .9rem;display:flex;flex-direction:column}
+.tdcat{font-size:.68rem;color:var(--hotink);letter-spacing:.2em;text-transform:uppercase}
+.tdtitle{margin:.1rem 0 .1rem;font-family:"Anton","Special Elite",sans-serif;font-weight:400;
+  text-transform:uppercase;letter-spacing:.05em;font-size:1.45rem;line-height:1.1;color:var(--ink)}
+.tdcap{margin:0 0 .45rem;font-size:.74rem;color:var(--dim);letter-spacing:.03em}
+.tdtrack{padding:.6rem 0 .1rem;border-top:2px dashed var(--line)}
+.tdline{display:flex;align-items:baseline;gap:.5rem;margin-bottom:.3rem}
+.tdno{flex:none;color:var(--dim);font-size:.78rem;letter-spacing:.08em}
 .tdname{flex:none;color:var(--hotink);font-size:.97rem}
 .tdlead{flex:1;min-width:1rem;border-bottom:2px dotted var(--line);transform:translateY(-.3rem)}
 .tdlen{flex:none;color:var(--dim);font-size:.78rem;letter-spacing:.06em}
-.tdtrack p{margin:0 0 .75rem;color:var(--ink);font-size:.9rem;line-height:1.55}
-@media (max-width:560px){
-  .tdspine{width:1.9rem;font-size:.78rem;letter-spacing:.18em}
-  .tdbody{padding:.75rem .8rem .9rem}
+.tdtrack p{margin:0 0 .7rem;color:var(--ink);font-size:.88rem;line-height:1.5}
+.tdfoot{margin-top:.55rem;padding-top:.45rem;border-top:2px dashed var(--line);
+  font-size:.64rem;color:var(--dim);letter-spacing:.16em;text-transform:uppercase}
+@media (max-width:620px){
+  .tdcover{width:29%;padding:.9rem .5rem}
+  .tdcover img{width:74%}
+  .tdcovertitle{font-size:.92rem}
+  .tdcoversub{display:none}
+  .tdspine{width:1.8rem}
+  .tdbody{padding:.75rem .8rem .8rem}
   .tdline{flex-wrap:wrap;gap:.4rem}
   .tdlead{display:none}
 }
@@ -522,37 +537,86 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 @media (max-width:560px){#list.wall .cards{column-count:1}}
 
 /* ---------- print poster: "print this week" photocopy handout ---------- */
-.printhead{display:none}
+.printhead,.printfoot{display:none}
 @media print{
-  body{background:#fff;color:#000;font:12pt/1.4 "Courier New",monospace}
-  header,.links,.modebar,nav,.controls,#grid,.endtip,.tapedeck,footer,.totop,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming,.tstrip,.printbar{display:none!important}
+  /* The photocopy poster. Not the web page in black and white: a dense zine
+     flyer-wall someone would actually staple to a pole — double-rule masthead
+     with a tilted FREE/TAKE ONE stamp and a framed QR, ink-black section bars,
+     three columns of hand-tilted flyer tiles, and a bottom rule with a YOUR
+     SHOW HERE recruitment box. All pure ink: black bars are forced with
+     print-color-adjust since photocopiers are the target output anyway. */
+  @page{margin:.4in}
+  body{background:#fff;color:#000;font:10.5pt/1.35 "Special Elite","Courier New",monospace}
+  header,.links,.modebar,nav,.controls,#grid,.endtip,.tapedeck,footer,.totop,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming,.tstrip,.printbar,.savebtn,.doorsin,.bnone,.ht{display:none!important}
   main:not(:has(section:target)) #list{display:block}
   main section{display:none!important}
   main section#list{display:block!important}
-  /* masthead is a 3-column grid (empty gutter · centered title · QR) so the QR
-     is real layout, not an overlay, and the bottom rule always clears it */
-  .printhead{display:grid;grid-template-columns:.95in 1fr .95in;column-gap:.12in;align-items:start;text-align:center;border-bottom:4px solid #000;margin-bottom:1rem;padding-bottom:.5rem}
-  .printhead .pt{grid-column:2;font-size:26pt;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
-  .printhead .ps{grid-column:2;font-size:11pt;margin-top:.2rem}
+  /* ---- masthead: gutter (FREE stamp) · title stack · QR ---- */
+  .printhead{display:grid;grid-template-columns:1in 1fr 1in;column-gap:.14in;align-items:start;text-align:center;border-bottom:6px double #000;margin-bottom:.2in;padding-bottom:.14in}
+  .pfree{grid-column:1;grid-row:1;justify-self:start;align-self:start;background:#000;color:#fff;
+    -webkit-print-color-adjust:exact;print-color-adjust:exact;
+    font-size:8pt;letter-spacing:.14em;text-transform:uppercase;padding:.05in .08in;transform:rotate(-4deg);margin-top:.12in}
+  .printhead .pt{grid-column:2;font-family:"Anton","Special Elite",sans-serif;font-weight:400;font-size:40pt;line-height:.95;text-transform:uppercase;letter-spacing:.02em}
+  .printhead .ps2{grid-column:2;justify-self:center;font-size:9pt;letter-spacing:.16em;text-transform:uppercase;margin-top:.06in;border-top:2px solid #000;border-bottom:2px solid #000;padding:.025in .12in}
+  .printhead .ps{grid-column:2;font-size:10pt;margin-top:.06in}
   /* QR back to the site: paper on a pole should route people to the calendar */
-  .pqr{grid-column:3;grid-row:1/span 2;justify-self:end}
-  .pqr img{display:block;width:.78in;height:.78in;margin:0 auto}
-  .pqr small{display:block;font-size:6.5pt;letter-spacing:.08em;text-transform:uppercase;margin-top:.03in;text-align:center}
-  .bhead{color:#000;border-bottom:2px dashed #000;font-size:15pt}
+  .pqr{grid-column:3;grid-row:1/span 3;justify-self:end}
+  .pqr img{display:block;width:.9in;height:.9in;margin:0 auto;border:2px solid #000;padding:.04in}
+  .pqr small{display:block;font-size:6.5pt;letter-spacing:.08em;text-transform:uppercase;margin-top:.04in;text-align:center}
+  /* ---- section bars: solid ink, condensed caps ---- */
+  .bucket{max-width:none;margin:0}
+  .bhead{display:block;background:#000!important;color:#fff!important;
+    -webkit-print-color-adjust:exact;print-color-adjust:exact;
+    border:0!important;box-shadow:none!important;transform:none!important;
+    font-family:"Anton","Special Elite",sans-serif;font-weight:400;font-size:13pt;
+    letter-spacing:.14em;text-transform:uppercase;padding:.035in .1in;margin:.14in 0 .1in;break-after:avoid}
   .bhead::after{display:none}
-  .ht{display:none}
-  .bucket{max-width:none}
-  .show{background:#fff;border:2px solid #000;box-shadow:none;color:#000;break-inside:avoid;padding:.5rem}
-  .show img.thumb{filter:grayscale(1) contrast(1.15);border-color:#000}
-  .date{color:#000}
-  .meta{color:#222}
-  .stamp{background:#fff;text-shadow:none}
-  .thumbwrap::before{display:none}   /* screen-only tape */
-  .bnone{display:none!important}     /* quiet-night line is screen-only */
-  /* the ticket-stub tonight header prints as plain ink */
-  #b-tonight .bhead{background:#fff;box-shadow:none;border:2px solid #000;color:#000;transform:none}
-  #list:not(.wall) .show img.thumb:not(.ph){filter:grayscale(1) contrast(1.15)}
-  .doorsin{display:none}
+  .bhead .lab{background:none!important;color:#fff!important;padding:0;transform:none!important;box-shadow:none!important;border:0!important}
+  /* ---- the wall: three columns of tilted flyer tiles ---- */
+  /* !important throughout: the screen poster-feed rules
+     (#list:not(.wall) #b-tonight .show{display:grid}, per-bucket thumb sizes,
+     the dense-list frame, clamp()'d h3 sizes...) sit LATER in this sheet with
+     id-level specificity, so plain print declarations lose to them. Print is
+     the one place a blanket !important is the honest tool. */
+  .cards{display:block!important;column-count:3!important;column-gap:.16in!important;
+    border:0!important;background:none!important;box-shadow:none!important;gap:0!important}
+  /* tonight is the headline act: two wide columns, so its flyer prints big */
+  #b-tonight .cards{column-count:2!important}
+  .show{display:inline-block!important;width:100%!important;break-inside:avoid;
+    margin:0 0 .16in!important;padding:0!important;flex:none!important;
+    background:#fff!important;border:2.5px solid #000!important;border-bottom:2.5px solid #000!important;
+    box-shadow:none!important;color:#000!important;grid-template-columns:none!important;gap:0!important}
+  .show:nth-child(3n+1){transform:rotate(-.7deg)!important}
+  .show:nth-child(3n){transform:rotate(.8deg)!important}
+  .show:nth-child(3n+2){transform:none!important}
+  .thumbwrap{display:block!important;width:100%!important;max-width:none!important;
+    aspect-ratio:auto!important;margin:0!important;padding:0!important;flex:none!important}
+  .thumbwrap::before{display:none!important}   /* screen-only tape */
+  .show img.thumb{display:block!important;width:100%!important;height:auto!important;
+    max-height:none!important;object-fit:contain!important;transform:none!important;
+    filter:grayscale(1) contrast(1.2)!important;background:#fff!important;
+    border:0!important;border-bottom:2.5px solid #000!important;padding:0!important}
+  .show .info{display:block!important;padding:.05in .08in .07in!important}
+  .show .daterow{display:flex!important;flex-wrap:wrap;gap:.04in;align-items:baseline}
+  .show .date{display:inline!important;background:none!important;border:0!important;box-shadow:none!important;
+    padding:0!important;transform:none!important;color:#000!important;font-weight:700;
+    font-family:"Special Elite","Courier New",monospace!important;font-size:9pt!important;letter-spacing:.04em}
+  .stamp{position:static!important;transform:none!important;color:#000!important;
+    border:1.5px solid #000!important;background:#fff!important;text-shadow:none!important;font-size:6.5pt!important}
+  .show h3{margin:.02in 0 .015in!important;font-family:"Anton","Special Elite",sans-serif!important;font-weight:400!important;
+    font-size:12pt!important;line-height:1.08!important;text-transform:uppercase;letter-spacing:.01em!important}
+  .show h3 .more{font-size:8pt!important}
+  .meta{color:#000!important;font-size:8pt!important;line-height:1.35!important}
+  .meta a.vlink{color:#000!important;text-decoration:none!important}
+  .show.off h3{text-decoration:line-through!important}
+  /* ---- footer: sign-off + YOUR SHOW HERE recruitment box ---- */
+  .printfoot{display:grid;grid-template-columns:1fr auto;gap:.24in;align-items:center;
+    border-top:6px double #000;margin-top:.16in;padding-top:.12in;break-inside:avoid}
+  .pfbig{font-family:"Anton","Special Elite",sans-serif;font-size:16pt;text-transform:uppercase;letter-spacing:.03em}
+  .pfsmall{font-size:8pt;letter-spacing:.05em;margin-top:.04in}
+  .pfsubmit{border:2.5px dashed #000;padding:.08in .16in;text-align:center;transform:rotate(1deg)}
+  .pfsubhead{font-family:"Anton","Special Elite",sans-serif;font-size:12pt;text-transform:uppercase;letter-spacing:.1em}
+  .pfsubtxt{font-size:7.5pt;margin-top:.03in;line-height:1.45}
   body.printweek .show:not(.pw){display:none!important}
   body.printweek .bucket:not(.pw-has){display:none!important}
 }
