@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; connect-src 'self' https://api.github.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'sha256-oKuOTCopkcZuq/FQdfOXP84En9aVYtaHg7eVdlRffPc='">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; connect-src 'self' https://api.github.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'sha256-gQcV1caXb7qSPFEYkAQxiwh4AXcULlwtm6ZZbWoQnc8='">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>diypensacola · punk & diy shows in pensacola, fl</title>
 <meta name="description" content="Punk, metal, hardcore, and DIY shows in Pensacola, FL. 37 shows on now, plus a forever archive of 1184+ past shows across 86 venues (2011 to 2026), with flyers, dates, and house shows.">
@@ -304,20 +304,45 @@
   // tonight's doors countdown: parse the first clock time out of each tonight
   // card's data-time ("doors 7pm / show 8pm") and show how long till it, or
   // "on now" for a few hours after. Re-checked every minute.
-  function doorsCountdown(){
-    var nn=new Date(), tt=pad(nn);
-    document.querySelectorAll('#b-tonight .show').forEach(function(c){
-      var el=c.querySelector('.doorsin');
-      if(c.getAttribute('data-date')!==tt||c.getAttribute('data-state')==='cancelled'){if(el)el.remove();return;}
+  //
+  // The saved-shows tab drops the week/next-week/later headers, so every card
+  // there carries its own clock instead — same stamp, counting in days until
+  // the show lands on today and the doors math takes over.
+  function countdownFor(c,nn,tt){
+    if(c.getAttribute('data-state')==='cancelled')return '';
+    var d=c.getAttribute('data-date')||'';
+    if(d===tt){
       var m=/(\d{1,2})(?::(\d{2}))?\s*(am|pm)/i.exec(c.getAttribute('data-time')||'');
-      if(!m){if(el)el.remove();return;}
+      if(!m)return 'tonight';
       var h=(+m[1])%12+(/pm/i.test(m[3])?12:0);
       var start=new Date(nn.getFullYear(),nn.getMonth(),nn.getDate(),h,+(m[2]||0));
-      var diff=Math.round((start-nn)/6e4), txt='';
+      var diff=Math.round((start-nn)/6e4);
       if(diff>0&&diff<720){
         var hh=Math.floor(diff/60), mm=diff%60;
-        txt=hh?('doors in '+hh+'h'+(mm?' '+mm+'m':'')):('doors in '+mm+'m');
-      }else if(diff<=0&&diff>-240){txt='on now';}
+        return hh?('doors in '+hh+'h'+(mm?' '+mm+'m':'')):('doors in '+mm+'m');
+      }
+      if(diff<=0&&diff>-240)return 'on now';
+      return 'tonight';
+    }
+    if(!yoursOnly)return '';
+    // whole-day difference, computed off the date parts so a show at 9pm
+    // tomorrow still reads "tomorrow" and not "in 1 day" at 11pm tonight
+    var p=d.split('-');
+    if(p.length!==3)return '';
+    var then=new Date(+p[0],+p[1]-1,+p[2]);
+    var days=Math.round((then-new Date(nn.getFullYear(),nn.getMonth(),nn.getDate()))/864e5);
+    if(days<0)return '';
+    if(days===1)return 'tomorrow';
+    if(days<7)return 'in '+days+' days';
+    var wk=Math.round(days/7);
+    return days<14?'in a week':('in '+wk+' weeks');
+  }
+  function doorsCountdown(){
+    var nn=new Date(), tt=pad(nn);
+    var sel=yoursOnly?'#list .show':'#b-tonight .show';
+    document.querySelectorAll('#list .show').forEach(function(c){
+      var el=c.querySelector('.doorsin');
+      var txt=c.matches(sel)?countdownFor(c,nn,tt):'';
       if(!txt){if(el)el.remove();return;}
       if(!el){
         el=document.createElement('span');el.className='doorsin';
@@ -615,13 +640,63 @@
   // flyers. Same cards, same detail modal; only the CSS class changes. The
   // choice persists, and the plain list stays the default.
   var wallBtn=document.getElementById('wallbtn'),listSec=document.getElementById('list');
-  function setWall(on){
+  // wallPref is what the visitor chose for the normal feed. The saved-shows tab
+  // forces the wall on top of it without overwriting it, so leaving that tab
+  // drops back to whatever they were looking at before.
+  var wallPref=false;
+  function setWall(on,persist){
     if(!listSec||!wallBtn)return;
     listSec.classList.toggle('wall',on);
     wallBtn.classList.toggle('on',on);
     wallBtn.setAttribute('aria-pressed',on?'true':'false');
     wallBtn.title=on?'back to the list view':'toggle the flyer wall view';
-    try{localStorage.setItem('dpc_wall',on?'1':'0');}catch(e){}
+    if(persist!==false){wallPref=on;try{localStorage.setItem('dpc_wall',on?'1':'0');}catch(e){}}
+  }
+  // your saved shows are all flyer, no scanning — that view is always the wall,
+  // with the bucket headers dropped (see .yours in the CSS) and every card
+  // wearing its own countdown instead.
+  //
+  // The four date buckets are separate containers, so leaving the cards where
+  // they live would break the masonry into one short row per bucket — a line of
+  // posters, not a wall. So the saved cards are lifted into a single container
+  // for as long as the tab is open, and put back (in reverse, so each card's
+  // remembered next-sibling is still where it was) on the way out.
+  var yoursBucket=null;
+  function gatherYours(){
+    if(!listSec)return;
+    if(!yoursBucket){
+      yoursBucket=document.createElement('div');
+      yoursBucket.className='bucket';yoursBucket.id='b-yours';
+      var box=document.createElement('div');box.className='cards';
+      yoursBucket.appendChild(box);
+      listSec.insertBefore(yoursBucket,listSec.firstChild);
+    }
+    var box=yoursBucket.firstChild, today=pad(new Date());
+    var saved={};savedList().forEach(function(id){saved[id]=1;});
+    // DOM order across the buckets is already chronological, so appending in
+    // that order keeps the wall reading soonest-first
+    document.querySelectorAll('#list .bucket:not(#b-yours) .show').forEach(function(c){
+      if(!saved[c.getAttribute('data-id')])return;
+      if(!c._home)c._home={p:c.parentNode,n:c.nextSibling};
+      c.classList.toggle('istonight',c.getAttribute('data-date')===today);
+      box.appendChild(c);
+    });
+    yoursBucket.hidden=!box.children.length;
+  }
+  function scatterYours(){
+    if(!yoursBucket)return;
+    var kids=[].slice.call(yoursBucket.firstChild.children).reverse();
+    kids.forEach(function(c){
+      c.classList.remove('istonight');
+      if(c._home){c._home.p.insertBefore(c,c._home.n);c._home=null;}
+    });
+    yoursBucket.hidden=true;
+  }
+  function syncYoursWall(){
+    setWall(yoursOnly||wallPref,false);
+    if(listSec)listSec.classList.toggle('yours',yoursOnly);
+    if(yoursOnly)gatherYours(); else scatterYours();
+    if(typeof doorsCountdown==='function')doorsCountdown();
   }
   if(wallBtn){
     wallBtn.addEventListener('click',function(){
@@ -639,7 +714,7 @@
         document.startViewTransition(function(){setWall(on);});
       }else{setWall(on);}
     });
-    try{if(localStorage.getItem('dpc_wall')==='1')setWall(true);}catch(e){}
+    try{if(localStorage.getItem('dpc_wall')==='1'){wallPref=true;setWall(true,false);}}catch(e){}
   }
 
   // ---- print (photocopy handout) ----
@@ -877,6 +952,7 @@
     yb.hidden=n===0;
     yb.classList.toggle('on',yoursOnly);
     yb.setAttribute('aria-pressed',yoursOnly?'true':'false');
+    syncYoursWall();
   }
 
   // save button lives inside the card; capture-phase + stopPropagation so tapping
@@ -909,6 +985,7 @@
     yoursOnly=!yoursOnly;
     yoursBtn.classList.toggle('on',yoursOnly);
     yoursBtn.setAttribute('aria-pressed',yoursOnly?'true':'false');
+    syncYoursWall();
     applyFilters();
   });
 
@@ -1182,7 +1259,7 @@
     var startPress=function(){
       longPressed=false;
       if(pressTimer)clearTimeout(pressTimer);
-      pressTimer=setTimeout(fire,1500);   // 3s was long enough that people gave up
+      pressTimer=setTimeout(fire,4000);   // deliberately long: nobody finds this by accident
     };
     var endPress=function(){if(pressTimer){clearTimeout(pressTimer);pressTimer=null;}};
     logoEl.addEventListener('mousedown',startPress);

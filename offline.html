@@ -536,6 +536,21 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 @media (max-width:900px){#list.wall .cards{column-count:2}}
 @media (max-width:560px){#list.wall .cards{column-count:1}}
 
+/* saved-shows tab: one undivided wall. The tonight/this week/next week/later
+   split is a scanning aid for the full feed and just fragments a handful of
+   saved flyers, so the headers (and the quiet-night notice) go and each card's
+   own countdown carries the timing instead. */
+#list.yours .bhead,#list.yours .bnone{display:none}
+#list.yours .bucket{margin-top:0}
+/* every saved card is lifted into #b-yours (see the JS), so the masonry runs
+   through all of them as one wall instead of breaking a row per date bucket */
+#list.wall.yours #b-yours .cards{column-count:3;max-width:none;margin:0}
+@media (max-width:900px){#list.wall.yours #b-yours .cards{column-count:2}}
+@media (max-width:560px){#list.wall.yours #b-yours .cards{column-count:1}}
+/* a saved show happening today keeps the hot border it wears in the tonight bucket */
+#list.wall.yours .show.istonight img.thumb{border-color:var(--hot);box-shadow:6px 6px 0 var(--hot)}
+#list.wall.yours .show.istonight .thumbwrap::before{background:var(--hot)}
+
 /* ---------- print poster: "print this week" photocopy handout ---------- */
 .printhead,.printfoot{display:none}
 @media print{
@@ -890,8 +905,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   transform:translateX(-50%) rotate(-4deg);width:38px;height:11px;background:var(--tape);
   opacity:.5;z-index:2;box-shadow:0 1px 2px rgba(0,0,0,.35);pointer-events:none}
 /* a lone poster in a wall bucket centers instead of hugging the left column
-   ("no two non-past cards in this bucket"; active filters are a rare, benign miss) */
-#list.wall .cards:not(:has(.show:not(.past) ~ .show:not(.past))){column-count:1;max-width:430px;margin:0 auto}
+   ("no two non-past cards in this bucket"; active filters are a rare, benign miss).
+   Skipped in the saved-shows tab, where the headers are gone and per-bucket
+   resizing would just look like randomly sized flyers. */
+#list.wall:not(.yours) .cards:not(:has(.show:not(.past) ~ .show:not(.past))){column-count:1;max-width:430px;margin:0 auto}
 
 /* ---------- round 2: site-wide zine polish ---------- */
 /* tape-label subnav: every subpage carries the strip so nothing dead-ends */

@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; connect-src 'self' https://api.github.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-SwzMxhWONOX8KRZuFlUFqCtBmCTBUtcumbTRfVWv9Z4=' 'sha256-RCkR64QPsKNGuWgzPQ9Lhq3QOc/7eMh+/slhgn58OF0=' 'sha256-3CIccJdBa2T6HHyhvc5n4k3rX717d4kPLaa+Db/XbqU=' 'sha256-4qWRoYy6m0AMY+RvUw2Ei8vuXZ2FN55beFGwun4RYFw='">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; connect-src 'self' https://api.github.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-SwzMxhWONOX8KRZuFlUFqCtBmCTBUtcumbTRfVWv9Z4=' 'sha256-RCkR64QPsKNGuWgzPQ9Lhq3QOc/7eMh+/slhgn58OF0=' 'sha256-jy6roUrmjCgqRAXlWs90y1qS7zPiV+STzj3Elr7XGaM=' 'sha256-4qWRoYy6m0AMY+RvUw2Ei8vuXZ2FN55beFGwun4RYFw='">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Pensacola Comedy Club · shows in Pensacola · DIYPensacola</title>
 <meta name="description" content="Pensacola Comedy Club on the DIYPensacola record: 1 show since 2026 across 1 venue. Dates, flyers, and shared bills from the punksacola DIY scene.">
@@ -127,7 +127,7 @@
     var startPress=function(){
       longPressed=false;
       if(pressTimer)clearTimeout(pressTimer);
-      pressTimer=setTimeout(fire,1500);   // 3s was long enough that people gave up
+      pressTimer=setTimeout(fire,4000);   // deliberately long: nobody finds this by accident
     };
     var endPress=function(){if(pressTimer){clearTimeout(pressTimer);pressTimer=null;}};
     logoEl.addEventListener('mousedown',startPress);

@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; connect-src 'self' https://api.github.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-SwzMxhWONOX8KRZuFlUFqCtBmCTBUtcumbTRfVWv9Z4=' 'sha256-RCkR64QPsKNGuWgzPQ9Lhq3QOc/7eMh+/slhgn58OF0=' 'sha256-3CIccJdBa2T6HHyhvc5n4k3rX717d4kPLaa+Db/XbqU='">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; connect-src 'self' https://api.github.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'sha256-SwzMxhWONOX8KRZuFlUFqCtBmCTBUtcumbTRfVWv9Z4=' 'sha256-RCkR64QPsKNGuWgzPQ9Lhq3QOc/7eMh+/slhgn58OF0=' 'sha256-jy6roUrmjCgqRAXlWs90y1qS7zPiV+STzj3Elr7XGaM='">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Homemade Spaceship, Panda Panax, Fifth Density, Hypnoz, Skribble, Nate Diggs, Dizzle Phunk, Galactic Eye Kandi · SAT JAN 13 @ Subculture · DIYPensacola</title>
 <meta name="description" content="2024 is the year we at Subculture begin accelerating our FTL drives to take us to worlds beyond our imagination.  First up on our mission to strange new worlds, we are getting Lost In Space with @echoroomcneill / Echo RaNell McNeill as our distress signal is answered by none other than @homemadespaceship / Homemade Spaceship 
@@ -309,7 +309,7 @@ https://www.pensacolasubculture.com/lost-in-space</p>
     var startPress=function(){
       longPressed=false;
       if(pressTimer)clearTimeout(pressTimer);
-      pressTimer=setTimeout(fire,1500);   // 3s was long enough that people gave up
+      pressTimer=setTimeout(fire,4000);   // deliberately long: nobody finds this by accident
     };
     var endPress=function(){if(pressTimer){clearTimeout(pressTimer);pressTimer=null;}};
     logoEl.addEventListener('mousedown',startPress);
