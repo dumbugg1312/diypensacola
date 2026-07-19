@@ -20,18 +20,4 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-UID:2026-07-18-garden-palafox-ice-out-now-justice-for-lorenzo-joan-and-all-
- victims-of-ice-terror@diypensacola
-DTSTAMP:20260718T000000Z
-DTSTART;TZID=America/Chicago:20260718T180000
-DTEND;TZID=America/Chicago:20260718T210000
-SUMMARY:ICE Out Now! Justice for Lorenzo\, Joan and All Victims of ICE Terr
- or @ Garden & Palafox
-DESCRIPTION:ice out now. justice for lorenzo\, joan and all victims of ice 
- terror. saturday july 18th\, 6pm\, garden & palafox.
-LOCATION:Garden & Palafox
-URL:https://diypensacola.com/s/2026-07-18-garden-palafox-ice-out-now-justic
- e-for-lorenzo-joan-and-all-victims-of-ice-terror.html
-END:VEVENT
 END:VCALENDAR

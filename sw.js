@@ -1,11 +1,11 @@
-var CACHE='diypensacola-5dca87b5e02e';
+var CACHE='diypensacola-8569c0a100fe';
 // CORE is the app shell (always precached). PRECACHE is this build's fonts plus
 // the flyers for tonight + this week, injected by build.py so someone who opens
 // the site fresh at a venue with no signal still sees this week's flyers instead
 // of logo placeholders. The versioned CACHE name means an old week's flyers evict
 // themselves on the next deploy. Both lists are added best-effort at install.
 var CORE=['./','index.html','offline.html','style.css','logo.png','manifest.webmanifest','icon-192.png','icon-512.png','apple-touch-icon.png'];
-var PRECACHE=["flyers/thumbs/2026-07-19_the-handlebar_in-gloom.webp", "flyers/thumbs/2026-07-19_vinyl-music-hall_accursed-creator.webp", "flyers/thumbs/flyer_2026-07-21_handlebar_high-fade.webp", "flyers/thumbs/flyer_2026-07-22_handlebar_no-complications.webp", "flyers/thumbs/2026-07-24_the-undergrowth_our-house-in-progress-diy-art-exhibition.webp", "flyers/thumbs/2026-07-24_the-handlebar_obituary.webp", "flyers/thumbs/2026-07-24_bettys_rabbithole.webp", "flyers/thumbs/2026-07-25_309_rainn-forrest.webp", "flyers/thumbs/2026-07-25_bettys_sapphic-saturday.webp"];
+var PRECACHE=["flyers/thumbs/flyer_2026-07-21_handlebar_high-fade.webp", "flyers/thumbs/flyer_2026-07-22_handlebar_no-complications.webp", "flyers/thumbs/2026-07-24_the-undergrowth_our-house-in-progress-diy-art-exhibition.webp", "flyers/thumbs/2026-07-24_the-handlebar_obituary.webp", "flyers/thumbs/2026-07-24_bettys_rabbithole.webp", "flyers/thumbs/2026-07-25_309_rainn-forrest.webp", "flyers/thumbs/2026-07-25_bettys_sapphic-saturday.webp"];
 CORE=CORE.concat(PRECACHE);
 self.addEventListener('install',function(e){
   self.skipWaiting();
