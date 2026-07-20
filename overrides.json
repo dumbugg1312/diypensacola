@@ -1,4 +1,8 @@
 {
-  "updated": null,
-  "shows": {}
+  "updated": "2026-07-20T01:19:21.502Z",
+  "shows": {
+    "2026-07-19-handlebar-in-gloom": {
+      "status": "cancelled"
+    }
+  }
 }
