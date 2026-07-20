@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; connect-src 'self' https://api.github.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'sha256-0SU1vdFLaQ7NdPjzJDD9J4TXB/Cd6l+C7N9mJ/t0KsA='">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data:; font-src https://fonts.gstatic.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'sha256-g2trz4oOkrhE14C9A3WIPoYILAOTAzFhvx2VuQozfoM='">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>diypensacola · punk & diy shows in pensacola, fl</title>
 <meta name="description" content="Punk, metal, hardcore, and DIY shows in Pensacola, FL. 36 shows on now, plus a forever archive of 1185+ past shows across 86 venues (2011 to 2026), with flyers, dates, and house shows.">
@@ -1030,18 +1030,39 @@
   }
   window.DPC_APPLY_OVERRIDES=applyOverrides;
   (function(){
-    // Hard 4s abort. A hanging CDN edge (the exact failure that took the site down
-    // on 2026-07-18) must never leave a request open holding a connection; if the
-    // file can't be had quickly the page simply keeps its built-in statuses.
-    try{
-      var ctl=window.AbortController?new AbortController():null;
-      if(ctl)setTimeout(function(){try{ctl.abort();}catch(e){}},4000);
-      fetch('overrides.json?t='+Date.now(),
-            ctl?{cache:'no-store',signal:ctl.signal}:{cache:'no-store'})
-        .then(function(r){return r.ok?r.json():null;})
-        .then(function(o){if(o)applyOverrides(o);})
-        .catch(function(){});
-    }catch(e){}
+    // Read the overrides from raw.githubusercontent FIRST, same-origin second.
+    // Why: the same-origin copy only updates when GitHub Pages redeploys, and on
+    // 2026-07-19 a Pages deploy sat queued for 108 minutes, so a cancelled show
+    // read as ON to everyone for nearly two hours. raw serves the commit the
+    // instant owner mode writes it, with no deploy in the path.
+    //
+    // Measured caveat (2026-07-19): raw sends cache-control max-age=300 and Fastly
+    // does NOT put the query string in its cache key, so a ?t= buster does nothing
+    // — worst case is a hard 5 minutes, vs unbounded on the Pages copy. cache:
+    // 'no-store' still matters; it stops the BROWSER holding its own 5-min copy.
+    // Do not "fix" this by pointing at api.github.com: that is 60 requests/hour
+    // per source IP, and one venue's wifi shares a single IP, so a busy show night
+    // would silently exhaust it and show cancelled shows as on.
+    //
+    // Hard 4s abort on each leg. A hanging CDN edge (the exact failure that took
+    // the site down on 2026-07-18) must never leave a request open holding a
+    // connection; if the file can't be had quickly the page keeps its built-in
+    // statuses, which are already correct as of the last build.
+    var SRC=['https://raw.githubusercontent.com/dumbugg1312/diypensacola/main/overrides.json',
+             'overrides.json'];
+    function pull(i){
+      if(i>=SRC.length)return;
+      try{
+        var ctl=window.AbortController?new AbortController():null;
+        if(ctl)setTimeout(function(){try{ctl.abort();}catch(e){}},4000);
+        var opt=ctl?{cache:'no-store',signal:ctl.signal}:{cache:'no-store'};
+        fetch(SRC[i]+'?t='+Date.now(),opt)
+          .then(function(r){return r.ok?r.json():null;})
+          .then(function(o){if(o&&o.shows)applyOverrides(o);else pull(i+1);})
+          .catch(function(){pull(i+1);});
+      }catch(e){pull(i+1);}
+    }
+    pull(0);
   })();
 
   // restore any shared '#f=' filter state, reflect it into the controls, then boot
@@ -1100,8 +1121,10 @@
   }
 
   function publish(id,status,label,say){
-    if(!token()){say('connect a token first');return Promise.resolve(false);}
-    say('reading…');
+    // Belt-and-braces: the click handler already prompts for a missing token, so
+    // reaching here without one means the owner dismissed the prompt.
+    if(!token()){say('no token — nothing was published','err');return Promise.resolve(false);}
+    say('reading…','busy');
     return readOverrides().then(function(cur){
       if(status){cur.json.shows[id]={status:status};}
       else{delete cur.json.shows[id];}
@@ -1110,13 +1133,13 @@
                 content:b64(JSON.stringify(cur.json,null,2)+'\n'),
                 branch:BRANCH};
       if(cur.sha)body.sha=cur.sha;
-      say('publishing…');
+      say('publishing…','busy');
       return api(FILE,{method:'PUT',body:JSON.stringify(body)}).then(function(r){
         if(!r.ok)return r.text().then(function(t){throw new Error('publish failed ('+r.status+') '+t.slice(0,120));});
-        say('published — live in about a minute');
+        say('✓ published — live in about a minute','ok');
         return true;
       });
-    }).catch(function(e){say(String(e.message||e));return false;});
+    }).catch(function(e){say('╳ '+String(e.message||e),'err');return false;});
   }
 
   function bar(id,label,curState,onDone){
@@ -1128,22 +1151,38 @@
       +'<button type="button" data-o="">back on</button>'
       +'<button type="button" data-o="tok">'+(token()?'forget token':'connect token')+'</button>'
       +'<span class="dcx-osay"></span>';
-    var say=function(m){wrap.querySelector('.dcx-osay').textContent=m;};
+    // say(msg, level) — level styles the status line. It is the ONLY feedback the
+    // owner gets on a phone, so it must be legible at arm's length, not a whisper:
+    // 'err' and 'ok' are full-size and rule-marked (see .dcx-osay in the CSS).
+    var say=function(m,lvl){
+      var n=wrap.querySelector('.dcx-osay');
+      n.textContent=m;n.className='dcx-osay'+(lvl?' dcx-'+lvl:'');
+    };
     if(curState)say('currently '+curState);
+    // Ask for the token and store it. Returns true only if one is now present.
+    function askToken(){
+      var t=window.prompt('paste a GitHub fine-grained token\n(repo: '+REPO+', contents: write, set an expiry)');
+      t=(t||'').trim();
+      if(!t){say('╳ no token — nothing was published','err');return false;}
+      localStorage.setItem(TKEY,t);
+      var tb=wrap.querySelector('button[data-o="tok"]');if(tb)tb.textContent='forget token';
+      say('token saved on this device','ok');
+      return true;
+    }
     wrap.addEventListener('click',function(e){
       var b=e.target.closest('button[data-o]');if(!b)return;
       e.preventDefault();e.stopPropagation();
       var v=b.getAttribute('data-o');
       if(v==='tok'){
-        if(token()){localStorage.removeItem(TKEY);b.textContent='connect token';say('token forgotten');}
-        else{
-          var t=window.prompt('paste a GitHub fine-grained token\n(repo: '+REPO+', contents: write, set an expiry)');
-          if(t){localStorage.setItem(TKEY,t.trim());b.textContent='forget token';say('token saved on this device');}
-        }
+        if(token()){localStorage.removeItem(TKEY);b.textContent='connect token';say('token forgotten','err');}
+        else{askToken();}
         return;
       }
       if(v&&!window.confirm('mark this show '+v+' for everyone?\n\n'+label))return;
       if(!v&&!window.confirm('put this show back on for everyone?\n\n'+label))return;
+      // A show falling through is time-critical, so never dead-end on a missing
+      // token: prompt for it inline and carry straight on to the publish.
+      if(!token()&&!askToken())return;
       publish(id,v,label,say).then(function(ok){if(ok&&onDone)onDone(v);});
     });
     return wrap;
