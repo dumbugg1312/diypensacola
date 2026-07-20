@@ -33,8 +33,10 @@
   }
 
   function publish(id,status,label,say){
-    if(!token()){say('connect a token first');return Promise.resolve(false);}
-    say('reading…');
+    // Belt-and-braces: the click handler already prompts for a missing token, so
+    // reaching here without one means the owner dismissed the prompt.
+    if(!token()){say('no token — nothing was published','err');return Promise.resolve(false);}
+    say('reading…','busy');
     return readOverrides().then(function(cur){
       if(status){cur.json.shows[id]={status:status};}
       else{delete cur.json.shows[id];}
@@ -43,13 +45,13 @@
                 content:b64(JSON.stringify(cur.json,null,2)+'\n'),
                 branch:BRANCH};
       if(cur.sha)body.sha=cur.sha;
-      say('publishing…');
+      say('publishing…','busy');
       return api(FILE,{method:'PUT',body:JSON.stringify(body)}).then(function(r){
         if(!r.ok)return r.text().then(function(t){throw new Error('publish failed ('+r.status+') '+t.slice(0,120));});
-        say('published — live in about a minute');
+        say('✓ published — live in about a minute','ok');
         return true;
       });
-    }).catch(function(e){say(String(e.message||e));return false;});
+    }).catch(function(e){say('╳ '+String(e.message||e),'err');return false;});
   }
 
   function bar(id,label,curState,onDone){
@@ -61,22 +63,38 @@
       +'<button type="button" data-o="">back on</button>'
       +'<button type="button" data-o="tok">'+(token()?'forget token':'connect token')+'</button>'
       +'<span class="dcx-osay"></span>';
-    var say=function(m){wrap.querySelector('.dcx-osay').textContent=m;};
+    // say(msg, level) — level styles the status line. It is the ONLY feedback the
+    // owner gets on a phone, so it must be legible at arm's length, not a whisper:
+    // 'err' and 'ok' are full-size and rule-marked (see .dcx-osay in the CSS).
+    var say=function(m,lvl){
+      var n=wrap.querySelector('.dcx-osay');
+      n.textContent=m;n.className='dcx-osay'+(lvl?' dcx-'+lvl:'');
+    };
     if(curState)say('currently '+curState);
+    // Ask for the token and store it. Returns true only if one is now present.
+    function askToken(){
+      var t=window.prompt('paste a GitHub fine-grained token\n(repo: '+REPO+', contents: write, set an expiry)');
+      t=(t||'').trim();
+      if(!t){say('╳ no token — nothing was published','err');return false;}
+      localStorage.setItem(TKEY,t);
+      var tb=wrap.querySelector('button[data-o="tok"]');if(tb)tb.textContent='forget token';
+      say('token saved on this device','ok');
+      return true;
+    }
     wrap.addEventListener('click',function(e){
       var b=e.target.closest('button[data-o]');if(!b)return;
       e.preventDefault();e.stopPropagation();
       var v=b.getAttribute('data-o');
       if(v==='tok'){
-        if(token()){localStorage.removeItem(TKEY);b.textContent='connect token';say('token forgotten');}
-        else{
-          var t=window.prompt('paste a GitHub fine-grained token\n(repo: '+REPO+', contents: write, set an expiry)');
-          if(t){localStorage.setItem(TKEY,t.trim());b.textContent='forget token';say('token saved on this device');}
-        }
+        if(token()){localStorage.removeItem(TKEY);b.textContent='connect token';say('token forgotten','err');}
+        else{askToken();}
         return;
       }
       if(v&&!window.confirm('mark this show '+v+' for everyone?\n\n'+label))return;
       if(!v&&!window.confirm('put this show back on for everyone?\n\n'+label))return;
+      // A show falling through is time-critical, so never dead-end on a missing
+      // token: prompt for it inline and carry straight on to the publish.
+      if(!token()&&!askToken())return;
       publish(id,v,label,say).then(function(ok){if(ok&&onDone)onDone(v);});
     });
     return wrap;

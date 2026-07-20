@@ -21,13 +21,22 @@
     if(!m)return;
     var card=document.querySelector('.spcard');
     if(!card||card.classList.contains('off'))return;
-    var ctl=window.AbortController?new AbortController():null;
-    if(ctl)setTimeout(function(){try{ctl.abort();}catch(e){}},4000);
-    fetch('../overrides.json?t='+Date.now(),
+    // raw.githubusercontent first, same-origin second — see the long note in
+    // MAIN_JS. The same-origin copy is gated on a Pages redeploy, which sat queued
+    // for 108 minutes on 2026-07-19; raw reflects the commit immediately. This is
+    // the page people get texted, so it is the one that most needs to be right.
+    var SRC=['https://raw.githubusercontent.com/dumbugg1312/diypensacola/main/overrides.json',
+             '../overrides.json'];
+    function pull(i){
+      if(i>=SRC.length)return;
+      var ctl=window.AbortController?new AbortController():null;
+      if(ctl)setTimeout(function(){try{ctl.abort();}catch(e){}},4000);
+      fetch(SRC[i]+'?t='+Date.now(),
           ctl?{cache:'no-store',signal:ctl.signal}:{cache:'no-store'})
       .then(function(r){return r.ok?r.json():null;})
       .then(function(o){
-        var st=o&&o.shows&&o.shows[m[1]]&&o.shows[m[1]].status;
+        if(!o||!o.shows){pull(i+1);return;}
+        var st=o.shows[m[1]]&&o.shows[m[1]].status;
         if(st!=='cancelled'&&st!=='postponed')return;
         card.classList.add('off');
         var d=card.querySelector('.date');
@@ -40,7 +49,9 @@
         }
         var cal=card.querySelector('a[download]');
         if(st==='cancelled'&&cal)cal.remove();
-      }).catch(function(){});
+      }).catch(function(){pull(i+1);});
+    }
+    pull(0);
   })();
 
   var sh=document.getElementById('spshare');

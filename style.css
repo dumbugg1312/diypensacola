@@ -7,6 +7,15 @@
    first confirming the custom domain serves a brand-new path reliably. */
 :root{--bg:#0c0c0d;--card:#17171a;--ink:#f2f2ee;--dim:#9b9b94;--hot:#6b7036;--hotink:#8f9850;--on-hot:#f2f2ee;--line:#2c2c31;--tape:#d8d4c5;--free:#aebf5a;--sliding:#7fb0a8;--age:#d59b46;--benefit:#d98cb0;--soldout:#9b9b94;--shadow:rgba(107,112,54,.5);--scrim:rgba(12,12,13,.82)}
 *{box-sizing:border-box}
+/* The `hidden` attribute must ALWAYS win. The UA rule for it is only
+   [hidden]{display:none} at the lowest specificity, so any rule here that sets an
+   explicit display (.dbtn{display:inline-flex}, .drow.dcancel{display:inline-block},
+   …) silently beats it and the element renders anyway. That shipped twice: every
+   show in the detail sheet showed "this show was cancelled" and a "dm for the
+   address" button, on shows that were neither. This file had already worked around
+   it eleven times with per-component .foo[hidden]{display:none} rules; this is that
+   fix done once, for everything. JS toggling .hidden can now be trusted. */
+[hidden]{display:none!important}
 body{margin:0;background-color:var(--bg);color:var(--ink);font:16px/1.5 "Special Elite","Courier New",monospace;
   background-image:radial-gradient(1000px 520px at 50% -140px,rgba(107,112,54,.32),rgba(107,112,54,0) 72%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.11'/%3E%3C/svg%3E");
   background-repeat:no-repeat,repeat}
@@ -384,7 +393,15 @@ main section:target{animation:viewin .26s ease both}
   header{padding:1.5rem 1rem .2rem}
   header .logo{width:126px;height:126px;margin-bottom:.5rem}
   h1{font-size:clamp(2.2rem,11.5vw,3.05rem)}  /* fits "DIYPENSACOLA" (12ch, 7.23em wide) on phones down to 320px */
-  header .tag{font-size:.83rem;margin-top:.5rem;line-height:1.45}
+  /* the tagline is one sentence and must READ as one line — "or die" dangling on
+     its own row looked like a mistake. It's 32.98em wide in Special Elite, so the
+     size is solved from the viewport (100vw minus the 1rem header padding each
+     side) instead of guessed: 2.95vw - .9px keeps it just inside the screen down
+     to ~320px, and it stops growing at .83rem once the phone is wide enough. */
+  header .tag{font-size:clamp(.52rem,calc(2.95vw - .9px),.83rem);margin-top:.5rem;line-height:1.45;white-space:nowrap;overflow:hidden}
+  /* overflow:hidden is the guard for the Courier fallback: it's a wider face, so
+     during the Google Fonts swap the nowrap line would otherwise make the whole
+     page scroll sideways for a beat. Clipped for that beat beats that. */
 
   /* 8 buttons, 2 rows of 4 — but still taped-up scraps, not a tidy grid:
      each keeps its border/shadow/tilt, alternating rotation so the row reads
@@ -1395,7 +1412,15 @@ header .homelink,header .home,header .logo,header .home img{
 .dcx-owner button{font-family:inherit;font-size:.72rem;padding:.35rem .55rem;cursor:pointer;
   background:var(--card);color:var(--ink);border:1px solid var(--line);min-height:34px}
 .dcx-owner button:hover{border-color:var(--hotink);color:var(--hotink)}
-.dcx-owner .dcx-osay{font-size:.7rem;color:var(--dim);flex:1 1 100%}
+/* The status line is the only feedback owner mode gives, and it is read on a
+   phone in a dark venue with a show falling through. It used to be .7rem dim
+   grey, which read as "the button did nothing". Full size, and errors/successes
+   carry a hard rule so they can't be skimmed past. */
+.dcx-owner .dcx-osay{font-size:.85rem;line-height:1.35;color:var(--dim);flex:1 1 100%;min-height:1.2em}
+.dcx-owner .dcx-osay.dcx-busy{color:var(--dim)}
+.dcx-owner .dcx-osay.dcx-err,.dcx-owner .dcx-osay.dcx-ok{
+  font-weight:700;color:var(--ink);padding:.3rem .45rem;border-left:5px solid var(--hot)}
+.dcx-owner .dcx-osay.dcx-err{background:rgba(107,112,54,.16)}
 
 /* ---- screen-reader-only live region ---- */
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
