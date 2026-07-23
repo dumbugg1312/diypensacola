@@ -21,68 +21,29 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-07-19-handlebar-in-gloom@diypensacola
-DTSTAMP:20260719T000000Z
-DTSTART;TZID=America/Chicago:20260719T190000
-DTEND;TZID=America/Chicago:20260719T220000
-SUMMARY:In Gloom\, Innerwounds\, Fire Came Disparity\, Wraithbearer @ The H
- andlebar
-DESCRIPTION:in gloom\, innerwounds\, with fire came disparity\, wraithbeare
- r at the handlebar. sun jul 19\, doors 7 / music 8\, all ages. $10 adv / $
- 15 door.
+UID:2026-07-23-handlebar-destin-conrad@diypensacola
+DTSTAMP:20260723T000000Z
+DTSTART;TZID=America/Chicago:20260723T180000
+DTEND;TZID=America/Chicago:20260723T210000
+SUMMARY:Destin Conrad @ The Handlebar
+DESCRIPTION:destin conrad at the handlebar thursday 7/23. 6pm. tickets at t
+ hehandlebar850.com.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-07-19-handlebar-in-gloom.html
+URL:https://diypensacola.com/s/2026-07-23-handlebar-destin-conrad.html
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-07-19-vinyl-music-hall-accursed-creator-rotted-remains@diypensacol
- a
-DTSTAMP:20260719T000000Z
-DTSTART;TZID=America/Chicago:20260719T153000
-DTEND;TZID=America/Chicago:20260719T183000
-SUMMARY:Accursed Creator\, Rotted Remains\, Serrated FL\, Stress Wound\, Ba
- silissa\, Pierce @ Vinyl Music Hall
-DESCRIPTION:accursed creator\, rotted remains\, serrated fl\, stress wound\
- , basilissa\, and pierce at vinyl music hall\, saturday july 19. doors 3:3
- 0\, show at 5. $10 suggested donation\, remembering nate flores.
-LOCATION:Vinyl Music Hall
-URL:https://diypensacola.com/s/2026-07-19-vinyl-music-hall-accursed-creator
- -rotted-remains.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-07-21-handlebar-high-fade@diypensacola
-DTSTAMP:20260721T000000Z
-DTSTART;TZID=America/Chicago:20260721T190000
-DTEND;TZID=America/Chicago:20260721T220000
-SUMMARY:High Fade @ The Handlebar
-DESCRIPTION:high fade on the twice as nice tour at the handlebar. tue jul 2
- 1\, doors 7pm. tickets at thehandlebar850.com.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-07-21-handlebar-high-fade.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-07-22-handlebar-no-complications@diypensacola
-DTSTAMP:20260722T000000Z
-DTSTART;TZID=America/Chicago:20260722T180000
-DTEND;TZID=America/Chicago:20260722T210000
-SUMMARY:No Complications\, King In Yellow\, Tirra Lirra @ The Handlebar
-DESCRIPTION:no complications\, king in yellow\, tirra lirra at the handleba
- r. wed jul 22\, 6pm. $15.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-07-22-handlebar-no-complications.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-07-24-the-undergrowth-our-house-in-progress-diy-art-exhibition@diy
- pensacola
+UID:2026-07-24-undergrowth-our-house-in-progress@diypensacola
 DTSTAMP:20260724T000000Z
 DTSTART;TZID=America/Chicago:20260724T160000
 DTEND;TZID=America/Chicago:20260724T190000
-SUMMARY:Our House (in progress) - DIY art exhibition @ The Undergrowth
+SUMMARY:Our House (in progress) - DIY art exhibition @ Our House (912 E Her
+ nandez St)
 DESCRIPTION:the undergrowth presents our house (in progress)\, a diy art ex
  hibition at our house\, 912 e hernandez st. july 24th\, 4-9pm. $10 entry\,
   proceeds split with local orgs.
-LOCATION:The Undergrowth
-URL:https://diypensacola.com/s/2026-07-24-the-undergrowth-our-house-in-prog
- ress-diy-art-exhibition.html
+LOCATION:Our House (912 E Hernandez St)
+URL:https://diypensacola.com/s/2026-07-24-undergrowth-our-house-in-progress
+ .html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-07-24-handlebar-obituary-modown@diypensacola
@@ -127,6 +88,32 @@ DESCRIPTION:sapphic saturday at betty's\, july 25. two shows\, 9pm and 11pm
  . come out.
 LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-07-25-bettys-sapphic-saturday.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-25-handlebar-safety-training-widow-anchor@diypensacola
+DTSTAMP:20260725T000000Z
+DTSTART;TZID=America/Chicago:20260725T190000
+DTEND;TZID=America/Chicago:20260725T220000
+SUMMARY:Safety Training\, Widow Anchor\, Transient\, Union 251 @ The Handle
+ bar
+DESCRIPTION:safety training\, widow anchor\, transient\, and union 251 at t
+ he handlebar saturday 7/25. doors 7pm. tickets at thehandlebar850.com.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-07-25-handlebar-safety-training-widow-a
+ nchor.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-26-handlebar-fallfiftyfeet-face-off@diypensacola
+DTSTAMP:20260726T000000Z
+DTSTART;TZID=America/Chicago:20260726T180000
+DTEND;TZID=America/Chicago:20260726T210000
+SUMMARY:fallfiftyfeet\, Face-Off\, Serrated\, Hemlock\, Spider Shed @ The H
+ andlebar
+DESCRIPTION:fallfiftyfeet\, face-off\, serrated\, hemlock\, and spider shed
+  at the handlebar sunday 7/26. 6pm. tickets at thehandlebar850.com.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-07-26-handlebar-fallfiftyfeet-face-off.
+ html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-07-28-handlebar-internal-suffering@diypensacola
@@ -241,6 +228,17 @@ URL:https://diypensacola.com/s/2026-08-20-handlebar-grave-chorus-conflict-o
  f-interests.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-08-23-handlebar-save-ferris@diypensacola
+DTSTAMP:20260823T000000Z
+DTSTART;TZID=America/Chicago:20260823T190000
+DTEND;TZID=America/Chicago:20260823T220000
+SUMMARY:Save Ferris @ The Handlebar
+DESCRIPTION:save ferris at the handlebar sunday 8/23. tickets at thehandleb
+ ar850.com.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-23-handlebar-save-ferris.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-08-27-bettys-ramblin-ricky-tate@diypensacola
 DTSTAMP:20260827T000000Z
 DTSTART;TZID=America/Chicago:20260827T190000
@@ -353,6 +351,18 @@ DESCRIPTION:dopethrone brings the uniworse usa tour part ii to the handleba
  r\, wednesday september 23. with support from fister and gnarled.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-23-handlebar-dopethrone.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-24-handlebar-dirty-sound-magnet-gran-moreno@diypensacola
+DTSTAMP:20260924T000000Z
+DTSTART;TZID=America/Chicago:20260924T190000
+DTEND;TZID=America/Chicago:20260924T220000
+SUMMARY:Dirty Sound Magnet\, Gran Moreno @ The Handlebar
+DESCRIPTION:dirty sound magnet and gran moreno at the handlebar thursday 9/
+ 24. tickets at thehandlebar850.com.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-24-handlebar-dirty-sound-magnet-gran
+ -moreno.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-26-handlebar-liliths-demise-delta-hate@diypensacola

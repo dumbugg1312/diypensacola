@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola: Transient
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-07-25-handlebar-safety-training-widow-anchor@diypensacola
+DTSTAMP:20260725T000000Z
+DTSTART;TZID=America/Chicago:20260725T190000
+DTEND;TZID=America/Chicago:20260725T220000
+SUMMARY:Safety Training\, Widow Anchor\, Transient\, Union 251 @ The Handle
+ bar
+DESCRIPTION:safety training\, widow anchor\, transient\, and union 251 at t
+ he handlebar saturday 7/25. doors 7pm. tickets at thehandlebar850.com.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-07-25-handlebar-safety-training-widow-a
+ nchor.html
+END:VEVENT
+END:VCALENDAR

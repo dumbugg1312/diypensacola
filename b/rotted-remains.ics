@@ -32,19 +32,4 @@ DESCRIPTION:internal suffering\, gut fucked\, rotted remains at the handleb
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-07-28-handlebar-internal-suffering.html
 END:VEVENT
-BEGIN:VEVENT
-UID:2026-07-19-vinyl-music-hall-accursed-creator-rotted-remains@diypensacol
- a
-DTSTAMP:20260719T000000Z
-DTSTART;TZID=America/Chicago:20260719T153000
-DTEND;TZID=America/Chicago:20260719T183000
-SUMMARY:Accursed Creator\, Rotted Remains\, Serrated FL\, Stress Wound\, Ba
- silissa\, Pierce @ Vinyl Music Hall
-DESCRIPTION:accursed creator\, rotted remains\, serrated fl\, stress wound\
- , basilissa\, and pierce at vinyl music hall\, saturday july 19. doors 3:3
- 0\, show at 5. $10 suggested donation\, remembering nate flores.
-LOCATION:Vinyl Music Hall
-URL:https://diypensacola.com/s/2026-07-19-vinyl-music-hall-accursed-creator
- -rotted-remains.html
-END:VEVENT
 END:VCALENDAR
