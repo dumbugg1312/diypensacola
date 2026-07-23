@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola Shows
+X-WR-CALNAME:DIYPensacola: Face-Off
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago
@@ -21,19 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-07-21-handlebar-high-fade@diypensacola
-DTSTAMP:20260721T000000Z
-DTSTART;TZID=America/Chicago:20260721T190000
-DTEND;TZID=America/Chicago:20260721T220000
-SUMMARY:High Fade @ The Handlebar
-DESCRIPTION:high fade on the twice as nice tour at the handlebar. tue jul 2
- 1\, doors 7pm. tickets at thehandlebar850.com.
+UID:2026-07-26-handlebar-fallfiftyfeet-face-off@diypensacola
+DTSTAMP:20260726T000000Z
+DTSTART;TZID=America/Chicago:20260726T180000
+DTEND;TZID=America/Chicago:20260726T210000
+SUMMARY:fallfiftyfeet\, Face-Off\, Serrated\, Hemlock\, Spider Shed @ The H
+ andlebar
+DESCRIPTION:fallfiftyfeet\, face-off\, serrated\, hemlock\, and spider shed
+  at the handlebar sunday 7/26. 6pm. tickets at thehandlebar850.com.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-07-21-handlebar-high-fade.html
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:tonight: High Fade @ The Handlebar
-TRIGGER:-PT2H
-END:VALARM
+URL:https://diypensacola.com/s/2026-07-26-handlebar-fallfiftyfeet-face-off.
+ html
 END:VEVENT
 END:VCALENDAR
