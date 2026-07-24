@@ -1,11 +1,11 @@
-var CACHE='diypensacola-dde0c428e75e';
+var CACHE='diypensacola-b2561b454b72';
 // CORE is the app shell (always precached). PRECACHE is this build's fonts plus
 // the flyers for tonight + this week, injected by build.py so someone who opens
 // the site fresh at a venue with no signal still sees this week's flyers instead
 // of logo placeholders. The versioned CACHE name means an old week's flyers evict
 // themselves on the next deploy. Both lists are added best-effort at install.
 var CORE=['./','index.html','offline.html','style.css','logo.png','manifest.webmanifest','icon-192.png','icon-512.png','apple-touch-icon.png'];
-var PRECACHE=["flyers/2026-07-23_handlebar_destin-conrad.jpg", "flyers/thumbs/2026-07-23_handlebar_destin-conrad.webp", "flyers/thumbs/2026-07-24_undergrowth_our-house-in-progress.webp", "flyers/thumbs/2026-07-24_the-handlebar_obituary.webp", "flyers/thumbs/2026-07-24_bettys_rabbithole.webp", "flyers/thumbs/2026-07-25_309_rainn-forrest.webp", "flyers/thumbs/2026-07-25_bettys_sapphic-saturday.webp", "flyers/thumbs/2026-07-25_handlebar_safety-training.webp", "flyers/thumbs/2026-07-26_handlebar_fallfiftyfeet.webp", "flyers/thumbs/2026-07-28_handlebar_internal-suffering.webp", "flyers/thumbs/2026-07-30_the-den_spidershed.webp", "flyers/thumbs/2026-07-30_handlebar_katie-dineen.webp"];
+var PRECACHE=["flyers/2026-07-24_undergrowth_our-house-in-progress.jpg", "flyers/thumbs/2026-07-24_undergrowth_our-house-in-progress.webp", "flyers/2026-07-24_the-handlebar_obituary.jpg", "flyers/thumbs/2026-07-24_the-handlebar_obituary.webp", "flyers/2026-07-24_bettys_rabbithole.jpg", "flyers/thumbs/2026-07-24_bettys_rabbithole.webp", "flyers/thumbs/2026-07-25_309_rainn-forrest.webp", "flyers/thumbs/2026-07-25_bettys_sapphic-saturday.webp", "flyers/thumbs/2026-07-25_handlebar_safety-training.webp", "flyers/thumbs/2026-07-26_handlebar_fallfiftyfeet.webp", "flyers/thumbs/2026-07-28_handlebar_internal-suffering.webp", "flyers/thumbs/2026-07-30_the-den_spidershed.webp", "flyers/thumbs/2026-07-30_handlebar_katie-dineen.webp"];
 CORE=CORE.concat(PRECACHE);
 self.addEventListener('install',function(e){
   self.skipWaiting();

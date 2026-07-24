@@ -21,17 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-07-23-handlebar-destin-conrad@diypensacola
-DTSTAMP:20260723T000000Z
-DTSTART;TZID=America/Chicago:20260723T180000
-DTEND;TZID=America/Chicago:20260723T210000
-SUMMARY:Destin Conrad @ The Handlebar
-DESCRIPTION:destin conrad at the handlebar thursday 7/23. 6pm. tickets at t
- hehandlebar850.com.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-07-23-handlebar-destin-conrad.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-07-24-handlebar-obituary-modown@diypensacola
 DTSTAMP:20260724T000000Z
 DTSTART;TZID=America/Chicago:20260724T190000
