@@ -21,42 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-07-24-undergrowth-our-house-in-progress@diypensacola
-DTSTAMP:20260724T000000Z
-DTSTART;TZID=America/Chicago:20260724T160000
-DTEND;TZID=America/Chicago:20260724T190000
-SUMMARY:Our House (in progress) - DIY art exhibition @ Our House (912 E Her
- nandez St)
-DESCRIPTION:the undergrowth presents our house (in progress)\, a diy art ex
- hibition at our house\, 912 e hernandez st. july 24th\, 4-9pm. $10 entry\,
-  proceeds split with local orgs.
-LOCATION:Our House (912 E Hernandez St)
-URL:https://diypensacola.com/s/2026-07-24-undergrowth-our-house-in-progress
- .html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-07-24-handlebar-obituary-modown@diypensacola
-DTSTAMP:20260724T000000Z
-DTSTART;TZID=America/Chicago:20260724T190000
-DTEND;TZID=America/Chicago:20260724T220000
-SUMMARY:Obituary\, Modown\, Exformation\, D.R.E.A.D. @ The Handlebar
-DESCRIPTION:obituary at the handlebar with modown\, exformation\, and d.r.e
- .a.d. july 24th.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-07-24-handlebar-obituary-modown.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-07-24-bettys-rabbithole-ghostlings@diypensacola
-DTSTAMP:20260724T000000Z
-DTSTART;TZID=America/Chicago:20260724T200000
-DTEND;TZID=America/Chicago:20260724T230000
-SUMMARY:Rabbithole\, Ghostlings\, Lucid\, Pamm @ Betty's
-DESCRIPTION:rabbithole\, ghostlings\, lucid and pamm at betty's this friday
- \, july 24th. doors 8pm\, $10/pwyc.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-07-24-bettys-rabbithole-ghostlings.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-07-25-309-rainn-forrest-bea-hurd@diypensacola
 DTSTAMP:20260725T000000Z
 DTSTART;TZID=America/Chicago:20260725T180000
@@ -70,9 +34,11 @@ END:VEVENT
 BEGIN:VEVENT
 UID:2026-07-25-bettys-sapphic-saturday@diypensacola
 DTSTAMP:20260725T000000Z
-DTSTART;TZID=America/Chicago:20260725T210000
-DTEND;TZID=America/Chicago:20260726T000000
-SUMMARY:Sapphic Saturday @ Betty's
+DTSTART;TZID=America/Chicago:20260725T200000
+DTEND;TZID=America/Chicago:20260725T230000
+SUMMARY:Sweet Lady Sleeze\, Ray Darling\, Vulcan Baby\, Platinum Muse\, Kit
+ ten Jess\, Lady Grace\, Violet Vibrations\, Eve\, Miss Rainbow\, Devin X\,
+  DJ Balance Universal @ Betty's
 DESCRIPTION:sapphic saturday at betty's\, july 25. two shows\, 9pm and 11pm
  . come out.
 LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
@@ -142,6 +108,17 @@ URL:https://diypensacola.com/s/2026-07-30-handlebar-katie-dineen-alex-roger
  s.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-08-01-handlebar-twin-fin@diypensacola
+DTSTAMP:20260801T000000Z
+DTSTART;TZID=America/Chicago:20260801T190000
+DTEND;TZID=America/Chicago:20260801T220000
+SUMMARY:Twin Fin @ The Handlebar
+DESCRIPTION:twin fin at the handlebar\, saturday august 1st. the kings of t
+ he coast tour. tickets at twinfinmusic.com.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-01-handlebar-twin-fin.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-08-04-handlebar-trh-saidan@diypensacola
 DTSTAMP:20260804T000000Z
 DTSTART;TZID=America/Chicago:20260804T190000
@@ -166,6 +143,18 @@ DESCRIPTION:caca del diabo\, mourning glories\, bangarang peter\, spider bu
 LOCATION:309 Punk Project
 URL:https://diypensacola.com/s/2026-08-08-309-caca-del-diabo-mourning-glori
  es.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-12-the-den-mongo-stmblr@diypensacola
+DTSTAMP:20260812T000000Z
+DTSTART;TZID=America/Chicago:20260812T190000
+DTEND;TZID=America/Chicago:20260812T220000
+SUMMARY:Mongo\, STMBLR\, Ex-Teenage Rebels @ The Den
+DESCRIPTION:mongo (atl cavepunk)\, stmblr (new orleans scum)\, and ex-teena
+ ge rebels at beulah den\, wednesday august 12th. 9575 bridlewood rd. all a
+ ges\, pay what you can suggested donation. carpool!
+LOCATION:The Den\, 9575 Bridlewood Rd\, Beulah\, FL 32526
+URL:https://diypensacola.com/s/2026-08-12-the-den-mongo-stmblr.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-14-handlebar-katie-dineen@diypensacola
@@ -193,6 +182,18 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-15-handlebar-heroes-for-ghosts.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-08-16-handlebar-bounty-bloodrush@diypensacola
+DTSTAMP:20260816T000000Z
+DTSTART;TZID=America/Chicago:20260816T180000
+DTEND;TZID=America/Chicago:20260816T210000
+SUMMARY:Bounty\, Bloodrush\, Sacreus\, Silenced @ The Handlebar
+DESCRIPTION:bounty (texas metalcore) at the handlebar\, sunday august 16th.
+  with bloodrush\, sacreus\, and silenced. doors 6\, music 7. $10\, tickets
+  at thehandlebar850.com.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-16-handlebar-bounty-bloodrush.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-08-18-handlebar-southpaw-arcline@diypensacola
 DTSTAMP:20260818T000000Z
 DTSTART;TZID=America/Chicago:20260818T190000
@@ -217,11 +218,26 @@ URL:https://diypensacola.com/s/2026-08-20-handlebar-grave-chorus-conflict-o
  f-interests.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-08-20-bettys-dumpster-meds-torso-man@diypensacola
+DTSTAMP:20260820T000000Z
+DTSTART;TZID=America/Chicago:20260820T180000
+DTEND;TZID=America/Chicago:20260820T210000
+SUMMARY:Dumpster Meds\, Torso Man\, Tape & Tears\, Quiver the Busker\, Spid
+ er Bucket\, Dentada @ Betty's
+DESCRIPTION:folk punk show and night market at betty's\, thursday august 20
+ th. dumpster meds\, torso man\, tape & tears\, quiver the busker\, spider 
+ bucket\, dentada. doors 6pm\, music 7pm. free show\, with free harm reduct
+ ion and reproductive rights supplies.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-20-bettys-dumpster-meds-torso-man.ht
+ ml
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-08-23-handlebar-save-ferris@diypensacola
 DTSTAMP:20260823T000000Z
-DTSTART;TZID=America/Chicago:20260823T190000
-DTEND;TZID=America/Chicago:20260823T220000
-SUMMARY:Save Ferris @ The Handlebar
+DTSTART;TZID=America/Chicago:20260823T180000
+DTEND;TZID=America/Chicago:20260823T210000
+SUMMARY:Save Ferris\, Quit Everything @ The Handlebar
 DESCRIPTION:save ferris at the handlebar sunday 8/23. tickets at thehandleb
  ar850.com.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
@@ -250,6 +266,18 @@ DESCRIPTION:foxtide brings the entropy tour to the handlebar thursday\, aug
  ust 27\, with braymores opening.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-27-handlebar-foxtide-braymores.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-29-handlebar-nowhere2runs-bloodrave@diypensacola
+DTSTAMP:20260829T000000Z
+DTSTART;TZID=America/Chicago:20260829T190000
+DTEND;TZID=America/Chicago:20260829T220000
+SUMMARY:Nowhere2Run's Bloodrave @ The Handlebar
+DESCRIPTION:nowhere2run's bloodrave comes back to the handlebar\, saturday 
+ august 29th. goth\, techno\, industrial. tickets on sale now.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-29-handlebar-nowhere2runs-bloodrave.
+ html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-01-handlebar-cheekface-catbite@diypensacola
@@ -358,7 +386,9 @@ UID:2026-09-26-handlebar-liliths-demise-delta-hate@diypensacola
 DTSTAMP:20260926T000000Z
 DTSTART;TZID=America/Chicago:20260926T150000
 DTEND;TZID=America/Chicago:20260926T180000
-SUMMARY:Lilith's Demise\, Delta Hate\, Claymore\, Stay Lost @ The Handlebar
+SUMMARY:Lilith's Demise\, Delta Hate\, Truck Stop Dick Pill\, Claymore\, Oi
+ nkliteration\, Bananaslama\, Behead The Traitor\, Split\, Stay Lost\, Bubb
+ legum Chainsaw @ The Handlebar
 DESCRIPTION:panhandle slam jam 2 at the handlebar. lilith's demise\, delta 
  hate\, and more all day long. september 26th\, doors 3 show 4. $20 advance
   / $30 door.
@@ -376,6 +406,19 @@ DESCRIPTION:eyehategod\, whores\, and nomas at the handlebar. september 27.
   tickets on sale now at thehandlebar850.com.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-27-handlebar-eyehategod.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-07-handlebar-belmont-super-sometimes@diypensacola
+DTSTAMP:20261007T000000Z
+DTSTART;TZID=America/Chicago:20261007T190000
+DTEND;TZID=America/Chicago:20261007T220000
+SUMMARY:Belmont\, Super Sometimes\, Public Works @ The Handlebar
+DESCRIPTION:belmont at the handlebar\, october 7th. between you & me 10 yea
+ r anniversary tour\, playing the ep in full\, with support from super some
+ times and public works. tickets at belmontil.com.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-07-handlebar-belmont-super-sometimes
+ .html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-10-handlebar-silent-theory@diypensacola

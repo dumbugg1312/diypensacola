@@ -23,9 +23,9 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-08-23-handlebar-save-ferris@diypensacola
 DTSTAMP:20260823T000000Z
-DTSTART;TZID=America/Chicago:20260823T190000
-DTEND;TZID=America/Chicago:20260823T220000
-SUMMARY:Save Ferris @ The Handlebar
+DTSTART;TZID=America/Chicago:20260823T180000
+DTEND;TZID=America/Chicago:20260823T210000
+SUMMARY:Save Ferris\, Quit Everything @ The Handlebar
 DESCRIPTION:save ferris at the handlebar sunday 8/23. tickets at thehandleb
  ar850.com.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL

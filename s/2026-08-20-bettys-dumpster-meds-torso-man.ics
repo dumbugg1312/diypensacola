@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola Shows
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-08-20-bettys-dumpster-meds-torso-man@diypensacola
+DTSTAMP:20260820T000000Z
+DTSTART;TZID=America/Chicago:20260820T180000
+DTEND;TZID=America/Chicago:20260820T210000
+SUMMARY:Dumpster Meds\, Torso Man\, Tape & Tears\, Quiver the Busker\, Spid
+ er Bucket\, Dentada @ Betty's
+DESCRIPTION:folk punk show and night market at betty's\, thursday august 20
+ th. dumpster meds\, torso man\, tape & tears\, quiver the busker\, spider 
+ bucket\, dentada. doors 6pm\, music 7pm. free show\, with free harm reduct
+ ion and reproductive rights supplies.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-20-bettys-dumpster-meds-torso-man.ht
+ ml
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: Dumpster Meds\, Torso Man\, Tape & Tears\, Quiver the 
+ Busker\, Spider Bucket\, Dentada @ Betty's
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -21,26 +21,32 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-07-24-bettys-rabbithole-ghostlings@diypensacola
-DTSTAMP:20260724T000000Z
-DTSTART;TZID=America/Chicago:20260724T200000
-DTEND;TZID=America/Chicago:20260724T230000
-SUMMARY:Rabbithole\, Ghostlings\, Lucid\, Pamm @ Betty's
-DESCRIPTION:rabbithole\, ghostlings\, lucid and pamm at betty's this friday
- \, july 24th. doors 8pm\, $10/pwyc.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-07-24-bettys-rabbithole-ghostlings.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-07-25-bettys-sapphic-saturday@diypensacola
 DTSTAMP:20260725T000000Z
-DTSTART;TZID=America/Chicago:20260725T210000
-DTEND;TZID=America/Chicago:20260726T000000
-SUMMARY:Sapphic Saturday @ Betty's
+DTSTART;TZID=America/Chicago:20260725T200000
+DTEND;TZID=America/Chicago:20260725T230000
+SUMMARY:Sweet Lady Sleeze\, Ray Darling\, Vulcan Baby\, Platinum Muse\, Kit
+ ten Jess\, Lady Grace\, Violet Vibrations\, Eve\, Miss Rainbow\, Devin X\,
+  DJ Balance Universal @ Betty's
 DESCRIPTION:sapphic saturday at betty's\, july 25. two shows\, 9pm and 11pm
  . come out.
 LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-07-25-bettys-sapphic-saturday.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-20-bettys-dumpster-meds-torso-man@diypensacola
+DTSTAMP:20260820T000000Z
+DTSTART;TZID=America/Chicago:20260820T180000
+DTEND;TZID=America/Chicago:20260820T210000
+SUMMARY:Dumpster Meds\, Torso Man\, Tape & Tears\, Quiver the Busker\, Spid
+ er Bucket\, Dentada @ Betty's
+DESCRIPTION:folk punk show and night market at betty's\, thursday august 20
+ th. dumpster meds\, torso man\, tape & tears\, quiver the busker\, spider 
+ bucket\, dentada. doors 6pm\, music 7pm. free show\, with free harm reduct
+ ion and reproductive rights supplies.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-20-bettys-dumpster-meds-torso-man.ht
+ ml
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-27-bettys-ramblin-ricky-tate@diypensacola

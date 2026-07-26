@@ -21,18 +21,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-07-24-bettys-rabbithole-ghostlings@diypensacola
-DTSTAMP:20260724T000000Z
-DTSTART;TZID=America/Chicago:20260724T200000
-DTEND;TZID=America/Chicago:20260724T230000
-SUMMARY:Rabbithole\, Ghostlings\, Lucid\, Pamm @ Betty's
-DESCRIPTION:rabbithole\, ghostlings\, lucid and pamm at betty's this friday
- \, july 24th. doors 8pm\, $10/pwyc.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-07-24-bettys-rabbithole-ghostlings.html
+UID:2026-08-01-handlebar-twin-fin@diypensacola
+DTSTAMP:20260801T000000Z
+DTSTART;TZID=America/Chicago:20260801T190000
+DTEND;TZID=America/Chicago:20260801T220000
+SUMMARY:Twin Fin @ The Handlebar
+DESCRIPTION:twin fin at the handlebar\, saturday august 1st. the kings of t
+ he coast tour. tickets at twinfinmusic.com.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-01-handlebar-twin-fin.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Rabbithole\, Ghostlings\, Lucid\, Pamm @ Betty's
+DESCRIPTION:tonight: Twin Fin @ The Handlebar
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
