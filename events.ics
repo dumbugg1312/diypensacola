@@ -21,56 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-07-25-309-rainn-forrest-bea-hurd@diypensacola
-DTSTAMP:20260725T000000Z
-DTSTART;TZID=America/Chicago:20260725T180000
-DTEND;TZID=America/Chicago:20260725T210000
-SUMMARY:Rainn Forrest\, Bea Hurd @ 309
-DESCRIPTION:309 airs rainn forrest and bea hurd closing exhibition and film
-  screening. 309 punk project\, saturday july 25th at 6pm.
-LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-07-25-309-rainn-forrest-bea-hurd.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-07-25-bettys-sapphic-saturday@diypensacola
-DTSTAMP:20260725T000000Z
-DTSTART;TZID=America/Chicago:20260725T200000
-DTEND;TZID=America/Chicago:20260725T230000
-SUMMARY:Sweet Lady Sleeze\, Ray Darling\, Vulcan Baby\, Platinum Muse\, Kit
- ten Jess\, Lady Grace\, Violet Vibrations\, Eve\, Miss Rainbow\, Devin X\,
-  DJ Balance Universal @ Betty's
-DESCRIPTION:sapphic saturday at betty's\, july 25. two shows\, 9pm and 11pm
- . come out.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-07-25-bettys-sapphic-saturday.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-07-25-handlebar-safety-training-widow-anchor@diypensacola
-DTSTAMP:20260725T000000Z
-DTSTART;TZID=America/Chicago:20260725T190000
-DTEND;TZID=America/Chicago:20260725T220000
-SUMMARY:Safety Training\, Widow Anchor\, Transient\, Union 251 @ The Handle
- bar
-DESCRIPTION:safety training\, widow anchor\, transient\, and union 251 at t
- he handlebar saturday 7/25. doors 7pm. tickets at thehandlebar850.com.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-07-25-handlebar-safety-training-widow-a
- nchor.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-07-26-handlebar-fallfiftyfeet-face-off@diypensacola
-DTSTAMP:20260726T000000Z
-DTSTART;TZID=America/Chicago:20260726T180000
-DTEND;TZID=America/Chicago:20260726T210000
-SUMMARY:fallfiftyfeet\, Face-Off\, Serrated\, Hemlock\, Spider Shed @ The H
- andlebar
-DESCRIPTION:fallfiftyfeet\, face-off\, serrated\, hemlock\, and spider shed
-  at the handlebar sunday 7/26. 6pm. tickets at thehandlebar850.com.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-07-26-handlebar-fallfiftyfeet-face-off.
- html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-07-28-handlebar-internal-suffering@diypensacola
 DTSTAMP:20260728T000000Z
 DTSTART;TZID=America/Chicago:20260728T190000
