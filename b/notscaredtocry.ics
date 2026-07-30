@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola: Notscaredtocry
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-08-29-handlebar-nowhere2runs-bloodrave@diypensacola
+DTSTAMP:20260829T000000Z
+DTSTART;TZID=America/Chicago:20260829T190000
+DTEND;TZID=America/Chicago:20260829T220000
+SUMMARY:Nowhere2Run\, Notscaredtocry\, Cvntteeth\, Viciouswishes\, Error.Fu
+ nction\, Icantread @ The Handlebar
+DESCRIPTION:nowhere2run's bloodrave halloween tour at the handlebar\, satur
+ day august 29th. nowhere2run\, notscaredtocry\, cvntteeth\, viciouswishes\
+ , error.function\, icantread. 18+.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-29-handlebar-nowhere2runs-bloodrave.
+ html
+END:VEVENT
+END:VCALENDAR

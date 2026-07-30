@@ -20,4 +20,17 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-08-22-handlebar-outta-pocket-fragmentation@diypensacola
+DTSTAMP:20260822T000000Z
+DTSTART;TZID=America/Chicago:20260822T170000
+DTEND;TZID=America/Chicago:20260822T200000
+SUMMARY:Outta Pocket\, Fragmentation\, Strikeforce\, Serrated FL @ The Hand
+ lebar
+DESCRIPTION:outta pocket\, fragmentation\, strikeforce\, and serrated fl at
+  the handlebar\, saturday august 22nd. 5pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-22-handlebar-outta-pocket-fragmentat
+ ion.html
+END:VEVENT
 END:VCALENDAR
