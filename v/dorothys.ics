@@ -20,4 +20,15 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-08-07-dorothys-mamma-mia-night@diypensacola
+DTSTAMP:20260807T000000Z
+DTSTART;TZID=America/Chicago:20260807T220000
+DTEND;TZID=America/Chicago:20260808T010000
+SUMMARY:Mamma Mia! Night @ Dorothy's Pensacola
+DESCRIPTION:mamma mia! night with stamped film festival at dorothy's. frida
+ y august 7th\, 10pm to 2am.
+LOCATION:Dorothy's Pensacola
+URL:https://diypensacola.com/s/2026-08-07-dorothys-mamma-mia-night.html
+END:VEVENT
 END:VCALENDAR

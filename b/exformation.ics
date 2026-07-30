@@ -20,4 +20,16 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-08-10-handlebar-visitant-exformation@diypensacola
+DTSTAMP:20260810T000000Z
+DTSTART;TZID=America/Chicago:20260810T180000
+DTEND;TZID=America/Chicago:20260810T210000
+SUMMARY:Visitant\, Exformation\, Wynter\, Basilissa @ The Handlebar
+DESCRIPTION:visitant\, exformation\, wynter\, and basilissa at the handleba
+ r\, monday august 10th. 6pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-10-handlebar-visitant-exformation.ht
+ ml
+END:VEVENT
 END:VCALENDAR

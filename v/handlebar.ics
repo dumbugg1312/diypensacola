@@ -21,18 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-07-28-handlebar-internal-suffering@diypensacola
-DTSTAMP:20260728T000000Z
-DTSTART;TZID=America/Chicago:20260728T190000
-DTEND;TZID=America/Chicago:20260728T220000
-SUMMARY:Internal Suffering\, Gut Fucked\, Rotted Remains @ The Handlebar
-DESCRIPTION:internal suffering\, gut fucked\, rotted remains at the handleb
- ar tuesday july 28th. doors 7pm\, show 8pm. $15\, all ages. 30 years of ch
- aos\, dominion of the xul tour.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-07-28-handlebar-internal-suffering.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-07-30-handlebar-katie-dineen-alex-rogers@diypensacola
 DTSTAMP:20260730T000000Z
 DTSTART;TZID=America/Chicago:20260730T180000
@@ -45,6 +33,19 @@ DESCRIPTION:pensacola songwriter rounds series with katie dineen\, alex rog
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-07-30-handlebar-katie-dineen-alex-roger
  s.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-31-handlebar-blacksmith-color-the-void@diypensacola
+DTSTAMP:20260731T000000Z
+DTSTART;TZID=America/Chicago:20260731T190000
+DTEND;TZID=America/Chicago:20260731T220000
+SUMMARY:Blacksmith\, Color the Void\, Glazed Eyes\, Garden Dweller @ The Ha
+ ndlebar
+DESCRIPTION:blacksmith\, color the void\, glazed eyes\, and garden dweller 
+ at the handlebar friday july 31. 7pm. tickets at thehandlebar850.com.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-07-31-handlebar-blacksmith-color-the-vo
+ id.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-01-handlebar-twin-fin@diypensacola
@@ -67,6 +68,18 @@ DESCRIPTION:trhä\, saidan and barbelith at the handlebar this tuesday\, au
  gust 4th. summer tour stop in pensacola.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-04-handlebar-trh-saidan.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-10-handlebar-visitant-exformation@diypensacola
+DTSTAMP:20260810T000000Z
+DTSTART;TZID=America/Chicago:20260810T180000
+DTEND;TZID=America/Chicago:20260810T210000
+SUMMARY:Visitant\, Exformation\, Wynter\, Basilissa @ The Handlebar
+DESCRIPTION:visitant\, exformation\, wynter\, and basilissa at the handleba
+ r\, monday august 10th. 6pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-10-handlebar-visitant-exformation.ht
+ ml
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-14-handlebar-katie-dineen@diypensacola
@@ -130,6 +143,33 @@ URL:https://diypensacola.com/s/2026-08-20-handlebar-grave-chorus-conflict-o
  f-interests.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-08-22-handlebar-outta-pocket-fragmentation@diypensacola
+DTSTAMP:20260822T000000Z
+DTSTART;TZID=America/Chicago:20260822T170000
+DTEND;TZID=America/Chicago:20260822T200000
+SUMMARY:Outta Pocket\, Fragmentation\, Strikeforce\, Serrated FL @ The Hand
+ lebar
+DESCRIPTION:outta pocket\, fragmentation\, strikeforce\, and serrated fl at
+  the handlebar\, saturday august 22nd. 5pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-22-handlebar-outta-pocket-fragmentat
+ ion.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-22-handlebar-drag-lesque-the-revue-xena-morphine@diypensacola
+DTSTAMP:20260822T000000Z
+DTSTART;TZID=America/Chicago:20260822T210000
+DTEND;TZID=America/Chicago:20260823T000000
+SUMMARY:Drag-Lesque The Revue\, Xena-Morphine\, Wanda Doomy\, Jay Jay Duvay
+ \, Pixie Van Dyke\, Braxton Hicks @ The Handlebar
+DESCRIPTION:drag-lesque the revue at the handlebar\, saturday august 22nd. 
+ xena-morphine\, wanda doomy\, jay jay duvay\, pixie van dyke\, and braxton
+  hicks. 9pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-22-handlebar-drag-lesque-the-revue-x
+ ena-morphine.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-08-23-handlebar-save-ferris@diypensacola
 DTSTAMP:20260823T000000Z
 DTSTART;TZID=America/Chicago:20260823T180000
@@ -139,6 +179,17 @@ DESCRIPTION:save ferris at the handlebar sunday 8/23. tickets at thehandleb
  ar850.com.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-23-handlebar-save-ferris.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-25-handlebar-emarosa-veaux@diypensacola
+DTSTAMP:20260825T000000Z
+DTSTART;TZID=America/Chicago:20260825T183000
+DTEND;TZID=America/Chicago:20260825T213000
+SUMMARY:Emarosa\, Veaux\, slo/tide\, dreamfone @ The Handlebar
+DESCRIPTION:emarosa\, veaux\, slo/tide\, and dreamfone at the handlebar\, t
+ uesday august 25th. 6:30pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-25-handlebar-emarosa-veaux.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-27-handlebar-foxtide-braymores@diypensacola
@@ -156,9 +207,11 @@ UID:2026-08-29-handlebar-nowhere2runs-bloodrave@diypensacola
 DTSTAMP:20260829T000000Z
 DTSTART;TZID=America/Chicago:20260829T190000
 DTEND;TZID=America/Chicago:20260829T220000
-SUMMARY:Nowhere2Run's Bloodrave @ The Handlebar
-DESCRIPTION:nowhere2run's bloodrave comes back to the handlebar\, saturday 
- august 29th. goth\, techno\, industrial. tickets on sale now.
+SUMMARY:Nowhere2Run\, Notscaredtocry\, Cvntteeth\, Viciouswishes\, Error.Fu
+ nction\, Icantread @ The Handlebar
+DESCRIPTION:nowhere2run's bloodrave halloween tour at the handlebar\, satur
+ day august 29th. nowhere2run\, notscaredtocry\, cvntteeth\, viciouswishes\
+ , error.function\, icantread. 18+.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-29-handlebar-nowhere2runs-bloodrave.
  html
@@ -229,6 +282,17 @@ DESCRIPTION:glitterer\, bleary eyed and guttered at the handlebar\, friday
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-18-handlebar-glitterer-bleary-eyed.h
  tml
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-22-handlebar-sports-remo-drive@diypensacola
+DTSTAMP:20260922T000000Z
+DTSTART;TZID=America/Chicago:20260922T190000
+DTEND;TZID=America/Chicago:20260922T220000
+SUMMARY:sports.\, Remo Drive\, Computer @ The Handlebar
+DESCRIPTION:sports. and remo drive at the handlebar\, tuesday september 22.
+  with computer.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-22-handlebar-sports-remo-drive.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-23-handlebar-dopethrone@diypensacola

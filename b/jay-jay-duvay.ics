@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola: Jay Jay Duvay
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-08-22-handlebar-drag-lesque-the-revue-xena-morphine@diypensacola
+DTSTAMP:20260822T000000Z
+DTSTART;TZID=America/Chicago:20260822T210000
+DTEND;TZID=America/Chicago:20260823T000000
+SUMMARY:Drag-Lesque The Revue\, Xena-Morphine\, Wanda Doomy\, Jay Jay Duvay
+ \, Pixie Van Dyke\, Braxton Hicks @ The Handlebar
+DESCRIPTION:drag-lesque the revue at the handlebar\, saturday august 22nd. 
+ xena-morphine\, wanda doomy\, jay jay duvay\, pixie van dyke\, and braxton
+  hicks. 9pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-22-handlebar-drag-lesque-the-revue-x
+ ena-morphine.html
+END:VEVENT
+END:VCALENDAR
