@@ -1,11 +1,11 @@
-var CACHE='diypensacola-1d789db51b1f';
+var CACHE='diypensacola-db9c64cd3007';
 // CORE is the app shell (always precached). PRECACHE is this build's fonts plus
 // the flyers for tonight + this week, injected by build.py so someone who opens
 // the site fresh at a venue with no signal still sees this week's flyers instead
 // of logo placeholders. The versioned CACHE name means an old week's flyers evict
 // themselves on the next deploy. Both lists are added best-effort at install.
 var CORE=['./','index.html','offline.html','style.css','logo.png','manifest.webmanifest','icon-192.png','icon-512.png','apple-touch-icon.png'];
-var PRECACHE=["flyers/2026-07-30_the-den_spidershed.jpg", "flyers/thumbs/2026-07-30_the-den_spidershed.webp", "flyers/2026-07-30_handlebar_katie-dineen.jpg", "flyers/thumbs/2026-07-30_handlebar_katie-dineen.webp", "flyers/thumbs/2026-07-31_handlebar_blacksmith.webp", "flyers/thumbs/2026-08-01_handlebar_twin-fin.webp", "flyers/thumbs/2026-08-01_end-of-the-line-cafe_adam-cook.webp", "flyers/thumbs/2026-08-04_handlebar_trh.webp", "flyers/thumbs/2026-08-07_dorothys_mamma-mia-night.webp", "flyers/thumbs/2026-08-08_309_caca-del-diabo.webp"];
+var PRECACHE=["flyers/2026-07-31_handlebar_blacksmith.jpg", "flyers/thumbs/2026-07-31_handlebar_blacksmith.webp", "flyers/thumbs/2026-08-01_handlebar_twin-fin.webp", "flyers/thumbs/2026-08-01_end-of-the-line-cafe_adam-cook.webp", "flyers/thumbs/2026-08-03_handlebar_jazz-night.webp", "flyers/thumbs/2026-08-04_handlebar_trh.webp", "flyers/thumbs/2026-08-06_handlebar_whitmer-thomas.webp", "flyers/thumbs/2026-08-07_dorothys_mamma-mia-night.webp", "flyers/thumbs/2026-08-08_309_caca-del-diabo.webp", "flyers/thumbs/2026-08-09_handlebar_raq-baby.webp"];
 CORE=CORE.concat(PRECACHE);
 self.addEventListener('install',function(e){
   self.skipWaiting();

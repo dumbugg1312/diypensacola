@@ -36,6 +36,17 @@ URL:https://diypensacola.com/s/2026-08-08-309-caca-del-diabo-mourning-glori
  es.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-08-15-309-asha-dore@diypensacola
+DTSTAMP:20260815T000000Z
+DTSTART;TZID=America/Chicago:20260815T180000
+DTEND;TZID=America/Chicago:20260815T210000
+SUMMARY:Asha Dore @ 309 Punk Project
+DESCRIPTION:309 air closing party and film screening with asha dore\, satur
+ day august 15th at 6pm. screening her animated short still human.
+LOCATION:309 Punk Project\, 309 N 6th Ave\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-15-309-asha-dore.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-09-11-309-we-cant-help-it-if-were-from-florida@diypensacola
 DTSTAMP:20260911T000000Z
 DTSTART;TZID=America/Chicago:20260911T180000

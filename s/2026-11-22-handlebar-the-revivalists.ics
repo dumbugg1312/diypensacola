@@ -21,22 +21,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-07-30-handlebar-katie-dineen-alex-rogers@diypensacola
-DTSTAMP:20260730T000000Z
-DTSTART;TZID=America/Chicago:20260730T180000
-DTEND;TZID=America/Chicago:20260730T210000
-SUMMARY:Katie Dineen\, Alex Rogers\, John Common\, Riley Lynn @ The Handleb
- ar
-DESCRIPTION:pensacola songwriter rounds series with katie dineen\, alex rog
- ers\, john common\, and riley lynn at the handlebar. thu jul 30\, 6pm\, $1
- 0.
+UID:2026-11-22-handlebar-the-revivalists@diypensacola
+DTSTAMP:20261122T000000Z
+DTSTART;TZID=America/Chicago:20261122T170000
+DTEND;TZID=America/Chicago:20261122T200000
+SUMMARY:The Revivalists\, Hunter Metts @ The Handlebar
+DESCRIPTION:the revivalists with hunter metts at the handlebar\, sunday nov
+ ember 22nd. doors 5pm.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-07-30-handlebar-katie-dineen-alex-roger
- s.html
+URL:https://diypensacola.com/s/2026-11-22-handlebar-the-revivalists.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Katie Dineen\, Alex Rogers\, John Common\, Riley Lynn 
- @ The Handlebar
+DESCRIPTION:tonight: The Revivalists\, Hunter Metts @ The Handlebar
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT

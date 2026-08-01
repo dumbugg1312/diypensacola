@@ -21,20 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-07-30-handlebar-katie-dineen-alex-rogers@diypensacola
-DTSTAMP:20260730T000000Z
-DTSTART;TZID=America/Chicago:20260730T180000
-DTEND;TZID=America/Chicago:20260730T210000
-SUMMARY:Katie Dineen\, Alex Rogers\, John Common\, Riley Lynn @ The Handleb
- ar
-DESCRIPTION:pensacola songwriter rounds series with katie dineen\, alex rog
- ers\, john common\, and riley lynn at the handlebar. thu jul 30\, 6pm\, $1
- 0.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-07-30-handlebar-katie-dineen-alex-roger
- s.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-07-31-handlebar-blacksmith-color-the-void@diypensacola
 DTSTAMP:20260731T000000Z
 DTSTART;TZID=America/Chicago:20260731T190000
@@ -59,6 +45,17 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-01-handlebar-twin-fin.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-08-03-handlebar-jazz-night@diypensacola
+DTSTAMP:20260803T000000Z
+DTSTART;TZID=America/Chicago:20260803T180000
+DTEND;TZID=America/Chicago:20260803T210000
+SUMMARY:Jazz Night\, Aren't We @ The Handlebar
+DESCRIPTION:jazz night featuring aren't we at the handlebar\, monday august
+  3rd. doors 6pm\, music 7pm. free show.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-03-handlebar-jazz-night.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-08-04-handlebar-trh-saidan@diypensacola
 DTSTAMP:20260804T000000Z
 DTSTART;TZID=America/Chicago:20260804T190000
@@ -68,6 +65,28 @@ DESCRIPTION:trhä\, saidan and barbelith at the handlebar this tuesday\, au
  gust 4th. summer tour stop in pensacola.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-04-handlebar-trh-saidan.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-06-handlebar-whitmer-thomas@diypensacola
+DTSTAMP:20260806T000000Z
+DTSTART;TZID=America/Chicago:20260806T190000
+DTEND;TZID=America/Chicago:20260806T220000
+SUMMARY:Whitmer Thomas @ The Handlebar
+DESCRIPTION:a very special screening with whitmer thomas\, plus live comedy
+  & music. the handlebar\, thursday august 6th. 7pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-06-handlebar-whitmer-thomas.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-09-handlebar-raq-baby@diypensacola
+DTSTAMP:20260809T000000Z
+DTSTART;TZID=America/Chicago:20260809T190000
+DTEND;TZID=America/Chicago:20260809T220000
+SUMMARY:Raq Baby @ The Handlebar
+DESCRIPTION:raq baby brings the robert johnson tour to the handlebar\, sund
+ ay august 9th. doors 7pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-09-handlebar-raq-baby.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-10-handlebar-visitant-exformation@diypensacola
@@ -80,6 +99,17 @@ DESCRIPTION:visitant\, exformation\, wynter\, and basilissa at the handleba
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-10-handlebar-visitant-exformation.ht
  ml
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-13-handlebar-steve-forbert@diypensacola
+DTSTAMP:20260813T000000Z
+DTSTART;TZID=America/Chicago:20260813T180000
+DTEND;TZID=America/Chicago:20260813T210000
+SUMMARY:Steve Forbert\, Anthony Crawford\, Savana Lee @ The Handlebar
+DESCRIPTION:steve forbert with anthony crawford and savana lee at the handl
+ ebar\, thursday august 13th. doors 6pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-13-handlebar-steve-forbert.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-14-handlebar-katie-dineen@diypensacola
@@ -141,6 +171,17 @@ DESCRIPTION:grave chorus\, conflict of interests\, coastal high school\, ih
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-20-handlebar-grave-chorus-conflict-o
  f-interests.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-21-handlebar-all-your-friends@diypensacola
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Chicago:20260821T200000
+DTEND;TZID=America/Chicago:20260821T230000
+SUMMARY:All Your Friends @ The Handlebar
+DESCRIPTION:all your friends: the indie sleaze dance party at the handlebar
+ \, friday august 21st. doors 8pm\, 18+.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-21-handlebar-all-your-friends.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-22-handlebar-outta-pocket-fragmentation@diypensacola
@@ -217,6 +258,17 @@ URL:https://diypensacola.com/s/2026-08-29-handlebar-nowhere2runs-bloodrave.
  html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-08-30-handlebar-stand-back@diypensacola
+DTSTAMP:20260830T000000Z
+DTSTART;TZID=America/Chicago:20260830T180000
+DTEND;TZID=America/Chicago:20260830T210000
+SUMMARY:Stand Back @ The Handlebar
+DESCRIPTION:stand back\, an allman brothers tribute\, at the handlebar sund
+ ay august 30th. doors 6pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-30-handlebar-stand-back.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-09-01-handlebar-cheekface-catbite@diypensacola
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=America/Chicago:20260901T190000
@@ -236,6 +288,17 @@ DESCRIPTION:broadway rave\, a musical theater dance party\, comes to the ha
  ndlebar. fri sep 4.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-04-handlebar-broadway-rave.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-05-handlebar-blacktop-mojo@diypensacola
+DTSTAMP:20260905T000000Z
+DTSTART;TZID=America/Chicago:20260905T190000
+DTEND;TZID=America/Chicago:20260905T220000
+SUMMARY:Blacktop Mojo\, Seven Year Witch @ The Handlebar
+DESCRIPTION:blacktop mojo with seven year witch at the handlebar\, saturday
+  september 5th. doors 7pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-05-handlebar-blacktop-mojo.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-11-handlebar-geordie-greep@diypensacola
@@ -270,6 +333,17 @@ DESCRIPTION:archers\, autumn kings\, pinknoise\, and coldstate at the handl
  ebar. september 14. tickets at thehandlebar850.com.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-14-handlebar-archers.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-15-handlebar-the-holdup@diypensacola
+DTSTAMP:20260915T000000Z
+DTSTART;TZID=America/Chicago:20260915T190000
+DTEND;TZID=America/Chicago:20260915T220000
+SUMMARY:The Holdup\, Lot 49\, Dylan Reese @ The Handlebar
+DESCRIPTION:the holdup with lot 49 and dylan reese at the handlebar\, tuesd
+ ay september 15th. doors 7pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-15-handlebar-the-holdup.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-18-handlebar-glitterer-bleary-eyed@diypensacola
@@ -318,6 +392,17 @@ URL:https://diypensacola.com/s/2026-09-24-handlebar-dirty-sound-magnet-gran
  -moreno.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-09-25-handlebar-calder-allen@diypensacola
+DTSTAMP:20260925T000000Z
+DTSTART;TZID=America/Chicago:20260925T190000
+DTEND;TZID=America/Chicago:20260925T220000
+SUMMARY:Calder Allen @ The Handlebar
+DESCRIPTION:calder allen at the handlebar\, friday september 25th. doors 7p
+ m.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-25-handlebar-calder-allen.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-09-26-handlebar-liliths-demise-delta-hate@diypensacola
 DTSTAMP:20260926T000000Z
 DTSTART;TZID=America/Chicago:20260926T150000
@@ -342,6 +427,27 @@ DESCRIPTION:eyehategod\, whores\, and nomas at the handlebar. september 27.
   tickets on sale now at thehandlebar850.com.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-27-handlebar-eyehategod.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-28-handlebar-carnifex@diypensacola
+DTSTAMP:20260928T000000Z
+DTSTART;TZID=America/Chicago:20260928T183000
+DTEND;TZID=America/Chicago:20260928T213000
+SUMMARY:Carnifex\, Mauled @ The Handlebar
+DESCRIPTION:carnifex with mauled at the handlebar\, monday september 28th. 
+ doors 6:30pm. sold out.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-28-handlebar-carnifex.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-02-handlebar-cole-barnhill@diypensacola
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=America/Chicago:20261002T190000
+DTEND;TZID=America/Chicago:20261002T220000
+SUMMARY:Cole Barnhill @ The Handlebar
+DESCRIPTION:cole barnhill at the handlebar\, friday october 2nd. doors 7pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-02-handlebar-cole-barnhill.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-07-handlebar-belmont-super-sometimes@diypensacola
@@ -412,5 +518,27 @@ SUMMARY:Chrissy Chlapecka @ The Handlebar
 DESCRIPTION:chrissy chlapecka at the handlebar. sat nov 14.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-14-handlebar-chrissy-chlapecka.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-22-handlebar-the-revivalists@diypensacola
+DTSTAMP:20261122T000000Z
+DTSTART;TZID=America/Chicago:20261122T170000
+DTEND;TZID=America/Chicago:20261122T200000
+SUMMARY:The Revivalists\, Hunter Metts @ The Handlebar
+DESCRIPTION:the revivalists with hunter metts at the handlebar\, sunday nov
+ ember 22nd. doors 5pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-22-handlebar-the-revivalists.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-10-handlebar-nervosa@diypensacola
+DTSTAMP:20270210T000000Z
+DTSTART;TZID=America/Chicago:20270210T180000
+DTEND;TZID=America/Chicago:20270210T210000
+SUMMARY:Nervosa\, Embryonic Autopsy @ The Handlebar
+DESCRIPTION:nervosa with embryonic autopsy at the handlebar\, wednesday feb
+ ruary 10th. doors 6pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-02-10-handlebar-nervosa.html
 END:VEVENT
 END:VCALENDAR
