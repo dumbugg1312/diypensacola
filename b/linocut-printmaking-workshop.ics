@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola: Linocut Printmaking Workshop
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-08-09-unconfirmed-linocut-printmaking-workshop@diypensacola
+DTSTAMP:20260809T000000Z
+DTSTART;TZID=America/Chicago:20260809T140000
+DTEND;TZID=America/Chicago:20260809T170000
+SUMMARY:Linocut Printmaking Workshop @ The Undergrowth
+DESCRIPTION:linocut printmaking workshop at the undergrowth\, sunday august
+  9th\, 2-4pm. $30 per person. design\, carve and print your own linocut st
+ amp.
+LOCATION:The Undergrowth
+URL:https://diypensacola.com/s/2026-08-09-unconfirmed-linocut-printmaking-w
+ orkshop.html
+END:VEVENT
+END:VCALENDAR

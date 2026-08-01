@@ -20,4 +20,16 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-09-09-bettys-isaac-rother-the-phantoms@diypensacola
+DTSTAMP:20260909T000000Z
+DTSTART;TZID=America/Chicago:20260909T190000
+DTEND;TZID=America/Chicago:20260909T220000
+SUMMARY:Isaac Rother & The Phantoms\, Future Hate @ Betty's
+DESCRIPTION:the phantom and future hate at betty's\, wednesday september 9t
+ h. all ages\, tickets through eventbrite.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-09-bettys-isaac-rother-the-phantoms.
+ html
+END:VEVENT
 END:VCALENDAR
