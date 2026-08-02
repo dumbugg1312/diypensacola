@@ -21,43 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-01-handlebar-twin-fin@diypensacola
-DTSTAMP:20260801T000000Z
-DTSTART;TZID=America/Chicago:20260801T190000
-DTEND;TZID=America/Chicago:20260801T220000
-SUMMARY:Twin Fin @ The Handlebar
-DESCRIPTION:twin fin at the handlebar\, saturday august 1st. the kings of t
- he coast tour. tickets at twinfinmusic.com.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-01-handlebar-twin-fin.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-01-end-of-the-line-cafe-adam-cook@diypensacola
-DTSTAMP:20260801T000000Z
-DTSTART;TZID=America/Chicago:20260801T160000
-DTEND;TZID=America/Chicago:20260801T190000
-SUMMARY:Adam Cook: Life & Art @ End of the Line Cafe
-DESCRIPTION:adam cook: life & art at end of the line cafe\, 610 e wright st
- . memorial saturday august 1st at 4pm. art show saturday 6-9pm and sunday 
- august 2nd\, 10am-3pm. friends\, family and all.
-LOCATION:End of the Line Cafe
-URL:https://diypensacola.com/s/2026-08-01-end-of-the-line-cafe-adam-cook.ht
- ml
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-01-bettys-hibachi-stranglers-nowhere-squares@diypensacola
-DTSTAMP:20260801T000000Z
-DTSTART;TZID=America/Chicago:20260801T190000
-DTEND;TZID=America/Chicago:20260801T220000
-SUMMARY:Hibachi Stranglers\, Nowhere Squares\, The Mob-Town Sky Cadets @ Be
- tty's
-DESCRIPTION:hibachi stranglers\, nowhere squares\, and the mob-town sky cad
- ets at betty's on belmont tonight\, saturday august 1.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-01-bettys-hibachi-stranglers-nowhere
- -squares.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-08-03-handlebar-jazz-night@diypensacola
 DTSTAMP:20260803T000000Z
 DTSTART;TZID=America/Chicago:20260803T180000
