@@ -200,6 +200,17 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-16-handlebar-bounty-bloodrush.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-08-17-handlebar-gravery-fliora@diypensacola
+DTSTAMP:20260817T000000Z
+DTSTART;TZID=America/Chicago:20260817T190000
+DTEND;TZID=America/Chicago:20260817T220000
+SUMMARY:Gravery\, Fliora\, Stupid\, Sungraz @ The Handlebar
+DESCRIPTION:gravery\, fliora\, stupid\, and sungraz at the handlebar monday
+  august 17. doors 7pm\, music 8pm\, $15 at the door.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-17-handlebar-gravery-fliora.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-08-18-handlebar-southpaw-arcline@diypensacola
 DTSTAMP:20260818T000000Z
 DTSTART;TZID=America/Chicago:20260818T190000
@@ -342,6 +353,18 @@ DESCRIPTION:throughline puppetry and the undergrowth present their first ev
  er puppet slam\, august 28th. theme is television.
 LOCATION:The Undergrowth
 URL:https://diypensacola.com/s/2026-08-28-unconfirmed-throughline-puppetry.
+ html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-28-bettys-noiseheads-i-hate-sundays@diypensacola
+DTSTAMP:20260828T000000Z
+DTSTART;TZID=America/Chicago:20260828T200000
+DTEND;TZID=America/Chicago:20260828T230000
+SUMMARY:Noiseheads\, I Hate Sundays\, Mothersmilk @ Betty's on Belmont
+DESCRIPTION:noiseheads\, i hate sundays\, and mothersmilk at betty's friday
+  august 28. doors 8pm.
+LOCATION:Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-28-bettys-noiseheads-i-hate-sundays.
  html
 END:VEVENT
 BEGIN:VEVENT

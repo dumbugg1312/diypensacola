@@ -49,6 +49,18 @@ LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-27-bettys-ramblin-ricky-tate.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-08-28-bettys-noiseheads-i-hate-sundays@diypensacola
+DTSTAMP:20260828T000000Z
+DTSTART;TZID=America/Chicago:20260828T200000
+DTEND;TZID=America/Chicago:20260828T230000
+SUMMARY:Noiseheads\, I Hate Sundays\, Mothersmilk @ Betty's on Belmont
+DESCRIPTION:noiseheads\, i hate sundays\, and mothersmilk at betty's friday
+  august 28. doors 8pm.
+LOCATION:Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-28-bettys-noiseheads-i-hate-sundays.
+ html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-09-09-bettys-isaac-rother-the-phantoms@diypensacola
 DTSTAMP:20260909T000000Z
 DTSTART;TZID=America/Chicago:20260909T190000
