@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Noiseheads
+X-WR-CALNAME:DIYPensacola Shows
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago
@@ -31,5 +31,11 @@ DESCRIPTION:noiseheads\, i hate sundays\, and mothersmilk at betty's friday
 LOCATION:Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-28-bettys-noiseheads-i-hate-sundays.
  html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: Noiseheads\, I Hate Sundays\, Mothersmilk @ Betty's on
+  Belmont
+TRIGGER:-PT2H
+END:VALARM
 END:VEVENT
 END:VCALENDAR

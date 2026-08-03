@@ -1,4 +1,4 @@
-var CACHE='diypensacola-dcd7e1fde835';
+var CACHE='diypensacola-b4b25a032aaf';
 // CORE is the app shell (always precached). PRECACHE is this build's fonts plus
 // the flyers for tonight + this week, injected by build.py so someone who opens
 // the site fresh at a venue with no signal still sees this week's flyers instead

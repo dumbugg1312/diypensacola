@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Stupid
+X-WR-CALNAME:DIYPensacola Shows
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago
@@ -30,5 +30,10 @@ DESCRIPTION:gravery\, fliora\, stupid\, and sungraz at the handlebar monday
   august 17. doors 7pm\, music 8pm\, $15 at the door.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-17-handlebar-gravery-fliora.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: Gravery\, Fliora\, Stupid\, Sungraz @ The Handlebar
+TRIGGER:-PT2H
+END:VALARM
 END:VEVENT
 END:VCALENDAR
