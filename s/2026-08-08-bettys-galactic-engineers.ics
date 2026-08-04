@@ -21,18 +21,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-03-handlebar-jazz-night@diypensacola
-DTSTAMP:20260803T000000Z
-DTSTART;TZID=America/Chicago:20260803T180000
-DTEND;TZID=America/Chicago:20260803T210000
-SUMMARY:Jazz Night\, Aren't We @ The Handlebar
-DESCRIPTION:jazz night featuring aren't we at the handlebar\, monday august
-  3rd. doors 6pm\, music 7pm. free show.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-03-handlebar-jazz-night.html
+UID:2026-08-08-bettys-galactic-engineers@diypensacola
+DTSTAMP:20260808T000000Z
+DTSTART;TZID=America/Chicago:20260808T200000
+DTEND;TZID=America/Chicago:20260808T230000
+SUMMARY:Galactic Engineers @ Betty's on Belmont
+DESCRIPTION:galactic engineers at betty's on belmont this saturday\, august
+  8th. doors 8\, show 9. $10 cover\, candle shop records presents.
+LOCATION:Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-08-bettys-galactic-engineers.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Jazz Night\, Aren't We @ The Handlebar
+DESCRIPTION:tonight: Galactic Engineers @ Betty's on Belmont
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
