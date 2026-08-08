@@ -20,4 +20,17 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-08-27-waterboyz-paupers-grave-mothers-milk@diypensacola
+DTSTAMP:20260827T000000Z
+DTSTART;TZID=America/Chicago:20260827T190000
+DTEND;TZID=America/Chicago:20260827T220000
+SUMMARY:Pauper's Grave\, Mother's Milk @ Waterboyz
+DESCRIPTION:pauper's grave and mother's milk at waterboyz\, thursday august
+  27th. lady fest 13 night one\, with the ladies\, femmes\, gays\, & theys 
+ skate expo.
+LOCATION:Waterboyz
+URL:https://diypensacola.com/s/2026-08-27-waterboyz-paupers-grave-mothers-m
+ ilk.html
+END:VEVENT
 END:VCALENDAR

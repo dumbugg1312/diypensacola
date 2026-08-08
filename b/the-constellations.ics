@@ -20,17 +20,4 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-UID:2026-08-07-handlebar-the-constellations-rufus-mcblack@diypensacola
-DTSTAMP:20260807T000000Z
-DTSTART;TZID=America/Chicago:20260807T190000
-DTEND;TZID=America/Chicago:20260807T220000
-SUMMARY:The Constellations\, Rufus McBlack\, Organized Grime @ The Handleba
- r
-DESCRIPTION:the constellations with rufus mcblack and organized grime at th
- e handlebar\, friday august 7th. doors 7pm.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-07-handlebar-the-constellations-rufu
- s-mcblack.html
-END:VEVENT
 END:VCALENDAR

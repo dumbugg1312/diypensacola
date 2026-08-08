@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola: TC Skate Jam 2026
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-09-05-blake-doyle-skatepark-tc-skate-jam-2026@diypensacola
+DTSTAMP:20260905T000000Z
+DTSTART;TZID=America/Chicago:20260905T090000
+DTEND;TZID=America/Chicago:20260905T120000
+SUMMARY:TC Skate Jam 2026 @ Blake Doyle Skatepark
+DESCRIPTION:tc skate jam 2026 at blake doyle skatepark\, saturday september
+  5th. 9am warm-up\, 10am kick-off\, $15 entry. two 60 second runs plus a c
+ ash round\, waterboyz presents.
+LOCATION:Blake Doyle Skatepark
+URL:https://diypensacola.com/s/2026-09-05-blake-doyle-skatepark-tc-skate-ja
+ m-2026.html
+END:VEVENT
+END:VCALENDAR

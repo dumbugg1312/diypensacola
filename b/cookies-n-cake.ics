@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola: Cookies N Cake
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-08-28-handlebar-alices-chainsaw-repair-tirra-lirra@diypensacola
+DTSTAMP:20260828T000000Z
+DTSTART;TZID=America/Chicago:20260828T190000
+DTEND;TZID=America/Chicago:20260828T220000
+SUMMARY:Alice's Chainsaw Repair\, Tirra Lirra\, Mourning Glories\, Cursed B
+ ody\, Cookies N Cake @ The Handlebar
+DESCRIPTION:alice's chainsaw repair\, tirra lirra\, mourning glories\, curs
+ ed body and cookies n cake at the handlebar\, friday august 28th. lady fes
+ t 13 night two\, local vendors set up all night.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-28-handlebar-alices-chainsaw-repair-
+ tirra-lirra.html
+END:VEVENT
+END:VCALENDAR
