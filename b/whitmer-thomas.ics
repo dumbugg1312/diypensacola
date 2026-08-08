@@ -20,15 +20,4 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-UID:2026-08-06-handlebar-whitmer-thomas@diypensacola
-DTSTAMP:20260806T000000Z
-DTSTART;TZID=America/Chicago:20260806T190000
-DTEND;TZID=America/Chicago:20260806T220000
-SUMMARY:Whitmer Thomas @ The Handlebar
-DESCRIPTION:a very special screening with whitmer thomas\, plus live comedy
-  & music. the handlebar\, thursday august 6th. 7pm.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-06-handlebar-whitmer-thomas.html
-END:VEVENT
 END:VCALENDAR

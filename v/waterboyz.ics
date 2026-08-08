@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola Shows
+X-WR-CALNAME:DIYPensacola: Waterboyz
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago
@@ -21,18 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-27-unconfirmed-lady-fest-13@diypensacola
+UID:2026-08-27-waterboyz-paupers-grave-mothers-milk@diypensacola
 DTSTAMP:20260827T000000Z
 DTSTART;TZID=America/Chicago:20260827T190000
 DTEND;TZID=America/Chicago:20260827T220000
-SUMMARY:Lady Fest 13 @ UNCONFIRMED
-DESCRIPTION:lady fest 13: into the mystic\, august 27th through 29th.
-LOCATION:UNCONFIRMED
-URL:https://diypensacola.com/s/2026-08-27-unconfirmed-lady-fest-13.html
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:tonight: Lady Fest 13 @ UNCONFIRMED
-TRIGGER:-PT2H
-END:VALARM
+SUMMARY:Pauper's Grave\, Mother's Milk @ Waterboyz
+DESCRIPTION:pauper's grave and mother's milk at waterboyz\, thursday august
+  27th. lady fest 13 night one\, with the ladies\, femmes\, gays\, & theys 
+ skate expo.
+LOCATION:Waterboyz
+URL:https://diypensacola.com/s/2026-08-27-waterboyz-paupers-grave-mothers-m
+ ilk.html
 END:VEVENT
 END:VCALENDAR

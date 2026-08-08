@@ -72,6 +72,18 @@ URL:https://diypensacola.com/s/2026-08-28-bettys-noiseheads-i-hate-sundays.
  html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-08-29-bettys-rat-daughter-boof@diypensacola
+DTSTAMP:20260829T000000Z
+DTSTART;TZID=America/Chicago:20260829T190000
+DTEND;TZID=America/Chicago:20260829T220000
+SUMMARY:Rat Daughter\, Boof\, Other\, The Fuckless\, Wynter @ Betty's
+DESCRIPTION:rat daughter\, boof\, other\, the fuckless and wynter at betty'
+ s on belmont\, saturday august 29th. lady fest 13 closes out with tarot re
+ adings.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-29-bettys-rat-daughter-boof.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-09-09-bettys-isaac-rother-the-phantoms@diypensacola
 DTSTAMP:20260909T000000Z
 DTSTART;TZID=America/Chicago:20260909T190000

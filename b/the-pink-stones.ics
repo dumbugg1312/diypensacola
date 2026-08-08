@@ -20,4 +20,14 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-09-03-handlebar-the-pink-stones@diypensacola
+DTSTAMP:20260903T000000Z
+DTSTART;TZID=America/Chicago:20260903T190000
+DTEND;TZID=America/Chicago:20260903T220000
+SUMMARY:The Pink Stones @ The Handlebar
+DESCRIPTION:the pink stones at the handlebar\, thursday september 3rd.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-03-handlebar-the-pink-stones.html
+END:VEVENT
 END:VCALENDAR

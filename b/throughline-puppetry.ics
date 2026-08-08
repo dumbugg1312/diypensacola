@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-28-unconfirmed-throughline-puppetry@diypensacola
-DTSTAMP:20260828T000000Z
-DTSTART;TZID=America/Chicago:20260828T190000
-DTEND;TZID=America/Chicago:20260828T220000
+UID:2026-09-05-unconfirmed-throughline-puppetry@diypensacola
+DTSTAMP:20260905T000000Z
+DTSTART;TZID=America/Chicago:20260905T190000
+DTEND;TZID=America/Chicago:20260905T220000
 SUMMARY:Throughline Puppetry @ The Undergrowth
 DESCRIPTION:throughline puppetry and the undergrowth present their first ev
- er puppet slam\, august 28th. theme is television.
+ er puppet slam\, september 5th. theme is television.
 LOCATION:The Undergrowth
-URL:https://diypensacola.com/s/2026-08-28-unconfirmed-throughline-puppetry.
+URL:https://diypensacola.com/s/2026-09-05-unconfirmed-throughline-puppetry.
  html
 END:VEVENT
 END:VCALENDAR

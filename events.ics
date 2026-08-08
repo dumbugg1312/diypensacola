@@ -21,52 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-04-handlebar-trh-saidan@diypensacola
-DTSTAMP:20260804T000000Z
-DTSTART;TZID=America/Chicago:20260804T190000
-DTEND;TZID=America/Chicago:20260804T220000
-SUMMARY:Trhä\, Saidan\, Barbelith @ The Handlebar
-DESCRIPTION:trhä\, saidan and barbelith at the handlebar this tuesday\, au
- gust 4th. summer tour stop in pensacola.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-04-handlebar-trh-saidan.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-06-handlebar-whitmer-thomas@diypensacola
-DTSTAMP:20260806T000000Z
-DTSTART;TZID=America/Chicago:20260806T190000
-DTEND;TZID=America/Chicago:20260806T220000
-SUMMARY:Whitmer Thomas @ The Handlebar
-DESCRIPTION:a very special screening with whitmer thomas\, plus live comedy
-  & music. the handlebar\, thursday august 6th. 7pm.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-06-handlebar-whitmer-thomas.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-07-dorothys-mamma-mia-night@diypensacola
-DTSTAMP:20260807T000000Z
-DTSTART;TZID=America/Chicago:20260807T220000
-DTEND;TZID=America/Chicago:20260808T010000
-SUMMARY:Mamma Mia! Night @ Dorothy's Pensacola
-DESCRIPTION:mamma mia! night with stamped film festival at dorothy's. frida
- y august 7th\, 10pm to 2am.
-LOCATION:Dorothy's Pensacola
-URL:https://diypensacola.com/s/2026-08-07-dorothys-mamma-mia-night.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-07-handlebar-the-constellations-rufus-mcblack@diypensacola
-DTSTAMP:20260807T000000Z
-DTSTART;TZID=America/Chicago:20260807T190000
-DTEND;TZID=America/Chicago:20260807T220000
-SUMMARY:The Constellations\, Rufus McBlack\, Organized Grime @ The Handleba
- r
-DESCRIPTION:the constellations with rufus mcblack and organized grime at th
- e handlebar\, friday august 7th. doors 7pm.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-07-handlebar-the-constellations-rufu
- s-mcblack.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-08-08-handlebar-caca-del-diablo-mourning-glories@diypensacola
 DTSTAMP:20260808T000000Z
 DTSTART;TZID=America/Chicago:20260808T180000
@@ -372,26 +326,17 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-27-handlebar-foxtide-braymores.html
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-08-27-unconfirmed-lady-fest-13@diypensacola
+UID:2026-08-27-waterboyz-paupers-grave-mothers-milk@diypensacola
 DTSTAMP:20260827T000000Z
 DTSTART;TZID=America/Chicago:20260827T190000
 DTEND;TZID=America/Chicago:20260827T220000
-SUMMARY:Lady Fest 13 @ UNCONFIRMED
-DESCRIPTION:lady fest 13: into the mystic\, august 27th through 29th.
-LOCATION:UNCONFIRMED
-URL:https://diypensacola.com/s/2026-08-27-unconfirmed-lady-fest-13.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-28-unconfirmed-throughline-puppetry@diypensacola
-DTSTAMP:20260828T000000Z
-DTSTART;TZID=America/Chicago:20260828T190000
-DTEND;TZID=America/Chicago:20260828T220000
-SUMMARY:Throughline Puppetry @ The Undergrowth
-DESCRIPTION:throughline puppetry and the undergrowth present their first ev
- er puppet slam\, august 28th. theme is television.
-LOCATION:The Undergrowth
-URL:https://diypensacola.com/s/2026-08-28-unconfirmed-throughline-puppetry.
- html
+SUMMARY:Pauper's Grave\, Mother's Milk @ Waterboyz
+DESCRIPTION:pauper's grave and mother's milk at waterboyz\, thursday august
+  27th. lady fest 13 night one\, with the ladies\, femmes\, gays\, & theys 
+ skate expo.
+LOCATION:Waterboyz
+URL:https://diypensacola.com/s/2026-08-27-waterboyz-paupers-grave-mothers-m
+ ilk.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-28-bettys-noiseheads-i-hate-sundays@diypensacola
@@ -406,6 +351,20 @@ URL:https://diypensacola.com/s/2026-08-28-bettys-noiseheads-i-hate-sundays.
  html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-08-28-handlebar-alices-chainsaw-repair-tirra-lirra@diypensacola
+DTSTAMP:20260828T000000Z
+DTSTART;TZID=America/Chicago:20260828T190000
+DTEND;TZID=America/Chicago:20260828T220000
+SUMMARY:Alice's Chainsaw Repair\, Tirra Lirra\, Mourning Glories\, Cursed B
+ ody\, Cookies N Cake @ The Handlebar
+DESCRIPTION:alice's chainsaw repair\, tirra lirra\, mourning glories\, curs
+ ed body and cookies n cake at the handlebar\, friday august 28th. lady fes
+ t 13 night two\, local vendors set up all night.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-28-handlebar-alices-chainsaw-repair-
+ tirra-lirra.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-08-29-handlebar-nowhere2runs-bloodrave@diypensacola
 DTSTAMP:20260829T000000Z
 DTSTART;TZID=America/Chicago:20260829T190000
@@ -418,6 +377,18 @@ DESCRIPTION:nowhere2run's bloodrave halloween tour at the handlebar\, satur
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-29-handlebar-nowhere2runs-bloodrave.
  html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-29-bettys-rat-daughter-boof@diypensacola
+DTSTAMP:20260829T000000Z
+DTSTART;TZID=America/Chicago:20260829T190000
+DTEND;TZID=America/Chicago:20260829T220000
+SUMMARY:Rat Daughter\, Boof\, Other\, The Fuckless\, Wynter @ Betty's
+DESCRIPTION:rat daughter\, boof\, other\, the fuckless and wynter at betty'
+ s on belmont\, saturday august 29th. lady fest 13 closes out with tarot re
+ adings.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-29-bettys-rat-daughter-boof.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-30-handlebar-stand-back@diypensacola
@@ -441,6 +412,16 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-01-handlebar-cheekface-catbite.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-09-03-handlebar-the-pink-stones@diypensacola
+DTSTAMP:20260903T000000Z
+DTSTART;TZID=America/Chicago:20260903T190000
+DTEND;TZID=America/Chicago:20260903T220000
+SUMMARY:The Pink Stones @ The Handlebar
+DESCRIPTION:the pink stones at the handlebar\, thursday september 3rd.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-03-handlebar-the-pink-stones.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-09-04-handlebar-broadway-rave@diypensacola
 DTSTAMP:20260904T000000Z
 DTSTART;TZID=America/Chicago:20260904T190000
@@ -461,6 +442,31 @@ DESCRIPTION:blacktop mojo with seven year witch at the handlebar\, saturday
   september 5th. doors 7pm.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-05-handlebar-blacktop-mojo.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-05-blake-doyle-skatepark-tc-skate-jam-2026@diypensacola
+DTSTAMP:20260905T000000Z
+DTSTART;TZID=America/Chicago:20260905T090000
+DTEND;TZID=America/Chicago:20260905T120000
+SUMMARY:TC Skate Jam 2026 @ Blake Doyle Skatepark
+DESCRIPTION:tc skate jam 2026 at blake doyle skatepark\, saturday september
+  5th. 9am warm-up\, 10am kick-off\, $15 entry. two 60 second runs plus a c
+ ash round\, waterboyz presents.
+LOCATION:Blake Doyle Skatepark
+URL:https://diypensacola.com/s/2026-09-05-blake-doyle-skatepark-tc-skate-ja
+ m-2026.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-05-unconfirmed-throughline-puppetry@diypensacola
+DTSTAMP:20260905T000000Z
+DTSTART;TZID=America/Chicago:20260905T190000
+DTEND;TZID=America/Chicago:20260905T220000
+SUMMARY:Throughline Puppetry @ The Undergrowth
+DESCRIPTION:throughline puppetry and the undergrowth present their first ev
+ er puppet slam\, september 5th. theme is television.
+LOCATION:The Undergrowth
+URL:https://diypensacola.com/s/2026-09-05-unconfirmed-throughline-puppetry.
+ html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-09-bettys-isaac-rother-the-phantoms@diypensacola
@@ -542,6 +548,17 @@ DESCRIPTION:glitterer\, bleary eyed and guttered at the handlebar\, friday
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-18-handlebar-glitterer-bleary-eyed.h
  tml
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-19-handlebar-house-of-heavy@diypensacola
+DTSTAMP:20260919T000000Z
+DTSTART;TZID=America/Chicago:20260919T190000
+DTEND;TZID=America/Chicago:20260919T220000
+SUMMARY:House of Heavy @ The Handlebar
+DESCRIPTION:house of heavy\, a nu-metal\, alt-metal and metalcore party at 
+ the handlebar\, saturday september 19th.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-19-handlebar-house-of-heavy.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-20-309-views-from-the-ground@diypensacola
