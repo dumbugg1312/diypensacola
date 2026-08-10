@@ -21,22 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-08-handlebar-caca-del-diablo-mourning-glories@diypensacola
-DTSTAMP:20260808T000000Z
-DTSTART;TZID=America/Chicago:20260808T180000
-DTEND;TZID=America/Chicago:20260808T210000
-SUMMARY:Caca Del Diablo\, Mourning Glories\, Bangarang Peter\, Spider Bucke
- t\, Sideswept Bangs @ The Handlebar
-DESCRIPTION:venue change: the benefit show is now at the handlebar\, 319 n 
- tarragona. caca del diablo\, mourning glories\, bangarang peter\, spider b
- ucket\, and sideswept bangs this saturday\, august 8th. doors 6\, music 6:
- 30. $5-$20 suggested donation\, a benefit and celebration of life for the 
- family of aleka ash ellis-chambers.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-08-handlebar-caca-del-diablo-mournin
- g-glories.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-08-09-handlebar-raq-baby@diypensacola
 DTSTAMP:20260809T000000Z
 DTSTART;TZID=America/Chicago:20260809T190000
@@ -117,16 +101,6 @@ DESCRIPTION:gravery\, fliora\, stupid\, and sungraz at the handlebar monday
   august 17. doors 7pm\, music 8pm\, $15 at the door.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-17-handlebar-gravery-fliora.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-18-handlebar-southpaw-arcline@diypensacola
-DTSTAMP:20260818T000000Z
-DTSTART;TZID=America/Chicago:20260818T190000
-DTEND;TZID=America/Chicago:20260818T220000
-SUMMARY:Southpaw\, Arcline @ The Handlebar
-DESCRIPTION:southpaw and arcline at the handlebar\, tuesday august 18th.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-18-handlebar-southpaw-arcline.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-20-handlebar-grave-chorus-conflict-of-interests@diypensacola
