@@ -35,20 +35,4 @@ LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-20-bettys-dumpster-meds-torso-man.ht
  ml
 END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-08-handlebar-caca-del-diablo-mourning-glories@diypensacola
-DTSTAMP:20260808T000000Z
-DTSTART;TZID=America/Chicago:20260808T180000
-DTEND;TZID=America/Chicago:20260808T210000
-SUMMARY:Caca Del Diablo\, Mourning Glories\, Bangarang Peter\, Spider Bucke
- t\, Sideswept Bangs @ The Handlebar
-DESCRIPTION:venue change: the benefit show is now at the handlebar\, 319 n 
- tarragona. caca del diablo\, mourning glories\, bangarang peter\, spider b
- ucket\, and sideswept bangs this saturday\, august 8th. doors 6\, music 6:
- 30. $5-$20 suggested donation\, a benefit and celebration of life for the 
- family of aleka ash ellis-chambers.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-08-handlebar-caca-del-diablo-mournin
- g-glories.html
-END:VEVENT
 END:VCALENDAR
