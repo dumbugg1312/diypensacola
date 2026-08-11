@@ -21,6 +21,21 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:2026-08-15-bettys-sapphic-saturday-eve@diypensacola
+DTSTAMP:20260815T000000Z
+DTSTART;TZID=America/Chicago:20260815T190000
+DTEND;TZID=America/Chicago:20260815T220000
+SUMMARY:Sapphic Saturday\, Eve\, Ick Zosted\, Pat MiDown\, Ray Darling\, Sw
+ eet Lady Sleeze\, Devin X\, Miss Rainbow\, pole kitty VulcanBaby\, Violet 
+ Vibrations\, Lady Grace\, DJ Balance Universal\, Platinum Muse @ Betty's
+DESCRIPTION:sapphic saturday at betty's\, saturday august 15th. eve\, ick z
+ osted\, pat midown\, ray darling\, sweet lady sleeze\, devin x\, miss rain
+ bow\, pole kitty vulcanbaby\, violet vibrations\, lady grace\, dj balance 
+ universal\, and platinum muse. $15.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-15-bettys-sapphic-saturday-eve.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-08-20-bettys-dumpster-meds-torso-man@diypensacola
 DTSTAMP:20260820T000000Z
 DTSTART;TZID=America/Chicago:20260820T180000
@@ -83,5 +98,30 @@ DESCRIPTION:the phantom and future hate at betty's\, wednesday september 9t
 LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-09-bettys-isaac-rother-the-phantoms.
  html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-11-bettys-the-unnaturals-paupers-grave@diypensacola
+DTSTAMP:20260911T000000Z
+DTSTART;TZID=America/Chicago:20260911T200000
+DTEND;TZID=America/Chicago:20260911T230000
+SUMMARY:The Unnaturals\, Pauper's Grave\, Crystal Plumage @ Betty's
+DESCRIPTION:the unnaturals (new orleans surf rock)\, pauper's grave\, and c
+ rystal plumage at betty's friday september 11th. doors 8\, show 9. $10.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-11-bettys-the-unnaturals-paupers-gra
+ ve.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-03-bettys-james-hall-the-ladies-of-valerie-sassyfras@diypensaco
+ la
+DTSTAMP:20261003T000000Z
+DTSTART;TZID=America/Chicago:20261003T190000
+DTEND;TZID=America/Chicago:20261003T220000
+SUMMARY:James Hall & the Ladies of...\, Valerie SassyFras @ Betty's
+DESCRIPTION:james hall & the ladies of... with valerie sassyfras at betty's
+  saturday october 3rd. $10.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-03-bettys-james-hall-the-ladies-of-v
+ alerie-sassyfras.html
 END:VEVENT
 END:VCALENDAR

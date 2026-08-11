@@ -1,11 +1,11 @@
-var CACHE='diypensacola-a96a9034e63f';
+var CACHE='diypensacola-8d58e96d0f4d';
 // CORE is the app shell (always precached). PRECACHE is this build's fonts plus
 // the flyers for tonight + this week, injected by build.py so someone who opens
 // the site fresh at a venue with no signal still sees this week's flyers instead
 // of logo placeholders. The versioned CACHE name means an old week's flyers evict
 // themselves on the next deploy. Both lists are added best-effort at install.
 var CORE=['./','index.html','offline.html','style.css','logo.png','manifest.webmanifest','icon-192.png','icon-512.png','apple-touch-icon.png'];
-var PRECACHE=["flyers/2026-08-09_handlebar_raq-baby.jpg", "flyers/thumbs/2026-08-09_handlebar_raq-baby.webp", "flyers/thumbs/2026-08-10_handlebar_visitant.webp", "flyers/thumbs/2026-08-10_undergrowth_zine-workshop-309-punk-project.webp", "flyers/thumbs/2026-08-11_jitterbug_zine-workshop-309-punk-project.webp", "flyers/thumbs/2026-08-12_the-den_mongo.webp", "flyers/thumbs/2026-08-13_handlebar_steve-forbert.webp", "flyers/thumbs/2026-08-13_odd-colony_zine-workshop-309-punk-project.webp", "flyers/thumbs/2026-08-14_handlebar_katie-dineen.webp", "flyers/thumbs/flyer_2026-08-15_handlebar_heroes-for-ghosts.webp", "flyers/thumbs/2026-08-16_handlebar_bounty.webp"];
+var PRECACHE=["flyers/2026-08-11_jitterbug_zine-workshop-309-punk-project.jpg", "flyers/thumbs/2026-08-11_jitterbug_zine-workshop-309-punk-project.webp", "flyers/thumbs/2026-08-12_the-den_mongo.webp", "flyers/thumbs/2026-08-13_handlebar_steve-forbert.webp", "flyers/thumbs/2026-08-13_odd-colony_zine-workshop-309-punk-project.webp", "flyers/thumbs/2026-08-14_handlebar_katie-dineen.webp", "flyers/thumbs/flyer_2026-08-15_handlebar_heroes-for-ghosts.webp", "flyers/thumbs/2026-08-15_bettys_sapphic-saturday.webp", "flyers/thumbs/2026-08-16_handlebar_bounty.webp", "flyers/thumbs/2026-08-17_handlebar_gravery.webp", "flyers/thumbs/2026-08-20_handlebar_grave-chorus.webp", "flyers/thumbs/2026-08-20_bettys_dumpster-meds.webp", "flyers/thumbs/2026-08-21_handlebar_all-your-friends.webp", "flyers/thumbs/2026-08-22_handlebar_outta-pocket.webp", "flyers/thumbs/2026-08-22_handlebar_drag-lesque.webp", "flyers/thumbs/2026-08-23_handlebar_save-ferris.webp"];
 CORE=CORE.concat(PRECACHE);
 self.addEventListener('install',function(e){
   self.skipWaiting();

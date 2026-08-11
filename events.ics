@@ -21,55 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-09-handlebar-raq-baby@diypensacola
-DTSTAMP:20260809T000000Z
-DTSTART;TZID=America/Chicago:20260809T190000
-DTEND;TZID=America/Chicago:20260809T220000
-SUMMARY:Raq Baby @ The Handlebar
-DESCRIPTION:raq baby brings the robert johnson tour to the handlebar\, sund
- ay august 9th. doors 7pm.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-09-handlebar-raq-baby.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-09-unconfirmed-linocut-printmaking-workshop@diypensacola
-DTSTAMP:20260809T000000Z
-DTSTART;TZID=America/Chicago:20260809T140000
-DTEND;TZID=America/Chicago:20260809T170000
-SUMMARY:Linocut Printmaking Workshop @ The Undergrowth
-DESCRIPTION:linocut printmaking workshop at the undergrowth\, sunday august
-  9th\, 2-4pm. $30 per person. design\, carve and print your own linocut st
- amp.
-LOCATION:The Undergrowth
-URL:https://diypensacola.com/s/2026-08-09-unconfirmed-linocut-printmaking-w
- orkshop.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-10-handlebar-visitant-exformation@diypensacola
-DTSTAMP:20260810T000000Z
-DTSTART;TZID=America/Chicago:20260810T180000
-DTEND;TZID=America/Chicago:20260810T210000
-SUMMARY:Visitant\, Exformation\, Wynter\, Basilissa @ The Handlebar
-DESCRIPTION:visitant\, exformation\, wynter\, and basilissa at the handleba
- r\, monday august 10th. 6pm.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-10-handlebar-visitant-exformation.ht
- ml
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-10-undergrowth-zine-workshop-309-punk-project@diypensacola
-DTSTAMP:20260810T000000Z
-DTSTART;TZID=America/Chicago:20260810T180000
-DTEND;TZID=America/Chicago:20260810T210000
-SUMMARY:Zine Workshop (309 Punk Project) @ The Undergrowth
-DESCRIPTION:309 punk project is running three zine workshops: monday 8/10 a
- t the undergrowth 6 to 8\, tuesday 8/11 at jitterbug 5 to 7\, thursday 8/1
- 3 at odd colony 6 to 8. bring your ideas\, they bring the materials.
-LOCATION:The Undergrowth
-URL:https://diypensacola.com/s/2026-08-10-undergrowth-zine-workshop-309-pun
- k-project.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-08-11-jitterbug-zine-workshop-309-punk-project@diypensacola
 DTSTAMP:20260811T000000Z
 DTSTART;TZID=America/Chicago:20260811T170000
@@ -151,6 +102,21 @@ DESCRIPTION:309 air closing party and film screening with asha dore\, satur
  day august 15th at 6pm. screening her animated short still human.
 LOCATION:309 Punk Project\, 309 N 6th Ave\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-15-309-asha-dore.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-15-bettys-sapphic-saturday-eve@diypensacola
+DTSTAMP:20260815T000000Z
+DTSTART;TZID=America/Chicago:20260815T190000
+DTEND;TZID=America/Chicago:20260815T220000
+SUMMARY:Sapphic Saturday\, Eve\, Ick Zosted\, Pat MiDown\, Ray Darling\, Sw
+ eet Lady Sleeze\, Devin X\, Miss Rainbow\, pole kitty VulcanBaby\, Violet 
+ Vibrations\, Lady Grace\, DJ Balance Universal\, Platinum Muse @ Betty's
+DESCRIPTION:sapphic saturday at betty's\, saturday august 15th. eve\, ick z
+ osted\, pat midown\, ray darling\, sweet lady sleeze\, devin x\, miss rain
+ bow\, pole kitty vulcanbaby\, violet vibrations\, lady grace\, dj balance 
+ universal\, and platinum muse. $15.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-15-bettys-sapphic-saturday-eve.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-16-handlebar-bounty-bloodrush@diypensacola
@@ -466,6 +432,18 @@ URL:https://diypensacola.com/s/2026-09-11-309-we-cant-help-it-if-were-from-
  florida.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-09-11-bettys-the-unnaturals-paupers-grave@diypensacola
+DTSTAMP:20260911T000000Z
+DTSTART;TZID=America/Chicago:20260911T200000
+DTEND;TZID=America/Chicago:20260911T230000
+SUMMARY:The Unnaturals\, Pauper's Grave\, Crystal Plumage @ Betty's
+DESCRIPTION:the unnaturals (new orleans surf rock)\, pauper's grave\, and c
+ rystal plumage at betty's friday september 11th. doors 8\, show 9. $10.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-11-bettys-the-unnaturals-paupers-gra
+ ve.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-09-12-handlebar-nvsn-the-autumn-descent@diypensacola
 DTSTAMP:20260912T000000Z
 DTSTART;TZID=America/Chicago:20260912T190000
@@ -626,6 +604,19 @@ SUMMARY:Cole Barnhill @ The Handlebar
 DESCRIPTION:cole barnhill at the handlebar\, friday october 2nd. doors 7pm.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-02-handlebar-cole-barnhill.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-03-bettys-james-hall-the-ladies-of-valerie-sassyfras@diypensaco
+ la
+DTSTAMP:20261003T000000Z
+DTSTART;TZID=America/Chicago:20261003T190000
+DTEND;TZID=America/Chicago:20261003T220000
+SUMMARY:James Hall & the Ladies of...\, Valerie SassyFras @ Betty's
+DESCRIPTION:james hall & the ladies of... with valerie sassyfras at betty's
+  saturday october 3rd. $10.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-03-bettys-james-hall-the-ladies-of-v
+ alerie-sassyfras.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-07-handlebar-belmont-super-sometimes@diypensacola
