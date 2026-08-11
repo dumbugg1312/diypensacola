@@ -21,6 +21,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:2026-09-11-bettys-the-unnaturals-paupers-grave@diypensacola
+DTSTAMP:20260911T000000Z
+DTSTART;TZID=America/Chicago:20260911T200000
+DTEND;TZID=America/Chicago:20260911T230000
+SUMMARY:The Unnaturals\, Pauper's Grave\, Crystal Plumage @ Betty's
+DESCRIPTION:the unnaturals (new orleans surf rock)\, pauper's grave\, and c
+ rystal plumage at betty's friday september 11th. doors 8\, show 9. $10.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-11-bettys-the-unnaturals-paupers-gra
+ ve.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-08-27-waterboyz-paupers-grave-mothers-milk@diypensacola
 DTSTAMP:20260827T000000Z
 DTSTART;TZID=America/Chicago:20260827T190000

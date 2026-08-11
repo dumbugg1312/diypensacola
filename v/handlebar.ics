@@ -21,29 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-09-handlebar-raq-baby@diypensacola
-DTSTAMP:20260809T000000Z
-DTSTART;TZID=America/Chicago:20260809T190000
-DTEND;TZID=America/Chicago:20260809T220000
-SUMMARY:Raq Baby @ The Handlebar
-DESCRIPTION:raq baby brings the robert johnson tour to the handlebar\, sund
- ay august 9th. doors 7pm.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-09-handlebar-raq-baby.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-10-handlebar-visitant-exformation@diypensacola
-DTSTAMP:20260810T000000Z
-DTSTART;TZID=America/Chicago:20260810T180000
-DTEND;TZID=America/Chicago:20260810T210000
-SUMMARY:Visitant\, Exformation\, Wynter\, Basilissa @ The Handlebar
-DESCRIPTION:visitant\, exformation\, wynter\, and basilissa at the handleba
- r\, monday august 10th. 6pm.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-10-handlebar-visitant-exformation.ht
- ml
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-08-13-handlebar-steve-forbert@diypensacola
 DTSTAMP:20260813T000000Z
 DTSTART;TZID=America/Chicago:20260813T180000
