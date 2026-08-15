@@ -21,29 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-13-handlebar-steve-forbert@diypensacola
-DTSTAMP:20260813T000000Z
-DTSTART;TZID=America/Chicago:20260813T180000
-DTEND;TZID=America/Chicago:20260813T210000
-SUMMARY:Steve Forbert\, Anthony Crawford\, Savana Lee @ The Handlebar
-DESCRIPTION:steve forbert with anthony crawford and savana lee at the handl
- ebar\, thursday august 13th. doors 6pm.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-13-handlebar-steve-forbert.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-14-handlebar-katie-dineen@diypensacola
-DTSTAMP:20260814T000000Z
-DTSTART;TZID=America/Chicago:20260814T180000
-DTEND;TZID=America/Chicago:20260814T210000
-SUMMARY:Katie Dineen\, Logan Pilcher\, Tanner Lee Gray @ The Handlebar
-DESCRIPTION:katie dineen's album release show for 'simmer'\, with logan pil
- cher and tanner lee gray. the handlebar\, friday august 14th. doors 6pm\, 
- music at 7. sliding scale $10-$20.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-14-handlebar-katie-dineen.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-08-15-handlebar-heroes-for-ghosts@diypensacola
 DTSTAMP:20260815T000000Z
 DTSTART;TZID=America/Chicago:20260815T180000
@@ -61,12 +38,23 @@ UID:2026-08-16-handlebar-bounty-bloodrush@diypensacola
 DTSTAMP:20260816T000000Z
 DTSTART;TZID=America/Chicago:20260816T180000
 DTEND;TZID=America/Chicago:20260816T210000
-SUMMARY:Bounty\, Bloodrush\, Sacreus\, Silenced @ The Handlebar
+SUMMARY:Bounty\, Lesion\, Sacreus\, Silenced @ The Handlebar
 DESCRIPTION:bounty (texas metalcore) at the handlebar\, sunday august 16th.
-  with bloodrush\, sacreus\, and silenced. doors 6\, music 7. $10\, tickets
-  at thehandlebar850.com.
+  with lesion\, sacreus\, and silenced. doors 6\, music 7. $10\, tickets at
+  thehandlebar850.com.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-16-handlebar-bounty-bloodrush.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-16-handlebar-free-radio-pnx@diypensacola
+DTSTAMP:20260816T000000Z
+DTSTART;TZID=America/Chicago:20260816T140000
+DTEND;TZID=America/Chicago:20260816T170000
+SUMMARY:Free Radio PNX @ The Handlebar
+DESCRIPTION:sunday jams and wine at the handlebar with free radio pnx and n
+ ada wine\, sunday august 16th. 2 to 5pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-16-handlebar-free-radio-pnx.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-17-handlebar-gravery-fliora@diypensacola
@@ -474,17 +462,6 @@ SUMMARY:Chrissy Chlapecka @ The Handlebar
 DESCRIPTION:chrissy chlapecka at the handlebar. sat nov 14.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-14-handlebar-chrissy-chlapecka.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-22-handlebar-the-revivalists@diypensacola
-DTSTAMP:20261122T000000Z
-DTSTART;TZID=America/Chicago:20261122T170000
-DTEND;TZID=America/Chicago:20261122T200000
-SUMMARY:The Revivalists\, Hunter Metts @ The Handlebar
-DESCRIPTION:the revivalists with hunter metts at the handlebar\, sunday nov
- ember 22nd. doors 5pm.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-22-handlebar-the-revivalists.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-10-handlebar-nervosa@diypensacola

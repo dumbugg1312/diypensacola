@@ -36,6 +36,20 @@ LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-15-bettys-sapphic-saturday-eve.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-08-15-bettys-gage-scot-craig-ryan-pfeiffer@diypensacola
+DTSTAMP:20260815T000000Z
+DTSTART;TZID=America/Chicago:20260815T200000
+DTEND;TZID=America/Chicago:20260815T230000
+SUMMARY:Gage Scot Craig\, Ryan Pfeiffer\, Dan Hamilton\, Molly on-the-wheel
+  @ Betty's
+DESCRIPTION:pensacola comedy club saturday night stand-up at betty's\, augu
+ st 15th. gage scot craig\, ryan pfeiffer\, dan hamilton and molly on-the-w
+ heel. 8pm\, $10 cover.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-15-bettys-gage-scot-craig-ryan-pfeif
+ fer.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-08-20-bettys-dumpster-meds-torso-man@diypensacola
 DTSTAMP:20260820T000000Z
 DTSTART;TZID=America/Chicago:20260820T180000

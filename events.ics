@@ -21,65 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-11-jitterbug-zine-workshop-309-punk-project@diypensacola
-DTSTAMP:20260811T000000Z
-DTSTART;TZID=America/Chicago:20260811T170000
-DTEND;TZID=America/Chicago:20260811T200000
-SUMMARY:Zine Workshop (309 Punk Project) @ Jitterbug
-DESCRIPTION:zine workshop with 309 punk project at jitterbug\, tuesday augu
- st 11th\, 5 to 7. bring your ideas\, they bring the materials.
-LOCATION:Jitterbug
-URL:https://diypensacola.com/s/2026-08-11-jitterbug-zine-workshop-309-punk-
- project.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-12-the-den-mongo-stmblr@diypensacola
-DTSTAMP:20260812T000000Z
-DTSTART;TZID=America/Chicago:20260812T190000
-DTEND;TZID=America/Chicago:20260812T220000
-SUMMARY:Mongo\, STMBLR\, Ex-Teenage Rebels @ The Den
-DESCRIPTION:mongo (atl cavepunk)\, stmblr (new orleans scum)\, and ex-teena
- ge rebels at beulah den\, wednesday august 12th. all ages\, pay what you c
- an suggested donation. carpool!
-LOCATION:The Den
-URL:https://diypensacola.com/s/2026-08-12-the-den-mongo-stmblr.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-13-handlebar-steve-forbert@diypensacola
-DTSTAMP:20260813T000000Z
-DTSTART;TZID=America/Chicago:20260813T180000
-DTEND;TZID=America/Chicago:20260813T210000
-SUMMARY:Steve Forbert\, Anthony Crawford\, Savana Lee @ The Handlebar
-DESCRIPTION:steve forbert with anthony crawford and savana lee at the handl
- ebar\, thursday august 13th. doors 6pm.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-13-handlebar-steve-forbert.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-13-odd-colony-zine-workshop-309-punk-project@diypensacola
-DTSTAMP:20260813T000000Z
-DTSTART;TZID=America/Chicago:20260813T180000
-DTEND;TZID=America/Chicago:20260813T210000
-SUMMARY:Zine Workshop (309 Punk Project) @ Odd Colony
-DESCRIPTION:zine workshop with 309 punk project at odd colony\, thursday au
- gust 13th\, 6 to 8. bring your ideas\, they bring the materials.
-LOCATION:Odd Colony
-URL:https://diypensacola.com/s/2026-08-13-odd-colony-zine-workshop-309-punk
- -project.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-14-handlebar-katie-dineen@diypensacola
-DTSTAMP:20260814T000000Z
-DTSTART;TZID=America/Chicago:20260814T180000
-DTEND;TZID=America/Chicago:20260814T210000
-SUMMARY:Katie Dineen\, Logan Pilcher\, Tanner Lee Gray @ The Handlebar
-DESCRIPTION:katie dineen's album release show for 'simmer'\, with logan pil
- cher and tanner lee gray. the handlebar\, friday august 14th. doors 6pm\, 
- music at 7. sliding scale $10-$20.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-14-handlebar-katie-dineen.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-08-15-handlebar-heroes-for-ghosts@diypensacola
 DTSTAMP:20260815T000000Z
 DTSTART;TZID=America/Chicago:20260815T180000
@@ -119,16 +60,41 @@ LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-15-bettys-sapphic-saturday-eve.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-08-15-bettys-gage-scot-craig-ryan-pfeiffer@diypensacola
+DTSTAMP:20260815T000000Z
+DTSTART;TZID=America/Chicago:20260815T200000
+DTEND;TZID=America/Chicago:20260815T230000
+SUMMARY:Gage Scot Craig\, Ryan Pfeiffer\, Dan Hamilton\, Molly on-the-wheel
+  @ Betty's
+DESCRIPTION:pensacola comedy club saturday night stand-up at betty's\, augu
+ st 15th. gage scot craig\, ryan pfeiffer\, dan hamilton and molly on-the-w
+ heel. 8pm\, $10 cover.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-15-bettys-gage-scot-craig-ryan-pfeif
+ fer.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-08-16-handlebar-bounty-bloodrush@diypensacola
 DTSTAMP:20260816T000000Z
 DTSTART;TZID=America/Chicago:20260816T180000
 DTEND;TZID=America/Chicago:20260816T210000
-SUMMARY:Bounty\, Bloodrush\, Sacreus\, Silenced @ The Handlebar
+SUMMARY:Bounty\, Lesion\, Sacreus\, Silenced @ The Handlebar
 DESCRIPTION:bounty (texas metalcore) at the handlebar\, sunday august 16th.
-  with bloodrush\, sacreus\, and silenced. doors 6\, music 7. $10\, tickets
-  at thehandlebar850.com.
+  with lesion\, sacreus\, and silenced. doors 6\, music 7. $10\, tickets at
+  thehandlebar850.com.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-16-handlebar-bounty-bloodrush.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-16-handlebar-free-radio-pnx@diypensacola
+DTSTAMP:20260816T000000Z
+DTSTART;TZID=America/Chicago:20260816T140000
+DTEND;TZID=America/Chicago:20260816T170000
+SUMMARY:Free Radio PNX @ The Handlebar
+DESCRIPTION:sunday jams and wine at the handlebar with free radio pnx and n
+ ada wine\, sunday august 16th. 2 to 5pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-16-handlebar-free-radio-pnx.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-17-handlebar-gravery-fliora@diypensacola
@@ -386,15 +352,15 @@ URL:https://diypensacola.com/s/2026-09-05-blake-doyle-skatepark-tc-skate-ja
  m-2026.html
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-09-05-unconfirmed-throughline-puppetry@diypensacola
+UID:2026-09-05-undergrowth-throughline-puppetry@diypensacola
 DTSTAMP:20260905T000000Z
-DTSTART;TZID=America/Chicago:20260905T190000
-DTEND;TZID=America/Chicago:20260905T220000
+DTSTART;TZID=America/Chicago:20260905T180000
+DTEND;TZID=America/Chicago:20260905T210000
 SUMMARY:Throughline Puppetry @ The Undergrowth
 DESCRIPTION:throughline puppetry and the undergrowth present their first ev
  er puppet slam\, september 5th. theme is television.
 LOCATION:The Undergrowth
-URL:https://diypensacola.com/s/2026-09-05-unconfirmed-throughline-puppetry.
+URL:https://diypensacola.com/s/2026-09-05-undergrowth-throughline-puppetry.
  html
 END:VEVENT
 BEGIN:VEVENT
@@ -654,6 +620,20 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-22-handlebar-fenix-tx.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-22-downtown-music-hall-party-cannon-slugbleed@diypensacola
+DTSTAMP:20261022T000000Z
+DTSTART;TZID=America/Chicago:20261022T180000
+DTEND;TZID=America/Chicago:20261022T210000
+SUMMARY:Party Cannon\, Slugbleed\, Fogcrawler\, Spidershed @ Downtown Music
+  Hall
+DESCRIPTION:party cannon at downtown music hall\, thursday october 22nd. wi
+ th slugbleed\, fogcrawler\, and spidershed. doors 6\, music 7. $15 advance
+ \, $20 at the door.
+LOCATION:Downtown Music Hall
+URL:https://diypensacola.com/s/2026-10-22-downtown-music-hall-party-cannon-
+ slugbleed.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-25-handlebar-goodbye-june-danny-worsnop@diypensacola
 DTSTAMP:20261025T000000Z
 DTSTART;TZID=America/Chicago:20261025T190000
@@ -704,15 +684,17 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-14-handlebar-chrissy-chlapecka.html
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-22-handlebar-the-revivalists@diypensacola
+UID:2026-11-22-hunter-amphitheater-the-revivalists-hunter-metts@diypensacol
+ a
 DTSTAMP:20261122T000000Z
 DTSTART;TZID=America/Chicago:20261122T170000
 DTEND;TZID=America/Chicago:20261122T200000
-SUMMARY:The Revivalists\, Hunter Metts @ The Handlebar
-DESCRIPTION:the revivalists with hunter metts at the handlebar\, sunday nov
- ember 22nd. doors 5pm.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-22-handlebar-the-revivalists.html
+SUMMARY:The Revivalists\, Hunter Metts @ Hunter Amphitheater
+DESCRIPTION:the revivalists with hunter metts at hunter amphitheater\, sund
+ ay november 22nd. doors 5pm.
+LOCATION:Hunter Amphitheater
+URL:https://diypensacola.com/s/2026-11-22-hunter-amphitheater-the-revivalis
+ ts-hunter-metts.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-10-handlebar-nervosa@diypensacola
