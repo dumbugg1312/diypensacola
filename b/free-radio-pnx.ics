@@ -20,4 +20,15 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-08-16-handlebar-free-radio-pnx@diypensacola
+DTSTAMP:20260816T000000Z
+DTSTART;TZID=America/Chicago:20260816T140000
+DTEND;TZID=America/Chicago:20260816T170000
+SUMMARY:Free Radio PNX @ The Handlebar
+DESCRIPTION:sunday jams and wine at the handlebar with free radio pnx and n
+ ada wine\, sunday august 16th. 2 to 5pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-16-handlebar-free-radio-pnx.html
+END:VEVENT
 END:VCALENDAR

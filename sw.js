@@ -1,11 +1,11 @@
-var CACHE='diypensacola-8d58e96d0f4d';
+var CACHE='diypensacola-ca082b9fe28e';
 // CORE is the app shell (always precached). PRECACHE is this build's fonts plus
 // the flyers for tonight + this week, injected by build.py so someone who opens
 // the site fresh at a venue with no signal still sees this week's flyers instead
 // of logo placeholders. The versioned CACHE name means an old week's flyers evict
 // themselves on the next deploy. Both lists are added best-effort at install.
 var CORE=['./','index.html','offline.html','style.css','logo.png','manifest.webmanifest','icon-192.png','icon-512.png','apple-touch-icon.png'];
-var PRECACHE=["flyers/2026-08-11_jitterbug_zine-workshop-309-punk-project.jpg", "flyers/thumbs/2026-08-11_jitterbug_zine-workshop-309-punk-project.webp", "flyers/thumbs/2026-08-12_the-den_mongo.webp", "flyers/thumbs/2026-08-13_handlebar_steve-forbert.webp", "flyers/thumbs/2026-08-13_odd-colony_zine-workshop-309-punk-project.webp", "flyers/thumbs/2026-08-14_handlebar_katie-dineen.webp", "flyers/thumbs/flyer_2026-08-15_handlebar_heroes-for-ghosts.webp", "flyers/thumbs/2026-08-15_bettys_sapphic-saturday.webp", "flyers/thumbs/2026-08-16_handlebar_bounty.webp", "flyers/thumbs/2026-08-17_handlebar_gravery.webp", "flyers/thumbs/2026-08-20_handlebar_grave-chorus.webp", "flyers/thumbs/2026-08-20_bettys_dumpster-meds.webp", "flyers/thumbs/2026-08-21_handlebar_all-your-friends.webp", "flyers/thumbs/2026-08-22_handlebar_outta-pocket.webp", "flyers/thumbs/2026-08-22_handlebar_drag-lesque.webp", "flyers/thumbs/2026-08-23_handlebar_save-ferris.webp"];
+var PRECACHE=["flyers/flyer_2026-08-15_handlebar_heroes-for-ghosts.jpg", "flyers/thumbs/flyer_2026-08-15_handlebar_heroes-for-ghosts.webp", "flyers/2026-08-15_309_asha-dore.jpg", "flyers/thumbs/2026-08-15_309_asha-dore.webp", "flyers/2026-08-15_bettys_sapphic-saturday.jpg", "flyers/thumbs/2026-08-15_bettys_sapphic-saturday.webp", "flyers/2026-08-15_bettys_gage-scot-craig.jpg", "flyers/thumbs/2026-08-15_bettys_gage-scot-craig.webp", "flyers/thumbs/2026-08-16_handlebar_bounty.webp", "flyers/thumbs/2026-08-16_handlebar_free-radio-pnx.webp", "flyers/thumbs/2026-08-17_handlebar_gravery.webp", "flyers/thumbs/2026-08-20_handlebar_grave-chorus.webp", "flyers/thumbs/2026-08-20_bettys_dumpster-meds.webp", "flyers/thumbs/2026-08-21_handlebar_all-your-friends.webp", "flyers/thumbs/2026-08-22_handlebar_outta-pocket.webp", "flyers/thumbs/2026-08-22_handlebar_drag-lesque.webp", "flyers/thumbs/2026-08-23_handlebar_save-ferris.webp"];
 CORE=CORE.concat(PRECACHE);
 self.addEventListener('install',function(e){
   self.skipWaiting();

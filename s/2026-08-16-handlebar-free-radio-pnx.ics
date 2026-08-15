@@ -21,18 +21,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-22-handlebar-the-revivalists@diypensacola
-DTSTAMP:20261122T000000Z
-DTSTART;TZID=America/Chicago:20261122T170000
-DTEND;TZID=America/Chicago:20261122T200000
-SUMMARY:The Revivalists\, Hunter Metts @ The Handlebar
-DESCRIPTION:the revivalists with hunter metts at the handlebar\, sunday nov
- ember 22nd. doors 5pm.
+UID:2026-08-16-handlebar-free-radio-pnx@diypensacola
+DTSTAMP:20260816T000000Z
+DTSTART;TZID=America/Chicago:20260816T140000
+DTEND;TZID=America/Chicago:20260816T170000
+SUMMARY:Free Radio PNX @ The Handlebar
+DESCRIPTION:sunday jams and wine at the handlebar with free radio pnx and n
+ ada wine\, sunday august 16th. 2 to 5pm.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-22-handlebar-the-revivalists.html
+URL:https://diypensacola.com/s/2026-08-16-handlebar-free-radio-pnx.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: The Revivalists\, Hunter Metts @ The Handlebar
+DESCRIPTION:tonight: Free Radio PNX @ The Handlebar
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
