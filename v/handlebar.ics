@@ -21,19 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-15-handlebar-heroes-for-ghosts@diypensacola
-DTSTAMP:20260815T000000Z
-DTSTART;TZID=America/Chicago:20260815T180000
-DTEND;TZID=America/Chicago:20260815T210000
-SUMMARY:Heroes For Ghosts\, Spiritless\, Afterdusk\, Caving In @ The Handle
- bar
-DESCRIPTION:heroes for ghosts and spiritless at the handlebar saturday augu
- st 15\, with local support from afterdusk and caving in. doors 6\, show 7.
-  $15 at the door.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-15-handlebar-heroes-for-ghosts.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-08-16-handlebar-bounty-bloodrush@diypensacola
 DTSTAMP:20260816T000000Z
 DTSTART;TZID=America/Chicago:20260816T180000
@@ -392,6 +379,18 @@ SUMMARY:Cole Barnhill @ The Handlebar
 DESCRIPTION:cole barnhill at the handlebar\, friday october 2nd. doors 7pm.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-02-handlebar-cole-barnhill.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-06-handlebar-xasthur-temple-of-the-fuzz-witch@diypensacola
+DTSTAMP:20261006T000000Z
+DTSTART;TZID=America/Chicago:20261006T190000
+DTEND;TZID=America/Chicago:20261006T220000
+SUMMARY:Xasthur\, Temple of the Fuzz Witch @ The Handlebar
+DESCRIPTION:xasthur and temple of the fuzz witch hit the handlebar tuesday\
+ , october 6th\, on the go and do something witchy tour.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-06-handlebar-xasthur-temple-of-the-f
+ uzz-witch.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-07-handlebar-belmont-super-sometimes@diypensacola

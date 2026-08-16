@@ -20,19 +20,4 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-UID:2026-08-15-bettys-sapphic-saturday-eve@diypensacola
-DTSTAMP:20260815T000000Z
-DTSTART;TZID=America/Chicago:20260815T190000
-DTEND;TZID=America/Chicago:20260815T220000
-SUMMARY:Sapphic Saturday\, Eve\, Ick Zosted\, Pat MiDown\, Ray Darling\, Sw
- eet Lady Sleeze\, Devin X\, Miss Rainbow\, pole kitty VulcanBaby\, Violet 
- Vibrations\, Lady Grace\, DJ Balance Universal\, Platinum Muse @ Betty's
-DESCRIPTION:sapphic saturday at betty's\, saturday august 15th. eve\, ick z
- osted\, pat midown\, ray darling\, sweet lady sleeze\, devin x\, miss rain
- bow\, pole kitty vulcanbaby\, violet vibrations\, lady grace\, dj balance 
- universal\, and platinum muse. $15.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-15-bettys-sapphic-saturday-eve.html
-END:VEVENT
 END:VCALENDAR
