@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola Shows
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-08-27-bettys-bryan-raymond-ramblin-ricky-tate@diypensacola
+DTSTAMP:20260827T000000Z
+DTSTART;TZID=America/Chicago:20260827T180000
+DTEND;TZID=America/Chicago:20260827T210000
+SUMMARY:Bryan Raymond\, Ramblin Ricky Tate\, Outlook Bleak\, LAM\, Conflict
+  of Interest\, Stufy @ Betty's
+DESCRIPTION:bryan raymond and ramblin ricky tate bring the hot sauce hell r
+ aisers tour to betty's this thursday\, august 27th\, with outlook bleak\, 
+ conflict of interests\, and stufy. market at 6pm\, music at 8pm\, $5 to $1
+ 0 sliding scale. lou and jon's send-off before they move to oahu.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-27-bettys-bryan-raymond-ramblin-rick
+ y-tate.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: Bryan Raymond\, Ramblin Ricky Tate\, Outlook Bleak\, L
+ AM\, Conflict of Interest\, Stufy @ Betty's
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -21,35 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-15-bettys-sapphic-saturday-eve@diypensacola
-DTSTAMP:20260815T000000Z
-DTSTART;TZID=America/Chicago:20260815T190000
-DTEND;TZID=America/Chicago:20260815T220000
-SUMMARY:Sapphic Saturday\, Eve\, Ick Zosted\, Pat MiDown\, Ray Darling\, Sw
- eet Lady Sleeze\, Devin X\, Miss Rainbow\, pole kitty VulcanBaby\, Violet 
- Vibrations\, Lady Grace\, DJ Balance Universal\, Platinum Muse @ Betty's
-DESCRIPTION:sapphic saturday at betty's\, saturday august 15th. eve\, ick z
- osted\, pat midown\, ray darling\, sweet lady sleeze\, devin x\, miss rain
- bow\, pole kitty vulcanbaby\, violet vibrations\, lady grace\, dj balance 
- universal\, and platinum muse. $15.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-15-bettys-sapphic-saturday-eve.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-15-bettys-gage-scot-craig-ryan-pfeiffer@diypensacola
-DTSTAMP:20260815T000000Z
-DTSTART;TZID=America/Chicago:20260815T200000
-DTEND;TZID=America/Chicago:20260815T230000
-SUMMARY:Gage Scot Craig\, Ryan Pfeiffer\, Dan Hamilton\, Molly on-the-wheel
-  @ Betty's
-DESCRIPTION:pensacola comedy club saturday night stand-up at betty's\, augu
- st 15th. gage scot craig\, ryan pfeiffer\, dan hamilton and molly on-the-w
- heel. 8pm\, $10 cover.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-15-bettys-gage-scot-craig-ryan-pfeif
- fer.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-08-20-bettys-dumpster-meds-torso-man@diypensacola
 DTSTAMP:20260820T000000Z
 DTSTART;TZID=America/Chicago:20260820T180000
@@ -65,17 +36,19 @@ URL:https://diypensacola.com/s/2026-08-20-bettys-dumpster-meds-torso-man.ht
  ml
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-08-27-bettys-ramblin-ricky-tate@diypensacola
+UID:2026-08-27-bettys-bryan-raymond-ramblin-ricky-tate@diypensacola
 DTSTAMP:20260827T000000Z
-DTSTART;TZID=America/Chicago:20260827T190000
-DTEND;TZID=America/Chicago:20260827T220000
-SUMMARY:Bryan Raymond\, Ramblin Ricky Tate\, STUFY\, Good Night Geezer @ Be
- tty's
+DTSTART;TZID=America/Chicago:20260827T180000
+DTEND;TZID=America/Chicago:20260827T210000
+SUMMARY:Bryan Raymond\, Ramblin Ricky Tate\, Outlook Bleak\, LAM\, Conflict
+  of Interest\, Stufy @ Betty's
 DESCRIPTION:bryan raymond and ramblin ricky tate bring the hot sauce hell r
- aisers tour to betty's. thursday august 27\, 506 w belmont. with stufy and
-  good night geezer.
+ aisers tour to betty's this thursday\, august 27th\, with outlook bleak\, 
+ conflict of interests\, and stufy. market at 6pm\, music at 8pm\, $5 to $1
+ 0 sliding scale. lou and jon's send-off before they move to oahu.
 LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-27-bettys-ramblin-ricky-tate.html
+URL:https://diypensacola.com/s/2026-08-27-bettys-bryan-raymond-ramblin-rick
+ y-tate.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-28-bettys-noiseheads-i-hate-sundays@diypensacola
