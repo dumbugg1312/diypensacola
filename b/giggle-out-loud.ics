@@ -20,4 +20,18 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-08-19-handlebar-tori-lucia-katie-dineen-jacob-palmer@diypensacola
+DTSTAMP:20260819T000000Z
+DTSTART;TZID=America/Chicago:20260819T180000
+DTEND;TZID=America/Chicago:20260819T210000
+SUMMARY:Tori Lucia\, Katie Dineen & Jacob Palmer\, Giggle Out Loud @ The Ha
+ ndlebar
+DESCRIPTION:tori lucia\, katie dineen & jacob palmer\, and giggle out loud 
+ play vins-aid at the handlebar wednesday\, august 19th. a musical fundrais
+ er for the vinson campaign\, 6pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-19-handlebar-tori-lucia-katie-dineen
+ -jacob-palmer.html
+END:VEVENT
 END:VCALENDAR

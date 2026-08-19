@@ -21,19 +21,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-16-handlebar-bounty-bloodrush@diypensacola
-DTSTAMP:20260816T000000Z
-DTSTART;TZID=America/Chicago:20260816T180000
-DTEND;TZID=America/Chicago:20260816T210000
-SUMMARY:Bounty\, Lesion\, Sacreus\, Silenced @ The Handlebar
-DESCRIPTION:bounty (texas metalcore) at the handlebar\, sunday august 16th.
-  with lesion\, sacreus\, and silenced. doors 6\, music 7. $10\, tickets at
-  thehandlebar850.com.
+UID:2026-08-30-handlebar-lasento@diypensacola
+DTSTAMP:20260830T000000Z
+DTSTART;TZID=America/Chicago:20260830T140000
+DTEND;TZID=America/Chicago:20260830T170000
+SUMMARY:Lasento @ The Handlebar
+DESCRIPTION:lasento at the handlebar sunday\, august 30th. free show\, door
+ s at 2.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-16-handlebar-bounty-bloodrush.html
+URL:https://diypensacola.com/s/2026-08-30-handlebar-lasento.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Bounty\, Lesion\, Sacreus\, Silenced @ The Handlebar
+DESCRIPTION:tonight: Lasento @ The Handlebar
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT

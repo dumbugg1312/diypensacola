@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola Shows
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-10-31-handlebar-nuovo-testamento-night-sins@diypensacola
+DTSTAMP:20261031T000000Z
+DTSTART;TZID=America/Chicago:20261031T180000
+DTEND;TZID=America/Chicago:20261031T210000
+SUMMARY:Nuovo Testamento\, Night Sins\, Urban Heat\, Grave Chorus\, DJ Pose
+ idon\, Kuru Remstate @ The Handlebar
+DESCRIPTION:nuovo testamento\, night sins\, urban heat\, and grave chorus a
+ t the handlebar on halloween. doors at 6\, with dj poseidon and kuru remst
+ ate spinning all night.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-31-handlebar-nuovo-testamento-night-
+ sins.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: Nuovo Testamento\, Night Sins\, Urban Heat\, Grave Cho
+ rus\, DJ Poseidon\, Kuru Remstate @ The Handlebar
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
