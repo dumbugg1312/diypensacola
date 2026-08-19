@@ -1,11 +1,11 @@
-var CACHE='diypensacola-23355c4f8b94';
+var CACHE='diypensacola-5a336d3be8e8';
 // CORE is the app shell (always precached). PRECACHE is this build's fonts plus
 // the flyers for tonight + this week, injected by build.py so someone who opens
 // the site fresh at a venue with no signal still sees this week's flyers instead
 // of logo placeholders. The versioned CACHE name means an old week's flyers evict
 // themselves on the next deploy. Both lists are added best-effort at install.
 var CORE=['./','index.html','offline.html','style.css','logo.png','manifest.webmanifest','icon-192.png','icon-512.png','apple-touch-icon.png'];
-var PRECACHE=["flyers/2026-08-16_handlebar_bounty.jpg", "flyers/thumbs/2026-08-16_handlebar_bounty.webp", "flyers/2026-08-16_handlebar_free-radio-pnx.jpg", "flyers/thumbs/2026-08-16_handlebar_free-radio-pnx.webp", "flyers/thumbs/2026-08-17_handlebar_gravery.webp", "flyers/thumbs/2026-08-20_handlebar_grave-chorus.webp", "flyers/thumbs/2026-08-20_bettys_dumpster-meds.webp", "flyers/thumbs/2026-08-21_handlebar_all-your-friends.webp", "flyers/thumbs/2026-08-22_handlebar_outta-pocket.webp", "flyers/thumbs/2026-08-22_handlebar_drag-lesque.webp", "flyers/thumbs/2026-08-23_handlebar_save-ferris.webp"];
+var PRECACHE=["flyers/2026-08-19_handlebar_tori-lucia.jpg", "flyers/thumbs/2026-08-19_handlebar_tori-lucia.webp", "flyers/thumbs/2026-08-20_handlebar_grave-chorus.webp", "flyers/thumbs/2026-08-20_bettys_dumpster-meds.webp", "flyers/thumbs/2026-08-21_handlebar_all-your-friends.webp", "flyers/thumbs/2026-08-22_handlebar_outta-pocket.webp", "flyers/thumbs/2026-08-22_handlebar_drag-lesque.webp", "flyers/thumbs/2026-08-23_handlebar_save-ferris.webp", "flyers/thumbs/2026-08-25_handlebar_emarosa.webp", "flyers/thumbs/2026-08-27_bettys_bryan-raymond.webp", "flyers/thumbs/2026-08-27_handlebar_foxtide.webp", "flyers/thumbs/2026-08-27_waterboyz_paupers-grave.webp", "flyers/thumbs/2026-08-28_bettys_noiseheads.webp", "flyers/thumbs/2026-08-28_handlebar_alices-chainsaw-repair.webp", "flyers/thumbs/2026-08-29_handlebar_nowhere2runs-bloodrave.webp", "flyers/thumbs/2026-08-29_bettys_rat-daughter.webp", "flyers/thumbs/2026-08-30_handlebar_stand-back.webp"];
 CORE=CORE.concat(PRECACHE);
 self.addEventListener('install',function(e){
   self.skipWaiting();

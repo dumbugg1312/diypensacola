@@ -20,4 +20,16 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-09-05-bettys-scott-h-biram-cockfight@diypensacola
+DTSTAMP:20260905T000000Z
+DTSTART;TZID=America/Chicago:20260905T200000
+DTEND;TZID=America/Chicago:20260905T230000
+SUMMARY:Scott H. Biram\, Cockfight\, Marc Ganancias @ Betty's
+DESCRIPTION:scott h. biram with cockfight and marc ganancias at betty's sat
+ urday\, september 5th. doors at 8\, music at 9\, $12 at the door\, 18+.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-05-bettys-scott-h-biram-cockfight.ht
+ ml
+END:VEVENT
 END:VCALENDAR

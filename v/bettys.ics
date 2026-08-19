@@ -75,6 +75,18 @@ LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-29-bettys-rat-daughter-boof.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-09-05-bettys-scott-h-biram-cockfight@diypensacola
+DTSTAMP:20260905T000000Z
+DTSTART;TZID=America/Chicago:20260905T200000
+DTEND;TZID=America/Chicago:20260905T230000
+SUMMARY:Scott H. Biram\, Cockfight\, Marc Ganancias @ Betty's
+DESCRIPTION:scott h. biram with cockfight and marc ganancias at betty's sat
+ urday\, september 5th. doors at 8\, music at 9\, $12 at the door\, 18+.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-05-bettys-scott-h-biram-cockfight.ht
+ ml
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-09-09-bettys-isaac-rother-the-phantoms@diypensacola
 DTSTAMP:20260909T000000Z
 DTSTART;TZID=America/Chicago:20260909T190000
@@ -97,6 +109,23 @@ DESCRIPTION:the unnaturals (new orleans surf rock)\, pauper's grave\, and c
 LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-11-bettys-the-unnaturals-paupers-gra
  ve.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-26-bettys-comedians-in-drag-doing-comedy-dallas-nelson@diypensa
+ cola
+DTSTAMP:20260926T000000Z
+DTSTART;TZID=America/Chicago:20260926T203000
+DTEND;TZID=America/Chicago:20260926T233000
+SUMMARY:Comedians in Drag Doing Comedy\, Dallas Nelson "Cherry Highman"\, J
+ essie Morrow "Connie Langus"\, Cristina Morandi "Anus Young"\, Dr. Anna Le
+ peley @ Betty's
+DESCRIPTION:comedians in drag doing comedy at betty's\, saturday september 
+ 26th. dallas nelson (cherry highman)\, jessie morrow (connie langus)\, cri
+ stina morandi (anus young)\, and a mystery comedian tba. hosted by dr. ann
+ a lepeley. doors 8:30\, showtime 9\, $20. bring cash to tip.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-26-bettys-comedians-in-drag-doing-co
+ medy-dallas-nelson.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-03-bettys-james-hall-the-ladies-of-valerie-sassyfras@diypensaco
