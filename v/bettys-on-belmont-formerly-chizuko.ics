@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Betty's
+X-WR-CALNAME:DIYPensacola: Betty's on Belmont (formerly Chizuko)
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago
@@ -20,120 +20,4 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-UID:2026-08-22-bettys-7-7-pnx@diypensacola
-DTSTAMP:20260822T000000Z
-DTSTART;TZID=America/Chicago:20260822T190000
-DTEND;TZID=America/Chicago:20260822T220000
-SUMMARY:7.7 PNX @ Betty's
-DESCRIPTION:7.7 pnx dance party at betty's\, saturday august 22nd. roots ro
- ck\, garage\, post punk and disco all night.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-22-bettys-7-7-pnx.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-27-bettys-bryan-raymond-ramblin-ricky-tate@diypensacola
-DTSTAMP:20260827T000000Z
-DTSTART;TZID=America/Chicago:20260827T180000
-DTEND;TZID=America/Chicago:20260827T210000
-SUMMARY:Bryan Raymond\, Ramblin Ricky Tate\, Outlook Bleak\, LAM\, Conflict
-  of Interest\, Stufy @ Betty's
-DESCRIPTION:bryan raymond and ramblin ricky tate bring the hot sauce hell r
- aisers tour to betty's this thursday\, august 27th\, with outlook bleak\, 
- conflict of interests\, and stufy. market at 6pm\, music at 8pm\, $5 to $1
- 0 sliding scale. lou and jon's send-off before they move to oahu.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-27-bettys-bryan-raymond-ramblin-rick
- y-tate.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-28-bettys-noiseheads-i-hate-sundays@diypensacola
-DTSTAMP:20260828T000000Z
-DTSTART;TZID=America/Chicago:20260828T200000
-DTEND;TZID=America/Chicago:20260828T230000
-SUMMARY:Noiseheads\, I Hate Sundays\, Mothersmilk @ Betty's on Belmont
-DESCRIPTION:noiseheads\, i hate sundays\, and mothersmilk at betty's friday
-  august 28. doors 8pm.
-LOCATION:Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-28-bettys-noiseheads-i-hate-sundays.
- html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-29-bettys-rat-daughter-boof@diypensacola
-DTSTAMP:20260829T000000Z
-DTSTART;TZID=America/Chicago:20260829T190000
-DTEND;TZID=America/Chicago:20260829T220000
-SUMMARY:Rat Daughter\, Boof\, Other\, The Fuckless\, Wynter @ Betty's
-DESCRIPTION:rat daughter\, boof\, other\, the fuckless and wynter at betty'
- s on belmont\, saturday august 29th. lady fest 13 closes out with tarot re
- adings.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-29-bettys-rat-daughter-boof.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-05-bettys-scott-h-biram-cockfight@diypensacola
-DTSTAMP:20260905T000000Z
-DTSTART;TZID=America/Chicago:20260905T200000
-DTEND;TZID=America/Chicago:20260905T230000
-SUMMARY:Scott H. Biram\, Cockfight\, Marc Ganancias @ Betty's
-DESCRIPTION:scott h. biram with cockfight and marc ganancias at betty's sat
- urday\, september 5th. doors at 8\, music at 9\, $12 at the door\, 18+.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-05-bettys-scott-h-biram-cockfight.ht
- ml
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-09-bettys-isaac-rother-the-phantoms@diypensacola
-DTSTAMP:20260909T000000Z
-DTSTART;TZID=America/Chicago:20260909T190000
-DTEND;TZID=America/Chicago:20260909T220000
-SUMMARY:Isaac Rother & The Phantoms\, Future Hate @ Betty's
-DESCRIPTION:the phantom and future hate at betty's\, wednesday september 9t
- h. all ages\, tickets through eventbrite.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-09-bettys-isaac-rother-the-phantoms.
- html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-11-bettys-the-unnaturals-paupers-grave@diypensacola
-DTSTAMP:20260911T000000Z
-DTSTART;TZID=America/Chicago:20260911T200000
-DTEND;TZID=America/Chicago:20260911T230000
-SUMMARY:The Unnaturals\, Pauper's Grave\, Crystal Plumage @ Betty's
-DESCRIPTION:the unnaturals (new orleans surf rock)\, pauper's grave\, and c
- rystal plumage at betty's friday september 11th. doors 8\, show 9. $10.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-11-bettys-the-unnaturals-paupers-gra
- ve.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-26-bettys-comedians-in-drag-doing-comedy-dallas-nelson@diypensa
- cola
-DTSTAMP:20260926T000000Z
-DTSTART;TZID=America/Chicago:20260926T203000
-DTEND;TZID=America/Chicago:20260926T233000
-SUMMARY:Comedians in Drag Doing Comedy\, Dallas Nelson "Cherry Highman"\, J
- essie Morrow "Connie Langus"\, Cristina Morandi "Anus Young"\, Dr. Anna Le
- peley @ Betty's
-DESCRIPTION:comedians in drag doing comedy at betty's\, saturday september 
- 26th. dallas nelson (cherry highman)\, jessie morrow (connie langus)\, cri
- stina morandi (anus young)\, and a mystery comedian tba. hosted by dr. ann
- a lepeley. doors 8:30\, showtime 9\, $20. bring cash to tip.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-26-bettys-comedians-in-drag-doing-co
- medy-dallas-nelson.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-03-bettys-james-hall-the-ladies-of-valerie-sassyfras@diypensaco
- la
-DTSTAMP:20261003T000000Z
-DTSTART;TZID=America/Chicago:20261003T190000
-DTEND;TZID=America/Chicago:20261003T220000
-SUMMARY:James Hall & the Ladies of...\, Valerie SassyFras @ Betty's
-DESCRIPTION:james hall & the ladies of... with valerie sassyfras at betty's
-  saturday october 3rd. $10.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-03-bettys-james-hall-the-ladies-of-v
- alerie-sassyfras.html
-END:VEVENT
 END:VCALENDAR

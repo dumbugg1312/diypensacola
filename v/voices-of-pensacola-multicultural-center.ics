@@ -1,8 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Voices of Pensacola Multicultural Center\, 117 E
-  Government St\, Pensacola FL
+X-WR-CALNAME:DIYPensacola: Voices of Pensacola Multicultural Center
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago
