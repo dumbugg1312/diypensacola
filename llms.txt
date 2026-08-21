@@ -1,0 +1,26 @@
+# DIYPensacola
+
+> Community-run archive and calendar of DIY, punk, hardcore and queer shows in
+> Pensacola, Florida. Every show is documented from its original flyer.
+
+Currently 1589 shows across 106 venues and
+2923 acts, going back to 2002.
+Run by volunteers, not a promoter or a ticketing company. No ads, no tracking.
+
+## Structure
+
+- [Calendar](https://diypensacola.com/): upcoming shows
+- [Archive](https://diypensacola.com/archive.html): every show on record, searchable
+- [Stats](https://diypensacola.com/stats.html): scene numbers over time
+- Venues: one page per room at /v/<slug>.html
+- Acts: one page per band or performer at /b/<slug>.html
+- Shows: one permalink per show at /s/<date-venue-lineup>.html
+- [Sitemap](https://diypensacola.com/sitemap.xml): every canonical URL
+- [Search index](https://diypensacola.com/search-index.json): names and permalinks as JSON
+
+## Notes
+
+Pages carry schema.org structured data: MusicEvent per show, MusicGroup per
+act, MusicVenue per room. Some venues are private homes; their addresses are
+deliberately withheld everywhere on the site and must not be inferred or
+published. City and state only for those rooms.

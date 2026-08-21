@@ -21,19 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-20-bettys-dumpster-meds-torso-man@diypensacola
-DTSTAMP:20260820T000000Z
-DTSTART;TZID=America/Chicago:20260820T180000
-DTEND;TZID=America/Chicago:20260820T210000
-SUMMARY:Dumpster Meds\, Torso Man\, Tape & Tears\, Quiver the Busker\, Spid
- er Bucket\, Dentada @ Betty's
-DESCRIPTION:folk punk show and night market at betty's\, thursday august 20
- th. dumpster meds\, torso man\, tape & tears\, quiver the busker\, spider 
- bucket\, dentada. doors 6pm\, music 7pm. free show\, with free harm reduct
- ion and reproductive rights supplies.
+UID:2026-08-22-bettys-7-7-pnx@diypensacola
+DTSTAMP:20260822T000000Z
+DTSTART;TZID=America/Chicago:20260822T190000
+DTEND;TZID=America/Chicago:20260822T220000
+SUMMARY:7.7 PNX @ Betty's
+DESCRIPTION:7.7 pnx dance party at betty's\, saturday august 22nd. roots ro
+ ck\, garage\, post punk and disco all night.
 LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-20-bettys-dumpster-meds-torso-man.ht
- ml
+URL:https://diypensacola.com/s/2026-08-22-bettys-7-7-pnx.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-27-bettys-bryan-raymond-ramblin-ricky-tate@diypensacola
