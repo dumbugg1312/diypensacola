@@ -21,49 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-19-handlebar-tori-lucia-katie-dineen-jacob-palmer@diypensacola
-DTSTAMP:20260819T000000Z
-DTSTART;TZID=America/Chicago:20260819T180000
-DTEND;TZID=America/Chicago:20260819T210000
-SUMMARY:Tori Lucia\, Katie Dineen & Jacob Palmer\, Giggle Out Loud @ The Ha
- ndlebar
-DESCRIPTION:tori lucia\, katie dineen & jacob palmer\, and giggle out loud 
- play vins-aid at the handlebar wednesday\, august 19th. a musical fundrais
- er for the vinson campaign\, 6pm.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-19-handlebar-tori-lucia-katie-dineen
- -jacob-palmer.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-20-handlebar-grave-chorus-conflict-of-interests@diypensacola
-DTSTAMP:20260820T000000Z
-DTSTART;TZID=America/Chicago:20260820T180000
-DTEND;TZID=America/Chicago:20260820T210000
-SUMMARY:Grave Chorus\, Conflict of Interests\, Coastal High School\, IHATES
- UNDAYS @ The Handlebar
-DESCRIPTION:grave chorus\, conflict of interests\, coastal high school\, ih
- atesundays at the handlebar this thursday\, august 20th. doors 6\, music 7
- . $10.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-20-handlebar-grave-chorus-conflict-o
- f-interests.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-20-bettys-dumpster-meds-torso-man@diypensacola
-DTSTAMP:20260820T000000Z
-DTSTART;TZID=America/Chicago:20260820T180000
-DTEND;TZID=America/Chicago:20260820T210000
-SUMMARY:Dumpster Meds\, Torso Man\, Tape & Tears\, Quiver the Busker\, Spid
- er Bucket\, Dentada @ Betty's
-DESCRIPTION:folk punk show and night market at betty's\, thursday august 20
- th. dumpster meds\, torso man\, tape & tears\, quiver the busker\, spider 
- bucket\, dentada. doors 6pm\, music 7pm. free show\, with free harm reduct
- ion and reproductive rights supplies.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-20-bettys-dumpster-meds-torso-man.ht
- ml
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-08-21-handlebar-all-your-friends@diypensacola
 DTSTAMP:20260821T000000Z
 DTSTART;TZID=America/Chicago:20260821T200000
@@ -102,6 +59,17 @@ URL:https://diypensacola.com/s/2026-08-22-handlebar-drag-lesque-the-revue-x
  ena-morphine.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-08-22-bettys-7-7-pnx@diypensacola
+DTSTAMP:20260822T000000Z
+DTSTART;TZID=America/Chicago:20260822T190000
+DTEND;TZID=America/Chicago:20260822T220000
+SUMMARY:7.7 PNX @ Betty's
+DESCRIPTION:7.7 pnx dance party at betty's\, saturday august 22nd. roots ro
+ ck\, garage\, post punk and disco all night.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-22-bettys-7-7-pnx.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-08-23-handlebar-save-ferris@diypensacola
 DTSTAMP:20260823T000000Z
 DTSTART;TZID=America/Chicago:20260823T180000
@@ -122,6 +90,18 @@ DESCRIPTION:emarosa\, veaux\, slo/tide\, and dreamfone at the handlebar\, t
  uesday august 25th. 6:30pm.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-25-handlebar-emarosa-veaux.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-26-handlebar-improvable-cause@diypensacola
+DTSTAMP:20260826T000000Z
+DTSTART;TZID=America/Chicago:20260826T190000
+DTEND;TZID=America/Chicago:20260826T220000
+SUMMARY:Improvable Cause @ The Handlebar
+DESCRIPTION:improvable cause presents "cheese for the table" at the handleb
+ ar\, wednesday august 26th. doors 7\, show 7:30. a night of long form impr
+ ov.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-26-handlebar-improvable-cause.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-27-bettys-bryan-raymond-ramblin-ricky-tate@diypensacola
@@ -314,6 +294,20 @@ DESCRIPTION:scott h. biram with cockfight and marc ganancias at betty's sat
 LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-05-bettys-scott-h-biram-cockfight.ht
  ml
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-08-handlebar-major-moment-serenas-fire@diypensacola
+DTSTAMP:20260908T000000Z
+DTSTART;TZID=America/Chicago:20260908T180000
+DTEND;TZID=America/Chicago:20260908T210000
+SUMMARY:Major Moment\, Serena's Fire\, Super Power Activation Matrix @ The 
+ Handlebar
+DESCRIPTION:major moment with serena's fire and super power activation matr
+ ix at the handlebar\, tuesday september 8th. doors 6\, music 7. $15 advanc
+ e\, $20 at the door\, all ages.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-08-handlebar-major-moment-serenas-fi
+ re.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-09-bettys-isaac-rother-the-phantoms@diypensacola
