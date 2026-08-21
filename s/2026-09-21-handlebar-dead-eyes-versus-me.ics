@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Versus Me
+X-WR-CALNAME:DIYPensacola Shows
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago
@@ -31,5 +31,10 @@ DESCRIPTION:dead eyes at the handlebar\, monday september 21st\, with versu
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-21-handlebar-dead-eyes-versus-me.htm
  l
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: Dead Eyes\, Versus Me @ The Handlebar
+TRIGGER:-PT2H
+END:VALARM
 END:VEVENT
 END:VCALENDAR

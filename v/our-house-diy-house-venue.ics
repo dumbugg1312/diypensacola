@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Undergrowth
+X-WR-CALNAME:DIYPensacola: Our House (DIY house venue)
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago
@@ -20,16 +20,4 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-UID:2026-09-05-undergrowth-throughline-puppetry@diypensacola
-DTSTAMP:20260905T000000Z
-DTSTART;TZID=America/Chicago:20260905T180000
-DTEND;TZID=America/Chicago:20260905T210000
-SUMMARY:Throughline Puppetry @ The Undergrowth
-DESCRIPTION:throughline puppetry and the undergrowth present their first ev
- er puppet slam\, september 5th. theme is television.
-LOCATION:The Undergrowth
-URL:https://diypensacola.com/s/2026-09-05-undergrowth-throughline-puppetry.
- html
-END:VEVENT
 END:VCALENDAR

@@ -426,6 +426,18 @@ LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-20-309-views-from-the-ground.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-09-21-handlebar-dead-eyes-versus-me@diypensacola
+DTSTAMP:20260921T000000Z
+DTSTART;TZID=America/Chicago:20260921T180000
+DTEND;TZID=America/Chicago:20260921T210000
+SUMMARY:Dead Eyes\, Versus Me @ The Handlebar
+DESCRIPTION:dead eyes at the handlebar\, monday september 21st\, with versu
+ s me. doors 6pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-21-handlebar-dead-eyes-versus-me.htm
+ l
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-09-22-handlebar-sports-remo-drive@diypensacola
 DTSTAMP:20260922T000000Z
 DTSTART;TZID=America/Chicago:20260922T190000
@@ -695,6 +707,17 @@ DESCRIPTION:the revivalists with hunter metts at hunter amphitheater\, sund
 LOCATION:Hunter Amphitheater
 URL:https://diypensacola.com/s/2026-11-22-hunter-amphitheater-the-revivalis
  ts-hunter-metts.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-18-handlebar-whitmer-thomas@diypensacola
+DTSTAMP:20261218T000000Z
+DTSTART;TZID=America/Chicago:20261218T190000
+DTEND;TZID=America/Chicago:20261218T220000
+SUMMARY:Whitmer Thomas @ The Handlebar
+DESCRIPTION:whitmer thomas at the handlebar\, friday december 18th. tickets
+  on sale now.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-18-handlebar-whitmer-thomas.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-10-handlebar-nervosa@diypensacola
