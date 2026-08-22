@@ -27,7 +27,7 @@ body{margin:0;background-color:var(--bg);color:var(--ink);font:16px/1.5 "Special
   background-repeat:no-repeat,repeat}
 a{color:var(--hotink)}
 /* typography polish: balanced heading line-breaks + orphan-free prose. Progressive
-   enhancement — silently ignored where unsupported. */
+   enhancement - silently ignored where unsupported. */
 h1,h2,h3,.ehead{text-wrap:balance}
 .glead,.post p,.dcap,.emptybig p{text-wrap:pretty}
 header{padding:2.2rem 1rem .3rem;text-align:center}
@@ -48,6 +48,11 @@ header h1 a{color:inherit;text-decoration:none}
   border:2px solid #111;box-shadow:3px 3px 0 var(--hot);text-transform:uppercase;letter-spacing:.05em}
 .links a:nth-child(odd){transform:rotate(-1.5deg)}.links a:nth-child(even){transform:rotate(1.2deg)}
 .links a:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
+/* the section you're actually on reads as already-stamped: filled, flat to the
+   page, no tilt and no shadow, so the nav says where you are and not only where
+   you can go. Same idea as .modetab.on, in tape-label language. */
+.links a[aria-current="page"],.subnav a[aria-current="page"]{
+  background:var(--hot);color:var(--on-hot);box-shadow:none;transform:none;cursor:default}
 /* the CALENDAR / ARCHIVE mode switch under the wordmark: the site's two halves
    as one segmented control. Deliberately NOT a tape button (those are the
    off-site links) but a single stamped ink box split down the middle, two equal
@@ -70,7 +75,7 @@ header h1 a{color:inherit;text-decoration:none}
    ".showpage header" below gets on every other subpage, so neither half of the
    site reads as a lesser page. .bighead re-overrides display/text-align back to
    the homepage's centered block layout; it must NOT touch logo/tag sizing (that
-   used to drift the archive's masthead smaller than the calendar's — removed,
+   used to drift the archive's masthead smaller than the calendar's - removed,
    so both pages inherit the exact same header/.logo/.tag rules above). */
 .showpage header.bighead{display:block;text-align:center;padding:2.2rem 1rem .3rem}
 @media (max-width:640px){
@@ -167,7 +172,7 @@ body:has(#grid:target) a[href='#grid']{border:2px solid var(--hot);background:va
 #b-tonight .show{box-shadow:6px 6px 0 var(--hot)}
 /* tonight cards already wear the hot shadow at rest, so they need their own
    hover/focus state (higher specificity than the base rule) to still signal
-   they're clickable — otherwise hovering them does nothing. */
+   they're clickable - otherwise hovering them does nothing. */
 #b-tonight .show:hover,#b-tonight .show:focus{box-shadow:10px 10px 0 var(--hot);transform:translate(-3px,-3px)}
 /* price/age tags now ride in the card next to the date badge (not over the
    flyer). .daterow lays the date + its tags on one line with a small gap. */
@@ -226,7 +231,7 @@ body:has(#grid:target) a[href='#grid']{border:2px solid var(--hot);background:va
 .empty{color:var(--dim);text-align:center}
 .emptyline{margin:0 0 .9rem}
 /* first-use / no-shows state: a dashed-card onboarding moment in the zine
-   vocabulary — Anton head, typewriter body, tape-button CTAs. Not a SaaS blank. */
+   vocabulary - Anton head, typewriter body, tape-button CTAs. Not a SaaS blank. */
 .emptybig{max-width:520px;margin:2.4rem auto;padding:1.7rem 1.4rem;border:2px dashed var(--line);background:var(--card)}
 .emptybig .ehead{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
   font-size:1.45rem;letter-spacing:.02em;color:var(--ink);margin:0 0 .7rem}
@@ -269,7 +274,7 @@ footer b{color:var(--hot)}
 html{scroll-behavior:smooth}
 body{overflow-x:clip}
 a,button,.show,.cf,.vchip,.athumb{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
-/* tactile press feedback — invisible at rest, so the static look is unchanged */
+/* tactile press feedback - invisible at rest, so the static look is unchanged */
 .links a:active,.dbtn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--hot)}
 nav a:active,.vchip:active,.searchtoggle:active{transform:scale(.95)}
 .show:active{box-shadow:3px 3px 0 var(--hot);transform:translate(2px,2px)}
@@ -281,7 +286,7 @@ main section:target{animation:viewin .26s ease both}
 @keyframes lbin{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:none}}
 @keyframes sheetup{from{transform:translateY(100%)}to{transform:translateY(0)}}
 
-/* back-to-top — a tilted tape button that fades in once you've scrolled down.
+/* back-to-top - a tilted tape button that fades in once you've scrolled down.
    z-index sits below the modals (detail 55 / lightbox 60) so it hides behind an open modal. */
 .totop{position:fixed;right:1.2rem;bottom:1.2rem;z-index:45;width:3rem;height:3rem;
   display:flex;align-items:center;justify-content:center;cursor:pointer;
@@ -355,7 +360,7 @@ main section:target{animation:viewin .26s ease both}
    bottom: catalog no., title, tracklist with dot leaders, format line. */
 .tapedeck{max-width:760px;margin:2.8rem auto .4rem;background:var(--card);
   border:2px solid var(--tape);box-shadow:5px 5px 0 var(--hot);display:flex;overflow:hidden}
-/* cover panel: the "front" art — logo pressed on black */
+/* cover panel: the "front" art - logo pressed on black */
 .tdcover{flex:none;width:34%;background:#000;display:flex;flex-direction:column;
   align-items:center;justify-content:center;gap:.45rem;padding:1.1rem .8rem;text-align:center}
 .tdcover img{width:60%;max-width:130px;display:block}
@@ -398,11 +403,11 @@ main section:target{animation:viewin .26s ease both}
   #calgrid{display:none}#agenda{display:block}
   .totop{display:none}  /* the sticky nav already covers this on phones */
 
-  /* header: tighter so shows are reachable sooner — same big punk type */
+  /* header: tighter so shows are reachable sooner - same big punk type */
   header{padding:1.5rem 1rem .2rem}
   header .logo{width:126px;height:126px;margin-bottom:.5rem}
   h1{font-size:clamp(2.2rem,11.5vw,3.05rem)}  /* fits "DIYPENSACOLA" (12ch, 7.23em wide) on phones down to 320px */
-  /* the tagline is one sentence and must READ as one line — "or die" dangling on
+  /* the tagline is one sentence and must READ as one line - "or die" dangling on
      its own row looked like a mistake. It's 32.98em wide in Special Elite, so the
      size is solved from the viewport (100vw minus the 1rem header padding each
      side) instead of guessed: 2.95vw - .9px keeps it just inside the screen down
@@ -412,7 +417,7 @@ main section:target{animation:viewin .26s ease both}
      during the Google Fonts swap the nowrap line would otherwise make the whole
      page scroll sideways for a beat. Clipped for that beat beats that. */
 
-  /* 8 buttons, 2 rows of 4 — but still taped-up scraps, not a tidy grid:
+  /* 8 buttons, 2 rows of 4 - but still taped-up scraps, not a tidy grid:
      each keeps its border/shadow/tilt, alternating rotation so the row reads
      hand-placed even though the columns line up. */
   .links{display:grid;grid-template-columns:repeat(4,1fr);gap:.65rem .5rem;padding:.7rem .85rem .15rem;max-width:100%}
@@ -420,7 +425,7 @@ main section:target{animation:viewin .26s ease both}
   .links a:nth-child(4n+1),.links a:nth-child(4n+3){transform:rotate(-1.4deg)}
   .links a:nth-child(4n+2),.links a:nth-child(4n){transform:rotate(1.3deg)}
 
-  /* sticky segmented view-switcher — always one tap away */
+  /* sticky segmented view-switcher - always one tap away */
   /* sticks below the install banner when it's up: --a2hs-h (set by JS to the
      banner's height, else 0) keeps the view-switcher from hiding behind it. */
   nav{position:sticky;top:calc(var(--a2hs-h,0px) + var(--modebar-h,0px));z-index:40;gap:.5rem;margin-bottom:.2rem;
@@ -429,6 +434,13 @@ main section:target{animation:viewin .26s ease both}
     background:var(--scrim);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
     border-bottom:1px solid var(--line)}
   nav a{flex:1;text-align:center;padding:.58rem .3rem;font-size:.82rem}
+  /* ...but that equal-width treatment is written for the HOMEPAGE view switcher
+     and lands on every <nav> on the site, including the subpage tape nav and the
+     show-page thread. With four tape labels it never showed; at seven it stretches
+     a lone wrapped label across the entire row and breaks "archive & search" over
+     two lines. Tape labels keep their natural width and wrap as a block, the same
+     rule the .links row follows. Same class of leak .modetabs documents up top. */
+  .subnav a{flex:0 0 auto;white-space:nowrap;text-align:center;padding:.32rem .62rem;font-size:.72rem}
   main section{scroll-margin-top:calc(4.4rem + var(--a2hs-h,0px) + var(--modebar-h,0px))}
   main{padding:0 .85rem}
 
@@ -450,7 +462,7 @@ main section:target{animation:viewin .26s ease both}
   .detail .dbox::before{content:"";position:absolute;top:.6rem;left:50%;transform:translateX(-50%);
     width:44px;height:5px;border-radius:3px;background:var(--dim);opacity:.6;z-index:3}
   /* on mobile the grab handle IS the close affordance (swipe the sheet down), so
-     drop the X — it otherwise sits on top of the full-width flyer. #detail wins
+     drop the X - it otherwise sits on top of the full-width flyer. #detail wins
      over the later .lb .x rule (the detail sheet also carries the .lb class). */
   #detail .x{display:none}
   .dflyer{width:100%;max-width:100%;margin-top:.4rem}
@@ -511,7 +523,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   transform:none;text-shadow:none}
 .spback{text-align:center;margin:1.7rem 0 .5rem}
 .spback a{text-decoration:none}
-/* ---------- showgoer guide (site/guide.html) — blog-post layout ---------- */
+/* ---------- showgoer guide (site/guide.html) - blog-post layout ---------- */
 .guide{max-width:680px}
 .guide h1{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
   font-size:clamp(2rem,8vw,3rem);line-height:1.08;letter-spacing:.01em;margin:.4rem 0 .95rem;
@@ -575,7 +587,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .printhead,.printfoot{display:none}
 @media print{
   /* The photocopy poster. Not the web page in black and white: a dense zine
-     flyer-wall someone would actually staple to a pole — double-rule masthead
+     flyer-wall someone would actually staple to a pole - double-rule masthead
      with a tilted FREE/TAKE ONE stamp and a framed QR, ink-black section bars,
      three columns of hand-tilted flyer tiles, and a bottom rule with a YOUR
      SHOW HERE recruitment box. All pure ink: black bars are forced with
@@ -602,7 +614,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   .bucket{max-width:none;margin:0}
   /* section bars in Rock Salt: the site's hand-scrawl is reserved for period
      headers (month headers on screen), and tonight/this week/next week ARE
-     period headers — white scrawl on an ink bar reads like marker on gaff tape */
+     period headers - white scrawl on an ink bar reads like marker on gaff tape */
   .bhead{display:block;background:#000!important;color:#fff!important;
     -webkit-print-color-adjust:exact;print-color-adjust:exact;
     border:0!important;box-shadow:none!important;transform:none!important;
@@ -615,7 +627,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   /* One fluent chronological flow, set like a zine listings page: flyer at
      left in a fixed column, typography at right (date line, lineup in big
      condensed caps, venue-time-price in typewriter), a dashed rule between
-     rows, and no card boxes at all. Tonight's rows run a double-size flyer —
+     rows, and no card boxes at all. Tonight's rows run a double-size flyer -
      the headline act. Rows never split across pages; a single flow means no
      multicol holes.
      !important throughout: the screen poster-feed rules
@@ -657,6 +669,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   .show h3 .more{font-size:9pt!important;color:#333!important}
   .meta{color:#000!important;font-size:9pt!important;line-height:1.4!important;letter-spacing:.02em}
   .meta a.vlink{color:#000!important;text-decoration:none!important;border:0!important}
+  .show h3 a,.date a.showlink,.arch li .al strong a,.arch li .date a{
+    color:inherit!important;text-decoration:none!important;border:0!important}
   .show.off h3{text-decoration:line-through!important}
   /* ---- footer: the recruitment rail. This poster gets handed out at shows,
      so the bottom sells the site: a scrawled "there's more" lead, three boxed
@@ -911,6 +925,17 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 /* venue names in card/list meta link to their venue page */
 .meta a.vlink{color:inherit;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:2px}
 .meta a.vlink:hover{color:var(--hot)}
+/* The feed card's own words carry its links now: every act in the headline goes
+   to that act's page and the date stamp goes to the show's permalink (the same
+   convention gig_li uses on act/venue pages). They inherit the card's type so a
+   screen of 60 cards doesn't turn into a wall of blue, and only declare
+   themselves on hover/focus. Same dotted-underline language as .vlink above. */
+.show h3 a{color:inherit;text-decoration:underline;text-decoration-style:dotted;
+  text-decoration-color:var(--dim);text-decoration-thickness:1.5px;text-underline-offset:.14em}
+.show h3 a:hover,.show h3 a:focus-visible{color:var(--hotink);text-decoration-color:var(--hotink)}
+.date a.showlink{color:inherit;text-decoration:underline;text-decoration-style:dotted;
+  text-decoration-thickness:1px;text-underline-offset:2px}
+.date a.showlink:hover,.date a.showlink:focus-visible{color:var(--ink)}
 /* quiet-night line under the TONIGHT header (shown only when nothing's on today) */
 .bnone{color:var(--dim);margin:.1rem 0 0;font-size:.95rem}
 .bnone a{color:var(--hotink)}
@@ -919,7 +944,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .actchips a{font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
   border:2px dashed var(--dim);padding:.3rem .55rem;text-transform:lowercase}
 .actchips a:hover{border-color:var(--hot);color:var(--hot)}
-/* a little tape holding each list-card flyer down — echoes the wall view's tape
+/* a little tape holding each list-card flyer down - echoes the wall view's tape
    without changing the card layout. Wall view keeps its own bigger strip. */
 #list:not(.wall) .thumbwrap::before{content:"";position:absolute;top:-5px;left:50%;
   transform:translateX(-50%) rotate(-4deg);width:38px;height:11px;background:var(--tape);
@@ -939,6 +964,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .subnav a:nth-child(odd){transform:rotate(-1.6deg)}
 .subnav a:nth-child(even){transform:rotate(1.3deg)}
 .subnav a:hover{background:var(--hot);color:var(--on-hot);box-shadow:2px 2px 0 var(--tape)}
+.subnav a[aria-current="page"]:hover,.links a[aria-current="page"]:hover{box-shadow:none;transform:none}
 .subnav a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 var(--hot)}
 @media (max-width:640px){.showpage header{justify-content:center;text-align:center}}
 /* halftone rest state on feed thumbs: inks wildly different flyer art into one
@@ -978,7 +1004,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   padding:.15rem .65rem .25rem;transform:rotate(-2deg);box-shadow:3px 3px 0 var(--shadow)}
 
 /* ==================== REDESIGN 2026: poster feed ====================
-   Default (list) view only — the flyer-wall toggle keeps its own look.
+   Default (list) view only - the flyer-wall toggle keeps its own look.
    Tonight = hero, this week = full-flyer posters, later = dense list.
    Flyers show WHOLE (object-fit:contain), only ~12% desaturated at rest,
    full color on hover. Layered last so it overrides the base feed rules. */
@@ -1068,7 +1094,7 @@ main{max-width:940px}
 #list:not(.wall) #b-week .show:nth-child(4n) .thumbwrap::before{left:58%;transform:translateX(-50%) rotate(14deg);width:62px}
 
 /* tonight quiet-night line: a small green taped note */
-/* :not([hidden]) so the JS `hidden` attribute actually wins — an id+class rule
+/* :not([hidden]) so the JS `hidden` attribute actually wins - an id+class rule
    otherwise out-specifies the UA [hidden] rule and the strip shows on nights that
    DO have a show. */
 #list .bnone{display:none}
@@ -1120,8 +1146,72 @@ main{max-width:940px}
 .samenight a:hover,.samenight a:focus-visible{border-color:var(--hot);color:var(--hot)}
 .samenight a small{color:var(--dim)}
 
+/* ---------- the thread: a show page's way onward through the record ----------
+   Sits below the show card, outside it, because it is navigation and not part of
+   the show. Two rows: the room's run of nights (walk a venue one gig at a time)
+   and the nearest other bills that shared an act. Same quiet card-chip language
+   as .samenight above, so the page reads as one thing.
+
+   NOTE: .spthread is a <nav>, so it inherits the global
+   nav{display:flex;gap;justify-content:center;align-items:center;padding:1.2rem 1rem}
+   and nav a{border:2px dashed var(--dim);padding:.45rem 1.1rem} written for the
+   homepage view switcher. Both are zeroed out here (same problem .modetabs
+   documents up top) or the thread renders centre-shrunk with dashed pills.
+   Everything below is scoped under .spthread so it outranks that nav a reset. */
+.spthread{max-width:760px;margin:1.6rem auto .2rem;display:flex;flex-direction:column;
+  align-items:stretch;justify-content:flex-start;gap:1.1rem;padding:0}
+.spthread a{background:transparent;border:0;padding:0;flex:none;text-transform:none;letter-spacing:normal}
+.spthread a:active{transform:none}
+.spthread .lead{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--dim);margin-bottom:.45rem}
+.spthread .lead a{color:var(--dim);text-decoration:underline;text-decoration-style:dotted;
+  text-decoration-thickness:1px;text-underline-offset:2px}
+.spthread .lead a:hover{color:var(--hotink)}
+.spthread .thsteps{display:flex;flex-wrap:wrap;gap:.6rem}
+.spthread .thstep{flex:1 1 14rem;min-width:0;display:block;text-decoration:none;color:var(--ink);
+  background:var(--card);border:1px solid var(--line);padding:.55rem .7rem}
+.spthread .thstep:hover,.spthread .thstep:focus-visible{border-color:var(--hot);color:var(--hotink)}
+.spthread .thstep .tharrow{display:block;font-size:.68rem;text-transform:uppercase;
+  letter-spacing:.08em;color:var(--dim)}
+.spthread .thstep b{display:block;font-family:"Special Elite","Courier New",monospace;font-weight:400;
+  font-size:.95rem;margin:.15rem 0 .05rem}
+.spthread .thstep small{display:block;color:var(--dim);font-size:.78rem;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.spthread .thstep:hover small,.spthread .thstep:focus-visible small{color:inherit}
+.spthread .thnext{text-align:right}
+.spthread .thacts{display:flex;flex-wrap:wrap;gap:.4rem;align-items:baseline}
+.spthread .thacts .lead{width:100%}
+.spthread .thacts a{display:inline-block;max-width:100%;font-size:.8rem;text-decoration:none;color:var(--ink);
+  background:var(--card);border:1px solid var(--line);padding:.22rem .5rem}
+.spthread .thacts a:hover,.spthread .thacts a:focus-visible{border-color:var(--hot);color:var(--hotink)}
+.spthread .thacts a small{color:var(--dim)}
+@media print{.spthread{display:none}}
+
 /* ---------- archive hub (archive.html): filter/search toolbar over the record ---------- */
 .filt-out{display:none!important}
+/* Flyer wall = the show rows, restyled. It used to be a second copy of all 1,486
+   shows in the markup (about 870KB, a quarter of the page) purely so a toggle
+   could swap two containers. Same rows, one CSS class, and filtering applies to
+   the wall for free because it is filtering the very same elements. */
+#arclist.wall .arch{columns:3 190px;column-gap:1rem;display:block}
+#arclist.wall .arch li{display:block;break-inside:avoid;margin:0 0 1.1rem;padding:0;
+  border:0;background:none;position:relative}
+#arclist.wall .arch li[data-flyer="0"]{display:none}
+#arclist.wall .arch li:nth-child(3n+1){transform:rotate(-1.4deg)}
+#arclist.wall .arch li:nth-child(3n+2){transform:rotate(1.1deg)}
+#arclist.wall .arch li:nth-child(3n){transform:rotate(-.4deg)}
+#arclist.wall .arch li:hover,#arclist.wall .arch li:focus-within{transform:rotate(0);z-index:2}
+#arclist.wall .athumb{width:100%;height:auto;max-height:none;object-fit:contain;
+  border:2px solid var(--ink);display:block}
+#arclist.wall .arch li:hover .athumb,#arclist.wall .arch li:focus-within .athumb{
+  box-shadow:5px 5px 0 var(--hot)}
+#arclist.wall .al{display:block;padding:.3rem 0 0}
+#arclist.wall .al .meta,#arclist.wall .al .date{display:none}
+#arclist.wall .al strong{font-size:.76rem;font-weight:400;line-height:1.25;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+#arclist.wall .al strong a{color:var(--dim);text-decoration:none}
+#arclist.wall .arch li:hover .al strong a{color:var(--ink)}
+@media (max-width:640px){#arclist.wall .arch{columns:2 130px}}
 .arctoolbar{position:sticky;top:var(--modebar-h,0px);z-index:5;background:var(--bg);border-bottom:2px solid var(--line);
   padding:.7rem 0 .8rem;margin:.4rem 0 1rem;display:flex;flex-direction:column;gap:.55rem}
 .arctoolbar .search{margin:0}
@@ -1165,7 +1255,7 @@ main{max-width:940px}
 .flashback li:last-child{border-bottom:none}
 .flashback a{text-decoration:none}
 .flashback .yr{color:var(--dim);font-size:.72rem;margin-right:.4rem}
-/* scope tabs: "search all" / "bands" / "venues" — tape-button tabs that pick
+/* scope tabs: "search all" / "bands" / "venues" - tape-button tabs that pick
    which dataset the one search box + refine rail + results pane below is
    slicing. Not a separate panel: everything stays put, only the active tab
    and the results underneath change. */
@@ -1290,7 +1380,7 @@ main{max-width:940px}
   color:#111;background:var(--tape);border:2px solid #111;box-shadow:3px 3px 0 var(--hot);padding:.45rem 1rem;cursor:pointer}
 .rbtn:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
 .rbtn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--hot)}
-/* filter rail: chip toggles per dimension. Compact — each dimension is ONE row
+/* filter rail: chip toggles per dimension. Compact - each dimension is ONE row
    (label pinned left, chips flowing right), boxed tight so the controls read
    as a small console, not half the page. */
 .rfilters{margin-bottom:1.1rem;border:2px solid var(--line);padding:.15rem .7rem}
@@ -1451,7 +1541,7 @@ header .homelink,header .home,header .logo,header .home img{
   .vchip,.tagchip{min-height:44px;display:inline-flex;align-items:center}
 }
 </style></head><body class="showpage">
-<header><a class="home" href="/"><img src="/logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="/">shows</a><a href="/archive.html">archive &amp; search</a><a href="/guide.html">guide</a><a href="/submit.html">submit</a></nav></header>
+<header><a class="home" href="/"><img src="/logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="/">shows</a><a href="/archive.html">archive &amp; search</a><a href="/bands.html">bands</a><a href="/venues.html">venues</a><a href="/radio.html">radio</a><a href="/guide.html">guide</a><a href="/submit.html">submit</a></nav></header>
 <main class="spwrap">
 <div class="empty emptybig">
 <p class="ehead">no signal down here</p>

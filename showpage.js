@@ -11,6 +11,24 @@
     lb.addEventListener('click',function(e){if(e.target===lb||e.target===x){e.preventDefault();closeLb();}});
     document.addEventListener('keydown',function(e){if(e.key==='Escape'&&lb.classList.contains('open'))closeLb();});
   }
+  // save this show: the same device-local 'dpc_going' list the homepage star
+  // filter reads, so a show saved from a texted permalink turns up in "yours"
+  // back on the calendar. No account, nothing leaves the device.
+  (function(){
+    var b=document.getElementById('spsave');if(!b)return;
+    var id=b.getAttribute('data-sid'),K='dpc_going';
+    function get(){try{return JSON.parse(localStorage.getItem(K)||'[]');}catch(e){return [];}}
+    function set(a){try{localStorage.setItem(K,JSON.stringify(a));}catch(e){}}
+    function render(){var on=get().indexOf(id)>-1;
+      b.classList.toggle('on',on);b.setAttribute('aria-pressed',on?'true':'false');
+      b.textContent=on?'saved \u2713':'save this show';}
+    b.addEventListener('click',function(){
+      var a=get(),i=a.indexOf(id);
+      if(i>-1)a.splice(i,1);else a.push(id);
+      set(a);render();});
+    render();
+  })();
+
   // live overrides: a cancellation published from a phone (overrides.json, see
   // OWNER_JS) applies here too, so the permalink people got texted tells the truth
   // before any rebuild. Only ADDS a cancellation; the built page already reflects
@@ -21,7 +39,7 @@
     if(!m)return;
     var card=document.querySelector('.spcard');
     if(!card||card.classList.contains('off'))return;
-    // raw.githubusercontent first, same-origin second — see the long note in
+    // raw.githubusercontent first, same-origin second - see the long note in
     // MAIN_JS. The same-origin copy is gated on a Pages redeploy, which sat queued
     // for 108 minutes on 2026-07-19; raw reflects the commit immediately. This is
     // the page people get texted, so it is the one that most needs to be right.

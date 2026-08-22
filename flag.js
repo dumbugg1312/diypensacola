@@ -40,7 +40,7 @@
     for(var i=a.length-1;i>=0;i--){var f=a[i];
       html+='<div class="dcx-item" data-i="'+i+'"><button type="button" class="dcx-x" data-a="del">×</button>'
         +'<div class="dcx-ts">'+esc(f.ts)+' &middot; '+esc(f.title||f.url)+'</div>'
-        +(f.nowPlaying?'<div class="dcx-np">playing: '+esc(f.nowPlaying.act)+' — '+esc(f.nowPlaying.title)+'</div>':'')
+        +(f.nowPlaying?'<div class="dcx-np">playing: '+esc(f.nowPlaying.act)+' / '+esc(f.nowPlaying.title)+'</div>':'')
         +'<div>'+esc(f.note)+'</div></div>';}
     logBox.innerHTML=html;}
 
@@ -54,7 +54,7 @@
   if(unlockedAt&&Date.now()-unlockedAt<DCX_TTL)unlock();
   else if(unlockedAt){
     localStorage.removeItem('dcx_unlocked_at');
-    var code0=window.prompt('login expired — enter passcode:');
+    var code0=window.prompt('login expired. enter passcode:');
     if(code0===DCX_PASSCODE)unlock();}
 
   if(logoEl){
@@ -113,8 +113,8 @@
     if(a==='copy'){
       var a2=flags(),lines=[];
       for(var i=a2.length-1;i>=0;i--){var f=a2[i];
-        lines.push(f.ts+' — '+f.title+' ('+f.url+')'
-          +(f.nowPlaying?'\nplaying: '+f.nowPlaying.act+' — '+f.nowPlaying.title+' ('+f.nowPlaying.url+')':'')
+        lines.push(f.ts+' / '+f.title+' ('+f.url+')'
+          +(f.nowPlaying?'\nplaying: '+f.nowPlaying.act+' / '+f.nowPlaying.title+' ('+f.nowPlaying.url+')':'')
           +'\n'+f.note);}
       if(navigator.clipboard)navigator.clipboard.writeText(lines.join('\n\n'));
       return;}
