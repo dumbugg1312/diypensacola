@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: 7.7 PNX
+X-WR-CALNAME:DIYPensacola: Hayweather
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago
@@ -33,16 +33,5 @@ DESCRIPTION:lesion\, bastard son\, hayweather\, and beautysleep at betty's\
  cale\, $5 off the door with a nonperishable donation for food not bombs.
 LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-15-bettys-lesion-bastard-son.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-22-bettys-7-7-pnx@diypensacola
-DTSTAMP:20260822T000000Z
-DTSTART;TZID=America/Chicago:20260822T190000
-DTEND;TZID=America/Chicago:20260822T220000
-SUMMARY:7.7 PNX @ Betty's
-DESCRIPTION:7.7 pnx dance party at betty's\, saturday august 22nd. roots ro
- ck\, garage\, post punk and disco all night.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-22-bettys-7-7-pnx.html
 END:VEVENT
 END:VCALENDAR
