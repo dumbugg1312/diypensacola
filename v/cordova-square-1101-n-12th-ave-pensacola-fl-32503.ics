@@ -1,8 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Cordova Square\, 1101 N 12th Ave\, Pensacola FL 
- 32503
+X-WR-CALNAME:DIYPensacola: Cordova Square
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago

@@ -1,8 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: The Basement (under the Seville Inn)\, 223 E Gar
- den St\, Pensacola FL
+X-WR-CALNAME:DIYPensacola: The Basement
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago

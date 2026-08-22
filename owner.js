@@ -35,7 +35,7 @@
   function publish(id,status,label,say){
     // Belt-and-braces: the click handler already prompts for a missing token, so
     // reaching here without one means the owner dismissed the prompt.
-    if(!token()){say('no token — nothing was published','err');return Promise.resolve(false);}
+    if(!token()){say('no token, nothing was published','err');return Promise.resolve(false);}
     say('reading…','busy');
     return readOverrides().then(function(cur){
       if(status){cur.json.shows[id]={status:status};}
@@ -48,7 +48,7 @@
       say('publishing…','busy');
       return api(FILE,{method:'PUT',body:JSON.stringify(body)}).then(function(r){
         if(!r.ok)return r.text().then(function(t){throw new Error('publish failed ('+r.status+') '+t.slice(0,120));});
-        say('✓ published — live in about a minute','ok');
+        say('✓ published, live in about a minute','ok');
         return true;
       });
     }).catch(function(e){say('╳ '+String(e.message||e),'err');return false;});
@@ -63,7 +63,7 @@
       +'<button type="button" data-o="">back on</button>'
       +'<button type="button" data-o="tok">'+(token()?'forget token':'connect token')+'</button>'
       +'<span class="dcx-osay"></span>';
-    // say(msg, level) — level styles the status line. It is the ONLY feedback the
+    // say(msg, level) - level styles the status line. It is the ONLY feedback the
     // owner gets on a phone, so it must be legible at arm's length, not a whisper:
     // 'err' and 'ok' are full-size and rule-marked (see .dcx-osay in the CSS).
     var say=function(m,lvl){
@@ -75,7 +75,7 @@
     function askToken(){
       var t=window.prompt('paste a GitHub fine-grained token\n(repo: '+REPO+', contents: write, set an expiry)');
       t=(t||'').trim();
-      if(!t){say('╳ no token — nothing was published','err');return false;}
+      if(!t){say('╳ no token, nothing was published','err');return false;}
       localStorage.setItem(TKEY,t);
       var tb=wrap.querySelector('button[data-o="tok"]');if(tb)tb.textContent='forget token';
       say('token saved on this device','ok');
