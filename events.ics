@@ -21,17 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-21-handlebar-all-your-friends@diypensacola
-DTSTAMP:20260821T000000Z
-DTSTART;TZID=America/Chicago:20260821T200000
-DTEND;TZID=America/Chicago:20260821T230000
-SUMMARY:All Your Friends @ The Handlebar
-DESCRIPTION:all your friends: the indie sleaze dance party at the handlebar
- \, friday august 21st. doors 8pm\, 18+.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-21-handlebar-all-your-friends.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-08-22-handlebar-outta-pocket-fragmentation@diypensacola
 DTSTAMP:20260822T000000Z
 DTSTART;TZID=America/Chicago:20260822T170000
@@ -173,7 +162,7 @@ UID:2026-08-29-handlebar-nowhere2runs-bloodrave@diypensacola
 DTSTAMP:20260829T000000Z
 DTSTART;TZID=America/Chicago:20260829T190000
 DTEND;TZID=America/Chicago:20260829T220000
-SUMMARY:Nowhere2Run\, Notscaredtocry\, Cvntteeth\, Viciouswishes\, Error Fu
+SUMMARY:Nowhere2Run\, Notscaredtocry\, Cvntteeth\, Viciouswishes\, Error.Fu
  nction\, Icantread @ The Handlebar
 DESCRIPTION:nowhere2run's bloodrave halloween tour at the handlebar\, satur
  day august 29th. nowhere2run\, notscaredtocry\, cvntteeth\, viciouswishes\
@@ -413,6 +402,18 @@ DESCRIPTION:house of heavy\, a nu-metal\, alt-metal and metalcore party at
  the handlebar\, saturday september 19th.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-19-handlebar-house-of-heavy.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-19-the-den-bastardson-rat-daughter@diypensacola
+DTSTAMP:20260919T000000Z
+DTSTART;TZID=America/Chicago:20260919T183000
+DTEND;TZID=America/Chicago:20260919T213000
+SUMMARY:Bastardson\, Rat Daughter\, beautysleep @ Beulah Den
+DESCRIPTION:bastardson\, rat daughter\, and beautysleep at the den\, saturd
+ ay september 19. doors 6:30\, music at 7. pay what you can\, $5 suggested.
+LOCATION:Beulah Den
+URL:https://diypensacola.com/s/2026-09-19-the-den-bastardson-rat-daughter.h
+ tml
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-20-309-views-from-the-ground@diypensacola

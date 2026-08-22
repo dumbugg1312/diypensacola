@@ -45,9 +45,26 @@ header h1 a{color:inherit;text-decoration:none}
 .homelink{display:block;text-decoration:none}
 .links{display:flex;flex-wrap:wrap;gap:1rem .6rem;justify-content:center;max-width:680px;margin:0 auto;padding:.8rem 1rem .2rem}
 .links a{font-size:.85rem;text-decoration:none;color:#111;background:var(--tape);padding:.4rem .9rem;
-  border:2px solid #111;box-shadow:3px 3px 0 var(--hot);text-transform:uppercase;letter-spacing:.05em}
+  border:2px solid #111;box-shadow:3px 3px 0 var(--hot);text-transform:uppercase;letter-spacing:.05em;
+  flex:1 1 auto;text-align:center}
+/* flex:1 1 auto: every row of scraps stretches edge to edge like a taped-up
+   banner, so with the .brk giving a fixed 3+2 wrap the cluster is always full
+   lines - one wide line or two full lines, never a ragged short row. */
 .links a:nth-child(odd){transform:rotate(-1.5deg)}.links a:nth-child(even){transform:rotate(1.2deg)}
 .links a:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
+/* .brk: forced wrap point after the 3rd tape button. Hidden while all 5 fit on
+   one row; below that it breaks the row so the wrap is always 3+2 and never
+   leaves one button orphaned on its own row. */
+.links .brk{display:none}
+@media (max-width:880px){.links .brk{display:block;flex-basis:100%;height:0;margin:0;padding:0}}
+/* fine-print row under the tape buttons: the off-site follow links + donate as
+   a masthead credit line, not seven more buttons. Middot separators drawn in
+   CSS so the HTML stays a plain list of anchors. */
+.finelinks{display:flex;flex-wrap:wrap;justify-content:center;max-width:680px;
+  margin:.55rem auto 0;padding:0 1rem;font-family:'Special Elite',Courier,monospace;font-size:.74rem}
+.finelinks a{color:var(--dim);text-decoration:underline;text-underline-offset:3px;padding:.15rem .1rem}
+.finelinks a:hover{color:var(--hot)}
+.finelinks a+a::before{content:"·";color:var(--dim);margin:0 .55rem;text-decoration:none;display:inline-block}
 /* the section you're actually on reads as already-stamped: filled, flat to the
    page, no tilt and no shadow, so the nav says where you are and not only where
    you can go. Same idea as .modetab.on, in tape-label language. */
@@ -417,13 +434,13 @@ main section:target{animation:viewin .26s ease both}
      during the Google Fonts swap the nowrap line would otherwise make the whole
      page scroll sideways for a beat. Clipped for that beat beats that. */
 
-  /* 8 buttons, 2 rows of 4 - but still taped-up scraps, not a tidy grid:
-     each keeps its border/shadow/tilt, alternating rotation so the row reads
-     hand-placed even though the columns line up. */
-  .links{display:grid;grid-template-columns:repeat(4,1fr);gap:.65rem .5rem;padding:.7rem .85rem .15rem;max-width:100%}
-  .links a{font-size:.64rem;padding:.5rem .35rem;text-align:center;line-height:1.25;box-shadow:2px 2px 0 var(--hot)}
-  .links a:nth-child(4n+1),.links a:nth-child(4n+3){transform:rotate(-1.4deg)}
-  .links a:nth-child(4n+2),.links a:nth-child(4n){transform:rotate(1.3deg)}
+  /* 5 buttons now (the off-site links moved to the .finelinks credit line), so
+     the old 2x4 grid is gone: back to wrapped natural-width tape scraps that
+     keep their tilt and read hand-placed. */
+  .links{gap:.65rem .5rem;padding:.7rem .85rem .15rem;max-width:100%}
+  .links a{font-size:.64rem;padding:.5rem .55rem;text-align:center;line-height:1.25;box-shadow:2px 2px 0 var(--hot)}
+  .finelinks{font-size:.66rem;margin-top:.45rem}
+  .finelinks a+a::before{margin:0 .4rem}
 
   /* sticky segmented view-switcher - always one tap away */
   /* sticks below the install banner when it's up: --a2hs-h (set by JS to the
@@ -594,7 +611,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
      print-color-adjust since photocopiers are the target output anyway. */
   @page{margin:.4in}
   body{background:#fff;color:#000;font:10.5pt/1.35 "Special Elite","Courier New",monospace}
-  header,.links,.modebar,nav,.controls,#grid,.endtip,.tapedeck,footer,.totop,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming,.tstrip,.printbar,.savebtn,.doorsin,.bnone,.ht{display:none!important}
+  header,.links,.finelinks,.modebar,nav,.controls,#grid,.endtip,.tapedeck,footer,.totop,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming,.tstrip,.printbar,.savebtn,.doorsin,.bnone,.ht{display:none!important}
   main:not(:has(section:target)) #list{display:block}
   main section{display:none!important}
   main section#list{display:block!important}
@@ -1009,9 +1026,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
    Flyers show WHOLE (object-fit:contain), only ~12% desaturated at rest,
    full color on hover. Layered last so it overrides the base feed rules. */
 
-/* buttons: stretch to fill the masthead like a taped-up banner */
+/* buttons: stretch to fill the masthead like a taped-up banner
+   (the stretch itself is on the base .links a rule now) */
 header .links{max-width:840px}
-header .links a{flex:1 1 auto;text-align:center}
 
 /* the poster feed wants more room than the old 680px reading column */
 main{max-width:940px}
@@ -1546,11 +1563,11 @@ header .homelink,header .home,header .logo,header .home img{
 <div class="empty emptybig">
 <p class="ehead">no signal down here</p>
 <p>you're offline and this page isn't saved. basements and dead-zone venues will do that. the calendar you already opened still works offline.</p>
-<p class="dcap">this copy was saved august 21, 2026. tonight's listings may have changed since.</p>
+<p class="dcap">this copy was saved august 22, 2026. tonight's listings may have changed since.</p>
 <div class="eactions">
 <a class="dbtn" href="/">open the calendar</a>
 </div>
 </div>
 </main>
-<footer>no bars? <b>you're probably at a show already.</b><br>proudly ran out of punksacola, fl<br><span class="built">updated august 21, 2026</span></footer>
+<footer>no bars? <b>you're probably at a show already.</b><br>proudly ran out of punksacola, fl<br><span class="built">updated august 22, 2026</span></footer>
 </body></html>
