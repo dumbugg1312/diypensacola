@@ -23,9 +23,10 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-09-03-handlebar-the-pink-stones@diypensacola
 DTSTAMP:20260903T000000Z
-DTSTART;TZID=America/Chicago:20260903T190000
-DTEND;TZID=America/Chicago:20260903T220000
-SUMMARY:The Pink Stones @ The Handlebar
+DTSTART;TZID=America/Chicago:20260903T180000
+DTEND;TZID=America/Chicago:20260903T210000
+SUMMARY:The Pink Stones\, Snake and the Rabbit\, The Victrolas @ The Handle
+ bar
 DESCRIPTION:the pink stones at the handlebar\, thursday september 3rd.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-03-handlebar-the-pink-stones.html
