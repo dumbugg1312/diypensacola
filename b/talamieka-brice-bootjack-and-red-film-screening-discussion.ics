@@ -2,7 +2,7 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
 X-WR-CALNAME:DIYPensacola: Talamieka Brice Bootjack And Red Film Screening 
- + Discussion
+ Discussion
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago

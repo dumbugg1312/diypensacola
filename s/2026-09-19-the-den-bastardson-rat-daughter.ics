@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: The Den
+X-WR-CALNAME:DIYPensacola Shows
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VTIMEZONE
 TZID:America/Chicago
@@ -31,5 +31,10 @@ DESCRIPTION:bastardson\, rat daughter\, and beautysleep at the den\, saturd
 LOCATION:Beulah Den
 URL:https://diypensacola.com/s/2026-09-19-the-den-bastardson-rat-daughter.h
  tml
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: Bastardson\, Rat Daughter\, beautysleep @ Beulah Den
+TRIGGER:-PT2H
+END:VALARM
 END:VEVENT
 END:VCALENDAR
