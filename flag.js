@@ -125,4 +125,19 @@
       var item=e.target.closest('.dcx-item');var idx=parseInt(item.getAttribute('data-i'),10);
       var a3=flags();a3.splice(idx,1);saveFlags(a3);renderLog();
       return;}});
+  // ---- sponsor bar expiry ----
+  // The build already refuses to emit a bar outside its date window, but a
+  // static site keeps serving whatever was last pushed, so a sponsorship that
+  // ended would stay up until somebody happened to rebuild. This is the second
+  // half of the timer: the bar carries its own last-served date and removes
+  // itself once the visitor's clock is past it. Lives in flag.js because that
+  // is the one script every masthead page already loads.
+  // Compared as YYYY-MM-DD strings in LOCAL time (no Date parsing, which would
+  // read a bare date as UTC and drop the bar a few hours early west of GMT).
+  var sb=document.querySelector('.sponsorbar[data-until]');
+  if(sb){
+    var n=new Date(),p=function(v){return (v<10?'0':'')+v;};
+    var td=n.getFullYear()+'-'+p(n.getMonth()+1)+'-'+p(n.getDate());
+    if(td>sb.getAttribute('data-until')&&sb.parentNode)sb.parentNode.removeChild(sb);
+  }
 })();

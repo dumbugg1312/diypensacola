@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola: 309 Artist in Residence Exhibition
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-08-28-pensacola-museum-of-art-309-artist-in-residence-exhibition@d
+ iypensacola
+DTSTAMP:20260828T000000Z
+DTSTART;TZID=America/Chicago:20260828T170000
+DTEND;TZID=America/Chicago:20260828T200000
+SUMMARY:309 Artist in Residence Exhibition @ Pensacola Museum of Art
+DESCRIPTION:309 punk project artist in residence exhibition at the pensacol
+ a museum of art. opening reception friday august 28th\, 5pm. work from the
+  2025 residency cohort\, curated by valerie george and christopher satterw
+ hite\, up through november 29th.
+LOCATION:Pensacola Museum of Art
+URL:https://diypensacola.com/s/2026-08-28-pensacola-museum-of-art-309-artis
+ t-in-residence-exhibition.html
+END:VEVENT
+END:VCALENDAR
