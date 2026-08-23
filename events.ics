@@ -21,44 +21,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-22-handlebar-outta-pocket-fragmentation@diypensacola
-DTSTAMP:20260822T000000Z
-DTSTART;TZID=America/Chicago:20260822T170000
-DTEND;TZID=America/Chicago:20260822T200000
-SUMMARY:Outta Pocket\, Fragmentation\, Strikeforce\, Serrated FL @ The Hand
- lebar
-DESCRIPTION:outta pocket\, fragmentation\, strikeforce\, and serrated fl at
-  the handlebar\, saturday august 22nd. 5pm.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-22-handlebar-outta-pocket-fragmentat
- ion.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-22-handlebar-drag-lesque-the-revue-xena-morphine@diypensacola
-DTSTAMP:20260822T000000Z
-DTSTART;TZID=America/Chicago:20260822T210000
-DTEND;TZID=America/Chicago:20260823T000000
-SUMMARY:Drag-Lesque The Revue\, Xena-Morphine\, Wanda Doomy\, Jay Jay Duvay
- \, Pixie Van Dyke\, Braxton Hicks @ The Handlebar
-DESCRIPTION:drag-lesque the revue at the handlebar\, saturday august 22nd. 
- xena-morphine\, wanda doomy\, jay jay duvay\, pixie van dyke\, and braxton
-  hicks. 9pm.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-22-handlebar-drag-lesque-the-revue-x
- ena-morphine.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-22-bettys-7-7-pnx@diypensacola
-DTSTAMP:20260822T000000Z
-DTSTART;TZID=America/Chicago:20260822T190000
-DTEND;TZID=America/Chicago:20260822T220000
-SUMMARY:7.7 PNX @ Betty's
-DESCRIPTION:7.7 pnx dance party at betty's\, saturday august 22nd. roots ro
- ck\, garage\, post punk and disco all night.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-22-bettys-7-7-pnx.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-08-23-handlebar-save-ferris@diypensacola
 DTSTAMP:20260823T000000Z
 DTSTART;TZID=America/Chicago:20260823T180000
@@ -156,6 +118,21 @@ DESCRIPTION:alice's chainsaw repair\, tirra lirra\, mourning glories\, curs
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-08-28-handlebar-alices-chainsaw-repair-
  tirra-lirra.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-28-pensacola-museum-of-art-309-artist-in-residence-exhibition@d
+ iypensacola
+DTSTAMP:20260828T000000Z
+DTSTART;TZID=America/Chicago:20260828T170000
+DTEND;TZID=America/Chicago:20260828T200000
+SUMMARY:309 Artist in Residence Exhibition @ Pensacola Museum of Art
+DESCRIPTION:309 punk project artist in residence exhibition at the pensacol
+ a museum of art. opening reception friday august 28th\, 5pm. work from the
+  2025 residency cohort\, curated by valerie george and christopher satterw
+ hite\, up through november 29th.
+LOCATION:Pensacola Museum of Art
+URL:https://diypensacola.com/s/2026-08-28-pensacola-museum-of-art-309-artis
+ t-in-residence-exhibition.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-29-handlebar-nowhere2runs-bloodrave@diypensacola
