@@ -4,6 +4,8 @@ PRODID:-//DIYPensacola//Shows//EN
 X-WR-CALNAME:DIYPensacola: Talamieka Brice Bootjack And Red Film Screening 
  Discussion
 X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
 BEGIN:VTIMEZONE
 TZID:America/Chicago
 BEGIN:DAYLIGHT

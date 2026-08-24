@@ -3,6 +3,8 @@ VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
 X-WR-CALNAME:DIYPensacola: Victims Of The System
 X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
 BEGIN:VTIMEZONE
 TZID:America/Chicago
 BEGIN:DAYLIGHT
@@ -20,4 +22,16 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-08-30-the-den-victims-of-the-system-ghost-tape@diypensacola
+DTSTAMP:20260830T000000Z
+DTSTART;TZID=America/Chicago:20260830T180000
+DTEND;TZID=America/Chicago:20260830T210000
+SUMMARY:Victims of the System\, Ghost Tape\, Spidershed @ The Den
+DESCRIPTION:victims of the system\, ghost tape\, and spidershed at the den 
+ this sunday. doors at 6\, $10 or pay what you can.
+LOCATION:The Den
+URL:https://diypensacola.com/s/2026-08-30-the-den-victims-of-the-system-gho
+ st-tape.html
+END:VEVENT
 END:VCALENDAR

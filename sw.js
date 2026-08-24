@@ -1,11 +1,11 @@
-var CACHE='diypensacola-2a026931096d';
+var CACHE='diypensacola-e40495c46cac';
 // CORE is the app shell (always precached). PRECACHE is this build's fonts plus
 // the flyers for tonight + this week, injected by build.py so someone who opens
 // the site fresh at a venue with no signal still sees this week's flyers instead
 // of logo placeholders. The versioned CACHE name means an old week's flyers evict
 // themselves on the next deploy. Both lists are added best-effort at install.
 var CORE=['./','index.html','offline.html','style.css','logo.png','manifest.webmanifest','icon-192.png','icon-512.png','apple-touch-icon.png'];
-var PRECACHE=["flyers/thumbs/2026-08-25_handlebar_emarosa.webp", "flyers/thumbs/2026-08-26_handlebar_improvable-cause.webp", "flyers/thumbs/2026-08-27_bettys_bryan-raymond.webp", "flyers/thumbs/2026-08-27_handlebar_foxtide.webp", "flyers/thumbs/2026-08-27_waterboyz_paupers-grave.webp", "flyers/thumbs/2026-08-28_bettys_noiseheads.webp", "flyers/thumbs/2026-08-28_handlebar_alices-chainsaw-repair.webp", "flyers/thumbs/2026-08-29_handlebar_nowhere2runs-bloodrave.webp", "flyers/thumbs/2026-08-29_bettys_rat-daughter.webp", "flyers/thumbs/2026-08-30_handlebar_stand-back.webp", "flyers/thumbs/2026-08-30_handlebar_lasento.webp", "flyers/thumbs/2026-09-03_handlebar_the-pink-stones.webp", "flyers/thumbs/2026-09-04_handlebar_broadway-rave.webp", "flyers/thumbs/2026-09-05_handlebar_blacktop-mojo.webp", "flyers/thumbs/2026-09-05_blake-doyle-skatepark_tc-skate-jam.webp", "flyers/thumbs/2026-09-05_undergrowth_throughline-puppetry.webp", "flyers/thumbs/2026-09-05_bettys_scott-h-biram.webp"];
+var PRECACHE=["flyers/thumbs/2026-08-25_handlebar_emarosa.webp", "flyers/thumbs/2026-08-26_handlebar_improvable-cause.webp", "flyers/thumbs/2026-08-27_bettys_bryan-raymond.webp", "flyers/thumbs/2026-08-27_handlebar_foxtide.webp", "flyers/thumbs/2026-08-27_waterboyz_paupers-grave.webp", "flyers/thumbs/2026-08-28_bettys_noiseheads.webp", "flyers/thumbs/2026-08-28_handlebar_alices-chainsaw-repair.webp", "flyers/thumbs/2026-08-29_handlebar_nowhere2runs-bloodrave.webp", "flyers/thumbs/2026-08-29_bettys_rat-daughter.webp", "flyers/thumbs/2026-08-30_handlebar_stand-back.webp", "flyers/thumbs/2026-08-30_handlebar_lasento.webp", "flyers/thumbs/2026-08-30_the-den_victims-of-the-system.webp", "flyers/thumbs/2026-09-03_handlebar_the-pink-stones.webp", "flyers/thumbs/2026-09-04_handlebar_broadway-rave.webp", "flyers/thumbs/2026-09-05_handlebar_blacktop-mojo.webp", "flyers/thumbs/2026-09-05_blake-doyle-skatepark_tc-skate-jam.webp", "flyers/thumbs/2026-09-05_undergrowth_throughline-puppetry.webp", "flyers/thumbs/2026-09-05_bettys_scott-h-biram.webp"];
 CORE=CORE.concat(PRECACHE);
 self.addEventListener('install',function(e){
   self.skipWaiting();

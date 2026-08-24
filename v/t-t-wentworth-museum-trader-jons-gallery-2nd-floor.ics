@@ -4,6 +4,8 @@ PRODID:-//DIYPensacola//Shows//EN
 X-WR-CALNAME:DIYPensacola: T.T. Wentworth Museum\, Trader Jon's Gallery (2n
  d floor)
 X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
 BEGIN:VTIMEZONE
 TZID:America/Chicago
 BEGIN:DAYLIGHT
