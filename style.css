@@ -42,15 +42,17 @@ header h1 a{color:inherit;text-decoration:none}
   border:2px solid #111;box-shadow:3px 3px 0 var(--hot);text-transform:uppercase;letter-spacing:.05em;
   flex:1 1 auto;text-align:center}
 /* flex:1 1 auto: every row of scraps stretches edge to edge like a taped-up
-   banner, so with the .brk giving a fixed 3+2 wrap the cluster is always full
+   banner, so with the .brk giving a fixed 3+3 wrap the cluster is always full
    lines - one wide line or two full lines, never a ragged short row. */
 .links a:nth-child(odd){transform:rotate(-1.5deg)}.links a:nth-child(even){transform:rotate(1.2deg)}
 .links a:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
-/* .brk: forced wrap point after the 3rd tape button. Hidden while all 5 fit on
-   one row; below that it breaks the row so the wrap is always 3+2 and never
-   leaves one button orphaned on its own row. */
-.links .brk{display:none}
-@media (max-width:880px){.links .brk{display:block;flex-basis:100%;height:0;margin:0;padding:0}}
+/* .brk: forced wrap point after the 3rd tape button, so the row is ALWAYS 3+3.
+   It used to be hidden above 880px, back when 5 buttons still fit on one line.
+   With the 6th (subscribe) they no longer do at any width, because .links is
+   capped at 680px - so leaving it conditional produced exactly the ragged row
+   this rule exists to prevent: five scraps and a lone sixth stretched under
+   them. Unconditional is now the only layout that keeps both lines full. */
+.links .brk{display:block;flex-basis:100%;height:0;margin:0;padding:0}
 /* fine-print row under the tape buttons: the off-site follow links + donate as
    a masthead credit line, not seven more buttons. Middot separators drawn in
    CSS so the HTML stays a plain list of anchors. */
@@ -59,6 +61,13 @@ header h1 a{color:inherit;text-decoration:none}
 .finelinks a{color:var(--dim);text-decoration:underline;text-underline-offset:3px;padding:.15rem .1rem}
 .finelinks a:hover{color:var(--hot)}
 .finelinks a+a::before{content:"·";color:var(--dim);margin:0 .55rem;text-decoration:none;display:inline-block}
+/* Subscribe-volume note, homepage only, directly under the tape buttons. Reads
+   as fine print rather than a pitch: the masthead button is the firehose (every
+   upcoming show at once), and someone deserves to know that BEFORE their phone
+   asks them to confirm a subscription. Sits above the fine-print link row. */
+.calnote{max-width:680px;margin:.5rem auto 0;padding:0 1rem;text-align:center;
+  font-family:'Special Elite',Courier,monospace;font-size:.74rem;color:var(--dim);line-height:1.5}
+@media (max-width:520px){.calnote{font-size:.66rem;margin-top:.4rem}}
 /* ---- monthly sponsor bar, under the fine-print row ----
    Only present in a month that actually has a sponsor; sponsors.json is empty
    by default and the markup is then not emitted at all (see sponsor_bar() in
@@ -470,7 +479,7 @@ main section:target{animation:viewin .26s ease both}
      during the Google Fonts swap the nowrap line would otherwise make the whole
      page scroll sideways for a beat. Clipped for that beat beats that. */
 
-  /* 5 buttons now (the off-site links moved to the .finelinks credit line), so
+  /* 6 buttons now (the off-site links moved to the .finelinks credit line), so
      the old 2x4 grid is gone: back to wrapped natural-width tape scraps that
      keep their tilt and read hand-placed. */
   .links{gap:.65rem .5rem;padding:.7rem .85rem .15rem;max-width:100%}
