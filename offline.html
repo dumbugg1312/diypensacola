@@ -67,13 +67,23 @@ header h1 a{color:inherit;text-decoration:none}
 .finelinks a{color:var(--dim);text-decoration:underline;text-underline-offset:3px;padding:.15rem .1rem}
 .finelinks a:hover{color:var(--hot)}
 .finelinks a+a::before{content:"·";color:var(--dim);margin:0 .55rem;text-decoration:none;display:inline-block}
-/* Subscribe-volume note, homepage only, directly under the tape buttons. Reads
-   as fine print rather than a pitch: the masthead button is the firehose (every
-   upcoming show at once), and someone deserves to know that BEFORE their phone
-   asks them to confirm a subscription. Sits above the fine-print link row. */
-.calnote{max-width:680px;margin:.5rem auto 0;padding:0 1rem;text-align:center;
-  font-family:'Special Elite',Courier,monospace;font-size:.74rem;color:var(--dim);line-height:1.5}
-@media (max-width:520px){.calnote{font-size:.66rem;margin-top:.4rem}}
+/* Subscribe-volume sheet, homepage only. Ships CLOSED as a native <dialog> and
+   opens on the masthead subscribe click (MAIN_JS), so the honest count - the
+   masthead button is the firehose, every upcoming show at once - reaches the
+   person about to confirm a subscription instead of standing under the buttons
+   as permanent fine print for everyone who never presses it. Native <dialog>
+   handles the top layer, focus trap and Esc, so nothing here fights the .lb /
+   .detail z-index stack. */
+.calsheet{max-width:26rem;width:calc(100% - 2rem);background:var(--card);color:var(--ink);
+  border:1px solid var(--line);box-shadow:8px 8px 0 var(--hot);padding:0}
+.calsheetin{padding:1.2rem 1.2rem 1.1rem}
+.calsheet::backdrop{background:rgba(0,0,0,.82)}
+.calsheet h2{margin:0 0 .6rem;font-family:"Anton","Special Elite",sans-serif;font-weight:400;
+  text-transform:uppercase;font-size:1.35rem;line-height:1.05}
+.calsheet p{margin:0 0 1rem;font-family:'Special Elite',Courier,monospace;font-size:.82rem;
+  color:var(--dim);line-height:1.55}
+.calsheetbtns{display:flex;flex-wrap:wrap;gap:.6rem}
+@media (max-width:520px){.calsheetbtns .dbtn{flex:1;justify-content:center}}
 /* ---- monthly sponsor bar, under the fine-print row ----
    Only present in a month that actually has a sponsor; sponsors.json is empty
    by default and the markup is then not emitted at all (see sponsor_bar() in
