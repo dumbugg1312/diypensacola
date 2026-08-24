@@ -61,6 +61,10 @@ header h1 a{color:inherit;text-decoration:none}
 .finelinks a{color:var(--dim);text-decoration:underline;text-underline-offset:3px;padding:.15rem .1rem}
 .finelinks a:hover{color:var(--hot)}
 .finelinks a+a::before{content:"·";color:var(--dim);margin:0 .55rem;text-decoration:none;display:inline-block}
+/* radio.html is the one on-site page in the fine-print row, so it can be the
+   page you're on. No tape-button treatment down here: just drop the underline
+   and take the green, the same "already stamped" idea in fine-print language. */
+.finelinks a[aria-current="page"]{color:var(--hot);text-decoration:none;cursor:default}
 /* Subscribe-volume sheet, homepage only. Ships CLOSED as a native <dialog> and
    opens on the masthead subscribe click (MAIN_JS), so the honest count - the
    masthead button is the firehose, every upcoming show at once - reaches the
