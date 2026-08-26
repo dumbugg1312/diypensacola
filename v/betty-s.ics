@@ -98,6 +98,22 @@ URL:https://diypensacola.com/s/2026-09-11-bettys-the-unnaturals-paupers-gra
  ve.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-09-12-bettys-sapphic-saturday-eve@diypensacola
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=America/Chicago:20260912T190000
+DTEND;TZID=America/Chicago:20260912T220000
+SUMMARY:Sapphic Saturday\, Eve\, Earth Sign Ky\, Platinum Muse\, Ray Darlin
+ g\, Sweet Lady Sleeze\, Pat MiDown\, VulcanBaby\, Lady Grace\, Miss Rainbo
+ w\, Violet Vibrations\, Devin X\, DJ Balance Universal @ Betty's on Belmon
+ t
+DESCRIPTION:sapphic saturday is back at betty's on september 12th. eve\, ea
+ rth sign ky\, platinum muse\, ray darling\, sweet lady sleeze\, pat midown
+ \, vulcanbaby\, lady grace\, miss rainbow\, violet vibrations\, devin x an
+ d dj balance universal. $15.
+LOCATION:Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-12-bettys-sapphic-saturday-eve.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-09-26-bettys-comedians-in-drag-doing-comedy-dallas-nelson@diypensa
  cola
 DTSTAMP:20260926T000000Z
