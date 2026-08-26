@@ -23,17 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-25-handlebar-emarosa-veaux@diypensacola
-DTSTAMP:20260825T000000Z
-DTSTART;TZID=America/Chicago:20260825T183000
-DTEND;TZID=America/Chicago:20260825T213000
-SUMMARY:Emarosa\, Veaux\, slo/tide\, dreamfone @ The Handlebar
-DESCRIPTION:emarosa\, veaux\, slo/tide\, and dreamfone at the handlebar\, t
- uesday august 25th. 6:30pm.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-25-handlebar-emarosa-veaux.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-08-26-handlebar-improvable-cause@diypensacola
 DTSTAMP:20260826T000000Z
 DTSTART;TZID=America/Chicago:20260826T190000
