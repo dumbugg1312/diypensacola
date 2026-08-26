@@ -45,14 +45,16 @@ header{padding:2.2rem 1rem .3rem;text-align:center}
 header .logo{width:170px;height:170px;display:block;margin:0 auto .6rem;filter:drop-shadow(0 0 14px rgba(255,255,255,.18));transition:transform .2s}
 header .logo.tl{transform:rotate(-6deg) scale(1.04)}
 header .logo.tr{transform:rotate(6deg) scale(1.04)}
-h1{margin:0;font-family:"Special Elite","Courier Adjusted","Courier New",monospace;font-weight:400;font-size:clamp(2.4rem,11vw,4.4rem);letter-spacing:.02em;
+/* .wordmark: the same big rotated wordmark on pages whose <h1> is their own
+   title (show lineup, act name, venue) - one look, two elements */
+h1,.wordmark{margin:0;font-family:"Special Elite","Courier Adjusted","Courier New",monospace;font-weight:400;font-size:clamp(2.4rem,11vw,4.4rem);letter-spacing:.02em;
   text-transform:uppercase;transform:rotate(-2deg);text-shadow:4px 4px 0 var(--hot)}
 header .tag{color:var(--dim);margin:.7rem 0 0;font-size:.95rem}
 /* one-line mission subtitle: reads as "what is this?" for a first-time visitor
    and carries the real search terms (alt scene / genres / house + all-ages) in
    crawlable body text, which ranks far harder than any meta tag */
 header .lede{color:var(--dim);max-width:54ch;margin:.5rem auto 0;font-size:.82rem;line-height:1.5}
-header h1 a{color:inherit;text-decoration:none}
+header h1 a,header .wordmark a{color:inherit;text-decoration:none}
 .homelink{display:block;text-decoration:none}
 .links{display:flex;flex-wrap:wrap;gap:.45rem .6rem;justify-content:center;max-width:680px;margin:0 auto;padding:.8rem 1rem .2rem}
 .links a{font-size:.85rem;text-decoration:none;color:#111;background:var(--tape);padding:.4rem .9rem;
@@ -1684,16 +1686,16 @@ header .homelink,header .home,header .logo,header .home img{
   ::view-transition-old(*),::view-transition-new(*){animation:none!important}
 }
 </style></head><body class="showpage">
-<header><a class="home" href="/"><img src="/logo.png" alt="DIYPensacola logo"><span>diypensacola</span></a><nav class="subnav" aria-label="site"><a href="/">shows</a><a href="/archive.html">archive &amp; search</a><a href="/bands.html">bands</a><a href="/venues.html">venues</a><a href="/radio.html">auto-play radio</a><a href="/guide.html">guide</a><a href="/submit.html">submit</a></nav></header>
+<div class="modebar"><nav class="modetabs" aria-label="calendar or archive"><a class="modetab" href="/">calendar</a><a class="modetab" href="/archive.html">archive</a></nav></div><header class="bighead"><a href="/" class="homelink" aria-label="diypensacola home"><img class="logo" src="/logo.png" alt="DIYPensacola Punksacola water tower logo"></a><p class="wordmark"><a href="/">diypensacola</a></p><p class="tag">punk, metal &amp; diy shows in pensacola, fl</p></header><div class="links"><a href="/bands.html">bands &amp; acts</a><a href="/venues.html">venues</a><a href="https://youtube.com/playlist?list=PLVw-bAWseWcR5fmJF4vu6zbBVT1m0Lf7q" target="_blank" rel="noopener">local mixtapes</a><i class="brk" aria-hidden="true"></i><a href="/guide.html">showgoer guide</a><a href="/submit.html">submit a show</a><a id="calsub" href="webcal://diypensacola.com/events.ics" title="every upcoming show on this calendar, dropped into your own and kept up to date. this is the whole calendar at once, not one show. for a single room or band, subscribe on its own page. unsubscribe any time.">subscribe</a></div>
 <main class="spwrap">
 <div class="empty emptybig">
 <p class="ehead">no signal down here</p>
 <p>you're offline and this page isn't saved. basements and dead-zone venues will do that. the calendar you already opened still works offline.</p>
-<p class="dcap">this copy was saved august 25, 2026. tonight's listings may have changed since.</p>
+<p class="dcap">this copy was saved august 26, 2026. tonight's listings may have changed since.</p>
 <div class="eactions">
 <a class="dbtn" href="/">open the calendar</a>
 </div>
 </div>
 </main>
-<footer>no bars? <b>you're probably at a show already.</b><br>proudly ran out of punksacola, fl<br><span class="built">updated august 25, 2026</span></footer>
+<footer>no bars? <b>you're probably at a show already.</b><br>proudly ran out of punksacola, fl<br><span class="built">updated august 26, 2026</span></footer>
 </body></html>
