@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data: https://diypensacola.goatcounter.com; font-src https://fonts.gstatic.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://diypensacola.goatcounter.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'sha256-yMVNxX/ZnhZes/kK+Pi5cGdBVNb2TPsebUfyoZnwLRQ='">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data: https://diypensacola.goatcounter.com; font-src https://fonts.gstatic.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://diypensacola.goatcounter.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'sha256-BpHh1JP+SjMtno8cqfGTECCxkwZH21G3IcqYXXxwCOA='">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>diypensacola · punk & diy shows in pensacola, fl</title>
 <meta name="google-site-verification" content="mCPAfeTI42S8iiavz0GuOHuEVdFiCpX39gd_E4Qo8lA">
@@ -502,32 +502,114 @@
     dt.setAttribute('data-sharelineup',g('lineup'));
     dt.setAttribute('data-sharewhen',g('nice'));
     dtReturn=document.activeElement;
+    // clear anything the drag-to-dismiss gesture left inline BEFORE the sheet is
+    // displayed again: the swipe suppresses the slide-up keyframes (see the drag
+    // block below) and must not leave them suppressed, and re-setting
+    // animation-name here from none -> sheetup is what lets the entrance replay.
+    var _bx=dt.querySelector('.dbox');
+    if(_bx){_bx.style.animation='';_bx.style.transition='';_bx.style.transform='';_bx.style.willChange='';}
+    dt.style.transition='';dt.style.backgroundColor='';
     dt.classList.add('open');
     applyInert();
     var x=dt.querySelector('[data-dclose]'); if(x)x.focus();
   }
   function closeDetail(){dt.classList.remove('open');applyInert();if(dtReturn&&dtReturn.focus)dtReturn.focus();dtReturn=null;flushTip();}
 
-  // mobile: swipe the detail sheet down to dismiss (the grab handle is the cue).
-  // Only starts when the sheet is scrolled to its top, so mid-content scrolling
-  // never triggers a close. Desktop uses the corner X and fires no touch events.
+  // mobile: drag the detail sheet down to dismiss (the grab handle is the cue).
+  // The sheet tracks the thumb 1:1 and the scrim thins as it travels, so the
+  // gesture is direct manipulation rather than a threshold that fires an
+  // animation. Only starts when the sheet is scrolled to its top, so
+  // mid-content scrolling never grabs it. Desktop uses the corner X and fires
+  // no touch events at all.
+  //
+  // The thing that made this feel broken: .detail .dbox carries
+  // `animation:sheetup .3s ... both`, and animation-fill-mode:both keeps the
+  // final keyframe (translateY(0)) applied forever. CSS animations outrank
+  // inline style in the cascade, so `box.style.transform` was silently ignored
+  // - the sheet stayed nailed in place through the whole drag and then jumped
+  // shut at the 90px mark. Suppressing animation-name for the duration of the
+  // gesture is what actually hands the transform back to the drag; openDetail
+  // above restores it so the entrance still plays next time.
   (function(){
     var box=dt&&dt.querySelector('.dbox'); if(!box)return;
-    var y0=0,dy=0,active=false;
+    var y0=0,x0=0,dy=0,active=false,drag=false,lastY=0,lastT=0,vel=0,raf=0;
+    var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)');
+    function paint(){
+      raf=0;
+      box.style.transform='translateY('+dy+'px)';
+      // the scrim lightens in step with the travel, so the page behind reads as
+      // coming back rather than being uncovered all at once on release
+      var h=box.offsetHeight||1;
+      dt.style.backgroundColor='rgba(0,0,0,'+(0.92*Math.max(0,1-dy/h)).toFixed(3)+')';
+    }
+    function settle(){
+      box.style.transition='';box.style.willChange='';
+      dt.style.transition='';dt.style.backgroundColor='';
+      box.style.transform='';
+    }
     box.addEventListener('touchstart',function(e){
+      // a second finger, or any scrolled content, means this isn't a sheet drag
       if(e.touches.length!==1||box.scrollTop>0){active=false;return;}
-      y0=e.touches[0].clientY;dy=0;active=true;box.style.transition='none';
+      y0=lastY=e.touches[0].clientY; x0=e.touches[0].clientX;
+      lastT=e.timeStamp||Date.now();
+      dy=0; vel=0; active=true; drag=false;
+      // start every gesture with no frame owed. A drag abandoned as a scroll
+      // (below) can leave one pending, and if that frame never runs - the tab
+      // went to the background mid-swipe - the flag would stay set and the
+      // `if(!raf)` guard would silently block painting for every drag after it.
+      if(raf){cancelAnimationFrame(raf);raf=0;}
     },{passive:true});
     box.addEventListener('touchmove',function(e){
       if(!active)return;
-      dy=e.touches[0].clientY-y0;
-      box.style.transform=dy>0?('translateY('+dy+'px)'):'';
-    },{passive:true});
+      var y=e.touches[0].clientY, d=y-y0, dx=e.touches[0].clientX-x0;
+      if(!drag){
+        if(Math.abs(d)<6&&Math.abs(dx)<6)return;      // still inside the slop
+        // upward, or mostly sideways: hand the gesture back to normal scrolling
+        if(d<=0||Math.abs(dx)>Math.abs(d)){active=false;if(raf){cancelAnimationFrame(raf);raf=0;}return;}
+        drag=true;
+        box.style.animation='none';                   // see the note above
+        box.style.transition='none';
+        box.style.willChange='transform';
+      }
+      // 1:1 downward; an upward pull barely gives, so the sheet can't float off
+      // the bottom edge of the screen
+      dy=d>0?d:d/6;
+      var t=e.timeStamp||Date.now();
+      if(t>lastT){vel=(y-lastY)/(t-lastT);lastY=y;lastT=t;}   // px per ms
+      // stop the sheet's own scroller (and the page) from moving with us
+      if(e.cancelable)e.preventDefault();
+      // one transform write per frame instead of one per touch event
+      if(!raf)raf=requestAnimationFrame(paint);
+    },{passive:false});
     function end(){
-      if(!active)return;active=false;
-      box.style.transition='transform .2s ease';
-      if(dy>90)closeDetail();
-      box.style.transform='';dy=0;
+      if(!active)return; active=false;
+      if(raf){cancelAnimationFrame(raf);raf=0;}
+      if(!drag)return;
+      var h=box.offsetHeight||1;
+      // a quick flick dismisses even when short; otherwise it takes a third of
+      // the sheet's height, which is the distance a deliberate push travels
+      var go=vel>0.5||dy>Math.min(140,h*0.32);
+      if(reduce&&reduce.matches){settle();if(go)closeDetail();return;}
+      if(go){
+        // the close continues the gesture from where the thumb left it
+        var done=function(){
+          if(!done.ran){done.ran=true;box.removeEventListener('transitionend',done);
+            closeDetail();settle();}
+        };
+        box.style.transition='transform .2s cubic-bezier(.3,.9,.35,1)';
+        dt.style.transition='background-color .2s linear';
+        box.style.transform='translateY('+h+'px)';
+        dt.style.backgroundColor='rgba(0,0,0,0)';
+        box.addEventListener('transitionend',done);
+        setTimeout(done,280);        // transitionend can be skipped on a hidden tab
+      }else{
+        box.style.transition='transform .26s cubic-bezier(.2,.85,.25,1)';
+        dt.style.transition='background-color .26s linear';
+        box.style.transform='translateY(0)';
+        dt.style.backgroundColor='';
+        setTimeout(function(){if(!active)settle();},280);
+      }
+      dy=0;
     }
     box.addEventListener('touchend',end);
     box.addEventListener('touchcancel',end);
