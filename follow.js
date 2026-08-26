@@ -9,3 +9,19 @@
   b.addEventListener('click',function(){var a=get(),i=a.indexOf(slug);if(i>-1)a.splice(i,1);else a.push(slug);set(a);render();});
   render();
 })();
+// flyer-morph tagging for the act/venue pages this script rides on: leaving a
+// poster tile (or the taped-up hero) for its show page tags that image so the
+// cross-document view transition in style.css morphs it into .spflyer.
+(function(){
+  if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  document.addEventListener('click',function(e){
+    var a=e.target&&e.target.closest?e.target.closest('a.pwtile,a.heropost'):null;
+    if(!a)return;
+    var im=a.querySelector('img');
+    if(im)im.style.viewTransitionName='flyer';
+  },true);
+  addEventListener('pageshow',function(){
+    var im=document.querySelector('a.pwtile img[style*="view-transition-name"],a.heropost img[style*="view-transition-name"]');
+    if(im)im.style.viewTransitionName='';
+  });
+})();
