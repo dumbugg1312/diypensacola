@@ -33,7 +33,7 @@ URL:https://diypensacola.com/s/2026-08-28-bettys-noiseheads-i-hate-sundays.
  html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Noiseheads\, I Hate Sundays\, Mothersmilk @ Betty's on
+DESCRIPTION:tonight: Noiseheads\, Ihatesundays\, Mother's Milk @ Betty's on
   Belmont
 TRIGGER:-PT2H
 END:VALARM
