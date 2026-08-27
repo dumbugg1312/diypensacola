@@ -5,7 +5,14 @@
    edge did not), and a font preload in <head> pointing at a hanging URL stalled
    page loads badly enough that phones timed out. Do not re-self-host without
    first confirming the custom domain serves a brand-new path reliably. */
-:root{--bg:#0c0c0d;--card:#17171a;--ink:#f2f2ee;--dim:#9b9b94;--hot:#6b7036;--hotink:#8f9850;--on-hot:#f2f2ee;--line:#2c2c31;--tape:#d8d4c5;--free:#aebf5a;--sliding:#7fb0a8;--age:#d59b46;--benefit:#d98cb0;--soldout:#9b9b94;--shadow:rgba(107,112,54,.5);--scrim:rgba(12,12,13,.82);color-scheme:dark}
+:root{--bg:#0c0c0d;--card:#17171a;--ink:#f2f2ee;--dim:#9b9b94;--hot:#6b7036;--hotink:#8f9850;--on-hot:#f2f2ee;--line:#2c2c31;--tape:#d8d4c5;--free:#aebf5a;--sliding:#7fb0a8;--age:#d59b46;--benefit:#d98cb0;--soldout:#9b9b94;--shadow:rgba(107,112,54,.5);--scrim:rgba(12,12,13,.82);color-scheme:dark;
+  /* three column widths for the whole site, so the page's spine stays put
+     as you navigate. narrow = the masthead button block and anything you
+     READ straight down; std = a dossier (show, act, venue, directory);
+     wide = the flyer feed, the one place that wants the extra air.
+     Components with their own intrinsic size (a modal, a tape deck cover,
+     an empty state) keep their own width on purpose. */
+  --w-narrow:680px;--w-std:760px;--w-wide:880px}
 /* Courier New is noticeably wider than Special Elite, so the pre-swap fallback
    used to shove layout around (the mobile tagline clips itself to survive it).
    size-adjust shrinks the local Courier to Special Elite's average advance
@@ -49,7 +56,7 @@ header .tag{color:var(--dim);margin:.7rem 0 0;font-size:.95rem}
 header .lede{color:var(--dim);max-width:54ch;margin:.5rem auto 0;font-size:.82rem;line-height:1.5}
 header h1 a,header .wordmark a{color:inherit;text-decoration:none}
 .homelink{display:block;text-decoration:none}
-.links{display:flex;flex-wrap:wrap;gap:.45rem .6rem;justify-content:center;max-width:680px;margin:0 auto;padding:.8rem 1rem .2rem}
+.links{display:flex;flex-wrap:wrap;gap:.45rem .6rem;justify-content:center;max-width:var(--w-narrow);margin:0 auto;padding:.8rem 1rem .2rem}
 .links a{font-size:.85rem;text-decoration:none;color:#111;background:var(--tape);padding:.4rem .9rem;
   border:2px solid #111;box-shadow:3px 3px 0 var(--hot);text-transform:uppercase;letter-spacing:.05em;
   flex:1 1 auto;text-align:center}
@@ -68,7 +75,7 @@ header h1 a,header .wordmark a{color:inherit;text-decoration:none}
 /* fine-print row under the tape buttons: the off-site follow links + donate as
    a masthead credit line, not seven more buttons. Middot separators drawn in
    CSS so the HTML stays a plain list of anchors. */
-.finelinks{display:flex;flex-wrap:wrap;justify-content:center;max-width:680px;
+.finelinks{display:flex;flex-wrap:wrap;justify-content:center;max-width:var(--w-narrow);
   margin:.55rem auto 0;padding:0 1rem;font-family:'Special Elite','Courier Adjusted',Courier,monospace;font-size:.74rem}
 .finelinks a{color:var(--dim);text-decoration:underline;text-underline-offset:3px;padding:.15rem .1rem}
 .finelinks a:hover{color:var(--hot)}
@@ -135,7 +142,7 @@ header h1 a,header .wordmark a{color:inherit;text-decoration:none}
 /* the section you're actually on reads as already-stamped: filled, flat to the
    page, no tilt and no shadow, so the nav says where you are and not only where
    you can go. Same idea as .modetab.on, in tape-label language. */
-.links a[aria-current="page"],.subnav a[aria-current="page"]{
+.links a[aria-current="page"]{
   background:var(--hot);color:var(--on-hot);box-shadow:none;transform:none;cursor:default}
 /* the CALENDAR / ARCHIVE mode switch under the wordmark: the site's two halves
    as one segmented control. Deliberately NOT a tape button (those are the
@@ -181,6 +188,25 @@ header h1 a,header .wordmark a{color:inherit;text-decoration:none}
 .tstrip-body{font-family:'Special Elite',monospace;font-size:.9rem;line-height:1.15;
   overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .tstrip-go{flex:none;font-size:1rem;line-height:1;margin-left:.05rem}
+
+/* YOURS strip: the payoff for saving a show or following a band/room. Sits under
+   the controls, above tonight. Deliberately quieter than .tstrip - it is YOUR
+   note to yourself, not the night's headline, and green stays reserved for
+   tonight. Empty for anyone who has saved and followed nothing, which is the
+   default state, so it never nags a first-time visitor. */
+.yourstrip{max-width:min(94%,620px);margin:.9rem auto .2rem;padding:.5rem .75rem;
+  background:var(--card);border:1px dashed var(--line);display:flex;
+  flex-direction:column;gap:.35rem}
+.ysline{margin:0;font-family:'Special Elite',monospace;font-size:.86rem;line-height:1.35;
+  color:var(--dim)}
+.yslink{font:inherit;background:none;border:0;padding:0;margin-left:.15rem;color:var(--hotink);
+  text-decoration:underline;text-decoration-style:dotted;text-underline-offset:2px;cursor:pointer}
+.yslink:hover,.yslink:focus-visible{text-decoration-style:solid}
+/* the "take me there" flash: a followed card gets a short outline so the scroll
+   lands somewhere obvious instead of dumping you mid-feed. */
+@keyframes ysping{0%,100%{box-shadow:none}25%,75%{box-shadow:0 0 0 3px var(--hot)}}
+.show.ping{animation:ysping 1.4s ease-in-out}
+@media (prefers-reduced-motion:reduce){.show.ping{animation:none;box-shadow:0 0 0 3px var(--hot)}}
 nav{display:flex;gap:.6rem;justify-content:center;align-items:center;padding:1.2rem 1rem;position:relative}
 nav .searchtoggle svg{display:block}
 /* print-scope popover, anchored under the nav's printer icon */
@@ -198,7 +224,7 @@ nav .searchtoggle svg{display:block}
 nav a{background:transparent;color:var(--ink);border:2px dashed var(--dim);padding:.45rem 1.1rem;
   text-decoration:none;text-transform:uppercase;letter-spacing:.08em;font-size:.9rem}
 nav a:hover{border-color:var(--hot);color:var(--hot)}
-main{max-width:880px;margin:0 auto 2rem;padding:0 1rem}
+main{max-width:var(--w-wide);margin:0 auto 2rem;padding:0 1rem}
 main section{display:none}
 main section:target{display:block}
 main:not(:has(section:target)) #list{display:block}
@@ -207,7 +233,7 @@ main:not(:has(section:target)) #list{display:block}
 main section[tabindex]:focus{outline:none}
 body:has(#list:target) a[href='#list'],body:not(:has(section:target)) a[href='#list'],
 body:has(#grid:target) a[href='#grid']{border:2px solid var(--hot);background:var(--hot);color:var(--on-hot)}
-.controls{max-width:680px;margin:0 auto .3rem}
+.controls{max-width:var(--w-narrow);margin:0 auto .3rem}
 .searchtoggle{background:var(--card);border:2px dashed var(--dim);color:var(--ink);cursor:pointer;
   width:2.5rem;height:2.5rem;font:1.25rem/1 inherit;flex:none;display:flex;align-items:center;justify-content:center}
 .searchtoggle:hover{border-color:var(--hot);color:var(--hot)}
@@ -229,7 +255,7 @@ body:has(#grid:target) a[href='#grid']{border:2px solid var(--hot);background:va
   font:inherit;padding:.4rem .9rem;text-transform:uppercase;letter-spacing:.05em}
 .search input:focus{outline:none}
 .search input::placeholder{color:var(--dim)}
-.bucket{max-width:680px;margin:0 auto}
+.bucket{max-width:var(--w-narrow);margin:0 auto}
 .bhead{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.03em;
   font-size:1.5rem;margin:1.9rem 0 .9rem;color:var(--ink);display:flex;align-items:center;gap:.7rem}
 .bhead::after{content:"";flex:1;border-top:2px dashed var(--line)}
@@ -318,15 +344,61 @@ body:has(#grid:target) a[href='#grid']{border:2px solid var(--hot);background:va
 .al .meta{display:block}
 .empty{color:var(--dim);text-align:center}
 .emptyline{margin:0 0 .9rem}
+.emptysub{margin:0 0 .9rem;font-size:.85rem}
+/* 404's live-shows block: a dead link is how most strangers arrive, so the page
+   answers "is anything happening?" and not only "sorry". Ruled off from the
+   apology above it. */
+.nfnext{margin:1.3rem 0 .2rem;padding-top:1.1rem;border-top:1px dashed var(--line)}
+.nfnext .emptyline{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.7rem}
 /* first-use / no-shows state: a dashed-card onboarding moment in the zine
    vocabulary - Anton head, typewriter body, tape-button CTAs. Not a SaaS blank. */
 .emptybig{max-width:520px;margin:2.4rem auto;padding:1.7rem 1.4rem;border:2px dashed var(--line);background:var(--card)}
 .emptybig .ehead{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
-  font-size:1.45rem;letter-spacing:.02em;color:var(--ink);margin:0 0 .7rem}
+  font-size:1.45rem;letter-spacing:.02em;color:var(--ink);margin:0 0 .7rem;
+  /* transform/text-shadow reset because 404's .ehead is an <h1>, and the big
+     rotated wordmark rule would otherwise tilt an empty-state heading */
+  transform:none;text-shadow:none}
 .emptybig p{margin:0 0 1.15rem;line-height:1.6;color:var(--dim)}
 .eactions{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center}
-footer{text-align:center;color:var(--dim);padding:2.5rem 1rem;font-size:.85rem}
+/* ---- the shared bottom inch ----
+   The masthead is the same on every page; so is this. A torn rule marks where
+   the page stops and the sign-off starts, then three fixed tiers: the page's own
+   one-line send-off, the follow/support row (site-wide down here, which is why
+   the masthead only carries it on the homepage), and the credit + build stamp.
+   Same width token as the masthead button block, so the top and bottom of every
+   page line up on the same spine. */
+footer{text-align:center;color:var(--dim);font-size:.85rem;
+  max-width:var(--w-narrow);margin:3rem auto 0;padding:1.6rem 1rem 2.5rem;
+  border-top:2px dashed var(--line)}
 footer b{color:var(--hot)}
+/* the gap lives on .fline, not on .finelinks, so the sign-off still clears the
+   credit line on the homepage - the one page that drops the follow row here
+   because it already carries it under the masthead buttons. */
+footer .fline{margin:0 0 .85rem}
+footer .finelinks{margin:0 auto .6rem}
+footer .fcredit{margin:0;font-size:.78rem;opacity:.85}
+footer .built{display:inline-block}
+/* ---- the page closer ----
+   No page dead-ends. Show and act pages always ended by handing you somewhere
+   else to go; this is that same gesture as one component, in the same place on
+   every page, just above the footer. Tape scraps like the masthead buttons, but
+   smaller and unrotated - it's a closing gesture, not a second masthead. */
+/* display:block explicitly: the base nav{} rule is display:flex (written for
+   the homepage view switcher) and would otherwise lay the label out BESIDE
+   the links instead of above them. */
+.closer{display:block;max-width:var(--w-narrow);margin:2.4rem auto .4rem;text-align:center;
+  padding:0 1rem}
+.closerlab{display:block;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--dim);margin-bottom:.6rem}
+.closerlinks{display:flex;flex-wrap:wrap;gap:.45rem .55rem;justify-content:center}
+.closerlinks a{flex:1 1 auto;text-align:center;font-size:.78rem;text-decoration:none;color:#111;
+  background:var(--tape);padding:.34rem .8rem;border:2px solid #111;
+  box-shadow:3px 3px 0 var(--hot);text-transform:uppercase;letter-spacing:.05em}
+.closerlinks a:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
+.closerlinks a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 var(--hot)}
+@media (max-width:560px){.closerlinks a{flex:1 1 100%}}
+/* the radio page is a centred console, so its title centres with it */
+.radiowrap .dirhead{text-align:center}
 .flinks{margin:.7rem 0 0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;justify-content:center}
 .flinks a{color:var(--hotink);text-decoration:underline}
 .lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;
@@ -431,7 +503,7 @@ main section:target{animation:viewin .26s ease both}
 
 /* end-of-page support callout: an in-flow banner just above the footer that
    fades in once it scrolls into view (reduced-motion users get it instantly). */
-.endtip{max-width:680px;margin:2.6rem auto .4rem;background:var(--card);border:2px dashed var(--hot);
+.endtip{max-width:var(--w-narrow);margin:2.6rem auto .4rem;background:var(--card);border:2px dashed var(--hot);
   padding:1.2rem 1.3rem;text-align:center;opacity:0;transform:translateY(12px);
   transition:opacity .5s ease,transform .5s ease}
 .endtip.in{opacity:1;transform:none}
@@ -450,7 +522,7 @@ main section:target{animation:viewin .26s ease both}
    (like a print template's crease marks), the spine carries a small solid color
    bar at its foot the way pressed tapes do, and the interior reads top to
    bottom: catalog no., title, tracklist with dot leaders, format line. */
-.tapedeck{max-width:760px;margin:2.8rem auto .4rem;background:var(--card);
+.tapedeck{max-width:var(--w-std);margin:2.8rem auto .4rem;background:var(--card);
   border:2px solid var(--tape);box-shadow:5px 5px 0 var(--hot);display:flex;overflow:hidden}
 /* cover panel: the "front" art - logo pressed on black */
 .tdcover{flex:none;width:34%;background:#000;display:flex;flex-direction:column;
@@ -493,7 +565,12 @@ main section:target{animation:viewin .26s ease both}
 
 @media (max-width:640px){
   #calgrid{display:none}#agenda{display:block}
-  .totop{display:none}  /* the sticky nav already covers this on phones */
+  /* on phones the homepage has the sticky view-switcher one tap away, so it
+     does not need a back-to-top button too. Every OTHER page does: none of them
+     has a sticky bar, and all of them now open with the full masthead, so the
+     way back up is a long scroll. This used to hide the button everywhere,
+     which was correct only while the homepage was the one page that had it. */
+  body:not(.showpage) .totop{display:none}
 
   /* header: tighter so shows are reachable sooner - same big punk type */
   header{padding:1.5rem 1rem .2rem}
@@ -529,20 +606,19 @@ main section:target{animation:viewin .26s ease both}
 
   /* sticky segmented view-switcher - always one tap away */
   /* sticks below the install banner when it's up: --a2hs-h (set by JS to the
-     banner's height, else 0) keeps the view-switcher from hiding behind it. */
-  nav{position:sticky;top:calc(var(--a2hs-h,0px) + var(--modebar-h,0px));z-index:40;gap:.5rem;margin-bottom:.2rem;
+     banner's height, else 0) keeps the view-switcher from hiding behind it.
+     SCOPED to the homepage view switcher by its aria-label. This used to be a
+     bare `nav {}`, which meant every <nav> the site emits - the mode tabs, the
+     show-page thread, the year rail, the page closer - silently became a sticky
+     blurred bar on phones, and each one then needed its own escape-hatch rule to
+     undo it. Naming the one nav that actually wants the treatment retires that
+     whole class of leak instead of patching it per component. */
+  nav[aria-label="views"]{position:sticky;top:calc(var(--a2hs-h,0px) + var(--modebar-h,0px));z-index:40;gap:.5rem;margin-bottom:.2rem;
     transition:top .28s cubic-bezier(.2,.85,.25,1);
     padding:.55rem .8rem;padding-top:calc(.55rem + env(safe-area-inset-top));
     background:var(--scrim);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
     border-bottom:1px solid var(--line)}
-  nav a{flex:1;text-align:center;padding:.58rem .3rem;font-size:.82rem}
-  /* ...but that equal-width treatment is written for the HOMEPAGE view switcher
-     and lands on every <nav> on the site, including the subpage tape nav and the
-     show-page thread. With four tape labels it never showed; at seven it stretches
-     a lone wrapped label across the entire row and breaks "archive & search" over
-     two lines. Tape labels keep their natural width and wrap as a block, the same
-     rule the .links row follows. Same class of leak .modetabs documents up top. */
-  .subnav a{flex:0 0 auto;white-space:nowrap;text-align:center;padding:.32rem .62rem;font-size:.72rem}
+  nav[aria-label="views"] a{flex:1;text-align:center;padding:.58rem .3rem;font-size:.82rem}
   main section{scroll-margin-top:calc(4.4rem + var(--a2hs-h,0px) + var(--modebar-h,0px))}
   main{padding:0 .85rem}
 
@@ -609,12 +685,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 /* ---------- standalone per-show pages (site/s/<id>.html) ---------- */
 /* Real shareable URLs so a link previews with that show's flyer. They reuse the
    zine tokens above and stay script-free (stricter CSP). */
-.showpage main.spwrap{max-width:760px}
-.showpage header{padding:1.6rem 1rem .2rem;text-align:left}
-.showpage .home{display:inline-flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--ink)}
-.showpage .home img{width:64px;height:64px;filter:drop-shadow(0 0 10px rgba(255,255,255,.16))}
-.showpage .home span{font-family:"Special Elite","Courier Adjusted","Courier New",monospace;text-transform:uppercase;
-  letter-spacing:.03em;font-size:1.35rem;text-shadow:3px 3px 0 var(--hot)}
+.showpage main.spwrap{max-width:var(--w-std)}
+
 .spcard{display:flex;gap:1.3rem;background:var(--card);border:1px solid var(--line);
   box-shadow:8px 8px 0 var(--hot);padding:1.2rem;flex-wrap:wrap;margin-top:1.1rem}
 .spflyer{width:300px;max-width:100%;height:auto;border:2px solid var(--ink);background:#000;display:block;
@@ -626,7 +698,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .spback{text-align:center;margin:1.7rem 0 .5rem}
 .spback a{text-decoration:none}
 /* ---------- showgoer guide (site/guide.html) - blog-post layout ---------- */
-.guide{max-width:680px}
+/* .showpage main.guide, not bare .guide: the show-page wrapper rule is
+   (0,2,1) and silently beat it, so the guide has been reading at dossier
+   width instead of prose width. It is a page you read straight down. */
+.showpage main.guide{max-width:var(--w-narrow)}
 .guide h1{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
   font-size:clamp(2rem,8vw,3rem);line-height:1.08;letter-spacing:.01em;margin:.4rem 0 .95rem;
   text-shadow:3px 3px 0 var(--hot)}
@@ -645,7 +720,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
    flyer, slight alternating rotations, a tape strip across the top corner, and a
    caption strip underneath. Same DOM, same click-to-open detail. */
 #list.wall .cards{display:block;column-count:3;column-gap:1.2rem}
-#list.wall .bucket{max-width:880px}
+#list.wall .bucket{max-width:var(--w-wide)}
 #list.wall .show{display:block;padding:0;background:transparent;border:none;box-shadow:none;
   break-inside:avoid;margin:0 0 1.5rem;position:relative}
 #list.wall .show:nth-child(3n+1){transform:rotate(-1.6deg)}
@@ -696,7 +771,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
      print-color-adjust since photocopiers are the target output anyway. */
   @page{margin:.4in}
   body{background:#fff;color:#000;font:10.5pt/1.35 "Special Elite","Courier Adjusted","Courier New",monospace}
-  header,.links,.finelinks,.modebar,nav,.controls,#grid,.endtip,.tapedeck,footer,.totop,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming,.tstrip,.printbar,.savebtn,.doorsin,.bnone,.ht{display:none!important}
+  header,.links,.finelinks,.modebar,nav,.controls,#grid,.endtip,.tapedeck,footer,.totop,.closer,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming,.tstrip,.printbar,.savebtn,.doorsin,.bnone,.ht,.yourstrip{display:none!important}
   main:not(:has(section:target)) #list{display:block}
   main section{display:none!important}
   main section#list{display:block!important}
@@ -808,7 +883,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 #bandhits a small{color:var(--dim)}
 
 /* ---------- band + venue pages (script-free, reuse zine tokens) ---------- */
-.dirwrap{max-width:760px}
+.dirwrap{max-width:var(--w-std)}
 .dirhead{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
   font-size:clamp(1.9rem,7vw,2.7rem);line-height:1.06;letter-spacing:.01em;margin:.4rem 0 .4rem;
   text-shadow:3px 3px 0 var(--hot);transform:none}
@@ -895,7 +970,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 /* cited pull-quotes (band-research.json): torn-clipping blockquotes with source
    links. Held to the page by the site's own masking tape (the accent side-stripe
    they used to wear was the one generic-blog callout on the whole site). */
-.pressrow{display:flex;flex-wrap:wrap;gap:1rem;max-width:760px;padding-top:8px}
+.pressrow{display:flex;flex-wrap:wrap;gap:1rem;max-width:var(--w-std);padding-top:8px}
 .pressq{flex:1 1 20rem;margin:0;padding:.9rem 1rem .7rem;background:var(--card);
   border:1px solid var(--line);position:relative}
 .pressq::before{content:"";position:absolute;top:-7px;left:13%;width:52px;height:14px;
@@ -909,7 +984,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .pressq figcaption a{color:var(--hotink);text-decoration-style:dotted;text-underline-offset:3px}
 .pressq figcaption a:hover,.pressq figcaption a:focus-visible{color:var(--ink);text-decoration-style:solid}
 .pressq figcaption small{text-transform:none;letter-spacing:0}
-.bandindex{columns:2;column-gap:2rem;max-width:760px}
+.bandindex{columns:2;column-gap:2rem;max-width:var(--w-std)}
 @media (max-width:560px){.bandindex{columns:1}}
 .bandindex a{display:block;padding:.32rem 0;border-bottom:1px dashed var(--line);text-decoration:none;color:var(--ink);break-inside:avoid}
 .bandindex a:hover{color:var(--hot)}
@@ -1063,16 +1138,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 #list.wall:not(.yours) .cards:not(:has(.show:not(.past) ~ .show:not(.past))){column-count:1;max-width:430px;margin:0 auto}
 
 /* ---------- round 2: site-wide zine polish ---------- */
-/* tape-label subnav: every subpage carries the strip so nothing dead-ends */
-.showpage header{display:flex;align-items:center;justify-content:space-between;gap:.9rem 1.2rem;flex-wrap:wrap}
-.subnav{display:flex;gap:.55rem;flex-wrap:wrap}
-.subnav a{font-size:.72rem;text-decoration:none;color:#111;background:var(--tape);padding:.32rem .62rem;
-  border:2px solid #111;box-shadow:2px 2px 0 var(--hot);text-transform:uppercase;letter-spacing:.06em}
-.subnav a:nth-child(odd){transform:rotate(-1.6deg)}
-.subnav a:nth-child(even){transform:rotate(1.3deg)}
-.subnav a:hover{background:var(--hot);color:var(--on-hot);box-shadow:2px 2px 0 var(--tape)}
-.subnav a[aria-current="page"]:hover,.links a[aria-current="page"]:hover{box-shadow:none;transform:none}
-.subnav a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 var(--hot)}
+.links a[aria-current="page"]:hover{box-shadow:none;transform:none}
 @media (max-width:640px){.showpage header{justify-content:center;text-align:center}}
 /* (the old halftone rest-state block that lived here was dead code: the 2026
    poster-feed rules below re-declare the identical selector later in the sheet
@@ -1085,10 +1151,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 /* quiet-night stamp under the tonight header */
 .nstamp{--rot:-2deg;display:inline-block;border:2px solid var(--dim);color:var(--dim);padding:.16rem .55rem;
   text-transform:uppercase;letter-spacing:.09em;font-size:.8rem;margin-right:.4rem;transform:rotate(-2deg)}
-/* pull-off tab fringe along the bottom of wall-view posters (one tab gone) */
-#list.wall .info::after{content:"";display:block;height:13px;margin:.5rem -.7rem -.6rem;
-  background:linear-gradient(var(--bg),var(--bg)) 62% 0/20px 100% no-repeat,
-  repeating-linear-gradient(90deg,var(--card) 0 19px,var(--bg) 19px 21px)}
 /* calendar: show days get circled by hand instead of boxed hot */
 .cal td.has{border:1px dashed var(--line)}
 .cal td.has .dnum{position:relative;display:inline-block;color:var(--ink);padding:0 .4em .05em .35em}
@@ -1286,6 +1348,11 @@ main{max-width:940px}
   overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .spthread .thstep:hover small,.spthread .thstep:focus-visible small{color:inherit}
 .spthread .thnext{text-align:right}
+/* "still on" - the only part of the thread that points at a night you can go to,
+   so it reads live rather than archival: solid border, hot lead. Sits first. */
+.spthread .thfwd .lead{color:var(--hotink)}
+.spthread .thfwdstep{border-color:var(--hotink)}
+.spthread .thfwdstep .tharrow{color:var(--hotink)}
 .spthread .thacts{display:flex;flex-wrap:wrap;gap:.4rem;align-items:baseline}
 .spthread .thacts .lead{width:100%}
 .spthread .thacts a{display:inline-block;max-width:100%;font-size:.8rem;text-decoration:none;color:var(--ink);

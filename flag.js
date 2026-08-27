@@ -1,4 +1,31 @@
 (function(){
+  // ---- masthead + footer behaviour, site-wide ----
+  // These two used to live in main.js and so ran on the homepage only, back when
+  // the homepage was the only page with a big logo or a long scroll. Every page
+  // now carries the same masthead and the same footer, so they belong in the one
+  // script every page already loads.
+  //
+  // logo flips which way it tilts on each hover
+  var _logo=document.querySelector('header .logo'),_leftTilt=true;
+  if(_logo){
+    _logo.addEventListener('mouseenter',function(){_logo.classList.remove('tl','tr');_logo.classList.add(_leftTilt?'tl':'tr');_leftTilt=!_leftTilt;});
+    _logo.addEventListener('mouseleave',function(){_logo.classList.remove('tl','tr');});
+  }
+  // back-to-top: reveal after scrolling past the header, scroll-to-top on click
+  // (uses scrollTo, not a #top link, so the current view/hash is preserved).
+  var _toTop=document.getElementById('totop');
+  if(_toTop){
+    // class 'on' (not 'show') on purpose: '.show' is the card selector the global
+    // click/keydown handlers use, so reusing it would make this button open a card.
+    var _onScroll=function(){_toTop.classList.toggle('on',(window.pageYOffset||document.documentElement.scrollTop||0)>400);};
+    window.addEventListener('scroll',_onScroll,{passive:true}); _onScroll();
+    _toTop.addEventListener('click',function(e){
+      e.preventDefault();e.stopPropagation();
+      var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({top:0,behavior:rm?'auto':'smooth'});
+    });
+  }
+
   var DCX_PASSCODE='1017';
   var canonEl=document.querySelector('link[rel="canonical"]');
   var isHome=!!canonEl&&/\/$/.test(canonEl.getAttribute('href')||'');
