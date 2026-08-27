@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Bastard Son
+X-WR-CALNAME:DIYPensacola: Bastardson
 X-WR-TIMEZONE:America/Chicago
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
@@ -41,10 +41,9 @@ UID:2026-09-19-the-den-bastardson-rat-daughter@diypensacola
 DTSTAMP:20260919T000000Z
 DTSTART;TZID=America/Chicago:20260919T183000
 DTEND;TZID=America/Chicago:20260919T213000
-SUMMARY:Bastard Son\, Rat Daughter\, beautysleep @ Beulah Den
-DESCRIPTION:bastard son\, rat daughter\, and beautysleep at the den\, satur
- day september 19. doors 6:30\, music at 7. pay what you can\, $5 suggested
- .
+SUMMARY:Bastardson\, Rat Daughter\, beautysleep @ Beulah Den
+DESCRIPTION:bastardson\, rat daughter\, and beautysleep at the den\, saturd
+ ay september 19. doors 6:30\, music at 7. pay what you can\, $5 suggested.
 LOCATION:Beulah Den
 URL:https://diypensacola.com/s/2026-09-19-the-den-bastardson-rat-daughter.h
  tml

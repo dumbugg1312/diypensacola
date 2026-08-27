@@ -50,6 +50,19 @@ URL:https://diypensacola.com/s/2026-08-28-bettys-noiseheads-i-hate-sundays.
  html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-08-28-bettys-friday-night-funnies-ryan-pfeiffer@diypensacola
+DTSTAMP:20260828T000000Z
+DTSTART;TZID=America/Chicago:20260828T200000
+DTEND;TZID=America/Chicago:20260828T230000
+SUMMARY:Friday Night Funnies\, Ryan Pfeiffer\, Dan Hamilton\, Molly on-the-
+ wheel\, Pensacola Comedy Club @ Betty's
+DESCRIPTION:friday night funnies at betty's\, friday august 28th. ryan pfei
+ ffer\, dan hamilton\, and molly on-the-wheel. 8pm\, $10 cover.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-28-bettys-friday-night-funnies-ryan-
+ pfeiffer.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-08-29-bettys-rat-daughter-boof@diypensacola
 DTSTAMP:20260829T000000Z
 DTSTART;TZID=America/Chicago:20260829T190000
