@@ -23,18 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-26-handlebar-improvable-cause@diypensacola
-DTSTAMP:20260826T000000Z
-DTSTART;TZID=America/Chicago:20260826T190000
-DTEND;TZID=America/Chicago:20260826T220000
-SUMMARY:Improvable Cause @ The Handlebar
-DESCRIPTION:improvable cause presents "cheese for the table" at the handleb
- ar\, wednesday august 26th. doors 7\, show 7:30. a night of long form impr
- ov.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-26-handlebar-improvable-cause.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-08-27-handlebar-foxtide-braymores@diypensacola
 DTSTAMP:20260827T000000Z
 DTSTART;TZID=America/Chicago:20260827T190000
@@ -137,6 +125,20 @@ DESCRIPTION:blacktop mojo with seven year witch at the handlebar\, saturday
   september 5th. doors 7pm.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-05-handlebar-blacktop-mojo.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-06-handlebar-no-genre-just-vocals-mybrothavan@diypensacola
+DTSTAMP:20260906T000000Z
+DTSTART;TZID=America/Chicago:20260906T200000
+DTEND;TZID=America/Chicago:20260906T230000
+SUMMARY:No Genre. Just Vocals\, Mybrothavan\, AJ The Musician\, Kaciny\, Dy
+ wayne Lyrique\, Dionysus\, DJ Hale\, DJ Salt @ The Handlebar
+DESCRIPTION:no genre. just vocals at the handlebar\, sunday september 6th. 
+ hosted by mybrothavan\, featuring aj the musician\, with kaciny\, dywayne 
+ lyrique\, and dionysus. sounds by dj hale and dj salt. doors 8pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-06-handlebar-no-genre-just-vocals-my
+ brothavan.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-08-handlebar-major-moment-serenas-fire@diypensacola
@@ -337,6 +339,18 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-02-handlebar-cole-barnhill.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-02-handlebar-xtr-human-dj-cvntteeth@diypensacola
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=America/Chicago:20261002T230000
+DTEND;TZID=America/Chicago:20261003T020000
+SUMMARY:XTR Human\, DJ Cvntteeth\, DJ Scenario @ The Handlebar
+DESCRIPTION:xtr human at the handlebar\, friday october 2nd\, with dj cvntt
+ eeth and dj scenario. doors 11pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-02-handlebar-xtr-human-dj-cvntteeth.
+ html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-06-handlebar-xasthur-temple-of-the-fuzz-witch@diypensacola
 DTSTAMP:20261006T000000Z
 DTSTART;TZID=America/Chicago:20261006T190000
@@ -433,6 +447,17 @@ DESCRIPTION:nuovo testamento\, night sins\, urban heat\, and grave chorus a
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-31-handlebar-nuovo-testamento-night-
  sins.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-01-handlebar-scattrbrain@diypensacola
+DTSTAMP:20261101T000000Z
+DTSTART;TZID=America/Chicago:20261101T190000
+DTEND;TZID=America/Chicago:20261101T220000
+SUMMARY:Scattrbrain @ The Handlebar
+DESCRIPTION:scattrbrain at the handlebar\, sunday november 1st. the unwaver
+ ing self doubt tour.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-01-handlebar-scattrbrain.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-14-handlebar-chrissy-chlapecka@diypensacola

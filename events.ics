@@ -23,18 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-26-handlebar-improvable-cause@diypensacola
-DTSTAMP:20260826T000000Z
-DTSTART;TZID=America/Chicago:20260826T190000
-DTEND;TZID=America/Chicago:20260826T220000
-SUMMARY:Improvable Cause @ The Handlebar
-DESCRIPTION:improvable cause presents "cheese for the table" at the handleb
- ar\, wednesday august 26th. doors 7\, show 7:30. a night of long form impr
- ov.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-26-handlebar-improvable-cause.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-08-27-bettys-bryan-raymond-ramblin-ricky-tate@diypensacola
 DTSTAMP:20260827T000000Z
 DTSTART;TZID=America/Chicago:20260827T180000
@@ -127,6 +115,19 @@ DESCRIPTION:recreation art supply weekend popup at the pensacola liberation
 LOCATION:Pensacola Liberation Center
 URL:https://diypensacola.com/s/2026-08-28-pensacola-liberation-center-recre
  ation-art-supply-weekend-popup.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-28-bettys-friday-night-funnies-ryan-pfeiffer@diypensacola
+DTSTAMP:20260828T000000Z
+DTSTART;TZID=America/Chicago:20260828T200000
+DTEND;TZID=America/Chicago:20260828T230000
+SUMMARY:Friday Night Funnies\, Ryan Pfeiffer\, Dan Hamilton\, Molly on-the-
+ wheel\, Pensacola Comedy Club @ Betty's
+DESCRIPTION:friday night funnies at betty's\, friday august 28th. ryan pfei
+ ffer\, dan hamilton\, and molly on-the-wheel. 8pm\, $10 cover.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-08-28-bettys-friday-night-funnies-ryan-
+ pfeiffer.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08-29-handlebar-nowhere2runs-bloodrave@diypensacola
@@ -269,6 +270,20 @@ URL:https://diypensacola.com/s/2026-09-05-bettys-scott-h-biram-cockfight.ht
  ml
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-09-06-handlebar-no-genre-just-vocals-mybrothavan@diypensacola
+DTSTAMP:20260906T000000Z
+DTSTART;TZID=America/Chicago:20260906T200000
+DTEND;TZID=America/Chicago:20260906T230000
+SUMMARY:No Genre. Just Vocals\, Mybrothavan\, AJ The Musician\, Kaciny\, Dy
+ wayne Lyrique\, Dionysus\, DJ Hale\, DJ Salt @ The Handlebar
+DESCRIPTION:no genre. just vocals at the handlebar\, sunday september 6th. 
+ hosted by mybrothavan\, featuring aj the musician\, with kaciny\, dywayne 
+ lyrique\, and dionysus. sounds by dj hale and dj salt. doors 8pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-06-handlebar-no-genre-just-vocals-my
+ brothavan.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-09-08-handlebar-major-moment-serenas-fire@diypensacola
 DTSTAMP:20260908T000000Z
 DTSTART;TZID=America/Chicago:20260908T180000
@@ -407,10 +422,9 @@ UID:2026-09-19-the-den-bastardson-rat-daughter@diypensacola
 DTSTAMP:20260919T000000Z
 DTSTART;TZID=America/Chicago:20260919T183000
 DTEND;TZID=America/Chicago:20260919T213000
-SUMMARY:Bastard Son\, Rat Daughter\, beautysleep @ Beulah Den
-DESCRIPTION:bastard son\, rat daughter\, and beautysleep at the den\, satur
- day september 19. doors 6:30\, music at 7. pay what you can\, $5 suggested
- .
+SUMMARY:Bastardson\, Rat Daughter\, beautysleep @ Beulah Den
+DESCRIPTION:bastardson\, rat daughter\, and beautysleep at the den\, saturd
+ ay september 19. doors 6:30\, music at 7. pay what you can\, $5 suggested.
 LOCATION:Beulah Den
 URL:https://diypensacola.com/s/2026-09-19-the-den-bastardson-rat-daughter.h
  tml
@@ -559,6 +573,18 @@ SUMMARY:Cole Barnhill @ The Handlebar
 DESCRIPTION:cole barnhill at the handlebar\, friday october 2nd. doors 7pm.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-02-handlebar-cole-barnhill.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-02-handlebar-xtr-human-dj-cvntteeth@diypensacola
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=America/Chicago:20261002T230000
+DTEND;TZID=America/Chicago:20261003T020000
+SUMMARY:XTR Human\, DJ Cvntteeth\, DJ Scenario @ The Handlebar
+DESCRIPTION:xtr human at the handlebar\, friday october 2nd\, with dj cvntt
+ eeth and dj scenario. doors 11pm.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-02-handlebar-xtr-human-dj-cvntteeth.
+ html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-03-bettys-james-hall-the-ladies-of-valerie-sassyfras@diypensaco
@@ -724,6 +750,17 @@ DESCRIPTION:nuovo testamento\, night sins\, urban heat\, and grave chorus a
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-31-handlebar-nuovo-testamento-night-
  sins.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-01-handlebar-scattrbrain@diypensacola
+DTSTAMP:20261101T000000Z
+DTSTART;TZID=America/Chicago:20261101T190000
+DTEND;TZID=America/Chicago:20261101T220000
+SUMMARY:Scattrbrain @ The Handlebar
+DESCRIPTION:scattrbrain at the handlebar\, sunday november 1st. the unwaver
+ ing self doubt tour.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-01-handlebar-scattrbrain.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-14-handlebar-chrissy-chlapecka@diypensacola
