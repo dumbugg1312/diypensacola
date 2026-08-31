@@ -23,45 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-27-handlebar-foxtide-braymores@diypensacola
-DTSTAMP:20260827T000000Z
-DTSTART;TZID=America/Chicago:20260827T190000
-DTEND;TZID=America/Chicago:20260827T220000
-SUMMARY:Foxtide\, Braymores @ The Handlebar
-DESCRIPTION:foxtide brings the entropy tour to the handlebar thursday\, aug
- ust 27\, with braymores opening.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-27-handlebar-foxtide-braymores.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-28-handlebar-alices-chainsaw-repair-tirra-lirra@diypensacola
-DTSTAMP:20260828T000000Z
-DTSTART;TZID=America/Chicago:20260828T190000
-DTEND;TZID=America/Chicago:20260828T220000
-SUMMARY:Alice's Chainsaw Repair\, Tirra Lirra\, Mourning Glories\, Cursed B
- ody\, Cookies N Cake @ The Handlebar
-DESCRIPTION:alice's chainsaw repair\, tirra lirra\, mourning glories\, curs
- ed body and cookies n cake at the handlebar\, friday august 28th. lady fes
- t 13 night two\, local vendors set up all night.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-28-handlebar-alices-chainsaw-repair-
- tirra-lirra.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-29-handlebar-nowhere2runs-bloodrave@diypensacola
-DTSTAMP:20260829T000000Z
-DTSTART;TZID=America/Chicago:20260829T190000
-DTEND;TZID=America/Chicago:20260829T220000
-SUMMARY:Nowhere2Run\, Notscaredtocry\, Cvntteeth\, Viciouswishes\, Error.Fu
- nction\, Icantread @ The Handlebar
-DESCRIPTION:nowhere2run's bloodrave halloween tour at the handlebar\, satur
- day august 29th. nowhere2run\, notscaredtocry\, cvntteeth\, viciouswishes\
- , error.function\, icantread. 18+.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-29-handlebar-nowhere2runs-bloodrave.
- html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-08-30-handlebar-stand-back@diypensacola
 DTSTAMP:20260830T000000Z
 DTSTART;TZID=America/Chicago:20260830T180000
@@ -259,8 +220,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-24-handlebar-dirty-sound-magnet-gran-moreno@diypensacola
 DTSTAMP:20260924T000000Z
-DTSTART;TZID=America/Chicago:20260924T190000
-DTEND;TZID=America/Chicago:20260924T220000
+DTSTART;TZID=America/Chicago:20260924T180000
+DTEND;TZID=America/Chicago:20260924T210000
 SUMMARY:Dirty Sound Magnet\, Gran Moreno @ The Handlebar
 DESCRIPTION:dirty sound magnet and gran moreno at the handlebar thursday 9/
  24. tickets at thehandlebar850.com.
@@ -273,7 +234,7 @@ UID:2026-09-25-handlebar-calder-allen@diypensacola
 DTSTAMP:20260925T000000Z
 DTSTART;TZID=America/Chicago:20260925T190000
 DTEND;TZID=America/Chicago:20260925T220000
-SUMMARY:Calder Allen @ The Handlebar
+SUMMARY:Calder Allen\, Cody John Bennett @ The Handlebar
 DESCRIPTION:calder allen at the handlebar\, friday september 25th. doors 7p
  m.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL

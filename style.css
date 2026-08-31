@@ -738,10 +738,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   margin:0 3px;box-shadow:6px 6px 0 var(--shadow)}
 #list.wall .show h3{font-size:1rem}
 /* tonight stays the same poster size as everything else (a blown-up flyer reads
-   badly); it's marked instead by the hot border + tape, and the TONIGHT header. */
+   badly); it's marked instead by the hot border and the TONIGHT header. Tape stays
+   tape-colored everywhere - it's masking tape, not a status color. */
 #list.wall #b-tonight .show img.thumb{transform:none;border-color:var(--hot);box-shadow:6px 6px 0 var(--hot)}
 #list.wall #b-tonight .show h3{font-size:1rem}
-#list.wall #b-tonight .thumbwrap::before{background:var(--hot)}
 @media (max-width:900px){#list.wall .cards{column-count:2}}
 @media (max-width:560px){#list.wall .cards{column-count:1}}
 
@@ -758,7 +758,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 @media (max-width:560px){#list.wall.yours #b-yours .cards{column-count:1}}
 /* a saved show happening today keeps the hot border it wears in the tonight bucket */
 #list.wall.yours .show.istonight img.thumb{border-color:var(--hot);box-shadow:6px 6px 0 var(--hot)}
-#list.wall.yours .show.istonight .thumbwrap::before{background:var(--hot)}
 
 /* ---------- print poster: "print this week" photocopy handout ---------- */
 .printhead,.printfoot{display:none}
