@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Isaac Rother & The Phantoms
+X-WR-CALNAME:DIYPensacola: The Phantom A.D.
 X-WR-TIMEZONE:America/Chicago
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
@@ -23,15 +23,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-09-bettys-isaac-rother-the-phantoms@diypensacola
+UID:2026-09-09-bettys-the-phantom-a-d-future-hate@diypensacola
 DTSTAMP:20260909T000000Z
-DTSTART;TZID=America/Chicago:20260909T190000
-DTEND;TZID=America/Chicago:20260909T220000
-SUMMARY:Isaac Rother & The Phantoms\, Future Hate @ Betty's
-DESCRIPTION:the phantom and future hate at betty's\, wednesday september 9t
- h. all ages\, tickets through eventbrite.
+DTSTART;TZID=America/Chicago:20260909T200000
+DTEND;TZID=America/Chicago:20260909T230000
+SUMMARY:The Phantom A.D.\, Future Hate @ Betty's
+DESCRIPTION:the phantom a.d. and future hate at betty's\, wednesday septemb
+ er 9th. 8pm\, all ages\, tickets through eventbrite.
 LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-09-bettys-isaac-rother-the-phantoms.
- html
+URL:https://diypensacola.com/s/2026-09-09-bettys-the-phantom-a-d-future-hat
+ e.html
 END:VEVENT
 END:VCALENDAR
