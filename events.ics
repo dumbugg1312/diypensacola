@@ -23,139 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-27-bettys-bryan-raymond-ramblin-ricky-tate@diypensacola
-DTSTAMP:20260827T000000Z
-DTSTART;TZID=America/Chicago:20260827T180000
-DTEND;TZID=America/Chicago:20260827T210000
-SUMMARY:Bryan Raymond\, Ramblin Ricky Tate\, Outlook Bleak\, LAM\, Conflict
-  of Interest\, Stufy @ Betty's
-DESCRIPTION:bryan raymond and ramblin ricky tate bring the hot sauce hell r
- aisers tour to betty's this thursday\, august 27th\, with outlook bleak\, 
- conflict of interests\, and stufy. market at 6pm\, music at 8pm\, $5 to $1
- 0 sliding scale. lou and jon's send-off before they move to oahu.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-27-bettys-bryan-raymond-ramblin-rick
- y-tate.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-27-handlebar-foxtide-braymores@diypensacola
-DTSTAMP:20260827T000000Z
-DTSTART;TZID=America/Chicago:20260827T190000
-DTEND;TZID=America/Chicago:20260827T220000
-SUMMARY:Foxtide\, Braymores @ The Handlebar
-DESCRIPTION:foxtide brings the entropy tour to the handlebar thursday\, aug
- ust 27\, with braymores opening.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-27-handlebar-foxtide-braymores.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-27-waterboyz-paupers-grave-mothers-milk@diypensacola
-DTSTAMP:20260827T000000Z
-DTSTART;TZID=America/Chicago:20260827T190000
-DTEND;TZID=America/Chicago:20260827T220000
-SUMMARY:Pauper's Grave\, Mother's Milk @ Waterboyz
-DESCRIPTION:pauper's grave and mother's milk at waterboyz\, thursday august
-  27th. lady fest 13 night one\, with the ladies\, femmes\, gays\, & theys 
- skate expo.
-LOCATION:Waterboyz
-URL:https://diypensacola.com/s/2026-08-27-waterboyz-paupers-grave-mothers-m
- ilk.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-28-bettys-noiseheads-i-hate-sundays@diypensacola
-DTSTAMP:20260828T000000Z
-DTSTART;TZID=America/Chicago:20260828T200000
-DTEND;TZID=America/Chicago:20260828T230000
-SUMMARY:Noiseheads\, I Hate Sundays\, Mothersmilk @ Betty's on Belmont
-DESCRIPTION:noiseheads\, i hate sundays\, and mothersmilk at betty's friday
-  august 28. doors 8pm.
-LOCATION:Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-28-bettys-noiseheads-i-hate-sundays.
- html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-28-handlebar-alices-chainsaw-repair-tirra-lirra@diypensacola
-DTSTAMP:20260828T000000Z
-DTSTART;TZID=America/Chicago:20260828T190000
-DTEND;TZID=America/Chicago:20260828T220000
-SUMMARY:Alice's Chainsaw Repair\, Tirra Lirra\, Mourning Glories\, Cursed B
- ody\, Cookies N Cake @ The Handlebar
-DESCRIPTION:alice's chainsaw repair\, tirra lirra\, mourning glories\, curs
- ed body and cookies n cake at the handlebar\, friday august 28th. lady fes
- t 13 night two\, local vendors set up all night.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-28-handlebar-alices-chainsaw-repair-
- tirra-lirra.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-28-pensacola-museum-of-art-309-artist-in-residence-exhibition@d
- iypensacola
-DTSTAMP:20260828T000000Z
-DTSTART;TZID=America/Chicago:20260828T170000
-DTEND;TZID=America/Chicago:20260828T200000
-SUMMARY:309 Artist in Residence Exhibition @ Pensacola Museum of Art
-DESCRIPTION:309 punk project artist in residence exhibition at the pensacol
- a museum of art. opening reception friday august 28th\, 5pm. work from the
-  2025 residency cohort\, curated by valerie george and christopher satterw
- hite\, up through november 29th.
-LOCATION:Pensacola Museum of Art
-URL:https://diypensacola.com/s/2026-08-28-pensacola-museum-of-art-309-artis
- t-in-residence-exhibition.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-28-pensacola-liberation-center-recreation-art-supply-weekend-po
- pup@diypensacola
-DTSTAMP:20260828T000000Z
-DTSTART;TZID=America/Chicago:20260828T163000
-DTEND;TZID=America/Chicago:20260828T193000
-SUMMARY:Recreation Art Supply Weekend Popup @ Pensacola Liberation Center
-DESCRIPTION:recreation art supply weekend popup at the pensacola liberation
-  center. friday august 28th 4:30 to 7pm\, saturday august 29th 11am to 5pm
- . come hang out\, create\, read\, and check out the library.
-LOCATION:Pensacola Liberation Center
-URL:https://diypensacola.com/s/2026-08-28-pensacola-liberation-center-recre
- ation-art-supply-weekend-popup.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-28-bettys-friday-night-funnies-ryan-pfeiffer@diypensacola
-DTSTAMP:20260828T000000Z
-DTSTART;TZID=America/Chicago:20260828T200000
-DTEND;TZID=America/Chicago:20260828T230000
-SUMMARY:Friday Night Funnies\, Ryan Pfeiffer\, Dan Hamilton\, Molly on-the-
- wheel\, Pensacola Comedy Club @ Betty's
-DESCRIPTION:friday night funnies at betty's\, friday august 28th. ryan pfei
- ffer\, dan hamilton\, and molly on-the-wheel. 8pm\, $10 cover.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-28-bettys-friday-night-funnies-ryan-
- pfeiffer.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-29-handlebar-nowhere2runs-bloodrave@diypensacola
-DTSTAMP:20260829T000000Z
-DTSTART;TZID=America/Chicago:20260829T190000
-DTEND;TZID=America/Chicago:20260829T220000
-SUMMARY:Nowhere2Run\, Notscaredtocry\, Cvntteeth\, Viciouswishes\, Error.Fu
- nction\, Icantread @ The Handlebar
-DESCRIPTION:nowhere2run's bloodrave halloween tour at the handlebar\, satur
- day august 29th. nowhere2run\, notscaredtocry\, cvntteeth\, viciouswishes\
- , error.function\, icantread. 18+.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-29-handlebar-nowhere2runs-bloodrave.
- html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-08-29-bettys-rat-daughter-boof@diypensacola
-DTSTAMP:20260829T000000Z
-DTSTART;TZID=America/Chicago:20260829T190000
-DTEND;TZID=America/Chicago:20260829T220000
-SUMMARY:Rat Daughter\, Boof\, Other\, The Fuckless\, Wynter @ Betty's
-DESCRIPTION:rat daughter\, boof\, other\, the fuckless and wynter at betty'
- s on belmont\, saturday august 29th. lady fest 13 closes out with tarot re
- adings.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-29-bettys-rat-daughter-boof.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-08-30-handlebar-stand-back@diypensacola
 DTSTAMP:20260830T000000Z
 DTSTART;TZID=America/Chicago:20260830T180000
@@ -188,6 +55,20 @@ DESCRIPTION:victims of the system\, ghost tape\, and spidershed at the den
 LOCATION:The Den
 URL:https://diypensacola.com/s/2026-08-30-the-den-victims-of-the-system-gho
  st-tape.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-31-pensacola-liberation-center-black-panthers-1968-film-screeni
+ ng@diypensacola
+DTSTAMP:20260831T000000Z
+DTSTART;TZID=America/Chicago:20260831T183000
+DTEND;TZID=America/Chicago:20260831T213000
+SUMMARY:Black Panthers 1968 Film Screening @ Pensacola Liberation Center
+DESCRIPTION:black panthers 1968 short film screening at the pensacola liber
+ ation center\, monday august 31st at 6:30pm. 2737 n e st. part of black au
+ gust\, hosted by psl.
+LOCATION:Pensacola Liberation Center
+URL:https://diypensacola.com/s/2026-08-31-pensacola-liberation-center-black
+ -panthers-1968-film-screening.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-01-handlebar-cheekface-catbite@diypensacola
@@ -478,8 +359,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-24-handlebar-dirty-sound-magnet-gran-moreno@diypensacola
 DTSTAMP:20260924T000000Z
-DTSTART;TZID=America/Chicago:20260924T190000
-DTEND;TZID=America/Chicago:20260924T220000
+DTSTART;TZID=America/Chicago:20260924T180000
+DTEND;TZID=America/Chicago:20260924T210000
 SUMMARY:Dirty Sound Magnet\, Gran Moreno @ The Handlebar
 DESCRIPTION:dirty sound magnet and gran moreno at the handlebar thursday 9/
  24. tickets at thehandlebar850.com.
@@ -492,7 +373,7 @@ UID:2026-09-25-handlebar-calder-allen@diypensacola
 DTSTAMP:20260925T000000Z
 DTSTART;TZID=America/Chicago:20260925T190000
 DTEND;TZID=America/Chicago:20260925T220000
-SUMMARY:Calder Allen @ The Handlebar
+SUMMARY:Calder Allen\, Cody John Bennett @ The Handlebar
 DESCRIPTION:calder allen at the handlebar\, friday september 25th. doors 7p
  m.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL

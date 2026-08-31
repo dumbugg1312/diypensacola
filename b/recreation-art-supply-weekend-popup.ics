@@ -22,18 +22,4 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-UID:2026-08-28-pensacola-liberation-center-recreation-art-supply-weekend-po
- pup@diypensacola
-DTSTAMP:20260828T000000Z
-DTSTART;TZID=America/Chicago:20260828T163000
-DTEND;TZID=America/Chicago:20260828T193000
-SUMMARY:Recreation Art Supply Weekend Popup @ Pensacola Liberation Center
-DESCRIPTION:recreation art supply weekend popup at the pensacola liberation
-  center. friday august 28th 4:30 to 7pm\, saturday august 29th 11am to 5pm
- . come hang out\, create\, read\, and check out the library.
-LOCATION:Pensacola Liberation Center
-URL:https://diypensacola.com/s/2026-08-28-pensacola-liberation-center-recre
- ation-art-supply-weekend-popup.html
-END:VEVENT
 END:VCALENDAR

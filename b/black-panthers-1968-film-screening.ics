@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola: Black Panthers 1968 Film Screening
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-08-31-pensacola-liberation-center-black-panthers-1968-film-screeni
+ ng@diypensacola
+DTSTAMP:20260831T000000Z
+DTSTART;TZID=America/Chicago:20260831T183000
+DTEND;TZID=America/Chicago:20260831T213000
+SUMMARY:Black Panthers 1968 Film Screening @ Pensacola Liberation Center
+DESCRIPTION:black panthers 1968 short film screening at the pensacola liber
+ ation center\, monday august 31st at 6:30pm. 2737 n e st. part of black au
+ gust\, hosted by psl.
+LOCATION:Pensacola Liberation Center
+URL:https://diypensacola.com/s/2026-08-31-pensacola-liberation-center-black
+ -panthers-1968-film-screening.html
+END:VEVENT
+END:VCALENDAR

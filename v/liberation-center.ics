@@ -23,17 +23,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-28-pensacola-liberation-center-recreation-art-supply-weekend-po
- pup@diypensacola
-DTSTAMP:20260828T000000Z
-DTSTART;TZID=America/Chicago:20260828T163000
-DTEND;TZID=America/Chicago:20260828T193000
-SUMMARY:Recreation Art Supply Weekend Popup @ Pensacola Liberation Center
-DESCRIPTION:recreation art supply weekend popup at the pensacola liberation
-  center. friday august 28th 4:30 to 7pm\, saturday august 29th 11am to 5pm
- . come hang out\, create\, read\, and check out the library.
+UID:2026-08-31-pensacola-liberation-center-black-panthers-1968-film-screeni
+ ng@diypensacola
+DTSTAMP:20260831T000000Z
+DTSTART;TZID=America/Chicago:20260831T183000
+DTEND;TZID=America/Chicago:20260831T213000
+SUMMARY:Black Panthers 1968 Film Screening @ Pensacola Liberation Center
+DESCRIPTION:black panthers 1968 short film screening at the pensacola liber
+ ation center\, monday august 31st at 6:30pm. 2737 n e st. part of black au
+ gust\, hosted by psl.
 LOCATION:Pensacola Liberation Center
-URL:https://diypensacola.com/s/2026-08-28-pensacola-liberation-center-recre
- ation-art-supply-weekend-popup.html
+URL:https://diypensacola.com/s/2026-08-31-pensacola-liberation-center-black
+ -panthers-1968-film-screening.html
 END:VEVENT
 END:VCALENDAR
