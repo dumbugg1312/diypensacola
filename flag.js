@@ -55,8 +55,17 @@
   var logBox=panel.querySelector('.dcx-log');
   var logBtn=panel.querySelector('[data-a="toggle-log"]');
 
-  function flags(){try{return JSON.parse(localStorage.getItem('diy_flags')||'[]');}catch(e){return [];}}
-  function saveFlags(a){localStorage.setItem('diy_flags',JSON.stringify(a));}
+  // Every localStorage touch here is wrapped. index.html serves MAIN_JS,
+  // OWNER_JS and FLAG_JS as ONE inline <script>, so a throw anywhere in the
+  // second or third block kills what follows it -- and in a browser with site
+  // data blocked (Safari private mode, a locked-down phone) a bare
+  // localStorage.getItem throws rather than returning null. Reads already had
+  // this; the writes and the top-level reads below did not.
+  function lsGetRaw(k){try{return localStorage.getItem(k);}catch(e){return null;}}
+  function lsSetRaw(k,v){try{localStorage.setItem(k,v);}catch(e){}}
+  function lsDelRaw(k){try{localStorage.removeItem(k);}catch(e){}}
+  function flags(){try{return JSON.parse(lsGetRaw('diy_flags')||'[]');}catch(e){return [];}}
+  function saveFlags(a){lsSetRaw('diy_flags',JSON.stringify(a));}
   function esc(s){var d=document.createElement('div');d.textContent=String(s);return d.innerHTML;}
 
   function renderLog(){
@@ -76,11 +85,11 @@
 
   var DCX_TTL=24*60*60*1000;
   function unlock(){
-    fab.hidden=false;localStorage.setItem('dcx_unlocked_at',String(Date.now()));}
-  var unlockedAt=parseInt(localStorage.getItem('dcx_unlocked_at')||'0',10);
+    fab.hidden=false;lsSetRaw('dcx_unlocked_at',String(Date.now()));}
+  var unlockedAt=parseInt(lsGetRaw('dcx_unlocked_at')||'0',10);
   if(unlockedAt&&Date.now()-unlockedAt<DCX_TTL)unlock();
   else if(unlockedAt){
-    localStorage.removeItem('dcx_unlocked_at');
+    lsDelRaw('dcx_unlocked_at');
     var code0=window.prompt('login expired. enter passcode:');
     if(code0===DCX_PASSCODE)unlock();}
 

@@ -23,6 +23,21 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:2026-09-24-voices-of-pensacola-multicultural-center-2026-grassroots-rad
+ io-conference@diypensacola
+DTSTAMP:20260924T000000Z
+DTSTART;TZID=America/Chicago:20260924T190000
+DTEND;TZID=America/Chicago:20260924T220000
+SUMMARY:2026 Grassroots Radio Conference @ Voices of Pensacola Multicultura
+ l Center
+DESCRIPTION:2026 grassroots radio conference\, sept 24 to 26 in pensacola. 
+ free radio pensacola and wpnx 107.7 lpfm launching a diy community station
+ . registration is open at freeradiopensacola.com.
+LOCATION:Voices of Pensacola Multicultural Center
+URL:https://diypensacola.com/s/2026-09-24-voices-of-pensacola-multicultural
+ -center-2026-grassroots-radio-conference.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-29-voices-of-pensacola-multicultural-center-2nd-annual-hallozin
  e-fest@diypensacola
 DTSTAMP:20261029T000000Z

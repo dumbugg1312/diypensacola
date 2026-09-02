@@ -21,18 +21,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-30-handlebar-stand-back@diypensacola
-DTSTAMP:20260830T000000Z
-DTSTART;TZID=America/Chicago:20260830T180000
-DTEND;TZID=America/Chicago:20260830T210000
-SUMMARY:Stand Back @ The Handlebar
-DESCRIPTION:stand back\, an allman brothers tribute\, at the handlebar sund
- ay august 30th. doors 6pm.
+UID:2026-10-23-handlebar-gimme-gimme-disco@diypensacola
+DTSTAMP:20261023T000000Z
+DTSTART;TZID=America/Chicago:20261023T210000
+DTEND;TZID=America/Chicago:20261024T000000
+SUMMARY:Gimme Gimme Disco @ The Handlebar
+DESCRIPTION:gimme gimme disco at the handlebar on friday\, october 23rd. do
+ ors 9pm\, dancing at 9:30.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-08-30-handlebar-stand-back.html
+URL:https://diypensacola.com/s/2026-10-23-handlebar-gimme-gimme-disco.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Stand Back @ The Handlebar
+DESCRIPTION:tonight: Gimme Gimme Disco @ The Handlebar
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
