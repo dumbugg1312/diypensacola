@@ -1,13 +1,18 @@
 (function(){
   var REPO='dumbugg1312/diypensacola', BRANCH='main', FILE='overrides.json';
   var TTL=24*60*60*1000, TKEY='dcx_gh_token';
+  // Guarded like FLAG_JS's: this runs at the TOP LEVEL of the shared inline
+  // <script>, so an unguarded throw here took the flag panel down with it in any
+  // browser that blocks site data. No storage means not unlocked, which is the
+  // right answer anyway.
+  function lsGetRaw(k){try{return localStorage.getItem(k);}catch(e){return null;}}
   function unlocked(){
-    var t=parseInt(localStorage.getItem('dcx_unlocked_at')||'0',10);
+    var t=parseInt(lsGetRaw('dcx_unlocked_at')||'0',10);
     return !!t&&(Date.now()-t)<TTL;
   }
   if(!unlocked())return;
 
-  function token(){try{return localStorage.getItem(TKEY)||'';}catch(e){return '';}}
+  function token(){return lsGetRaw(TKEY)||'';}
   function b64(s){return btoa(unescape(encodeURIComponent(s)));}
   function unb64(s){try{return decodeURIComponent(escape(atob(s.replace(/\s/g,''))));}catch(e){return '';}}
 
@@ -76,7 +81,11 @@
       var t=window.prompt('paste a GitHub fine-grained token\n(repo: '+REPO+', contents: write, set an expiry)');
       t=(t||'').trim();
       if(!t){say('╳ no token, nothing was published','err');return false;}
-      localStorage.setItem(TKEY,t);
+      // If the device refuses to store it, say so rather than reporting a save
+      // that did not happen -- the very next publish would fail on a missing
+      // token and the owner would have no idea why.
+      try{localStorage.setItem(TKEY,t);}catch(e){
+        say('\u2573 this browser is blocking storage, token not saved','err');return false;}
       var tb=wrap.querySelector('button[data-o="tok"]');if(tb)tb.textContent='forget token';
       say('token saved on this device','ok');
       return true;
@@ -86,7 +95,7 @@
       e.preventDefault();e.stopPropagation();
       var v=b.getAttribute('data-o');
       if(v==='tok'){
-        if(token()){localStorage.removeItem(TKEY);b.textContent='connect token';say('token forgotten','err');}
+        if(token()){try{localStorage.removeItem(TKEY);}catch(e){}b.textContent='connect token';say('token forgotten','err');}
         else{askToken();}
         return;
       }
