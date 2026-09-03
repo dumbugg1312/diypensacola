@@ -234,7 +234,11 @@ nav a:hover{border-color:var(--hot);color:var(--hot)}
 main{max-width:var(--w-wide);margin:0 auto 2rem;padding:0 1rem}
 main section{display:none}
 main section:target{display:block}
-main:not(:has(section:target)) #list{display:block}
+/* the feed is visible by default and only steps aside when ANOTHER section is
+   targeted (#grid); browsers without :has() simply never hide it, so the
+   homepage can never render empty. */
+main #list{display:block}
+main:has(section:target:not(#list)) #list{display:none}
 /* sections are programmatic focus targets (focus moves here on view switch); they
    aren't Tab-reachable controls, so they carry no visible focus ring. */
 main section[tabindex]:focus{outline:none}
