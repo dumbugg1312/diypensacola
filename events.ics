@@ -23,28 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-03-handlebar-the-pink-stones@diypensacola
-DTSTAMP:20260903T000000Z
-DTSTART;TZID=America/Chicago:20260903T180000
-DTEND;TZID=America/Chicago:20260903T210000
-SUMMARY:The Pink Stones\, Snake And The Rabbit\, The Victrolas @ The Handle
- bar
-DESCRIPTION:the pink stones at the handlebar\, thursday september 3rd.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-03-handlebar-the-pink-stones.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-04-handlebar-broadway-rave@diypensacola
-DTSTAMP:20260904T000000Z
-DTSTART;TZID=America/Chicago:20260904T190000
-DTEND;TZID=America/Chicago:20260904T220000
-SUMMARY:Broadway Rave @ The Handlebar
-DESCRIPTION:broadway rave\, a musical theater dance party\, comes to the ha
- ndlebar. fri sep 4.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-04-handlebar-broadway-rave.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-09-05-handlebar-blacktop-mojo@diypensacola
 DTSTAMP:20260905T000000Z
 DTSTART;TZID=America/Chicago:20260905T190000
@@ -97,8 +75,8 @@ UID:2026-09-06-handlebar-no-genre-just-vocals-mybrothavan@diypensacola
 DTSTAMP:20260906T000000Z
 DTSTART;TZID=America/Chicago:20260906T200000
 DTEND;TZID=America/Chicago:20260906T230000
-SUMMARY:No Genre. Just Vocals\, My Brotha Van\, AJ The Musician\, Kaciny\, 
- Dywayne Lyrique\, Dionysus\, DJ Hale\, DJ Salt @ The Handlebar
+SUMMARY:No Genre. Just Vocals\, Mybrothavan\, AJ The Musician\, Kaciny\, Dy
+ wayne Lyrique\, Dionysus\, DJ Hale\, DJ Salt @ The Handlebar
 DESCRIPTION:no genre. just vocals at the handlebar\, sunday september 6th. 
  hosted by mybrothavan\, featuring aj the musician\, with kaciny\, dywayne 
  lyrique\, and dionysus. sounds by dj hale and dj salt. doors 8pm.
@@ -137,7 +115,7 @@ UID:2026-09-10-309-poets-in-the-punkhouse-dennis-formento@diypensacola
 DTSTAMP:20260910T000000Z
 DTSTART;TZID=America/Chicago:20260910T190000
 DTEND;TZID=America/Chicago:20260910T220000
-SUMMARY:Poets In The Punkhouse\, Dennis Formento\, Jamey Jones\, Scott Satt
+SUMMARY:Poets in the Punkhouse\, Dennis Formento\, Jamey Jones\, Scott Satt
  erwhite\, Ericka Streeter @ 309 Punk Project
 DESCRIPTION:poets in the punkhouse with dennis formento\, jamey jones\, sco
  tt satterwhite\, and ericka streeter at 309\, thursday september 10th at 7
@@ -161,7 +139,7 @@ UID:2026-09-11-309-we-cant-help-it-if-were-from-florida@diypensacola
 DTSTAMP:20260911T000000Z
 DTSTART;TZID=America/Chicago:20260911T180000
 DTEND;TZID=America/Chicago:20260911T210000
-SUMMARY:We Can't Help It If We're From Florida @ 309 Punk Project
+SUMMARY:We Can’t Help It If We’re From Florida @ 309 Punk Project
 DESCRIPTION:we can't help it if we're from florida\, a group photography ex
  hibition at the 309 punk project. friday september 11th\, 6-9pm.
 LOCATION:309 Punk Project\, 309 N 6th Ave\, Pensacola\, FL
@@ -210,6 +188,32 @@ LOCATION:Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-12-bettys-sapphic-saturday-eve.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-09-12-the-hoa-other-mourning-glories@diypensacola
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=America/Chicago:20260912T180000
+DTEND;TZID=America/Chicago:20260912T210000
+SUMMARY:Other\, Mourning Glories\, Lesion\, Conflict Of Interest\, The Snat
+ ches @ The HOA
+DESCRIPTION:mandatory h.o.a. meeting on september 12th. other\, mourning gl
+ ories\, lesion\, conflict of interest and the snatches. doors at 6\, music
+  at 7\, $10\, 21+. pensacola house show\, dm @thehoa850 for the address.
+LOCATION:The HOA
+URL:https://diypensacola.com/s/2026-09-12-the-hoa-other-mourning-glories.ht
+ ml
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-13-handlebar-jazz-night-arent-we@diypensacola
+DTSTAMP:20260913T000000Z
+DTSTART;TZID=America/Chicago:20260913T180000
+DTEND;TZID=America/Chicago:20260913T210000
+SUMMARY:Jazz Night\, Aren't We @ The Handlebar
+DESCRIPTION:jazz night featuring aren't we at the handlebar\, sunday septem
+ ber 13th. 6pm\, free show.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-13-handlebar-jazz-night-arent-we.htm
+ l
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-09-14-handlebar-archers@diypensacola
 DTSTAMP:20260914T000000Z
 DTSTART;TZID=America/Chicago:20260914T190000
@@ -230,6 +234,20 @@ DESCRIPTION:the holdup with lot 49 and dylan reese at the handlebar\, tuesd
  ay september 15th. doors 7pm.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-15-handlebar-the-holdup.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-17-handlebar-brett-patterson-georgia-faye@diypensacola
+DTSTAMP:20260917T000000Z
+DTSTART;TZID=America/Chicago:20260917T180000
+DTEND;TZID=America/Chicago:20260917T210000
+SUMMARY:Brett Patterson\, Georgia Faye\, Conor Churchill\, Katie Dineen @ T
+ he Handlebar
+DESCRIPTION:pensacola songwriter rounds series with brett patterson\, georg
+ ia faye\, conor churchill\, and katie dineen at the handlebar. thursday se
+ ptember 17th\, 6pm. $10 at the door.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-17-handlebar-brett-patterson-georgia
+ -faye.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-18-handlebar-glitterer-bleary-eyed@diypensacola
@@ -259,7 +277,7 @@ UID:2026-09-19-the-den-bastardson-rat-daughter@diypensacola
 DTSTAMP:20260919T000000Z
 DTSTART;TZID=America/Chicago:20260919T183000
 DTEND;TZID=America/Chicago:20260919T213000
-SUMMARY:Bastardson\, Rat Daughter\, Beautysleep @ Beulah Den
+SUMMARY:Bastardson\, Rat Daughter\, beautysleep @ Beulah Den
 DESCRIPTION:bastardson\, rat daughter\, and beautysleep at the den\, saturd
  ay september 19. doors 6:30\, music at 7. pay what you can\, $5 suggested.
 LOCATION:Beulah Den
@@ -277,6 +295,24 @@ DESCRIPTION:views from the ground\, a diy short film screening at 309 punk
  kirby. submissions open until august 26.
 LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-20-309-views-from-the-ground.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-20-handlebar-tip-n-treat-drag-show-thotberry-shortcake@diypensa
+ cola
+DTSTAMP:20260920T000000Z
+DTSTART;TZID=America/Chicago:20260920T183000
+DTEND;TZID=America/Chicago:20260920T213000
+SUMMARY:Tip N' Treat Drag Show\, Thotberry Shortcake\, Becky Belle Bottoms\
+ , Fruitbat\, Evan Manson\, Oattmilk\, Pixie Van Dyke\, Sarah Tonin\, Mizz 
+ Fortune\, Pat Midoun\, H8Male\, Redd Hott Kandiey @ The Handlebar
+DESCRIPTION:the thot factory brings tip n' treat to the handlebar on septem
+ ber 20th. becky belle bottoms\, fruitbat\, evan manson\, oattmilk\, pixie 
+ van dyke\, sarah tonin\, mizz fortune\, pat midoun\, h8male and redd hott 
+ kandiey\, hosted by thotberry shortcake. doors 6:30\, show at 7\, $10 cove
+ r.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-20-handlebar-tip-n-treat-drag-show-t
+ hotberry-shortcake.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-21-handlebar-dead-eyes-versus-me@diypensacola
@@ -477,6 +513,33 @@ URL:https://diypensacola.com/s/2026-10-07-handlebar-belmont-super-sometimes
  .html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-08-handlebar-forsaken-profits-tokyo-coyote@diypensacola
+DTSTAMP:20261008T000000Z
+DTSTART;TZID=America/Chicago:20261008T190000
+DTEND;TZID=America/Chicago:20261008T220000
+SUMMARY:Forsaken Profits\, Tokyo Coyote\, Tremors @ The Handlebar
+DESCRIPTION:forsaken profits\, tokyo coyote\, and tremors at the handlebar.
+  thursday october 8th.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-08-handlebar-forsaken-profits-tokyo-
+ coyote.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-09-bettys-punk-or-treat-iii-friendly-spectres@diypensacola
+DTSTAMP:20261009T000000Z
+DTSTART;TZID=America/Chicago:20261009T190000
+DTEND;TZID=America/Chicago:20261009T220000
+SUMMARY:Punk-or-Treat III\, Friendly Spectres\, Ihatesundays\, Mother's Mil
+ k\, Bastard Son\, The Snatches\, Larry @ Betty's on Belmont
+DESCRIPTION:punk-or-treat iii\, a food not bombs fundraiser at betty's on f
+ riday 10/9. friendly spectres\, ihatesundays\, mother's milk\, bastard son
+  and the snatches\, plus a costume contest featuring larry. $10-$20 slidin
+ g scale\, or $5 with a donation.
+LOCATION:Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-09-bettys-punk-or-treat-iii-friendly
+ -spectres.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-10-handlebar-silent-theory@diypensacola
 DTSTAMP:20261010T000000Z
 DTSTART;TZID=America/Chicago:20261010T190000
@@ -492,7 +555,7 @@ UID:2026-10-15-bettys-lesion-bastard-son@diypensacola
 DTSTAMP:20261015T000000Z
 DTSTART;TZID=America/Chicago:20261015T190000
 DTEND;TZID=America/Chicago:20261015T220000
-SUMMARY:Lesion\, Bastardson\, Hayweather\, Beautysleep\, 7.7 PNX @ Betty's
+SUMMARY:Lesion\, Bastard Son\, Hayweather\, Beautysleep\, 7.7 PNX @ Betty's
 DESCRIPTION:lesion\, bastard son\, hayweather\, and beautysleep at betty's\
  , thursday october 15th. a strive benefit\, celebration of indigenous sove
  reignty and resilience\, with 7.7 pnx spinning in the courtyard plus food 
@@ -561,6 +624,18 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-23-handlebar-gimme-gimme-disco.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-23-bettys-the-earthly-delights-sideshow@diypensacola
+DTSTAMP:20261023T000000Z
+DTSTART;TZID=America/Chicago:20261023T200000
+DTEND;TZID=America/Chicago:20261023T230000
+SUMMARY:The Earthly Delights Sideshow @ Betty's
+DESCRIPTION:the earthly delights sideshow at betty's on belmont. friday oct
+ ober 23rd\, doors 8\, freaks 9.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-23-bettys-the-earthly-delights-sides
+ how.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-25-handlebar-goodbye-june-danny-worsnop@diypensacola
 DTSTAMP:20261025T000000Z
 DTSTART;TZID=America/Chicago:20261025T190000
@@ -606,7 +681,7 @@ DTSTAMP:20261031T000000Z
 DTSTART;TZID=America/Chicago:20261031T180000
 DTEND;TZID=America/Chicago:20261031T210000
 SUMMARY:Nuovo Testamento\, Night Sins\, Urban Heat\, Grave Chorus\, DJ Pose
- idon\, Kuru\, Remstate @ The Handlebar
+ idon\, Kuru Remstate @ The Handlebar
 DESCRIPTION:nuovo testamento\, night sins\, urban heat\, and grave chorus a
  t the handlebar on halloween. doors at 6\, with dj poseidon and kuru remst
  ate spinning all night.

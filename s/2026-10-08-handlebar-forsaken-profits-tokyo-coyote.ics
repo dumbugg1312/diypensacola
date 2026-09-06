@@ -21,18 +21,20 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-04-handlebar-broadway-rave@diypensacola
-DTSTAMP:20260904T000000Z
-DTSTART;TZID=America/Chicago:20260904T190000
-DTEND;TZID=America/Chicago:20260904T220000
-SUMMARY:Broadway Rave @ The Handlebar
-DESCRIPTION:broadway rave\, a musical theater dance party\, comes to the ha
- ndlebar. fri sep 4.
+UID:2026-10-08-handlebar-forsaken-profits-tokyo-coyote@diypensacola
+DTSTAMP:20261008T000000Z
+DTSTART;TZID=America/Chicago:20261008T190000
+DTEND;TZID=America/Chicago:20261008T220000
+SUMMARY:Forsaken Profits\, Tokyo Coyote\, Tremors @ The Handlebar
+DESCRIPTION:forsaken profits\, tokyo coyote\, and tremors at the handlebar.
+  thursday october 8th.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-04-handlebar-broadway-rave.html
+URL:https://diypensacola.com/s/2026-10-08-handlebar-forsaken-profits-tokyo-
+ coyote.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Broadway Rave @ The Handlebar
+DESCRIPTION:tonight: Forsaken Profits\, Tokyo Coyote\, Tremors @ The Handle
+ bar
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT

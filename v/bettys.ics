@@ -105,11 +105,26 @@ URL:https://diypensacola.com/s/2026-10-03-bettys-james-hall-the-ladies-of-v
  alerie-sassyfras.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-09-bettys-punk-or-treat-iii-friendly-spectres@diypensacola
+DTSTAMP:20261009T000000Z
+DTSTART;TZID=America/Chicago:20261009T190000
+DTEND;TZID=America/Chicago:20261009T220000
+SUMMARY:Punk-or-Treat III\, Friendly Spectres\, Ihatesundays\, Mother's Mil
+ k\, Bastard Son\, The Snatches\, Larry @ Betty's on Belmont
+DESCRIPTION:punk-or-treat iii\, a food not bombs fundraiser at betty's on f
+ riday 10/9. friendly spectres\, ihatesundays\, mother's milk\, bastard son
+  and the snatches\, plus a costume contest featuring larry. $10-$20 slidin
+ g scale\, or $5 with a donation.
+LOCATION:Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-09-bettys-punk-or-treat-iii-friendly
+ -spectres.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-15-bettys-lesion-bastard-son@diypensacola
 DTSTAMP:20261015T000000Z
 DTSTART;TZID=America/Chicago:20261015T190000
 DTEND;TZID=America/Chicago:20261015T220000
-SUMMARY:Lesion\, Bastardson\, Hayweather\, Beautysleep\, 7.7 PNX @ Betty's
+SUMMARY:Lesion\, Bastard Son\, Hayweather\, Beautysleep\, 7.7 PNX @ Betty's
 DESCRIPTION:lesion\, bastard son\, hayweather\, and beautysleep at betty's\
  , thursday october 15th. a strive benefit\, celebration of indigenous sove
  reignty and resilience\, with 7.7 pnx spinning in the courtyard plus food 
@@ -117,5 +132,17 @@ DESCRIPTION:lesion\, bastard son\, hayweather\, and beautysleep at betty's\
  cale\, $5 off the door with a nonperishable donation for food not bombs.
 LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-15-bettys-lesion-bastard-son.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-bettys-the-earthly-delights-sideshow@diypensacola
+DTSTAMP:20261023T000000Z
+DTSTART;TZID=America/Chicago:20261023T200000
+DTEND;TZID=America/Chicago:20261023T230000
+SUMMARY:The Earthly Delights Sideshow @ Betty's
+DESCRIPTION:the earthly delights sideshow at betty's on belmont. friday oct
+ ober 23rd\, doors 8\, freaks 9.
+LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-23-bettys-the-earthly-delights-sides
+ how.html
 END:VEVENT
 END:VCALENDAR
