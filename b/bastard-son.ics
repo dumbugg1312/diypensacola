@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Bastardson
+X-WR-CALNAME:DIYPensacola: Bastard Son
 X-WR-TIMEZONE:America/Chicago
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
@@ -27,7 +27,7 @@ UID:2026-10-15-bettys-lesion-bastard-son@diypensacola
 DTSTAMP:20261015T000000Z
 DTSTART;TZID=America/Chicago:20261015T190000
 DTEND;TZID=America/Chicago:20261015T220000
-SUMMARY:Lesion\, Bastardson\, Hayweather\, Beautysleep\, 7.7 PNX @ Betty's
+SUMMARY:Lesion\, Bastard Son\, Hayweather\, Beautysleep\, 7.7 PNX @ Betty's
 DESCRIPTION:lesion\, bastard son\, hayweather\, and beautysleep at betty's\
  , thursday october 15th. a strive benefit\, celebration of indigenous sove
  reignty and resilience\, with 7.7 pnx spinning in the courtyard plus food 
@@ -37,11 +37,26 @@ LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-15-bettys-lesion-bastard-son.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-09-bettys-punk-or-treat-iii-friendly-spectres@diypensacola
+DTSTAMP:20261009T000000Z
+DTSTART;TZID=America/Chicago:20261009T190000
+DTEND;TZID=America/Chicago:20261009T220000
+SUMMARY:Punk-or-Treat III\, Friendly Spectres\, Ihatesundays\, Mother's Mil
+ k\, Bastard Son\, The Snatches\, Larry @ Betty's on Belmont
+DESCRIPTION:punk-or-treat iii\, a food not bombs fundraiser at betty's on f
+ riday 10/9. friendly spectres\, ihatesundays\, mother's milk\, bastard son
+  and the snatches\, plus a costume contest featuring larry. $10-$20 slidin
+ g scale\, or $5 with a donation.
+LOCATION:Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-09-bettys-punk-or-treat-iii-friendly
+ -spectres.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-09-19-the-den-bastardson-rat-daughter@diypensacola
 DTSTAMP:20260919T000000Z
 DTSTART;TZID=America/Chicago:20260919T183000
 DTEND;TZID=America/Chicago:20260919T213000
-SUMMARY:Bastardson\, Rat Daughter\, Beautysleep @ Beulah Den
+SUMMARY:Bastardson\, Rat Daughter\, beautysleep @ Beulah Den
 DESCRIPTION:bastardson\, rat daughter\, and beautysleep at the den\, saturd
  ay september 19. doors 6:30\, music at 7. pay what you can\, $5 suggested.
 LOCATION:Beulah Den

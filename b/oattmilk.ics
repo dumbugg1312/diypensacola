@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola: Oattmilk
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-09-20-handlebar-tip-n-treat-drag-show-thotberry-shortcake@diypensa
+ cola
+DTSTAMP:20260920T000000Z
+DTSTART;TZID=America/Chicago:20260920T183000
+DTEND;TZID=America/Chicago:20260920T213000
+SUMMARY:Tip N' Treat Drag Show\, Thotberry Shortcake\, Becky Belle Bottoms\
+ , Fruitbat\, Evan Manson\, Oattmilk\, Pixie Van Dyke\, Sarah Tonin\, Mizz 
+ Fortune\, Pat Midoun\, H8Male\, Redd Hott Kandiey @ The Handlebar
+DESCRIPTION:the thot factory brings tip n' treat to the handlebar on septem
+ ber 20th. becky belle bottoms\, fruitbat\, evan manson\, oattmilk\, pixie 
+ van dyke\, sarah tonin\, mizz fortune\, pat midoun\, h8male and redd hott 
+ kandiey\, hosted by thotberry shortcake. doors 6:30\, show at 7\, $10 cove
+ r.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-20-handlebar-tip-n-treat-drag-show-t
+ hotberry-shortcake.html
+END:VEVENT
+END:VCALENDAR

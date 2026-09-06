@@ -25,7 +25,7 @@ UID:2026-09-11-309-we-cant-help-it-if-were-from-florida@diypensacola
 DTSTAMP:20260911T000000Z
 DTSTART;TZID=America/Chicago:20260911T180000
 DTEND;TZID=America/Chicago:20260911T210000
-SUMMARY:We Can't Help It If We're From Florida @ 309 Punk Project
+SUMMARY:We Can’t Help It If We’re From Florida @ 309 Punk Project
 DESCRIPTION:we can't help it if we're from florida\, a group photography ex
  hibition at the 309 punk project. friday september 11th\, 6-9pm.
 LOCATION:309 Punk Project\, 309 N 6th Ave\, Pensacola\, FL
@@ -33,8 +33,8 @@ URL:https://diypensacola.com/s/2026-09-11-309-we-cant-help-it-if-were-from-
  florida.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: We Can't Help It If We're From Florida @ 309 Punk Proj
- ect
+DESCRIPTION:tonight: We Can’t Help It If We’re From Florida @ 309 Punk 
+ Project
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT

@@ -22,4 +22,18 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-09-12-the-hoa-other-mourning-glories@diypensacola
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=America/Chicago:20260912T180000
+DTEND;TZID=America/Chicago:20260912T210000
+SUMMARY:Other\, Mourning Glories\, Lesion\, Conflict Of Interest\, The Snat
+ ches @ The HOA
+DESCRIPTION:mandatory h.o.a. meeting on september 12th. other\, mourning gl
+ ories\, lesion\, conflict of interest and the snatches. doors at 6\, music
+  at 7\, $10\, 21+. pensacola house show\, dm @thehoa850 for the address.
+LOCATION:The HOA
+URL:https://diypensacola.com/s/2026-09-12-the-hoa-other-mourning-glories.ht
+ ml
+END:VEVENT
 END:VCALENDAR
