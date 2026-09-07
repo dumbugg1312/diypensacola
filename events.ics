@@ -23,54 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-05-handlebar-blacktop-mojo@diypensacola
-DTSTAMP:20260905T000000Z
-DTSTART;TZID=America/Chicago:20260905T190000
-DTEND;TZID=America/Chicago:20260905T220000
-SUMMARY:Blacktop Mojo\, Seven Year Witch @ The Handlebar
-DESCRIPTION:blacktop mojo with seven year witch at the handlebar\, saturday
-  september 5th. doors 7pm.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-05-handlebar-blacktop-mojo.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-05-blake-doyle-skatepark-tc-skate-jam-2026@diypensacola
-DTSTAMP:20260905T000000Z
-DTSTART;TZID=America/Chicago:20260905T090000
-DTEND;TZID=America/Chicago:20260905T120000
-SUMMARY:TC Skate Jam 2026 @ Blake Doyle Skatepark
-DESCRIPTION:tc skate jam 2026 at blake doyle skatepark\, saturday september
-  5th. 9am warm-up\, 10am kick-off\, $15 entry. two 60 second runs plus a c
- ash round\, waterboyz presents.
-LOCATION:Blake Doyle Skatepark
-URL:https://diypensacola.com/s/2026-09-05-blake-doyle-skatepark-tc-skate-ja
- m-2026.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-05-undergrowth-throughline-puppetry@diypensacola
-DTSTAMP:20260905T000000Z
-DTSTART;TZID=America/Chicago:20260905T180000
-DTEND;TZID=America/Chicago:20260905T210000
-SUMMARY:Throughline Puppetry @ The Undergrowth
-DESCRIPTION:throughline puppetry and the undergrowth present their first ev
- er puppet slam\, september 5th. theme is television.
-LOCATION:The Undergrowth
-URL:https://diypensacola.com/s/2026-09-05-undergrowth-throughline-puppetry.
- html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-05-bettys-scott-h-biram-cockfight@diypensacola
-DTSTAMP:20260905T000000Z
-DTSTART;TZID=America/Chicago:20260905T200000
-DTEND;TZID=America/Chicago:20260905T230000
-SUMMARY:Scott H. Biram\, Cockfight\, Marc Ganancias @ Betty's
-DESCRIPTION:scott h. biram with cockfight and marc ganancias at betty's sat
- urday\, september 5th. doors at 8\, music at 9\, $12 at the door\, 18+.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-05-bettys-scott-h-biram-cockfight.ht
- ml
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-09-06-handlebar-no-genre-just-vocals-mybrothavan@diypensacola
 DTSTAMP:20260906T000000Z
 DTSTART;TZID=America/Chicago:20260906T200000
@@ -527,8 +479,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-09-bettys-punk-or-treat-iii-friendly-spectres@diypensacola
 DTSTAMP:20261009T000000Z
-DTSTART;TZID=America/Chicago:20261009T190000
-DTEND;TZID=America/Chicago:20261009T220000
+DTSTART;TZID=America/Chicago:20261009T200000
+DTEND;TZID=America/Chicago:20261009T230000
 SUMMARY:Punk-or-Treat III\, Friendly Spectres\, Ihatesundays\, Mother's Mil
  k\, Bastard Son\, The Snatches\, Larry @ Betty's on Belmont
 DESCRIPTION:punk-or-treat iii\, a food not bombs fundraiser at betty's on f

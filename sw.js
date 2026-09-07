@@ -1,11 +1,11 @@
-var CACHE='diypensacola-5bb6655118ab';
+var CACHE='diypensacola-9eab406ed4e0';
 // CORE is the app shell (always precached). PRECACHE is this build's fonts plus
 // the flyers for tonight + this week, injected by build.py so someone who opens
 // the site fresh at a venue with no signal still sees this week's flyers instead
 // of logo placeholders. The versioned CACHE name means an old week's flyers evict
 // themselves on the next deploy. Both lists are added best-effort at install.
 var CORE=['./','index.html','offline.html','style.css','logo.png','manifest.webmanifest','icon-192.png','icon-512.png','apple-touch-icon.png'];
-var PRECACHE=["flyers/2026-09-05_handlebar_blacktop-mojo.jpg", "flyers/thumbs/2026-09-05_handlebar_blacktop-mojo.webp", "flyers/2026-09-05_blake-doyle-skatepark_tc-skate-jam.jpg", "flyers/thumbs/2026-09-05_blake-doyle-skatepark_tc-skate-jam.webp", "flyers/2026-09-05_undergrowth_throughline-puppetry.jpg", "flyers/thumbs/2026-09-05_undergrowth_throughline-puppetry.webp", "flyers/2026-09-05_bettys_scott-h-biram.jpg", "flyers/thumbs/2026-09-05_bettys_scott-h-biram.webp", "flyers/thumbs/2026-09-06_handlebar_no-genre-just-vocals.webp", "flyers/thumbs/2026-09-08_handlebar_major-moment.webp", "flyers/thumbs/2026-09-09_bettys_the-phantom-a-d.webp", "flyers/thumbs/2026-09-10_309_poets-in-the-punkhouse.webp", "flyers/thumbs/2026-09-11_handlebar_geordie-greep.webp", "flyers/thumbs/2026-09-11_309_we-cant-help-it-if-were-from-florida.webp", "flyers/thumbs/2026-09-11_bettys_the-unnaturals.webp", "flyers/thumbs/2026-09-12_the-handlebar_nvsn.webp", "flyers/thumbs/2026-09-12_bettys_sapphic-saturday.webp", "flyers/thumbs/2026-09-12_the-hoa_other.webp", "flyers/thumbs/2026-09-13_handlebar_jazz-night.webp"];
+var PRECACHE=["flyers/2026-09-06_handlebar_no-genre-just-vocals.jpg", "flyers/thumbs/2026-09-06_handlebar_no-genre-just-vocals.webp", "flyers/thumbs/2026-09-08_handlebar_major-moment.webp", "flyers/thumbs/2026-09-09_bettys_the-phantom-a-d.webp", "flyers/thumbs/2026-09-10_309_poets-in-the-punkhouse.webp", "flyers/thumbs/2026-09-11_handlebar_geordie-greep.webp", "flyers/thumbs/2026-09-11_309_we-cant-help-it-if-were-from-florida.webp", "flyers/thumbs/2026-09-11_bettys_the-unnaturals.webp", "flyers/thumbs/2026-09-12_the-handlebar_nvsn.webp", "flyers/thumbs/2026-09-12_bettys_sapphic-saturday.webp", "flyers/thumbs/2026-09-12_the-hoa_other.webp", "flyers/thumbs/2026-09-13_handlebar_jazz-night.webp"];
 CORE=CORE.concat(PRECACHE);
 self.addEventListener('install',function(e){
   self.skipWaiting();
