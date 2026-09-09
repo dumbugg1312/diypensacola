@@ -172,29 +172,10 @@ header h1 a,header .wordmark a{color:inherit;text-decoration:none}
 @media (max-width:640px){
   .modetab{font-size:.78rem;padding:.6rem .95rem .55rem;min-height:36px;display:inline-flex;align-items:center}
 }
-/* TONIGHT strip: a stapled-on "what's on tonight" slip above the feed. Hidden by
-   default; MAIN_JS reveals + fills it only when the VIEWER actually has a show
-   today (the page is static + re-buckets client-side), so a quiet night shows
-   nothing at all. One tap scrolls to the tonight bucket. */
-.tstrip{display:flex;align-items:center;gap:.55rem;width:max-content;max-width:min(92%,560px);
-  margin:.75rem auto .1rem;padding:.4rem .7rem;text-decoration:none;color:var(--on-hot);
-  background:var(--hot);border:2.5px solid var(--ink);box-shadow:5px 5px 0 var(--shadow);
-  transform:rotate(-.8deg)}
-.tstrip[hidden]{display:none}
-.tstrip:hover{box-shadow:6px 7px 0 var(--shadow)}
-.tstrip:active{transform:rotate(-.8deg) translate(2px,2px);box-shadow:2px 2px 0 var(--shadow)}
-.tstrip-tag{flex:none;font-family:'Anton',Impact,sans-serif;text-transform:uppercase;
-  letter-spacing:.08em;font-size:1rem;line-height:1;background:var(--ink);color:var(--hotink);
-  padding:.28rem .5rem .22rem;transform:rotate(1.6deg)}
-.tstrip-body{font-family:'Special Elite',monospace;font-size:.9rem;line-height:1.15;
-  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.tstrip-go{flex:none;font-size:1rem;line-height:1;margin-left:.05rem}
-
 /* YOURS strip: the payoff for saving a show or following a band/room. Sits under
-   the controls, above tonight. Deliberately quieter than .tstrip - it is YOUR
-   note to yourself, not the night's headline, and green stays reserved for
-   tonight. Empty for anyone who has saved and followed nothing, which is the
-   default state, so it never nags a first-time visitor. */
+   the controls, above tonight. Deliberately quiet - it is YOUR note to yourself,
+   not the night's headline. Empty for anyone who has saved and followed nothing,
+   which is the default state, so it never nags a first-time visitor. */
 .yourstrip{max-width:min(94%,620px);margin:.9rem auto .2rem;padding:.5rem .75rem;
   background:var(--card);border:1px dashed var(--line);display:flex;
   flex-direction:column;gap:.35rem}
@@ -895,6 +876,25 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 
 /* ---------- band + venue pages (script-free, reuse zine tokens) ---------- */
 .dirwrap{max-width:var(--w-std)}
+/* the individual band/venue pages (.actpage) already get their own top air
+   from .acthero's margin, and the archive hub (.arcwrap) sets its own; every
+   other dirwrap page (bands.html, venues.html, stats.html, year archives)
+   had none, so its h1 sat almost flush against the tape-button row above. */
+.dirwrap:not(.actpage):not(.arcwrap){padding-top:2rem}
+.dirtools{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1.2rem 0 .4rem;position:sticky;top:calc(var(--a2hs-h,0px) + var(--modebar-h,0px));z-index:3;background:var(--bg);padding:.5rem 0;border-bottom:1px dashed var(--line)}
+.dirq{flex:1 1 14rem}
+.dirq input{width:100%;box-sizing:border-box;background:var(--card);color:var(--ink);border:2px solid var(--line);padding:.55rem .7rem;font:1rem "Special Elite","Courier Adjusted","Courier New",monospace}
+.dirq input:focus{outline:none;border-color:var(--ink)}
+.dirsort{display:inline-flex;gap:.3rem}
+.dirtog{border:1px solid var(--line);background:none;color:var(--ink);padding:.35rem .6rem;cursor:pointer;font:.85rem "Special Elite","Courier Adjusted","Courier New",monospace;text-transform:lowercase}
+.dirtog.on,.dirtog[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.dirtog:hover,.dirtog:focus-visible{border-color:var(--ink)}
+#dircount{color:var(--dim);font-size:.85rem;margin-left:auto}
+.soon{color:var(--hotink);font-weight:400;font-style:normal}
+#dirlist.flat h2.mon{display:none}
+#dirlist.flat .azjump{display:none}
+.dirwrap .azjump{margin:.6rem 0 .4rem}
+#dirnone{margin:1rem 0}
 .dirhead{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
   font-size:clamp(1.9rem,7vw,2.7rem);line-height:1.06;letter-spacing:.01em;margin:.4rem 0 .4rem;
   text-shadow:3px 3px 0 var(--hot);transform:none}
@@ -1236,7 +1236,7 @@ main{max-width:940px}
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child img.thumb.ph{
   width:100%;height:auto;max-height:440px;object-fit:contain;background:#000;border:3px solid var(--ink);transform:none;padding:0}
 #list:not(.wall) #b-tonight .show h3,
-#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child h3{font-size:clamp(2rem,4.5vw,3.4rem);line-height:.92}
+#list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child h3{font-size:clamp(2rem,4.5vw,3.4rem);line-height:1.08;margin-bottom:.5rem}
 #list:not(.wall) #b-tonight .thumbwrap::before,
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child .thumbwrap::before{
   left:26%;transform:translateX(-50%) rotate(-16deg);width:78px;height:22px;opacity:.72}
