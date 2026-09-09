@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data: https://diypensacola.goatcounter.com; font-src https://fonts.gstatic.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://diypensacola.goatcounter.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'sha256-24r/+0UFNWv7WQLL95ZZg0AhBgLDnbnNKE+79z6L+1g='">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data: https://diypensacola.goatcounter.com; font-src https://fonts.gstatic.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://diypensacola.goatcounter.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'sha256-jEInkxrhSSFh6WgCckqnR69GCJPxup75NM1e3TWJt2c='">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>diypensacola · punk & diy shows in pensacola, fl</title>
 <meta name="google-site-verification" content="mCPAfeTI42S8iiavz0GuOHuEVdFiCpX39gd_E4Qo8lA">
@@ -46,7 +46,6 @@
 <div class="search" id="searchbox"><input id="q" type="search" placeholder="search a band…" autocomplete="off" aria-label="search bands"><div id="bandhits"></div></div>
 </div>
 </div>
-<a class="tstrip" id="tonightstrip" href="#b-tonight" hidden><span class="tstrip-tag">tonight</span><span class="tstrip-body" id="tstripbody"></span><span class="tstrip-go" aria-hidden="true">&darr;</span></a>
 <div class="yourstrip" id="yourstrip" hidden>
 <p class="ysline" id="yssaved" hidden></p>
 <p class="ysline" id="ysfollow" hidden></p>
@@ -200,30 +199,6 @@
     lh.textContent=(has(conts.tonight)||has(conts.week)||has(conts.nextweek))?'later':'upcoming';
   }
   syncLaterLabel();
-
-  // TONIGHT strip: reflect the viewer's real tonight (the bucket above was just
-  // re-filled by the same clock). Reveal + fill only when a show is on today;
-  // a quiet night leaves the strip hidden. One tap scrolls to the bucket.
-  (function tonightStrip(){
-    var strip=document.getElementById('tonightstrip'); if(!strip)return;
-    var on=[].slice.call(document.querySelectorAll('#b-tonight .show'))
-      .filter(function(s){return !s.classList.contains('past')&&s.getAttribute('data-state')!=='cancelled';});
-    if(!on.length)return;
-    var body=document.getElementById('tstripbody'), txt;
-    if(on.length===1){
-      var line=on[0].getAttribute('data-lineup')||'', v=on[0].getAttribute('data-venuename')||'';
-      txt=v?(line+' \u00b7 '+v):line;
-    } else {
-      txt=on.length+' shows tonight';
-    }
-    body.textContent=txt;
-    strip.hidden=false;
-    strip.addEventListener('click',function(e){
-      e.preventDefault();
-      var b=document.getElementById('b-tonight');
-      if(b)b.scrollIntoView({behavior:'smooth',block:'start'});
-    });
-  })();
 
   // (The homepage no longer hosts the inline archive scroll; the full archive and
   // its self-updating list live on archive.html now, so the old selfArchive cloner
