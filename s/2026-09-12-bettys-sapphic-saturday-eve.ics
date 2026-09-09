@@ -27,20 +27,20 @@ DTSTART;TZID=America/Chicago:20260912T190000
 DTEND;TZID=America/Chicago:20260912T220000
 SUMMARY:Sapphic Saturday\, Eve\, Earth Sign Ky\, Platinum Muse\, Ray Darlin
  g\, Sweet Lady Sleeze\, Pat MiDown\, VulcanBaby\, Lady Grace\, Miss Rainbo
- w\, Violet Vibrations\, Devin X\, DJ Balance Universal @ Betty's on Belmon
- t
-DESCRIPTION:sapphic saturday is back at betty's on september 12th. eve\, ea
- rth sign ky\, platinum muse\, ray darling\, sweet lady sleeze\, pat midown
- \, vulcanbaby\, lady grace\, miss rainbow\, violet vibrations\, devin x an
- d dj balance universal. $15.
-LOCATION:Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
+ w\, Violet Vibrations\, Devin X\, DJ Balance Universal @ Betty’s on Belm
+ ont
+DESCRIPTION:sapphic saturday is back at betty’s on september 12th. eve\, 
+ earth sign ky\, platinum muse\, ray darling\, sweet lady sleeze\, pat mido
+ wn\, vulcanbaby\, lady grace\, miss rainbow\, violet vibrations\, devin x 
+ and dj balance universal. $15.
+LOCATION:Betty’s on Belmont\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-12-bettys-sapphic-saturday-eve.html
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:tonight: Sapphic Saturday\, Eve\, Earth Sign Ky\, Platinum Muse
  \, Ray Darling\, Sweet Lady Sleeze\, Pat MiDown\, Vulcan Baby\, Lady Grace
  \, Miss Rainbow\, Violet Vibrations\, Devin X\, DJ Balance Universal @ Bet
- ty's on Belmont
+ ty’s on Belmont
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT

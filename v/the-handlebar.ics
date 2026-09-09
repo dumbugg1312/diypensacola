@@ -27,11 +27,11 @@ UID:2026-09-08-handlebar-major-moment-serenas-fire@diypensacola
 DTSTAMP:20260908T000000Z
 DTSTART;TZID=America/Chicago:20260908T180000
 DTEND;TZID=America/Chicago:20260908T210000
-SUMMARY:Major Moment\, Serena's Fire\, Super Power Activation Matrix @ The 
- Handlebar
-DESCRIPTION:major moment with serena's fire and super power activation matr
- ix at the handlebar\, tuesday september 8th. doors 6\, music 7. $15 advanc
- e\, $20 at the door\, all ages.
+SUMMARY:Major Moment\, Serena’s Fire\, Super Power Activation Matrix @ Th
+ e Handlebar
+DESCRIPTION:major moment with serena’s fire and super power activation ma
+ trix at the handlebar\, tuesday september 8th. doors 6\, music 7. $15 adva
+ nce\, $20 at the door\, all ages.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-08-handlebar-major-moment-serenas-fi
  re.html
@@ -64,9 +64,9 @@ UID:2026-09-13-handlebar-jazz-night-arent-we@diypensacola
 DTSTAMP:20260913T000000Z
 DTSTART;TZID=America/Chicago:20260913T180000
 DTEND;TZID=America/Chicago:20260913T210000
-SUMMARY:Jazz Night\, Aren't We @ The Handlebar
-DESCRIPTION:jazz night featuring aren't we at the handlebar\, sunday septem
- ber 13th. 6pm\, free show.
+SUMMARY:Jazz Night\, Aren’t We @ The Handlebar
+DESCRIPTION:jazz night featuring aren’t we at the handlebar\, sunday sept
+ ember 13th. 6pm\, free show.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-13-handlebar-jazz-night-arent-we.htm
  l
@@ -136,14 +136,14 @@ UID:2026-09-20-handlebar-tip-n-treat-drag-show-thotberry-shortcake@diypensa
 DTSTAMP:20260920T000000Z
 DTSTART;TZID=America/Chicago:20260920T183000
 DTEND;TZID=America/Chicago:20260920T213000
-SUMMARY:Tip N' Treat Drag Show\, Thotberry Shortcake\, Becky Belle Bottoms\
- , Fruitbat\, Evan Manson\, Oattmilk\, Pixie Van Dyke\, Sarah Tonin\, Mizz 
- Fortune\, Pat Midoun\, H8Male\, Redd Hott Kandiey @ The Handlebar
-DESCRIPTION:the thot factory brings tip n' treat to the handlebar on septem
- ber 20th. becky belle bottoms\, fruitbat\, evan manson\, oattmilk\, pixie 
- van dyke\, sarah tonin\, mizz fortune\, pat midoun\, h8male and redd hott 
- kandiey\, hosted by thotberry shortcake. doors 6:30\, show at 7\, $10 cove
- r.
+SUMMARY:Tip N’ Treat Drag Show\, Thotberry Shortcake\, Becky Belle Bottom
+ s\, Fruitbat\, Evan Manson\, Oattmilk\, Pixie Van Dyke\, Sarah Tonin\, Miz
+ z Fortune\, Pat Midoun\, H8Male\, Redd Hott Kandiey @ The Handlebar
+DESCRIPTION:the thot factory brings tip n’ treat to the handlebar on sept
+ ember 20th. becky belle bottoms\, fruitbat\, evan manson\, oattmilk\, pixi
+ e van dyke\, sarah tonin\, mizz fortune\, pat midoun\, h8male and redd hot
+ t kandiey\, hosted by thotberry shortcake. doors 6:30\, show at 7\, $10 co
+ ver.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-20-handlebar-tip-n-treat-drag-show-t
  hotberry-shortcake.html
@@ -210,12 +210,12 @@ UID:2026-09-26-handlebar-liliths-demise-delta-hate@diypensacola
 DTSTAMP:20260926T000000Z
 DTSTART;TZID=America/Chicago:20260926T150000
 DTEND;TZID=America/Chicago:20260926T180000
-SUMMARY:Lilith's Demise\, Delta Hate\, Truck Stop Dick Pill\, Claymore\, Oi
- nkliteration\, Bananaslama\, Behead The Traitor\, Split\, Stay Lost\, Bubb
- legum Chainsaw @ The Handlebar
-DESCRIPTION:panhandle slam jam 2 at the handlebar. lilith's demise\, delta 
- hate\, and more all day long. september 26th\, doors 3 show 4. $20 advance
-  / $30 door.
+SUMMARY:Lilith’s Demise\, Delta Hate\, Truck Stop Dick Pill\, Claymore\, 
+ Oinkliteration\, Bananaslama\, Behead The Traitor\, Split\, Stay Lost\, Bu
+ bblegum Chainsaw @ The Handlebar
+DESCRIPTION:panhandle slam jam 2 at the handlebar. lilith’s demise\, delt
+ a hate\, and more all day long. september 26th\, doors 3 show 4. $20 advan
+ ce / $30 door.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-26-handlebar-liliths-demise-delta-ha
  te.html
@@ -370,6 +370,17 @@ DESCRIPTION:goodbye june brings the trouble for all tour to the handlebar w
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-25-handlebar-goodbye-june-danny-wors
  nop.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-27-handlebar-still-allice-pons@diypensacola
+DTSTAMP:20261027T000000Z
+DTSTART;TZID=America/Chicago:20261027T180000
+DTEND;TZID=America/Chicago:20261027T210000
+SUMMARY:Still Allice\, PONS\, Ihatesundays @ The Handlebar
+DESCRIPTION:still allice\, pons (nyc) and ihatesundays at the handlebar\, t
+ uesday oct 27. doors at 6\, $10\, all ages.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-27-handlebar-still-allice-pons.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-29-handlebar-the-linda-lindas@diypensacola

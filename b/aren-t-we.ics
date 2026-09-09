@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Aren't We
+X-WR-CALNAME:DIYPensacola: Aren’t We
 X-WR-TIMEZONE:America/Chicago
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
@@ -27,9 +27,9 @@ UID:2026-09-13-handlebar-jazz-night-arent-we@diypensacola
 DTSTAMP:20260913T000000Z
 DTSTART;TZID=America/Chicago:20260913T180000
 DTEND;TZID=America/Chicago:20260913T210000
-SUMMARY:Jazz Night\, Aren't We @ The Handlebar
-DESCRIPTION:jazz night featuring aren't we at the handlebar\, sunday septem
- ber 13th. 6pm\, free show.
+SUMMARY:Jazz Night\, Aren’t We @ The Handlebar
+DESCRIPTION:jazz night featuring aren’t we at the handlebar\, sunday sept
+ ember 13th. 6pm\, free show.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-13-handlebar-jazz-night-arent-we.htm
  l

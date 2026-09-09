@@ -22,7 +22,8 @@
     _toTop.addEventListener('click',function(e){
       e.preventDefault();e.stopPropagation();
       var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      window.scrollTo({top:0,behavior:rm?'auto':'smooth'});
+      if(rm||!('scrollBehavior' in document.documentElement.style))window.scrollTo(0,0);
+      else window.scrollTo({top:0,behavior:'smooth'});
     });
   }
 
@@ -85,13 +86,11 @@
 
   var DCX_TTL=24*60*60*1000;
   function unlock(){
-    fab.hidden=false;lsSetRaw('dcx_unlocked_at',String(Date.now()));}
+    fab.hidden=false;lsSetRaw('dcx_unlocked_at',String(Date.now()));
+    try{document.dispatchEvent(new Event('dcx-unlocked'));}catch(e){}}
   var unlockedAt=parseInt(lsGetRaw('dcx_unlocked_at')||'0',10);
   if(unlockedAt&&Date.now()-unlockedAt<DCX_TTL)unlock();
-  else if(unlockedAt){
-    lsDelRaw('dcx_unlocked_at');
-    var code0=window.prompt('login expired. enter passcode:');
-    if(code0===DCX_PASSCODE)unlock();}
+  else if(unlockedAt){lsDelRaw('dcx_unlocked_at');}   // expired: long-press the logo again
 
   if(logoEl){
     // Long-press the masthead logo to reveal the owner tools.
@@ -152,7 +151,8 @@
         lines.push(f.ts+' / '+f.title+' ('+f.url+')'
           +(f.nowPlaying?'\nplaying: '+f.nowPlaying.act+' / '+f.nowPlaying.title+' ('+f.nowPlaying.url+')':'')
           +'\n'+f.note);}
-      if(navigator.clipboard)navigator.clipboard.writeText(lines.join('\n\n'));
+      var text=lines.join('\n\n'),manual=function(){window.prompt('copy this',text);};
+      if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(text).then(null,manual);else manual();
       return;}
     if(a==='clear'){
       if(window.confirm('Clear all flagged issues?')){saveFlags([]);renderLog();}

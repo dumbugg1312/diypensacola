@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: James Hall & the Ladies of...
+X-WR-CALNAME:DIYPensacola: James Hall & the Ladies of…
 X-WR-TIMEZONE:America/Chicago
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
@@ -28,10 +28,10 @@ UID:2026-10-03-bettys-james-hall-the-ladies-of-valerie-sassyfras@diypensaco
 DTSTAMP:20261003T000000Z
 DTSTART;TZID=America/Chicago:20261003T190000
 DTEND;TZID=America/Chicago:20261003T220000
-SUMMARY:James Hall & the Ladies of...\, Valerie SassyFras @ Betty's
-DESCRIPTION:james hall & the ladies of... with valerie sassyfras at betty's
-  saturday october 3rd. $10.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+SUMMARY:James Hall & the Ladies of…\, Valerie SassyFras @ Betty’s
+DESCRIPTION:james hall & the ladies of… with valerie sassyfras at betty
+ ’s saturday october 3rd. $10.
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-03-bettys-james-hall-the-ladies-of-v
  alerie-sassyfras.html
 END:VEVENT
