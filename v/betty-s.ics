@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Betty's
+X-WR-CALNAME:DIYPensacola: Betty’s
 X-WR-TIMEZONE:America/Chicago
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
@@ -27,10 +27,10 @@ UID:2026-09-09-bettys-the-phantom-a-d-future-hate@diypensacola
 DTSTAMP:20260909T000000Z
 DTSTART;TZID=America/Chicago:20260909T200000
 DTEND;TZID=America/Chicago:20260909T230000
-SUMMARY:The Phantom A.D.\, Future Hate @ Betty's
-DESCRIPTION:the phantom a.d. and future hate at betty's\, wednesday septemb
- er 9th. 8pm\, all ages\, tickets through eventbrite.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+SUMMARY:The Phantom A.D.\, Future Hate @ Betty’s
+DESCRIPTION:the phantom a.d. and future hate at betty’s\, wednesday septe
+ mber 9th. 8pm\, all ages\, tickets through eventbrite.
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-09-bettys-the-phantom-a-d-future-hat
  e.html
 END:VEVENT
@@ -39,10 +39,11 @@ UID:2026-09-11-bettys-the-unnaturals-paupers-grave@diypensacola
 DTSTAMP:20260911T000000Z
 DTSTART;TZID=America/Chicago:20260911T200000
 DTEND;TZID=America/Chicago:20260911T230000
-SUMMARY:The Unnaturals\, Pauper's Grave\, Crystal Plumage @ Betty's
-DESCRIPTION:the unnaturals (new orleans surf rock)\, pauper's grave\, and c
- rystal plumage at betty's friday september 11th. doors 8\, show 9. $10.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+SUMMARY:The Unnaturals\, Pauper’s Grave\, Crystal Plumage @ Betty’s
+DESCRIPTION:the unnaturals (new orleans surf rock)\, pauper’s grave\, and
+  crystal plumage at betty’s friday september 11th. doors 8\, show 9. $10
+ .
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-11-bettys-the-unnaturals-paupers-gra
  ve.html
 END:VEVENT
@@ -53,13 +54,13 @@ DTSTART;TZID=America/Chicago:20260912T190000
 DTEND;TZID=America/Chicago:20260912T220000
 SUMMARY:Sapphic Saturday\, Eve\, Earth Sign Ky\, Platinum Muse\, Ray Darlin
  g\, Sweet Lady Sleeze\, Pat MiDown\, VulcanBaby\, Lady Grace\, Miss Rainbo
- w\, Violet Vibrations\, Devin X\, DJ Balance Universal @ Betty's on Belmon
- t
-DESCRIPTION:sapphic saturday is back at betty's on september 12th. eve\, ea
- rth sign ky\, platinum muse\, ray darling\, sweet lady sleeze\, pat midown
- \, vulcanbaby\, lady grace\, miss rainbow\, violet vibrations\, devin x an
- d dj balance universal. $15.
-LOCATION:Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
+ w\, Violet Vibrations\, Devin X\, DJ Balance Universal @ Betty’s on Belm
+ ont
+DESCRIPTION:sapphic saturday is back at betty’s on september 12th. eve\, 
+ earth sign ky\, platinum muse\, ray darling\, sweet lady sleeze\, pat mido
+ wn\, vulcanbaby\, lady grace\, miss rainbow\, violet vibrations\, devin x 
+ and dj balance universal. $15.
+LOCATION:Betty’s on Belmont\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-12-bettys-sapphic-saturday-eve.html
 END:VEVENT
 BEGIN:VEVENT
@@ -68,14 +69,14 @@ UID:2026-09-26-bettys-comedians-in-drag-doing-comedy-dallas-nelson@diypensa
 DTSTAMP:20260926T000000Z
 DTSTART;TZID=America/Chicago:20260926T203000
 DTEND;TZID=America/Chicago:20260926T233000
-SUMMARY:Comedians in Drag Doing Comedy\, Dallas Nelson "Cherry Highman"\, J
- essie Morrow "Connie Langus"\, Cristina Morandi "Anus Young"\, Dr. Anna Le
- peley @ Betty's
-DESCRIPTION:comedians in drag doing comedy at betty's\, saturday september 
- 26th. dallas nelson (cherry highman)\, jessie morrow (connie langus)\, cri
- stina morandi (anus young)\, and a mystery comedian tba. hosted by dr. ann
- a lepeley. doors 8:30\, showtime 9\, $20. bring cash to tip.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+SUMMARY:Comedians in Drag Doing Comedy\, Dallas Nelson “Cherry Highman”
+ \, Jessie Morrow “Connie Langus”\, Cristina Morandi “Anus Young”\,
+  Dr. Anna Lepeley @ Betty’s
+DESCRIPTION:comedians in drag doing comedy at betty’s\, saturday septembe
+ r 26th. dallas nelson (cherry highman)\, jessie morrow (connie langus)\, c
+ ristina morandi (anus young)\, and a mystery comedian tba. hosted by dr. a
+ nna lepeley. doors 8:30\, showtime 9\, $20. bring cash to tip.
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-26-bettys-comedians-in-drag-doing-co
  medy-dallas-nelson.html
 END:VEVENT
@@ -85,10 +86,10 @@ UID:2026-10-03-bettys-james-hall-the-ladies-of-valerie-sassyfras@diypensaco
 DTSTAMP:20261003T000000Z
 DTSTART;TZID=America/Chicago:20261003T190000
 DTEND;TZID=America/Chicago:20261003T220000
-SUMMARY:James Hall & the Ladies of...\, Valerie SassyFras @ Betty's
-DESCRIPTION:james hall & the ladies of... with valerie sassyfras at betty's
-  saturday october 3rd. $10.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+SUMMARY:James Hall & the Ladies of…\, Valerie SassyFras @ Betty’s
+DESCRIPTION:james hall & the ladies of… with valerie sassyfras at betty
+ ’s saturday october 3rd. $10.
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-03-bettys-james-hall-the-ladies-of-v
  alerie-sassyfras.html
 END:VEVENT
@@ -97,13 +98,13 @@ UID:2026-10-09-bettys-punk-or-treat-iii-friendly-spectres@diypensacola
 DTSTAMP:20261009T000000Z
 DTSTART;TZID=America/Chicago:20261009T200000
 DTEND;TZID=America/Chicago:20261009T230000
-SUMMARY:Punk-or-Treat III\, Friendly Spectres\, Ihatesundays\, Mother's Mil
- k\, Bastard Son\, The Snatches\, Larry @ Betty's on Belmont
-DESCRIPTION:punk-or-treat iii\, a food not bombs fundraiser at betty's on f
- riday 10/9. friendly spectres\, ihatesundays\, mother's milk\, bastard son
-  and the snatches\, plus a costume contest featuring larry. $10-$20 slidin
- g scale\, or $5 with a donation.
-LOCATION:Betty's on Belmont\, 506 W Belmont St\, Pensacola\, FL
+SUMMARY:Punk-or-Treat III\, Friendly Spectres\, Ihatesundays\, Mother’s M
+ ilk\, Bastard Son\, The Snatches\, Larry @ Betty’s on Belmont
+DESCRIPTION:punk-or-treat iii\, a food not bombs fundraiser at betty’s on
+  friday 10/9. friendly spectres\, ihatesundays\, mother’s milk\, bastard
+  son and the snatches\, plus a costume contest featuring larry. $10-$20 sl
+ iding scale\, or $5 with a donation.
+LOCATION:Betty’s on Belmont\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-09-bettys-punk-or-treat-iii-friendly
  -spectres.html
 END:VEVENT
@@ -112,13 +113,14 @@ UID:2026-10-15-bettys-lesion-bastard-son@diypensacola
 DTSTAMP:20261015T000000Z
 DTSTART;TZID=America/Chicago:20261015T190000
 DTEND;TZID=America/Chicago:20261015T220000
-SUMMARY:Lesion\, Bastard Son\, Hayweather\, Beautysleep\, 7.7 PNX @ Betty's
-DESCRIPTION:lesion\, bastard son\, hayweather\, and beautysleep at betty's\
- , thursday october 15th. a strive benefit\, celebration of indigenous sove
- reignty and resilience\, with 7.7 pnx spinning in the courtyard plus food 
- not bombs\, shuttlepunx\, and 309 punk project. 7pm\, $10 to $20 sliding s
- cale\, $5 off the door with a nonperishable donation for food not bombs.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+SUMMARY:Lesion\, Bastard Son\, Hayweather\, Beautysleep\, 7.7 PNX @ Betty
+ ’s
+DESCRIPTION:lesion\, bastard son\, hayweather\, and beautysleep at betty’
+ s\, thursday october 15th. a strive benefit\, celebration of indigenous so
+ vereignty and resilience\, with 7.7 pnx spinning in the courtyard plus foo
+ d not bombs\, shuttlepunx\, and 309 punk project. 7pm\, $10 to $20 sliding
+  scale\, $5 off the door with a nonperishable donation for food not bombs.
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-15-bettys-lesion-bastard-son.html
 END:VEVENT
 BEGIN:VEVENT
@@ -126,10 +128,10 @@ UID:2026-10-23-bettys-the-earthly-delights-sideshow@diypensacola
 DTSTAMP:20261023T000000Z
 DTSTART;TZID=America/Chicago:20261023T200000
 DTEND;TZID=America/Chicago:20261023T230000
-SUMMARY:The Earthly Delights Sideshow @ Betty's
-DESCRIPTION:the earthly delights sideshow at betty's on belmont. friday oct
- ober 23rd\, doors 8\, freaks 9.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+SUMMARY:The Earthly Delights Sideshow @ Betty’s
+DESCRIPTION:the earthly delights sideshow at betty’s on belmont. friday o
+ ctober 23rd\, doors 8\, freaks 9.
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-23-bettys-the-earthly-delights-sides
  how.html
 END:VEVENT

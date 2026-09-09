@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Dallas Nelson "Cherry Highman"
+X-WR-CALNAME:DIYPensacola: Dallas Nelson “Cherry Highman”
 X-WR-TIMEZONE:America/Chicago
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
@@ -28,14 +28,14 @@ UID:2026-09-26-bettys-comedians-in-drag-doing-comedy-dallas-nelson@diypensa
 DTSTAMP:20260926T000000Z
 DTSTART;TZID=America/Chicago:20260926T203000
 DTEND;TZID=America/Chicago:20260926T233000
-SUMMARY:Comedians in Drag Doing Comedy\, Dallas Nelson "Cherry Highman"\, J
- essie Morrow "Connie Langus"\, Cristina Morandi "Anus Young"\, Dr. Anna Le
- peley @ Betty's
-DESCRIPTION:comedians in drag doing comedy at betty's\, saturday september 
- 26th. dallas nelson (cherry highman)\, jessie morrow (connie langus)\, cri
- stina morandi (anus young)\, and a mystery comedian tba. hosted by dr. ann
- a lepeley. doors 8:30\, showtime 9\, $20. bring cash to tip.
-LOCATION:Betty's\, 506 W Belmont St\, Pensacola\, FL
+SUMMARY:Comedians in Drag Doing Comedy\, Dallas Nelson “Cherry Highman”
+ \, Jessie Morrow “Connie Langus”\, Cristina Morandi “Anus Young”\,
+  Dr. Anna Lepeley @ Betty’s
+DESCRIPTION:comedians in drag doing comedy at betty’s\, saturday septembe
+ r 26th. dallas nelson (cherry highman)\, jessie morrow (connie langus)\, c
+ ristina morandi (anus young)\, and a mystery comedian tba. hosted by dr. a
+ nna lepeley. doors 8:30\, showtime 9\, $20. bring cash to tip.
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-26-bettys-comedians-in-drag-doing-co
  medy-dallas-nelson.html
 END:VEVENT

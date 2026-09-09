@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola: Weather Warlock
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-09-26-bunny-club-quintron-miss-pussycat-weather-warlock@diypensaco
+ la
+DTSTAMP:20260926T000000Z
+DTSTART;TZID=America/Chicago:20260926T190000
+DTEND;TZID=America/Chicago:20260926T220000
+SUMMARY:Quintron & Miss Pussycat\, Weather Warlock @ Bunny Club
+DESCRIPTION:quintron & miss pussycat with weather warlock at the old bunny 
+ club\, saturday sept 26. 500 w belmont\, 7pm. puppet show\, organ music\, 
+ dance party. part of the 2026 grassroots radio conference.
+LOCATION:Bunny Club
+URL:https://diypensacola.com/s/2026-09-26-bunny-club-quintron-miss-pussycat
+ -weather-warlock.html
+END:VEVENT
+END:VCALENDAR

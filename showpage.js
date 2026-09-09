@@ -78,7 +78,8 @@
     var url=canon?canon.getAttribute('href'):location.href;
     var title=document.title.replace(/ · DIYPensacola$/,'');
     function done(){sh.textContent='link copied';setTimeout(function(){sh.textContent='share this flyer';},1600);}
-    function copy(){if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(url).then(done,done);}else{window.prompt('copy this link',url);}}
+    function manual(){window.prompt('copy this link',url);}
+    function copy(){if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(url).then(done,manual);}else{manual();}}
     sh.addEventListener('click',function(){
       if(navigator.share){navigator.share({title:title,url:url}).then(function(){},function(err){if(!(err&&err.name==='AbortError'))copy();});}
       else{copy();}

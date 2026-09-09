@@ -10,8 +10,12 @@
     var t=parseInt(lsGetRaw('dcx_unlocked_at')||'0',10);
     return !!t&&(Date.now()-t)<TTL;
   }
-  if(!unlocked())return;
-
+  // Not unlocked yet: wait for the long-press unlock (FLAG_JS fires it) instead
+  // of needing a reload, which on a phone is exactly where this bar is used.
+  var booted=false;
+  if(!unlocked()){document.addEventListener('dcx-unlocked',function(){if(!booted){booted=true;boot();}});return;}
+  booted=true;boot();
+  function boot(){
   function token(){return lsGetRaw(TKEY)||'';}
   function b64(s){return btoa(unescape(encodeURIComponent(s)));}
   function unb64(s){try{return decodeURIComponent(escape(atob(s.replace(/\s/g,''))));}catch(e){return '';}}
@@ -142,4 +146,5 @@
     }));
   }
   new MutationObserver(sync).observe(dt,{attributes:true,attributeFilter:['class','data-id']});
+  }
 })();
