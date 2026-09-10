@@ -1,11 +1,11 @@
-var CACHE='diypensacola-a3d432150c35';
+var CACHE='diypensacola-d63c53ac718a';
 // CORE is the app shell (always precached). PRECACHE is this build's fonts plus
 // the flyers for tonight + this week, injected by build.py so someone who opens
 // the site fresh at a venue with no signal still sees this week's flyers instead
 // of logo placeholders. The versioned CACHE name means an old week's flyers evict
 // themselves on the next deploy. Both lists are added best-effort at install.
 var CORE=['./','index.html','offline.html','style.css','logo.png','manifest.webmanifest','icon-192.png','icon-512.png','apple-touch-icon.png'];
-var PRECACHE=["flyers/2026-09-08_handlebar_major-moment.jpg", "flyers/thumbs/2026-09-08_handlebar_major-moment.webp", "flyers/thumbs/2026-09-09_bettys_the-phantom-a-d.webp", "flyers/thumbs/2026-09-10_309_poets-in-the-punkhouse.webp", "flyers/thumbs/2026-09-11_handlebar_geordie-greep.webp", "flyers/thumbs/2026-09-11_309_we-cant-help-it-if-were-from-florida.webp", "flyers/thumbs/2026-09-11_bettys_the-unnaturals.webp", "flyers/thumbs/2026-09-12_the-handlebar_nvsn.webp", "flyers/thumbs/2026-09-12_bettys_sapphic-saturday.webp", "flyers/thumbs/2026-09-12_the-hoa_other.webp", "flyers/thumbs/2026-09-13_handlebar_jazz-night.webp", "flyers/thumbs/flyer_2026-09-14_handlebar_archers.webp", "flyers/thumbs/2026-09-15_handlebar_the-holdup.webp", "flyers/thumbs/2026-09-17_handlebar_brett-patterson.webp", "flyers/thumbs/2026-09-18_handlebar_glitterer.webp", "flyers/thumbs/2026-09-19_handlebar_house-of-heavy.webp", "flyers/thumbs/2026-09-19_the-den_bastardson.webp", "flyers/thumbs/2026-09-20_309_views-from-the-ground.webp", "flyers/thumbs/2026-09-20_handlebar_tip-n-treat-drag-show.webp"];
+var PRECACHE=["flyers/thumbs/2026-09-10_309_poets-in-the-punkhouse.webp", "flyers/thumbs/2026-09-11_handlebar_geordie-greep.webp", "flyers/thumbs/2026-09-11_309_we-cant-help-it-if-were-from-florida.webp", "flyers/thumbs/2026-09-11_bettys_the-unnaturals.webp", "flyers/thumbs/2026-09-12_the-handlebar_nvsn.webp", "flyers/thumbs/2026-09-12_bettys_sapphic-saturday.webp", "flyers/thumbs/2026-09-12_the-hoa_other.webp", "flyers/thumbs/2026-09-13_handlebar_jazz-night.webp", "flyers/thumbs/flyer_2026-09-14_handlebar_archers.webp", "flyers/thumbs/2026-09-15_handlebar_the-holdup.webp", "flyers/thumbs/2026-09-17_handlebar_brett-patterson.webp", "flyers/thumbs/2026-09-18_handlebar_glitterer.webp", "flyers/thumbs/2026-09-19_handlebar_house-of-heavy.webp", "flyers/thumbs/2026-09-19_the-den_bastardson.webp", "flyers/thumbs/2026-09-20_309_views-from-the-ground.webp", "flyers/thumbs/2026-09-20_handlebar_tip-n-treat-drag-show.webp"];
 CORE=CORE.concat(PRECACHE);
 self.addEventListener('install',function(e){
   self.skipWaiting();
