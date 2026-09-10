@@ -574,14 +574,19 @@ main section:target{animation:viewin .26s ease both}
   header .logo{width:126px;height:126px;margin-bottom:.5rem}
   h1{font-size:clamp(2.2rem,11.5vw,3.05rem)}  /* fits "DIYPENSACOLA" (12ch, 7.23em wide) on phones down to 320px */
   /* the tagline is one sentence and must READ as one line - "or die" dangling on
-     its own row looked like a mistake. It's 32.98em wide in Special Elite, so the
-     size is solved from the viewport (100vw minus the 1rem header padding each
-     side) instead of guessed: 2.95vw - .9px keeps it just inside the screen down
-     to ~320px, and it stops growing at .83rem once the phone is wide enough. */
-  header .tag{font-size:clamp(.74rem,3vw,.83rem);margin-top:.5rem;line-height:1.45;white-space:normal;text-wrap:balance;padding:0 .4rem}
-  /* overflow:hidden is the guard for the Courier fallback: it's a wider face, so
+     its own row looked like a mistake. CSS can't measure text, so the BUILD does
+     it: every masthead carries --tagw, its own tagline's width in em, summed
+     from Special Elite's advance widths (see tag_line() in build.py). The size
+     is then just that divided into the room the line actually has. Per page, so
+     the archive's shorter tagline gets to be bigger than the homepage's long
+     one. The negative inline margin hands the line back the header's 1rem of
+     side padding, and the 18px covers the .2rem of its own plus a hair of slack.
+     min() stops a short tagline from ballooning past the desktop size.
+     overflow:hidden is the guard for the Courier fallback: it's a wider face, so
      during the Google Fonts swap the nowrap line would otherwise make the whole
      page scroll sideways for a beat. Clipped for that beat beats that. */
+  header .tag{white-space:nowrap;overflow:hidden;margin:.5rem -.75rem 0;padding:0 .2rem;
+    line-height:1.45;font-size:min(.83rem,calc((100vw - 18px)/var(--tagw,33)))}
 
   /* 6 buttons now (the off-site links moved to the .finelinks credit line), so
      the old 2x4 grid is gone: back to wrapped natural-width tape scraps that
@@ -595,14 +600,24 @@ main section:target{animation:viewin .26s ease both}
   .links a{font-size:clamp(.6rem,2.55vw,.8rem);padding:.45rem .3rem;text-align:center;
     line-height:1.25;letter-spacing:.03em;box-shadow:2px 2px 0 var(--hot)}
   /* the fine-print credit row is ONE line at every phone width: it's a credit
-     line, and wrapping "donate" alone onto a second line looked like a mistake.
-     nowrap + a vw-tracked size + shrunk middots keep all five inside 320px. */
-  /* wraps as an even 3+2 (the max-width forces the break after facebook) instead
-     of dangling one link on its own row */
-  .finelinks{flex-wrap:wrap;row-gap:0;font-size:clamp(.72rem,3vw,.8rem);margin-top:.5rem;padding:0 .5rem;max-width:17rem}
-  .finelinks a{white-space:nowrap;padding:.5rem .35rem}
-  /* no middots on phones: a wrapped row would otherwise start with one */
-  .finelinks a+a::before{content:none}
+     line, and wrapping "donate" onto a second row looked like a mistake. All
+     five stay side by side because the size is solved from the viewport rather
+     than picked - the row is 29.2em of text, middots and padding, and 3.35vw
+     keeps that inside the screen down to 320px - and because every gap in it is
+     in em, so the whole line shrinks as one piece instead of the words shrinking
+     around fixed rem gaps. min() caps it at .8rem so a big phone doesn't grow
+     the fine print. */
+  .finelinks{flex-wrap:nowrap;max-width:none;font-size:min(.8rem,calc(3.35vw - .3px));
+    margin-top:.5rem;padding:0 .3rem}
+  .finelinks a{white-space:nowrap;padding:.5rem .1em}
+  /* the middots stay on phones now that the row is one line: five underlined
+     words in a row without them read as a sentence, not a credit line. */
+  .finelinks a+a::before{margin:0 .22em}
+  /* the same row runs again at the foot of every page but the homepage, and
+     there it sits inside the footer's 1rem of side padding - 32px the size
+     above was solved without. Hand it back, or the one line overflows the
+     footer instead of fitting the screen. */
+  footer .finelinks{margin:0 -1rem .6rem}
 
   /* sticky segmented view-switcher - always one tap away */
   /* sticks below the install banner when it's up: --a2hs-h (set by JS to the
@@ -1817,7 +1832,7 @@ header .homelink,header .home,header .logo,header .home img{
 }
 
 </style></head><body class="showpage">
-<div class="modebar"><nav class="modetabs" aria-label="calendar or archive"><a class="modetab" href="/">calendar</a><a class="modetab" href="/archive.html">archive</a></nav></div><header class="bighead"><a href="/" class="homelink" aria-label="diypensacola home"><img class="logo" src="/logo.png" alt="DIYPensacola Punksacola water tower logo"></a><p class="wordmark"><a href="/">diypensacola</a></p><p class="tag">punk, metal &amp; diy shows in pensacola, fl</p></header><div class="links"><a href="/bands.html">bands &amp; acts</a><a href="/venues.html">venues</a><a href="https://youtube.com/playlist?list=PLVw-bAWseWcR5fmJF4vu6zbBVT1m0Lf7q" target="_blank" rel="noopener">local mixtapes</a><i class="brk" aria-hidden="true"></i><a href="/guide.html">showgoer guide</a><a href="/submit.html">submit a show</a><a id="calsub" href="webcal://diypensacola.com/events.ics" title="every upcoming show on this calendar, dropped into your own and kept up to date. this is the whole calendar at once, not one show. for a single room or band, subscribe on its own page. unsubscribe any time.">subscribe</a></div>
+<div class="modebar"><nav class="modetabs" aria-label="calendar or archive"><a class="modetab" href="/">calendar</a><a class="modetab" href="/archive.html">archive</a></nav></div><header class="bighead"><a href="/" class="homelink" aria-label="diypensacola home"><img class="logo" src="/logo.png" alt="DIYPensacola Punksacola water tower logo"></a><p class="wordmark"><a href="/">diypensacola</a></p><p class="tag" style="--tagw:20.7">punk, metal &amp; diy shows in pensacola, fl</p></header><div class="links"><a href="/bands.html">bands &amp; acts</a><a href="/venues.html">venues</a><a href="https://youtube.com/playlist?list=PLVw-bAWseWcR5fmJF4vu6zbBVT1m0Lf7q" target="_blank" rel="noopener">local mixtapes</a><i class="brk" aria-hidden="true"></i><a href="/guide.html">showgoer guide</a><a href="/submit.html">submit a show</a><a id="calsub" href="webcal://diypensacola.com/events.ics" title="every upcoming show on this calendar, dropped into your own and kept up to date. this is the whole calendar at once, not one show. for a single room or band, subscribe on its own page. unsubscribe any time.">subscribe</a></div>
 <main class="spwrap">
 <div class="empty emptybig">
 <p class="ehead">no signal down here</p>
