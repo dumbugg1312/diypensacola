@@ -23,18 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-09-bettys-the-phantom-a-d-future-hate@diypensacola
-DTSTAMP:20260909T000000Z
-DTSTART;TZID=America/Chicago:20260909T200000
-DTEND;TZID=America/Chicago:20260909T230000
-SUMMARY:The Phantom A.D.\, Future Hate @ Betty’s
-DESCRIPTION:the phantom a.d. and future hate at betty’s\, wednesday septe
- mber 9th. 8pm\, all ages\, tickets through eventbrite.
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-09-bettys-the-phantom-a-d-future-hat
- e.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-09-10-309-poets-in-the-punkhouse-dennis-formento@diypensacola
 DTSTAMP:20260910T000000Z
 DTSTART;TZID=America/Chicago:20260910T190000
@@ -208,6 +196,20 @@ DESCRIPTION:bastardson\, rat daughter\, and beautysleep at the den\, saturd
 LOCATION:Beulah Den
 URL:https://diypensacola.com/s/2026-09-19-the-den-bastardson-rat-daughter.h
  tml
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-19-handlebar-twilight-drag-show-titanium@diypensacola
+DTSTAMP:20260919T000000Z
+DTSTART;TZID=America/Chicago:20260919T180000
+DTEND;TZID=America/Chicago:20260919T210000
+SUMMARY:Twilight Drag Show\, Titanium\, Braxton Hicks\, Vixen Valentine\, G
+ loss\, H8Male\, Kreacher\, Becky Belle Bottoms @ The Handlebar
+DESCRIPTION:twilight drag show at the handlebar\, saturday september 19th. 
+ titanium\, braxton hicks\, vixen valentine\, gloss\, h8male\, kreacher\, a
+ nd becky belle bottoms. 6 to 8:30pm\, $10\, 18+.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-19-handlebar-twilight-drag-show-tita
+ nium.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-20-309-views-from-the-ground@diypensacola
@@ -514,6 +516,17 @@ DESCRIPTION:rent strike (solo) and myles bullen bring the you can’t kill
  my whimsy tour to 309 on thursday\, october 16th.
 LOCATION:309 Punk Project\, 309 N 6th Ave\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-16-309-rent-strike-myles-bullen.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-16-bettys-dog-smiles@diypensacola
+DTSTAMP:20261016T000000Z
+DTSTART;TZID=America/Chicago:20261016T190000
+DTEND;TZID=America/Chicago:20261016T220000
+SUMMARY:Dog Smiles @ Betty’s
+DESCRIPTION:dog smiles at betty’s on belmont\, friday october 16th. one n
+ ight of the texas and back tour.
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-16-bettys-dog-smiles.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-21-handlebar-felicity-dear-maryanne@diypensacola
