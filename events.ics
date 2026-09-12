@@ -23,20 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-10-309-poets-in-the-punkhouse-dennis-formento@diypensacola
-DTSTAMP:20260910T000000Z
-DTSTART;TZID=America/Chicago:20260910T190000
-DTEND;TZID=America/Chicago:20260910T220000
-SUMMARY:Poets in the Punkhouse\, Dennis Formento\, Jamey Jones\, Scott Satt
- erwhite\, Ericka Streeter @ 309 Punk Project
-DESCRIPTION:poets in the punkhouse with dennis formento\, jamey jones\, sco
- tt satterwhite\, and ericka streeter at 309\, thursday september 10th at 7
- pm.
-LOCATION:309 Punk Project\, 309 N 6th Ave\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-10-309-poets-in-the-punkhouse-dennis
- -formento.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-09-11-handlebar-geordie-greep@diypensacola
 DTSTAMP:20260911T000000Z
 DTSTART;TZID=America/Chicago:20260911T190000
@@ -242,6 +228,17 @@ URL:https://diypensacola.com/s/2026-09-20-handlebar-tip-n-treat-drag-show-t
  hotberry-shortcake.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-09-20-309-witness@diypensacola
+DTSTAMP:20260920T000000Z
+DTSTART;TZID=America/Chicago:20260920T190000
+DTEND;TZID=America/Chicago:20260920T220000
+SUMMARY:Witness @ 309
+DESCRIPTION:witness\, a new film by talamieka brice\, premieres at 309 punk
+  project sunday september 20th. 7pm\, q&a to follow.
+LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-20-309-witness.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-09-21-handlebar-dead-eyes-versus-me@diypensacola
 DTSTAMP:20260921T000000Z
 DTSTART;TZID=America/Chicago:20260921T180000
@@ -402,6 +399,7 @@ SUMMARY:Cole Barnhill @ The Handlebar
 DESCRIPTION:cole barnhill at the handlebar\, friday october 2nd. doors 7pm.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-02-handlebar-cole-barnhill.html
+STATUS:CANCELLED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-02-handlebar-xtr-human-dj-cvntteeth@diypensacola

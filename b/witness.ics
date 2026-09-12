@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Dennis Formento
+X-WR-CALNAME:DIYPensacola: Witness
 X-WR-TIMEZONE:America/Chicago
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
@@ -22,4 +22,15 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-09-20-309-witness@diypensacola
+DTSTAMP:20260920T000000Z
+DTSTART;TZID=America/Chicago:20260920T190000
+DTEND;TZID=America/Chicago:20260920T220000
+SUMMARY:Witness @ 309
+DESCRIPTION:witness\, a new film by talamieka brice\, premieres at 309 punk
+  project sunday september 20th. 7pm\, q&a to follow.
+LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-20-309-witness.html
+END:VEVENT
 END:VCALENDAR
