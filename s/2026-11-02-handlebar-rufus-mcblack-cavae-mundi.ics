@@ -21,17 +21,19 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-11-handlebar-geordie-greep@diypensacola
-DTSTAMP:20260911T000000Z
-DTSTART;TZID=America/Chicago:20260911T190000
-DTEND;TZID=America/Chicago:20260911T220000
-SUMMARY:Geordie Greep @ The Handlebar
-DESCRIPTION:geordie greep live at the handlebar. friday\, september 11th.
+UID:2026-11-02-handlebar-rufus-mcblack-cavae-mundi@diypensacola
+DTSTAMP:20261102T000000Z
+DTSTART;TZID=America/Chicago:20261102T180000
+DTEND;TZID=America/Chicago:20261102T210000
+SUMMARY:Rufus McBlack\, Cavae Mundi @ The Handlebar
+DESCRIPTION:rufus mcblack and cavae mundi at the handlebar\, monday novembe
+ r 2nd. doors 6pm\, show at 7. part of night moves.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-11-handlebar-geordie-greep.html
+URL:https://diypensacola.com/s/2026-11-02-handlebar-rufus-mcblack-cavae-mun
+ di.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Geordie Greep @ The Handlebar
+DESCRIPTION:tonight: Rufus McBlack\, Cavae Mundi @ The Handlebar
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
