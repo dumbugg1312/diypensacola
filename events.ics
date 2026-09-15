@@ -23,96 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-11-handlebar-geordie-greep@diypensacola
-DTSTAMP:20260911T000000Z
-DTSTART;TZID=America/Chicago:20260911T190000
-DTEND;TZID=America/Chicago:20260911T220000
-SUMMARY:Geordie Greep @ The Handlebar
-DESCRIPTION:geordie greep live at the handlebar. friday\, september 11th.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-11-handlebar-geordie-greep.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-11-309-we-cant-help-it-if-were-from-florida@diypensacola
-DTSTAMP:20260911T000000Z
-DTSTART;TZID=America/Chicago:20260911T180000
-DTEND;TZID=America/Chicago:20260911T210000
-SUMMARY:We Can’t Help It If We’re From Florida @ 309 Punk Project
-DESCRIPTION:we can’t help it if we’re from florida\, a group photograph
- y exhibition at the 309 punk project. friday september 11th\, 6-9pm.
-LOCATION:309 Punk Project\, 309 N 6th Ave\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-11-309-we-cant-help-it-if-were-from-
- florida.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-11-bettys-the-unnaturals-paupers-grave@diypensacola
-DTSTAMP:20260911T000000Z
-DTSTART;TZID=America/Chicago:20260911T200000
-DTEND;TZID=America/Chicago:20260911T230000
-SUMMARY:The Unnaturals\, Pauper’s Grave\, Crystal Plumage @ Betty’s
-DESCRIPTION:the unnaturals (new orleans surf rock)\, pauper’s grave\, and
-  crystal plumage at betty’s friday september 11th. doors 8\, show 9. $10
- .
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-11-bettys-the-unnaturals-paupers-gra
- ve.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-12-handlebar-nvsn-the-autumn-descent@diypensacola
-DTSTAMP:20260912T000000Z
-DTSTART;TZID=America/Chicago:20260912T190000
-DTEND;TZID=America/Chicago:20260912T220000
-SUMMARY:NVSN\, The Autumn Descent\, Caving In\, Hopout @ The Handlebar
-DESCRIPTION:nvsn with the autumn descent\, caving in\, and hopout at the ha
- ndlebar. september 12th\, doors 7 and music at 8. $12 advance / $15 day of
- .
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-12-handlebar-nvsn-the-autumn-descent
- .html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-12-bettys-sapphic-saturday-eve@diypensacola
-DTSTAMP:20260912T000000Z
-DTSTART;TZID=America/Chicago:20260912T190000
-DTEND;TZID=America/Chicago:20260912T220000
-SUMMARY:Sapphic Saturday\, Eve\, Earth Sign Ky\, Platinum Muse\, Ray Darlin
- g\, Sweet Lady Sleeze\, Pat MiDown\, VulcanBaby\, Lady Grace\, Miss Rainbo
- w\, Violet Vibrations\, Devin X\, DJ Balance Universal @ Betty’s on Belm
- ont
-DESCRIPTION:sapphic saturday is back at betty’s on september 12th. eve\, 
- earth sign ky\, platinum muse\, ray darling\, sweet lady sleeze\, pat mido
- wn\, vulcanbaby\, lady grace\, miss rainbow\, violet vibrations\, devin x 
- and dj balance universal. $15.
-LOCATION:Betty’s on Belmont\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-12-bettys-sapphic-saturday-eve.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-12-the-hoa-other-mourning-glories@diypensacola
-DTSTAMP:20260912T000000Z
-DTSTART;TZID=America/Chicago:20260912T180000
-DTEND;TZID=America/Chicago:20260912T210000
-SUMMARY:Other\, Mourning Glories\, Lesion\, Conflict Of Interest\, The Snat
- ches @ The HOA
-DESCRIPTION:mandatory h.o.a. meeting on september 12th. other\, mourning gl
- ories\, lesion\, conflict of interest and the snatches. doors at 6\, music
-  at 7\, $10\, 21+. pensacola house show\, dm @thehoa850 for the address.
-LOCATION:The HOA
-URL:https://diypensacola.com/s/2026-09-12-the-hoa-other-mourning-glories.ht
- ml
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-13-handlebar-jazz-night-arent-we@diypensacola
-DTSTAMP:20260913T000000Z
-DTSTART;TZID=America/Chicago:20260913T180000
-DTEND;TZID=America/Chicago:20260913T210000
-SUMMARY:Jazz Night\, Aren’t We @ The Handlebar
-DESCRIPTION:jazz night featuring aren’t we at the handlebar\, sunday sept
- ember 13th. 6pm\, free show.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-13-handlebar-jazz-night-arent-we.htm
- l
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-09-14-handlebar-archers@diypensacola
 DTSTAMP:20260914T000000Z
 DTSTART;TZID=America/Chicago:20260914T190000
@@ -527,6 +437,16 @@ LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-16-bettys-dog-smiles.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-17-bettys-sapphic-saturday@diypensacola
+DTSTAMP:20261017T000000Z
+DTSTART;TZID=America/Chicago:20261017T190000
+DTEND;TZID=America/Chicago:20261017T220000
+SUMMARY:Sapphic Saturday @ Betty’s
+DESCRIPTION:sapphic saturday is back at betty’s on saturday october 17th.
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-17-bettys-sapphic-saturday.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-21-handlebar-felicity-dear-maryanne@diypensacola
 DTSTAMP:20261021T000000Z
 DTSTART;TZID=America/Chicago:20261021T180000
@@ -638,6 +558,21 @@ URL:https://diypensacola.com/s/2026-10-29-voices-of-pensacola-multicultural
  -center-2nd-annual-hallozine-fest.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-30-voices-of-pensacola-multicultural-center-2nd-annual-hallozin
+ e-fest@diypensacola
+DTSTAMP:20261030T000000Z
+DTSTART;TZID=America/Chicago:20261030T190000
+DTEND;TZID=America/Chicago:20261030T220000
+SUMMARY:2nd Annual HalloZine Fest @ Voices of Pensacola Multicultural Cente
+ r
+DESCRIPTION:2nd annual hallozine fest\, day two. voices of pensacola multic
+ ultural center\, friday october 30. zine market\, exhibitions\, keynote sp
+ eakers\, movies.
+LOCATION:Voices of Pensacola Multicultural Center
+URL:https://diypensacola.com/s/2026-10-30-voices-of-pensacola-multicultural
+ -center-2nd-annual-hallozine-fest.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-31-handlebar-nuovo-testamento-night-sins@diypensacola
 DTSTAMP:20261031T000000Z
 DTSTART;TZID=America/Chicago:20261031T180000
@@ -661,6 +596,18 @@ DESCRIPTION:scattrbrain at the handlebar\, sunday november 1st. the unwaver
  ing self doubt tour.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-01-handlebar-scattrbrain.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-02-handlebar-rufus-mcblack-cavae-mundi@diypensacola
+DTSTAMP:20261102T000000Z
+DTSTART;TZID=America/Chicago:20261102T180000
+DTEND;TZID=America/Chicago:20261102T210000
+SUMMARY:Rufus McBlack\, Cavae Mundi @ The Handlebar
+DESCRIPTION:rufus mcblack and cavae mundi at the handlebar\, monday novembe
+ r 2nd. doors 6pm\, show at 7. part of night moves.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-02-handlebar-rufus-mcblack-cavae-mun
+ di.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-14-handlebar-chrissy-chlapecka@diypensacola

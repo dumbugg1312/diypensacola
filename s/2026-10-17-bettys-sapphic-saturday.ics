@@ -21,19 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-13-handlebar-jazz-night-arent-we@diypensacola
-DTSTAMP:20260913T000000Z
-DTSTART;TZID=America/Chicago:20260913T180000
-DTEND;TZID=America/Chicago:20260913T210000
-SUMMARY:Jazz Night\, Aren’t We @ The Handlebar
-DESCRIPTION:jazz night featuring aren’t we at the handlebar\, sunday sept
- ember 13th. 6pm\, free show.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-13-handlebar-jazz-night-arent-we.htm
- l
+UID:2026-10-17-bettys-sapphic-saturday@diypensacola
+DTSTAMP:20261017T000000Z
+DTSTART;TZID=America/Chicago:20261017T190000
+DTEND;TZID=America/Chicago:20261017T220000
+SUMMARY:Sapphic Saturday @ Betty’s
+DESCRIPTION:sapphic saturday is back at betty’s on saturday october 17th.
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-17-bettys-sapphic-saturday.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Jazz Night\, Aren’t We @ The Handlebar
+DESCRIPTION:tonight: Sapphic Saturday @ Betty’s
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
