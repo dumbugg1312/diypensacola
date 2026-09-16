@@ -23,17 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-14-handlebar-archers@diypensacola
-DTSTAMP:20260914T000000Z
-DTSTART;TZID=America/Chicago:20260914T190000
-DTEND;TZID=America/Chicago:20260914T220000
-SUMMARY:Archers\, Autumn Kings\, Pinknoise\, Coldstate @ The Handlebar
-DESCRIPTION:archers\, autumn kings\, pinknoise\, and coldstate at the handl
- ebar. september 14. tickets at thehandlebar850.com.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-14-handlebar-archers.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-09-15-handlebar-the-holdup@diypensacola
 DTSTAMP:20260915T000000Z
 DTSTART;TZID=America/Chicago:20260915T190000
@@ -280,6 +269,18 @@ URL:https://diypensacola.com/s/2026-10-08-handlebar-forsaken-profits-tokyo-
  coyote.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-09-handlebar-graham-barham-jake-banfield@diypensacola
+DTSTAMP:20261009T000000Z
+DTSTART;TZID=America/Chicago:20261009T190000
+DTEND;TZID=America/Chicago:20261009T220000
+SUMMARY:Graham Barham\, Jake Banfield @ The Handlebar
+DESCRIPTION:graham barham with jake banfield at the handlebar\, friday octo
+ ber 9. doors 7pm\, show at 8.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-09-handlebar-graham-barham-jake-banf
+ ield.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-10-handlebar-silent-theory@diypensacola
 DTSTAMP:20261010T000000Z
 DTSTART;TZID=America/Chicago:20261010T190000
@@ -289,6 +290,35 @@ DESCRIPTION:silent theory at the handlebar saturday october 10 with discrep
  ancies and sick century. tickets at silenttheory.com.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-10-handlebar-silent-theory.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-12-handlebar-carry-the-torch-strikeforce@diypensacola
+DTSTAMP:20261012T000000Z
+DTSTART;TZID=America/Chicago:20261012T180000
+DTEND;TZID=America/Chicago:20261012T210000
+SUMMARY:Carry The Torch\, Strikeforce\, Miracle\, watts\, Room To Grow @ Th
+ e Handlebar
+DESCRIPTION:carry the torch demo release show with strikeforce\, miracle\, 
+ watts\, and room to grow at the handlebar. monday october 12\, doors at 6.
+  $10.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-12-handlebar-carry-the-torch-strikef
+ orce.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-18-handlebar-fight-night-drag-show-thotberry@diypensacola
+DTSTAMP:20261018T000000Z
+DTSTART;TZID=America/Chicago:20261018T183000
+DTEND;TZID=America/Chicago:20261018T213000
+SUMMARY:Fight Night Drag Show\, Thotberry\, Xenamorphine\, Titanium\, Jay J
+ ay DuVay\, Hauntica @ The Handlebar
+DESCRIPTION:the thot factory presents fight night\, hosted by thotberry wit
+ h xenamorphine\, titanium\, jay jay duvay\, and hauntica at the handlebar.
+  sunday october 18\, doors 6:30\, show at 7. $10 cover\, 18+. dress up\, t
+ here is a costume contest with prizes.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-18-handlebar-fight-night-drag-show-t
+ hotberry.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-21-handlebar-felicity-dear-maryanne@diypensacola

@@ -34,4 +34,15 @@ LOCATION:Beulah Den
 URL:https://diypensacola.com/s/2026-09-19-the-den-bastardson-rat-daughter.h
  tml
 END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-11-the-den-brotality-sacreus@diypensacola
+DTSTAMP:20261211T000000Z
+DTSTART;TZID=America/Chicago:20261211T180000
+DTEND;TZID=America/Chicago:20261211T210000
+SUMMARY:Brotality\, Sacreus\, Coastal Highschool @ The Den
+DESCRIPTION:brotality\, sacreus\, and coastal highschool at the den\, frida
+ y december 11. doors 6\, music at 7. $10 advance\, $15 at the door.
+LOCATION:The Den
+URL:https://diypensacola.com/s/2026-12-11-the-den-brotality-sacreus.html
+END:VEVENT
 END:VCALENDAR
