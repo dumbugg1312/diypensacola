@@ -23,17 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-15-handlebar-the-holdup@diypensacola
-DTSTAMP:20260915T000000Z
-DTSTART;TZID=America/Chicago:20260915T190000
-DTEND;TZID=America/Chicago:20260915T220000
-SUMMARY:The Holdup\, Lot 49\, Dylan Reese @ The Handlebar
-DESCRIPTION:the holdup with lot 49 and dylan reese at the handlebar\, tuesd
- ay september 15th. doors 7pm.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-15-handlebar-the-holdup.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-09-17-handlebar-brett-patterson-georgia-faye@diypensacola
 DTSTAMP:20260917T000000Z
 DTSTART;TZID=America/Chicago:20260917T180000
@@ -159,6 +148,18 @@ DESCRIPTION:sports. and remo drive at the handlebar\, tuesday september 22.
   with computer.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-09-22-handlebar-sports-remo-drive.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-22-309-eraser-stamps-workshop-blue-olive-press@diypensacola
+DTSTAMP:20260922T000000Z
+DTSTART;TZID=America/Chicago:20260922T170000
+DTEND;TZID=America/Chicago:20260922T200000
+SUMMARY:Eraser Stamps Workshop\, Blue Olive Press\, Draw Together @ 309
+DESCRIPTION:eraser stamps workshop at 309\, tuesday september 22nd\, 5 to 8
+ pm. free\, space is limited. with blue olive press and draw together.
+LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-22-309-eraser-stamps-workshop-blue-o
+ live-press.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-23-handlebar-dopethrone@diypensacola
