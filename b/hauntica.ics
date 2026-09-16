@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola: Hauntica
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-10-18-handlebar-fight-night-drag-show-thotberry@diypensacola
+DTSTAMP:20261018T000000Z
+DTSTART;TZID=America/Chicago:20261018T183000
+DTEND;TZID=America/Chicago:20261018T213000
+SUMMARY:Fight Night Drag Show\, Thotberry\, Xenamorphine\, Titanium\, Jay J
+ ay DuVay\, Hauntica @ The Handlebar
+DESCRIPTION:the thot factory presents fight night\, hosted by thotberry wit
+ h xenamorphine\, titanium\, jay jay duvay\, and hauntica at the handlebar.
+  sunday october 18\, doors 6:30\, show at 7. $10 cover\, 18+. dress up\, t
+ here is a costume contest with prizes.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-18-handlebar-fight-night-drag-show-t
+ hotberry.html
+END:VEVENT
+END:VCALENDAR
