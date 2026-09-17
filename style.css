@@ -293,7 +293,6 @@ body:has(#grid:target) a[href='#grid']{border:2px solid var(--hot);background:va
   font-size:.7rem;font-weight:400;color:var(--dim);text-transform:none;letter-spacing:.02em;line-height:1.35}
 .monbadge b{color:var(--hotink);text-transform:uppercase;letter-spacing:.05em;font-weight:400;margin-right:.35rem}
 .monbadge.yr b{color:var(--age)}
-#agenda{display:none}
 .cal{width:100%;border-collapse:collapse;table-layout:fixed}
 .cal th{color:var(--dim);font-weight:400;font-size:.78rem;padding:.3rem;text-transform:uppercase}
 .cal td{border:1px dashed var(--line);vertical-align:top;height:86px;padding:3px;font-size:.75rem}
@@ -554,7 +553,17 @@ main section:target{animation:viewin .26s ease both}
   header{padding-top:.8rem}header .logo{width:84px;height:84px;margin-bottom:.3rem}
   h1{font-size:2rem}header .tag{margin-top:.3rem}}
 @media (max-width:640px){
-  #calgrid{display:none}#agenda{display:block}
+  /* phones get the real month grid too (it used to swap to a plain list, which
+     read as "the calendar is just a list"). Cells shrink to flyer stamps: day
+     number on top, flyer thumb(s) below, no label text (a tap opens the
+     quick-look sheet, so the name is one touch away). */
+  .cal th{font-size:.62rem;padding:.2rem 0}
+  .cal td{height:auto;min-height:3.4rem;padding:2px;font-size:.66rem}
+  .cal td.has .dnum{padding:0 .3em .05em .25em}
+  .cf{margin-top:2px}
+  .cf img{height:auto;max-height:none;aspect-ratio:3/4;object-fit:cover}
+  .cf span{display:none}
+  .cf+.cf{margin-top:3px}
   /* on phones the homepage has the sticky view-switcher one tap away, so it
      does not need a back-to-top button too. Every OTHER page does: none of them
      has a sticky bar, and all of them now open with the full masthead, so the
@@ -1300,6 +1309,7 @@ main{max-width:940px}
   border:2px solid var(--hot);background:var(--card);box-shadow:5px 5px 0 rgba(107,112,54,.4);
   padding:.7rem 1rem;transform:rotate(-.5deg);color:var(--dim);margin:.3rem 0 0;font-size:.95rem}
 #list .bnone .nstamp{border-color:#111;background:var(--hot);color:var(--on-hot);margin-right:.1rem}
+@media (max-width:640px){#list .bnone:not([hidden]){padding:.55rem .7rem;font-size:.86rem;gap:.45rem}}
 
 @media (max-width:640px){
   /* the hero stacks (flyer over name) so the big name never clips on a phone. The
