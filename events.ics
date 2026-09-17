@@ -49,6 +49,19 @@ URL:https://diypensacola.com/s/2026-09-18-handlebar-glitterer-bleary-eyed.h
  tml
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-09-18-bettys-other-leaving-for-arizona@diypensacola
+DTSTAMP:20260918T000000Z
+DTSTART;TZID=America/Chicago:20260918T200000
+DTEND;TZID=America/Chicago:20260918T230000
+SUMMARY:Other\, Leaving For Arizona\, Machina\, Ihatesundays @ Betty’s
+DESCRIPTION:other\, leaving for arizona\, machina and ihatesundays at betty
+ ’s on belmont friday september 18th. the knockout tour. doors 8\, music 
+ 9\, $10\, 18+.
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-09-18-bettys-other-leaving-for-arizona.
+ html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-09-19-handlebar-house-of-heavy@diypensacola
 DTSTAMP:20260919T000000Z
 DTSTART;TZID=America/Chicago:20260919T190000
@@ -291,22 +304,26 @@ URL:https://diypensacola.com/s/2026-10-01-handlebar-wretched-tongues-in-glo
  om.html
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-02-handlebar-cole-barnhill@diypensacola
-DTSTAMP:20261002T000000Z
-DTSTART;TZID=America/Chicago:20261002T190000
-DTEND;TZID=America/Chicago:20261002T220000
-SUMMARY:Cole Barnhill @ The Handlebar
-DESCRIPTION:cole barnhill at the handlebar\, friday october 2nd. doors 7pm.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-02-handlebar-cole-barnhill.html
-STATUS:CANCELLED
+UID:2026-10-01-bettys-cursed-body-crystal-plumage@diypensacola
+DTSTAMP:20261001T000000Z
+DTSTART;TZID=America/Chicago:20261001T200000
+DTEND;TZID=America/Chicago:20261001T230000
+SUMMARY:Cursed Body\, Crystal Plumage\, Cookies and Cake\, Myrrothavn @ Bet
+ ty’s
+DESCRIPTION:cursed body\, crystal plumage\, cookies and cake and myrrothavn
+  at betty’s on belmont thursday october 1st. 8pm\, $10. benefit show for
+  the northwest florida wildlife sanctuary.
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-01-bettys-cursed-body-crystal-plumag
+ e.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-02-handlebar-xtr-human-dj-cvntteeth@diypensacola
 DTSTAMP:20261002T000000Z
 DTSTART;TZID=America/Chicago:20261002T230000
 DTEND;TZID=America/Chicago:20261003T020000
-SUMMARY:XTR Human\, DJ Cvntteeth\, DJ Scenario @ The Handlebar
+SUMMARY:XTR Human\, DJ Cvntteeth\, DJ Scenario\, Glass Casket @ The Handleb
+ ar
 DESCRIPTION:xtr human at the handlebar\, friday october 2nd\, with dj cvntt
  eeth and dj scenario. doors 11pm.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
