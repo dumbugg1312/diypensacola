@@ -23,20 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-17-handlebar-brett-patterson-georgia-faye@diypensacola
-DTSTAMP:20260917T000000Z
-DTSTART;TZID=America/Chicago:20260917T180000
-DTEND;TZID=America/Chicago:20260917T210000
-SUMMARY:Brett Patterson\, Georgia Faye\, Conor Churchill\, Katie Dineen @ T
- he Handlebar
-DESCRIPTION:pensacola songwriter rounds series with brett patterson\, georg
- ia faye\, conor churchill\, and katie dineen at the handlebar. thursday se
- ptember 17th\, 6pm. $10 at the door.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-17-handlebar-brett-patterson-georgia
- -faye.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-09-18-handlebar-glitterer-bleary-eyed@diypensacola
 DTSTAMP:20260918T000000Z
 DTSTART;TZID=America/Chicago:20260918T190000
@@ -405,6 +391,17 @@ DESCRIPTION:rufus mcblack and cavae mundi at the handlebar\, monday novembe
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-02-handlebar-rufus-mcblack-cavae-mun
  di.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-08-handlebar-ajj-greet-death@diypensacola
+DTSTAMP:20261108T000000Z
+DTSTART;TZID=America/Chicago:20261108T180000
+DTEND;TZID=America/Chicago:20261108T210000
+SUMMARY:AJJ\, Greet Death @ The Handlebar
+DESCRIPTION:ajj and greet death at the handlebar\, sunday november 8th. doo
+ rs 6pm\, show at 7.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-08-handlebar-ajj-greet-death.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-14-handlebar-chrissy-chlapecka@diypensacola
