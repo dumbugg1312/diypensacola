@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: House of Heavy
+X-WR-CALNAME:DIYPensacola: Wraith Bearer
 X-WR-TIMEZONE:America/Chicago
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
@@ -23,14 +23,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-19-handlebar-house-of-heavy@diypensacola
-DTSTAMP:20260919T000000Z
-DTSTART;TZID=America/Chicago:20260919T190000
-DTEND;TZID=America/Chicago:20260919T220000
-SUMMARY:House of Heavy @ The Handlebar
-DESCRIPTION:house of heavy\, a nu-metal\, alt-metal and metalcore party at 
- the handlebar\, saturday september 19th.
+UID:2026-10-01-handlebar-wretched-tongues-in-gloom@diypensacola
+DTSTAMP:20261001T000000Z
+DTSTART;TZID=America/Chicago:20261001T190000
+DTEND;TZID=America/Chicago:20261001T220000
+SUMMARY:Wretched Tongues\, In Gloom\, Flesh Carving\, Wraith Bearer @ The H
+ andlebar
+DESCRIPTION:Wretched Tongues next thursday at @thehandlebar850\n\n@wretched
+ tongues @ingloomfl @fleshcarvingband @wraithbearer
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-19-handlebar-house-of-heavy.html
+URL:https://diypensacola.com/s/2026-10-01-handlebar-wretched-tongues-in-glo
+ om.html
 END:VEVENT
 END:VCALENDAR
