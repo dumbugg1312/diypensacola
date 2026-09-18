@@ -23,20 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-17-handlebar-brett-patterson-georgia-faye@diypensacola
-DTSTAMP:20260917T000000Z
-DTSTART;TZID=America/Chicago:20260917T180000
-DTEND;TZID=America/Chicago:20260917T210000
-SUMMARY:Brett Patterson\, Georgia Faye\, Conor Churchill\, Katie Dineen @ T
- he Handlebar
-DESCRIPTION:pensacola songwriter rounds series with brett patterson\, georg
- ia faye\, conor churchill\, and katie dineen at the handlebar. thursday se
- ptember 17th\, 6pm. $10 at the door.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-17-handlebar-brett-patterson-georgia
- -faye.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-09-18-handlebar-glitterer-bleary-eyed@diypensacola
 DTSTAMP:20260918T000000Z
 DTSTART;TZID=America/Chicago:20260918T190000
@@ -635,6 +621,19 @@ URL:https://diypensacola.com/s/2026-10-31-handlebar-nuovo-testamento-night-
  sins.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-31-bettys-bettys-block-party-halloween@diypensacola
+DTSTAMP:20261031T000000Z
+DTSTART;TZID=America/Chicago:20261031T190000
+DTEND;TZID=America/Chicago:20261031T220000
+SUMMARY:Betty’s Block Party: Halloween @ Betty’s
+DESCRIPTION:betty’s block party starts on halloween\, saturday october 31
+ st. betty’s on belmont and the old bunny club next door\, two stages. ba
+ nds still being confirmed.
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-31-bettys-bettys-block-party-hallowe
+ en.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-01-handlebar-scattrbrain@diypensacola
 DTSTAMP:20261101T000000Z
 DTSTART;TZID=America/Chicago:20261101T190000
@@ -658,6 +657,28 @@ URL:https://diypensacola.com/s/2026-11-02-handlebar-rufus-mcblack-cavae-mun
  di.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-08-handlebar-ajj-greet-death@diypensacola
+DTSTAMP:20261108T000000Z
+DTSTART;TZID=America/Chicago:20261108T180000
+DTEND;TZID=America/Chicago:20261108T210000
+SUMMARY:AJJ\, Greet Death @ The Handlebar
+DESCRIPTION:ajj and greet death at the handlebar\, sunday november 8th. doo
+ rs 6pm\, show at 7.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-08-handlebar-ajj-greet-death.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-13-bettys-bettys-fest-2-night-1@diypensacola
+DTSTAMP:20261113T000000Z
+DTSTART;TZID=America/Chicago:20261113T190000
+DTEND;TZID=America/Chicago:20261113T220000
+SUMMARY:Betty’s Fest 2 Night 1 @ Betty’s
+DESCRIPTION:betty’s fest 2\, night one. friday november 13th at betty’s
+  on belmont and the old bunny club. two stages\, lineup coming.
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-13-bettys-bettys-fest-2-night-1.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-14-handlebar-chrissy-chlapecka@diypensacola
 DTSTAMP:20261114T000000Z
 DTSTART;TZID=America/Chicago:20261114T190000
@@ -666,6 +687,17 @@ SUMMARY:Chrissy Chlapecka @ The Handlebar
 DESCRIPTION:chrissy chlapecka at the handlebar. sat nov 14.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-14-handlebar-chrissy-chlapecka.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-14-bettys-bettys-fest-2-night-2@diypensacola
+DTSTAMP:20261114T000000Z
+DTSTART;TZID=America/Chicago:20261114T190000
+DTEND;TZID=America/Chicago:20261114T220000
+SUMMARY:Betty’s Fest 2 Night 2 @ Betty’s
+DESCRIPTION:betty’s fest 2\, night two. saturday november 14th at betty
+ ’s on belmont and the old bunny club. lineup coming.
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-14-bettys-bettys-fest-2-night-2.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-22-hunter-amphitheater-the-revivalists-hunter-metts@diypensacol
@@ -701,6 +733,17 @@ DESCRIPTION:whitmer thomas at the handlebar\, friday december 18th. tickets
   on sale now.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-18-handlebar-whitmer-thomas.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-31-bettys-nye-bettys-bash@diypensacola
+DTSTAMP:20261231T000000Z
+DTSTART;TZID=America/Chicago:20261231T190000
+DTEND;TZID=America/Chicago:20261231T220000
+SUMMARY:NYE Betty’s Bash @ Betty’s
+DESCRIPTION:nye betty’s bash\, thursday december 31st at betty’s on bel
+ mont and the old bunny club. part of the betty’s block party run.
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-31-bettys-nye-bettys-bash.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-10-handlebar-nervosa@diypensacola

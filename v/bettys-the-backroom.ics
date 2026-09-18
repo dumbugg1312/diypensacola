@@ -142,4 +142,50 @@ LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-23-bettys-the-earthly-delights-sides
  how.html
 END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-31-bettys-bettys-block-party-halloween@diypensacola
+DTSTAMP:20261031T000000Z
+DTSTART;TZID=America/Chicago:20261031T190000
+DTEND;TZID=America/Chicago:20261031T220000
+SUMMARY:Betty’s Block Party: Halloween @ Betty’s
+DESCRIPTION:betty’s block party starts on halloween\, saturday october 31
+ st. betty’s on belmont and the old bunny club next door\, two stages. ba
+ nds still being confirmed.
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-31-bettys-bettys-block-party-hallowe
+ en.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-13-bettys-bettys-fest-2-night-1@diypensacola
+DTSTAMP:20261113T000000Z
+DTSTART;TZID=America/Chicago:20261113T190000
+DTEND;TZID=America/Chicago:20261113T220000
+SUMMARY:Betty’s Fest 2 Night 1 @ Betty’s
+DESCRIPTION:betty’s fest 2\, night one. friday november 13th at betty’s
+  on belmont and the old bunny club. two stages\, lineup coming.
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-13-bettys-bettys-fest-2-night-1.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-14-bettys-bettys-fest-2-night-2@diypensacola
+DTSTAMP:20261114T000000Z
+DTSTART;TZID=America/Chicago:20261114T190000
+DTEND;TZID=America/Chicago:20261114T220000
+SUMMARY:Betty’s Fest 2 Night 2 @ Betty’s
+DESCRIPTION:betty’s fest 2\, night two. saturday november 14th at betty
+ ’s on belmont and the old bunny club. lineup coming.
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-14-bettys-bettys-fest-2-night-2.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-31-bettys-nye-bettys-bash@diypensacola
+DTSTAMP:20261231T000000Z
+DTSTART;TZID=America/Chicago:20261231T190000
+DTEND;TZID=America/Chicago:20261231T220000
+SUMMARY:NYE Betty’s Bash @ Betty’s
+DESCRIPTION:nye betty’s bash\, thursday december 31st at betty’s on bel
+ mont and the old bunny club. part of the betty’s block party run.
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-31-bettys-nye-bettys-bash.html
+END:VEVENT
 END:VCALENDAR
