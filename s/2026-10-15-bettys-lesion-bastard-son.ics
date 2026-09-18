@@ -33,7 +33,7 @@ LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-15-bettys-lesion-bastard-son.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Lesion\, Bastard Son\, Hayweather\, Beautysleep\, 7.7 
+DESCRIPTION:tonight: Lesion\, Bastard Son\, Hayweather\, beautysleep\, 7.7 
  PNX @ Betty’s
 TRIGGER:-PT2H
 END:VALARM
