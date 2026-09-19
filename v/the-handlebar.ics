@@ -23,18 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-18-handlebar-glitterer-bleary-eyed@diypensacola
-DTSTAMP:20260918T000000Z
-DTSTART;TZID=America/Chicago:20260918T190000
-DTEND;TZID=America/Chicago:20260918T220000
-SUMMARY:Glitterer\, Bleary Eyed\, Guttered @ The Handlebar
-DESCRIPTION:glitterer\, bleary eyed and guttered at the handlebar\, friday 
- september 18th. on tour\, come out.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-18-handlebar-glitterer-bleary-eyed.h
- tml
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-09-19-handlebar-twilight-drag-show-titanium@diypensacola
 DTSTAMP:20260919T000000Z
 DTSTART;TZID=America/Chicago:20260919T180000
@@ -261,6 +249,18 @@ URL:https://diypensacola.com/s/2026-10-12-handlebar-carry-the-torch-strikef
  orce.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-16-handlebar-big-time-maca-tommy-wakefield@diypensacola
+DTSTAMP:20261016T000000Z
+DTSTART;TZID=America/Chicago:20261016T190000
+DTEND;TZID=America/Chicago:20261016T220000
+SUMMARY:Big Time Maca\, Tommy Wakefield\, Kyle Rehl\, Olivia Searcy\, Aaron
+  Monte @ The Handlebar
+DESCRIPTION:Big Time Maca doing comedy at @thehandlebar850\, Oct 16
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-16-handlebar-big-time-maca-tommy-wak
+ efield.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-18-handlebar-fight-night-drag-show-thotberry@diypensacola
 DTSTAMP:20261018T000000Z
 DTSTART;TZID=America/Chicago:20261018T183000
@@ -383,6 +383,19 @@ URL:https://diypensacola.com/s/2026-11-02-handlebar-rufus-mcblack-cavae-mun
  di.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-07-handlebar-motion-city-soundtrack-colony-house@diypensacola
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Chicago:20261107T150000
+DTEND;TZID=America/Chicago:20261107T180000
+SUMMARY:Motion City Soundtrack\, Colony House\, Copeland\, Lucky\, Scream O
+ ut Loud\, Safety Training\, Tirra Lirra\, Lasento @ The Handlebar
+DESCRIPTION:Motion City Soundtrack outdoors at @thehandlebar850 Nov 7. Hell
+  of a line up 🖤\n\n@screamoutloudfl @safetytrainingband @tirralirraband
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-07-handlebar-motion-city-soundtrack-
+ colony-house.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-08-handlebar-ajj-greet-death@diypensacola
 DTSTAMP:20261108T000000Z
 DTSTART;TZID=America/Chicago:20261108T180000
@@ -392,6 +405,16 @@ DESCRIPTION:ajj and greet death at the handlebar\, sunday november 8th. doo
  rs 6pm\, show at 7.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-08-handlebar-ajj-greet-death.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-10-handlebar-daisychain@diypensacola
+DTSTAMP:20261110T000000Z
+DTSTART;TZID=America/Chicago:20261110T180000
+DTEND;TZID=America/Chicago:20261110T210000
+SUMMARY:Daisychain @ The Handlebar
+DESCRIPTION:Daisychain fall tour\, Nov 10 at @thehandlebar850
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-10-handlebar-daisychain.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-14-handlebar-chrissy-chlapecka@diypensacola
@@ -404,6 +427,36 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-14-handlebar-chrissy-chlapecka.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-17-handlebar-little-image@diypensacola
+DTSTAMP:20261117T000000Z
+DTSTART;TZID=America/Chicago:20261117T190000
+DTEND;TZID=America/Chicago:20261117T220000
+SUMMARY:Little Image @ The Handlebar
+DESCRIPTION:Little Image at @thehandlebar850 Nov 17
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-17-handlebar-little-image.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-18-handlebar-wayne-hancock@diypensacola
+DTSTAMP:20261118T000000Z
+DTSTART;TZID=America/Chicago:20261118T180000
+DTEND;TZID=America/Chicago:20261118T210000
+SUMMARY:Wayne Hancock @ The Handlebar
+DESCRIPTION:Wayne Hancock Nov 18 at @thehandlebar850
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-18-handlebar-wayne-hancock.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-08-handlebar-cliff-cash@diypensacola
+DTSTAMP:20261208T000000Z
+DTSTART;TZID=America/Chicago:20261208T190000
+DTEND;TZID=America/Chicago:20261208T220000
+SUMMARY:Cliff Cash @ The Handlebar
+DESCRIPTION:Cliff Cash Dec 8 at @thehandlebar850 😤\n\n@cliffcashcomedy
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-08-handlebar-cliff-cash.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-18-handlebar-whitmer-thomas@diypensacola
 DTSTAMP:20261218T000000Z
 DTSTART;TZID=America/Chicago:20261218T190000
@@ -413,6 +466,16 @@ DESCRIPTION:whitmer thomas at the handlebar\, friday december 18th. tickets
   on sale now.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-18-handlebar-whitmer-thomas.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-03-handlebar-never-easy-wayside@diypensacola
+DTSTAMP:20270203T000000Z
+DTSTART;TZID=America/Chicago:20270203T180000
+DTEND;TZID=America/Chicago:20270203T210000
+SUMMARY:never easy\, Wayside\, postdrome @ The Handlebar
+DESCRIPTION:never easy at @thehandlebar850\, Feb 3
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-02-03-handlebar-never-easy-wayside.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-10-handlebar-nervosa@diypensacola

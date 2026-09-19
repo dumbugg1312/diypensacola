@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Wraithbearer
+X-WR-CALNAME:DIYPensacola: Wayne Hancock
 X-WR-TIMEZONE:America/Chicago
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
@@ -23,16 +23,13 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-01-handlebar-wretched-tongues-in-gloom@diypensacola
-DTSTAMP:20261001T000000Z
-DTSTART;TZID=America/Chicago:20261001T190000
-DTEND;TZID=America/Chicago:20261001T220000
-SUMMARY:Wretched Tongues\, In Gloom\, Flesh Carving\, Wraith Bearer @ The H
- andlebar
-DESCRIPTION:Wretched Tongues next thursday at @thehandlebar850\n\n@wretched
- tongues @ingloomfl @fleshcarvingband @wraithbearer
+UID:2026-11-18-handlebar-wayne-hancock@diypensacola
+DTSTAMP:20261118T000000Z
+DTSTART;TZID=America/Chicago:20261118T180000
+DTEND;TZID=America/Chicago:20261118T210000
+SUMMARY:Wayne Hancock @ The Handlebar
+DESCRIPTION:Wayne Hancock Nov 18 at @thehandlebar850
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-01-handlebar-wretched-tongues-in-glo
- om.html
+URL:https://diypensacola.com/s/2026-11-18-handlebar-wayne-hancock.html
 END:VEVENT
 END:VCALENDAR
