@@ -21,19 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-18-handlebar-glitterer-bleary-eyed@diypensacola
-DTSTAMP:20260918T000000Z
-DTSTART;TZID=America/Chicago:20260918T190000
-DTEND;TZID=America/Chicago:20260918T220000
-SUMMARY:Glitterer\, Bleary Eyed\, Guttered @ The Handlebar
-DESCRIPTION:glitterer\, bleary eyed and guttered at the handlebar\, friday 
- september 18th. on tour\, come out.
+UID:2026-11-17-handlebar-little-image@diypensacola
+DTSTAMP:20261117T000000Z
+DTSTART;TZID=America/Chicago:20261117T190000
+DTEND;TZID=America/Chicago:20261117T220000
+SUMMARY:Little Image @ The Handlebar
+DESCRIPTION:Little Image at @thehandlebar850 Nov 17
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-18-handlebar-glitterer-bleary-eyed.h
- tml
+URL:https://diypensacola.com/s/2026-11-17-handlebar-little-image.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Glitterer\, Bleary Eyed\, Guttered @ The Handlebar
+DESCRIPTION:tonight: Little Image @ The Handlebar
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
