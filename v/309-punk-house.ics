@@ -23,29 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-20-309-views-from-the-ground@diypensacola
-DTSTAMP:20260920T000000Z
-DTSTART;TZID=America/Chicago:20260920T180000
-DTEND;TZID=America/Chicago:20260920T210000
-SUMMARY:Views From The Ground @ 309
-DESCRIPTION:views from the ground\, a diy short film screening at 309 punk 
- project. sunday september 20th at 6pm\, 309 n 6th ave. curated by brianna 
- kirby. submissions open until august 26.
-LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-20-309-views-from-the-ground.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-20-309-witness@diypensacola
-DTSTAMP:20260920T000000Z
-DTSTART;TZID=America/Chicago:20260920T190000
-DTEND;TZID=America/Chicago:20260920T220000
-SUMMARY:Witness @ 309
-DESCRIPTION:witness\, a new film by talamieka brice\, premieres at 309 punk
-  project sunday september 20th. 7pm\, q&a to follow.
-LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-20-309-witness.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-09-22-309-eraser-stamps-workshop-blue-olive-press@diypensacola
 DTSTAMP:20260922T000000Z
 DTSTART;TZID=America/Chicago:20260922T170000
@@ -67,5 +44,17 @@ DESCRIPTION:Rent Strike in two weeks at @309punkproject!\n\n@rent__strike @
  beatboxpoet @outlook_bleak
 LOCATION:309 Punk Project\, 309 N 6th Ave\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-16-309-rent-strike-myles-bullen.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-14-309-night-on-the-tracks-the-art-of-protest@diypensacola
+DTSTAMP:20261114T000000Z
+DTSTART;TZID=America/Chicago:20261114T180000
+DTEND;TZID=America/Chicago:20261114T210000
+SUMMARY:Night on the Tracks: The Art of Protest @ 309 Punk Project
+DESCRIPTION:The Art of Protest at 309 for Night on the Tracks\, saturday no
+ vember 14th.
+LOCATION:309 Punk Project\, 309 N 6th Ave\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-14-309-night-on-the-tracks-the-art-o
+ f-protest.html
 END:VEVENT
 END:VCALENDAR

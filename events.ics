@@ -23,73 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-19-the-den-bastardson-rat-daughter@diypensacola
-DTSTAMP:20260919T000000Z
-DTSTART;TZID=America/Chicago:20260919T183000
-DTEND;TZID=America/Chicago:20260919T213000
-SUMMARY:Bastardson\, Rat Daughter\, beautysleep @ Beulah Den
-DESCRIPTION:bastardson\, rat daughter\, and beautysleep at the den\, saturd
- ay september 19. doors 6:30\, music at 7. pay what you can\, $5 suggested.
-LOCATION:Beulah Den
-URL:https://diypensacola.com/s/2026-09-19-the-den-bastardson-rat-daughter.h
- tml
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-19-handlebar-twilight-drag-show-titanium@diypensacola
-DTSTAMP:20260919T000000Z
-DTSTART;TZID=America/Chicago:20260919T180000
-DTEND;TZID=America/Chicago:20260919T210000
-SUMMARY:Twilight Drag Show\, Titanium\, Braxton Hicks\, Vixen Valentine\, G
- loss\, H8Male\, Kreacher\, Becky Belle Bottoms @ The Handlebar
-DESCRIPTION:twilight drag show at the handlebar\, saturday september 19th. 
- titanium\, braxton hicks\, vixen valentine\, gloss\, h8male\, kreacher\, a
- nd becky belle bottoms. 6 to 8:30pm\, $10\, 18+.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-19-handlebar-twilight-drag-show-tita
- nium.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-20-309-views-from-the-ground@diypensacola
-DTSTAMP:20260920T000000Z
-DTSTART;TZID=America/Chicago:20260920T180000
-DTEND;TZID=America/Chicago:20260920T210000
-SUMMARY:Views From The Ground @ 309
-DESCRIPTION:views from the ground\, a diy short film screening at 309 punk 
- project. sunday september 20th at 6pm\, 309 n 6th ave. curated by brianna 
- kirby. submissions open until august 26.
-LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-20-309-views-from-the-ground.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-20-handlebar-tip-n-treat-drag-show-thotberry-shortcake@diypensa
- cola
-DTSTAMP:20260920T000000Z
-DTSTART;TZID=America/Chicago:20260920T183000
-DTEND;TZID=America/Chicago:20260920T213000
-SUMMARY:Tip N’ Treat Drag Show\, Thotberry Shortcake\, Becky Belle Bottom
- s\, Fruitbat\, Evan Manson\, Oattmilk\, Pixie Van Dyke\, Sarah Tonin\, Miz
- z Fortune\, Pat Midoun\, H8Male\, Redd Hott Kandiey @ The Handlebar
-DESCRIPTION:the thot factory brings tip n’ treat to the handlebar on sept
- ember 20th. becky belle bottoms\, fruitbat\, evan manson\, oattmilk\, pixi
- e van dyke\, sarah tonin\, mizz fortune\, pat midoun\, h8male and redd hot
- t kandiey\, hosted by thotberry shortcake. doors 6:30\, show at 7\, $10 co
- ver.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-20-handlebar-tip-n-treat-drag-show-t
- hotberry-shortcake.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-20-309-witness@diypensacola
-DTSTAMP:20260920T000000Z
-DTSTART;TZID=America/Chicago:20260920T190000
-DTEND;TZID=America/Chicago:20260920T220000
-SUMMARY:Witness @ 309
-DESCRIPTION:witness\, a new film by talamieka brice\, premieres at 309 punk
-  project sunday september 20th. 7pm\, q&a to follow.
-LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-20-309-witness.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-09-21-handlebar-dead-eyes-versus-me@diypensacola
 DTSTAMP:20260921T000000Z
 DTSTART;TZID=America/Chicago:20260921T180000
@@ -694,6 +627,18 @@ DESCRIPTION:betty’s fest 2\, night two. saturday november 14th at betty
  ’s on belmont and the old bunny club. lineup coming.
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-14-bettys-bettys-fest-2-night-2.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-14-309-night-on-the-tracks-the-art-of-protest@diypensacola
+DTSTAMP:20261114T000000Z
+DTSTART;TZID=America/Chicago:20261114T180000
+DTEND;TZID=America/Chicago:20261114T210000
+SUMMARY:Night on the Tracks: The Art of Protest @ 309 Punk Project
+DESCRIPTION:The Art of Protest at 309 for Night on the Tracks\, saturday no
+ vember 14th.
+LOCATION:309 Punk Project\, 309 N 6th Ave\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-14-309-night-on-the-tracks-the-art-o
+ f-protest.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-17-handlebar-little-image@diypensacola
