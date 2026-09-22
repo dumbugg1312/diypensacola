@@ -35,6 +35,21 @@
    it eleven times with per-component .foo[hidden]{display:none} rules; this is that
    fix done once, for everything. JS toggling .hidden can now be trusted. */
 [hidden]{display:none!important}
+/* iOS Safari inflates text when a phone turns sideways unless this is pinned, and
+   the one-line rows sized from the viewport (--tagw, --nw) assume the real size. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+/* Form controls do NOT inherit the page font on their own: a <button> with no
+   font-family of its own renders in the system sans (Arial, San Francisco,
+   Roboto). The filter chips, facets and refine button all shipped that way,
+   because their `font:.78rem/1 inherit` shorthand is invalid CSS (inherit can't
+   ride inside `font`) and the whole declaration was dropped. Inherit it once. */
+button,input,select,textarea{font-family:inherit}
+/* viewport-fit=cover lets the page run edge to edge on notched iPhones (that is
+   what switches the safe-area bottom insets on), but it also means a phone held
+   sideways puts the notch right over the page's left or right edge. Portrait
+   insets are 0, so this only ever moves anything in landscape. Fixed elements
+   (.totop, .tip, .lb .x) carry their own inset. */
+body{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
 body{margin:0;background-color:var(--bg);color:var(--ink);font:16px/1.5 "Special Elite","Courier Adjusted","Courier New",monospace;
   background-image:radial-gradient(1000px 520px at 50% -140px,rgba(107,112,54,.32),rgba(107,112,54,0) 72%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.11'/%3E%3C/svg%3E");
   background-repeat:no-repeat,repeat}
@@ -71,7 +86,11 @@ header h1 a,header .wordmark a{color:inherit;text-decoration:none}
    banner, so with the .brk giving a fixed 3+3 wrap the cluster is always full
    lines - one wide line or two full lines, never a ragged short row. */
 .links a:nth-child(odd){transform:rotate(-1.5deg)}.links a:nth-child(even){transform:rotate(1.2deg)}
-.links a:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
+/* Hover fills that look like a "selected" state are hover-capable only (same as
+   .savebtn:hover): a touch browser keeps :hover on whatever was tapped last, so a
+   toggle switched off still wore the olive fill, and a tape button tapped before
+   Back came up looking like the current page. */
+@media (hover:hover){.links a:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}}
 /* .brk: forced wrap point after the 3rd tape button, so the row is ALWAYS 3+3.
    It used to be hidden above 880px, back when 5 buttons still fit on one line.
    With the 6th (subscribe) they no longer do at any width, because .links is
@@ -228,20 +247,20 @@ body:has(#list:target) a[href='#list'],body:not(:has(section:target)) a[href='#l
 body:has(#grid:target) a[href='#grid']{border:2px solid var(--hot);background:var(--hot);color:var(--on-hot)}
 .controls{max-width:var(--w-narrow);margin:0 auto .3rem}
 .searchtoggle{background:var(--card);border:2px dashed var(--dim);color:var(--ink);cursor:pointer;
-  width:2.5rem;height:2.5rem;font:1.25rem/1 inherit;flex:none;display:flex;align-items:center;justify-content:center}
-.searchtoggle:hover{border-color:var(--hot);color:var(--hot)}
+  width:2.5rem;height:2.5rem;font-family:inherit;font-size:1.25rem;line-height:1;flex:none;display:flex;align-items:center;justify-content:center}
+@media (hover:hover){.searchtoggle:hover{border-color:var(--hot);color:var(--hot)}}
 .searchtoggle.on{background:var(--hot);color:var(--on-hot);border-style:solid;border-color:var(--hot)}
 .filterpanel{margin-top:.5rem}
 .filterpanel[hidden]{display:none}
 .vchips{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.5rem}
-.vchip{background:var(--card);border:2px dashed var(--dim);color:var(--ink);cursor:pointer;font:.78rem/1 inherit;
+.vchip{background:var(--card);border:2px dashed var(--dim);color:var(--ink);cursor:pointer;font-family:inherit;font-size:.78rem;line-height:1;
   text-transform:uppercase;letter-spacing:.04em;padding:.45rem .7rem}
-.vchip:hover{border-color:var(--hot);color:var(--hot)}
+@media (hover:hover){.vchip:hover{border-color:var(--hot);color:var(--hot)}}
 .vchip.on{background:var(--hot);color:var(--on-hot);border-style:solid;border-color:var(--hot)}
 .tagchips{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 .5rem;padding-top:.5rem;border-top:1px dashed var(--line)}
-.tagchip{background:var(--card);border:2px dashed var(--dim);color:var(--ink);cursor:pointer;font:.78rem/1 inherit;
+.tagchip{background:var(--card);border:2px dashed var(--dim);color:var(--ink);cursor:pointer;font-family:inherit;font-size:.78rem;line-height:1;
   text-transform:uppercase;letter-spacing:.04em;padding:.45rem .7rem}
-.tagchip:hover{border-color:var(--hot);color:var(--hot)}
+@media (hover:hover){.tagchip:hover{border-color:var(--hot);color:var(--hot)}}
 .tagchip.on{background:var(--hot);color:var(--on-hot);border-style:solid;border-color:var(--hot)}
 .search{margin:0}
 .search input{width:100%;height:2.3rem;background:var(--card);border:2px solid var(--hot);color:var(--ink);
@@ -258,7 +277,11 @@ body:has(#grid:target) a[href='#grid']{border:2px solid var(--hot);background:va
 .show{display:flex;gap:1rem;background:var(--card);border:1px solid var(--line);padding:1rem;align-items:center;
   box-shadow:5px 5px 0 var(--shadow);cursor:pointer;transition:box-shadow .12s ease,transform .12s ease}
 .show.past{display:none}
-.show:hover,.show:focus{outline:none;box-shadow:5px 5px 0 var(--hot)}
+/* card hovers are hover-capable only: a tapped card kept :hover after its sheet
+   closed, so the tonight hero stayed shoved up-left and wall tiles stayed
+   straightened until the next tap somewhere else. (Cards aren't focusable, so
+   the :focus halves only ever mattered to a mouse anyway.) */
+@media (hover:hover){.show:hover,.show:focus{outline:none;box-shadow:5px 5px 0 var(--hot)}}
 .thumbwrap{position:relative;flex:none}
 .show img.thumb{width:84px;height:106px;object-fit:cover;border:2px solid var(--ink);display:block;background:#000}
 .show img.thumb.ph{object-fit:contain;padding:6px;filter:grayscale(.2) opacity(.85)}
@@ -276,7 +299,7 @@ body:has(#grid:target) a[href='#grid']{border:2px solid var(--hot);background:va
 /* tonight cards already wear the hot shadow at rest, so they need their own
    hover/focus state (higher specificity than the base rule) to still signal
    they're clickable - otherwise hovering them does nothing. */
-#b-tonight .show:hover,#b-tonight .show:focus{box-shadow:10px 10px 0 var(--hot);transform:translate(-3px,-3px)}
+@media (hover:hover){#b-tonight .show:hover,#b-tonight .show:focus{box-shadow:10px 10px 0 var(--hot);transform:translate(-3px,-3px)}}
 /* price/age tags now ride in the card next to the date badge (not over the
    flyer). .daterow lays the date + its tags on one line with a small gap. */
 .daterow{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem;margin-bottom:.12rem}
@@ -397,7 +420,7 @@ footer .built{display:inline-block}
   z-index:60;padding:1.5rem;cursor:zoom-out;overscroll-behavior:contain}
 .lb.open{display:flex}
 .lb img#lbimg{max-width:100%;max-height:90vh;border:3px solid var(--ink);box-shadow:0 0 0 6px var(--hot)}
-.lb .x{position:absolute;top:1rem;right:1.2rem;color:var(--ink);font-size:2rem;text-decoration:none;line-height:1;z-index:2}
+.lb .x{position:absolute;top:1rem;right:calc(1.2rem + env(safe-area-inset-right));color:var(--ink);font-size:2rem;text-decoration:none;line-height:1;z-index:2}
 .detail{z-index:55;cursor:default}
 /* desktop close: a clear little corner button in the dbox's top-right (the flyer
    sits on the left, so it never covers the art). Hidden on mobile in favor of the
@@ -413,7 +436,10 @@ footer .built{display:inline-block}
 .dinfo h2{margin:.1rem 0 .6rem;font-family:"Anton","Special Elite",sans-serif;font-weight:400;
   text-transform:uppercase;font-size:1.7rem;line-height:1.05}
 .drow{color:var(--ink);font-size:.95rem;margin:.25rem 0}
-.dcap{color:var(--dim);font-size:.9rem;margin:.7rem 0;line-height:1.5}
+.dcap{color:var(--dim);font-size:.9rem;margin:.7rem 0;line-height:1.5;
+  /* captions are pasted from Instagram and venue pages, raw URLs and all: one
+     unbroken link used to push the whole show page sideways on a phone */
+  overflow-wrap:anywhere}
 .dbenefit{color:var(--benefit);font-weight:700;text-transform:uppercase;letter-spacing:.04em}
 /* archived cover price: dimmed label, full-strength number, so the row reads as a
    record of what the door cost rather than as a live price. */
@@ -425,7 +451,7 @@ footer .built{display:inline-block}
 .dbtn{display:inline-flex;align-items:center;gap:.4rem;background:var(--tape);color:#111;border:2px solid #111;
   box-shadow:3px 3px 0 var(--hot);padding:.45rem .85rem;cursor:pointer;font:inherit;text-transform:uppercase;
   letter-spacing:.05em;font-size:.82rem;text-decoration:none}
-.dbtn:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
+@media (hover:hover){.dbtn:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}}
 /* ---------- touch + mobile polish (premium feel, same zine look) ---------- */
 html{scroll-behavior:smooth}
 body{overflow-x:clip}
@@ -444,7 +470,7 @@ main section:target{animation:viewin .26s ease both}
 
 /* back-to-top - a tilted tape button that fades in once you've scrolled down.
    z-index sits below the modals (detail 55 / lightbox 60) so it hides behind an open modal. */
-.totop{position:fixed;right:1.2rem;bottom:calc(1.2rem + env(safe-area-inset-bottom));z-index:45;width:3rem;height:3rem;
+.totop{position:fixed;right:calc(1.2rem + env(safe-area-inset-right));bottom:calc(1.2rem + env(safe-area-inset-bottom));z-index:45;width:3rem;height:3rem;
   display:flex;align-items:center;justify-content:center;cursor:pointer;
   background:var(--tape);color:#111;border:2px solid #111;box-shadow:3px 3px 0 var(--hot);
   font:1.5rem/1 "Anton","Special Elite",sans-serif;text-decoration:none;
@@ -457,7 +483,7 @@ main section:target{animation:viewin .26s ease both}
 /* intent-timed support nudge: slides up after a high-intent action (sharing a
    show, adding the calendar). Sits below the modals (50/55) so an open dialog
    covers it; the CTA is the existing Venmo link, so the CSP is untouched. */
-.tip{position:fixed;left:1rem;bottom:1.2rem;z-index:46;max-width:330px;background:var(--card);
+.tip{position:fixed;left:calc(1rem + env(safe-area-inset-left));bottom:1.2rem;z-index:46;max-width:330px;background:var(--card);
   border:2px solid var(--hot);box-shadow:6px 6px 0 var(--hot);padding:1rem 1.05rem .95rem;
   transform:rotate(-1deg) translateY(14px);opacity:0;pointer-events:none;
   transition:opacity .22s,transform .22s}
@@ -471,7 +497,7 @@ main section:target{animation:viewin .26s ease both}
   font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;text-decoration:underline;padding:.45rem .2rem}
 .tiplater:hover{color:var(--hot)}
 .tipx{position:absolute;top:.3rem;right:.45rem;background:none;border:none;color:var(--dim);
-  font:1.3rem/1 inherit;line-height:1;cursor:pointer;padding:.1rem .3rem}
+  font-family:inherit;font-size:1.3rem;line-height:1;cursor:pointer;padding:.1rem .3rem}
 .tipx:hover{color:var(--hot)}
 @media (max-width:640px){.tip{left:.7rem;right:.7rem;max-width:none;bottom:calc(.8rem + env(safe-area-inset-bottom))}
   .showpage .tip{bottom:calc(4.6rem + env(safe-area-inset-bottom))}}
@@ -490,7 +516,7 @@ main section:target{animation:viewin .26s ease both}
 .a2hstext{margin:0;font-size:.82rem;line-height:1.4;flex:1 1 auto;color:var(--ink)}
 .a2hstext b{color:var(--hotink)}
 .a2hsgo{flex:0 0 auto;white-space:nowrap}
-.a2hsx{flex:0 0 auto;background:none;border:none;color:var(--dim);font:1.4rem/1 inherit;cursor:pointer;padding:.1rem .4rem}
+.a2hsx{flex:0 0 auto;background:none;border:none;color:var(--dim);font-family:inherit;font-size:1.4rem;line-height:1;cursor:pointer;padding:.1rem .4rem}
 .a2hsx:hover{color:var(--hot)}
 @media (min-width:641px){.a2hs{left:auto;right:1rem;top:1rem;max-width:380px;border:2px solid var(--hot);box-shadow:6px 6px 0 var(--hot);transform:translateY(-160%)}}
 
@@ -604,9 +630,15 @@ main section:target{animation:viewin .26s ease both}
      should read as one taped-up block, not two separate banners. */
   .links{gap:.38rem .45rem;padding:.7rem .7rem .15rem;max-width:100%}
   /* the type grows with the screen and the side padding shrinks, so the words
-     actually fill the scrap instead of floating in a wide tape margin. The
-     clamp tops out at .8rem so a big phone doesn't get comically large caps. */
-  .links a{font-size:clamp(.6rem,2.55vw,.8rem);padding:.45rem .3rem;text-align:center;
+     actually fill the scrap instead of floating in a wide tape margin. The old
+     clamp(.6rem,2.55vw,.8rem) sat on its 9.6px floor on every phone narrower
+     than 376px, which left the main nav in 9.6px caps with ~80px of bare tape
+     per row. Now the size is solved from the row it has to fill: the longest
+     row ("showgoer guide / submit a show / subscribe") is 22.0em of Special
+     Elite at this tracking, and 84px is the row's side padding, two gaps and
+     three buttons' padding + border (77.6px) plus slack. Re-solve 22.6 if a
+     label changes. .8rem is still the cap, so a big phone gets no bigger. */
+  .links a{font-size:min(.8rem,calc((100vw - 84px)/22.6));padding:.45rem .3rem;text-align:center;
     line-height:1.25;letter-spacing:.03em;box-shadow:2px 2px 0 var(--hot)}
   /* the fine-print credit row is ONE line at every phone width: it's a credit
      line, and wrapping "donate" onto a second row looked like a mistake. All
@@ -672,6 +704,14 @@ main section:target{animation:viewin .26s ease both}
   .dinfo h2{font-size:1.5rem}
   .dactions{gap:.5rem}
   .dactions .dbtn{flex:1;justify-content:center;padding:.7rem .8rem}
+  /* The show sheet and the show page carry five or six actions, some with long
+     labels ("add this show to calendar", "this show's page"). Three to a row
+     squeezed them into 85px-tall buttons with three-line labels. Two to a row
+     plus a balanced wrap keeps every label to one or two lines; an odd last
+     button takes the whole row, like the old second row did. Act and venue
+     pages keep their own row (short labels, fine as is). */
+  #detail .dactions .dbtn,.spcard .dactions .dbtn{flex:1 1 calc(50% - .25rem);padding:.7rem .5rem;
+    text-align:center;text-wrap:balance}
 
   /* roomier lightbox close, clear of the notch */
   .lb .x{font-size:2.3rem;width:2.6rem;height:2.6rem;display:flex;align-items:center;justify-content:center;
@@ -679,6 +719,10 @@ main section:target{animation:viewin .26s ease both}
   .lb img#lbimg{max-height:84vh}
 
   footer{padding:2rem 1rem calc(2rem + env(safe-area-inset-bottom))}
+  /* every page but the homepage keeps the back-to-top button on phones, and at
+     the very bottom it sat on "donate" and the credit line. Room for it (1.2rem
+     off the bottom + 3rem tall + a gap) so the last line ends above it. */
+  body.showpage footer{padding-bottom:calc(5rem + env(safe-area-inset-bottom))}
 
   /* the photocopy poster is a desktop ritual; on phones the nav space is scarcer
      than the feature is useful, so the print button sits this one out. */
@@ -750,7 +794,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 #list.wall .show:nth-child(3n+1){transform:rotate(-1.6deg)}
 #list.wall .show:nth-child(3n+2){transform:rotate(1.2deg)}
 #list.wall .show:nth-child(3n){transform:rotate(-.5deg)}
-#list.wall .show:hover,#list.wall .show:focus{transform:rotate(0) scale(1.02);box-shadow:none;z-index:2}
+@media (hover:hover){#list.wall .show:hover,#list.wall .show:focus{transform:rotate(0) scale(1.02);box-shadow:none;z-index:2}}
 /* the tape sits ON the poster's top edge (like tape actually holding it up), so
    it can never float loose in the gap between two stacked posters. */
 #list.wall .thumbwrap::before{content:"";position:absolute;top:2px;left:50%;transform:translateX(-50%) rotate(-2deg);
@@ -1063,13 +1107,44 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
    solid green bar read as clip-art, not tape); the "up next" signal lives in the
    green caption text and the hot hover border instead. */
 .heropost.up .hpcap{color:var(--hotink)}
-@media (max-width:700px){.acthero{flex-direction:column;gap:.4rem;position:relative}
+@media (max-width:700px){
+  /* stretch, not flex-start: a column flexbox's flex-start sizes the card to its
+     content, so one long word in the name widened the card past the screen */
+  .acthero{flex-direction:column;align-items:stretch;gap:.4rem;position:relative}
   /* phone: the flyer is a small polaroid pinned in the card's top corner beside
      the name, so the next gig and the buttons stay as high as they were
      without it (a flyer stacked above the name pushed them a screen down) */
-  .heropost{position:absolute;top:-.7rem;right:.7rem;width:100px;margin:0;transform:rotate(2.5deg);z-index:1}
+  .heropost{position:absolute;top:-.7rem;right:.7rem;width:auto;margin:0;transform:rotate(2.5deg);z-index:1}
+  /* still the whole flyer, never cropped: a tall one (a 9:16 story graphic)
+     gets narrower instead of longer, so the polaroid never hangs lower than
+     the spacer below reserves for it */
+  .heropost img{width:auto;max-width:100px;max-height:125px}
   .heropost .hpcap{display:none}
-  .actmast,.credline{padding-right:105px}
+  /* the name and subtitle give up the corner to the polaroid. .dirsub, not
+     .credline: the drag and open-mic pages' subtitle has no credline class, so
+     it used to run under the flyer. A page with no flyer takes the corner back
+     (:has() only relaxes, so a browser without it keeps the safe layout). */
+  .actmast,.heroinfo>.dirsub{padding-right:105px}
+  .acthero:not(:has(.heropost)) .actmast,.acthero:not(:has(.heropost)) .heroinfo>.dirsub{padding-right:0}
+  /* The polaroid is out of flow, so nothing below the subtitle knew it was
+     there: a short name plus a tall flyer put the flyer on top of "follow this
+     band", and a tap on the button's right end opened the show instead. A
+     zero-width float as tall as the polaroid, cleared by everything after the
+     name + subtitle, starts the next gig and the buttons below the flyer. A
+     name long enough to already reach past it loses nothing. */
+  .acthero:has(.heropost) .heroinfo::before{content:"";float:right;width:0;height:106px}
+  .acthero:has(.heropost) .heroinfo>:not(.actmast):not(.dirsub){clear:right}
+  /* One long word in a name (WHATSDYSMORPHIA, MUSIC/PERFORMANCE) pushed the
+     card and the whole page sideways: 44 act pages at 375px, 473 at 320px. CSS
+     can't measure text, so the build does, same trick as the tagline's --tagw:
+     --nw is the name's longest unbreakable word in Anton em, and the size is
+     solved from the room that word has (beside the polaroid, or the whole card
+     without one). Pages with no long word carry no --nw and keep the clamp. The
+     longest word on file (MUSIC/PERFORMANCE) needs ~17.8px beside the polaroid
+     at 320px; the 1.1rem floor + anywhere only backstops something longer. */
+  .actmast .dirhead{min-width:0;overflow-wrap:anywhere}
+  .actpage .dirhead{font-size:max(1.1rem,min(clamp(2.3rem,8vw,3.8rem),calc((100vw - 172px)/var(--nw,.01))))}
+  .acthero:not(:has(.heropost)) .dirhead{font-size:max(1.1rem,min(clamp(2.3rem,8vw,3.8rem),calc((100vw - 66px)/var(--nw,.01))))}
   .actcard{padding:1rem 1rem 1.2rem}}
 /* subscribe alternatives ride under the button row as fine print */
 .subalts{flex-basis:100%;font-size:.72rem;color:var(--dim);margin-top:-.1rem}
@@ -1101,6 +1176,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .actshows .postwall{display:none}
 .actshows.wall .postwall{display:block}
 .actshows.wall .gigledger{display:none}
+/* the year chips and "show all" drive the list, so on the wall they were dead
+   buttons: a chip jumped to a year row that wasn't displayed and nothing moved */
+.actshows.wall .yearjump,.actshows.wall .showall{display:none}
 .gthumb{flex:none;width:3.3rem;display:block}
 .gthumb img{width:100%;height:auto;display:block;border:2px solid var(--ink);box-shadow:2px 2px 0 var(--shadow);background:#000}
 .gthumb:hover img,.gthumb:focus-visible img{border-color:var(--hot)}
@@ -1145,7 +1223,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .gwho a:hover,.gwho a:focus-visible{color:var(--hotink)}
 .gwho .self{font-weight:400;color:var(--hotink)}
 .gven{flex:none;font:.72rem/1.2 "Special Elite","Courier Adjusted","Courier New",monospace;text-transform:lowercase;
-  border:2px dashed var(--line);padding:.26rem .55rem;color:var(--dim);text-decoration:none;background:var(--card)}
+  border:2px dashed var(--line);padding:.26rem .55rem;color:var(--dim);text-decoration:none;background:var(--card);
+  /* flex:none sizes the tag to its one-line width; a long venue name ("ashmore
+     auditorium, pensacola state college...") then ran off the phone screen.
+     Capping it at the row lets the name wrap inside its tag instead. */
+  max-width:100%;overflow-wrap:anywhere}
 .gven:hover,.gven:focus-visible{border-color:var(--hot);border-style:solid;color:var(--hotink)}
 .gigledger li.gyear{border-bottom:none;padding:1rem 0 .15rem}
 .gigledger li.gyear span{font-family:"Anton","Special Elite",sans-serif;font-weight:400;font-size:1rem;
@@ -1334,7 +1416,7 @@ main{max-width:940px}
 #list:not(.wall) .bucket.dense .show{gap:.9rem;padding:.6rem .9rem;background:none;border:none;
   border-bottom:2px dashed var(--line);box-shadow:none;transform:none;align-items:center}
 #list:not(.wall) .bucket.dense .cards .show:last-child{border-bottom:none}
-#list:not(.wall) .bucket.dense .show:hover{box-shadow:none;background:#1d1d20}
+@media (hover:hover){#list:not(.wall) .bucket.dense .show:hover{box-shadow:none;background:#1d1d20}}
 #list:not(.wall) .bucket.dense .thumbwrap{flex:none}
 #list:not(.wall) .bucket.dense .thumbwrap::before{display:none}
 #list:not(.wall) .bucket.dense .show img.thumb,
@@ -1481,7 +1563,7 @@ main{max-width:940px}
   padding:.7rem 0 .8rem;margin:.4rem 0 1rem;display:flex;flex-direction:column;gap:.55rem}
 .arctoolbar .search{margin:0}
 .arcrow{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
-.arcsel{background:var(--card);border:2px dashed var(--dim);color:var(--ink);font:.78rem/1 inherit;
+.arcsel{background:var(--card);border:2px dashed var(--dim);color:var(--ink);font-family:inherit;font-size:.78rem;line-height:1;
   padding:.32rem .5rem;cursor:pointer;max-width:15rem}
 .arcsel:hover{border-color:var(--hot)}
 .viewtoggle{display:flex;gap:.3rem;margin-left:auto}
@@ -1507,7 +1589,7 @@ main{max-width:940px}
 .quickmatch a:hover,.quickmatch a:focus-visible{background:var(--hot);color:var(--on-hot)}
 .quickmatch a:hover small,.quickmatch a:focus-visible small{color:var(--on-hot)}
 .quickmatch a small{color:var(--dim)}
-.qmmore{background:transparent;border:0;color:var(--hot);cursor:pointer;font:.68rem/1 inherit;
+.qmmore{background:transparent;border:0;color:var(--hot);cursor:pointer;font-family:inherit;font-size:.68rem;line-height:1;
   text-decoration:underline;text-transform:none;letter-spacing:0;white-space:nowrap}
 .arch li a.arow{color:var(--ink);text-decoration:none}
 .arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
@@ -1527,7 +1609,7 @@ main{max-width:940px}
 .arcbrowse{display:flex;flex-wrap:wrap;gap:.6rem;margin:0 0 1rem}
 .browsetoggle{font:inherit;font-size:.85rem;cursor:pointer;color:#111;background:var(--tape);padding:.4rem .9rem;
   border:2px solid #111;box-shadow:3px 3px 0 var(--hot);text-transform:uppercase;letter-spacing:.05em}
-.browsetoggle:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
+@media (hover:hover){.browsetoggle:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}}
 .browsetoggle.on{background:var(--hot);color:var(--on-hot);box-shadow:1px 1px 0 var(--tape)}
 /* ---- one-search refine: quick-pick presets, control bar, active chips, facet rail ---- */
 .activechips[hidden],.clearall[hidden],.filtn[hidden]{display:none!important}
@@ -1535,22 +1617,22 @@ main{max-width:940px}
 .arcpresets .ptag{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;
   letter-spacing:.06em;font-size:.7rem;color:var(--dim);margin-right:.1rem}
 .preset{background:var(--card);border:2px dashed var(--dim);color:var(--ink);cursor:pointer;
-  font:.76rem/1 inherit;text-transform:lowercase;letter-spacing:.02em;padding:.4rem .6rem}
-.preset:hover{border-color:var(--hot);color:var(--hot)}
+  font-family:inherit;font-size:.76rem;line-height:1;text-transform:lowercase;letter-spacing:.02em;padding:.4rem .6rem}
+@media (hover:hover){.preset:hover{border-color:var(--hot);color:var(--hot)}}
 .preset.on{background:var(--hot);color:var(--on-hot);border-style:solid;border-color:var(--hot)}
 .arcbar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
 .refinebtn{background:var(--card);border:2px solid var(--hot);color:var(--ink);cursor:pointer;
-  font:.8rem/1 inherit;text-transform:uppercase;letter-spacing:.05em;padding:.45rem .8rem;
+  font-family:inherit;font-size:.8rem;line-height:1;text-transform:uppercase;letter-spacing:.05em;padding:.45rem .8rem;
   display:inline-flex;align-items:center;gap:.4rem}
-.refinebtn:hover{background:var(--hot);color:var(--on-hot)}
+@media (hover:hover){.refinebtn:hover{background:var(--hot);color:var(--on-hot)}}
 .refinebtn .filtn{background:var(--hot);color:var(--on-hot);font-size:.72rem;
   min-width:1.2rem;text-align:center;padding:.05rem .3rem;line-height:1.25}
-.refinebtn:hover .filtn{background:var(--on-hot);color:var(--hot)}
+@media (hover:hover){.refinebtn:hover .filtn{background:var(--on-hot);color:var(--hot)}}
 .arcsortwrap{font-size:.74rem;color:var(--dim);text-transform:uppercase;letter-spacing:.04em;
   display:inline-flex;align-items:center}
 .activechips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.4rem}
 .achip{background:var(--hot);color:var(--on-hot);border:2px solid var(--ink);cursor:pointer;
-  font:.74rem/1 inherit;padding:.35rem .5rem;display:inline-flex;align-items:center;gap:.35rem;
+  font-family:inherit;font-size:.74rem;line-height:1;padding:.35rem .5rem;display:inline-flex;align-items:center;gap:.35rem;
   text-transform:lowercase}
 .achip .ax{font-weight:700;font-size:.85rem}
 .achip:hover{box-shadow:2px 2px 0 var(--shadow)}
@@ -1562,26 +1644,26 @@ main{max-width:940px}
 .facetstitle{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;
   letter-spacing:.05em;font-size:1rem;color:var(--hotink)}
 .clearall{background:transparent;border:0;color:var(--hot);cursor:pointer;
-  font:.74rem/1 inherit;text-transform:uppercase;letter-spacing:.04em;text-decoration:underline}
+  font-family:inherit;font-size:.74rem;line-height:1;text-transform:uppercase;letter-spacing:.04em;text-decoration:underline}
 .facetgroup{padding:.5rem 0;border-bottom:1px dashed var(--line)}
 .facetgroup:last-child{border-bottom:none}
 .facethead{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
   letter-spacing:.05em;font-size:.76rem;color:var(--dim);margin:0 0 .3rem}
 .facetlist{display:flex;flex-direction:column;gap:.02rem}
 .facet{display:flex;align-items:center;gap:.5rem;background:transparent;border:0;cursor:pointer;
-  color:var(--ink);font:.82rem/1.2 inherit;text-align:left;padding:.26rem .15rem;width:100%}
+  color:var(--ink);font-family:inherit;font-size:.82rem;line-height:1.2;text-align:left;padding:.26rem .15rem;width:100%}
 .facet .fx{flex:none;width:.85rem;height:.85rem;border:2px solid var(--dim);background:var(--bg)}
 .facet .flabel{flex:1;text-transform:lowercase}
 .facet .fcount{flex:none;color:var(--dim);font-size:.73rem;font-variant-numeric:tabular-nums}
-.facet:hover .flabel{color:var(--hot)}
-.facet:hover .fx{border-color:var(--hot)}
+@media (hover:hover){.facet:hover .flabel{color:var(--hot)}
+.facet:hover .fx{border-color:var(--hot)}}
 .facet.on .fx{background:var(--hot);border-color:var(--hot);box-shadow:inset 0 0 0 2px var(--card)}
 .facet.on .flabel{color:var(--hotink);font-weight:700}
 .facet.on .fcount{color:var(--ink)}
 .facet-extra{display:none}
 .facetgroup.expanded .facet-extra{display:flex}
 .facet-zero{display:none}
-.facetmore{background:transparent;border:0;color:var(--hot);cursor:pointer;font:.76rem/1 inherit;
+.facetmore{background:transparent;border:0;color:var(--hot);cursor:pointer;font-family:inherit;font-size:.76rem;line-height:1;
   text-decoration:underline;padding:.3rem .15rem;text-align:left}
 @media(min-width:820px){
   .arclayout{display:grid;grid-template-columns:236px minmax(0,1fr);gap:1.5rem;align-items:start}
@@ -1655,7 +1737,7 @@ main{max-width:940px}
 .rchips{display:flex;flex-wrap:wrap;gap:.3rem .35rem}
 .rchip{font-family:"Special Elite","Courier Adjusted","Courier New",monospace;font-size:.72rem;text-transform:lowercase;letter-spacing:.02em;
   color:var(--ink);background:transparent;border:2px solid var(--line);padding:.16rem .55rem;cursor:pointer;transition:background .12s,color .12s,border-color .12s}
-.rchip:hover{border-color:var(--hotink)}
+@media (hover:hover){.rchip:hover{border-color:var(--hotink)}}
 .rchip.on{background:var(--hot);color:var(--on-hot);border-color:var(--hot)}
 /* up next queue */
 .rnext{margin-top:.4rem}
@@ -1804,6 +1886,10 @@ header .homelink,header .home,header .logo,header .home img{
    them on desktop (pointer:fine stays as-is). */
 @media (pointer:coarse){
   .vchip,.tagchip,.preset,.achip,.browsetoggle,.refinebtn,.rbtn{min-height:44px;display:inline-flex;align-items:center}
+  /* the year chips were 21px tall and the on-this-page chips 27: under the
+     24px minimum, on the two rails that move you around a long profile */
+  .yearjump a{display:inline-flex;align-items:center;min-height:32px;padding:.3rem .6rem}
+  .actjump a{display:inline-flex;align-items:center;min-height:36px}
   .rchip{min-height:44px;padding:.4rem .8rem;font-size:.82rem}
   .rchips{gap:.4rem .45rem}
   /* iOS zooms the page into any <select> under 16px; keep them at 16 on touch */
@@ -1889,11 +1975,11 @@ header .homelink,header .home,header .logo,header .home img{
 <div class="empty emptybig">
 <p class="ehead">no signal down here</p>
 <p>you're offline and this page isn't saved. basements and dead-zone venues will do that. the calendar you already opened still works offline.</p>
-<p class="dcap">this copy was saved september 21, 2026. tonight's listings may have changed since.</p>
+<p class="dcap">this copy was saved september 22, 2026. tonight's listings may have changed since.</p>
 <div class="eactions">
 <a class="dbtn" href="/">open the calendar</a>
 </div>
 </div>
 </main>
-<footer><p class="fline">no bars? <b>you're probably at a show already.</b></p><div class="finelinks"><a href="https://instagram.com/diypensacola" target="_blank" rel="noopener">instagram</a><a href="https://discord.com/invite/Ckn2j53Bqm" target="_blank" rel="noopener">discord</a><a href="https://facebook.com/diypensacola" target="_blank" rel="noopener">facebook</a><a href="/radio.html">auto-play radio</a><a href="https://venmo.com/code?user_id=2602561043431424773&amp;created=1782154144" target="_blank" rel="noopener">donate</a></div><p class="fcredit">proudly ran out of punksacola, fl<br><span class="built">updated september 21, 2026</span></p></footer><button class="totop" id="totop" type="button" aria-label="back to top" title="back to top">&#8593;</button>
+<footer><p class="fline">no bars? <b>you're probably at a show already.</b></p><div class="finelinks"><a href="https://instagram.com/diypensacola" target="_blank" rel="noopener">instagram</a><a href="https://discord.com/invite/Ckn2j53Bqm" target="_blank" rel="noopener">discord</a><a href="https://facebook.com/diypensacola" target="_blank" rel="noopener">facebook</a><a href="/radio.html">auto-play radio</a><a href="https://venmo.com/code?user_id=2602561043431424773&amp;created=1782154144" target="_blank" rel="noopener">donate</a></div><p class="fcredit">proudly ran out of punksacola, fl<br><span class="built">updated september 22, 2026</span></p></footer><button class="totop" id="totop" type="button" aria-label="back to top" title="back to top">&#8593;</button>
 </body></html>

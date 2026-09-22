@@ -36,6 +36,9 @@ document.documentElement.classList.add('js');
   function setWall(on){sec.classList.toggle('wall',on);b.classList.toggle('on',on);b.setAttribute('aria-pressed',on?'true':'false');b.title=on?'back to the list':'toggle the flyer wall view';}
   b.hidden=false;
   var pref=false;try{pref=localStorage.getItem('dpc_wall')==='1';}catch(e){}
+  // a link straight to a year (#y2019) means the list: its target row doesn't
+  // exist on the wall, so honoring a saved wall preference would land nowhere
+  if(/^#y\d{4}$/.test(location.hash))pref=false;
   setWall(pref);
   b.addEventListener('click',function(){var on=!sec.classList.contains('wall');setWall(on);try{localStorage.setItem('dpc_wall',on?'1':'0');}catch(e){}});
 })();
