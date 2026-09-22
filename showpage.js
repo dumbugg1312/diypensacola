@@ -1,8 +1,11 @@
 (function(){
   var lb=document.getElementById('splb'),img=document.getElementById('splbimg'),
       link=document.getElementById('spflyerlink'),x=document.getElementById('splbx'),ret=null;
-  function openLb(src){ret=document.activeElement;img.src=src;lb.classList.add('open');if(x)x.focus();}
-  function closeLb(){lb.classList.remove('open');img.src='';if(ret&&ret.focus)ret.focus();ret=null;}
+  // the flyer link is this lightbox's only way in, so that is where closing it
+  // comes back to. It used to return to whatever held focus, and a tap focuses
+  // nothing on a phone: a screen reader restarted from the top of the page.
+  function openLb(src){ret=link;img.src=src;lb.classList.add('open');if(x)x.focus();}
+  function closeLb(){lb.classList.remove('open');img.src='';if(ret&&ret.focus)ret.focus({preventScroll:true});ret=null;}
   if(link&&lb){
     link.addEventListener('click',function(e){
       if(e.metaKey||e.ctrlKey||e.shiftKey||e.button)return; // let power users open in a tab

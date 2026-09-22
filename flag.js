@@ -5,6 +5,15 @@
   // now carries the same masthead and the same footer, so they belong in the one
   // script every page already loads.
   //
+  // the pinned mode bar's height, as --modebar-h: every sticky toolbar tucks in
+  // under it with top:var(--modebar-h). Only main.js (homepage) and the archive
+  // script used to publish it, so on the bands and venues directories the sticky
+  // search bar pinned at top:0, BEHIND the mode bar, and a tap where the search
+  // box should be hit the "calendar" tab instead.
+  (function(){var mb=document.querySelector('.modebar');if(!mb)return;
+    function setMB(){document.documentElement.style.setProperty('--modebar-h',mb.offsetHeight+'px');}
+    setMB();window.addEventListener('resize',setMB);
+    if(window.ResizeObserver){try{new ResizeObserver(setMB).observe(mb);}catch(e){}}})();
   // logo flips which way it tilts on each hover
   var _logo=document.querySelector('header .logo'),_leftTilt=true;
   if(_logo){
