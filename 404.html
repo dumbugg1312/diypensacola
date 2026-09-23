@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data: https://diypensacola.goatcounter.com; font-src https://fonts.gstatic.com; connect-src 'self' https://api.github.com https://diypensacola.goatcounter.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'sha256-DyLHfa9eZexqhfl2jd5kHxgMfq+0hg8SnGgICwE4XdM='">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data: https://diypensacola.goatcounter.com; font-src https://fonts.gstatic.com; connect-src 'self' https://api.github.com https://diypensacola.goatcounter.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'sha256-ZISnjysSwCZ3wIQVexs92sMzkp40cDuod9UjTbktomA='">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>page not found · DIYPensacola</title>
 <meta name="description" content="That page isn&#39;t on the wall anymore. The Pensacola DIY show calendar still is.">
@@ -14,12 +14,14 @@
 <meta property="og:image" content="https://diypensacola.com/logo.png">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="/favicon-48.png" sizes="48x48">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Special+Elite&family=Rock+Salt&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css"></head><body class="showpage">
-<div class="modebar"><nav class="modetabs" aria-label="calendar or archive"><a class="modetab" href="/">calendar</a><a class="modetab" href="/archive.html">archive</a></nav></div><header class="bighead"><a href="/" class="homelink" aria-label="diypensacola home"><img class="logo" src="/logo.png" alt="DIYPensacola Punksacola water tower logo"></a><p class="wordmark"><a href="/">diypensacola</a></p><p class="tag" style="--tagw:20.7">punk, metal &amp; diy shows in pensacola, fl</p></header><div class="links"><a href="/bands.html">bands &amp; acts</a><a href="/venues.html">venues</a><a href="https://youtube.com/playlist?list=PLVw-bAWseWcR5fmJF4vu6zbBVT1m0Lf7q" target="_blank" rel="noopener">local mixtapes</a><i class="brk" aria-hidden="true"></i><a href="/guide.html">showgoer guide</a><a href="/submit.html">submit a show</a><a id="calsub" href="webcal://diypensacola.com/events.ics" title="every upcoming show on this calendar, dropped into your own and kept up to date. this is the whole calendar at once, not one show. for a single room or band, subscribe on its own page. unsubscribe any time.">subscribe</a></div>
-<main class="spwrap">
+<a class="skip" href="#main">skip to content</a><div class="modebar"><nav class="modetabs" aria-label="calendar or archive"><a class="modetab" href="/">calendar</a><a class="modetab" href="/archive.html">archive</a></nav></div><header class="bighead"><a href="/" class="homelink" aria-label="diypensacola home"><img class="logo" src="/logo.png" alt="DIYPensacola Punksacola water tower logo"></a><p class="wordmark"><a href="/">diypensacola</a></p><p class="tag" style="--tagw:20.7">punk, metal &amp; diy shows in pensacola, fl</p></header><div class="links"><a href="/bands.html">bands &amp; acts</a><a href="/venues.html">venues</a><a href="https://youtube.com/playlist?list=PLVw-bAWseWcR5fmJF4vu6zbBVT1m0Lf7q" target="_blank" rel="noopener">local mixtapes</a><i class="brk" aria-hidden="true"></i><a href="/guide.html">showgoer guide</a><a href="/submit.html">submit a show</a><a id="calsub" href="webcal://diypensacola.com/events.ics" title="every upcoming show on this calendar, dropped into your own and kept up to date. this is the whole calendar at once, not one show. for a single room or band, subscribe on its own page. unsubscribe any time.">subscribe</a></div>
+<main id="main" tabindex="-1" class="spwrap">
 <div class="empty emptybig">
 <h1 class="ehead">this flyer got ripped down</h1>
 <p>whatever was here is gone, moved, or the link's misspelled. the shows are still on, though.</p>
@@ -44,12 +46,14 @@ var seg=location.pathname.replace(/\/+$/,'').split('/').filter(Boolean);
 if(!seg.length)return;
 var cat=seg.length>1?seg[0]:'';
 var q=norm(seg[seg.length-1].replace(/\.[a-z0-9]+$/i,''));
-if(q.length<2)return;
+if(q.length<2||q==='404')return;
+var MO=['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
+function fd(d){var p=d.split('-');return MO[+p[1]-1]+' '+(+p[2])+', '+p[0];}
 fetch('/search-index.json').then(function(r){return r.json();}).then(function(idx){
  var pool=[];
  (idx.bands||[]).forEach(function(x){pool.push({n:x.n,u:x.u,cat:'b'});});
  (idx.venues||[]).forEach(function(x){pool.push({n:x.n,u:x.u,cat:'v'});});
- (idx.shows||[]).forEach(function(x){pool.push({n:x.t+' '+x.v,u:x.u,cat:'s',d:x.d});});
+ (idx.shows||[]).forEach(function(x){pool.push({n:x.t+' '+x.v,t:x.t,v:x.v,u:x.u,cat:'s',d:x.d});});
  var scored=[];
  pool.forEach(function(x){
   var slug=norm(x.u.split('/').pop().replace(/\.html$/,''));
@@ -66,7 +70,7 @@ fetch('/search-index.json').then(function(r){return r.json();}).then(function(id
  var wrap=document.createElement('div');wrap.className='eactions';
  top.forEach(function(o){
   var a=document.createElement('a');a.className='dbtn';a.href='/'+o.x.u;
-  var label=o.x.n;if(o.x.cat==='s'&&o.x.d)label=o.x.d+' · '+o.x.n;
+  var label=o.x.n;if(o.x.cat==='s')label=(o.x.d?fd(o.x.d)+' · ':'')+o.x.t+(o.x.v?' @ '+o.x.v:'');
   a.textContent=label;wrap.appendChild(a);
  });
  box.appendChild(h);box.appendChild(wrap);box.hidden=false;

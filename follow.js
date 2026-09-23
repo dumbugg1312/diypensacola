@@ -5,7 +5,10 @@ document.documentElement.classList.add('js');
   var sec=document.getElementById('shows');if(!sec)return;
   var btn=sec.querySelector('.showall');
   function all(){sec.classList.add('all');if(btn)btn.hidden=true;}
-  if(btn){btn.hidden=false;btn.addEventListener('click',all);}
+  // "show all" hides itself, so hand focus to the first row it revealed (else it
+  // drops to <body> and the next Tab skips every revealed row)
+  if(btn){btn.hidden=false;btn.addEventListener('click',function(){
+    var f=sec.querySelector('.gigledger li.more:not(.gyear) a');all();if(f)f.focus({preventScroll:true});});}
   var yj=sec.querySelector('.yearjump');
   // unfold FIRST, then scroll: the plain anchor jump measured the target's
   // position while its year was still hidden and landed a screen short.
@@ -15,8 +18,13 @@ document.documentElement.classList.add('js');
     var a=e.target.closest&&e.target.closest('a');if(!a)return;
     var t=document.getElementById(a.getAttribute('href').slice(1));if(!t)return;
     e.preventDefault();all();t.scrollIntoView({behavior:'instant'});history.replaceState(null,'',a.getAttribute('href'));
+    // move keyboard focus with the view, or the next Tab scrolls back up to the chips
+    if(!t.hasAttribute('tabindex'))t.setAttribute('tabindex','-1');t.focus({preventScroll:true});
   });
-  if(location.hash&&/^#y\d{4}$/.test(location.hash))all();
+  if(location.hash&&/^#y\d{4}$/.test(location.hash)){all();
+    var t0=document.getElementById(location.hash.slice(1));
+    if(t0){var de=document.documentElement;de.style.scrollBehavior='auto';t0.scrollIntoView();
+      addEventListener('load',function(){setTimeout(function(){de.style.scrollBehavior='';},0);},{once:true});}}
 })();
 (function(){
   var b=document.getElementById('followbtn');if(!b)return;
@@ -25,7 +33,7 @@ document.documentElement.classList.add('js');
   function get(){try{return JSON.parse(localStorage.getItem(key)||'[]');}catch(e){return [];}}
   function set(a){try{localStorage.setItem(key,JSON.stringify(a));}catch(e){}}
   function following(){return get().indexOf(slug)>-1;}
-  function render(){var f=following();b.classList.toggle('on',f);b.setAttribute('aria-pressed',f?'true':'false');b.textContent=f?'following ✓':(type==='venue'?'follow this venue':'follow this band');}
+  function render(){var f=following();b.classList.toggle('on',f);b.setAttribute('aria-pressed',f?'true':'false');b.textContent=f?'following ✓':(b.getAttribute('data-flabel')||(type==='venue'?'follow this venue':'follow this band'));}
   b.addEventListener('click',function(){var a=get(),i=a.indexOf(slug);if(i>-1)a.splice(i,1);else a.push(slug);set(a);render();});
   render();
 })();

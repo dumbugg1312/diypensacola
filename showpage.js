@@ -4,15 +4,22 @@
   // the flyer link is this lightbox's only way in, so that is where closing it
   // comes back to. It used to return to whatever held focus, and a tap focuses
   // nothing on a phone: a screen reader restarted from the top of the page.
-  function openLb(src){ret=link;img.src=src;lb.classList.add('open');if(x)x.focus();}
-  function closeLb(){lb.classList.remove('open');img.src='';if(ret&&ret.focus)ret.focus({preventScroll:true});ret=null;}
+  // everything behind the open lightbox goes inert (Tab can't wander behind the
+  // scrim) and the page stops scrolling (modal-open, desktop CSS)
+  function inert(on){[].slice.call(document.body.children).forEach(function(el){if(on&&el!==lb)el.setAttribute('inert','');else el.removeAttribute('inert');});
+    document.documentElement.classList.toggle('modal-open',!!on);}
+  function openLb(src){ret=link;img.src=src;lb.classList.add('open');inert(true);if(x)x.focus();}
+  function closeLb(){inert(false);lb.classList.remove('open');img.src='';if(ret&&ret.focus)ret.focus({preventScroll:true});ret=null;}
   if(link&&lb){
     link.addEventListener('click',function(e){
       if(e.metaKey||e.ctrlKey||e.shiftKey||e.button)return; // let power users open in a tab
       e.preventDefault();openLb(link.getAttribute('href'));
     });
-    lb.addEventListener('click',function(e){if(e.target===lb||e.target===x){e.preventDefault();closeLb();}});
-    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&lb.classList.contains('open'))closeLb();});
+    // the zoom-out cursor over the flyer means "click to close" (mouse only, so a
+    // phone can still pinch-zoom and tap without dismissing)
+    lb.addEventListener('click',function(e){if(e.target===lb||e.target===x||(e.target===img&&window.matchMedia&&matchMedia('(hover:hover) and (pointer:fine)').matches)){e.preventDefault();closeLb();}});
+    document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;
+      if(e.key==='Escape')closeLb();else if(e.key==='Tab'){e.preventDefault();if(x)x.focus();}});
   }
   // save this show: the same device-local 'dpc_going' list the homepage star
   // filter reads, so a show saved from a texted permalink turns up in "yours"
@@ -80,7 +87,8 @@
     var canon=document.querySelector('link[rel="canonical"]');
     var url=canon?canon.getAttribute('href'):location.href;
     var title=document.title.replace(/ · DIYPensacola$/,'');
-    function done(){sh.textContent='link copied';setTimeout(function(){sh.textContent='share this flyer';},1600);}
+    var shLab=sh.textContent;
+    function done(){sh.textContent='link copied';setTimeout(function(){sh.textContent=shLab;},1600);}
     function manual(){window.prompt('copy this link',url);}
     function copy(){if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(url).then(done,manual);}else{manual();}}
     sh.addEventListener('click',function(){
