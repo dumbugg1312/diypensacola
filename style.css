@@ -71,6 +71,9 @@ header .tag{color:var(--dim);margin:.7rem 0 0;font-size:.95rem}
 header .lede{color:var(--dim);max-width:54ch;margin:.5rem auto 0;font-size:.82rem;line-height:1.5}
 header h1 a,header .wordmark a{color:inherit;text-decoration:none}
 .homelink{display:block;text-decoration:none}
+/* desktop: the link hugs the logo, so blank header space beside it is not a
+   page-wide home button and the focus ring outlines the logo, not the header */
+@media (min-width:641px){.homelink{width:fit-content;margin:0 auto}}
 .links{display:flex;flex-wrap:wrap;gap:.45rem .6rem;justify-content:center;max-width:var(--w-narrow);margin:0 auto;padding:.8rem 1rem .2rem}
 .links a{font-size:.85rem;text-decoration:none;color:#111;background:var(--tape);padding:.4rem .9rem;
   border:2px solid #111;box-shadow:3px 3px 0 var(--hot);text-transform:uppercase;letter-spacing:.05em;
@@ -274,7 +277,7 @@ body:has(#grid:target) a[href='#grid']{border:2px solid var(--hot);background:va
    closed, so the tonight hero stayed shoved up-left and wall tiles stayed
    straightened until the next tap somewhere else. (Cards aren't focusable, so
    the :focus halves only ever mattered to a mouse anyway.) */
-@media (hover:hover){.show:hover,.show:focus{outline:none;box-shadow:5px 5px 0 var(--hot)}}
+@media (hover:hover){.show:hover,.show:has(:focus-visible){outline:none;box-shadow:5px 5px 0 var(--hot)}}
 .thumbwrap{position:relative;flex:none}
 .show img.thumb{width:84px;height:106px;object-fit:cover;border:2px solid var(--ink);display:block;background:#000}
 .show img.thumb.ph{object-fit:contain;padding:6px;filter:grayscale(.2) opacity(.85)}
@@ -292,7 +295,7 @@ body:has(#grid:target) a[href='#grid']{border:2px solid var(--hot);background:va
 /* tonight cards already wear the hot shadow at rest, so they need their own
    hover/focus state (higher specificity than the base rule) to still signal
    they're clickable - otherwise hovering them does nothing. */
-@media (hover:hover){#b-tonight .show:hover,#b-tonight .show:focus{box-shadow:10px 10px 0 var(--hot);transform:translate(-3px,-3px)}}
+@media (hover:hover){#b-tonight .show:hover,#b-tonight .show:has(:focus-visible){box-shadow:10px 10px 0 var(--hot);transform:translate(-3px,-3px)}}
 /* price/age tags now ride in the card next to the date badge (not over the
    flyer). .daterow lays the date + its tags on one line with a small gap. */
 .daterow{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem;margin-bottom:.12rem}
@@ -309,7 +312,7 @@ body:has(#grid:target) a[href='#grid']{border:2px solid var(--hot);background:va
 .s-new{color:var(--tape);transform:rotate(-2deg)}
 .mon{margin:2rem 0 .6rem;font-size:1.25rem;color:var(--hotink);font-family:"Rock Salt",cursive;transform:rotate(-1deg)}
 .azjump{display:flex;flex-wrap:wrap;gap:.3rem;margin:.5rem 0 1.2rem}
-.azjump a{border:1px solid var(--line);padding:.1rem .45rem;text-decoration:none;font-family:"Special Elite","Courier Adjusted","Courier New",monospace;font-size:.9rem;color:var(--ink)}
+@media (min-width:820px) and (pointer:fine){.dirwrap .azjump{flex-wrap:nowrap;justify-content:space-between;gap:0}.dirwrap .azjump a{padding:.1rem .3rem}}.azjump a{border:1px solid var(--line);padding:.1rem .45rem;text-decoration:none;font-family:"Special Elite","Courier Adjusted","Courier New",monospace;font-size:.9rem;color:var(--ink)}
 .azjump a:hover,.azjump a:focus{background:var(--ink);color:var(--bg)}
 /* pinned "most active" tag(s) beside a wrapped month's archive header */
 .monbadge{display:inline-block;margin-left:.6rem;vertical-align:middle;font-family:"Special Elite","Courier Adjusted","Courier New",monospace;
@@ -327,7 +330,7 @@ body:has(#grid:target) a[href='#grid']{border:2px solid var(--hot);background:va
 .cf img{width:100%;max-height:84px;object-fit:cover;display:block;border:1px solid var(--ink)}
 .cf img.ph{object-fit:contain;background:#000;filter:opacity(.7)}
 .cf span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.stats{display:flex;flex-wrap:wrap;gap:.5rem;margin:.2rem 0 1.5rem}
+@media (hover:hover){.cf:hover img{outline:2px solid var(--hot);outline-offset:1px}.cf:hover span{color:var(--hotink)}}.stats{display:flex;flex-wrap:wrap;gap:.5rem;margin:.2rem 0 1.5rem}
 .stat{background:var(--card);border:1px solid var(--line);padding:.5rem .8rem;font-size:.8rem;color:var(--dim)}
 .stat b{color:var(--hotink);font-size:1.05rem;display:block;font-family:"Anton","Special Elite",sans-serif;font-weight:400;letter-spacing:.02em}
 /* archive year-nav: tape-label jump-links into each era of the archive */
@@ -338,8 +341,19 @@ body:has(#grid:target) a[href='#grid']{border:2px solid var(--hot);background:va
   color:#111;background:var(--tape);border:2px solid #111;padding:.12rem .6rem .18rem;
   box-shadow:2px 2px 0 var(--shadow);transform:rotate(-1deg)}
 .yearnav a:nth-child(even){transform:rotate(1.3deg)}
-.yearnav a:hover,.yearnav a:focus-visible{background:var(--hot);color:var(--on-hot);box-shadow:2px 2px 0 var(--tape)}
+.yearnav a[aria-current="page"],.yearnav a[aria-current="page"]:hover{background:var(--hot);color:var(--on-hot);box-shadow:none;cursor:default}
+@media (min-width:768px){nav.yearnav[style*="--yc"]{display:grid;grid-template-columns:repeat(var(--yc,11),auto);justify-content:center}}.yearnav a:hover,.yearnav a:focus-visible{background:var(--hot);color:var(--on-hot);box-shadow:2px 2px 0 var(--tape)}
 .mon[id]{scroll-margin-top:.8rem}
+main[tabindex="-1"]:focus,#arclist[tabindex="-1"]:focus{outline:none}/* desktop: the mode bar (plus the directory filter bar / archive toolbar under it)
+   stays pinned while you scroll, so anchor jumps, A-Z links, the skip link and
+   keyboard focus scrolling all have to clear the whole sticky stack. FLAG_JS
+   publishes the bar heights. Phones keep their own offsets in the 640px block. */
+@media (min-width:641px){
+  html{scroll-padding-top:calc(var(--a2hs-h,0px) + var(--modebar-h,24px) + .6rem)}
+  html:has(.dirtools){scroll-padding-top:calc(var(--a2hs-h,0px) + var(--modebar-h,24px) + var(--dirtools-h,3.5rem) + .6rem)}
+  html:has(.arctoolbar){scroll-padding-top:calc(var(--a2hs-h,0px) + var(--modebar-h,24px) + var(--arctoolbar-h,3.6rem) + .6rem)}
+  main section{scroll-margin-top:1rem}
+}
 .arch{list-style:none;padding:0;margin:0}
 .arch li{display:flex;gap:.7rem;align-items:center;padding:.5rem 0;border-bottom:1px dashed var(--line)}
 .athumb{width:52px;height:65px;object-fit:cover;border:1px solid var(--ink);flex:none;cursor:pointer;background:#000}
@@ -357,7 +371,7 @@ body:has(#grid:target) a[href='#grid']{border:2px solid var(--hot);background:va
    answers "is anything happening?" and not only "sorry". Ruled off from the
    apology above it. */
 .nfnext{margin:1.3rem 0 .2rem;padding-top:1.1rem;border-top:1px dashed var(--line)}
-.nfnext .emptyline{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.7rem}
+@media (min-width:768px){.nfnext{margin-bottom:1.1rem;padding-bottom:1.1rem;border-bottom:1px dashed var(--line)}}.nfnext .emptyline{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.7rem}
 /* first-use / no-shows state: a dashed-card onboarding moment in the zine
    vocabulary - Anton head, typewriter body, tape-button CTAs. Not a SaaS blank. */
 .emptybig{max-width:520px;margin:2.4rem auto;padding:1.7rem 1.4rem;border:2px dashed var(--line);background:var(--card)}
@@ -378,8 +392,8 @@ body:has(#grid:target) a[href='#grid']{border:2px solid var(--hot);background:va
 footer{text-align:center;color:var(--dim);font-size:.85rem;
   max-width:var(--w-narrow);margin:3rem auto 0;padding:1.6rem 1rem 2.5rem;
   border-top:2px dashed var(--line)}
-footer b{color:var(--hot)}
-/* the gap lives on .fline, not on .finelinks, so the sign-off still clears the
+footer b{color:var(--hotink)}
+.show h3 a:focus-visible{outline:none;color:var(--hotink);text-decoration:underline solid var(--tape) 3px;text-underline-offset:.06em;text-decoration-skip-ink:none}/* the gap lives on .fline, not on .finelinks, so the sign-off still clears the
    credit line on the homepage - the one page that drops the follow row here
    because it already carries it under the masthead buttons. */
 footer .fline{margin:0 0 .85rem}
@@ -422,6 +436,16 @@ footer .built{display:inline-block}
   justify-content:center;background:var(--card);border:2px solid var(--line);font-size:1.4rem;z-index:4}
 .detail .x:hover,.detail .x:focus-visible{border-color:var(--hot);color:var(--hot)}
 .detail .dinfo{padding-right:1.4rem}
+/* desktop: while a sheet, lightbox or dialog is open the page behind stays put
+   (a wheel over the backdrop used to scroll the feed away underneath). The quick-look
+   sheet scrolls its info column instead of the whole box, so the close X in the
+   box corner never scrolls out of view. Phones keep the bottom-sheet rules. */
+@media (min-width:641px){
+  html.modal-open,html:has(dialog[open]){overflow:hidden}
+  .detail .dbox{overflow:hidden}
+  .detail .dinfo{max-height:calc(90vh - 2.2rem);overflow:auto;overscroll-behavior:contain}
+  .detail .dflyer{max-height:calc(90vh - 2.2rem)}
+}
 .dbox{background:var(--card);border:1px solid var(--line);box-shadow:8px 8px 0 var(--hot);max-width:680px;width:100%;
   max-height:90vh;overflow:auto;overscroll-behavior:contain;display:flex;gap:1.1rem;padding:1.1rem;position:relative;flex-wrap:wrap}
 .dflyer{width:230px;max-width:42%;object-fit:contain;align-self:flex-start;border:2px solid var(--ink);background:#000;cursor:zoom-in}
@@ -441,7 +465,7 @@ footer .built{display:inline-block}
 .submitlist{margin:.3rem 0 1.2rem;padding-left:1.2rem;line-height:1.7}
 .submitlist li{margin:.15rem 0}
 .dactions{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.9rem}
-.dbtn{display:inline-flex;align-items:center;gap:.4rem;background:var(--tape);color:#111;border:2px solid #111;
+@media (min-width:641px){.spcard .dactions .dbtn{flex:1 1 auto;justify-content:center}.spcard #spsave{min-width:10.9em}}.dbtn{display:inline-flex;align-items:center;gap:.4rem;background:var(--tape);color:#111;border:2px solid #111;
   box-shadow:3px 3px 0 var(--hot);padding:.45rem .85rem;cursor:pointer;font:inherit;text-transform:uppercase;
   letter-spacing:.05em;font-size:.82rem;text-decoration:none}
 @media (hover:hover){.dbtn:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}}
@@ -467,9 +491,9 @@ main section:target{animation:viewin .26s ease both}
   display:flex;align-items:center;justify-content:center;cursor:pointer;
   background:var(--tape);color:#111;border:2px solid #111;box-shadow:3px 3px 0 var(--hot);
   font:1.5rem/1 "Anton","Special Elite",sans-serif;text-decoration:none;
-  transform:rotate(-3deg) translateY(10px);opacity:0;pointer-events:none;
-  transition:opacity .2s,transform .2s}
-.totop.on{opacity:1;pointer-events:auto;transform:rotate(-3deg) translateY(0)}
+  transform:rotate(-3deg) translateY(10px);opacity:0;pointer-events:none;visibility:hidden;
+  transition:opacity .2s,transform .2s,visibility 0s linear .2s}
+.totop.on{opacity:1;pointer-events:auto;visibility:visible;transform:rotate(-3deg) translateY(0);transition:opacity .2s,transform .2s,visibility 0s}
 .totop:hover{background:var(--hot);color:var(--on-hot);box-shadow:3px 3px 0 var(--tape)}
 .totop:active{transform:rotate(-3deg) translate(2px,2px);box-shadow:1px 1px 0 var(--hot)}
 
@@ -752,6 +776,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   box-shadow:8px 8px 0 var(--hot);padding:1.2rem;flex-wrap:wrap;margin-top:1.1rem}
 .spflyer{width:300px;max-width:100%;height:auto;border:2px solid var(--ink);background:#000;display:block;
   align-self:flex-start;cursor:zoom-in}
+.spflyer.ph{cursor:default}
+.spflyerlink{display:block;align-self:flex-start}
 .spinfo{flex:1;min-width:15rem}
 .spinfo h1{margin:.1rem 0 .7rem;font-family:"Anton","Special Elite",sans-serif;font-weight:400;
   font-size:clamp(1.7rem,6vw,2.1rem);line-height:1.05;letter-spacing:.01em;text-transform:uppercase;
@@ -787,7 +813,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 #list.wall .show:nth-child(3n+1){transform:rotate(-1.6deg)}
 #list.wall .show:nth-child(3n+2){transform:rotate(1.2deg)}
 #list.wall .show:nth-child(3n){transform:rotate(-.5deg)}
-@media (hover:hover){#list.wall .show:hover,#list.wall .show:focus{transform:rotate(0) scale(1.02);box-shadow:none;z-index:2}}
+@media (hover:hover){#list.wall .show:hover,#list.wall .show:has(:focus-visible){transform:rotate(0) scale(1.02);box-shadow:none;z-index:2}}
 /* the tape sits ON the poster's top edge (like tape actually holding it up), so
    it can never float loose in the gap between two stacked posters. */
 #list.wall .thumbwrap::before{content:"";position:absolute;top:2px;left:50%;transform:translateX(-50%) rotate(-2deg);
@@ -805,7 +831,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 #list.wall #b-tonight .show h3{font-size:1rem}
 @media (max-width:900px){#list.wall .cards{column-count:2}}
 @media (max-width:560px){#list.wall .cards{column-count:1}}
-
+/* desktop: rows, not columns. Multi-column filled top-to-bottom, so the first row
+   read Oct 6 / Oct 22 / Nov 10. One- and two-poster buckets sit centred. */
+@media (min-width:901px){#list.wall .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;gap:1.5rem 1.2rem;column-count:auto}
+  #list.wall .show{margin:0}
+  #list.wall .cards:not(:has(.show:not(.past) ~ .show:not(.past) ~ .show:not(.past))){grid-template-columns:repeat(auto-fit,minmax(0,280px));justify-content:center}
+  #list.wall:not(.yours) .cards:not(:has(.show:not(.past) ~ .show:not(.past))){grid-template-columns:minmax(0,430px);justify-content:center}
+  #list.wall.yours #b-yours .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-count:auto}}
 /* saved-shows tab: one undivided wall. The tonight/this week/next week/later
    split is a scanning aid for the full feed and just fragments a handful of
    saved flyers, so the headers (and the quiet-night notice) go and each card's
@@ -830,10 +862,15 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
      SHOW HERE recruitment box. All pure ink: black bars are forced with
      print-color-adjust since photocopiers are the target output anyway. */
   @page{margin:.4in}
+  /* paper is white: remap the dark-theme text tokens (var(--ink) is near-white and
+     printed invisibly on every page that uses it) and print in the light scheme so
+     the page margins are not a black frame */
+  :root{color-scheme:light;--ink:#000;--dim:#444;--on-hot:#000}
+  body.showpage{--line:#999;--card:#fff;--bg:#fff;--hotink:#000;--hot:#777}
   body{background:#fff;color:#000;font:10.5pt/1.35 "Special Elite","Courier Adjusted","Courier New",monospace}
   header,.links,.finelinks,.modebar,nav,.controls,#grid,.endtip,.tapedeck,footer,.totop,.closer,.tip,.a2hs,.lb,.detail,#nohits,#noupcoming,.tstrip,.printbar,.savebtn,.doorsin,.bnone,.ht,.yourstrip{display:none!important}
   main:not(:has(section:target)) #list{display:block}
-  main section{display:none!important}
+  main section:not(.acthero){display:none!important}
   main section#list{display:block!important}
   /* ---- masthead: gutter (FREE stamp) · title stack · QR ---- */
   .printhead{display:grid;grid-template-columns:1in 1fr 1in;column-gap:.14in;align-items:start;text-align:center;border-bottom:6px double #000;margin-bottom:.2in;padding-bottom:.14in}
@@ -856,7 +893,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
     -webkit-print-color-adjust:exact;print-color-adjust:exact;
     border:0!important;box-shadow:none!important;transform:none!important;
     font-family:"Rock Salt","Special Elite",cursive;font-weight:400;font-size:11pt;
-    letter-spacing:.06em;text-transform:lowercase;padding:.05in .1in .07in;margin:.22in 0 .02in;break-after:avoid}
+    letter-spacing:.06em;text-transform:lowercase;padding:.05in .1in .07in;margin:.22in 0 .02in;break-after:avoid;break-inside:avoid;page-break-inside:avoid}
   #b-tonight .bhead{margin-top:.04in}
   .bhead::after{display:none}
   .bhead .lab{background:none!important;color:#fff!important;padding:0;transform:none!important;box-shadow:none!important;border:0!important}
@@ -887,8 +924,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   .show img.thumb{display:block!important;width:100%!important;height:auto!important;
     max-height:none!important;object-fit:contain!important;transform:none!important;
     filter:grayscale(1) contrast(1.15)!important;background:#fff!important;
-    border:1.5px solid #000!important;padding:0!important}
-  .show .info{display:block!important;min-width:0}
+    border:1.5px solid #000!important;padding:0!important;box-shadow:none!important}
+  .show .info{display:block!important;min-width:0;background:none!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important}
   .show .daterow{display:flex!important;flex-wrap:wrap;gap:.06in;align-items:center;margin-bottom:.02in}
   .show .date{display:inline-block!important;background:#000!important;color:#fff!important;
     -webkit-print-color-adjust:exact;print-color-adjust:exact;
@@ -958,7 +995,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .dirtog.on,.dirtog[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
 .dirtog:hover,.dirtog:focus-visible{border-color:var(--ink)}
 #dircount{color:var(--dim);font-size:.85rem;margin-left:auto}
-.soon{color:var(--hotink);font-weight:400;font-style:normal}
+@media (min-width:701px){#dircount{flex:none;min-width:5.6rem;text-align:right;font-variant-numeric:tabular-nums}}.soon{color:var(--hotink);font-weight:400;font-style:normal}
 #dirlist.flat h2.mon{display:none}
 #dirlist.flat .azjump{display:none}
 .dirwrap .azjump{margin:.6rem 0 .4rem}
@@ -975,7 +1012,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .arcwrap .dirsub{margin-bottom:1.6rem}
 /* the "?" help badge next to SEARCH THE SCENE, linking to archive-help.html */
 .helpq{display:inline-flex;align-items:center;justify-content:center;width:1.5rem;height:1.5rem;
-  margin-left:.5rem;vertical-align:.28em;border:2px solid var(--hot);color:var(--hot);border-radius:50%;
+  margin-left:.5rem;vertical-align:.28em;border:2px solid var(--hot);color:var(--hotink);border-radius:50%;
   font-family:"Special Elite",monospace;font-size:.9rem;line-height:1;text-decoration:none;
   text-shadow:none;box-shadow:none;flex:none}
 .helpq:hover,.helpq:focus-visible{background:var(--hot);color:var(--on-hot)}
@@ -1021,6 +1058,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   box-shadow:4px 4px 0 var(--hot);padding:.55rem .95rem;margin:.9rem 0 .3rem;text-decoration:none;
   font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.04em;font-size:1.08rem;
   transform:rotate(-1deg);transition:background .12s ease,color .12s ease,box-shadow .12s ease}
+.nextgig small{flex:none;white-space:nowrap}
 .nextgig small{font-family:"Special Elite","Courier Adjusted","Courier New",monospace;font-size:.68rem;letter-spacing:.08em}
 .nextgig:hover{background:var(--hot);color:var(--on-hot);box-shadow:4px 4px 0 var(--tape)}
 .nextgig:active{transform:rotate(-1deg) translate(2px,2px);box-shadow:1px 1px 0 var(--hot)}
@@ -1038,7 +1076,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   font:.86rem/1.5 "Special Elite","Courier Adjusted","Courier New",monospace}
 .resume li:last-child{border-bottom:none}
 .resume .rk{flex:none;min-width:7.4rem;color:var(--dim);font-size:.66rem;text-transform:uppercase;letter-spacing:.09em}
-.resume .rv{color:var(--ink)}
+@media (min-width:561px){.resume .rk{min-width:9.8rem}}.resume .rv{color:var(--ink)}
 .resume .rv small{color:var(--dim);font-size:.72rem}
 .resume .rv a{color:var(--hotink);text-decoration-style:dotted;text-underline-offset:3px}
 .resume .rv a:hover,.resume .rv a:focus-visible{color:var(--ink);text-decoration-style:solid}
@@ -1084,12 +1122,20 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   box-shadow:8px 8px 0 var(--hot);padding:1.3rem 1.4rem 1.5rem}
 .heroinfo{min-width:0}
 .actpage .dirhead{font-size:clamp(2.3rem,8vw,3.8rem);text-shadow:4px 4px 0 var(--hot)}
+/* desktop: a long one-word name (WHATSDYSMORPHIA, MUSIC/PERFORMANCE) can't wrap and ran
+   out of the card under the hero flyer. --nw (build-measured em width, only on long
+   names) fits it to the card's own width; other names keep the clamp. Phones: 700px block. */
+@media (min-width:701px){.actcard{container-type:inline-size}
+  .actpage .dirhead[style*="--nw"]{font-size:max(1.6rem,min(3.8rem,calc(94cqi / var(--nw))))}
+  /* stampless heroes (venues, drag/open-mic pages): the tilted name + shadow ran into the subline */
+  .heroinfo>.actmast:not(:has(.ostamp))+.dirsub{margin-top:.55rem}}
 .heropost{flex:none;width:min(300px,36%);position:relative;display:block;text-decoration:none;
   transform:rotate(1.8deg);margin-top:.5rem}
 .heropost::before{content:"";position:absolute;top:-7px;left:50%;transform:translateX(-50%) rotate(-3deg);
   width:64px;height:17px;background:var(--tape);opacity:.8;z-index:2;box-shadow:0 1px 2px rgba(0,0,0,.4)}
 .heropost img{width:100%;height:auto;display:block;border:3px solid var(--ink);
   box-shadow:8px 8px 0 rgba(0,0,0,.5);background:#000}
+@media (min-width:701px){.heropost img{max-height:23.5rem;object-fit:contain}}
 .heropost .hpcap{display:block;background:var(--card);border:1px solid var(--line);border-top:none;
   margin:0 3px;padding:.4rem .6rem;font:.7rem/1.4 "Special Elite","Courier Adjusted","Courier New",monospace;
   letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}
@@ -1151,6 +1197,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   text-decoration:none;border:1px dashed var(--line);padding:.2rem .45rem;background:var(--card)}
 .yearjump a:hover,.yearjump a:focus-visible{color:var(--hotink);border-color:var(--hot);border-style:solid}
 .gigledger li.gyear{scroll-margin-top:4rem}
+.gigledger li.gyear:focus{outline:none}
 .actsec .spthread{margin:1.2rem 0 .2rem;max-width:none}
 /* ---- profile layout (act + venue pages) ---- */
 .credline{margin:.1rem 0 .9rem}
@@ -1161,9 +1208,16 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   letter-spacing:.07em;color:var(--dim);text-decoration:none;border:2px dashed var(--line);padding:.3rem .6rem;background:var(--card)}
 .actjump a:hover,.actjump a:focus-visible{border-color:var(--hot);border-style:solid;color:var(--hotink)}
 .actsec{scroll-margin-top:4rem}
+/* desktop: html scroll-padding already clears the mode bar, so trim these */
+@media (min-width:641px){.actsec,.gigledger li.gyear{scroll-margin-top:1.4rem}}
 .actsec>.dirsec{margin-top:2.2rem}
 .actsec .actwallbtn{margin-left:auto;font:.7rem/1 "Special Elite","Courier Adjusted","Courier New",monospace;
   text-transform:uppercase;letter-spacing:.06em;padding:.32rem .55rem;display:inline-flex;align-items:center;gap:.35rem}
+/* the wall toggle also carries .searchtoggle (a fixed 2.5rem square), so its grid icon
+   collapsed to 0px beside the label; the follow button keeps one width when toggled */
+.actsec .actwallbtn svg{flex:none}
+@media (min-width:641px){.actsec .actwallbtn{width:auto;height:auto;min-height:2.1rem}}
+@media (min-width:701px){.dactions .followbtn{min-width:10.7rem;justify-content:center}}
 .actsec .actwallbtn[hidden]{display:none}
 /* list is the page; the wall is a view of it */
 .actshows .postwall{display:none}
@@ -1184,7 +1238,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .postwall{column-count:3;column-gap:1.1rem;margin:.5rem 0 .6rem}
 @media (max-width:820px){.postwall{column-count:2}}
 @media (max-width:480px){.postwall{column-count:1}}
-.pwtile{display:block;break-inside:avoid;position:relative;margin:0 0 1.2rem;text-decoration:none}
+@media (min-width:821px){.postwall,.actshows.wall .postwall{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:1.1rem;align-items:start;column-count:auto}}.pwtile{display:block;break-inside:avoid;position:relative;margin:0 0 1.2rem;text-decoration:none}
 .pwtile:nth-child(3n+1){transform:rotate(-1.4deg)}
 .pwtile:nth-child(3n+2){transform:rotate(1.1deg)}
 .pwtile:nth-child(3n){transform:rotate(-.4deg)}
@@ -1208,6 +1262,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
   padding:.28rem 0 .34rem}
 .gdate b{display:block;font-family:"Anton","Special Elite",sans-serif;font-weight:400;
   font-size:1.3rem;line-height:1}
+.gdate a{display:block;margin:-.28rem 0 -.34rem;padding:.28rem 0 .34rem;color:inherit;text-decoration:none}
+.gdate:has(a:hover){border-color:var(--hot)}
 .gdate i{display:block;font-style:normal;font-size:.6rem;letter-spacing:.09em;text-transform:uppercase;
   color:var(--dim);margin-top:.16rem}
 .gigledger li.up .gdate{border-color:var(--hot);box-shadow:3px 3px 0 var(--shadow)}
@@ -1287,7 +1343,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .actchips{display:flex;flex-wrap:wrap;gap:.35rem;margin:.1rem 0 .55rem}
 .actchips a{font-size:.78rem;text-decoration:none;color:var(--ink);background:var(--card);
   border:2px dashed var(--dim);padding:.3rem .55rem;text-transform:lowercase}
-.actchips a:hover{border-color:var(--hot);color:var(--hot)}
+@media (hover:hover){.actchips a:hover{border-color:var(--hotink);color:var(--hotink)}}
 /* a little tape holding each list-card flyer down - echoes the wall view's tape
    without changing the card layout. Wall view keeps its own bigger strip. */
 #list:not(.wall) .thumbwrap::before{content:"";position:absolute;top:-5px;left:50%;
@@ -1367,12 +1423,14 @@ main{max-width:940px}
 /* flyers: whole art, ~12% desaturated at rest, full color on hover */
 @media (hover:hover){
   #list:not(.wall) .show img.thumb:not(.ph){filter:grayscale(.12);transition:filter .2s ease}
-  #list:not(.wall) .show:hover img.thumb,#list:not(.wall) .show:focus img.thumb{filter:none}
+  #list:not(.wall) .show:hover img.thumb,#list:not(.wall) .show:has(:focus-visible) img.thumb{filter:none}
 }
 
 /* --- HERO: the very next show. Tonight's card, or (nothing tonight) the first
    This Week poster. The :has() flips it live if the JS re-buckets by viewer date. --- */
 #list:not(.wall) #b-tonight .cards{display:block}
+/* two or more tonight heroes stacked flush and read as one card */
+@media (min-width:641px){#list:not(.wall) #b-tonight .show + .show{margin-top:1.4rem}}
 #list:not(.wall) #b-tonight .show,
 #list:not(.wall) #b-tonight:not(:has(.show)) ~ #b-week .show:first-child{
   display:grid;grid-template-columns:minmax(0,320px) 1fr;gap:1.5rem;align-items:center;padding:1.2rem}
@@ -1475,7 +1533,8 @@ main{max-width:940px}
 .samenight .lead{font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--dim);width:100%}
 .samenight a{display:inline-block;font-size:.8rem;text-decoration:none;color:var(--ink);background:var(--card);
   border:1px solid var(--line);padding:.22rem .5rem}
-.samenight a:hover,.samenight a:focus-visible{border-color:var(--hot);color:var(--hot)}
+.samenight a:focus-visible{border-color:var(--hotink);color:var(--hotink)}
+@media (hover:hover){.samenight a:hover{border-color:var(--hotink);color:var(--hotink)}}
 .samenight a small{color:var(--dim)}
 
 /* ---------- the thread: a show page's way onward through the record ----------
@@ -1511,7 +1570,10 @@ main{max-width:940px}
   overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .spthread .thstep:hover small,.spthread .thstep:focus-visible small{color:inherit}
 .spthread .thnext{text-align:right}
-/* "still on" - the only part of the thread that points at a night you can go to,
+.spthread .thfwdstep:hover,.spthread .thfwdstep:focus-visible{border-color:var(--ink)}
+/* a lone prev/next card filled the whole row with its text shoved to the far edge */
+@media (min-width:641px){.spthread .thsteps>.thprev:only-child,.spthread .thsteps>.thnext:only-child{flex:0 1 calc(50% - .3rem)}
+  .spthread .thsteps>.thnext:only-child{margin-left:auto}}/* "still on" - the only part of the thread that points at a night you can go to,
    so it reads live rather than archival: solid border, hot lead. Sits first. */
 .spthread .thfwd .lead{color:var(--hotink)}
 .spthread .thfwdstep{border-color:var(--hotink)}
@@ -1534,7 +1596,7 @@ main{max-width:940px}
 #arclist.wall .arch li{display:block;break-inside:avoid;margin:0 0 1.1rem;padding:0;
   border:0;background:none;position:relative}
 #arclist.wall .arch li[data-flyer="0"]{display:none}
-#arclist.wall .arch li:nth-child(3n+1){transform:rotate(-1.4deg)}
+#arclist.wall .athumb:not([width]){aspect-ratio:auto 4/5}#arclist.wall .arch li:nth-child(3n+1){transform:rotate(-1.4deg)}
 #arclist.wall .arch li:nth-child(3n+2){transform:rotate(1.1deg)}
 #arclist.wall .arch li:nth-child(3n){transform:rotate(-.4deg)}
 #arclist.wall .arch li:hover,#arclist.wall .arch li:focus-within{transform:rotate(0);z-index:2}
@@ -1582,11 +1644,13 @@ main{max-width:940px}
 .quickmatch a:hover,.quickmatch a:focus-visible{background:var(--hot);color:var(--on-hot)}
 .quickmatch a:hover small,.quickmatch a:focus-visible small{color:var(--on-hot)}
 .quickmatch a small{color:var(--dim)}
-.qmmore{background:transparent;border:0;color:var(--hot);cursor:pointer;font-family:inherit;font-size:.68rem;line-height:1;
+.qmmore{background:transparent;border:0;color:var(--hotink);cursor:pointer;font-family:inherit;font-size:.68rem;line-height:1;
   text-decoration:underline;text-transform:none;letter-spacing:0;white-space:nowrap}
 .arch li a.arow{color:var(--ink);text-decoration:none}
 .arch li a.arow:hover strong,.arch li a.arow:focus-visible strong{color:var(--hotink)}
 .arch li strong a{color:var(--ink);text-decoration:none}
+@media (hover:hover){.arch li strong a:hover{color:var(--hotink);text-decoration:underline dotted;text-decoration-color:var(--hotink);text-underline-offset:.14em}}
+.arch li strong a:focus-visible{color:var(--hotink)}
 .flashback{border:2px dashed var(--line);background:var(--card);padding:.7rem .9rem;margin:0 0 1.1rem}
 .flashback h2{font-family:"Anton","Special Elite",sans-serif;font-weight:400;text-transform:uppercase;
   letter-spacing:.03em;font-size:.95rem;margin:0 0 .5rem;color:var(--hotink)}
@@ -1636,7 +1700,7 @@ main{max-width:940px}
   padding:.55rem 0 .3rem;border-bottom:2px solid var(--line);margin-bottom:.3rem}
 .facetstitle{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;
   letter-spacing:.05em;font-size:1rem;color:var(--hotink)}
-.clearall{background:transparent;border:0;color:var(--hot);cursor:pointer;
+.clearall{background:transparent;border:0;color:var(--hotink);cursor:pointer;
   font-family:inherit;font-size:.74rem;line-height:1;text-transform:uppercase;letter-spacing:.04em;text-decoration:underline}
 .facetgroup{padding:.5rem 0;border-bottom:1px dashed var(--line)}
 .facetgroup:last-child{border-bottom:none}
@@ -1655,13 +1719,13 @@ main{max-width:940px}
 .facet.on .fcount{color:var(--ink)}
 .facet-extra{display:none}
 .facetgroup.expanded .facet-extra{display:flex}
-.facet-zero{display:none}
-.facetmore{background:transparent;border:0;color:var(--hot);cursor:pointer;font-family:inherit;font-size:.76rem;line-height:1;
+.facet-zero,.facetgroup.expanded .facet-extra.facet-zero{display:none}
+.facetmore{background:transparent;border:0;color:var(--hotink);cursor:pointer;font-family:inherit;font-size:.76rem;line-height:1;
   text-decoration:underline;padding:.3rem .15rem;text-align:left}
 @media(min-width:820px){
   .arclayout{display:grid;grid-template-columns:236px minmax(0,1fr);gap:1.5rem;align-items:start}
-  .arcfacets{position:sticky;top:calc(var(--modebar-h,0px) + .4rem);margin:0;
-    max-height:calc(100vh - var(--modebar-h,0px) - .8rem);max-height:calc(100dvh - var(--modebar-h,0px) - .8rem);overflow:auto;overscroll-behavior:contain}
+  .arcfacets{position:sticky;top:calc(var(--a2hs-h,0px) + var(--modebar-h,0px) + var(--arctoolbar-h,3.6rem) + .4rem);margin:0;
+    max-height:calc(100vh - var(--a2hs-h,0px) - var(--modebar-h,0px) - var(--arctoolbar-h,3.6rem) - .8rem);max-height:calc(100dvh - var(--a2hs-h,0px) - var(--modebar-h,0px) - var(--arctoolbar-h,3.6rem) - .8rem);overflow:auto}
   .refinebtn{display:none}
 }
 @media(max-width:819px){
@@ -1680,7 +1744,7 @@ main{max-width:940px}
 .mbar.peak .mt{background:linear-gradient(90deg,var(--hotink),var(--free))}
 .leaders{list-style:none;padding:0;margin:.3rem 0 0}
 .leaders li{display:flex;align-items:baseline;gap:.6rem;padding:.4rem 0;border-bottom:1px dashed var(--line)}
-.leaders .rank{font-family:"Anton","Special Elite",sans-serif;color:var(--dim);width:1.8rem;font-size:1rem}
+.leaders .rank{font-family:"Anton","Special Elite",sans-serif;color:var(--dim);width:1.8rem;font-size:1rem;flex:none}
 .leaders a,.leaders .nm{font-family:"Anton","Special Elite",sans-serif;text-transform:uppercase;letter-spacing:.02em;
   font-size:1.05rem;color:var(--ink);text-decoration:none}
 .leaders a:hover,.leaders a:focus-visible{color:var(--hotink)}
@@ -1689,6 +1753,9 @@ main{max-width:940px}
 @media(min-width:680px){.statcols{grid-template-columns:1fr 1fr}}
 /* ---- scene radio (radio.html): the shuffle jukebox over every curated clip ---- */
 .radiowrap{max-width:900px;margin:0 auto;padding:0 1rem 3rem}
+/* guide, radio and archive-help titles sat 3-6px under the tape buttons (the dirwrap
+   pages get 2rem of air via .dirwrap:not(.actpage):not(.arcwrap)) */
+@media (min-width:768px){.showpage main.guide,.showpage main.archelp,main.radiowrap{padding-top:2rem}}
 .radiolede{color:var(--dim);font-size:.9rem;max-width:60ch;margin:.2rem auto 1.4rem;text-align:center;line-height:1.55}
 .radiolede b{color:var(--hotink)}
 .rstage{position:relative;aspect-ratio:16/9;background:#000;border:3px solid #111;box-shadow:6px 6px 0 var(--hot);margin-bottom:.7rem}
@@ -1938,7 +2005,7 @@ header .homelink,header .home,header .logo,header .home img{
    here would snap the tilt straight). Hover-capable pointers only. */
 @media (hover:hover){
   #list:not(.wall) #b-week .show{transition:translate .14s ease,box-shadow .14s ease}
-  #list:not(.wall) #b-week .show:hover,#list:not(.wall) #b-week .show:focus{translate:-2px -2px;box-shadow:7px 7px 0 var(--hot)}
+  #list:not(.wall) #b-week .show:hover,#list:not(.wall) #b-week .show:has(:focus-visible){translate:-2px -2px;box-shadow:7px 7px 0 var(--hot)}
   #list:not(.wall) .bucket.dense .show{transition:background-color .12s ease}
 }
 /* a show page printed is the flyer, whole, with the date and lineup under it:
@@ -1949,9 +2016,10 @@ header .homelink,header .home,header .logo,header .home img{
   .showpage .spcard{display:block!important;background:none!important;border:0!important;
     box-shadow:none!important;padding:0!important;margin:0!important;transform:none!important}
   .showpage .spflyerlink{display:block;text-align:center}
-  .showpage .spflyer{width:auto!important;max-width:100%!important;max-height:7.6in;margin:0 auto .18in;
+  .showpage .spflyer{width:auto!important;max-width:100%!important;max-height:6.8in;margin:0 auto .18in;
     border:1.5px solid #000!important;filter:none!important;box-shadow:none!important}
-  .showpage .spinfo{text-align:center;color:#000!important;min-width:0}
+  .showpage .spinfo{color:#000!important;min-width:0}
+  .showpage .spcard:has(.spflyer) .spinfo{text-align:center}
   .showpage .spinfo .date{display:inline-block;background:#000!important;color:#fff!important;
     -webkit-print-color-adjust:exact;print-color-adjust:exact;border:0!important;transform:none!important;
     padding:.02in .08in;font-size:9pt;letter-spacing:.12em;text-transform:uppercase}
@@ -1959,6 +2027,27 @@ header .homelink,header .home,header .logo,header .home img{
   .showpage .drow,.showpage .dcap{color:#000!important}
   .showpage .drow a{color:#000!important;text-decoration:none!important}
   .showpage .dcap{max-width:6in;margin:.1in auto 0;font-size:9.5pt}
-  .showpage .dactions,.showpage .actchips,.showpage .samenight,.showpage .pastflag,.showpage .lb,.showpage .savebtn{display:none!important}
+  .showpage .spcard:has(.spflyer) .dcap{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+  .showpage .spcard:not(:has(.spflyer)) .dcap{max-width:none;margin:.1in 0 0}
+  .showpage .spcard:has(.spflyer){break-inside:avoid}
+  .showpage .drow b{color:#000!important}
+  .showpage .drow.dcancel{border-color:#000!important}
+  .showpage .spcard:has(.spflyer) .dactions,.showpage .actchips,.showpage .samenight,.showpage .pastflag,.showpage .lb,.showpage .savebtn{display:none!important}
+  /* act / venue / year / drag / open-mic / directory pages: a plain ink record.
+     The hero (name, credline, next gig) prints; screen controls and embeds don't;
+     folded timeline rows unfold so the printout is the whole record. */
+  .dirwrap,.dirwrap *{color:#000!important;text-shadow:none!important;box-shadow:none!important}
+  .dirwrap .actcard,.dirwrap .gdate,.dirwrap .gven,.dirwrap .bmates a,.dirwrap .rchip,.dirwrap .credline{background:none!important}
+  .actpage .acthero{display:flex!important}
+  .actpage .heropost,.actpage .actmast .dirhead{transform:none!important}
+  .actpage .heropost img{filter:none!important;border:1.5px solid #000!important}
+  #watch,#actwallbtn,.actwallbtn,.showall,.yearjump,.actjump,.postwall,.acthero .dactions,.acthero .subalts,.dirtools,.azjump,#dirnone{display:none!important}
+  .actshows .gigledger li.more{display:flex!important}
+  /* archive: print the results, not the search UI */
+  #arcsearch,.quickmatch,.arcpresets,.arcbar,.arcfacets,.facetmore,.arcempty .clearall,#clearempty,.refinebtn{display:none!important}
+  .arclayout{display:block!important}
+  .arctoolbar{position:static!important;background:none!important;border:0!important;padding:0!important;margin:0 0 .1in!important}
+  .achip{background:none!important;color:#000!important;border:1px solid #000!important}
+  .achip .ax{display:none}
 }
 

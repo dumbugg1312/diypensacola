@@ -14,6 +14,13 @@
     function setMB(){document.documentElement.style.setProperty('--modebar-h',mb.offsetHeight+'px');}
     setMB();window.addEventListener('resize',setMB);
     if(window.ResizeObserver){try{new ResizeObserver(setMB).observe(mb);}catch(e){}}})();
+  // the directory filter bar and the archive toolbar stick under the mode bar too;
+  // publish their heights so anchor jumps, A-Z links and keyboard focus can clear
+  // the whole sticky stack (desktop scroll-padding-top in style.css)
+  ['dirtools','arctoolbar'].forEach(function(c){var el=document.querySelector('.'+c);if(!el)return;
+    function set(){document.documentElement.style.setProperty('--'+c+'-h',el.offsetHeight+'px');}
+    set();window.addEventListener('resize',set);
+    if(window.ResizeObserver){try{new ResizeObserver(set).observe(el);}catch(e){}}});
   // logo flips which way it tilts on each hover
   var _logo=document.querySelector('header .logo'),_leftTilt=true;
   if(_logo){
@@ -33,6 +40,9 @@
       var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       if(rm||!('scrollBehavior' in document.documentElement.style))window.scrollTo(0,0);
       else window.scrollTo({top:0,behavior:'smooth'});
+      // keyboard activation (detail 0): the button fades out at the top, so hand
+      // focus to the top of the page instead of leaving it on a hidden control
+      if(e.detail===0){var t=document.querySelector('.skip')||document.querySelector('header .homelink');if(t)t.focus({preventScroll:true});}
     });
   }
 
