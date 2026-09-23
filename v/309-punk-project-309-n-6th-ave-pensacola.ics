@@ -23,26 +23,14 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-22-309-eraser-stamps-workshop-blue-olive-press@diypensacola
-DTSTAMP:20260922T000000Z
-DTSTART;TZID=America/Chicago:20260922T170000
-DTEND;TZID=America/Chicago:20260922T200000
-SUMMARY:Eraser Stamps Workshop\, Blue Olive Press\, Draw Together @ 309
-DESCRIPTION:eraser stamps workshop at 309\, tuesday september 22nd\, 5 to 8
- pm. free\, space is limited. with blue olive press and draw together.
-LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-22-309-eraser-stamps-workshop-blue-o
- live-press.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-16-309-rent-strike-myles-bullen@diypensacola
 DTSTAMP:20261016T000000Z
 DTSTART;TZID=America/Chicago:20261016T183000
 DTEND;TZID=America/Chicago:20261016T213000
-SUMMARY:Rent Strike\, Myles Bullen\, Outlook Bleak @ 309 Punk Project
+SUMMARY:Rent Strike\, Myles Bullen\, Outlook Bleak @ 309
 DESCRIPTION:Rent Strike in two weeks at @309punkproject!\n\n@rent__strike @
  beatboxpoet @outlook_bleak
-LOCATION:309 Punk Project\, 309 N 6th Ave\, Pensacola\, FL
+LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-16-309-rent-strike-myles-bullen.html
 END:VEVENT
 BEGIN:VEVENT
@@ -50,10 +38,10 @@ UID:2026-11-14-309-night-on-the-tracks-the-art-of-protest@diypensacola
 DTSTAMP:20261114T000000Z
 DTSTART;TZID=America/Chicago:20261114T180000
 DTEND;TZID=America/Chicago:20261114T210000
-SUMMARY:Night on the Tracks: The Art of Protest @ 309 Punk Project
+SUMMARY:Night on the Tracks: The Art of Protest @ 309
 DESCRIPTION:The Art of Protest at 309 for Night on the Tracks\, saturday no
  vember 14th.
-LOCATION:309 Punk Project\, 309 N 6th Ave\, Pensacola\, FL
+LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-14-309-night-on-the-tracks-the-art-o
  f-protest.html
 END:VEVENT

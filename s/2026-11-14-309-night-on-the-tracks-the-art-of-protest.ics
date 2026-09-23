@@ -25,16 +25,15 @@ UID:2026-11-14-309-night-on-the-tracks-the-art-of-protest@diypensacola
 DTSTAMP:20261114T000000Z
 DTSTART;TZID=America/Chicago:20261114T180000
 DTEND;TZID=America/Chicago:20261114T210000
-SUMMARY:Night on the Tracks: The Art of Protest @ 309 Punk Project
+SUMMARY:Night on the Tracks: The Art of Protest @ 309
 DESCRIPTION:The Art of Protest at 309 for Night on the Tracks\, saturday no
  vember 14th.
-LOCATION:309 Punk Project\, 309 N 6th Ave\, Pensacola\, FL
+LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-14-309-night-on-the-tracks-the-art-o
  f-protest.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Night on the Tracks: The Art of Protest @ 309 Punk Pro
- ject
+DESCRIPTION:tonight: Night on the Tracks: The Art of Protest @ 309
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
