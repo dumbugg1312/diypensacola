@@ -22,4 +22,16 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-10-23-the-den-dirty-crumbums-dead-devils@diypensacola
+DTSTAMP:20261023T000000Z
+DTSTART;TZID=America/Chicago:20261023T180000
+DTEND;TZID=America/Chicago:20261023T210000
+SUMMARY:Dirty Crumbums\, Dead Devils\, Ex-Teenage Rebels @ The Den
+DESCRIPTION:Dirty Crumbums Oct 23 with Dead Devils + Ex-Teenage Rebels 🖤
+ \n\n@exteenagerebels
+LOCATION:The Den
+URL:https://diypensacola.com/s/2026-10-23-the-den-dirty-crumbums-dead-devil
+ s.html
+END:VEVENT
 END:VCALENDAR
