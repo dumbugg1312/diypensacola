@@ -28,9 +28,9 @@ UID:2026-09-26-bettys-comedians-in-drag-doing-comedy-dallas-nelson@diypensa
 DTSTAMP:20260926T000000Z
 DTSTART;TZID=America/Chicago:20260926T203000
 DTEND;TZID=America/Chicago:20260926T233000
-SUMMARY:Comedians in Drag Doing Comedy\, Dallas Nelson “Cherry Highman”
- \, Jessie Morrow “Connie Langus”\, Cristina Morandi “Anus Young”\,
-  Dr. Anna Lepeley @ Betty’s
+SUMMARY:Comedians in Drag Doing Comedy\, Dallas Nelson\, Jessie Morrow “C
+ onnie Langus”\, Cristina Morandi “Anus Young”\, Dr. Anna Lepeley @ B
+ etty’s
 DESCRIPTION:comedians in drag doing comedy at betty’s\, saturday septembe
  r 26th. dallas nelson (cherry highman)\, jessie morrow (connie langus)\, c
  ristina morandi (anus young)\, and a mystery comedian tba. hosted by dr. a
@@ -44,8 +44,8 @@ UID:2026-10-01-bettys-cursed-body-crystal-plumage@diypensacola
 DTSTAMP:20261001T000000Z
 DTSTART;TZID=America/Chicago:20261001T200000
 DTEND;TZID=America/Chicago:20261001T230000
-SUMMARY:Cursed Body\, Crystal Plumage\, Cookies and Cake\, Myrrothavn @ Bet
- ty’s
+SUMMARY:Cursed Body\, Crystal Plumage\, Cookies & Cake\, MyBrothaVan @ Bett
+ y’s
 DESCRIPTION:cursed body\, crystal plumage\, cookies and cake and myrrothavn
   at betty’s on belmont thursday october 1st. 8pm\, $10. benefit show for
   the northwest florida wildlife sanctuary.
@@ -72,12 +72,12 @@ DTSTAMP:20261009T000000Z
 DTSTART;TZID=America/Chicago:20261009T200000
 DTEND;TZID=America/Chicago:20261009T230000
 SUMMARY:Punk-or-Treat III\, Ihatesundays\, Mother’s Milk\, Bastard Son\, 
- The Snatches @ Betty’s on Belmont
+ The Snatches @ Betty’s
 DESCRIPTION:punk-or-treat iii\, a food not bombs fundraiser at betty’s on
   friday 10/9. ihatesundays\, mother’s milk\, bastard son and the snatche
  s\, plus a costume contest featuring larry. doors 8pm\, music 9pm. $10-$20
   sliding scale\, or $5 with a donation.
-LOCATION:Betty’s on Belmont\, 506 W Belmont St\, Pensacola\, FL
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-09-bettys-punk-or-treat-iii-friendly
  -spectres.html
 END:VEVENT
@@ -86,7 +86,7 @@ UID:2026-10-15-bettys-lesion-bastard-son@diypensacola
 DTSTAMP:20261015T000000Z
 DTSTART;TZID=America/Chicago:20261015T190000
 DTEND;TZID=America/Chicago:20261015T220000
-SUMMARY:Lesion\, Bastard Son\, Hayweather\, Beautysleep\, 7.7 PNX @ Betty
+SUMMARY:Lesion\, Bastard Son\, Hayweather\, beautysleep\, 7.7 PNX @ Betty
  ’s
 DESCRIPTION:Support @strivepensacola at @bettys_on_belmont in two weeks 
  💞\n\n@lesion_bandfl @bastardsonband @beautysleep850

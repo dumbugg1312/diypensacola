@@ -27,10 +27,10 @@ UID:2026-10-16-309-rent-strike-myles-bullen@diypensacola
 DTSTAMP:20261016T000000Z
 DTSTART;TZID=America/Chicago:20261016T183000
 DTEND;TZID=America/Chicago:20261016T213000
-SUMMARY:Rent Strike\, Myles Bullen\, Outlook Bleak @ 309 Punk Project
+SUMMARY:Rent Strike\, Myles Bullen\, Outlook Bleak @ 309
 DESCRIPTION:Rent Strike in two weeks at @309punkproject!\n\n@rent__strike @
  beatboxpoet @outlook_bleak
-LOCATION:309 Punk Project\, 309 N 6th Ave\, Pensacola\, FL
+LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-16-309-rent-strike-myles-bullen.html
 END:VEVENT
 END:VCALENDAR

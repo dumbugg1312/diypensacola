@@ -25,8 +25,8 @@ UID:2026-10-18-handlebar-fight-night-drag-show-thotberry@diypensacola
 DTSTAMP:20261018T000000Z
 DTSTART;TZID=America/Chicago:20261018T183000
 DTEND;TZID=America/Chicago:20261018T213000
-SUMMARY:Fight Night Drag Show\, Thotberry\, Xenamorphine\, Titanium\, Jay J
- ay DuVay\, Hauntica @ The Handlebar
+SUMMARY:Fight Night Drag Show\, Thotberry Shortcake\, Xena-Morphine\, Titan
+ ium\, Jay Jay DuVay\, Hauntica @ The Handlebar
 DESCRIPTION:the thot factory presents fight night\, hosted by thotberry wit
  h xenamorphine\, titanium\, jay jay duvay\, and hauntica at the handlebar.
   sunday october 18\, doors 6:30\, show at 7. $10 cover\, 18+. dress up\, t
@@ -36,8 +36,8 @@ URL:https://diypensacola.com/s/2026-10-18-handlebar-fight-night-drag-show-t
  hotberry.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Fight Night Drag Show\, Thotberry\, Xena-Morphine\, Ti
- tanium\, Jay Jay DuVay\, Hauntica @ The Handlebar
+DESCRIPTION:tonight: Fight Night Drag Show\, Thotberry Shortcake\, Xena-Mor
+ phine\, Titanium\, Jay Jay DuVay\, Hauntica @ The Handlebar
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT

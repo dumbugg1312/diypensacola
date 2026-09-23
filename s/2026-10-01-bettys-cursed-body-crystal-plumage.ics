@@ -25,8 +25,8 @@ UID:2026-10-01-bettys-cursed-body-crystal-plumage@diypensacola
 DTSTAMP:20261001T000000Z
 DTSTART;TZID=America/Chicago:20261001T200000
 DTEND;TZID=America/Chicago:20261001T230000
-SUMMARY:Cursed Body\, Crystal Plumage\, Cookies and Cake\, Myrrothavn @ Bet
- ty’s
+SUMMARY:Cursed Body\, Crystal Plumage\, Cookies & Cake\, MyBrothaVan @ Bett
+ y’s
 DESCRIPTION:cursed body\, crystal plumage\, cookies and cake and myrrothavn
   at betty’s on belmont thursday october 1st. 8pm\, $10. benefit show for
   the northwest florida wildlife sanctuary.
@@ -35,8 +35,8 @@ URL:https://diypensacola.com/s/2026-10-01-bettys-cursed-body-crystal-plumag
  e.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Cursed Body\, Crystal Plumage\, Cookies & Cake\, Myrro
- thavn @ Betty’s
+DESCRIPTION:tonight: Cursed Body\, Crystal Plumage\, Cookies & Cake\, MyBro
+ thaVan @ Betty’s
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT

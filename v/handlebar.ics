@@ -23,17 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-22-handlebar-sports-remo-drive@diypensacola
-DTSTAMP:20260922T000000Z
-DTSTART;TZID=America/Chicago:20260922T190000
-DTEND;TZID=America/Chicago:20260922T220000
-SUMMARY:sports.\, Remo Drive\, Computer @ The Handlebar
-DESCRIPTION:sports. and remo drive at the handlebar\, tuesday september 22.
-  with computer.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-22-handlebar-sports-remo-drive.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-09-23-handlebar-dopethrone@diypensacola
 DTSTAMP:20260923T000000Z
 DTSTART;TZID=America/Chicago:20260923T190000
@@ -109,8 +98,8 @@ UID:2026-10-01-handlebar-wretched-tongues-in-gloom@diypensacola
 DTSTAMP:20261001T000000Z
 DTSTART;TZID=America/Chicago:20261001T190000
 DTEND;TZID=America/Chicago:20261001T220000
-SUMMARY:Wretched Tongues\, In Gloom\, Flesh Carving\, Wraith Bearer @ The H
- andlebar
+SUMMARY:Wretched Tongues\, In Gloom\, Flesh Carving\, Wraithbearer @ The Ha
+ ndlebar
 DESCRIPTION:Wretched Tongues next thursday at @thehandlebar850\n\n@wretched
  tongues @ingloomfl @fleshcarvingband @wraithbearer
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
@@ -122,8 +111,7 @@ UID:2026-10-02-handlebar-xtr-human-dj-cvntteeth@diypensacola
 DTSTAMP:20261002T000000Z
 DTSTART;TZID=America/Chicago:20261002T230000
 DTEND;TZID=America/Chicago:20261003T020000
-SUMMARY:XTR Human\, DJ Cvntteeth\, DJ Scenario\, Glass Casket @ The Handleb
- ar
+SUMMARY:XTR Human\, Cvntteeth\, DJ Scenario\, Glass Casket @ The Handlebar
 DESCRIPTION:Industrial goth night next friday at @thehandlebar850 ⛓️\n\
  n@xtr_human
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
@@ -221,8 +209,8 @@ UID:2026-10-18-handlebar-fight-night-drag-show-thotberry@diypensacola
 DTSTAMP:20261018T000000Z
 DTSTART;TZID=America/Chicago:20261018T183000
 DTEND;TZID=America/Chicago:20261018T213000
-SUMMARY:Fight Night Drag Show\, Thotberry\, Xenamorphine\, Titanium\, Jay J
- ay DuVay\, Hauntica @ The Handlebar
+SUMMARY:Fight Night Drag Show\, Thotberry Shortcake\, Xena-Morphine\, Titan
+ ium\, Jay Jay DuVay\, Hauntica @ The Handlebar
 DESCRIPTION:the thot factory presents fight night\, hosted by thotberry wit
  h xenamorphine\, titanium\, jay jay duvay\, and hauntica at the handlebar.
   sunday october 18\, doors 6:30\, show at 7. $10 cover\, 18+. dress up\, t
