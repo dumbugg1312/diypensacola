@@ -1,11 +1,11 @@
-var CACHE='diypensacola-e8083072cef5';
+var CACHE='diypensacola-a998c5fd6ddb';
 // CORE is the app shell (always precached). PRECACHE is this build's fonts plus
 // the flyers for tonight + this week, injected by build.py so someone who opens
 // the site fresh at a venue with no signal still sees this week's flyers instead
 // of logo placeholders. The versioned CACHE name means an old week's flyers evict
 // themselves on the next deploy. Both lists are added best-effort at install.
 var CORE=['./','index.html','offline.html','style.css','logo.png','manifest.webmanifest','icon-192.png','icon-512.png','apple-touch-icon.png'];
-var PRECACHE=["flyers/flyer_2026-09-23_handlebar_dopethrone.jpg", "flyers/thumbs/flyer_2026-09-23_handlebar_dopethrone.webp", "flyers/thumbs/2026-09-24_handlebar_dirty-sound-magnet.webp", "flyers/thumbs/2026-09-24_voices-of-pensacola-multicultural-center_2026-grassroots-radio-conference.webp", "flyers/thumbs/2026-09-25_handlebar_calder-allen.webp", "flyers/thumbs/2026-09-26_handlebar_liliths-demise.webp", "flyers/thumbs/2026-09-26_bettys_comedians-in-drag-doing-comedy.webp", "flyers/thumbs/2026-09-26_bunny-club_quintron-miss-pussycat.webp", "flyers/thumbs/2026-09-27_the-handlebar_eyehategod.webp", "flyers/thumbs/2026-09-28_handlebar_carnifex.webp", "flyers/thumbs/2026-10-01_handlebar_wretched-tongues.webp", "flyers/thumbs/2026-10-01_bettys_cursed-body.webp", "flyers/thumbs/2026-10-02_handlebar_xtr-human.webp", "flyers/thumbs/2026-10-03_bettys_james-hall-the-ladies-of.webp"];
+var PRECACHE=["flyers/2026-09-24_handlebar_dirty-sound-magnet.jpg", "flyers/thumbs/2026-09-24_handlebar_dirty-sound-magnet.webp", "flyers/2026-09-24_voices-of-pensacola-multicultural-center_2026-grassroots-radio-conference.jpg", "flyers/thumbs/2026-09-24_voices-of-pensacola-multicultural-center_2026-grassroots-radio-conference.webp", "flyers/thumbs/2026-09-25_handlebar_calder-allen.webp", "flyers/thumbs/2026-09-26_handlebar_liliths-demise.webp", "flyers/thumbs/2026-09-26_bettys_comedians-in-drag-doing-comedy.webp", "flyers/thumbs/2026-09-26_bunny-club_quintron-miss-pussycat.webp", "flyers/thumbs/2026-09-27_the-handlebar_eyehategod.webp", "flyers/thumbs/2026-09-28_handlebar_carnifex.webp", "flyers/thumbs/2026-10-01_handlebar_wretched-tongues.webp", "flyers/thumbs/2026-10-01_bettys_cursed-body.webp", "flyers/thumbs/2026-10-02_handlebar_xtr-human.webp"];
 CORE=CORE.concat(PRECACHE);
 self.addEventListener('install',function(e){
   self.skipWaiting();
