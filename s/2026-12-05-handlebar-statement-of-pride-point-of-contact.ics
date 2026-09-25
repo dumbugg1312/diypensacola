@@ -1,10 +1,8 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Contention
+X-WR-CALNAME:DIYPensacola Shows
 X-WR-TIMEZONE:America/Chicago
-REFRESH-INTERVAL;VALUE=DURATION:PT12H
-X-PUBLISHED-TTL:PT12H
 BEGIN:VTIMEZONE
 TZID:America/Chicago
 BEGIN:DAYLIGHT
@@ -34,5 +32,12 @@ DESCRIPTION:Statement of Pride record release Dec 5 at @thehandlebar850. He
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-05-handlebar-statement-of-pride-poin
  t-of-contact.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: Statement of Pride\, Point of Contact\, Contention\, C
+ ollateral\, Cold Hearted\, Retaliation\, Carry The Torch\, Room to Grow @ 
+ The Handlebar
+TRIGGER:-PT2H
+END:VALARM
 END:VEVENT
 END:VCALENDAR

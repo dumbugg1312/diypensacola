@@ -1,10 +1,8 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Maggot Sandwich
+X-WR-CALNAME:DIYPensacola Shows
 X-WR-TIMEZONE:America/Chicago
-REFRESH-INTERVAL;VALUE=DURATION:PT12H
-X-PUBLISHED-TTL:PT12H
 BEGIN:VTIMEZONE
 TZID:America/Chicago
 BEGIN:DAYLIGHT
@@ -33,5 +31,11 @@ DESCRIPTION:The Casualties Dec 11 at @thehandlebar850!
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-11-handlebar-the-casualties-bullshit
  -detector.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: The Casualties\, Bullshit Detector\, Maggot Sandwich @
+  The Handlebar
+TRIGGER:-PT2H
+END:VALARM
 END:VEVENT
 END:VCALENDAR
