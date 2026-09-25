@@ -21,19 +21,21 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-24-handlebar-dirty-sound-magnet-gran-moreno@diypensacola
-DTSTAMP:20260924T000000Z
-DTSTART;TZID=America/Chicago:20260924T180000
-DTEND;TZID=America/Chicago:20260924T210000
-SUMMARY:Dirty Sound Magnet\, Gran Moreno @ The Handlebar
-DESCRIPTION:dirty sound magnet and gran moreno at the handlebar thursday 9/
- 24. tickets at thehandlebar850.com.
+UID:2026-10-03-handlebar-heavy-kid-james-hall-the-ladies-of@diypensacola
+DTSTAMP:20261003T000000Z
+DTSTART;TZID=America/Chicago:20261003T200000
+DTEND;TZID=America/Chicago:20261003T230000
+SUMMARY:Heavy Kid\, James Hall & the Ladies of…\, The Mob-Town Sky Cadets
+  @ The Handlebar
+DESCRIPTION:Heavy Kid tomorrow at @thehandlebar850!\n\n@heavy_kid_band @the
+ ladiesofmusic
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-24-handlebar-dirty-sound-magnet-gran
- -moreno.html
+URL:https://diypensacola.com/s/2026-10-03-handlebar-heavy-kid-james-hall-th
+ e-ladies-of.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Dirty Sound Magnet\, Gran Moreno @ The Handlebar
+DESCRIPTION:tonight: Heavy Kid\, James Hall & the Ladies of…\, The Mob-To
+ wn Sky Cadets @ The Handlebar
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
