@@ -22,4 +22,17 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-05-handlebar-statement-of-pride-point-of-contact@diypensacola
+DTSTAMP:20261205T000000Z
+DTSTART;TZID=America/Chicago:20261205T160000
+DTEND;TZID=America/Chicago:20261205T190000
+SUMMARY:Statement of Pride\, Point of Contact\, Contention\, Collateral\, C
+ old Hearted\, Retaliation\, Carry The Torch\, Room to Grow @ The Handlebar
+DESCRIPTION:Statement of Pride record release Dec 5 at @thehandlebar850. He
+ ll of a line up 😤\n\n@statementofpride
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-05-handlebar-statement-of-pride-poin
+ t-of-contact.html
+END:VEVENT
 END:VCALENDAR
