@@ -33,4 +33,17 @@ DESCRIPTION:brotality\, sacreus\, and coastal highschool at the den\, frida
 LOCATION:The Den
 URL:https://diypensacola.com/s/2026-12-11-the-den-brotality-sacreus.html
 END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-20-handlebar-the-convalescence-knifeback@diypensacola
+DTSTAMP:20261020T000000Z
+DTSTART;TZID=America/Chicago:20261020T190000
+DTEND;TZID=America/Chicago:20261020T220000
+SUMMARY:The Convalescence\, Knifeback\, Blindfold Knife Fight\, Sacreus @ T
+ he Handlebar
+DESCRIPTION:The Convalescence this tuesday at @thehandlebar850 🖤\n\n@the
+ convalescenceofficial @blindfoldknifefightfl @sacreus
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-20-handlebar-the-convalescence-knife
+ back.html
+END:VEVENT
 END:VCALENDAR

@@ -23,33 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-24-handlebar-dirty-sound-magnet-gran-moreno@diypensacola
-DTSTAMP:20260924T000000Z
-DTSTART;TZID=America/Chicago:20260924T180000
-DTEND;TZID=America/Chicago:20260924T210000
-SUMMARY:Dirty Sound Magnet\, Gran Moreno @ The Handlebar
-DESCRIPTION:dirty sound magnet and gran moreno at the handlebar thursday 9/
- 24. tickets at thehandlebar850.com.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-24-handlebar-dirty-sound-magnet-gran
- -moreno.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-24-voices-of-pensacola-multicultural-center-2026-grassroots-rad
- io-conference@diypensacola
-DTSTAMP:20260924T000000Z
-DTSTART;TZID=America/Chicago:20260924T190000
-DTEND;TZID=America/Chicago:20260924T220000
-SUMMARY:2026 Grassroots Radio Conference @ Voices of Pensacola Multicultura
- l Center
-DESCRIPTION:2026 grassroots radio conference\, sept 24 to 26 in pensacola. 
- free radio pensacola and wpnx 107.7 lpfm launching a diy community station
- . registration is open at freeradiopensacola.com.
-LOCATION:Voices of Pensacola Multicultural Center
-URL:https://diypensacola.com/s/2026-09-24-voices-of-pensacola-multicultural
- -center-2026-grassroots-radio-conference.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-09-25-handlebar-calder-allen@diypensacola
 DTSTAMP:20260925T000000Z
 DTSTART;TZID=America/Chicago:20260925T190000
@@ -166,6 +139,19 @@ DESCRIPTION:Industrial goth night next friday at @thehandlebar850 ⛓️\n\
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-02-handlebar-xtr-human-dj-cvntteeth.
  html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-03-handlebar-heavy-kid-james-hall-the-ladies-of@diypensacola
+DTSTAMP:20261003T000000Z
+DTSTART;TZID=America/Chicago:20261003T200000
+DTEND;TZID=America/Chicago:20261003T230000
+SUMMARY:Heavy Kid\, James Hall & the Ladies of…\, The Mob-Town Sky Cadets
+  @ The Handlebar
+DESCRIPTION:Heavy Kid tomorrow at @thehandlebar850!\n\n@heavy_kid_band @the
+ ladiesofmusic
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-03-handlebar-heavy-kid-james-hall-th
+ e-ladies-of.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-06-handlebar-xasthur-temple-of-the-fuzz-witch@diypensacola
@@ -326,6 +312,19 @@ DESCRIPTION:the thot factory presents fight night\, hosted by thotberry wit
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-18-handlebar-fight-night-drag-show-t
  hotberry.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-20-handlebar-the-convalescence-knifeback@diypensacola
+DTSTAMP:20261020T000000Z
+DTSTART;TZID=America/Chicago:20261020T190000
+DTEND;TZID=America/Chicago:20261020T220000
+SUMMARY:The Convalescence\, Knifeback\, Blindfold Knife Fight\, Sacreus @ T
+ he Handlebar
+DESCRIPTION:The Convalescence this tuesday at @thehandlebar850 🖤\n\n@the
+ convalescenceofficial @blindfoldknifefightfl @sacreus
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-20-handlebar-the-convalescence-knife
+ back.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-21-handlebar-felicity-dear-maryanne@diypensacola
@@ -626,6 +625,19 @@ URL:https://diypensacola.com/s/2026-11-22-hunter-amphitheater-the-revivalis
  ts-hunter-metts.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-05-handlebar-statement-of-pride-point-of-contact@diypensacola
+DTSTAMP:20261205T000000Z
+DTSTART;TZID=America/Chicago:20261205T160000
+DTEND;TZID=America/Chicago:20261205T190000
+SUMMARY:Statement of Pride\, Point of Contact\, Contention\, Collateral\, C
+ old Hearted\, Retaliation\, Carry The Torch\, Room to Grow @ The Handlebar
+DESCRIPTION:Statement of Pride record release Dec 5 at @thehandlebar850. He
+ ll of a line up 😤\n\n@statementofpride
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-05-handlebar-statement-of-pride-poin
+ t-of-contact.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-08-handlebar-cliff-cash@diypensacola
 DTSTAMP:20261208T000000Z
 DTSTART;TZID=America/Chicago:20261208T190000
@@ -645,6 +657,18 @@ DESCRIPTION:brotality\, sacreus\, and coastal highschool at the den\, frida
  y december 11. doors 6\, music at 7. $10 advance\, $15 at the door.
 LOCATION:The Den
 URL:https://diypensacola.com/s/2026-12-11-the-den-brotality-sacreus.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-11-handlebar-the-casualties-bullshit-detector@diypensacola
+DTSTAMP:20261211T000000Z
+DTSTART;TZID=America/Chicago:20261211T190000
+DTEND;TZID=America/Chicago:20261211T220000
+SUMMARY:The Casualties\, Bullshit Detector\, Maggot Sandwich @ The Handleba
+ r
+DESCRIPTION:The Casualties Dec 11 at @thehandlebar850!
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-11-handlebar-the-casualties-bullshit
+ -detector.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-17-handlebar-rickshaw-billies-burger-patrol@diypensacola
