@@ -23,26 +23,11 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-26-handlebar-liliths-demise-delta-hate@diypensacola
-DTSTAMP:20260926T000000Z
-DTSTART;TZID=America/Chicago:20260926T150000
-DTEND;TZID=America/Chicago:20260926T180000
-SUMMARY:Lilith’s Demise\, Delta Hate\, Truck Stop Dick Pill\, Claymore\, 
- Oinkliteration\, Bananaslama\, Behead The Traitor\, Split\, Stay Lost\, Bu
- bblegum Chainsaw @ The Handlebar
-DESCRIPTION:Hell of a line up next saturday at @thehandlebar850 😤\n\n@li
- lithsdemise @delta.hate @claymoretx @oinkliteration @bananaslama_official 
- @beheadthetraitorfl @splitflhc @bubblegum_chainsaw
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-26-handlebar-liliths-demise-delta-ha
- te.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-09-27-handlebar-eyehategod@diypensacola
 DTSTAMP:20260927T000000Z
 DTSTART;TZID=America/Chicago:20260927T190000
 DTEND;TZID=America/Chicago:20260927T220000
-SUMMARY:Eyehategod\, Whores\, Nomas @ The Handlebar
+SUMMARY:Eyehategod\, Whores\, Nomas\, Lesion @ The Handlebar
 DESCRIPTION:Eyehategod next sunday at @thehandlebar850 🖤\n\n@eyehategodn
  ola @whoresband @nomasgrind
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
@@ -53,7 +38,7 @@ UID:2026-09-28-handlebar-carnifex@diypensacola
 DTSTAMP:20260928T000000Z
 DTSTART;TZID=America/Chicago:20260928T183000
 DTEND;TZID=America/Chicago:20260928T213000
-SUMMARY:Carnifex\, Mauled @ The Handlebar
+SUMMARY:Carnifex\, Mauled\, Inner Wounds\, Sacreus @ The Handlebar
 DESCRIPTION:Carnifex next monday at @thehandlebar850. Sold out!\n\n@carnife
  x @mauledslc.band.official
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
