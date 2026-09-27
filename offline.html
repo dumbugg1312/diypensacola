@@ -1467,6 +1467,19 @@ main{max-width:940px}
 #list:not(.wall) #b-week .show img.thumb.ph{width:100%;height:100%;max-height:none;
   object-fit:contain;background:#000}
 #list:not(.wall) #b-week .show h3{font-size:clamp(1.4rem,2.4vw,1.7rem);line-height:1}
+/* ...and fills out when the week is nearly over. data-n is the poster count
+   (build + MAIN_JS keep it live). Three stretch to share the row; one or two go
+   wide as MID rows: flyer beside the name like the tonight hero, a size down.
+   The hero-from-week rules above out-specify these, so that card is untouched. */
+#list:not(.wall) #b-week[data-n="3"] .show{flex:1 1 0;max-width:300px}
+#list:not(.wall) #b-week[data-n="1"] .show,#list:not(.wall) #b-week[data-n="2"] .show{
+  flex:1 1 100%;display:grid;grid-template-columns:minmax(0,220px) 1fr;gap:1.3rem;align-items:center;padding:1rem}
+#list:not(.wall) #b-week[data-n="1"] .thumbwrap,#list:not(.wall) #b-week[data-n="2"] .thumbwrap{aspect-ratio:auto}
+#list:not(.wall) #b-week[data-n="1"] .show img.thumb,#list:not(.wall) #b-week[data-n="1"] .show img.thumb.ph,
+#list:not(.wall) #b-week[data-n="2"] .show img.thumb,#list:not(.wall) #b-week[data-n="2"] .show img.thumb.ph{
+  height:auto;max-height:300px;border:3px solid var(--ink)}
+#list:not(.wall) #b-week[data-n="1"] .show h3,#list:not(.wall) #b-week[data-n="2"] .show h3{
+  font-size:clamp(1.7rem,3.4vw,2.5rem);line-height:1.05;margin-bottom:.35rem}
 
 /* --- LATER: dense list, whole flyer in a small frame --- */
 #list:not(.wall) .bucket.dense .cards{display:block;border:2px solid var(--line);
@@ -1519,6 +1532,18 @@ main{max-width:940px}
   #list:not(.wall) #b-week .show{flex:0 1 calc(50% - .3rem);padding:.5rem;gap:.45rem}
   #list:not(.wall) #b-week .show h3{font-size:clamp(1rem,4.6vw,1.35rem)}
   #list:not(.wall) #b-week .show .daterow{gap:.4rem}
+  /* phone MID rows: flyer ~40% beside the name (tonight stacks, next week is a
+     sliver); an odd leftover poster takes the same wide row instead of
+     centering alone under the pair. */
+  #list:not(.wall) #b-week[data-n="3"] .show{flex:0 1 calc(50% - .3rem);max-width:none}
+  #list:not(.wall) #b-week[data-n="1"] .show,#list:not(.wall) #b-week[data-n="2"] .show,
+  #list:not(.wall) #b-week .show.lastodd{flex:1 1 100%;display:grid;grid-template-columns:40% 1fr;
+    gap:.8rem;align-items:center;padding:.7rem}
+  #list:not(.wall) #b-week .show.lastodd .thumbwrap{aspect-ratio:auto}
+  #list:not(.wall) #b-week .show.lastodd img.thumb,#list:not(.wall) #b-week .show.lastodd img.thumb.ph{
+    height:auto;max-height:260px;border:3px solid var(--ink)}
+  #list:not(.wall) #b-week[data-n="1"] .show h3,#list:not(.wall) #b-week[data-n="2"] .show h3,
+  #list:not(.wall) #b-week .show.lastodd h3{font-size:clamp(1.3rem,6.2vw,1.8rem)}
 }
 
 /* venue detail pages (v/<slug>.html): stamped directory rows */
@@ -2064,11 +2089,11 @@ header .homelink,header .home,header .logo,header .home img{
 <div class="empty emptybig">
 <h1 class="ehead">no signal down here</h1>
 <p>you're offline and this page isn't saved. basements and dead-zone venues will do that. the calendar you already opened still works offline.</p>
-<p class="dcap">this copy was saved september 25, 2026. tonight's listings may have changed since.</p>
+<p class="dcap">this copy was saved september 26, 2026. tonight's listings may have changed since.</p>
 <div class="eactions">
 <a class="dbtn" href="/">open the calendar</a>
 </div>
 </div>
 </main>
-<footer><p class="fline">no bars? <b>you're probably at a show already.</b></p><div class="finelinks"><a href="https://instagram.com/diypensacola" target="_blank" rel="noopener">instagram</a><a href="https://discord.com/invite/Ckn2j53Bqm" target="_blank" rel="noopener">discord</a><a href="https://facebook.com/diypensacola" target="_blank" rel="noopener">facebook</a><a href="/radio.html">auto-play radio</a><a href="https://venmo.com/code?user_id=2602561043431424773&amp;created=1782154144" target="_blank" rel="noopener">donate</a></div><p class="fcredit">proudly ran out of punksacola, fl<br><span class="built">updated september 25, 2026</span></p></footer><button class="totop" id="totop" type="button" aria-label="back to top" title="back to top">&#8593;</button>
+<footer><p class="fline">no bars? <b>you're probably at a show already.</b></p><div class="finelinks"><a href="https://instagram.com/diypensacola" target="_blank" rel="noopener">instagram</a><a href="https://discord.com/invite/Ckn2j53Bqm" target="_blank" rel="noopener">discord</a><a href="https://facebook.com/diypensacola" target="_blank" rel="noopener">facebook</a><a href="/radio.html">auto-play radio</a><a href="https://venmo.com/code?user_id=2602561043431424773&amp;created=1782154144" target="_blank" rel="noopener">donate</a></div><p class="fcredit">proudly ran out of punksacola, fl<br><span class="built">updated september 26, 2026</span></p></footer><button class="totop" id="totop" type="button" aria-label="back to top" title="back to top">&#8593;</button>
 </body></html>
