@@ -23,57 +23,11 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-26-handlebar-liliths-demise-delta-hate@diypensacola
-DTSTAMP:20260926T000000Z
-DTSTART;TZID=America/Chicago:20260926T150000
-DTEND;TZID=America/Chicago:20260926T180000
-SUMMARY:Lilith’s Demise\, Delta Hate\, Truck Stop Dick Pill\, Claymore\, 
- Oinkliteration\, Bananaslama\, Behead The Traitor\, Split\, Stay Lost\, Bu
- bblegum Chainsaw @ The Handlebar
-DESCRIPTION:Hell of a line up next saturday at @thehandlebar850 😤\n\n@li
- lithsdemise @delta.hate @claymoretx @oinkliteration @bananaslama_official 
- @beheadthetraitorfl @splitflhc @bubblegum_chainsaw
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-26-handlebar-liliths-demise-delta-ha
- te.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-26-bettys-comedians-in-drag-doing-comedy-dallas-nelson@diypensa
- cola
-DTSTAMP:20260926T000000Z
-DTSTART;TZID=America/Chicago:20260926T203000
-DTEND;TZID=America/Chicago:20260926T233000
-SUMMARY:Comedians in Drag Doing Comedy\, Dallas Nelson\, Jessie Morrow “C
- onnie Langus”\, Cristina Morandi “Anus Young”\, Dr. Anna Lepeley @ B
- etty’s
-DESCRIPTION:comedians in drag doing comedy at betty’s\, saturday septembe
- r 26th. dallas nelson (cherry highman)\, jessie morrow (connie langus)\, c
- ristina morandi (anus young)\, and a mystery comedian tba. hosted by dr. a
- nna lepeley. doors 8:30\, showtime 9\, $20. bring cash to tip.
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-26-bettys-comedians-in-drag-doing-co
- medy-dallas-nelson.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-26-bunny-club-quintron-miss-pussycat-weather-warlock@diypensaco
- la
-DTSTAMP:20260926T000000Z
-DTSTART;TZID=America/Chicago:20260926T190000
-DTEND;TZID=America/Chicago:20260926T220000
-SUMMARY:Quintron & Miss Pussycat\, Weather Warlock @ Bunny Club
-DESCRIPTION:quintron & miss pussycat with weather warlock at the old bunny 
- club\, saturday sept 26. 500 w belmont\, 7pm. puppet show\, organ music\, 
- dance party. part of the 2026 grassroots radio conference.
-LOCATION:Bunny Club
-URL:https://diypensacola.com/s/2026-09-26-bunny-club-quintron-miss-pussycat
- -weather-warlock.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-09-27-handlebar-eyehategod@diypensacola
 DTSTAMP:20260927T000000Z
 DTSTART;TZID=America/Chicago:20260927T190000
 DTEND;TZID=America/Chicago:20260927T220000
-SUMMARY:Eyehategod\, Whores\, Nomas @ The Handlebar
+SUMMARY:Eyehategod\, Whores\, Nomas\, Lesion @ The Handlebar
 DESCRIPTION:Eyehategod next sunday at @thehandlebar850 🖤\n\n@eyehategodn
  ola @whoresband @nomasgrind
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
@@ -84,7 +38,7 @@ UID:2026-09-28-handlebar-carnifex@diypensacola
 DTSTAMP:20260928T000000Z
 DTSTART;TZID=America/Chicago:20260928T183000
 DTEND;TZID=America/Chicago:20260928T213000
-SUMMARY:Carnifex\, Mauled @ The Handlebar
+SUMMARY:Carnifex\, Mauled\, Inner Wounds\, Sacreus @ The Handlebar
 DESCRIPTION:Carnifex next monday at @thehandlebar850. Sold out!\n\n@carnife
  x @mauledslc.band.official
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
@@ -232,6 +186,18 @@ URL:https://diypensacola.com/s/2026-10-12-handlebar-carry-the-torch-strikef
  orce.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-14-309-october-air-closing-exhibition-chad-porter@diypensacola
+DTSTAMP:20261014T000000Z
+DTSTART;TZID=America/Chicago:20261014T180000
+DTEND;TZID=America/Chicago:20261014T210000
+SUMMARY:October AIR Closing Exhibition\, Chad Porter @ 309
+DESCRIPTION:Chad Porter’s closing exhibition at @309punkproject\, wednesd
+ ay october 14th.
+LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-14-309-october-air-closing-exhibitio
+ n-chad-porter.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-15-bettys-lesion-bastard-son@diypensacola
 DTSTAMP:20261015T000000Z
 DTSTART;TZID=America/Chicago:20261015T190000
@@ -350,6 +316,19 @@ DESCRIPTION:Party Cannon Oct 22 at @downtown_music_hall!\n\n@party_cannon_o
 LOCATION:Downtown Music Hall
 URL:https://diypensacola.com/s/2026-10-22-downtown-music-hall-party-cannon-
  slugbleed.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-22-309-wintergreen-oil-photo-transfer-workshop-kayleigh-rose@di
+ ypensacola
+DTSTAMP:20261022T000000Z
+DTSTART;TZID=America/Chicago:20261022T180000
+DTEND;TZID=America/Chicago:20261022T210000
+SUMMARY:Wintergreen Oil Photo Transfer Workshop\, Kayleigh Rose @ 309
+DESCRIPTION:Wintergreen oil photo transfer workshop with Kayleigh Rose at @
+ 309punkproject\, thursday october 22nd.
+LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-22-309-wintergreen-oil-photo-transfe
+ r-workshop-kayleigh-rose.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-23-handlebar-gimme-gimme-disco@diypensacola

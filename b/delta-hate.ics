@@ -22,19 +22,4 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-UID:2026-09-26-handlebar-liliths-demise-delta-hate@diypensacola
-DTSTAMP:20260926T000000Z
-DTSTART;TZID=America/Chicago:20260926T150000
-DTEND;TZID=America/Chicago:20260926T180000
-SUMMARY:Lilith’s Demise\, Delta Hate\, Truck Stop Dick Pill\, Claymore\, 
- Oinkliteration\, Bananaslama\, Behead The Traitor\, Split\, Stay Lost\, Bu
- bblegum Chainsaw @ The Handlebar
-DESCRIPTION:Hell of a line up next saturday at @thehandlebar850 😤\n\n@li
- lithsdemise @delta.hate @claymoretx @oinkliteration @bananaslama_official 
- @beheadthetraitorfl @splitflhc @bubblegum_chainsaw
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-26-handlebar-liliths-demise-delta-ha
- te.html
-END:VEVENT
 END:VCALENDAR

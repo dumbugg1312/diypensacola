@@ -23,6 +23,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:2026-10-14-309-october-air-closing-exhibition-chad-porter@diypensacola
+DTSTAMP:20261014T000000Z
+DTSTART;TZID=America/Chicago:20261014T180000
+DTEND;TZID=America/Chicago:20261014T210000
+SUMMARY:October AIR Closing Exhibition\, Chad Porter @ 309
+DESCRIPTION:Chad Porter’s closing exhibition at @309punkproject\, wednesd
+ ay october 14th.
+LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-14-309-october-air-closing-exhibitio
+ n-chad-porter.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-16-309-rent-strike-myles-bullen@diypensacola
 DTSTAMP:20261016T000000Z
 DTSTART;TZID=America/Chicago:20261016T183000
@@ -32,6 +44,19 @@ DESCRIPTION:Rent Strike in two weeks at @309punkproject!\n\n@rent__strike @
  beatboxpoet @outlook_bleak
 LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-16-309-rent-strike-myles-bullen.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-22-309-wintergreen-oil-photo-transfer-workshop-kayleigh-rose@di
+ ypensacola
+DTSTAMP:20261022T000000Z
+DTSTART;TZID=America/Chicago:20261022T180000
+DTEND;TZID=America/Chicago:20261022T210000
+SUMMARY:Wintergreen Oil Photo Transfer Workshop\, Kayleigh Rose @ 309
+DESCRIPTION:Wintergreen oil photo transfer workshop with Kayleigh Rose at @
+ 309punkproject\, thursday october 22nd.
+LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-22-309-wintergreen-oil-photo-transfe
+ r-workshop-kayleigh-rose.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-14-309-night-on-the-tracks-the-art-of-protest@diypensacola
