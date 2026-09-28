@@ -5,7 +5,7 @@ var CACHE='diypensacola-d9f3e0b83caa';
 // of logo placeholders. The versioned CACHE name means an old week's flyers evict
 // themselves on the next deploy. Both lists are added best-effort at install.
 var CORE=['./','index.html','offline.html','style.css','logo.png','manifest.webmanifest','icon-192.png','icon-512.png','apple-touch-icon.png'];
-var PRECACHE=["flyers/thumbs/2026-09-28_handlebar_carnifex.webp", "flyers/thumbs/2026-10-01_handlebar_wretched-tongues.webp", "flyers/thumbs/2026-10-01_bettys_cursed-body.webp", "flyers/thumbs/2026-10-02_handlebar_xtr-human.webp", "flyers/thumbs/2026-10-03_handlebar_heavy-kid.webp"];
+var PRECACHE=["flyers/2026-09-28_handlebar_carnifex.jpg", "flyers/thumbs/2026-09-28_handlebar_carnifex.webp", "flyers/thumbs/2026-10-01_handlebar_wretched-tongues.webp", "flyers/thumbs/2026-10-01_bettys_cursed-body.webp", "flyers/thumbs/2026-10-02_handlebar_xtr-human.webp", "flyers/thumbs/2026-10-03_handlebar_heavy-kid.webp", "flyers/thumbs/2026-10-06_handlebar_xasthur.webp", "flyers/thumbs/2026-10-07_handlebar_belmont.webp", "flyers/thumbs/2026-10-08_handlebar_forsaken-profits.webp", "flyers/thumbs/2026-10-09_bettys_punk-or-treat-iii.webp", "flyers/thumbs/flyer_2026-10-10_handlebar_silent-theory.webp"];
 CORE=CORE.concat(PRECACHE);
 self.addEventListener('install',function(e){
   self.skipWaiting();
