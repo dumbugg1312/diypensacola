@@ -1,11 +1,11 @@
-var CACHE='diypensacola-40e7af45fe1e';
+var CACHE='diypensacola-33636d72b036';
 // CORE is the app shell (always precached). PRECACHE is this build's fonts plus
 // the flyers for tonight + this week, injected by build.py so someone who opens
 // the site fresh at a venue with no signal still sees this week's flyers instead
 // of logo placeholders. The versioned CACHE name means an old week's flyers evict
 // themselves on the next deploy. Both lists are added best-effort at install.
 var CORE=['./','index.html','offline.html','style.css','logo.png','manifest.webmanifest','icon-192.png','icon-512.png','apple-touch-icon.png'];
-var PRECACHE=["flyers/thumbs/2026-10-01_handlebar_wretched-tongues.webp", "flyers/thumbs/2026-10-01_bettys_cursed-body.webp", "flyers/thumbs/2026-10-01_uwf-commons-great-hall_uwf-jazz-ensemble.webp", "flyers/thumbs/2026-10-02_handlebar_xtr-human.webp", "flyers/thumbs/2026-10-03_handlebar_heavy-kid.webp", "flyers/thumbs/2026-10-06_handlebar_xasthur.webp", "flyers/thumbs/2026-10-07_handlebar_belmont.webp", "flyers/thumbs/2026-10-08_handlebar_forsaken-profits.webp", "flyers/thumbs/2026-10-09_bettys_punk-or-treat-iii.webp", "flyers/thumbs/flyer_2026-10-10_handlebar_silent-theory.webp"];
+var PRECACHE=["flyers/thumbs/2026-10-01_handlebar_wretched-tongues.webp", "flyers/thumbs/2026-10-01_bettys_cursed-body.webp", "flyers/thumbs/2026-10-01_uwf-commons-great-hall_uwf-jazz-ensemble.webp", "flyers/thumbs/2026-10-02_handlebar_xtr-human.webp", "flyers/thumbs/2026-10-03_handlebar_heavy-kid.webp", "flyers/thumbs/2026-10-06_handlebar_xasthur.webp", "flyers/thumbs/2026-10-07_handlebar_belmont.webp", "flyers/thumbs/2026-10-08_handlebar_forsaken-profits.webp", "flyers/thumbs/2026-10-08_bettys_gong-slayer.webp", "flyers/thumbs/2026-10-09_bettys_punk-or-treat-iii.webp", "flyers/thumbs/flyer_2026-10-10_handlebar_silent-theory.webp"];
 CORE=CORE.concat(PRECACHE);
 self.addEventListener('install',function(e){
   self.skipWaiting();
