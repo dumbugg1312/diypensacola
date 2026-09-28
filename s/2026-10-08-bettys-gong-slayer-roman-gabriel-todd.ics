@@ -1,10 +1,8 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Roman Gabriel Todd
+X-WR-CALNAME:DIYPensacola Shows
 X-WR-TIMEZONE:America/Chicago
-REFRESH-INTERVAL;VALUE=DURATION:PT12H
-X-PUBLISHED-TTL:PT12H
 BEGIN:VTIMEZONE
 TZID:America/Chicago
 BEGIN:DAYLIGHT
@@ -32,5 +30,10 @@ DESCRIPTION:Gong Slayer next thursday at @bettys_on_belmont!
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-08-bettys-gong-slayer-roman-gabriel-
  todd.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: Gong Slayer\, Roman Gabriel Todd @ Betty’s
+TRIGGER:-PT2H
+END:VALARM
 END:VEVENT
 END:VCALENDAR
