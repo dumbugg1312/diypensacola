@@ -21,19 +21,19 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-16-bettys-dog-smiles@diypensacola
-DTSTAMP:20261016T000000Z
-DTSTART;TZID=America/Chicago:20261016T200000
-DTEND;TZID=America/Chicago:20261016T230000
-SUMMARY:Dog Smiles\, Mother Wound\, Soft\, Rat Daughter @ Betty’s
-DESCRIPTION:dog smiles at betty’s on belmont\, friday october 16th. one n
- ight of the texas and back tour.
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-16-bettys-dog-smiles.html
+UID:2026-10-01-uwf-commons-great-hall-uwf-jazz-ensemble@diypensacola
+DTSTAMP:20261001T000000Z
+DTSTART;TZID=America/Chicago:20261001T190000
+DTEND;TZID=America/Chicago:20261001T220000
+SUMMARY:UWF Jazz Ensemble @ UWF Commons Great Hall
+DESCRIPTION:UWF Jazz Ensemble this thursday at the UWF Commons Great Hall!\
+ n\n@uwfcfpa
+LOCATION:UWF Commons Great Hall
+URL:https://diypensacola.com/s/2026-10-01-uwf-commons-great-hall-uwf-jazz-e
+ nsemble.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Dog Smiles\, Mother Wound\, Soft\, Rat Daughter @ Bett
- y’s
+DESCRIPTION:tonight: UWF Jazz Ensemble @ UWF Commons Great Hall
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
