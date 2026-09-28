@@ -34,15 +34,4 @@ DESCRIPTION:Support @strivepensacola at @bettys_on_belmont in two weeks
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-15-bettys-lesion-bastard-son.html
 END:VEVENT
-BEGIN:VEVENT
-UID:2026-09-27-handlebar-eyehategod@diypensacola
-DTSTAMP:20260927T000000Z
-DTSTART;TZID=America/Chicago:20260927T190000
-DTEND;TZID=America/Chicago:20260927T220000
-SUMMARY:Eyehategod\, Whores\, Nomas\, Lesion @ The Handlebar
-DESCRIPTION:Eyehategod next sunday at @thehandlebar850 🖤\n\n@eyehategodn
- ola @whoresband @nomasgrind
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-27-handlebar-eyehategod.html
-END:VEVENT
 END:VCALENDAR
