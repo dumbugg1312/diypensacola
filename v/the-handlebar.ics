@@ -23,17 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-28-handlebar-carnifex@diypensacola
-DTSTAMP:20260928T000000Z
-DTSTART;TZID=America/Chicago:20260928T183000
-DTEND;TZID=America/Chicago:20260928T213000
-SUMMARY:Carnifex\, Mauled\, Inner Wounds\, Sacreus @ The Handlebar
-DESCRIPTION:Carnifex next monday at @thehandlebar850. Sold out!\n\n@carnife
- x @mauledslc.band.official
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-28-handlebar-carnifex.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-01-handlebar-wretched-tongues-in-gloom@diypensacola
 DTSTAMP:20261001T000000Z
 DTSTART;TZID=America/Chicago:20261001T190000
@@ -412,6 +401,16 @@ DESCRIPTION:whitmer thomas at the handlebar\, friday december 18th. tickets
   on sale now.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-18-handlebar-whitmer-thomas.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-17-handlebar-colour-revolt@diypensacola
+DTSTAMP:20270117T000000Z
+DTSTART;TZID=America/Chicago:20270117T180000
+DTEND;TZID=America/Chicago:20270117T210000
+SUMMARY:Colour Revolt @ The Handlebar
+DESCRIPTION:Colour Revolt Jan 17 at @thehandlebar850!
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-01-17-handlebar-colour-revolt.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-03-handlebar-never-easy-wayside@diypensacola

@@ -21,19 +21,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-28-handlebar-carnifex@diypensacola
-DTSTAMP:20260928T000000Z
-DTSTART;TZID=America/Chicago:20260928T183000
-DTEND;TZID=America/Chicago:20260928T213000
-SUMMARY:Carnifex\, Mauled\, Inner Wounds\, Sacreus @ The Handlebar
-DESCRIPTION:Carnifex next monday at @thehandlebar850. Sold out!\n\n@carnife
- x @mauledslc.band.official
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-28-handlebar-carnifex.html
+UID:2026-10-03-bettys-valerie-sassyfras@diypensacola
+DTSTAMP:20261003T000000Z
+DTSTART;TZID=America/Chicago:20261003T220000
+DTEND;TZID=America/Chicago:20261004T010000
+SUMMARY:Valerie SassyFras @ Betty’s
+DESCRIPTION:Valerie SassyFras this Saturday at @bettys_on_belmont 💞\n\n@
+ valsassyfras
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-03-bettys-valerie-sassyfras.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Carnifex\, Mauled\, Innerwounds\, Sacreus @ The Handle
- bar
+DESCRIPTION:tonight: Valerie SassyFras @ Betty’s
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
