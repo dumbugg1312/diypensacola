@@ -1,10 +1,8 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Cheese For The Table
+X-WR-CALNAME:DIYPensacola Shows
 X-WR-TIMEZONE:America/Chicago
-REFRESH-INTERVAL;VALUE=DURATION:PT12H
-X-PUBLISHED-TTL:PT12H
 BEGIN:VTIMEZONE
 TZID:America/Chicago
 BEGIN:DAYLIGHT
@@ -33,5 +31,11 @@ DESCRIPTION:@improvablecause is back with Cheese for the Table this wednesd
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-14-handlebar-cheese-for-the-table.ht
  ml
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: Cheese for the Table\, Improvable Cause @ The Handleba
+ r
+TRIGGER:-PT2H
+END:VALARM
 END:VEVENT
 END:VCALENDAR
