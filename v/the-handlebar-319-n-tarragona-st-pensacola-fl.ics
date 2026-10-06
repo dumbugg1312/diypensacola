@@ -23,44 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-01-handlebar-wretched-tongues-in-gloom@diypensacola
-DTSTAMP:20261001T000000Z
-DTSTART;TZID=America/Chicago:20261001T190000
-DTEND;TZID=America/Chicago:20261001T220000
-SUMMARY:Wretched Tongues\, In Gloom\, Flesh Carving\, Wraithbearer @ The Ha
- ndlebar
-DESCRIPTION:Wretched Tongues next thursday at @thehandlebar850\n\n@wretched
- tongues @ingloomfl @fleshcarvingband @wraithbearer
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-01-handlebar-wretched-tongues-in-glo
- om.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-02-handlebar-xtr-human-dj-cvntteeth@diypensacola
-DTSTAMP:20261002T000000Z
-DTSTART;TZID=America/Chicago:20261002T230000
-DTEND;TZID=America/Chicago:20261003T020000
-SUMMARY:XTR Human\, Cvntteeth\, DJ Scenario\, Glass Casket @ The Handlebar
-DESCRIPTION:Industrial goth night next friday at @thehandlebar850 ⛓️\n\
- n@xtr_human
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-02-handlebar-xtr-human-dj-cvntteeth.
- html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-03-handlebar-heavy-kid-james-hall-the-ladies-of@diypensacola
-DTSTAMP:20261003T000000Z
-DTSTART;TZID=America/Chicago:20261003T200000
-DTEND;TZID=America/Chicago:20261003T230000
-SUMMARY:Heavy Kid\, James Hall & the Ladies of…\, The Mob-Town Sky Cadets
-  @ The Handlebar
-DESCRIPTION:Heavy Kid tomorrow at @thehandlebar850!\n\n@heavy_kid_band @the
- ladiesofmusic
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-03-handlebar-heavy-kid-james-hall-th
- e-ladies-of.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-06-handlebar-xasthur-temple-of-the-fuzz-witch@diypensacola
 DTSTAMP:20261006T000000Z
 DTSTART;TZID=America/Chicago:20261006T190000
@@ -160,6 +122,18 @@ DESCRIPTION:the thot factory presents fight night\, hosted by thotberry wit
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-18-handlebar-fight-night-drag-show-t
  hotberry.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-18-handlebar-robert-taylor-smith-marc-ganancias@diypensacola
+DTSTAMP:20261018T000000Z
+DTSTART;TZID=America/Chicago:20261018T150000
+DTEND;TZID=America/Chicago:20261018T180000
+SUMMARY:Robert Taylor Smith\, Marc Ganancias\, Warren Wolf\, Katie Dineen @
+  The Handlebar
+DESCRIPTION:Songwriter rounds matinee Oct 18 at @thehandlebar850
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-18-handlebar-robert-taylor-smith-mar
+ c-ganancias.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-20-handlebar-the-convalescence-knifeback@diypensacola
@@ -344,6 +318,16 @@ SUMMARY:Wayne Hancock @ The Handlebar
 DESCRIPTION:Wayne Hancock Nov 18 at @thehandlebar850
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-18-handlebar-wayne-hancock.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-04-handlebar-in-her-own-words@diypensacola
+DTSTAMP:20261204T000000Z
+DTSTART;TZID=America/Chicago:20261204T190000
+DTEND;TZID=America/Chicago:20261204T220000
+SUMMARY:In Her Own Words @ The Handlebar
+DESCRIPTION:In Her Own Words Dec 4 at @thehandlebar850
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-04-handlebar-in-her-own-words.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-05-handlebar-statement-of-pride-point-of-contact@diypensacola

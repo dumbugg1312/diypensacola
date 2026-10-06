@@ -23,44 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-01-bettys-cursed-body-crystal-plumage@diypensacola
-DTSTAMP:20261001T000000Z
-DTSTART;TZID=America/Chicago:20261001T200000
-DTEND;TZID=America/Chicago:20261001T230000
-SUMMARY:Cursed Body\, Crystal Plumage\, Cookies & Cake\, MyBrothaVan @ Bett
- y’s
-DESCRIPTION:cursed body\, crystal plumage\, cookies and cake and myrrothavn
-  at betty’s on belmont thursday october 1st. 8pm\, $10. benefit show for
-  the northwest florida wildlife sanctuary.
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-01-bettys-cursed-body-crystal-plumag
- e.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-02-bettys-clarity-rebelle-twitch@diypensacola
-DTSTAMP:20261002T000000Z
-DTSTART;TZID=America/Chicago:20261002T200000
-DTEND;TZID=America/Chicago:20261002T230000
-SUMMARY:Clarity\, Rebelle Twitch\, I & I\, Junglist Jada\, Kitonicx\, Aliso
- niq @ Betty’s
-DESCRIPTION:The Ghouls Room this friday at @bettys_on_belmont 🖤\n\n@djcl
- arityboo
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-02-bettys-clarity-rebelle-twitch.htm
- l
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-03-bettys-valerie-sassyfras@diypensacola
-DTSTAMP:20261003T000000Z
-DTSTART;TZID=America/Chicago:20261003T220000
-DTEND;TZID=America/Chicago:20261004T010000
-SUMMARY:Valerie SassyFras @ Betty’s
-DESCRIPTION:Valerie SassyFras this Saturday at @bettys_on_belmont 💞\n\n@
- valsassyfras
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-03-bettys-valerie-sassyfras.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-08-bettys-gong-slayer-roman-gabriel-todd@diypensacola
 DTSTAMP:20261008T000000Z
 DTSTART;TZID=America/Chicago:20261008T190000
@@ -120,6 +82,19 @@ LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-17-bettys-sapphic-saturday.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-22-bettys-sludge-incorporated-cursed-body@diypensacola
+DTSTAMP:20261022T000000Z
+DTSTART;TZID=America/Chicago:20261022T190000
+DTEND;TZID=America/Chicago:20261022T220000
+SUMMARY:Sludge Incorporated\, Cursed Body\, Cookies & Cake\, Sweet Lady Sle
+ eze @ Betty’s
+DESCRIPTION:Sludge Incorporated Oct 22 at @bettys_on_belmont!\n\n@cursedbod
+ yband @cookies__and__cake @sweet.lady.sleeze
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-22-bettys-sludge-incorporated-cursed
+ -body.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-23-bettys-the-earthly-delights-sideshow@diypensacola
 DTSTAMP:20261023T000000Z
 DTSTART;TZID=America/Chicago:20261023T200000
@@ -136,7 +111,9 @@ UID:2026-10-31-bettys-bettys-block-party-halloween@diypensacola
 DTSTAMP:20261031T000000Z
 DTSTART;TZID=America/Chicago:20261031T190000
 DTEND;TZID=America/Chicago:20261031T220000
-SUMMARY:Betty’s Block Party: Halloween @ Betty’s
+SUMMARY:Betty’s Block Party: Halloween\, Lesion\, Crystal Plumage\, Mothe
+ r’s Milk\, Free Radio PNX\, DJ Balance Universal\, Myrrothavn\, Uraniumw
+ illy\, Cookies and Cake @ Betty’s
 DESCRIPTION:betty’s block party starts on halloween\, saturday october 31
  st. betty’s on belmont and the old bunny club next door\, two stages. ba
  nds still being confirmed.
@@ -165,6 +142,28 @@ DESCRIPTION:betty’s fest 2\, night two. saturday november 14th at betty
  ’s on belmont and the old bunny club. lineup coming.
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-14-bettys-bettys-fest-2-night-2.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-20-bettys-valerie-sassyfras@diypensacola
+DTSTAMP:20261120T000000Z
+DTSTART;TZID=America/Chicago:20261120T210000
+DTEND;TZID=America/Chicago:20261121T000000
+SUMMARY:Valerie SassyFras @ Betty’s
+DESCRIPTION:Valerie SassyFras at @bettys_on_belmont Nov 20 💞\n\n@valsass
+ yfras
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-20-bettys-valerie-sassyfras.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-10-bettys-holy-locust-johanna-rose-the-dreamboats@diypensacola
+DTSTAMP:20261210T000000Z
+DTSTART;TZID=America/Chicago:20261210T190000
+DTEND;TZID=America/Chicago:20261210T220000
+SUMMARY:Holy Locust\, Johanna Rose & The Dreamboats @ Betty’s
+DESCRIPTION:Holy Locust Dec 10 at @bettys_on_belmont!
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-10-bettys-holy-locust-johanna-rose-t
+ he-dreamboats.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-31-bettys-nye-bettys-bash@diypensacola

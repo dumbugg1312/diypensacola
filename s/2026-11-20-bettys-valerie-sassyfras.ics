@@ -21,21 +21,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-02-bettys-clarity-rebelle-twitch@diypensacola
-DTSTAMP:20261002T000000Z
-DTSTART;TZID=America/Chicago:20261002T200000
-DTEND;TZID=America/Chicago:20261002T230000
-SUMMARY:Clarity\, Rebelle Twitch\, I & I\, Junglist Jada\, Kitonicx\, Aliso
- niq @ Betty’s
-DESCRIPTION:The Ghouls Room this friday at @bettys_on_belmont 🖤\n\n@djcl
- arityboo
+UID:2026-11-20-bettys-valerie-sassyfras@diypensacola
+DTSTAMP:20261120T000000Z
+DTSTART;TZID=America/Chicago:20261120T210000
+DTEND;TZID=America/Chicago:20261121T000000
+SUMMARY:Valerie SassyFras @ Betty’s
+DESCRIPTION:Valerie SassyFras at @bettys_on_belmont Nov 20 💞\n\n@valsass
+ yfras
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-02-bettys-clarity-rebelle-twitch.htm
- l
+URL:https://diypensacola.com/s/2026-11-20-bettys-valerie-sassyfras.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Clarity\, Rebelle Twitch\, I & I\, Junglist Jada\, Kit
- onicx\, Alisoniq @ Betty’s
+DESCRIPTION:tonight: Valerie SassyFras @ Betty’s
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT

@@ -25,7 +25,9 @@ UID:2026-10-31-bettys-bettys-block-party-halloween@diypensacola
 DTSTAMP:20261031T000000Z
 DTSTART;TZID=America/Chicago:20261031T190000
 DTEND;TZID=America/Chicago:20261031T220000
-SUMMARY:Betty’s Block Party: Halloween @ Betty’s
+SUMMARY:Betty’s Block Party: Halloween\, Lesion\, Crystal Plumage\, Mothe
+ r’s Milk\, Free Radio PNX\, DJ Balance Universal\, Myrrothavn\, Uraniumw
+ illy\, Cookies and Cake @ Betty’s
 DESCRIPTION:betty’s block party starts on halloween\, saturday october 31
  st. betty’s on belmont and the old bunny club next door\, two stages. ba
  nds still being confirmed.
@@ -34,7 +36,9 @@ URL:https://diypensacola.com/s/2026-10-31-bettys-bettys-block-party-hallowe
  en.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Betty’s Block Party: Halloween @ Betty’s
+DESCRIPTION:tonight: Betty’s Block Party: Halloween\, Lesion\, Crystal Pl
+ umage\, Mother’s Milk\, Free Radio PNX\, DJ Balance Universal\, Myrrotha
+ vn\, Uraniumwilly\, Cookies & Cake @ Betty’s
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
