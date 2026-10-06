@@ -22,4 +22,14 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-05-bettys-daikaiju@diypensacola
+DTSTAMP:20261105T000000Z
+DTSTART;TZID=America/Chicago:20261105T180000
+DTEND;TZID=America/Chicago:20261105T210000
+SUMMARY:Daikaiju @ Betty’s
+DESCRIPTION:Daikaiju Nov 5 at @bettys_on_belmont 🖤
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-05-bettys-daikaiju.html
+END:VEVENT
 END:VCALENDAR
