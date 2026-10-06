@@ -23,17 +23,31 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-01-bettys-cursed-body-crystal-plumage@diypensacola
-DTSTAMP:20261001T000000Z
-DTSTART;TZID=America/Chicago:20261001T200000
-DTEND;TZID=America/Chicago:20261001T230000
-SUMMARY:Cursed Body\, Crystal Plumage\, Cookies & Cake\, MyBrothaVan @ Bett
- y’s
-DESCRIPTION:cursed body\, crystal plumage\, cookies and cake and myrrothavn
-  at betty’s on belmont thursday october 1st. 8pm\, $10. benefit show for
-  the northwest florida wildlife sanctuary.
+UID:2026-10-31-bettys-bettys-block-party-halloween@diypensacola
+DTSTAMP:20261031T000000Z
+DTSTART;TZID=America/Chicago:20261031T190000
+DTEND;TZID=America/Chicago:20261031T220000
+SUMMARY:Betty’s Block Party: Halloween\, Lesion\, Crystal Plumage\, Mothe
+ r’s Milk\, Free Radio PNX\, DJ Balance Universal\, Myrrothavn\, Uraniumw
+ illy\, Cookies and Cake @ Betty’s
+DESCRIPTION:betty’s block party starts on halloween\, saturday october 31
+ st. betty’s on belmont and the old bunny club next door\, two stages. ba
+ nds still being confirmed.
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-01-bettys-cursed-body-crystal-plumag
- e.html
+URL:https://diypensacola.com/s/2026-10-31-bettys-bettys-block-party-hallowe
+ en.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-22-bettys-sludge-incorporated-cursed-body@diypensacola
+DTSTAMP:20261022T000000Z
+DTSTART;TZID=America/Chicago:20261022T190000
+DTEND;TZID=America/Chicago:20261022T220000
+SUMMARY:Sludge Incorporated\, Cursed Body\, Cookies & Cake\, Sweet Lady Sle
+ eze @ Betty’s
+DESCRIPTION:Sludge Incorporated Oct 22 at @bettys_on_belmont!\n\n@cursedbod
+ yband @cookies__and__cake @sweet.lady.sleeze
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-22-bettys-sludge-incorporated-cursed
+ -body.html
 END:VEVENT
 END:VCALENDAR

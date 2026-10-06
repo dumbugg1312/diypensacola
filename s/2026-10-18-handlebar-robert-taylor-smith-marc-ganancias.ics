@@ -21,21 +21,20 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-01-handlebar-wretched-tongues-in-gloom@diypensacola
-DTSTAMP:20261001T000000Z
-DTSTART;TZID=America/Chicago:20261001T190000
-DTEND;TZID=America/Chicago:20261001T220000
-SUMMARY:Wretched Tongues\, In Gloom\, Flesh Carving\, Wraithbearer @ The Ha
- ndlebar
-DESCRIPTION:Wretched Tongues next thursday at @thehandlebar850\n\n@wretched
- tongues @ingloomfl @fleshcarvingband @wraithbearer
+UID:2026-10-18-handlebar-robert-taylor-smith-marc-ganancias@diypensacola
+DTSTAMP:20261018T000000Z
+DTSTART;TZID=America/Chicago:20261018T150000
+DTEND;TZID=America/Chicago:20261018T180000
+SUMMARY:Robert Taylor Smith\, Marc Ganancias\, Warren Wolf\, Katie Dineen @
+  The Handlebar
+DESCRIPTION:Songwriter rounds matinee Oct 18 at @thehandlebar850
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-01-handlebar-wretched-tongues-in-glo
- om.html
+URL:https://diypensacola.com/s/2026-10-18-handlebar-robert-taylor-smith-mar
+ c-ganancias.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Wretched Tongues\, In Gloom\, Flesh Carving\, Wraithbe
- arer @ The Handlebar
+DESCRIPTION:tonight: Robert Taylor Smith\, Marc Ganancias\, Warren Wolf\, K
+ atie Dineen @ The Handlebar
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
