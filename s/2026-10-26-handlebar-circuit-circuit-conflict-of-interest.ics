@@ -21,19 +21,21 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-06-handlebar-xasthur-temple-of-the-fuzz-witch@diypensacola
-DTSTAMP:20261006T000000Z
-DTSTART;TZID=America/Chicago:20261006T190000
-DTEND;TZID=America/Chicago:20261006T220000
-SUMMARY:Xasthur\, Temple of the Fuzz Witch @ The Handlebar
-DESCRIPTION:Xasthur next tuesday at @thehandlebar850\n\n@xasthur_official1 
- @templeofthefuzzwitch
+UID:2026-10-26-handlebar-circuit-circuit-conflict-of-interest@diypensacola
+DTSTAMP:20261026T000000Z
+DTSTART;TZID=America/Chicago:20261026T190000
+DTEND;TZID=America/Chicago:20261026T220000
+SUMMARY:Circuit Circuit\, Conflict of Interests\, Sufferant\, Coastal High 
+ School @ The Handlebar
+DESCRIPTION:Circuit Circuit at @thehandlebar850 Oct 26 ⛓️\n@conflictofi
+ nterestsband @chs0nline
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-06-handlebar-xasthur-temple-of-the-f
- uzz-witch.html
+URL:https://diypensacola.com/s/2026-10-26-handlebar-circuit-circuit-conflic
+ t-of-interest.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Xasthur\, Temple of the Fuzz Witch @ The Handlebar
+DESCRIPTION:tonight: Circuit Circuit\, Conflict of Interests\, Sufferant\, 
+ Coastal High School @ The Handlebar
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT

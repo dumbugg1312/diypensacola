@@ -22,16 +22,4 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-UID:2026-10-07-handlebar-belmont-super-sometimes@diypensacola
-DTSTAMP:20261007T000000Z
-DTSTART;TZID=America/Chicago:20261007T190000
-DTEND;TZID=America/Chicago:20261007T220000
-SUMMARY:Belmont\, Super Sometimes\, Public Works @ The Handlebar
-DESCRIPTION:Belmont playing the ep in full next wednesday at @thehandlebar8
- 50!\n\n@belmontmusic @supersometimes
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-07-handlebar-belmont-super-sometimes
- .html
-END:VEVENT
 END:VCALENDAR

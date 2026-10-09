@@ -1876,6 +1876,12 @@ main{max-width:940px}
 #dlineup.off,.spcard.off h1{text-decoration:line-through;text-decoration-thickness:3px}
 .spcard.off .spflyer{opacity:.6;filter:grayscale(.4)}
 .pastflag.off{border-color:var(--ink);color:var(--ink)}
+/* possibly postponed (storm watch): the show is still LIVE, so no strike and no
+   dim, just a dashed "maybe" stamp + banner in caution amber (never the olive,
+   which means tonight) so it reads as a warning, not a death notice. */
+.s-maybe{color:var(--age);border-color:var(--age);border-style:dashed}
+.pastflag.maybe{border-color:var(--age);color:var(--age);border-style:dashed}
+.drow.dcancel.dmaybe{color:var(--age);border-color:var(--age);border-style:dashed}
 .drow.dcancel{color:var(--ink);border:2px solid var(--ink);display:inline-block;
   padding:.15rem .5rem;text-transform:uppercase;letter-spacing:.03em;font-size:.8rem}
 
