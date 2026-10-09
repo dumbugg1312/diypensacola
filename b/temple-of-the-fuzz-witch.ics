@@ -22,16 +22,4 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-UID:2026-10-06-handlebar-xasthur-temple-of-the-fuzz-witch@diypensacola
-DTSTAMP:20261006T000000Z
-DTSTART;TZID=America/Chicago:20261006T190000
-DTEND;TZID=America/Chicago:20261006T220000
-SUMMARY:Xasthur\, Temple of the Fuzz Witch @ The Handlebar
-DESCRIPTION:Xasthur next tuesday at @thehandlebar850\n\n@xasthur_official1 
- @templeofthefuzzwitch
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-06-handlebar-xasthur-temple-of-the-f
- uzz-witch.html
-END:VEVENT
 END:VCALENDAR

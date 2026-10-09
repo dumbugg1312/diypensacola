@@ -23,30 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-06-handlebar-xasthur-temple-of-the-fuzz-witch@diypensacola
-DTSTAMP:20261006T000000Z
-DTSTART;TZID=America/Chicago:20261006T190000
-DTEND;TZID=America/Chicago:20261006T220000
-SUMMARY:Xasthur\, Temple of the Fuzz Witch @ The Handlebar
-DESCRIPTION:Xasthur next tuesday at @thehandlebar850\n\n@xasthur_official1 
- @templeofthefuzzwitch
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-06-handlebar-xasthur-temple-of-the-f
- uzz-witch.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-07-handlebar-belmont-super-sometimes@diypensacola
-DTSTAMP:20261007T000000Z
-DTSTART;TZID=America/Chicago:20261007T190000
-DTEND;TZID=America/Chicago:20261007T220000
-SUMMARY:Belmont\, Super Sometimes\, Public Works @ The Handlebar
-DESCRIPTION:Belmont playing the ep in full next wednesday at @thehandlebar8
- 50!\n\n@belmontmusic @supersometimes
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-07-handlebar-belmont-super-sometimes
- .html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-08-handlebar-forsaken-profits-tokyo-coyote@diypensacola
 DTSTAMP:20261008T000000Z
 DTSTART;TZID=America/Chicago:20261008T190000
@@ -206,6 +182,19 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-23-handlebar-gimme-gimme-disco.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-24-handlebar-terrifying-tribute-show-26-cockfight@diypensacola
+DTSTAMP:20261024T000000Z
+DTSTART;TZID=America/Chicago:20261024T170000
+DTEND;TZID=America/Chicago:20261024T200000
+SUMMARY:Terrifying Tribute Show ’26\, Cockfight\, Palafoxx\, Cavae Mundi\
+ , Snow Halo @ The Handlebar
+DESCRIPTION:Terrifying Tribute Show in two weeks at @thehandlebar850!\n\n@c
+ avaemundi @snowhalo_
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-24-handlebar-terrifying-tribute-show
+ -26-cockfight.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-25-handlebar-goodbye-june-danny-worsnop@diypensacola
 DTSTAMP:20261025T000000Z
 DTSTART;TZID=America/Chicago:20261025T190000
@@ -217,6 +206,19 @@ DESCRIPTION:goodbye june brings the trouble for all tour to the handlebar w
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-25-handlebar-goodbye-june-danny-wors
  nop.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-26-handlebar-circuit-circuit-conflict-of-interest@diypensacola
+DTSTAMP:20261026T000000Z
+DTSTART;TZID=America/Chicago:20261026T190000
+DTEND;TZID=America/Chicago:20261026T220000
+SUMMARY:Circuit Circuit\, Conflict of Interests\, Sufferant\, Coastal High 
+ School @ The Handlebar
+DESCRIPTION:Circuit Circuit at @thehandlebar850 Oct 26 ⛓️\n@conflictofi
+ nterestsband @chs0nline
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-26-handlebar-circuit-circuit-conflic
+ t-of-interest.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-27-handlebar-still-allice-pons@diypensacola

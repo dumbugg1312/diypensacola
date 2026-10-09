@@ -1,11 +1,11 @@
-var CACHE='diypensacola-8db6f8157a56';
+var CACHE='diypensacola-07a08dad7a04';
 // CORE is the app shell (always precached). PRECACHE is this build's fonts plus
 // the flyers for tonight + this week, injected by build.py so someone who opens
 // the site fresh at a venue with no signal still sees this week's flyers instead
 // of logo placeholders. The versioned CACHE name means an old week's flyers evict
 // themselves on the next deploy. Both lists are added best-effort at install.
 var CORE=['./','index.html','offline.html','style.css','logo.png','manifest.webmanifest','icon-192.png','icon-512.png','apple-touch-icon.png'];
-var PRECACHE=["flyers/thumbs/2026-10-07_handlebar_belmont.webp", "flyers/thumbs/2026-10-08_handlebar_forsaken-profits.webp", "flyers/thumbs/2026-10-08_bettys_gong-slayer.webp", "flyers/thumbs/2026-10-09_bettys_punk-or-treat-iii.webp", "flyers/thumbs/2026-10-09_handlebar_graham-barham.webp", "flyers/thumbs/flyer_2026-10-10_handlebar_silent-theory.webp", "flyers/thumbs/2026-10-11_handlebar_ritual-6.webp", "flyers/thumbs/2026-10-12_handlebar_carry-the-torch.webp", "flyers/thumbs/2026-10-14_309_october-air-closing-exhibition.webp", "flyers/thumbs/2026-10-14_handlebar_cheese-for-the-table.webp", "flyers/thumbs/2026-10-15_bettys_lesion.webp", "flyers/thumbs/2026-10-16_309_rent-strike.webp", "flyers/thumbs/2026-10-16_bettys_dog-smiles.webp", "flyers/thumbs/2026-10-16_handlebar_big-time-maca.webp", "flyers/thumbs/2026-10-18_handlebar_fight-night-drag-show.webp", "flyers/thumbs/2026-10-18_handlebar_robert-taylor-smith.webp"];
+var PRECACHE=["flyers/2026-10-08_handlebar_forsaken-profits.jpg", "flyers/thumbs/2026-10-08_handlebar_forsaken-profits.webp", "flyers/2026-10-08_bettys_gong-slayer.jpg", "flyers/thumbs/2026-10-08_bettys_gong-slayer.webp", "flyers/thumbs/2026-10-09_bettys_punk-or-treat-iii.webp", "flyers/thumbs/2026-10-09_handlebar_graham-barham.webp", "flyers/thumbs/flyer_2026-10-10_handlebar_silent-theory.webp", "flyers/thumbs/2026-10-11_handlebar_ritual-6.webp", "flyers/thumbs/2026-10-12_handlebar_carry-the-torch.webp", "flyers/thumbs/2026-10-14_309_october-air-closing-exhibition.webp", "flyers/thumbs/2026-10-14_handlebar_cheese-for-the-table.webp", "flyers/thumbs/2026-10-15_bettys_lesion.webp", "flyers/thumbs/2026-10-16_309_rent-strike.webp", "flyers/thumbs/2026-10-16_bettys_dog-smiles.webp", "flyers/thumbs/2026-10-16_handlebar_big-time-maca.webp", "flyers/thumbs/2026-10-18_handlebar_fight-night-drag-show.webp", "flyers/thumbs/2026-10-18_handlebar_robert-taylor-smith.webp"];
 CORE=CORE.concat(PRECACHE);
 self.addEventListener('install',function(e){
   self.skipWaiting();
