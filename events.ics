@@ -23,79 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-08-handlebar-forsaken-profits-tokyo-coyote@diypensacola
-DTSTAMP:20261008T000000Z
-DTSTART;TZID=America/Chicago:20261008T190000
-DTEND;TZID=America/Chicago:20261008T220000
-SUMMARY:Forsaken Profits\, Tokyo Coyote\, Tremors @ The Handlebar
-DESCRIPTION:forsaken profits\, tokyo coyote\, and tremors at the handlebar.
-  thursday october 8th.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-08-handlebar-forsaken-profits-tokyo-
- coyote.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-08-bettys-gong-slayer-roman-gabriel-todd@diypensacola
-DTSTAMP:20261008T000000Z
-DTSTART;TZID=America/Chicago:20261008T190000
-DTEND;TZID=America/Chicago:20261008T220000
-SUMMARY:Gong Slayer\, Roman Gabriel Todd @ Betty’s
-DESCRIPTION:Gong Slayer next thursday at @bettys_on_belmont!
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-08-bettys-gong-slayer-roman-gabriel-
- todd.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-09-bettys-punk-or-treat-iii-friendly-spectres@diypensacola
-DTSTAMP:20261009T000000Z
-DTSTART;TZID=America/Chicago:20261009T200000
-DTEND;TZID=America/Chicago:20261009T230000
-SUMMARY:Punk-or-Treat III\, Ihatesundays\, Mother’s Milk\, Bastard Son\, 
- The Snatches\, Larry @ Betty’s
-DESCRIPTION:punk-or-treat iii\, a food not bombs fundraiser at betty’s on
-  friday 10/9. ihatesundays\, mother’s milk\, bastard son and the snatche
- s\, plus a costume contest featuring larry. doors 8pm\, music 9pm. $10-$20
-  sliding scale\, or $5 with a donation.
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-09-bettys-punk-or-treat-iii-friendly
- -spectres.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-09-handlebar-graham-barham-jake-banfield@diypensacola
-DTSTAMP:20261009T000000Z
-DTSTART;TZID=America/Chicago:20261009T190000
-DTEND;TZID=America/Chicago:20261009T220000
-SUMMARY:Graham Barham\, Jake Banfield @ The Handlebar
-DESCRIPTION:graham barham with jake banfield at the handlebar\, friday octo
- ber 9. doors 7pm\, show at 8.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-09-handlebar-graham-barham-jake-banf
- ield.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-10-handlebar-silent-theory@diypensacola
-DTSTAMP:20261010T000000Z
-DTSTART;TZID=America/Chicago:20261010T190000
-DTEND;TZID=America/Chicago:20261010T220000
-SUMMARY:Silent Theory\, Discrepancies\, Sick Century\, Serena’s Fire\, Si
- ck Room @ The Handlebar
-DESCRIPTION:Silent Theory in two weeks at @thehandlebar850\n\n@silenttheory
- music @discrepancies @sickcentury
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-10-handlebar-silent-theory.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-11-handlebar-ritual-6@diypensacola
-DTSTAMP:20261011T000000Z
-DTSTART;TZID=America/Chicago:20261011T190000
-DTEND;TZID=America/Chicago:20261011T220000
-SUMMARY:Ritual 6 @ The Handlebar
-DESCRIPTION:Ritual 6 goth/industrial night this sunday at @thehandlebar850 
- 🖤
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-11-handlebar-ritual-6.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-12-handlebar-carry-the-torch-strikeforce@diypensacola
 DTSTAMP:20261012T000000Z
 DTSTART;TZID=America/Chicago:20261012T180000
@@ -290,17 +217,6 @@ DESCRIPTION:Sludge Incorporated Oct 22 at @bettys_on_belmont!\n\n@cursedbod
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-22-bettys-sludge-incorporated-cursed
  -body.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-23-handlebar-gimme-gimme-disco@diypensacola
-DTSTAMP:20261023T000000Z
-DTSTART;TZID=America/Chicago:20261023T210000
-DTEND;TZID=America/Chicago:20261024T000000
-SUMMARY:Gimme Gimme Disco @ The Handlebar
-DESCRIPTION:gimme gimme disco at the handlebar on friday\, october 23rd. do
- ors 9pm\, dancing at 9:30.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-23-handlebar-gimme-gimme-disco.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-23-bettys-the-earthly-delights-sideshow@diypensacola
