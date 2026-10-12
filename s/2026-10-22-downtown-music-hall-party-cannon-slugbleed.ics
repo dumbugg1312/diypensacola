@@ -22,13 +22,15 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-10-22-downtown-music-hall-party-cannon-slugbleed@diypensacola
-DTSTAMP:20261022T000000Z
+DTSTAMP:20260826T000000Z
+SEQUENCE:3562092
 DTSTART;TZID=America/Chicago:20261022T180000
-DTEND;TZID=America/Chicago:20261022T210000
-SUMMARY:Party Cannon\, Slugbleed\, Fogcrawler\, Spidershed @ Downtown Music
-  Hall
-DESCRIPTION:Party Cannon Oct 22 at @downtown_music_hall!\n\n@party_cannon_o
- fficial @slugbleed @spidershed.nwfl
+DTEND;TZID=America/Chicago:20261022T220000
+SUMMARY:Party Cannon\, Slugbleed\, Fogcrawler +1 @ Downtown Music Hall
+DESCRIPTION:Party Cannon\, Slugbleed\, Fogcrawler\, Spidershed\ndoors 6pm\,
+  music 7pm\n$15 adv / $20 dos\nhttps://diypensacola.com/s/2026-10-22-downt
+ own-music-hall-party-cannon-slugbleed.html\n\nParty Cannon Oct 22 at @down
+ town_music_hall!\n\n@party_cannon_official @slugbleed @spidershed.nwfl
 LOCATION:Downtown Music Hall
 URL:https://diypensacola.com/s/2026-10-22-downtown-music-hall-party-cannon-
  slugbleed.html

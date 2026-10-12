@@ -24,24 +24,31 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-12-11-the-den-brotality-sacreus@diypensacola
-DTSTAMP:20261211T000000Z
+DTSTAMP:20260915T000000Z
+SEQUENCE:3406179
 DTSTART;TZID=America/Chicago:20261211T180000
-DTEND;TZID=America/Chicago:20261211T210000
-SUMMARY:Brotality\, Sacreus\, Coastal Highschool @ The Den
-DESCRIPTION:brotality\, sacreus\, and coastal highschool at the den\, frida
- y december 11. doors 6\, music at 7. $10 advance\, $15 at the door.
+DTEND;TZID=America/Chicago:20261211T220000
+SUMMARY:Brotality\, Sacreus\, Coastal High School @ The Den
+DESCRIPTION:Brotality\, Sacreus\, Coastal High School\ndoors 6pm\, music 7p
+ m\n$10 adv / $15 dos\nhttps://diypensacola.com/s/2026-12-11-the-den-brotal
+ ity-sacreus.html\n\nbrotality\, sacreus\, and coastal highschool at the de
+ n\, friday december 11. doors 6\, music at 7. $10 advance\, $15 at the doo
+ r.
 LOCATION:The Den
 URL:https://diypensacola.com/s/2026-12-11-the-den-brotality-sacreus.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-20-handlebar-the-convalescence-knifeback@diypensacola
-DTSTAMP:20261020T000000Z
+DTSTAMP:20260925T000000Z
+SEQUENCE:11103055
 DTSTART;TZID=America/Chicago:20261020T190000
 DTEND;TZID=America/Chicago:20261020T220000
-SUMMARY:The Convalescence\, Knifeback\, Blindfold Knife Fight\, Sacreus @ T
- he Handlebar
-DESCRIPTION:The Convalescence this tuesday at @thehandlebar850 🖤\n\n@the
- convalescenceofficial @blindfoldknifefightfl @sacreus
+SUMMARY:The Convalescence\, Knifeback\, Blindfold Knife Fight +1 @ The Hand
+ lebar
+DESCRIPTION:The Convalescence\, Knifeback\, Blindfold Knife Fight\, Sacreus
+ \ndoors 7pm\n$10 adv / $15 door\nhttps://diypensacola.com/s/2026-10-20-han
+ dlebar-the-convalescence-knifeback.html\n\n@theconvalescenceofficial @blin
+ dfoldknifefightfl @sacreus
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-20-handlebar-the-convalescence-knife
  back.html

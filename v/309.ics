@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: 309
+X-WR-CALNAME:DIYPensacola: 309 Punk Project
 X-WR-TIMEZONE:America/Chicago
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
@@ -24,48 +24,59 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-10-14-309-october-air-closing-exhibition-chad-porter@diypensacola
-DTSTAMP:20261014T000000Z
+DTSTAMP:20260927T000000Z
+SEQUENCE:16430388
 DTSTART;TZID=America/Chicago:20261014T180000
 DTEND;TZID=America/Chicago:20261014T210000
 SUMMARY:October AIR Closing Exhibition\, Chad Porter @ 309
-DESCRIPTION:Chad Porter’s closing exhibition at @309punkproject\, wednesd
- ay october 14th.
+DESCRIPTION:October AIR Closing Exhibition\, Chad Porter\n6-9pm\nhttps://di
+ ypensacola.com/s/2026-10-14-309-october-air-closing-exhibition-chad-porter
+ .html\n\nChad Porter’s closing exhibition at @309punkproject\, wednesday
+  october 14th.
 LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-14-309-october-air-closing-exhibitio
  n-chad-porter.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-16-309-rent-strike-myles-bullen@diypensacola
-DTSTAMP:20261016T000000Z
+DTSTAMP:20260826T000000Z
+SEQUENCE:10165286
 DTSTART;TZID=America/Chicago:20261016T183000
 DTEND;TZID=America/Chicago:20261016T213000
 SUMMARY:Rent Strike\, Myles Bullen\, Outlook Bleak @ 309
-DESCRIPTION:Rent Strike in two weeks at @309punkproject!\n\n@rent__strike @
- beatboxpoet @outlook_bleak
+DESCRIPTION:Rent Strike\, Myles Bullen\, Outlook Bleak\ndoors 6:30pm\nhttps
+ ://diypensacola.com/s/2026-10-16-309-rent-strike-myles-bullen.html\n\n@ren
+ t__strike @beatboxpoet @outlook_bleak
 LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-16-309-rent-strike-myles-bullen.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-22-309-wintergreen-oil-photo-transfer-workshop-kayleigh-rose@di
  ypensacola
-DTSTAMP:20261022T000000Z
+DTSTAMP:20260927T000000Z
+SEQUENCE:286282
 DTSTART;TZID=America/Chicago:20261022T180000
 DTEND;TZID=America/Chicago:20261022T210000
 SUMMARY:Wintergreen Oil Photo Transfer Workshop\, Kayleigh Rose @ 309
-DESCRIPTION:Wintergreen oil photo transfer workshop with Kayleigh Rose at @
- 309punkproject\, thursday october 22nd.
+DESCRIPTION:Wintergreen Oil Photo Transfer Workshop\, Kayleigh Rose\n6-9pm\
+ nsliding scale\nhttps://diypensacola.com/s/2026-10-22-309-wintergreen-oil-
+ photo-transfer-workshop-kayleigh-rose.html\n\nWintergreen oil photo transf
+ er workshop with Kayleigh Rose at @309punkproject\, thursday october 22nd.
 LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-22-309-wintergreen-oil-photo-transfe
  r-workshop-kayleigh-rose.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-14-309-night-on-the-tracks-the-art-of-protest@diypensacola
-DTSTAMP:20261114T000000Z
+DTSTAMP:20260920T000000Z
+SEQUENCE:10116102
 DTSTART;TZID=America/Chicago:20261114T180000
 DTEND;TZID=America/Chicago:20261114T210000
 SUMMARY:Night on the Tracks: The Art of Protest @ 309
-DESCRIPTION:The Art of Protest at 309 for Night on the Tracks\, saturday no
- vember 14th.
+DESCRIPTION:Night on the Tracks: The Art of Protest\n6pm-9pm\nhttps://diype
+ nsacola.com/s/2026-11-14-309-night-on-the-tracks-the-art-of-protest.html\n
+ \nThe Art of Protest at 309 for Night on the Tracks\, saturday november 14
+ th.
 LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-14-309-night-on-the-tracks-the-art-o
  f-protest.html

@@ -24,13 +24,14 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-10-15-bettys-lesion-bastard-son@diypensacola
-DTSTAMP:20261015T000000Z
+DTSTAMP:20260826T000000Z
+SEQUENCE:3316715
 DTSTART;TZID=America/Chicago:20261015T190000
 DTEND;TZID=America/Chicago:20261015T220000
-SUMMARY:Lesion\, Bastard Son\, Hayweather\, beautysleep\, 7.7 PNX @ Betty
- ’s
-DESCRIPTION:Support @strivepensacola at @bettys_on_belmont in two weeks 
- 💞\n\n@lesion_bandfl @bastardsonband @beautysleep850
+SUMMARY:Lesion\, Bastard Son\, Hayweather +2 @ Betty’s
+DESCRIPTION:Lesion\, Bastard Son\, Hayweather\, beautysleep\, 7.7 PNX\n7pm\
+ n$10-$20 (sliding scale)\nhttps://diypensacola.com/s/2026-10-15-bettys-les
+ ion-bastard-son.html\n\n@lesion_bandfl @bastardsonband @beautysleep850
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-15-bettys-lesion-bastard-son.html
 END:VEVENT

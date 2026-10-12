@@ -24,24 +24,31 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-10-23-the-den-dirty-crumbums-dead-devils@diypensacola
-DTSTAMP:20261023T000000Z
+DTSTAMP:20260923T000000Z
+SEQUENCE:9762270
 DTSTART;TZID=America/Chicago:20261023T180000
-DTEND;TZID=America/Chicago:20261023T210000
+DTEND;TZID=America/Chicago:20261023T220000
 SUMMARY:Dirty Crumbums\, Dead Devils\, Ex-Teenage Rebels @ The Den
-DESCRIPTION:Dirty Crumbums Oct 23 with Dead Devils + Ex-Teenage Rebels 🖤
- \n\n@exteenagerebels
+DESCRIPTION:Dirty Crumbums\, Dead Devils\, Ex-Teenage Rebels\ndoors 6pm\, m
+ usic 7pm\n$5\nhttps://diypensacola.com/s/2026-10-23-the-den-dirty-crumbums
+ -dead-devils.html\n\nDirty Crumbums Oct 23 with Dead Devils + Ex-Teenage R
+ ebels 🖤\n\n@exteenagerebels
 LOCATION:The Den
 URL:https://diypensacola.com/s/2026-10-23-the-den-dirty-crumbums-dead-devil
  s.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-11-the-den-brotality-sacreus@diypensacola
-DTSTAMP:20261211T000000Z
+DTSTAMP:20260915T000000Z
+SEQUENCE:3406179
 DTSTART;TZID=America/Chicago:20261211T180000
-DTEND;TZID=America/Chicago:20261211T210000
-SUMMARY:Brotality\, Sacreus\, Coastal Highschool @ The Den
-DESCRIPTION:brotality\, sacreus\, and coastal highschool at the den\, frida
- y december 11. doors 6\, music at 7. $10 advance\, $15 at the door.
+DTEND;TZID=America/Chicago:20261211T220000
+SUMMARY:Brotality\, Sacreus\, Coastal High School @ The Den
+DESCRIPTION:Brotality\, Sacreus\, Coastal High School\ndoors 6pm\, music 7p
+ m\n$10 adv / $15 dos\nhttps://diypensacola.com/s/2026-12-11-the-den-brotal
+ ity-sacreus.html\n\nbrotality\, sacreus\, and coastal highschool at the de
+ n\, friday december 11. doors 6\, music at 7. $10 advance\, $15 at the doo
+ r.
 LOCATION:The Den
 URL:https://diypensacola.com/s/2026-12-11-the-den-brotality-sacreus.html
 END:VEVENT

@@ -22,11 +22,14 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-11-05-bettys-daikaiju@diypensacola
-DTSTAMP:20261105T000000Z
+DTSTAMP:20261006T000000Z
+SEQUENCE:1574988
 DTSTART;TZID=America/Chicago:20261105T180000
-DTEND;TZID=America/Chicago:20261105T210000
+DTEND;TZID=America/Chicago:20261106T000000
 SUMMARY:Daikaiju @ Betty’s
-DESCRIPTION:Daikaiju Nov 5 at @bettys_on_belmont 🖤
+DESCRIPTION:Daikaiju\ndoors 6pm / show 9pm\n$15\nhttps://diypensacola.com/s
+ /2026-11-05-bettys-daikaiju.html\n\nDaikaiju Nov 5 at @bettys_on_belmont 
+ 🖤
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-05-bettys-daikaiju.html
 BEGIN:VALARM

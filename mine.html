@@ -1,11 +1,14 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data: https://diypensacola.goatcounter.com; font-src https://fonts.gstatic.com; connect-src 'self' https://api.github.com https://diypensacola.goatcounter.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'sha256-AR42PICP64BCOsqNcncW6gvp67Q0UIFuvKB1tDxFQkU='">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; img-src 'self' data: https://diypensacola.goatcounter.com; font-src https://fonts.gstatic.com; connect-src 'self' https://diypensacola.goatcounter.com; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-GxbSkcJZpafZFGRq2QAuRJ32RBXSfpFZZSxO8mI7jU8='">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>your shows · DIYPensacola</title>
 <meta name="description" content="The Pensacola DIY shows you were at, kept on your own device.">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#0c0c0d">
 <meta name="color-scheme" content="dark">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link rel="canonical" href="https://diypensacola.com/mine.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DIYPensacola">
@@ -13,123 +16,271 @@
 <meta property="og:description" content="The Pensacola DIY shows you were at, kept on your own device.">
 <meta property="og:url" content="https://diypensacola.com/mine.html">
 <meta property="og:image" content="https://diypensacola.com/logo.png">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="600">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="favicon-48.png" sizes="48x48">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Special+Elite&family=Rock+Salt&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css"></head><body class="showpage">
-<a class="skip" href="#main">skip to content</a><div class="modebar"><nav class="modetabs" aria-label="calendar or archive"><a class="modetab" href="./">calendar</a><a class="modetab on" href="archive.html" aria-current="page">archive</a></nav></div><header class="bighead"><a href="./" class="homelink" aria-label="diypensacola home"><img class="logo" src="logo.png" alt="DIYPensacola Punksacola water tower logo"></a><p class="wordmark"><a href="./">diypensacola</a></p><p class="tag" style="--tagw:13.2">the nights you were there</p></header><div class="links"><span class="lrow"><a href="bands.html">bands &amp; acts</a><a href="venues.html">venues</a><a href="https://youtube.com/playlist?list=PLVw-bAWseWcR5fmJF4vu6zbBVT1m0Lf7q" target="_blank" rel="noopener">local mixtapes</a></span><span class="lrow"><a href="guide.html">showgoer guide</a><a href="submit.html">submit a show</a><a id="calsub" href="webcal://diypensacola.com/events.ics" title="every upcoming show on this calendar, dropped into your own and kept up to date. this is the whole calendar at once, not one show. for a single room or band, subscribe on its own page. unsubscribe any time.">subscribe</a></span></div>
+<a class="skip" href="#main">skip to content</a><div class="modebar"><nav class="modetabs" aria-label="calendar or archive"><a class="modetab" href="./">calendar</a><a class="modetab on" href="archive.html" aria-current="page">archive</a></nav></div><header class="bighead"><a href="./" class="homelink" tabindex="-1" aria-hidden="true"><img class="logo" src="logo-hdr.webp" alt="DIYPensacola Punksacola water tower logo"></a><p class="wordmark"><a href="./">diypensacola</a></p><p class="tag" style="--tagw:13.2">the nights you were there</p></header><div class="links" role="navigation" aria-label="site"><span class="lrow"><a href="bands.html">bands &amp; acts</a><a href="venues.html">venues</a><a href="https://youtube.com/playlist?list=PLVw-bAWseWcR5fmJF4vu6zbBVT1m0Lf7q" target="_blank" rel="noopener">local mixtapes&nbsp;<span aria-hidden="true">&#8599;</span><span class="sr-only"> (youtube, opens in a new tab)</span></a></span><span class="lrow"><a href="guide.html">showgoer guide</a><a href="submit.html">submit a show</a><a id="calsub" href="index.html#subscribe" title="every upcoming show on this calendar, dropped into your own and kept up to date. this is the whole calendar at once, not one show. for a single room or band, subscribe on its own page. unsubscribe any time.">calendar feed</a></span></div>
 <main id="main" tabindex="-1" class="spwrap dirwrap">
 <h1 class="dirhead">your shows</h1>
-<p class="dirsub">every show you marked &ldquo;i was there&rdquo;, plus the ones you saved. it lives
-on this device only: no account, nothing sent anywhere, and clearing your browser clears it.</p>
+<p class="dirsub">every show you marked &ldquo;i was there&rdquo;, the ones you saved, and the acts and
+rooms you follow. it lives on this device only: no account, nothing sent anywhere, and clearing your
+browser clears it.</p>
 <div id="mine" aria-live="polite"><noscript><p class="dcap">this page needs javascript: it reads the
 list your browser keeps.</p></noscript></div>
 <nav class="closer" aria-label="keep digging"><span class="closerlab">keep digging</span><div class="closerlinks"><a href="archive.html">search the archive</a><a href="guide.html">showgoer guide</a><a href="./">the calendar</a></div></nav>
 </main>
-<footer><p class="fline">support your local scene. <b>go to shows.</b></p><div class="finelinks"><a href="https://instagram.com/diypensacola" target="_blank" rel="noopener">instagram</a><a href="https://discord.com/invite/Ckn2j53Bqm" target="_blank" rel="noopener">discord</a><a href="https://facebook.com/diypensacola" target="_blank" rel="noopener">facebook</a><a href="radio.html">auto-play radio</a><a href="https://venmo.com/code?user_id=2602561043431424773&amp;created=1782154144" target="_blank" rel="noopener">donate</a></div><p class="fcredit">proudly ran out of punksacola, fl</p></footer><button class="totop" id="totop" type="button" aria-label="back to top" title="back to top">&#8593;</button>
+<footer><p class="fline">support your local scene. <b>go to shows.</b></p><div class="finelinks"><a href="https://instagram.com/diypensacola" target="_blank" rel="noopener">instagram</a><a href="https://discord.com/invite/Ckn2j53Bqm" target="_blank" rel="noopener">discord</a><a href="https://facebook.com/diypensacola" target="_blank" rel="noopener">facebook</a><a href="radio.html">auto-play radio</a><a href="https://venmo.com/code?user_id=2602561043431424773&amp;created=1782154144" target="_blank" rel="noopener">donate</a></div><p class="fcredit">proudly ran out of punksacola, fl &middot; all times central &middot; no ads, no cookies, anonymous visit counts &middot; <a class="fabout" href="submit.html#about">who runs this</a></p></footer><button class="totop" id="totop" type="button" aria-label="back to top" title="back to top">&#8593;</button>
 <script>(function(){
-  var root=document.getElementById('mine');if(!root)return;
-  var K='dpc_went',G='dpc_going',ok=true;
-  try{localStorage.setItem('dpc_t','1');localStorage.removeItem('dpc_t');}catch(e){ok=false;}
-  function get(k){try{var a=JSON.parse(localStorage.getItem(k)||'[]');return Array.isArray(a)?a:[];}catch(e){return [];}}
-  function set(k,a){try{localStorage.setItem(k,JSON.stringify(a));}catch(e){}}
-  function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e;}
-  function link(href,txt,c){var a=el('a',c,txt);a.href=href;return a;}
-  var MON=['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
-  function nice(d){var p=d.split('-');return MON[+p[1]-1]+' '+(+p[2]);}
-  var now=new Date(),pad=function(n){return (n<10?'0':'')+n;},
-      today=now.getFullYear()+'-'+pad(now.getMonth()+1)+'-'+pad(now.getDate());
-  var inc=[],m=/[#&]w=([^&]+)/.exec(location.hash);
-  if(m)inc=decodeURIComponent(m[1]).split(',').filter(function(x){return /^[a-z0-9-]+$/.test(x);});
-  if(!ok){root.textContent='';root.appendChild(el('p','dcap',
-    'this browser is blocking local storage here (a private window does that), so there is nowhere to keep your list.'));return;}
-  fetch('search-index.json').then(function(r){return r.json();}).then(function(idx){
-    var by={},bands={},sa=idx.sa||{};
-    (idx.shows||[]).forEach(function(s){by[s.u.slice(2,-5)]=s;});
-    (idx.bands||[]).forEach(function(b){bands[b.n.toLowerCase()]=b.u;});
-    function heal(k){var a=get(k),out=[],ch=false;
-      a.forEach(function(id){var n=by[id]?id:(sa[id]&&by[sa[id]]?sa[id]:id);
-        if(n!==id)ch=true;if(out.indexOf(n)<0)out.push(n);else ch=true;});
-      if(ch)set(k,out);return out;}
-    function render(){
-      root.textContent='';
-      var went=heal(K),going=heal(G);
-      if(inc.length){
-        var fresh=inc.filter(function(id){var n=by[id]?id:sa[id];return n&&by[n]&&went.indexOf(n)<0;});
-        var box=el('div','mineimport');
-        if(fresh.length){
-          box.appendChild(el('p',null,'this link carries '+fresh.length+' show'+(fresh.length==1?'':'s')+' you were at. add '+(fresh.length==1?'it':'them')+' to the list on this device?'));
-          var add=el('button','dbtn','add '+fresh.length+' to my list');add.type='button';
-          add.addEventListener('click',function(){var a=get(K);
-            fresh.forEach(function(id){var n=by[id]?id:sa[id];if(a.indexOf(n)<0)a.push(n);});
-            set(K,a);inc=[];history.replaceState(null,'',location.pathname);render();});
-          box.appendChild(add);
-        }else box.appendChild(el('p',null,'every show in this link is already on your list.'));
-        root.appendChild(box);
-      }
-      var shows=went.map(function(id){return by[id];}).filter(Boolean)
-        .sort(function(a,b){return a.d<b.d?1:a.d>b.d?-1:0;});
-      var lost=went.length-shows.length;
-      var soon=going.map(function(id){return by[id];}).filter(function(s){return s&&s.d>=today;})
-        .sort(function(a,b){return a.d<b.d?-1:1;});
-      if(!shows.length&&!soon.length){
-        var e=el('div','mineempty');
-        e.appendChild(el('p','dcap','nothing here yet. open any old show from the archive and hit “i was there”. every one you mark lands here: your own run of nights, the acts you have seen most, the rooms you keep ending up in.'));
-        var b=el('div','dactions');b.appendChild(link('archive.html','dig through the archive →','dbtn'));
-        e.appendChild(b);root.appendChild(e);return;}
-      if(soon.length){
-        root.appendChild(el('h2','mon','coming up, saved'));
-        var ul=el('ul','minelist');soon.forEach(function(s){ul.appendChild(row(s,true));});root.appendChild(ul);
-      }
-      if(shows.length){
-        var rooms={},acts={},years={};
-        shows.forEach(function(s){
-          var r=rooms[s.vs]||(rooms[s.vs]={n:s.v,c:0});r.c++;
-          (s.a||[]).forEach(function(n){var k=n.toLowerCase();var x=acts[k]||(acts[k]={n:n,c:0});x.c++;});
-          years[s.d.slice(0,4)]=1;});
-        var nA=Object.keys(acts).length,nR=Object.keys(rooms).length,first=shows[shows.length-1].d.slice(0,4);
-        var st=el('p','dirsub minestats');
-        st.textContent=shows.length+' show'+(shows.length==1?'':'s')+' · '+nA+' act'+(nA==1?'':'s')+' · '+nR+' room'+(nR==1?'':'s')+' · since '+first;
-        root.appendChild(st);
-        function top(o,min,cap){return Object.keys(o).map(function(k){return {k:k,n:o[k].n,c:o[k].c};})
-          .filter(function(x){return x.c>=min;}).sort(function(a,b){return b.c-a.c||(a.n<b.n?-1:1);}).slice(0,cap);}
-        var ta=top(acts,2,8),tr=top(rooms,1,5);
-        if(ta.length||tr.length){
-          var g=el('div','minetops');
-          if(ta.length){var d=el('div');d.appendChild(el('span','lead','seen the most'));
-            ta.forEach(function(x){var u=bands[x.k];var a=u?link(u,x.n.toLowerCase()):el('span',null,x.n.toLowerCase());
-              a.appendChild(el('small',null,' ×'+x.c));d.appendChild(a);});g.appendChild(d);}
-          if(tr.length){var d2=el('div');d2.appendChild(el('span','lead','your rooms'));
-            tr.forEach(function(x){var a=link('v/'+x.k+'.html',(x.n||'venue tba').toLowerCase());
-              a.appendChild(el('small',null,' ×'+x.c));d2.appendChild(a);});g.appendChild(d2);}
-          root.appendChild(g);
-        }
-        var cy=null,list=null;
-        shows.forEach(function(s){var y=s.d.slice(0,4);
-          if(y!==cy){cy=y;root.appendChild(el('h2','mon',y));list=el('ul','minelist');root.appendChild(list);}
-          list.appendChild(row(s,false));});
-        if(lost)root.appendChild(el('p','dcap',lost+' show'+(lost==1?'':'s')+' you marked aren’t in the archive anymore (merged or pulled).'));
-        var bk=el('div','minebackup');
-        bk.appendChild(el('p','dcap','this list lives only in this browser. to move it to another phone, copy this link and open it there.'));
-        var cp=el('button','dbtn','copy my list link');cp.type='button';
-        var url=location.origin+location.pathname+'#w='+went.filter(function(id){return by[id];}).join(',');
-        cp.addEventListener('click',function(){
-          if(navigator.clipboard)navigator.clipboard.writeText(url).then(function(){cp.textContent='copied ✓';},function(){prompt('copy this link',url);});
-          else prompt('copy this link',url);});
-        bk.appendChild(cp);root.appendChild(bk);
-      }
-    }
-    function row(s,withYear){
-      var li=el('li');var a=link(s.u,'');
-      a.appendChild(el('span','date',nice(s.d)+(withYear?', '+s.d.slice(0,4):'')));
-      a.appendChild(el('strong',null,s.t));
-      a.appendChild(el('span','meta','@ '+(s.v||'venue tba').toLowerCase()));
-      li.appendChild(a);return li;}
-    render();
-  }).catch(function(){root.textContent='';root.appendChild(el('p','dcap','couldn’t load the archive index. check your connection and reload.'));});
-})();</script><script data-goatcounter="https://diypensacola.goatcounter.com/count" src="count.js" async></script><script src="flag.js" defer></script>
+var root=document.getElementById('mine');if(!root)return;
+var K='dpc_went',G='dpc_going',M='dpc_maybe',FB='dpc_follow_bands',FV='dpc_follow_venues',ok=true;
+try{localStorage.setItem('dpc_t','1');localStorage.removeItem('dpc_t');}catch(e){ok=false;}
+function get(k){try{var a=JSON.parse(localStorage.getItem(k)||'[]');return Array.isArray(a)?a:[];}catch(e){return [];}}
+function set(k,a){try{localStorage.setItem(k,JSON.stringify(a));}catch(e){}}
+function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e;}
+function link(href,txt,c){var a=el('a',c,txt);a.href=href;return a;}
+function btn(c,txt,label){var b=el('button',c,txt);b.type='button';if(label)b.setAttribute('aria-label',label);return b;}
+function plural(n,w){return n+' '+w+(n==1?'':'s');}
+var MON=['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
+function nice(d){var p=d.split('-');return MON[+p[1]-1]+' '+(+p[2]);}
+var _scf=null;
+function showClock(at){
+var d=at||new Date(),y,mo,da,h,mi;
+try{
+if(!_scf)_scf=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',hour12:false,
+year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'});
+var o={};_scf.formatToParts(d).forEach(function(p){o[p.type]=p.value;});
+y=+o.year;mo=+o.month;da=+o.day;h=(+o.hour)%24;mi=+o.minute;
+if(!(y>2000&&mo>0&&da>0&&h>=0&&mi>=0))throw 0;
+}catch(e){y=d.getFullYear();mo=d.getMonth()+1;da=d.getDate();h=d.getHours();mi=d.getMinutes();}
+var base=Date.UTC(y,mo-1,da-(h<5?1:0));
+function ymd(t){var u=new Date(t);return u.getUTCFullYear()+'-'+('0'+(u.getUTCMonth()+1)).slice(-2)+'-'+('0'+u.getUTCDate()).slice(-2);}
+function plus(n){return ymd(base+n*864e5);}
+var dow=new Date(base).getUTCDay(),toSun=(7-dow)%7;
+return {day:ymd(base),min:(h<5?1440:0)+h*60+mi,dow:dow,weekEnd:plus(toSun),nextWeekEnd:plus(toSun+7),
+weekendStart:plus(4-((dow+6)%7)),plus:plus,
+dayNum:function(s){var p=String(s).split('-');return Math.round(Date.UTC(+p[0],+p[1]-1,+p[2])/864e5);}};
+}
+var today=showClock().day;
+var ua=navigator.userAgent||'';
+var ios=/iphone|ipad|ipod/i.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1&&!/android/i.test(ua));
+var standalone=(window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||navigator.standalone===true;
+var ITP=(ios&&!standalone)?'safari on iphone clears this after about a week away. add the site to your home screen to keep it.':'';
+var inc={w:[],g:[],f:[]},cut=false;
+(function(){
+var h=location.hash.replace(/^#/,'');if(!h)return;
+h.split('&').forEach(function(p){
+var i=p.indexOf('=');if(i<0)return;
+var k=p.slice(0,i),raw=p.slice(i+1);
+if(k!=='w'&&k!=='g'&&k!=='f')return;
+var v;
+try{v=decodeURIComponent(raw).split(',');}
+catch(e){cut=true;return;}
+inc[k]=v.filter(function(x){return k==='f'?/^[bv]:[a-z0-9-]+$/.test(x):/^[a-z0-9-]+$/.test(x);});
+});
+})();
+var hasInc=inc.w.length+inc.g.length+inc.f.length>0;
+window.addEventListener('hashchange',function(){location.reload();});
+if(!ok){root.textContent='';root.appendChild(el('p','dcap',
+'this browser is blocking local storage here (a private window does that), so there is nowhere to keep your list.'));return;}
+var loaded=false,nothing=!hasInc&&!get(K).length&&!get(G).length&&!get(M).length&&!get(FB).length&&!get(FV).length;
+(nothing?Promise.resolve({shows:[],bands:[],venues:[],sa:{}}):fetch('search-index.json').then(function(r){return r.json();})).then(function(idx){
+loaded=true;
+var by=Object.create(null),bands=Object.create(null),bandName=Object.create(null),venName=Object.create(null),sa=Object.create(null);
+var sa0=idx.sa||{};Object.keys(sa0).forEach(function(k){sa[k]=sa0[k];});
+(idx.shows||[]).forEach(function(s){by[s.u.slice(2,-5)]=s;});
+(idx.bands||[]).forEach(function(b){bands[b.n.toLowerCase()]=b.u;bandName[b.u.slice(2,-5)]=b.n;});
+(idx.venues||[]).forEach(function(v){venName[v.u.slice(2,-5)]=v.n;});
+function real(id){return !!(by[id]&&typeof by[id]==='object'&&by[id].d);}
+function fix(id){return real(id)?id:(sa[id]&&real(sa[id])?sa[id]:'');}
+function heal(k){var a=get(k),out=[],ch=false;
+a.forEach(function(id){var n=fix(id)||id;
+if(n!==id)ch=true;if(out.indexOf(n)<0)out.push(n);else ch=true;});
+if(ch)set(k,out);return out;}
+function without(k,id){var a=get(k),i=a.indexOf(id);if(i>-1){a.splice(i,1);set(k,a);}}
+function add(k,id){var a=get(k);if(a.indexOf(id)<0){a.push(id);set(k,a);}}
+var undo=null;
+function drop(k,id,title){without(k,id);undo={k:k,id:id,t:title};render();}
+function render(){
+root.textContent='';
+build();
+if(ITP)root.appendChild(el('p','dcap mineitp',ITP));
+}
+function row(s,withYear,k,id){
+var li=el('li','minerow');var a=link(s.u,'');
+a.appendChild(el('span','date',nice(s.d)+(withYear?', '+s.d.slice(0,4):'')));
+a.appendChild(el('strong',null,s.t));
+a.appendChild(el('span','meta','@ '+(s.v||'venue tba').toLowerCase()));
+li.appendChild(a);
+var x=btn('minex','×',(k===K?'take off my list: ':'remove this save: ')+s.t);
+x.title=k===K?'not there after all':'remove this save';
+x.addEventListener('click',function(){drop(k,id,s.t);});
+li.appendChild(x);return li;}
+function askRow(s,id){
+var li=el('li','minerow mineask');var a=link(s.u,'');
+a.appendChild(el('span','date',nice(s.d)+', '+s.d.slice(0,4)));
+a.appendChild(el('strong',null,s.t));
+a.appendChild(el('span','meta','@ '+(s.v||'venue tba').toLowerCase()));
+li.appendChild(a);
+var box=el('span','mineaskbtns');
+var yes=btn('minebtn','i was there',null);
+yes.addEventListener('click',function(){add(K,id);without(G,id);without(M,id);undo=null;render();});
+var no=btn('minebtn','no',null);no.setAttribute('aria-label','i was not at '+s.t);
+no.addEventListener('click',function(){without(G,id);without(M,id);undo=null;render();});
+box.appendChild(yes);box.appendChild(no);li.appendChild(box);return li;}
+function nextFor(type,slug){
+var best=null,nm=type==='b'?(bandName[slug]||'').toLowerCase():'';
+Object.keys(by).forEach(function(id){var s=by[id];
+if(!s||!s.d||s.d<today||s.x)return;
+var hit=type==='v'?s.vs===slug:(nm&&(s.a||[]).some(function(n){return String(n).toLowerCase()===nm;}));
+if(hit&&(!best||s.d<best.d))best=s;});
+return best;}
+function frow(type,slug){
+var li=el('li','minerow');
+var nm=type==='b'?(bandName[slug]||slug.replace(/-/g,' ')):(venName[slug]||slug.replace(/-/g,' '));
+var a=link((type==='b'?'b/':'v/')+slug+'.html','');
+a.appendChild(el('strong',null,nm.toLowerCase()));
+var nx=nextFor(type,slug);
+a.appendChild(el('span','meta',(type==='b'?'act':'room')+' · '+(nx?'next: '+nice(nx.d)+(type==='b'?' @ '+(nx.v||'venue tba').toLowerCase():''):'nothing booked yet')));
+li.appendChild(a);
+var x=btn('minebtn minex2','unfollow','stop following '+nm);
+x.addEventListener('click',function(){without(type==='b'?FB:FV,slug);undo={k:type==='b'?FB:FV,id:slug,t:nm};render();});
+li.appendChild(x);return li;}
+function build(){
+var went=heal(K),going=heal(G),maybe=heal(M),fb=get(FB),fv=get(FV);
+if(cut)root.appendChild(el('p','dcap','that link looks cut off, so it did not carry anything. ask for the full link again.'));
+if(undo){
+var up=el('p','mineundo');up.setAttribute('role','status');
+up.appendChild(document.createTextNode('taken off: '+undo.t+'. '));
+var ub=btn('yslink','undo',null);
+ub.addEventListener('click',function(){var u=undo;undo=null;add(u.k,u.id);render();});
+up.appendChild(ub);root.appendChild(up);
+}
+if(hasInc){
+var fw=[],fg=[],ff=[],okc=0;
+inc.w.forEach(function(id){var n=fix(id);if(n){okc++;if(went.indexOf(n)<0&&fw.indexOf(n)<0)fw.push(n);}});
+inc.g.forEach(function(id){var n=fix(id);if(n){okc++;if(going.indexOf(n)<0&&fg.indexOf(n)<0)fg.push(n);}});
+inc.f.forEach(function(x){okc++;var t=x.charAt(0),sl=x.slice(2),k=t==='b'?FB:FV;
+if(get(k).indexOf(sl)<0&&ff.indexOf(x)<0)ff.push(x);});
+var box=el('div','mineimport');
+var nNew=fw.length+fg.length+ff.length;
+if(nNew){
+var bits=[];
+if(fw.length)bits.push(plural(fw.length,'night')+' you were at');
+if(fg.length)bits.push(plural(fg.length,'saved show'));
+if(ff.length)bits.push(plural(ff.length,'follow'));
+box.appendChild(el('p',null,'this link carries '+bits.join(', ')+'. add '+(nNew==1?'it':'them')+' to the list on this device?'));
+var addb=btn('dbtn','add '+nNew+' to my list',null);
+addb.addEventListener('click',function(){
+fw.forEach(function(id){add(K,id);});
+fg.forEach(function(id){add(G,id);});
+ff.forEach(function(x){add(x.charAt(0)==='b'?FB:FV,x.slice(2));});
+inc={w:[],g:[],f:[]};hasInc=false;history.replaceState(null,'',location.pathname);render();});
+box.appendChild(addb);
+}else if(okc){
+box.appendChild(el('p',null,'everything in this link is already on your list.'));
+}else{
+box.appendChild(el('p',null,'none of the shows in this link are on the site anymore, so there was nothing to add.'));
+}
+root.appendChild(box);
+}
+var shows=went.map(function(id){return real(id)?by[id]:null;}).filter(Boolean)
+.sort(function(a,b){return a.d<b.d?1:a.d>b.d?-1:0;});
+var lost=went.length-shows.length;
+var soon=going.map(function(id){return real(id)?by[id]:null;}).filter(function(s){return s&&s.d>=today;})
+.sort(function(a,b){return a.d<b.d?-1:1;});
+var ask=[];
+going.concat(maybe).forEach(function(id){
+if(ask.indexOf(id)>-1||!real(id)||went.indexOf(id)>-1)return;
+var s=by[id];if(s.d>=today||s.x)return;ask.push(id);});
+ask.sort(function(a,b){return by[a].d<by[b].d?1:-1;});
+var nFollow=fb.length+fv.length;
+if(!shows.length&&!soon.length&&!ask.length&&!nFollow){
+var e=el('div','mineempty');
+e.appendChild(el('p','dcap','nothing here yet. this is where three things land: the upcoming shows you save with the star on the calendar, the acts and rooms you follow from their pages, and the old nights you mark “i was there”. all of it stays on this device.'));
+var b=el('div','dactions');b.appendChild(link('./','save a show on the calendar','dbtn'));b.appendChild(link('archive.html','dig through the archive →','dbtn'));
+e.appendChild(b);root.appendChild(e);return;}
+if(ask.length){
+root.appendChild(el('h2','mon','did you go?'));
+root.appendChild(el('p','dcap','you saved these. their night has passed.'));
+var al=el('ul','minelist');ask.forEach(function(id){al.appendChild(askRow(by[id],id));});root.appendChild(al);
+}
+if(soon.length){
+root.appendChild(el('h2','mon','coming up, saved'));
+var ul=el('ul','minelist');soon.forEach(function(s){ul.appendChild(row(s,true,G,going.filter(function(id){return by[id]===s;})[0]));});root.appendChild(ul);
+}
+if(nFollow){
+root.appendChild(el('h2','mon','following'));
+var fl=el('ul','minelist minefollow');
+fb.forEach(function(sl){fl.appendChild(frow('b',sl));});
+fv.forEach(function(sl){fl.appendChild(frow('v',sl));});
+root.appendChild(fl);
+}
+if(shows.length){
+root.appendChild(el('h2','mon','nights you were there'));
+var rooms=Object.create(null),acts=Object.create(null),years=Object.create(null);
+shows.forEach(function(s){
+var r=rooms[s.vs]||(rooms[s.vs]={n:s.v,c:0});r.c++;
+(s.a||[]).forEach(function(n){var k=n.toLowerCase();var x=acts[k]||(acts[k]={n:n,c:0});x.c++;});
+years[s.d.slice(0,4)]=1;});
+var nA=Object.keys(acts).length,nR=Object.keys(rooms).length,first=shows[shows.length-1].d.slice(0,4);
+var st=el('p','dirsub minestats');
+st.textContent=shows.length+' show'+(shows.length==1?'':'s')+' · '+nA+' act'+(nA==1?'':'s')+' · '+nR+' room'+(nR==1?'':'s')+' · since '+first;
+root.appendChild(st);
+function top(o,min,cap){return Object.keys(o).map(function(k){return {k:k,n:o[k].n,c:o[k].c};})
+.filter(function(x){return x.c>=min;}).sort(function(a,b){return b.c-a.c||(a.n<b.n?-1:1);}).slice(0,cap);}
+var ta=top(acts,2,8),tr=top(rooms,1,5);
+if(ta.length||tr.length){
+var g=el('div','minetops');
+if(ta.length){var d=el('div');d.appendChild(el('span','lead','seen the most'));
+ta.forEach(function(x){var u=bands[x.k];var a=u?link(u,x.n.toLowerCase()):el('span',null,x.n.toLowerCase());
+a.appendChild(el('small',null,' ×'+x.c));d.appendChild(a);});g.appendChild(d);}
+if(tr.length){var d2=el('div');d2.appendChild(el('span','lead','your rooms'));
+tr.forEach(function(x){var a=link('v/'+x.k+'.html',(x.n||'venue tba').toLowerCase());
+a.appendChild(el('small',null,' ×'+x.c));d2.appendChild(a);});g.appendChild(d2);}
+root.appendChild(g);
+}
+var cy=null,list=null;
+shows.forEach(function(s){var y=s.d.slice(0,4);
+if(y!==cy){cy=y;root.appendChild(el('h3','mon mineyear',y));list=el('ul','minelist');root.appendChild(list);}
+list.appendChild(row(s,false,K,went.filter(function(id){return by[id]===s;})[0]));});
+if(lost)root.appendChild(el('p','dcap',lost+' show'+(lost==1?'':'s')+' you marked aren’t in the archive anymore (merged or pulled).'));
+}
+var wOK=went.filter(real),gOK=going.filter(real);
+if(wOK.length||gOK.length||nFollow){
+var bk=el('div','minebackup');
+bk.appendChild(el('p','dcap','this list lives only in this browser. to move it to another phone, copy this link and open it there. it carries your nights, your saved shows and who you follow.'));
+var cp=btn('dbtn','copy my list link',null);
+var parts=[];
+if(wOK.length)parts.push('w='+wOK.join(','));
+if(gOK.length)parts.push('g='+gOK.join(','));
+var fa=fb.map(function(x){return 'b:'+x;}).concat(fv.map(function(x){return 'v:'+x;}));
+if(fa.length)parts.push('f='+fa.join(','));
+var url=location.origin+location.pathname+'#'+parts.join('&');
+cp.addEventListener('click',function(){
+if(navigator.clipboard)navigator.clipboard.writeText(url).then(function(){cp.textContent='copied ✓';},function(){prompt('copy this link',url);});
+else prompt('copy this link',url);});
+bk.appendChild(cp);root.appendChild(bk);
+}
+}
+render();
+function resync(){
+if(nothing&&(get(K).length||get(G).length||get(M).length||get(FB).length||get(FV).length)){location.reload();return;}
+render();}
+window.addEventListener('pageshow',function(e){if(e.persisted)resync();});
+window.addEventListener('storage',function(e){if(!e.key||e.key.indexOf('dpc_')===0)resync();});
+}).catch(function(){
+root.textContent='';
+if(!loaded){root.appendChild(el('p','dcap','couldn’t load the archive index. check your connection and reload.'));return;}
+root.appendChild(el('p','dcap','something in your saved list could not be read. resetting it clears the shows you marked on this device.'));
+var rb=el('button','dbtn','reset my list');rb.type='button';
+rb.addEventListener('click',function(){set(K,[]);location.replace(location.pathname);});
+root.appendChild(rb);
+});
+})();
+</script><script data-goatcounter="https://diypensacola.goatcounter.com/count" data-goatcounter-settings='{"no_onload":true}' src="count.js" async></script><script src="flag.js" defer></script>
 </body></html>

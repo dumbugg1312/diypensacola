@@ -6,7 +6,11 @@
   "scope": "./",
   "id": "/",
   "display": "standalone",
-  "orientation": "portrait",
+  "lang": "en",
+  "categories": [
+    "music",
+    "entertainment"
+  ],
   "background_color": "#0c0c0d",
   "theme_color": "#0c0c0d",
   "icons": [
@@ -27,6 +31,23 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "tonight",
+      "short_name": "tonight",
+      "url": "./#b-tonight"
+    },
+    {
+      "name": "search the archive",
+      "short_name": "archive",
+      "url": "archive.html"
+    },
+    {
+      "name": "submit a show",
+      "short_name": "submit",
+      "url": "submit.html"
     }
   ]
 }

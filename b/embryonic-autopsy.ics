@@ -24,12 +24,14 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2027-02-10-handlebar-nervosa@diypensacola
-DTSTAMP:20270210T000000Z
+DTSTAMP:20260826T000000Z
+SEQUENCE:2170137
 DTSTART;TZID=America/Chicago:20270210T180000
-DTEND;TZID=America/Chicago:20270210T210000
+DTEND;TZID=America/Chicago:20270210T220000
 SUMMARY:Nervosa\, Embryonic Autopsy @ The Handlebar
-DESCRIPTION:nervosa with embryonic autopsy at the handlebar\, wednesday feb
- ruary 10th. doors 6pm.
+DESCRIPTION:Nervosa\, Embryonic Autopsy\ndoors 6pm / show 7pm\nhttps://diyp
+ ensacola.com/s/2027-02-10-handlebar-nervosa.html\n\nnervosa with embryonic
+  autopsy at the handlebar\, wednesday february 10th. doors 6pm.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2027-02-10-handlebar-nervosa.html
 END:VEVENT

@@ -22,12 +22,15 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-11-07-bettys-nature-boys-stress-wound@diypensacola
-DTSTAMP:20261107T000000Z
+DTSTAMP:20261007T000000Z
+SEQUENCE:2830840
 DTSTART;TZID=America/Chicago:20261107T200000
-DTEND;TZID=America/Chicago:20261107T230000
+DTEND;TZID=America/Chicago:20261108T000000
 SUMMARY:Nature Boys\, Stress Wound\, Mother’s Milk @ Betty’s
-DESCRIPTION:Nature Boys back from KC\, Nov 7 at @bettys_on_belmont\n@stress
- _wound @mothersmilk.official
+DESCRIPTION:Nature Boys\, Stress Wound\, Mother’s Milk\ndoors 8p / show 9
+ p\n$10\nhttps://diypensacola.com/s/2026-11-07-bettys-nature-boys-stress-wo
+ und.html\n\nNature Boys back from KC\, Nov 7 at @bettys_on_belmont\n@stres
+ s_wound @mothersmilk.official
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-07-bettys-nature-boys-stress-wound.h
  tml

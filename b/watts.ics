@@ -24,14 +24,16 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-10-12-handlebar-carry-the-torch-strikeforce@diypensacola
-DTSTAMP:20261012T000000Z
+DTSTAMP:20260915T000000Z
+SEQUENCE:2068752
 DTSTART;TZID=America/Chicago:20261012T180000
 DTEND;TZID=America/Chicago:20261012T210000
-SUMMARY:Carry The Torch\, Strikeforce\, Miracle\, watts\, Room To Grow @ Th
- e Handlebar
-DESCRIPTION:carry the torch demo release show with strikeforce\, miracle\, 
- watts\, and room to grow at the handlebar. monday october 12\, doors at 6.
-  $10.
+SUMMARY:Carry The Torch\, Strikeforce\, Miracle +2 @ The Handlebar
+DESCRIPTION:Carry The Torch\, Strikeforce\, Miracle\, watts\, Room To Grow\
+ ndoors 6pm\n$10\nhttps://diypensacola.com/s/2026-10-12-handlebar-carry-the
+ -torch-strikeforce.html\n\ncarry the torch demo release show with strikefo
+ rce\, miracle\, watts\, and room to grow at the handlebar. monday october 
+ 12\, doors at 6. $10.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-12-handlebar-carry-the-torch-strikef
  orce.html

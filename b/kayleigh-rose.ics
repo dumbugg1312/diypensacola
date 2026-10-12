@@ -25,12 +25,15 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-10-22-309-wintergreen-oil-photo-transfer-workshop-kayleigh-rose@di
  ypensacola
-DTSTAMP:20261022T000000Z
+DTSTAMP:20260927T000000Z
+SEQUENCE:286282
 DTSTART;TZID=America/Chicago:20261022T180000
 DTEND;TZID=America/Chicago:20261022T210000
 SUMMARY:Wintergreen Oil Photo Transfer Workshop\, Kayleigh Rose @ 309
-DESCRIPTION:Wintergreen oil photo transfer workshop with Kayleigh Rose at @
- 309punkproject\, thursday october 22nd.
+DESCRIPTION:Wintergreen Oil Photo Transfer Workshop\, Kayleigh Rose\n6-9pm\
+ nsliding scale\nhttps://diypensacola.com/s/2026-10-22-309-wintergreen-oil-
+ photo-transfer-workshop-kayleigh-rose.html\n\nWintergreen oil photo transf
+ er workshop with Kayleigh Rose at @309punkproject\, thursday october 22nd.
 LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-22-309-wintergreen-oil-photo-transfe
  r-workshop-kayleigh-rose.html

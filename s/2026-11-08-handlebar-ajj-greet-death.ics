@@ -22,12 +22,14 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-11-08-handlebar-ajj-greet-death@diypensacola
-DTSTAMP:20261108T000000Z
+DTSTAMP:20260918T000000Z
+SEQUENCE:12537290
 DTSTART;TZID=America/Chicago:20261108T180000
-DTEND;TZID=America/Chicago:20261108T210000
+DTEND;TZID=America/Chicago:20261108T220000
 SUMMARY:AJJ\, Greet Death @ The Handlebar
-DESCRIPTION:ajj and greet death at the handlebar\, sunday november 8th. doo
- rs 6pm\, show at 7.
+DESCRIPTION:AJJ\, Greet Death\ndoors 6pm / show 7pm\nhttps://diypensacola.c
+ om/s/2026-11-08-handlebar-ajj-greet-death.html\n\najj and greet death at t
+ he handlebar\, sunday november 8th. doors 6pm\, show at 7.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-08-handlebar-ajj-greet-death.html
 BEGIN:VALARM

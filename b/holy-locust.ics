@@ -24,11 +24,15 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-12-10-bettys-holy-locust-johanna-rose-the-dreamboats@diypensacola
-DTSTAMP:20261210T000000Z
-DTSTART;TZID=America/Chicago:20261210T190000
-DTEND;TZID=America/Chicago:20261210T220000
-SUMMARY:Holy Locust\, Johanna Rose & The Dreamboats @ Betty’s
-DESCRIPTION:Holy Locust Dec 10 at @bettys_on_belmont!
+DTSTAMP:20261005T000000Z
+SEQUENCE:4355348
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Holy Locust\, Johanna Rose & The Dreamboats @ Betty’s (time TBA)
+DESCRIPTION:Holy Locust\, Johanna Rose & The Dreamboats\ntime not listed\, 
+ check the venue\nhttps://diypensacola.com/s/2026-12-10-bettys-holy-locust-
+ johanna-rose-the-dreamboats.html\n\nHoly Locust Dec 10 at @bettys_on_belmo
+ nt!
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-10-bettys-holy-locust-johanna-rose-t
  he-dreamboats.html

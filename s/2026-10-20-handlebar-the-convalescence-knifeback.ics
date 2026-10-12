@@ -22,13 +22,16 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-10-20-handlebar-the-convalescence-knifeback@diypensacola
-DTSTAMP:20261020T000000Z
+DTSTAMP:20260925T000000Z
+SEQUENCE:11103055
 DTSTART;TZID=America/Chicago:20261020T190000
 DTEND;TZID=America/Chicago:20261020T220000
-SUMMARY:The Convalescence\, Knifeback\, Blindfold Knife Fight\, Sacreus @ T
- he Handlebar
-DESCRIPTION:The Convalescence this tuesday at @thehandlebar850 🖤\n\n@the
- convalescenceofficial @blindfoldknifefightfl @sacreus
+SUMMARY:The Convalescence\, Knifeback\, Blindfold Knife Fight +1 @ The Hand
+ lebar
+DESCRIPTION:The Convalescence\, Knifeback\, Blindfold Knife Fight\, Sacreus
+ \ndoors 7pm\n$10 adv / $15 door\nhttps://diypensacola.com/s/2026-10-20-han
+ dlebar-the-convalescence-knifeback.html\n\n@theconvalescenceofficial @blin
+ dfoldknifefightfl @sacreus
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-20-handlebar-the-convalescence-knife
  back.html

@@ -22,18 +22,16 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-11-14-bettys-bettys-fest-2-night-2@diypensacola
-DTSTAMP:20261114T000000Z
-DTSTART;TZID=America/Chicago:20261114T190000
-DTEND;TZID=America/Chicago:20261114T220000
-SUMMARY:Betty’s Fest 2 Night 2 @ Betty’s
-DESCRIPTION:betty’s fest 2\, night two. saturday november 14th at betty
- ’s on belmont and the old bunny club. lineup coming.
+DTSTAMP:20260918T000000Z
+SEQUENCE:1813191
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Betty’s Fest 2 Night 2 @ Betty’s (time TBA)
+DESCRIPTION:Betty’s Fest 2 Night 2\ntime not listed\, check the venue\nht
+ tps://diypensacola.com/s/2026-11-14-bettys-bettys-fest-2-night-2.html\n\nb
+ etty’s fest 2\, night two. saturday november 14th at betty’s on belmon
+ t and the old bunny club. lineup coming.
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-14-bettys-bettys-fest-2-night-2.html
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:tonight: Betty’s Fest 2 Night 2 @ Betty’s
-TRIGGER:-PT2H
-END:VALARM
 END:VEVENT
 END:VCALENDAR
