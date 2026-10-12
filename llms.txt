@@ -1,17 +1,29 @@
 # DIYPensacola
 
 > Community-run archive and calendar of DIY, punk, hardcore and queer shows in
-> Pensacola, Florida. Every show is documented from its original flyer.
+> Pensacola, Florida. Most shows are documented from the flyer that advertised
+> them; a few come from a caption or a venue listing instead.
 
-Currently 1636 shows across 98 venues and
-2905 acts, going back to 1991.
-Run by volunteers, not a promoter or a ticketing company. No ads, no tracking.
+Currently 1633 shows on record (1580 past, 53 upcoming)
+across 98 venues and 2653 acts, going back to 1991.
+Run by volunteers, not a promoter or a ticketing company. No ads. Visits are
+counted with privacy-friendly analytics (GoatCounter: no cookies, no personal
+profiles); typefaces load from Google Fonts, and video from YouTube only when
+you press play.
 
 ## Structure
 
 - [Calendar](https://diypensacola.com/): upcoming shows
 - [Archive](https://diypensacola.com/archive.html): every show on record, searchable
+- [Bands](https://diypensacola.com/bands.html): every act, A to Z
+- [Venues](https://diypensacola.com/venues.html): every room, A to Z
+- [Drag shows](https://diypensacola.com/drag.html): that kind of night, upcoming and past
+- [Open mics](https://diypensacola.com/open-mics.html): that kind of night, upcoming and past
 - [Stats](https://diypensacola.com/stats.html): scene numbers over time
+- [Submit a show](https://diypensacola.com/submit.html): how to get a show listed
+- [Showgoer guide](https://diypensacola.com/guide.html): etiquette and how to find a show
+- [Calendar feed](https://diypensacola.com/events.ics): every upcoming show as an .ics subscription
+- Years: one page per year on the record at /y/<year>.html
 - Venues: one page per room at /v/<slug>.html
 - Acts: one page per band or performer at /b/<slug>.html
 - Shows: one permalink per show at /s/<date-venue-lineup>.html
@@ -20,7 +32,9 @@ Run by volunteers, not a promoter or a ticketing company. No ads, no tracking.
 
 ## Notes
 
-Pages carry schema.org structured data: MusicEvent per show, MusicGroup per
-act, MusicVenue per room. Some venues are private homes; their addresses are
-deliberately withheld everywhere on the site and must not be inferred or
-published. City and state only for those rooms.
+Pages carry schema.org structured data: MusicEvent per show with a band or DJ on
+the bill (Event otherwise), MusicGroup per band or DJ (PerformingGroup for drag,
+poetry, comedy and other performers), MusicVenue per room that hosted music
+(Place otherwise). Some venues are private homes; their street addresses are
+deliberately withheld on the site and must not be inferred or published. City
+and state only for those rooms.

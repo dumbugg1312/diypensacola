@@ -22,19 +22,17 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-10-22-handlebar-fenix-tx@diypensacola
-DTSTAMP:20261022T000000Z
-DTSTART;TZID=America/Chicago:20261022T190000
-DTEND;TZID=America/Chicago:20261022T220000
-SUMMARY:Fenix Tx\, Scream Out Loud\, Color The Void @ The Handlebar
-DESCRIPTION:Fenix TX Oct 22 at @thehandlebar850\n\n@fenixtx @screamoutloudf
- l @colorthevoidmusic
+DTSTAMP:20260826T000000Z
+SEQUENCE:13891561
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:Fenix Tx\, Scream Out Loud\, Color The Void @ The Handlebar (time T
+ BA)
+DESCRIPTION:Fenix Tx\, Scream Out Loud\, Color The Void\ntime not listed\, 
+ check the venue\nhttps://diypensacola.com/s/2026-10-22-handlebar-fenix-tx.
+ html\n\nFenix TX Oct 22 at @thehandlebar850\n\n@fenixtx @screamoutloudfl @
+ colorthevoidmusic
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-22-handlebar-fenix-tx.html
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:tonight: Fenix Tx\, Scream Out Loud\, Color The Void @ The Hand
- lebar
-TRIGGER:-PT2H
-END:VALARM
 END:VEVENT
 END:VCALENDAR

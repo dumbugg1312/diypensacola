@@ -25,14 +25,17 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-10-29-voices-of-pensacola-multicultural-center-2nd-annual-hallozin
  e-fest@diypensacola
-DTSTAMP:20261029T000000Z
-DTSTART;TZID=America/Chicago:20261029T190000
-DTEND;TZID=America/Chicago:20261029T220000
+DTSTAMP:20260826T000000Z
+SEQUENCE:6580113
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
 SUMMARY:2nd Annual HalloZine Fest @ Voices of Pensacola Multicultural Cente
- r
-DESCRIPTION:2nd annual hallozine fest. voices of pensacola multicultural ce
- nter\, october 29 and 30. zine market\, exhibitions\, keynote speakers\, m
- ovies. save the date.
+ r (time TBA)
+DESCRIPTION:2nd Annual HalloZine Fest\ntime not listed\, check the venue\nh
+ ttps://diypensacola.com/s/2026-10-29-voices-of-pensacola-multicultural-cen
+ ter-2nd-annual-hallozine-fest.html\n\n2nd annual hallozine fest. voices of
+  pensacola multicultural center\, october 29 and 30. zine market\, exhibit
+ ions\, keynote speakers\, movies. save the date.
 LOCATION:Voices of Pensacola Multicultural Center
 URL:https://diypensacola.com/s/2026-10-29-voices-of-pensacola-multicultural
  -center-2nd-annual-hallozine-fest.html
@@ -40,14 +43,17 @@ END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-30-voices-of-pensacola-multicultural-center-2nd-annual-hallozin
  e-fest@diypensacola
-DTSTAMP:20261030T000000Z
-DTSTART;TZID=America/Chicago:20261030T190000
-DTEND;TZID=America/Chicago:20261030T220000
+DTSTAMP:20260914T000000Z
+SEQUENCE:7063813
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
 SUMMARY:2nd Annual HalloZine Fest @ Voices of Pensacola Multicultural Cente
- r
-DESCRIPTION:2nd annual hallozine fest\, day two. voices of pensacola multic
- ultural center\, friday october 30. zine market\, exhibitions\, keynote sp
- eakers\, movies.
+ r (time TBA)
+DESCRIPTION:2nd Annual HalloZine Fest\ntime not listed\, check the venue\nh
+ ttps://diypensacola.com/s/2026-10-30-voices-of-pensacola-multicultural-cen
+ ter-2nd-annual-hallozine-fest.html\n\n2nd annual hallozine fest\, day two.
+  voices of pensacola multicultural center\, friday october 30. zine market
+ \, exhibitions\, keynote speakers\, movies.
 LOCATION:Voices of Pensacola Multicultural Center
 URL:https://diypensacola.com/s/2026-10-30-voices-of-pensacola-multicultural
  -center-2nd-annual-hallozine-fest.html

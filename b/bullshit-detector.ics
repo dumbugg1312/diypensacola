@@ -24,12 +24,15 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-12-11-handlebar-the-casualties-bullshit-detector@diypensacola
-DTSTAMP:20261211T000000Z
+DTSTAMP:20260925T000000Z
+SEQUENCE:12774571
 DTSTART;TZID=America/Chicago:20261211T190000
 DTEND;TZID=America/Chicago:20261211T220000
 SUMMARY:The Casualties\, Bullshit Detector\, Maggot Sandwich @ The Handleba
  r
-DESCRIPTION:The Casualties Dec 11 at @thehandlebar850!
+DESCRIPTION:The Casualties\, Bullshit Detector\, Maggot Sandwich\n7pm\nhttp
+ s://diypensacola.com/s/2026-12-11-handlebar-the-casualties-bullshit-detect
+ or.html\n\nThe Casualties Dec 11 at @thehandlebar850!
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-11-handlebar-the-casualties-bullshit
  -detector.html

@@ -24,11 +24,14 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-12-08-handlebar-cliff-cash@diypensacola
-DTSTAMP:20261208T000000Z
+DTSTAMP:20260919T000000Z
+SEQUENCE:16159064
 DTSTART;TZID=America/Chicago:20261208T190000
-DTEND;TZID=America/Chicago:20261208T220000
+DTEND;TZID=America/Chicago:20261208T224000
 SUMMARY:Cliff Cash @ The Handlebar
-DESCRIPTION:Cliff Cash Dec 8 at @thehandlebar850 😤\n\n@cliffcashcomedy
+DESCRIPTION:Cliff Cash\ndoors 7pm / show 7:40pm\nhttps://diypensacola.com/s
+ /2026-12-08-handlebar-cliff-cash.html\n\nCliff Cash Dec 8 at @thehandlebar
+ 850 😤\n\n@cliffcashcomedy
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-08-handlebar-cliff-cash.html
 END:VEVENT

@@ -24,12 +24,14 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-11-20-bettys-valerie-sassyfras@diypensacola
-DTSTAMP:20261120T000000Z
+DTSTAMP:20261002T000000Z
+SEQUENCE:4923533
 DTSTART;TZID=America/Chicago:20261120T210000
-DTEND;TZID=America/Chicago:20261121T000000
+DTEND;TZID=America/Chicago:20261120T230000
 SUMMARY:Valerie SassyFras @ Betty’s
-DESCRIPTION:Valerie SassyFras at @bettys_on_belmont Nov 20 💞\n\n@valsass
- yfras
+DESCRIPTION:Valerie SassyFras\n9-11pm\nhttps://diypensacola.com/s/2026-11-2
+ 0-bettys-valerie-sassyfras.html\n\nValerie SassyFras at @bettys_on_belmont
+  Nov 20 💞\n\n@valsassyfras
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-20-bettys-valerie-sassyfras.html
 END:VEVENT

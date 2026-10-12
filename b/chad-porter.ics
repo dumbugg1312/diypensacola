@@ -24,12 +24,15 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-10-14-309-october-air-closing-exhibition-chad-porter@diypensacola
-DTSTAMP:20261014T000000Z
+DTSTAMP:20260927T000000Z
+SEQUENCE:16430388
 DTSTART;TZID=America/Chicago:20261014T180000
 DTEND;TZID=America/Chicago:20261014T210000
 SUMMARY:October AIR Closing Exhibition\, Chad Porter @ 309
-DESCRIPTION:Chad Porter’s closing exhibition at @309punkproject\, wednesd
- ay october 14th.
+DESCRIPTION:October AIR Closing Exhibition\, Chad Porter\n6-9pm\nhttps://di
+ ypensacola.com/s/2026-10-14-309-october-air-closing-exhibition-chad-porter
+ .html\n\nChad Porter’s closing exhibition at @309punkproject\, wednesday
+  october 14th.
 LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-14-309-october-air-closing-exhibitio
  n-chad-porter.html

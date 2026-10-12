@@ -24,11 +24,14 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-11-18-handlebar-wayne-hancock@diypensacola
-DTSTAMP:20261118T000000Z
+DTSTAMP:20260919T000000Z
+SEQUENCE:8517676
 DTSTART;TZID=America/Chicago:20261118T180000
-DTEND;TZID=America/Chicago:20261118T210000
+DTEND;TZID=America/Chicago:20261118T220000
 SUMMARY:Wayne Hancock @ The Handlebar
-DESCRIPTION:Wayne Hancock Nov 18 at @thehandlebar850
+DESCRIPTION:Wayne Hancock\ndoors 6pm / show 7pm\nhttps://diypensacola.com/s
+ /2026-11-18-handlebar-wayne-hancock.html\n\nWayne Hancock Nov 18 at @theha
+ ndlebar850
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-18-handlebar-wayne-hancock.html
 END:VEVENT
