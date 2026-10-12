@@ -39,6 +39,39 @@
     render();
   })();
 
+  // i was there: past shows only. Device-local 'dpc_went', read back by
+  // mine.html as the visitor's own scene history. The button ships hidden so a
+  // JS-off or storage-blocked visitor never sees a control that can't stick.
+  (function(){
+    var b=document.getElementById('spwent'),lk=document.getElementById('spwentlink');
+    if(!b)return;
+    var id=b.getAttribute('data-sid'),K='dpc_went';
+    try{localStorage.setItem('dpc_t','1');localStorage.removeItem('dpc_t');}catch(e){return;}
+    function get(){try{return JSON.parse(localStorage.getItem(K)||'[]');}catch(e){return [];}}
+    function set(a){try{localStorage.setItem(K,JSON.stringify(a));}catch(e){}}
+    function render(){var a=get(),on=a.indexOf(id)>-1;
+      b.classList.toggle('on',on);b.setAttribute('aria-pressed',on?'true':'false');
+      b.textContent=on?'you were there ✓':'i was there';
+      if(lk)lk.hidden=!a.length;}
+    b.addEventListener('click',function(){
+      var a=get(),i=a.indexOf(id);
+      if(i>-1)a.splice(i,1);else a.push(id);
+      set(a);render();});
+    b.hidden=false;render();
+  })();
+
+  // copy this page's link, for pasting to a mod. Hidden until JS can run it.
+  [].forEach.call(document.querySelectorAll('button.copylink'),function(b){
+    if(!navigator.clipboard)return;
+    var u=b.getAttribute('data-copy'),t=b.textContent;
+    b.hidden=false;
+    b.addEventListener('click',function(){
+      navigator.clipboard.writeText(u).then(function(){
+        b.textContent='copied ✓';setTimeout(function(){b.textContent=t;},2200);
+      },function(){});
+    });
+  });
+
   // live overrides: a cancellation published from a phone (overrides.json, see
   // OWNER_JS) applies here too, so the permalink people got texted tells the truth
   // before any rebuild. Only ADDS a cancellation; the built page already reflects
