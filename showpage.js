@@ -93,7 +93,7 @@ if(d>day)return;
 var sv=document.getElementById('spsave'),c=document.querySelector('link[rel="canonical"]'),
 m=/\/s\/([^\/]+)\.html$/.exec((c?c.getAttribute('href'):location.pathname)||''),
 sid=(sv&&sv.getAttribute('data-sid'))||(m&&m[1])||'';
-[].forEach.call(card.querySelectorAll('#spsave,#spsavedlink,.spgoing,a[download]'),function(n){n.parentNode.removeChild(n);});
+[].forEach.call(card.querySelectorAll('#spsave,#spsavedlink,.spgoing,a[download],a[href$=".ics"]'),function(n){n.parentNode.removeChild(n);});
 flag('','from the archive');
 var fx=card.querySelector('.spfix');if(fx)fx.hidden=false;
 var acts=card.querySelector('.dactions');if(!acts)return;
@@ -181,7 +181,7 @@ else nd.appendChild(document.createTextNode('discord'));
 info.insertBefore(nd,row.nextSibling);
 }
 }
-gone('#spsave,#spsavedlink,.spgoing,a[download],#spdir');
+gone('#spsave,#spsavedlink,.spgoing,a[download],a[href$=".ics"],#spdir');
 var fx=card.querySelector('.spfix');if(fx)fx.hidden=false;
 }
 var SRC=['https://raw.githubusercontent.com/dumbugg1312/diypensacola/main/overrides.json',

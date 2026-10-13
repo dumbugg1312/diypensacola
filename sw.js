@@ -1,4 +1,4 @@
-var CACHE='diypensacola-e7ea1d14ba53';
+var CACHE='diypensacola-78f524cb9242';
 var FONTS='diypensacola-fonts';
 var SHELL=["./", "offline.html", "style.css", "logo-hdr.webp", "favicon-48.png", "manifest.webmanifest", "flag.js"];
 var PRECACHE=["flyers/thumbs/2026-10-12_handlebar_carry-the-torch.webp", "flyers/thumbs/2026-10-14_309_october-air-closing-exhibition.webp", "flyers/thumbs/2026-10-14_handlebar_cheese-for-the-table.webp", "flyers/thumbs/2026-10-15_bettys_lesion.webp", "flyers/thumbs/2026-10-16_309_rent-strike.webp", "flyers/thumbs/2026-10-16_handlebar_big-time-maca.webp", "flyers/thumbs/2026-10-16_bettys_dog-smiles.webp", "flyers/thumbs/2026-10-18_handlebar_robert-taylor-smith.webp", "flyers/thumbs/2026-10-18_handlebar_fight-night-drag-show.webp"];
