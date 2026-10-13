@@ -23,20 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-09-28-handlebar-carnifex@diypensacola
-DTSTAMP:20260826T000000Z
-SEQUENCE:15766986
-DTSTART;TZID=America/Chicago:20260928T183000
-DTEND;TZID=America/Chicago:20260928T220000
-SUMMARY:Carnifex\, Mauled\, Innerwounds +1 @ The Handlebar
-DESCRIPTION:Carnifex\, Mauled\, Innerwounds\, Sacreus\ndoors 6:30pm / show 
- 7pm\nhttps://diypensacola.com/s/2026-09-28-handlebar-carnifex.html\n\nCarn
- ifex next monday at @thehandlebar850. Sold out!\n\n@carnifex @mauledslc.ba
- nd.official
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-09-28-handlebar-carnifex.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-01-handlebar-wretched-tongues-in-gloom@diypensacola
 DTSTAMP:20260826T000000Z
 SEQUENCE:10196292
