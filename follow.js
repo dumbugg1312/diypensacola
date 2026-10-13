@@ -96,8 +96,9 @@ var host=cl.contains('pwtile')?el:el.querySelector('.gwho');
 var old=host?host.querySelector('.stamp.s-cancelled,.stamp.s-postponed'):null;
 if(old)old.parentNode.removeChild(old);
 cl.toggle('off',!!st);
+if(st){cl.remove('tonight');var tf=el.querySelector('.pastflag.tonight');if(tf)tf.parentNode.removeChild(tf);}
 if(st&&host)host.appendChild(mk(st));
-if(st&&cl.contains('heropost')){var cap=el.querySelector('.hpcap');if(cap)cap.textContent=cap.textContent.replace(/^up next/,st);}
+if(st&&cl.contains('heropost')){var cap=el.querySelector('.hpcap');if(cap)cap.textContent=cap.textContent.replace(/^(?:up next|tonight)/,st);}
 });
 }
 var SRC=['https://raw.githubusercontent.com/dumbugg1312/diypensacola/main/overrides.json','../overrides.json'];

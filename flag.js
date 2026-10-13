@@ -275,7 +275,7 @@ if(a.getAttribute('data-d')<day)a.classList.remove('up');});
 var d=a.getAttribute('data-d'),cap=a.querySelector('.hpcap');
 if(d<day){a.classList.remove('up','tonight');
 if(cap)cap.textContent=cap.textContent.replace(/^(?:up next|tonight)\s*\u00b7\s*/,'');}
-else if(d===day&&!a.classList.contains('tonight')){a.classList.add('tonight');
+else if(d===day&&!a.classList.contains('tonight')&&!a.classList.contains('off')){a.classList.add('tonight');
 if(cap)cap.textContent=cap.textContent.replace(/^up next/,'tonight');}
 });
 [].forEach.call(document.querySelectorAll('a.nextgig[data-d]'),function(a){
