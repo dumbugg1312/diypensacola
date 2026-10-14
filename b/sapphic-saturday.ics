@@ -25,14 +25,15 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-10-17-bettys-sapphic-saturday@diypensacola
 DTSTAMP:20260914T000000Z
-SEQUENCE:11271730
+SEQUENCE:8789614
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
-SUMMARY:Sapphic Saturday @ Betty’s (time TBA)
+SUMMARY:POSTPONED: Sapphic Saturday @ Betty’s (time TBA)
 DESCRIPTION:Sapphic Saturday\ntime not listed\, check the venue\nhttps://di
  ypensacola.com/s/2026-10-17-bettys-sapphic-saturday.html\n\nsapphic saturd
  ay is back at betty’s on saturday october 17th.
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-17-bettys-sapphic-saturday.html
+STATUS:TENTATIVE
 END:VEVENT
 END:VCALENDAR
