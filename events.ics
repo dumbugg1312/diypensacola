@@ -23,82 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-01-handlebar-wretched-tongues-in-gloom@diypensacola
-DTSTAMP:20260826T000000Z
-SEQUENCE:10196292
-DTSTART;TZID=America/Chicago:20261001T190000
-DTEND;TZID=America/Chicago:20261001T230000
-SUMMARY:Wretched Tongues\, In Gloom\, Flesh Carving +1 @ The Handlebar
-DESCRIPTION:Wretched Tongues\, In Gloom\, Flesh Carving\, Wraithbearer\ndoo
- rs 7pm / show 8pm\n$15 advance / $20 at door\nhttps://diypensacola.com/s/2
- 026-10-01-handlebar-wretched-tongues-in-gloom.html\n\nWretched Tongues nex
- t thursday at @thehandlebar850\n\n@wretchedtongues @ingloomfl @fleshcarvin
- gband @wraithbearer
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-01-handlebar-wretched-tongues-in-glo
- om.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-01-uwf-commons-great-hall-uwf-jazz-ensemble@diypensacola
-DTSTAMP:20260928T000000Z
-SEQUENCE:13846275
-DTSTART;TZID=America/Chicago:20261001T190000
-DTEND;TZID=America/Chicago:20261001T220000
-SUMMARY:UWF Jazz Ensemble @ UWF Commons Great Hall
-DESCRIPTION:UWF Jazz Ensemble\n7pm\nhttps://diypensacola.com/s/2026-10-01-u
- wf-commons-great-hall-uwf-jazz-ensemble.html\n\nUWF Jazz Ensemble this thu
- rsday at the UWF Commons Great Hall!\n\n@uwfcfpa
-LOCATION:UWF Commons Great Hall
-URL:https://diypensacola.com/s/2026-10-01-uwf-commons-great-hall-uwf-jazz-e
- nsemble.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-01-bettys-cursed-body-crystal-plumage@diypensacola
-DTSTAMP:20260917T000000Z
-SEQUENCE:4273737
-DTSTART;TZID=America/Chicago:20261001T200000
-DTEND;TZID=America/Chicago:20261001T230000
-SUMMARY:Cursed Body\, Crystal Plumage\, Cookies & Cake +1 @ Betty’s
-DESCRIPTION:Cursed Body\, Crystal Plumage\, Cookies & Cake\, MyBrothaVan\n8
- :00 PM\n$10\nhttps://diypensacola.com/s/2026-10-01-bettys-cursed-body-crys
- tal-plumage.html\n\ncursed body\, crystal plumage\, cookies and cake and m
- ybrothavan at betty’s on belmont thursday october 1st. 8pm\, $10. benefi
- t show for the northwest florida wildlife sanctuary.
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-01-bettys-cursed-body-crystal-plumag
- e.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-02-bettys-clarity-rebelle-twitch@diypensacola
-DTSTAMP:20260930T000000Z
-SEQUENCE:13206364
-DTSTART;TZID=America/Chicago:20261002T200000
-DTEND;TZID=America/Chicago:20261003T020000
-SUMMARY:Clarity\, Rebelle Twitch\, I & I +3 @ Betty’s
-DESCRIPTION:Clarity\, Rebelle Twitch\, I & I\, Junglist Jada\, Kitonicx\, A
- lisoniq\n8pm-2am\n$10\nhttps://diypensacola.com/s/2026-10-02-bettys-clarit
- y-rebelle-twitch.html\n\nThe Ghouls Room this friday at @bettys_on_belmont
-  🖤\n\n@djclarityboo
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-02-bettys-clarity-rebelle-twitch.htm
- l
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-02-handlebar-xtr-human-dj-cvntteeth@diypensacola
-DTSTAMP:20260827T000000Z
-SEQUENCE:7775640
-DTSTART;TZID=America/Chicago:20261002T230000
-DTEND;TZID=America/Chicago:20261003T020000
-SUMMARY:XTR Human\, Cvntteeth\, DJ Scenario +1 @ The Handlebar
-DESCRIPTION:XTR Human\, Cvntteeth\, DJ Scenario\, Glass Casket\n11pm - 2am\
- n$12 before midnight / $20 after\nhttps://diypensacola.com/s/2026-10-02-ha
- ndlebar-xtr-human-dj-cvntteeth.html\n\nIndustrial goth night next friday a
- t @thehandlebar850 ⛓️\n\n@xtr_human
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-02-handlebar-xtr-human-dj-cvntteeth.
- html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-03-handlebar-heavy-kid-james-hall-the-ladies-of@diypensacola
 DTSTAMP:20260925T000000Z
 SEQUENCE:13502289
@@ -209,22 +133,6 @@ URL:https://diypensacola.com/s/2026-10-09-bettys-punk-or-treat-iii-friendly
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-10-handlebar-silent-theory@diypensacola
-DTSTAMP:20260826T000000Z
-SEQUENCE:6161072
-DTSTART;VALUE=DATE:20261010
-DTEND;VALUE=DATE:20261011
-SUMMARY:POSTPONED: Silent Theory\, Discrepancies\, Sick Century +2 @ The Ha
- ndlebar (time TBA)
-DESCRIPTION:Silent Theory\, Discrepancies\, Sick Century\, Serena’s Fire\
- , Sick Room\ntime not listed\, check the venue\nhttps://diypensacola.com/s
- /2026-10-10-handlebar-silent-theory.html\n\nSilent Theory in two weeks at 
- @thehandlebar850\n\n@silenttheorymusic @discrepancies @sickcentury
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-10-handlebar-silent-theory.html
-STATUS:TENTATIVE
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-11-handlebar-ritual-6@diypensacola
 DTSTAMP:20261006T000000Z
 SEQUENCE:12815276
@@ -246,13 +154,28 @@ DTSTART;TZID=America/Chicago:20261012T180000
 DTEND;TZID=America/Chicago:20261012T210000
 SUMMARY:Carry The Torch\, Strikeforce\, Miracle +2 @ The Handlebar
 DESCRIPTION:Carry The Torch\, Strikeforce\, Miracle\, watts\, Room To Grow\
- ndoors 6pm\n$10\nhttps://diypensacola.com/s/2026-10-12-handlebar-carry-the
- -torch-strikeforce.html\n\ncarry the torch demo release show with strikefo
- rce\, miracle\, watts\, and room to grow at the handlebar. monday october 
- 12\, doors at 6. $10.
+ ndoors 6pm\n$10\npossibly postponed - check venue\nhttps://diypensacola.co
+ m/s/2026-10-12-handlebar-carry-the-torch-strikeforce.html\n\ncarry the tor
+ ch demo release show with strikeforce\, miracle\, watts\, and room to grow
+  at the handlebar. monday october 12\, doors at 6. $10.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-12-handlebar-carry-the-torch-strikef
  orce.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-13-handlebar-silent-theory@diypensacola
+DTSTAMP:20261017T000000Z
+SEQUENCE:225802
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:Silent Theory\, Discrepancies\, Sick Century +2 @ The Handlebar (ti
+ me TBA)
+DESCRIPTION:Silent Theory\, Discrepancies\, Sick Century\, Serena’s Fire\
+ , Sick Room\ntime not listed\, check the venue\nhttps://diypensacola.com/s
+ /2026-10-13-handlebar-silent-theory.html\n\nSilent Theory at @thehandlebar
+ 850
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-13-handlebar-silent-theory.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-14-309-october-air-closing-exhibition-chad-porter@diypensacola
@@ -276,8 +199,10 @@ SEQUENCE:6522875
 DTSTART;TZID=America/Chicago:20261014T190000
 DTEND;TZID=America/Chicago:20261014T220000
 SUMMARY:Cheese for the Table\, Improvable Cause @ The Handlebar
-DESCRIPTION:Cheese for the Table\, Improvable Cause\n7pm\nhttps://diypensac
- ola.com/s/2026-10-14-handlebar-cheese-for-the-table.html
+DESCRIPTION:Cheese for the Table\, Improvable Cause\n7pm\npossibly postpone
+ d - check venue\nhttps://diypensacola.com/s/2026-10-14-handlebar-cheese-fo
+ r-the-table.html\n\n@improvablecause is back with Cheese for the Table thi
+ s wednesday at @thehandlebar850!
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-14-handlebar-cheese-for-the-table.ht
  ml
@@ -291,7 +216,8 @@ DTEND;TZID=America/Chicago:20261015T220000
 SUMMARY:Lesion\, Bastard Son\, Hayweather +2 @ Betty’s
 DESCRIPTION:Lesion\, Bastard Son\, Hayweather\, beautysleep\, 7.7 PNX\n7pm\
  n$10-$20 (sliding scale)\nhttps://diypensacola.com/s/2026-10-15-bettys-les
- ion-bastard-son.html\n\n@lesion_bandfl @bastardsonband @beautysleep850
+ ion-bastard-son.html\n\nSupport @strivepensacola at @bettys_on_belmont in 
+ two weeks 💞\n\n@lesion_bandfl @bastardsonband @beautysleep850
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-15-bettys-lesion-bastard-son.html
 END:VEVENT
@@ -303,15 +229,16 @@ DTSTART;TZID=America/Chicago:20261016T183000
 DTEND;TZID=America/Chicago:20261016T213000
 SUMMARY:Rent Strike\, Myles Bullen\, Outlook Bleak @ 309
 DESCRIPTION:Rent Strike\, Myles Bullen\, Outlook Bleak\ndoors 6:30pm\nhttps
- ://diypensacola.com/s/2026-10-16-309-rent-strike-myles-bullen.html\n\n@ren
- t__strike @beatboxpoet @outlook_bleak
+ ://diypensacola.com/s/2026-10-16-309-rent-strike-myles-bullen.html\n\nRent
+  Strike in two weeks at @309punkproject!\n\n@rent__strike @beatboxpoet @ou
+ tlook_bleak
 LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-16-309-rent-strike-myles-bullen.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-16-handlebar-big-time-maca-tommy-wakefield@diypensacola
 DTSTAMP:20260919T000000Z
-SEQUENCE:11880365
+SEQUENCE:16581557
 DTSTART;TZID=America/Chicago:20261016T190000
 DTEND;TZID=America/Chicago:20261016T220000
 SUMMARY:Big Time Maca\, Tommy Wakefield\, Kyle Rehl +2 @ The Handlebar
@@ -322,6 +249,7 @@ DESCRIPTION:Big Time Maca\, Tommy Wakefield\, Kyle Rehl\, Olivia Searcy\, A
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-16-handlebar-big-time-maca-tommy-wak
  efield.html
+STATUS:CANCELLED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-16-bettys-dog-smiles@diypensacola
@@ -494,6 +422,23 @@ URL:https://diypensacola.com/s/2026-10-23-the-den-dirty-crumbums-dead-devil
  s.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-23-handlebar-murder-on-the-dance-floor-drag-show-cvntteeth@diyp
+ ensacola
+DTSTAMP:20261017T000000Z
+SEQUENCE:15540722
+DTSTART;TZID=America/Chicago:20261023T190000
+DTEND;TZID=America/Chicago:20261023T220000
+SUMMARY:Murder on the Dance Floor Drag Show\, Cvntteeth\, Jay Jay DuVay +3 
+ @ The Handlebar
+DESCRIPTION:Murder on the Dance Floor Drag Show\, Cvntteeth\, Jay Jay DuVay
+ \, Sarah Tonin\, Andy Rodginous\, Keke Zorra\ndoors 7pm\n$10 / $15\nhttps:
+ //diypensacola.com/s/2026-10-23-handlebar-murder-on-the-dance-floor-drag-s
+ how-cvntteeth.html
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-23-handlebar-murder-on-the-dance-flo
+ or-drag-show-cvntteeth.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-23-bettys-the-earthly-delights-sideshow@diypensacola
 DTSTAMP:20260903T000000Z
 SEQUENCE:444738
@@ -570,6 +515,18 @@ DESCRIPTION:Still Allice\, PONS\, Ihatesundays\ndoors 6pm\, show 7pm\n$10\n
  27. doors at 6\, $10\, all ages.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-27-handlebar-still-allice-pons.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-28-handlebar-trache0tomy-modown@diypensacola
+DTSTAMP:20261017T000000Z
+SEQUENCE:1530217
+DTSTART;TZID=America/Chicago:20261028T180000
+DTEND;TZID=America/Chicago:20261028T210000
+SUMMARY:Trache0tomy\, Modown\, Necrobot +1 @ The Handlebar
+DESCRIPTION:Trache0tomy\, Modown\, Necrobot\, Dark Horizon\n6pm\n$10\nhttps
+ ://diypensacola.com/s/2026-10-28-handlebar-trache0tomy-modown.html
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-28-handlebar-trache0tomy-modown.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-29-handlebar-the-linda-lindas@diypensacola
@@ -755,6 +712,21 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-10-handlebar-daisychain.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-11-309-fuckin-nothin-horse-breakfast@diypensacola
+DTSTAMP:20261017T000000Z
+SEQUENCE:15930944
+DTSTART;TZID=America/Chicago:20261111T180000
+DTEND;TZID=America/Chicago:20261111T213000
+SUMMARY:Fuckin Nothin\, Horse Breakfast\, Stufy +1 @ 309
+DESCRIPTION:Fuckin Nothin\, Horse Breakfast\, Stufy\, Goodwin Rainer\ndoors
+  6pm\, music 6:30\nsliding scale ($5 pwyc)\nhttps://diypensacola.com/s/202
+ 6-11-11-309-fuckin-nothin-horse-breakfast.html\n\nFolk Punk Hoedown Nov 11
+  at @309punkproject!
+LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-11-309-fuckin-nothin-horse-breakfast
+ .html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-13-bettys-bettys-fest-2-night-1@diypensacola
 DTSTAMP:20260918T000000Z
 SEQUENCE:794710
@@ -850,6 +822,19 @@ LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-20-bettys-valerie-sassyfras.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-02-handlebar-20-watt-tombstone@diypensacola
+DTSTAMP:20261015T000000Z
+SEQUENCE:1378615
+DTSTART;TZID=America/Chicago:20261202T190000
+DTEND;TZID=America/Chicago:20261202T220000
+SUMMARY:20 Watt Tombstone @ The Handlebar
+DESCRIPTION:20 Watt Tombstone\nshow 7pm\nhttps://diypensacola.com/s/2026-12
+ -02-handlebar-20-watt-tombstone.html\n\n20 Watt Tombstone Dec 2 at @thehan
+ dlebar850
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-02-handlebar-20-watt-tombstone.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-04-handlebar-in-her-own-words@diypensacola
 DTSTAMP:20261005T000000Z
 SEQUENCE:2953118
@@ -878,6 +863,20 @@ DESCRIPTION:Statement of Pride\, Point of Contact\, Contention\, Collateral
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-05-handlebar-statement-of-pride-poin
  t-of-contact.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-07-handlebar-d-r-i-authors-of-fate@diypensacola
+DTSTAMP:20261015T000000Z
+SEQUENCE:276495
+DTSTART;TZID=America/Chicago:20261207T190000
+DTEND;TZID=America/Chicago:20261207T220000
+SUMMARY:D.R.I.\, Authors of Fate\, Cursed Body @ The Handlebar
+DESCRIPTION:D.R.I.\, Authors of Fate\, Cursed Body\nshow 7pm\nhttps://diype
+ nsacola.com/s/2026-12-07-handlebar-d-r-i-authors-of-fate.html\n\nD.R.I. De
+ c 7 at @thehandlebar850
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-07-handlebar-d-r-i-authors-of-fate.h
+ tml
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-08-handlebar-cliff-cash@diypensacola
@@ -1016,5 +1015,22 @@ DESCRIPTION:Nervosa\, Embryonic Autopsy\ndoors 6pm / show 7pm\nhttps://diyp
   autopsy at the handlebar\, wednesday february 10th. doors 6pm.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2027-02-10-handlebar-nervosa.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-20-handlebar-dusty-gannon-and-the-agonal-gasps-the-march-violet
+ s@diypensacola
+DTSTAMP:20261017T000000Z
+SEQUENCE:12704732
+DTSTART;TZID=America/Chicago:20270220T200000
+DTEND;TZID=America/Chicago:20270220T230000
+SUMMARY:Dusty Gannon and The Agonal Gasps\, The March Violets @ The Handleb
+ ar
+DESCRIPTION:Dusty Gannon and The Agonal Gasps\, The March Violets\n8pm\nhtt
+ ps://diypensacola.com/s/2027-02-20-handlebar-dusty-gannon-and-the-agonal-g
+ asps-the-march-violets.html\n\nDusty Gannon and The Agonal Gasps Feb 20 at
+  @thehandlebar850!
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-02-20-handlebar-dusty-gannon-and-the-ag
+ onal-gasps-the-march-violets.html
 END:VEVENT
 END:VCALENDAR

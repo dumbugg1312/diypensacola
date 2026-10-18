@@ -22,18 +22,4 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-UID:2026-10-16-bettys-dog-smiles@diypensacola
-DTSTAMP:20260910T000000Z
-SEQUENCE:1259009
-DTSTART;TZID=America/Chicago:20261016T200000
-DTEND;TZID=America/Chicago:20261016T230000
-SUMMARY:Dog Smiles\, Mother Wound\, Soft +1 @ Betty’s
-DESCRIPTION:Dog Smiles\, Mother Wound\, Soft\, Rat Daughter\n8pm\n$10\nhttp
- s://diypensacola.com/s/2026-10-16-bettys-dog-smiles.html\n\ndog smiles at 
- betty’s on belmont\, friday october 16th. one night of the texas and bac
- k tour.
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-16-bettys-dog-smiles.html
-END:VEVENT
 END:VCALENDAR

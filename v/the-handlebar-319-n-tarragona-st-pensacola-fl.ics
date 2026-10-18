@@ -23,34 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-14-handlebar-cheese-for-the-table@diypensacola
-DTSTAMP:20261006T000000Z
-SEQUENCE:6522875
-DTSTART;TZID=America/Chicago:20261014T190000
-DTEND;TZID=America/Chicago:20261014T220000
-SUMMARY:Cheese for the Table\, Improvable Cause @ The Handlebar
-DESCRIPTION:Cheese for the Table\, Improvable Cause\n7pm\nhttps://diypensac
- ola.com/s/2026-10-14-handlebar-cheese-for-the-table.html
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-14-handlebar-cheese-for-the-table.ht
- ml
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-16-handlebar-big-time-maca-tommy-wakefield@diypensacola
-DTSTAMP:20260919T000000Z
-SEQUENCE:11880365
-DTSTART;TZID=America/Chicago:20261016T190000
-DTEND;TZID=America/Chicago:20261016T220000
-SUMMARY:Big Time Maca\, Tommy Wakefield\, Kyle Rehl +2 @ The Handlebar
-DESCRIPTION:Big Time Maca\, Tommy Wakefield\, Kyle Rehl\, Olivia Searcy\, A
- aron Monte\ndoors 7pm / show 7pm\nhttps://diypensacola.com/s/2026-10-16-ha
- ndlebar-big-time-maca-tommy-wakefield.html\n\nBig Time Maca doing comedy a
- t @thehandlebar850\, Oct 16
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-16-handlebar-big-time-maca-tommy-wak
- efield.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-18-handlebar-fight-night-drag-show-thotberry@diypensacola
 DTSTAMP:20260915T000000Z
 SEQUENCE:13441696
@@ -131,6 +103,23 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-22-handlebar-fenix-tx.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-23-handlebar-murder-on-the-dance-floor-drag-show-cvntteeth@diyp
+ ensacola
+DTSTAMP:20261017T000000Z
+SEQUENCE:15540722
+DTSTART;TZID=America/Chicago:20261023T190000
+DTEND;TZID=America/Chicago:20261023T220000
+SUMMARY:Murder on the Dance Floor Drag Show\, Cvntteeth\, Jay Jay DuVay +3 
+ @ The Handlebar
+DESCRIPTION:Murder on the Dance Floor Drag Show\, Cvntteeth\, Jay Jay DuVay
+ \, Sarah Tonin\, Andy Rodginous\, Keke Zorra\ndoors 7pm\n$10 / $15\nhttps:
+ //diypensacola.com/s/2026-10-23-handlebar-murder-on-the-dance-floor-drag-s
+ how-cvntteeth.html
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-23-handlebar-murder-on-the-dance-flo
+ or-drag-show-cvntteeth.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-24-handlebar-terrifying-tribute-show-26-cockfight@diypensacola
 DTSTAMP:20261008T000000Z
 SEQUENCE:382451
@@ -192,6 +181,18 @@ DESCRIPTION:Still Allice\, PONS\, Ihatesundays\ndoors 6pm\, show 7pm\n$10\n
  27. doors at 6\, $10\, all ages.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-27-handlebar-still-allice-pons.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-28-handlebar-trache0tomy-modown@diypensacola
+DTSTAMP:20261017T000000Z
+SEQUENCE:1530217
+DTSTART;TZID=America/Chicago:20261028T180000
+DTEND;TZID=America/Chicago:20261028T210000
+SUMMARY:Trache0tomy\, Modown\, Necrobot +1 @ The Handlebar
+DESCRIPTION:Trache0tomy\, Modown\, Necrobot\, Dark Horizon\n6pm\n$10\nhttps
+ ://diypensacola.com/s/2026-10-28-handlebar-trache0tomy-modown.html
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-28-handlebar-trache0tomy-modown.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-29-handlebar-the-linda-lindas@diypensacola
@@ -333,6 +334,19 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-18-handlebar-wayne-hancock.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-02-handlebar-20-watt-tombstone@diypensacola
+DTSTAMP:20261015T000000Z
+SEQUENCE:1378615
+DTSTART;TZID=America/Chicago:20261202T190000
+DTEND;TZID=America/Chicago:20261202T220000
+SUMMARY:20 Watt Tombstone @ The Handlebar
+DESCRIPTION:20 Watt Tombstone\nshow 7pm\nhttps://diypensacola.com/s/2026-12
+ -02-handlebar-20-watt-tombstone.html\n\n20 Watt Tombstone Dec 2 at @thehan
+ dlebar850
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-02-handlebar-20-watt-tombstone.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-04-handlebar-in-her-own-words@diypensacola
 DTSTAMP:20261005T000000Z
 SEQUENCE:2953118
@@ -361,6 +375,20 @@ DESCRIPTION:Statement of Pride\, Point of Contact\, Contention\, Collateral
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-05-handlebar-statement-of-pride-poin
  t-of-contact.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-07-handlebar-d-r-i-authors-of-fate@diypensacola
+DTSTAMP:20261015T000000Z
+SEQUENCE:276495
+DTSTART;TZID=America/Chicago:20261207T190000
+DTEND;TZID=America/Chicago:20261207T220000
+SUMMARY:D.R.I.\, Authors of Fate\, Cursed Body @ The Handlebar
+DESCRIPTION:D.R.I.\, Authors of Fate\, Cursed Body\nshow 7pm\nhttps://diype
+ nsacola.com/s/2026-12-07-handlebar-d-r-i-authors-of-fate.html\n\nD.R.I. De
+ c 7 at @thehandlebar850
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-07-handlebar-d-r-i-authors-of-fate.h
+ tml
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-08-handlebar-cliff-cash@diypensacola
@@ -455,5 +483,22 @@ DESCRIPTION:Nervosa\, Embryonic Autopsy\ndoors 6pm / show 7pm\nhttps://diyp
   autopsy at the handlebar\, wednesday february 10th. doors 6pm.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2027-02-10-handlebar-nervosa.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-20-handlebar-dusty-gannon-and-the-agonal-gasps-the-march-violet
+ s@diypensacola
+DTSTAMP:20261017T000000Z
+SEQUENCE:12704732
+DTSTART;TZID=America/Chicago:20270220T200000
+DTEND;TZID=America/Chicago:20270220T230000
+SUMMARY:Dusty Gannon and The Agonal Gasps\, The March Violets @ The Handleb
+ ar
+DESCRIPTION:Dusty Gannon and The Agonal Gasps\, The March Violets\n8pm\nhtt
+ ps://diypensacola.com/s/2027-02-20-handlebar-dusty-gannon-and-the-agonal-g
+ asps-the-march-violets.html\n\nDusty Gannon and The Agonal Gasps Feb 20 at
+  @thehandlebar850!
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-02-20-handlebar-dusty-gannon-and-the-ag
+ onal-gasps-the-march-violets.html
 END:VEVENT
 END:VCALENDAR

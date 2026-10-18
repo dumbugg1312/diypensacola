@@ -22,4 +22,19 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-11-309-fuckin-nothin-horse-breakfast@diypensacola
+DTSTAMP:20261017T000000Z
+SEQUENCE:15930944
+DTSTART;TZID=America/Chicago:20261111T180000
+DTEND;TZID=America/Chicago:20261111T213000
+SUMMARY:Fuckin Nothin\, Horse Breakfast\, Stufy +1 @ 309
+DESCRIPTION:Fuckin Nothin\, Horse Breakfast\, Stufy\, Goodwin Rainer\ndoors
+  6pm\, music 6:30\nsliding scale ($5 pwyc)\nhttps://diypensacola.com/s/202
+ 6-11-11-309-fuckin-nothin-horse-breakfast.html\n\nFolk Punk Hoedown Nov 11
+  at @309punkproject!
+LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-11-309-fuckin-nothin-horse-breakfast
+ .html
+END:VEVENT
 END:VCALENDAR
