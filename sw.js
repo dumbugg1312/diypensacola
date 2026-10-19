@@ -1,4 +1,4 @@
-var CACHE='diypensacola-857f61e89f7c';
+var CACHE='diypensacola-143ed671f5b1';
 var FONTS='diypensacola-fonts';
 var SHELL=["./", "offline.html", "style.css", "logo-hdr.webp", "favicon-48.png", "manifest.webmanifest", "flag.js"];
 var PRECACHE=["flyers/thumbs/2026-10-20_handlebar_the-convalescence.webp", "flyers/thumbs/2026-10-21_handlebar_felicity.webp", "flyers/thumbs/2026-10-22_downtown-music-hall_party-cannon.webp", "flyers/thumbs/2026-10-22_309_wintergreen-oil-photo-transfer-workshop.webp", "flyers/thumbs/2026-10-22_bettys_sludge-incorporated.webp", "flyers/thumbs/2026-10-22_the-handlebar_fenix-tx.webp", "flyers/thumbs/2026-10-23_the-den_dirty-crumbums.webp", "flyers/thumbs/2026-10-23_handlebar_murder-on-the-dance-floor-drag-show.webp", "flyers/thumbs/2026-10-23_bettys_the-earthly-delights-sideshow.webp", "flyers/thumbs/2026-10-24_handlebar_terrifying-tribute-show-26.webp"];
