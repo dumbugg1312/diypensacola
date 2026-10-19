@@ -1,7 +1,7 @@
-var CACHE='diypensacola-7320dc6d5ea5';
+var CACHE='diypensacola-69836c9952fd';
 var FONTS='diypensacola-fonts';
 var SHELL=["./", "offline.html", "style.css", "logo-hdr.webp", "favicon-48.png", "manifest.webmanifest", "flag.js"];
-var PRECACHE=["flyers/thumbs/2026-10-18_handlebar_robert-taylor-smith.webp", "flyers/thumbs/2026-10-18_handlebar_fight-night-drag-show.webp", "flyers/thumbs/2026-10-20_handlebar_the-convalescence.webp", "flyers/thumbs/2026-10-21_handlebar_felicity.webp", "flyers/thumbs/2026-10-22_downtown-music-hall_party-cannon.webp", "flyers/thumbs/2026-10-22_309_wintergreen-oil-photo-transfer-workshop.webp", "flyers/thumbs/2026-10-22_bettys_sludge-incorporated.webp", "flyers/thumbs/2026-10-22_the-handlebar_fenix-tx.webp", "flyers/thumbs/2026-10-23_the-den_dirty-crumbums.webp", "flyers/thumbs/2026-10-23_bettys_the-earthly-delights-sideshow.webp"];
+var PRECACHE=["flyers/thumbs/2026-10-20_handlebar_the-convalescence.webp", "flyers/thumbs/2026-10-21_handlebar_felicity.webp", "flyers/thumbs/2026-10-22_downtown-music-hall_party-cannon.webp", "flyers/thumbs/2026-10-22_309_wintergreen-oil-photo-transfer-workshop.webp", "flyers/thumbs/2026-10-22_bettys_sludge-incorporated.webp", "flyers/thumbs/2026-10-22_the-handlebar_fenix-tx.webp", "flyers/thumbs/2026-10-23_the-den_dirty-crumbums.webp", "flyers/thumbs/2026-10-23_handlebar_murder-on-the-dance-floor-drag-show.webp", "flyers/thumbs/2026-10-23_bettys_the-earthly-delights-sideshow.webp", "flyers/thumbs/2026-10-24_handlebar_terrifying-tribute-show-26.webp"];
 var NAV_WAIT=3000;
 var ASSET_WAIT=1500;
 var slowAt=0;

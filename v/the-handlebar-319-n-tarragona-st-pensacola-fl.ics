@@ -23,41 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-18-handlebar-fight-night-drag-show-thotberry@diypensacola
-DTSTAMP:20260915T000000Z
-SEQUENCE:13441696
-DTSTART;TZID=America/Chicago:20261018T183000
-DTEND;TZID=America/Chicago:20261018T220000
-SUMMARY:Fight Night Drag Show\, Thotberry Shortcake\, Xena-Morphine +3 @ Th
- e Handlebar
-DESCRIPTION:Fight Night Drag Show\, Thotberry Shortcake\, Xena-Morphine\, T
- itanium\, Jay Jay DuVay\, Hauntica\ndoors 6:30pm\, show 7pm\n$10\nhttps://
- diypensacola.com/s/2026-10-18-handlebar-fight-night-drag-show-thotberry.ht
- ml\n\nthe thot factory presents fight night\, hosted by thotberry with xen
- amorphine\, titanium\, jay jay duvay\, and hauntica at the handlebar. sund
- ay october 18\, doors 6:30\, show at 7. $10 cover\, 18+. dress up\, there 
- is a costume contest with prizes.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-18-handlebar-fight-night-drag-show-t
- hotberry.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-18-handlebar-robert-taylor-smith-marc-ganancias@diypensacola
-DTSTAMP:20261005T000000Z
-SEQUENCE:10621694
-DTSTART;TZID=America/Chicago:20261018T150000
-DTEND;TZID=America/Chicago:20261018T180000
-SUMMARY:Robert Taylor Smith\, Marc Ganancias\, Warren Wolf +1 @ The Handleb
- ar
-DESCRIPTION:Robert Taylor Smith\, Marc Ganancias\, Warren Wolf\, Katie Dine
- en\n3pm matinee\n$10\nhttps://diypensacola.com/s/2026-10-18-handlebar-robe
- rt-taylor-smith-marc-ganancias.html\n\nSongwriter rounds matinee Oct 18 at
-  @thehandlebar850
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-18-handlebar-robert-taylor-smith-mar
- c-ganancias.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-20-handlebar-the-convalescence-knifeback@diypensacola
 DTSTAMP:20260925T000000Z
 SEQUENCE:11103055

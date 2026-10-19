@@ -23,22 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-03-handlebar-heavy-kid-james-hall-the-ladies-of@diypensacola
-DTSTAMP:20260925T000000Z
-SEQUENCE:13502289
-DTSTART;TZID=America/Chicago:20261003T200000
-DTEND;TZID=America/Chicago:20261003T230000
-SUMMARY:Heavy Kid\, James Hall & the Ladies of…\, The Mob-Town Sky Cadets
-  @ The Handlebar
-DESCRIPTION:Heavy Kid\, James Hall & the Ladies of…\, The Mob-Town Sky Ca
- dets\n8pm\nhttps://diypensacola.com/s/2026-10-03-handlebar-heavy-kid-james
- -hall-the-ladies-of.html\n\nHeavy Kid tomorrow at @thehandlebar850!\n\n@he
- avy_kid_band @theladiesofmusic
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-03-handlebar-heavy-kid-james-hall-th
- e-ladies-of.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-06-handlebar-xasthur-temple-of-the-fuzz-witch@diypensacola
 DTSTAMP:20260826T000000Z
 SEQUENCE:7894603
