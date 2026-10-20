@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola Shows
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-13-pacific-kava-bar-renee-arozqueta-snake-and-the-rabbit@diypen
+ sacola
+DTSTAMP:20261020T000000Z
+SEQUENCE:871584
+DTSTART;TZID=America/Chicago:20261113T180000
+DTEND;TZID=America/Chicago:20261113T200000
+SUMMARY:Renee Arozqueta\, Snake and the Rabbit\, Spider Bucket @ Pacific Ka
+ va Bar
+DESCRIPTION:Renee Arozqueta\, Snake and the Rabbit\, Spider Bucket\n6-8pm\n
+ $7\nhttps://diypensacola.com/s/2026-11-13-pacific-kava-bar-renee-arozqueta
+ -snake-and-the-rabbit.html\n\nRenee Arozqueta back in Pensacola Nov 13 at 
+ Pacific Kava 🖤\n@shuttlepunx @snakeandtherabbit @thespiderbucket
+LOCATION:Pacific Kava Bar
+URL:https://diypensacola.com/s/2026-11-13-pacific-kava-bar-renee-arozqueta-
+ snake-and-the-rabbit.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: Renee Arozqueta\, Snake and the Rabbit\, Spider Bucket
+  @ Pacific Kava Bar
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
