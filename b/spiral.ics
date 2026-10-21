@@ -22,4 +22,19 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-06-handlebar-the-crimson-armada-spiral@diypensacola
+DTSTAMP:20261021T000000Z
+SEQUENCE:16528464
+DTSTART;TZID=America/Chicago:20261206T180000
+DTEND;TZID=America/Chicago:20261206T213000
+SUMMARY:The Crimson Armada\, Spiral\, Wraithbearer +1 @ The Handlebar
+DESCRIPTION:The Crimson Armada\, Spiral\, Wraithbearer\, Knives\ndoors 6pm 
+ / music 6:30pm\n$17 adv / $20 door\nhttps://diypensacola.com/s/2026-12-06-
+ handlebar-the-crimson-armada-spiral.html\n\nThe Crimson Armada Dec 6 at @t
+ hehandlebar850 ⛓️\n\n@spiral.nwfl @wraithbearer
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-06-handlebar-the-crimson-armada-spir
+ al.html
+END:VEVENT
 END:VCALENDAR

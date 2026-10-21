@@ -23,22 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-20-handlebar-the-convalescence-knifeback@diypensacola
-DTSTAMP:20260925T000000Z
-SEQUENCE:11103055
-DTSTART;TZID=America/Chicago:20261020T190000
-DTEND;TZID=America/Chicago:20261020T220000
-SUMMARY:The Convalescence\, Knifeback\, Blindfold Knife Fight +1 @ The Hand
- lebar
-DESCRIPTION:The Convalescence\, Knifeback\, Blindfold Knife Fight\, Sacreus
- \ndoors 7pm\n$10 adv / $15 door\nhttps://diypensacola.com/s/2026-10-20-han
- dlebar-the-convalescence-knifeback.html\n\n@theconvalescenceofficial @blin
- dfoldknifefightfl @sacreus
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-20-handlebar-the-convalescence-knife
- back.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-21-handlebar-felicity-dear-maryanne@diypensacola
 DTSTAMP:20260826T000000Z
 SEQUENCE:8911302
@@ -342,6 +326,21 @@ URL:https://diypensacola.com/s/2026-12-05-handlebar-statement-of-pride-poin
  t-of-contact.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-06-handlebar-the-crimson-armada-spiral@diypensacola
+DTSTAMP:20261021T000000Z
+SEQUENCE:16528464
+DTSTART;TZID=America/Chicago:20261206T180000
+DTEND;TZID=America/Chicago:20261206T213000
+SUMMARY:The Crimson Armada\, Spiral\, Wraithbearer +1 @ The Handlebar
+DESCRIPTION:The Crimson Armada\, Spiral\, Wraithbearer\, Knives\ndoors 6pm 
+ / music 6:30pm\n$17 adv / $20 door\nhttps://diypensacola.com/s/2026-12-06-
+ handlebar-the-crimson-armada-spiral.html\n\nThe Crimson Armada Dec 6 at @t
+ hehandlebar850 ⛓️\n\n@spiral.nwfl @wraithbearer
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-06-handlebar-the-crimson-armada-spir
+ al.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-07-handlebar-d-r-i-authors-of-fate@diypensacola
 DTSTAMP:20261015T000000Z
 SEQUENCE:276495
@@ -424,6 +423,18 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2027-01-17-handlebar-colour-revolt.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-24-handlebar-silverada@diypensacola
+DTSTAMP:20261020T000000Z
+SEQUENCE:5908435
+DTSTART;TZID=America/Chicago:20270124T180000
+DTEND;TZID=America/Chicago:20270124T210000
+SUMMARY:Silverada @ The Handlebar
+DESCRIPTION:Silverada\n6pm\nhttps://diypensacola.com/s/2027-01-24-handlebar
+ -silverada.html\n\nSilverada Jan 24 at @thehandlebar850
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-01-24-handlebar-silverada.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-02-03-handlebar-never-easy-wayside@diypensacola
 DTSTAMP:20260919T000000Z
 SEQUENCE:14363173
@@ -448,6 +459,19 @@ DESCRIPTION:Nervosa\, Embryonic Autopsy\ndoors 6pm / show 7pm\nhttps://diyp
   autopsy at the handlebar\, wednesday february 10th. doors 6pm.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2027-02-10-handlebar-nervosa.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-18-handlebar-earth-to-eve@diypensacola
+DTSTAMP:20261021T000000Z
+SEQUENCE:9677759
+DTSTART;TZID=America/Chicago:20270218T180000
+DTEND;TZID=America/Chicago:20270218T220000
+SUMMARY:Earth to Eve @ The Handlebar
+DESCRIPTION:Earth to Eve\ndoors 6pm / show 7pm\nhttps://diypensacola.com/s/
+ 2027-02-18-handlebar-earth-to-eve.html\n\nEarth to Eve Feb 18 at @thehandl
+ ebar850!
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-02-18-handlebar-earth-to-eve.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-20-handlebar-dusty-gannon-and-the-agonal-gasps-the-march-violet
