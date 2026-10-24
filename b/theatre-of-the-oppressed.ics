@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola: Theatre of the Oppressed
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-08-309-theatre-of-the-oppressed-suzanne-byam@diypensacola
+DTSTAMP:20261024T000000Z
+SEQUENCE:14312696
+DTSTART;TZID=America/Chicago:20261108T120000
+DTEND;TZID=America/Chicago:20261108T140000
+SUMMARY:Theatre of the Oppressed\, Suzanne Byam @ 309
+DESCRIPTION:Theatre of the Oppressed\, Suzanne Byam\n12-2pm\nhttps://diypen
+ sacola.com/s/2026-11-08-309-theatre-of-the-oppressed-suzanne-byam.html\n\n
+ Theatre of the Oppressed Nov 8 at @309punkproject!
+LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-08-309-theatre-of-the-oppressed-suza
+ nne-byam.html
+END:VEVENT
+END:VCALENDAR

@@ -23,20 +23,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-22-309-wintergreen-oil-photo-transfer-workshop-kayleigh-rose@di
- ypensacola
-DTSTAMP:20260927T000000Z
-SEQUENCE:286282
-DTSTART;TZID=America/Chicago:20261022T180000
-DTEND;TZID=America/Chicago:20261022T210000
-SUMMARY:Wintergreen Oil Photo Transfer Workshop\, Kayleigh Rose @ 309
-DESCRIPTION:Wintergreen Oil Photo Transfer Workshop\, Kayleigh Rose\n6-9pm\
- nsliding scale\nhttps://diypensacola.com/s/2026-10-22-309-wintergreen-oil-
- photo-transfer-workshop-kayleigh-rose.html\n\nWintergreen oil photo transf
- er workshop with Kayleigh Rose at @309punkproject\, thursday october 22nd.
+UID:2026-11-08-309-theatre-of-the-oppressed-suzanne-byam@diypensacola
+DTSTAMP:20261024T000000Z
+SEQUENCE:14312696
+DTSTART;TZID=America/Chicago:20261108T120000
+DTEND;TZID=America/Chicago:20261108T140000
+SUMMARY:Theatre of the Oppressed\, Suzanne Byam @ 309
+DESCRIPTION:Theatre of the Oppressed\, Suzanne Byam\n12-2pm\nhttps://diypen
+ sacola.com/s/2026-11-08-309-theatre-of-the-oppressed-suzanne-byam.html\n\n
+ Theatre of the Oppressed Nov 8 at @309punkproject!
 LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-22-309-wintergreen-oil-photo-transfe
- r-workshop-kayleigh-rose.html
+URL:https://diypensacola.com/s/2026-11-08-309-theatre-of-the-oppressed-suza
+ nne-byam.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-11-309-fuckin-nothin-horse-breakfast@diypensacola

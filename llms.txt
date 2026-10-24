@@ -4,8 +4,8 @@
 > Pensacola, Florida. Most shows are documented from the flyer that advertised
 > them; a few come from a caption or a venue listing instead.
 
-Currently 1633 shows on record (1581 past, 52 upcoming; cancelled and postponed nights are not counted)
-across 99 venues and 2665 acts, going back to 1991.
+Currently 1636 shows on record (1589 past, 47 upcoming; cancelled and postponed nights are not counted)
+across 99 venues and 2668 acts, going back to 1991.
 Run by volunteers, not a promoter or a ticketing company. No ads. Visits are
 counted with privacy-friendly analytics (GoatCounter: no cookies, no personal
 profiles); typefaces load from Google Fonts, and video from YouTube only when

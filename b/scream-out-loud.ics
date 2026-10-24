@@ -38,19 +38,4 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-07-handlebar-motion-city-soundtrack-
  colony-house.html
 END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-22-handlebar-fenix-tx@diypensacola
-DTSTAMP:20260826T000000Z
-SEQUENCE:13891561
-DTSTART;VALUE=DATE:20261022
-DTEND;VALUE=DATE:20261023
-SUMMARY:Fenix Tx\, Scream Out Loud\, Color The Void @ The Handlebar (time T
- BA)
-DESCRIPTION:Fenix Tx\, Scream Out Loud\, Color The Void\ntime not listed\, 
- check the venue\nhttps://diypensacola.com/s/2026-10-22-handlebar-fenix-tx.
- html\n\nFenix TX Oct 22 at @thehandlebar850\n\n@fenixtx @screamoutloudfl @
- colorthevoidmusic
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-22-handlebar-fenix-tx.html
-END:VEVENT
 END:VCALENDAR

@@ -22,21 +22,4 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-UID:2026-10-23-handlebar-murder-on-the-dance-floor-drag-show-cvntteeth@diyp
- ensacola
-DTSTAMP:20261017T000000Z
-SEQUENCE:15540722
-DTSTART;TZID=America/Chicago:20261023T190000
-DTEND;TZID=America/Chicago:20261023T220000
-SUMMARY:Murder on the Dance Floor Drag Show\, Cvntteeth\, Jay Jay DuVay +3 
- @ The Handlebar
-DESCRIPTION:Murder on the Dance Floor Drag Show\, Cvntteeth\, Jay Jay DuVay
- \, Sarah Tonin\, Andy Rodginous\, Keke Zorra\ndoors 7pm\n$10 / $15\nhttps:
- //diypensacola.com/s/2026-10-23-handlebar-murder-on-the-dance-floor-drag-s
- how-cvntteeth.html
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-23-handlebar-murder-on-the-dance-flo
- or-drag-show-cvntteeth.html
-END:VEVENT
 END:VCALENDAR

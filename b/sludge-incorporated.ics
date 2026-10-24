@@ -22,20 +22,4 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-UID:2026-10-22-bettys-sludge-incorporated-cursed-body@diypensacola
-DTSTAMP:20261001T000000Z
-SEQUENCE:14648844
-DTSTART;TZID=America/Chicago:20261022T190000
-DTEND;TZID=America/Chicago:20261022T230000
-SUMMARY:Sludge Incorporated\, Cursed Body\, Cookies & Cake +1 @ Betty’s
-DESCRIPTION:Sludge Incorporated\, Cursed Body\, Cookies & Cake\, Sweet Lady
-  Sleeze\ndoors 7pm\, show 8pm\n$10\nhttps://diypensacola.com/s/2026-10-22-
- bettys-sludge-incorporated-cursed-body.html\n\nSludge Incorporated Oct 22 
- at @bettys_on_belmont!\n\n@cursedbodyband @cookies__and__cake @sweet.lady.
- sleeze
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-22-bettys-sludge-incorporated-cursed
- -body.html
-END:VEVENT
 END:VCALENDAR

@@ -23,52 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-21-handlebar-felicity-dear-maryanne@diypensacola
-DTSTAMP:20260826T000000Z
-SEQUENCE:8911302
-DTSTART;TZID=America/Chicago:20261021T180000
-DTEND;TZID=America/Chicago:20261021T210000
-SUMMARY:Felicity\, Dear Maryanne\, Other @ The Handlebar
-DESCRIPTION:Felicity\, Dear Maryanne\, Other\n6pm\nhttps://diypensacola.com
- /s/2026-10-21-handlebar-felicity-dear-maryanne.html\n\nFelicity Oct 21 at 
- @thehandlebar850\n\n@wearefelicity @dearmaryanne @otherband
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-21-handlebar-felicity-dear-maryanne.
- html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-22-handlebar-fenix-tx@diypensacola
-DTSTAMP:20260826T000000Z
-SEQUENCE:13891561
-DTSTART;VALUE=DATE:20261022
-DTEND;VALUE=DATE:20261023
-SUMMARY:Fenix Tx\, Scream Out Loud\, Color The Void @ The Handlebar (time T
- BA)
-DESCRIPTION:Fenix Tx\, Scream Out Loud\, Color The Void\ntime not listed\, 
- check the venue\nhttps://diypensacola.com/s/2026-10-22-handlebar-fenix-tx.
- html\n\nFenix TX Oct 22 at @thehandlebar850\n\n@fenixtx @screamoutloudfl @
- colorthevoidmusic
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-22-handlebar-fenix-tx.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-23-handlebar-murder-on-the-dance-floor-drag-show-cvntteeth@diyp
- ensacola
-DTSTAMP:20261017T000000Z
-SEQUENCE:15540722
-DTSTART;TZID=America/Chicago:20261023T190000
-DTEND;TZID=America/Chicago:20261023T220000
-SUMMARY:Murder on the Dance Floor Drag Show\, Cvntteeth\, Jay Jay DuVay +3 
- @ The Handlebar
-DESCRIPTION:Murder on the Dance Floor Drag Show\, Cvntteeth\, Jay Jay DuVay
- \, Sarah Tonin\, Andy Rodginous\, Keke Zorra\ndoors 7pm\n$10 / $15\nhttps:
- //diypensacola.com/s/2026-10-23-handlebar-murder-on-the-dance-floor-drag-s
- how-cvntteeth.html
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-23-handlebar-murder-on-the-dance-flo
- or-drag-show-cvntteeth.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-24-handlebar-terrifying-tribute-show-26-cockfight@diypensacola
 DTSTAMP:20261008T000000Z
 SEQUENCE:382451
@@ -156,6 +110,20 @@ DESCRIPTION:The Linda Lindas\n6:30pm\nhttps://diypensacola.com/s/2026-10-29
  ect and foo foo fest. tickets at thehandlebar850.com.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-29-handlebar-the-linda-lindas.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-30-handlebar-wynter-lesion@diypensacola
+DTSTAMP:20261024T000000Z
+SEQUENCE:864735
+DTSTART;TZID=America/Chicago:20261030T190000
+DTEND;TZID=America/Chicago:20261030T220000
+SUMMARY:Wynter\, Lesion\, Power Bomb +1 @ The Handlebar
+DESCRIPTION:Wynter\, Lesion\, Power Bomb\, Spidershed\n7:00pm\nhttps://diyp
+ ensacola.com/s/2026-10-30-handlebar-wynter-lesion.html\n\nWynter Oct 30 at
+  @thehandlebar850!\n\n@wynter_officialmusic @lesion_bandfl @powerbombfl @s
+ pidershed.nwfl
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-30-handlebar-wynter-lesion.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-handlebar-nuovo-testamento-night-sins@diypensacola
@@ -489,5 +457,19 @@ DESCRIPTION:Dusty Gannon and The Agonal Gasps\, The March Violets\n8pm\nhtt
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2027-02-20-handlebar-dusty-gannon-and-the-ag
  onal-gasps-the-march-violets.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-01-handlebar-haywire-dark-thoughts@diypensacola
+DTSTAMP:20261024T000000Z
+SEQUENCE:6391785
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:Haywire\, Dark Thoughts\, GVLLOW @ The Handlebar (time TBA)
+DESCRIPTION:Haywire\, Dark Thoughts\, GVLLOW\ntime not listed\, check the v
+ enue\n$25\nhttps://diypensacola.com/s/2027-03-01-handlebar-haywire-dark-th
+ oughts.html\n\nHaywire Mar 1 at @thehandlebar850!\n\n@haywire617
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-03-01-handlebar-haywire-dark-thoughts.h
+ tml
 END:VEVENT
 END:VCALENDAR

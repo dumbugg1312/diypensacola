@@ -23,85 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-07-handlebar-belmont-super-sometimes@diypensacola
-DTSTAMP:20260826T000000Z
-SEQUENCE:13993107
-DTSTART;VALUE=DATE:20261007
-DTEND;VALUE=DATE:20261008
-SUMMARY:Belmont\, Super Sometimes\, Public Works @ The Handlebar (time TBA)
-DESCRIPTION:Belmont\, Super Sometimes\, Public Works\ntime not listed\, che
- ck the venue\nhttps://diypensacola.com/s/2026-10-07-handlebar-belmont-supe
- r-sometimes.html\n\nBelmont playing the ep in full next wednesday at @theh
- andlebar850!\n\n@belmontmusic @supersometimes
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-07-handlebar-belmont-super-sometimes
- .html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-08-handlebar-forsaken-profits-tokyo-coyote@diypensacola
-DTSTAMP:20260903T000000Z
-SEQUENCE:10286708
-DTSTART;TZID=America/Chicago:20261008T190000
-DTEND;TZID=America/Chicago:20261008T230000
-SUMMARY:Forsaken Profits\, Tokyo Coyote\, Tremors @ The Handlebar
-DESCRIPTION:Forsaken Profits\, Tokyo Coyote\, Tremors\ndoors 7 / show 8\nht
- tps://diypensacola.com/s/2026-10-08-handlebar-forsaken-profits-tokyo-coyot
- e.html\n\nforsaken profits\, tokyo coyote\, and tremors at the handlebar. 
- thursday october 8th.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-08-handlebar-forsaken-profits-tokyo-
- coyote.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-08-bettys-gong-slayer-roman-gabriel-todd@diypensacola
-DTSTAMP:20260928T000000Z
-SEQUENCE:12480902
-DTSTART;TZID=America/Chicago:20261008T190000
-DTEND;TZID=America/Chicago:20261008T230000
-SUMMARY:Gong Slayer\, Roman Gabriel Todd @ Betty’s
-DESCRIPTION:Gong Slayer\, Roman Gabriel Todd\ndoors 7pm / show 8pm\n$10\nht
- tps://diypensacola.com/s/2026-10-08-bettys-gong-slayer-roman-gabriel-todd.
- html\n\nGong Slayer next thursday at @bettys_on_belmont!
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-08-bettys-gong-slayer-roman-gabriel-
- todd.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-09-handlebar-graham-barham-jake-banfield@diypensacola
-DTSTAMP:20260915T000000Z
-SEQUENCE:2063593
-DTSTART;TZID=America/Chicago:20261009T190000
-DTEND;TZID=America/Chicago:20261009T230000
-SUMMARY:Graham Barham\, Jake Banfield @ The Handlebar
-DESCRIPTION:Graham Barham\, Jake Banfield\ndoors 7pm\, show 8pm\npossibly p
- ostponed - check venue\nhttps://diypensacola.com/s/2026-10-09-handlebar-gr
- aham-barham-jake-banfield.html\n\ngraham barham with jake banfield at the 
- handlebar\, friday october 9. doors 7pm\, show at 8.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-09-handlebar-graham-barham-jake-banf
- ield.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-09-bettys-punk-or-treat-iii-friendly-spectres@diypensacola
-DTSTAMP:20260904T000000Z
-SEQUENCE:1463777
-DTSTART;TZID=America/Chicago:20261009T200000
-DTEND;TZID=America/Chicago:20261010T000000
-SUMMARY:POSTPONED: Punk-or-Treat III\, Ihatesundays\, Mother’s Milk +3 @ 
- Betty’s
-DESCRIPTION:Punk-or-Treat III\, Ihatesundays\, Mother’s Milk\, Bastard So
- n\, The Snatches\, Larry\ndoors 8pm\, music 9pm\n$10-$20 sliding scale\, o
- r $5 with a donation\nhttps://diypensacola.com/s/2026-10-09-bettys-punk-or
- -treat-iii-friendly-spectres.html\n\npunk-or-treat iii\, a food not bombs 
- fundraiser at betty’s on friday 10/9. ihatesundays\, mother’s milk\, b
- astard son and the snatches\, plus a costume contest featuring larry. door
- s 8pm\, music 9pm. $10-$20 sliding scale\, or $5 with a donation.
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-09-bettys-punk-or-treat-iii-friendly
- -spectres.html
-STATUS:TENTATIVE
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-11-handlebar-ritual-6@diypensacola
 DTSTAMP:20261006T000000Z
 SEQUENCE:12815276
@@ -403,7 +324,8 @@ SUMMARY:Murder on the Dance Floor Drag Show\, Cvntteeth\, Jay Jay DuVay +3
 DESCRIPTION:Murder on the Dance Floor Drag Show\, Cvntteeth\, Jay Jay DuVay
  \, Sarah Tonin\, Andy Rodginous\, Keke Zorra\ndoors 7pm\n$10 / $15\nhttps:
  //diypensacola.com/s/2026-10-23-handlebar-murder-on-the-dance-floor-drag-s
- how-cvntteeth.html
+ how-cvntteeth.html\n\nMurder on the Dance Floor this friday at @thehandleb
+ ar850!
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-23-handlebar-murder-on-the-dance-flo
  or-drag-show-cvntteeth.html
@@ -531,6 +453,20 @@ URL:https://diypensacola.com/s/2026-10-29-voices-of-pensacola-multicultural
  -center-2nd-annual-hallozine-fest.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-30-handlebar-wynter-lesion@diypensacola
+DTSTAMP:20261024T000000Z
+SEQUENCE:864735
+DTSTART;TZID=America/Chicago:20261030T190000
+DTEND;TZID=America/Chicago:20261030T220000
+SUMMARY:Wynter\, Lesion\, Power Bomb +1 @ The Handlebar
+DESCRIPTION:Wynter\, Lesion\, Power Bomb\, Spidershed\n7:00pm\nhttps://diyp
+ ensacola.com/s/2026-10-30-handlebar-wynter-lesion.html\n\nWynter Oct 30 at
+  @thehandlebar850!\n\n@wynter_officialmusic @lesion_bandfl @powerbombfl @s
+ pidershed.nwfl
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-30-handlebar-wynter-lesion.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-30-voices-of-pensacola-multicultural-center-2nd-annual-hallozin
  e-fest@diypensacola
 DTSTAMP:20260914T000000Z
@@ -654,6 +590,20 @@ DESCRIPTION:Nature Boys\, Stress Wound\, Mother’s Milk\ndoors 8p / show 9
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-07-bettys-nature-boys-stress-wound.h
  tml
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-08-309-theatre-of-the-oppressed-suzanne-byam@diypensacola
+DTSTAMP:20261024T000000Z
+SEQUENCE:14312696
+DTSTART;TZID=America/Chicago:20261108T120000
+DTEND;TZID=America/Chicago:20261108T140000
+SUMMARY:Theatre of the Oppressed\, Suzanne Byam @ 309
+DESCRIPTION:Theatre of the Oppressed\, Suzanne Byam\n12-2pm\nhttps://diypen
+ sacola.com/s/2026-11-08-309-theatre-of-the-oppressed-suzanne-byam.html\n\n
+ Theatre of the Oppressed Nov 8 at @309punkproject!
+LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-08-309-theatre-of-the-oppressed-suza
+ nne-byam.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-08-handlebar-ajj-greet-death@diypensacola
@@ -1059,5 +1009,19 @@ DESCRIPTION:Dusty Gannon and The Agonal Gasps\, The March Violets\n8pm\nhtt
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2027-02-20-handlebar-dusty-gannon-and-the-ag
  onal-gasps-the-march-violets.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-01-handlebar-haywire-dark-thoughts@diypensacola
+DTSTAMP:20261024T000000Z
+SEQUENCE:6391785
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:Haywire\, Dark Thoughts\, GVLLOW @ The Handlebar (time TBA)
+DESCRIPTION:Haywire\, Dark Thoughts\, GVLLOW\ntime not listed\, check the v
+ enue\n$25\nhttps://diypensacola.com/s/2027-03-01-handlebar-haywire-dark-th
+ oughts.html\n\nHaywire Mar 1 at @thehandlebar850!\n\n@haywire617
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-03-01-handlebar-haywire-dark-thoughts.h
+ tml
 END:VEVENT
 END:VCALENDAR

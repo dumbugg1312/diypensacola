@@ -22,18 +22,4 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-UID:2026-10-21-handlebar-felicity-dear-maryanne@diypensacola
-DTSTAMP:20260826T000000Z
-SEQUENCE:8911302
-DTSTART;TZID=America/Chicago:20261021T180000
-DTEND;TZID=America/Chicago:20261021T210000
-SUMMARY:Felicity\, Dear Maryanne\, Other @ The Handlebar
-DESCRIPTION:Felicity\, Dear Maryanne\, Other\n6pm\nhttps://diypensacola.com
- /s/2026-10-21-handlebar-felicity-dear-maryanne.html\n\nFelicity Oct 21 at 
- @thehandlebar850\n\n@wearefelicity @dearmaryanne @otherband
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-21-handlebar-felicity-dear-maryanne.
- html
-END:VEVENT
 END:VCALENDAR

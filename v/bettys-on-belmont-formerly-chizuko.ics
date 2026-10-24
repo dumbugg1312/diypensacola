@@ -23,37 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-22-bettys-sludge-incorporated-cursed-body@diypensacola
-DTSTAMP:20261001T000000Z
-SEQUENCE:14648844
-DTSTART;TZID=America/Chicago:20261022T190000
-DTEND;TZID=America/Chicago:20261022T230000
-SUMMARY:Sludge Incorporated\, Cursed Body\, Cookies & Cake +1 @ Betty’s
-DESCRIPTION:Sludge Incorporated\, Cursed Body\, Cookies & Cake\, Sweet Lady
-  Sleeze\ndoors 7pm\, show 8pm\n$10\nhttps://diypensacola.com/s/2026-10-22-
- bettys-sludge-incorporated-cursed-body.html\n\nSludge Incorporated Oct 22 
- at @bettys_on_belmont!\n\n@cursedbodyband @cookies__and__cake @sweet.lady.
- sleeze
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-22-bettys-sludge-incorporated-cursed
- -body.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-23-bettys-the-earthly-delights-sideshow@diypensacola
-DTSTAMP:20260903T000000Z
-SEQUENCE:444738
-DTSTART;TZID=America/Chicago:20261023T200000
-DTEND;TZID=America/Chicago:20261024T000000
-SUMMARY:The Earthly Delights Sideshow @ Betty’s
-DESCRIPTION:The Earthly Delights Sideshow\ndoors 8p / freaks 9p\nhttps://di
- ypensacola.com/s/2026-10-23-bettys-the-earthly-delights-sideshow.html\n\nt
- he earthly delights sideshow at betty’s on belmont. friday october 23rd\
- , doors 8\, freaks 9.
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-23-bettys-the-earthly-delights-sides
- how.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-31-bettys-bettys-block-party-halloween@diypensacola
 DTSTAMP:20260918T000000Z
 SEQUENCE:9676333

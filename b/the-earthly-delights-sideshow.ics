@@ -22,19 +22,4 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-UID:2026-10-23-bettys-the-earthly-delights-sideshow@diypensacola
-DTSTAMP:20260903T000000Z
-SEQUENCE:444738
-DTSTART;TZID=America/Chicago:20261023T200000
-DTEND;TZID=America/Chicago:20261024T000000
-SUMMARY:The Earthly Delights Sideshow @ Betty’s
-DESCRIPTION:The Earthly Delights Sideshow\ndoors 8p / freaks 9p\nhttps://di
- ypensacola.com/s/2026-10-23-bettys-the-earthly-delights-sideshow.html\n\nt
- he earthly delights sideshow at betty’s on belmont. friday october 23rd\
- , doors 8\, freaks 9.
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-23-bettys-the-earthly-delights-sides
- how.html
-END:VEVENT
 END:VCALENDAR

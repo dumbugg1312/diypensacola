@@ -22,4 +22,18 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-10-30-handlebar-wynter-lesion@diypensacola
+DTSTAMP:20261024T000000Z
+SEQUENCE:864735
+DTSTART;TZID=America/Chicago:20261030T190000
+DTEND;TZID=America/Chicago:20261030T220000
+SUMMARY:Wynter\, Lesion\, Power Bomb +1 @ The Handlebar
+DESCRIPTION:Wynter\, Lesion\, Power Bomb\, Spidershed\n7:00pm\nhttps://diyp
+ ensacola.com/s/2026-10-30-handlebar-wynter-lesion.html\n\nWynter Oct 30 at
+  @thehandlebar850!\n\n@wynter_officialmusic @lesion_bandfl @powerbombfl @s
+ pidershed.nwfl
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-30-handlebar-wynter-lesion.html
+END:VEVENT
 END:VCALENDAR
