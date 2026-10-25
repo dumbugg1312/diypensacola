@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola Shows
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-10-27-the-den-askysoblack-0milesperhour@diypensacola
+DTSTAMP:20261025T000000Z
+SEQUENCE:10173704
+DTSTART;TZID=America/Chicago:20261027T170000
+DTEND;TZID=America/Chicago:20261027T210000
+SUMMARY:askysoblack\, 0milesperhour\, Coastal High School +3 @ The Den
+DESCRIPTION:askysoblack\, 0milesperhour\, Coastal High School\, Lucid\, Bas
+ tard Son\, replacingstreetlightswithleds\ndoors 5:00\, show 6:00\n$10 or p
+ wyc\nhttps://diypensacola.com/s/2026-10-27-the-den-askysoblack-0milesperho
+ ur.html\n\naskysoblack pop up show Oct 27 🖤\n\n@chs0nline @bastardsonba
+ nd
+LOCATION:The Den
+URL:https://diypensacola.com/s/2026-10-27-the-den-askysoblack-0milesperhour
+ .html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: askysoblack\, 0milesperhour\, Coastal High School\, Lu
+ cid\, Bastard Son\, replacingstreetlightswithleds @ The Den
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

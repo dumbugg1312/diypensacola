@@ -37,20 +37,4 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-02-handlebar-rufus-mcblack-cavae-mun
  di.html
 END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-24-handlebar-terrifying-tribute-show-26-cockfight@diypensacola
-DTSTAMP:20261008T000000Z
-SEQUENCE:382451
-DTSTART;TZID=America/Chicago:20261024T170000
-DTEND;TZID=America/Chicago:20261024T200000
-SUMMARY:Terrifying Tribute Show ’26\, Cockfight\, Palafoxx +2 @ The Handl
- ebar
-DESCRIPTION:Terrifying Tribute Show ’26\, Cockfight\, Palafoxx\, Cavae Mu
- ndi\, Snow Halo\ndoors 5pm\n$10 donation\nhttps://diypensacola.com/s/2026-
- 10-24-handlebar-terrifying-tribute-show-26-cockfight.html\n\n@cavaemundi @
- snowhalo_
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-24-handlebar-terrifying-tribute-show
- -26-cockfight.html
-END:VEVENT
 END:VCALENDAR

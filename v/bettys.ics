@@ -23,6 +23,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:2026-10-29-bettys-dj-be@diypensacola
+DTSTAMP:20261025T000000Z
+SEQUENCE:14501646
+DTSTART;TZID=America/Chicago:20261029T200000
+DTEND;TZID=America/Chicago:20261029T220000
+SUMMARY:DJ Be @ Betty’s
+DESCRIPTION:DJ Be\n8-10ish\nfree\nhttps://diypensacola.com/s/2026-10-29-bet
+ tys-dj-be.html\n\nDJ Be Oct 29 at @bettys_on_belmont\, free hip hop night!
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-29-bettys-dj-be.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-31-bettys-bettys-block-party-halloween@diypensacola
 DTSTAMP:20260918T000000Z
 SEQUENCE:9676333

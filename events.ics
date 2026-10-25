@@ -355,8 +355,8 @@ SUMMARY:Terrifying Tribute Show ’26\, Cockfight\, Palafoxx +2 @ The Handl
  ebar
 DESCRIPTION:Terrifying Tribute Show ’26\, Cockfight\, Palafoxx\, Cavae Mu
  ndi\, Snow Halo\ndoors 5pm\n$10 donation\nhttps://diypensacola.com/s/2026-
- 10-24-handlebar-terrifying-tribute-show-26-cockfight.html\n\n@cavaemundi @
- snowhalo_
+ 10-24-handlebar-terrifying-tribute-show-26-cockfight.html\n\nTerrifying Tr
+ ibute Show in two weeks at @thehandlebar850!\n\n@cavaemundi @snowhalo_
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-24-handlebar-terrifying-tribute-show
  -26-cockfight.html
@@ -393,6 +393,22 @@ DESCRIPTION:Circuit Circuit\, Conflict of Interests\, Sufferant\, Coastal H
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-26-handlebar-circuit-circuit-conflic
  t-of-interest.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-27-the-den-askysoblack-0milesperhour@diypensacola
+DTSTAMP:20261025T000000Z
+SEQUENCE:10173704
+DTSTART;TZID=America/Chicago:20261027T170000
+DTEND;TZID=America/Chicago:20261027T210000
+SUMMARY:askysoblack\, 0milesperhour\, Coastal High School +3 @ The Den
+DESCRIPTION:askysoblack\, 0milesperhour\, Coastal High School\, Lucid\, Bas
+ tard Son\, replacingstreetlightswithleds\ndoors 5:00\, show 6:00\n$10 or p
+ wyc\nhttps://diypensacola.com/s/2026-10-27-the-den-askysoblack-0milesperho
+ ur.html\n\naskysoblack pop up show Oct 27 🖤\n\n@chs0nline @bastardsonba
+ nd
+LOCATION:The Den
+URL:https://diypensacola.com/s/2026-10-27-the-den-askysoblack-0milesperhour
+ .html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-27-handlebar-still-allice-pons@diypensacola
@@ -435,6 +451,18 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-29-handlebar-the-linda-lindas.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-29-bettys-dj-be@diypensacola
+DTSTAMP:20261025T000000Z
+SEQUENCE:14501646
+DTSTART;TZID=America/Chicago:20261029T200000
+DTEND;TZID=America/Chicago:20261029T220000
+SUMMARY:DJ Be @ Betty’s
+DESCRIPTION:DJ Be\n8-10ish\nfree\nhttps://diypensacola.com/s/2026-10-29-bet
+ tys-dj-be.html\n\nDJ Be Oct 29 at @bettys_on_belmont\, free hip hop night!
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-29-bettys-dj-be.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-29-voices-of-pensacola-multicultural-center-2nd-annual-hallozin
  e-fest@diypensacola
 DTSTAMP:20260826T000000Z
@@ -451,6 +479,20 @@ DESCRIPTION:2nd Annual HalloZine Fest\ntime not listed\, check the venue\nh
 LOCATION:Voices of Pensacola Multicultural Center
 URL:https://diypensacola.com/s/2026-10-29-voices-of-pensacola-multicultural
  -center-2nd-annual-hallozine-fest.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-30-j-u-s-t-giant-robot-martin-wong@diypensacola
+DTSTAMP:20261025T000000Z
+SEQUENCE:2649932
+DTSTART;TZID=America/Chicago:20261030T160000
+DTEND;TZID=America/Chicago:20261030T190000
+SUMMARY:Giant Robot\, Martin Wong @ J.U.S.T.
+DESCRIPTION:Giant Robot\, Martin Wong\ndoors 4pm\nhttps://diypensacola.com/
+ s/2026-10-30-j-u-s-t-giant-robot-martin-wong.html\n\nGiant Robot screening
+  Oct 30\, part of HalloZine Fest!
+LOCATION:J.U.S.T.
+URL:https://diypensacola.com/s/2026-10-30-j-u-s-t-giant-robot-martin-wong.h
+ tml
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-30-handlebar-wynter-lesion@diypensacola
