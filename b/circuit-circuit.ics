@@ -22,21 +22,4 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-UID:2026-10-26-handlebar-circuit-circuit-conflict-of-interest@diypensacola
-DTSTAMP:20261007T000000Z
-SEQUENCE:8978579
-DTSTART;TZID=America/Chicago:20261026T190000
-DTEND;TZID=America/Chicago:20261026T230000
-SUMMARY:Circuit Circuit\, Conflict of Interests\, Sufferant +1 @ The Handle
- bar
-DESCRIPTION:Circuit Circuit\, Conflict of Interests\, Sufferant\, Coastal H
- igh School\ndoors 7p / music 8p\n$10 adv / $15 dos\nhttps://diypensacola.c
- om/s/2026-10-26-handlebar-circuit-circuit-conflict-of-interest.html\n\nCir
- cuit Circuit at @thehandlebar850 Oct 26 ⛓️\n@conflictofinterestsband @
- chs0nline
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-26-handlebar-circuit-circuit-conflic
- t-of-interest.html
-END:VEVENT
 END:VCALENDAR
