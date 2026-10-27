@@ -1,7 +1,7 @@
-var CACHE='diypensacola-1af0cd86edd7';
+var CACHE='diypensacola-021fdee840ab';
 var FONTS='diypensacola-fonts';
 var SHELL=["./", "offline.html", "style.css", "logo-hdr.webp", "favicon-48.png", "manifest.webmanifest", "flag.js"];
-var PRECACHE=["flyers/thumbs/2026-10-25_handlebar_goodbye-june.webp", "flyers/thumbs/2026-10-26_handlebar_circuit-circuit.webp", "flyers/thumbs/2026-10-27_the-den_askysoblack.webp", "flyers/thumbs/2026-10-27_handlebar_still-allice.webp", "flyers/thumbs/2026-10-28_handlebar_trache0tomy.webp", "flyers/thumbs/2026-10-29_handlebar_the-linda-lindas.webp", "flyers/thumbs/2026-10-29_bettys_dj-be.webp", "flyers/thumbs/2026-10-29_voices-of-pensacola-multicultural-center_2nd-annual-hallozine-fest.webp", "flyers/thumbs/2026-10-30_handlebar_wynter.webp", "flyers/thumbs/2026-10-30_voices-of-pensacola-multicultural-center_2nd-annual-hallozine-fest.webp"];
+var PRECACHE=["flyers/thumbs/2026-10-26_handlebar_circuit-circuit.webp", "flyers/thumbs/2026-10-27_the-den_askysoblack.webp", "flyers/thumbs/2026-10-27_handlebar_still-allice.webp", "flyers/thumbs/2026-10-28_handlebar_trache0tomy.webp", "flyers/thumbs/2026-10-29_handlebar_the-linda-lindas.webp", "flyers/thumbs/2026-10-29_bettys_dj-be.webp", "flyers/thumbs/2026-10-29_voices-of-pensacola-multicultural-center_2nd-annual-hallozine-fest.webp", "flyers/thumbs/2026-10-30_handlebar_wynter.webp", "flyers/thumbs/2026-10-30_voices-of-pensacola-multicultural-center_2nd-annual-hallozine-fest.webp", "flyers/thumbs/2026-10-31_bettys_bettys-block-party-halloween.webp", "flyers/thumbs/2026-11-07_handlebar_motion-city-soundtrack.webp"];
 var NAV_WAIT=3000;
 var ASSET_WAIT=1500;
 var slowAt=0;

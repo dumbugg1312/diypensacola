@@ -23,20 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-11-handlebar-ritual-6@diypensacola
-DTSTAMP:20261006T000000Z
-SEQUENCE:12815276
-DTSTART;TZID=America/Chicago:20261011T190000
-DTEND;TZID=America/Chicago:20261011T220000
-SUMMARY:Ritual 6 @ The Handlebar
-DESCRIPTION:Ritual 6\n7pm\nhttps://diypensacola.com/s/2026-10-11-handlebar-
- ritual-6.html\n\nRitual 6 goth/industrial night this sunday at @thehandleb
- ar850 🖤
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-11-handlebar-ritual-6.html
-STATUS:CANCELLED
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-12-handlebar-carry-the-torch-strikeforce@diypensacola
 DTSTAMP:20260915T000000Z
 SEQUENCE:2068752
@@ -842,6 +828,21 @@ DESCRIPTION:Statement of Pride\, Point of Contact\, Contention\, Collateral
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-05-handlebar-statement-of-pride-poin
  t-of-contact.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-05-the-den-headcannon-caca-del-diablo@diypensacola
+DTSTAMP:20261026T000000Z
+SEQUENCE:14903286
+DTSTART;TZID=America/Chicago:20261205T190000
+DTEND;TZID=America/Chicago:20261205T220000
+SUMMARY:Head Cannon\, Caca Del Diablo\, Pauper’s Grave @ The Den
+DESCRIPTION:Head Cannon\, Caca Del Diablo\, Pauper’s Grave\ndoors 7:00\n$
+ 10\nhttps://diypensacola.com/s/2026-12-05-the-den-headcannon-caca-del-diab
+ lo.html\n\nHeadcannon from Jackson MS on Dec 5 ⛓️\n@caca.del.diablo @p
+ aupersgravepunkrock
+LOCATION:The Den
+URL:https://diypensacola.com/s/2026-12-05-the-den-headcannon-caca-del-diabl
+ o.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-06-handlebar-the-crimson-armada-spiral@diypensacola
