@@ -35,6 +35,20 @@ LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-29-bettys-dj-be.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-30-bettys-sinners-on-the-block-dj-hale@diypensacola
+DTSTAMP:20261028T000000Z
+SEQUENCE:10671399
+DTSTART;TZID=America/Chicago:20261030T200000
+DTEND;TZID=America/Chicago:20261030T230000
+SUMMARY:Sinners on the Block\, DJ Hale\, Hazedapoet @ Betty’s
+DESCRIPTION:Sinners on the Block\, DJ Hale\, Hazedapoet\n8pm\nhttps://diype
+ nsacola.com/s/2026-10-30-bettys-sinners-on-the-block-dj-hale.html\n\n@djha
+ le__
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-30-bettys-sinners-on-the-block-dj-ha
+ le.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-31-bettys-bettys-block-party-halloween@diypensacola
 DTSTAMP:20260918T000000Z
 SEQUENCE:9676333

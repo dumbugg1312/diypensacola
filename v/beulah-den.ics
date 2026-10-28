@@ -23,22 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-27-the-den-askysoblack-0milesperhour@diypensacola
-DTSTAMP:20261025T000000Z
-SEQUENCE:10173704
-DTSTART;TZID=America/Chicago:20261027T170000
-DTEND;TZID=America/Chicago:20261027T210000
-SUMMARY:askysoblack\, 0milesperhour\, Coastal High School +3 @ The Den
-DESCRIPTION:askysoblack\, 0milesperhour\, Coastal High School\, Lucid\, Bas
- tard Son\, replacingstreetlightswithleds\ndoors 5:00\, show 6:00\n$10 or p
- wyc\nhttps://diypensacola.com/s/2026-10-27-the-den-askysoblack-0milesperho
- ur.html\n\naskysoblack pop up show Oct 27 🖤\n\n@chs0nline @bastardsonba
- nd
-LOCATION:The Den
-URL:https://diypensacola.com/s/2026-10-27-the-den-askysoblack-0milesperhour
- .html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-07-the-den-peace-talks-lesion@diypensacola
 DTSTAMP:20261027T000000Z
 SEQUENCE:12983365

@@ -23,21 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-13-handlebar-silent-theory@diypensacola
-DTSTAMP:20261017T000000Z
-SEQUENCE:225802
-DTSTART;VALUE=DATE:20261013
-DTEND;VALUE=DATE:20261014
-SUMMARY:Silent Theory\, Discrepancies\, Sick Century +2 @ The Handlebar (ti
- me TBA)
-DESCRIPTION:Silent Theory\, Discrepancies\, Sick Century\, Serena’s Fire\
- , Sick Room\ntime not listed\, check the venue\nhttps://diypensacola.com/s
- /2026-10-13-handlebar-silent-theory.html\n\nSilent Theory at @thehandlebar
- 850
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-13-handlebar-silent-theory.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-14-309-october-air-closing-exhibition-chad-porter@diypensacola
 DTSTAMP:20260927T000000Z
 SEQUENCE:16430388
@@ -477,6 +462,20 @@ DESCRIPTION:Wynter\, Lesion\, Power Bomb\, Spidershed\n7:00pm\nhttps://diyp
  pidershed.nwfl
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-30-handlebar-wynter-lesion.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-30-bettys-sinners-on-the-block-dj-hale@diypensacola
+DTSTAMP:20261028T000000Z
+SEQUENCE:10671399
+DTSTART;TZID=America/Chicago:20261030T200000
+DTEND;TZID=America/Chicago:20261030T230000
+SUMMARY:Sinners on the Block\, DJ Hale\, Hazedapoet @ Betty’s
+DESCRIPTION:Sinners on the Block\, DJ Hale\, Hazedapoet\n8pm\nhttps://diype
+ nsacola.com/s/2026-10-30-bettys-sinners-on-the-block-dj-hale.html\n\n@djha
+ le__
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-30-bettys-sinners-on-the-block-dj-ha
+ le.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-30-voices-of-pensacola-multicultural-center-2nd-annual-hallozin
