@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola: Omnigone
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2027-01-12-handlebar-big-d-and-the-kids-table-omnigone@diypensacola
+DTSTAMP:20261027T000000Z
+SEQUENCE:8900996
+DTSTART;TZID=America/Chicago:20270112T183000
+DTEND;TZID=America/Chicago:20270112T223000
+SUMMARY:Big D and the Kids Table\, Omnigone @ The Handlebar
+DESCRIPTION:Big D and the Kids Table\, Omnigone\ndoors 6:30pm / show 7:30pm
+ \nhttps://diypensacola.com/s/2027-01-12-handlebar-big-d-and-the-kids-table
+ -omnigone.html\n\nBig D and the Kids Table Jan 12 at @thehandlebar850!
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-01-12-handlebar-big-d-and-the-kids-tabl
+ e-omnigone.html
+END:VEVENT
+END:VCALENDAR

@@ -589,6 +589,20 @@ URL:https://diypensacola.com/s/2026-11-07-handlebar-motion-city-soundtrack-
  colony-house.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-07-the-den-peace-talks-lesion@diypensacola
+DTSTAMP:20261027T000000Z
+SEQUENCE:12983365
+DTSTART;TZID=America/Chicago:20261107T180000
+DTEND;TZID=America/Chicago:20261107T220000
+SUMMARY:Peace Talks\, Lesion\, Caca Del Diablo +1 @ The Den
+DESCRIPTION:Peace Talks\, Lesion\, Caca Del Diablo\, Lament\ndoors 6pm / mu
+ sic 7pm\n$10 or pwyc\nhttps://diypensacola.com/s/2026-11-07-the-den-peace-
+ talks-lesion.html\n\nPeace Talks from Pittsburgh Nov 7 🖤\n\n@lesion_ban
+ dfl @caca.del.diablo
+LOCATION:The Den
+URL:https://diypensacola.com/s/2026-11-07-the-den-peace-talks-lesion.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-07-bettys-nature-boys-stress-wound@diypensacola
 DTSTAMP:20261007T000000Z
 SEQUENCE:2830840
@@ -956,6 +970,20 @@ DESCRIPTION:NYE Betty’s Bash\ntime not listed\, check the venue\nhttps://
  lub. part of the betty’s block party run.
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-31-bettys-nye-bettys-bash.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-12-handlebar-big-d-and-the-kids-table-omnigone@diypensacola
+DTSTAMP:20261027T000000Z
+SEQUENCE:8900996
+DTSTART;TZID=America/Chicago:20270112T183000
+DTEND;TZID=America/Chicago:20270112T223000
+SUMMARY:Big D and the Kids Table\, Omnigone @ The Handlebar
+DESCRIPTION:Big D and the Kids Table\, Omnigone\ndoors 6:30pm / show 7:30pm
+ \nhttps://diypensacola.com/s/2027-01-12-handlebar-big-d-and-the-kids-table
+ -omnigone.html\n\nBig D and the Kids Table Jan 12 at @thehandlebar850!
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-01-12-handlebar-big-d-and-the-kids-tabl
+ e-omnigone.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-17-handlebar-colour-revolt@diypensacola

@@ -330,6 +330,20 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-18-handlebar-whitmer-thomas.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-12-handlebar-big-d-and-the-kids-table-omnigone@diypensacola
+DTSTAMP:20261027T000000Z
+SEQUENCE:8900996
+DTSTART;TZID=America/Chicago:20270112T183000
+DTEND;TZID=America/Chicago:20270112T223000
+SUMMARY:Big D and the Kids Table\, Omnigone @ The Handlebar
+DESCRIPTION:Big D and the Kids Table\, Omnigone\ndoors 6:30pm / show 7:30pm
+ \nhttps://diypensacola.com/s/2027-01-12-handlebar-big-d-and-the-kids-table
+ -omnigone.html\n\nBig D and the Kids Table Jan 12 at @thehandlebar850!
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-01-12-handlebar-big-d-and-the-kids-tabl
+ e-omnigone.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-17-handlebar-colour-revolt@diypensacola
 DTSTAMP:20260930T000000Z
 SEQUENCE:7047253

@@ -23,6 +23,20 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:2026-11-07-the-den-peace-talks-lesion@diypensacola
+DTSTAMP:20261027T000000Z
+SEQUENCE:12983365
+DTSTART;TZID=America/Chicago:20261107T180000
+DTEND;TZID=America/Chicago:20261107T220000
+SUMMARY:Peace Talks\, Lesion\, Caca Del Diablo +1 @ The Den
+DESCRIPTION:Peace Talks\, Lesion\, Caca Del Diablo\, Lament\ndoors 6pm / mu
+ sic 7pm\n$10 or pwyc\nhttps://diypensacola.com/s/2026-11-07-the-den-peace-
+ talks-lesion.html\n\nPeace Talks from Pittsburgh Nov 7 🖤\n\n@lesion_ban
+ dfl @caca.del.diablo
+LOCATION:The Den
+URL:https://diypensacola.com/s/2026-11-07-the-den-peace-talks-lesion.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-31-bettys-bettys-block-party-halloween@diypensacola
 DTSTAMP:20260918T000000Z
 SEQUENCE:9676333

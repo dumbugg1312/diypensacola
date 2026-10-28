@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola: Lament
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-07-the-den-peace-talks-lesion@diypensacola
+DTSTAMP:20261027T000000Z
+SEQUENCE:12983365
+DTSTART;TZID=America/Chicago:20261107T180000
+DTEND;TZID=America/Chicago:20261107T220000
+SUMMARY:Peace Talks\, Lesion\, Caca Del Diablo +1 @ The Den
+DESCRIPTION:Peace Talks\, Lesion\, Caca Del Diablo\, Lament\ndoors 6pm / mu
+ sic 7pm\n$10 or pwyc\nhttps://diypensacola.com/s/2026-11-07-the-den-peace-
+ talks-lesion.html\n\nPeace Talks from Pittsburgh Nov 7 🖤\n\n@lesion_ban
+ dfl @caca.del.diablo
+LOCATION:The Den
+URL:https://diypensacola.com/s/2026-11-07-the-den-peace-talks-lesion.html
+END:VEVENT
+END:VCALENDAR
