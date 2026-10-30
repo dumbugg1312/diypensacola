@@ -22,4 +22,18 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-10-31-bettys-undead-inside-ryan-pfeiffer@diypensacola
+DTSTAMP:20261029T000000Z
+SEQUENCE:6168740
+DTSTART;TZID=America/Chicago:20261031T200000
+DTEND;TZID=America/Chicago:20261031T230000
+SUMMARY:Undead Inside\, Ryan Pfeiffer\, Queen Britt +1 @ Betty’s
+DESCRIPTION:Undead Inside\, Ryan Pfeiffer\, Queen Britt\, Paul Trampe\n8pm 
+ & 9:45pm\n$10\nhttps://diypensacola.com/s/2026-10-31-bettys-undead-inside-
+ ryan-pfeiffer.html
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-31-bettys-undead-inside-ryan-pfeiffe
+ r.html
+END:VEVENT
 END:VCALENDAR

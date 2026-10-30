@@ -26,15 +26,15 @@ DTSTAMP:20260919T000000Z
 SEQUENCE:7124708
 DTSTART;TZID=America/Chicago:20261110T180000
 DTEND;TZID=America/Chicago:20261110T220000
-SUMMARY:Daisychain @ The Handlebar
-DESCRIPTION:Daisychain\ndoors 6pm / show 7pm\nhttps://diypensacola.com/s/20
- 26-11-10-handlebar-daisychain.html\n\nDaisychain fall tour\, Nov 10 at @th
- ehandlebar850
+SUMMARY:Daisychain\, Still Allice\, Sungraz @ The Handlebar
+DESCRIPTION:Daisychain\, Still Allice\, Sungraz\ndoors 6pm / show 7pm\nhttp
+ s://diypensacola.com/s/2026-11-10-handlebar-daisychain.html\n\nDaisychain 
+ fall tour\, Nov 10 at @thehandlebar850
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-10-handlebar-daisychain.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Daisychain @ The Handlebar
+DESCRIPTION:tonight: Daisychain\, Still Allice\, Sungraz @ The Handlebar
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT

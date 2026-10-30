@@ -23,7 +23,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-11-01-handlebar-scattrbrain@diypensacola
 DTSTAMP:20260827T000000Z
-SEQUENCE:6429964
+SEQUENCE:7227016
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:Scattrbrain @ The Handlebar (time TBA)
@@ -32,5 +32,6 @@ DESCRIPTION:Scattrbrain\ntime not listed\, check the venue\nhttps://diypens
  ndlebar\, sunday november 1st. the unwavering self doubt tour.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-01-handlebar-scattrbrain.html
+STATUS:CANCELLED
 END:VEVENT
 END:VCALENDAR

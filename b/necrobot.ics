@@ -22,16 +22,4 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-UID:2026-10-28-handlebar-trache0tomy-modown@diypensacola
-DTSTAMP:20261017T000000Z
-SEQUENCE:1530217
-DTSTART;TZID=America/Chicago:20261028T180000
-DTEND;TZID=America/Chicago:20261028T210000
-SUMMARY:Trache0tomy\, Modown\, Necrobot +1 @ The Handlebar
-DESCRIPTION:Trache0tomy\, Modown\, Necrobot\, Dark Horizon\n6pm\n$10\nhttps
- ://diypensacola.com/s/2026-10-28-handlebar-trache0tomy-modown.html
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-28-handlebar-trache0tomy-modown.html
-END:VEVENT
 END:VCALENDAR

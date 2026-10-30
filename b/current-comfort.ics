@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola: Current Comfort
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-15-handlebar-i-set-my-friends-on-fire-set-to-stun@diypensacola
+DTSTAMP:20261030T000000Z
+SEQUENCE:13479188
+DTSTART;TZID=America/Chicago:20261115T180000
+DTEND;TZID=America/Chicago:20261115T210000
+SUMMARY:I Set My Friends on Fire\, Set To Stun\, Current Comfort @ The Hand
+ lebar
+DESCRIPTION:I Set My Friends on Fire\, Set To Stun\, Current Comfort\n6PM\n
+ https://diypensacola.com/s/2026-11-15-handlebar-i-set-my-friends-on-fire-s
+ et-to-stun.html\n\nI Set My Friends on Fire Nov 15 at @thehandlebar850!
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-15-handlebar-i-set-my-friends-on-fir
+ e-set-to-stun.html
+END:VEVENT
+END:VCALENDAR

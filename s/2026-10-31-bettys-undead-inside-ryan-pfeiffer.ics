@@ -21,19 +21,22 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-29-bettys-dj-be@diypensacola
-DTSTAMP:20261025T000000Z
-SEQUENCE:14501646
-DTSTART;TZID=America/Chicago:20261029T200000
-DTEND;TZID=America/Chicago:20261029T220000
-SUMMARY:DJ Be @ Betty’s
-DESCRIPTION:DJ Be\n8-10ish\nfree\nhttps://diypensacola.com/s/2026-10-29-bet
- tys-dj-be.html\n\nDJ Be Oct 29 at @bettys_on_belmont\, free hip hop night!
+UID:2026-10-31-bettys-undead-inside-ryan-pfeiffer@diypensacola
+DTSTAMP:20261029T000000Z
+SEQUENCE:6168740
+DTSTART;TZID=America/Chicago:20261031T200000
+DTEND;TZID=America/Chicago:20261031T230000
+SUMMARY:Undead Inside\, Ryan Pfeiffer\, Queen Britt +1 @ Betty’s
+DESCRIPTION:Undead Inside\, Ryan Pfeiffer\, Queen Britt\, Paul Trampe\n8pm 
+ & 9:45pm\n$10\nhttps://diypensacola.com/s/2026-10-31-bettys-undead-inside-
+ ryan-pfeiffer.html
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-29-bettys-dj-be.html
+URL:https://diypensacola.com/s/2026-10-31-bettys-undead-inside-ryan-pfeiffe
+ r.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: DJ Be @ Betty’s
+DESCRIPTION:tonight: Undead Inside\, Ryan Pfeiffer\, Queen Britt\, Paul Tra
+ mpe @ Betty’s
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT

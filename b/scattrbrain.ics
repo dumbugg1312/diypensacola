@@ -25,7 +25,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-11-01-handlebar-scattrbrain@diypensacola
 DTSTAMP:20260827T000000Z
-SEQUENCE:6429964
+SEQUENCE:7227016
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:Scattrbrain @ The Handlebar (time TBA)
@@ -34,5 +34,22 @@ DESCRIPTION:Scattrbrain\ntime not listed\, check the venue\nhttps://diypens
  ndlebar\, sunday november 1st. the unwavering self doubt tour.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-01-handlebar-scattrbrain.html
+STATUS:CANCELLED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-31-handlebar-nuovo-testamento-night-sins@diypensacola
+DTSTAMP:20260826T000000Z
+SEQUENCE:14539170
+DTSTART;TZID=America/Chicago:20261031T180000
+DTEND;TZID=America/Chicago:20261031T210000
+SUMMARY:Nuovo Testamento\, Urban Heat\, Scattrbrain +3 @ The Handlebar
+DESCRIPTION:Nuovo Testamento\, Urban Heat\, Scattrbrain\, Grave Chorus\, DJ
+  Poseidon\, Kuru Remstate\ndoors 6 PM\nhttps://diypensacola.com/s/2026-10-
+ 31-handlebar-nuovo-testamento-night-sins.html\n\nnuovo testamento\, night 
+ sins\, urban heat\, and grave chorus at the handlebar on halloween. doors 
+ at 6\, with dj poseidon and kuru remstate spinning all night.
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-31-handlebar-nuovo-testamento-night-
+ sins.html
 END:VEVENT
 END:VCALENDAR

@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola Shows
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-06-handlebar-noiseheads-hopout@diypensacola
+DTSTAMP:20261029T000000Z
+SEQUENCE:13926770
+DTSTART;TZID=America/Chicago:20261106T190000
+DTEND;TZID=America/Chicago:20261106T230000
+SUMMARY:Noiseheads\, Hopout\, Color The Void +1 @ The Handlebar
+DESCRIPTION:Noiseheads\, Hopout\, Color The Void\, Conflict of Interests\nd
+ oors 7pm / show 8pm\nhttps://diypensacola.com/s/2026-11-06-handlebar-noise
+ heads-hopout.html\n\n@hopout_theband @colorthevoidmusic @conflictofinteres
+ tsband
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-06-handlebar-noiseheads-hopout.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: Noiseheads\, Hopout\, Color The Void\, Conflict of Int
+ erests @ The Handlebar
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

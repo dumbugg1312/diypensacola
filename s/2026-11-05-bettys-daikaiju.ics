@@ -26,15 +26,15 @@ DTSTAMP:20261006T000000Z
 SEQUENCE:1574988
 DTSTART;TZID=America/Chicago:20261105T180000
 DTEND;TZID=America/Chicago:20261106T000000
-SUMMARY:Daikaiju @ Betty’s
-DESCRIPTION:Daikaiju\ndoors 6pm / show 9pm\n$15\nhttps://diypensacola.com/s
- /2026-11-05-bettys-daikaiju.html\n\nDaikaiju Nov 5 at @bettys_on_belmont 
- 🖤
+SUMMARY:Daikaiju\, Safety Coffin @ Betty’s
+DESCRIPTION:Daikaiju\, Safety Coffin\ndoors 6pm / show 9pm\n$15\nhttps://di
+ ypensacola.com/s/2026-11-05-bettys-daikaiju.html\n\nDaikaiju Nov 5 at @bet
+ tys_on_belmont 🖤
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-05-bettys-daikaiju.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Daikaiju @ Betty’s
+DESCRIPTION:tonight: Daikaiju\, Safety Coffin @ Betty’s
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT

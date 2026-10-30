@@ -26,15 +26,15 @@ DTSTAMP:20260919T000000Z
 SEQUENCE:8517676
 DTSTART;TZID=America/Chicago:20261118T180000
 DTEND;TZID=America/Chicago:20261118T220000
-SUMMARY:Wayne Hancock @ The Handlebar
-DESCRIPTION:Wayne Hancock\ndoors 6pm / show 7pm\nhttps://diypensacola.com/s
- /2026-11-18-handlebar-wayne-hancock.html\n\nWayne Hancock Nov 18 at @theha
- ndlebar850
+SUMMARY:Wayne Hancock\, Nik Flagstar @ The Handlebar
+DESCRIPTION:Wayne Hancock\, Nik Flagstar\ndoors 6pm / show 7pm\nhttps://diy
+ pensacola.com/s/2026-11-18-handlebar-wayne-hancock.html\n\nWayne Hancock N
+ ov 18 at @thehandlebar850
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-18-handlebar-wayne-hancock.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Wayne Hancock @ The Handlebar
+DESCRIPTION:tonight: Wayne Hancock\, Nik Flagstar @ The Handlebar
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT

@@ -1,7 +1,7 @@
-var CACHE='diypensacola-3f4fe04378a5';
+var CACHE='diypensacola-30ff3d82eb54';
 var FONTS='diypensacola-fonts';
 var SHELL=["./", "offline.html", "style.css", "logo-hdr.webp", "favicon-48.png", "manifest.webmanifest", "flag.js"];
-var PRECACHE=["flyers/thumbs/2026-10-28_handlebar_trache0tomy.webp", "flyers/thumbs/2026-10-29_handlebar_the-linda-lindas.webp", "flyers/thumbs/2026-10-29_bettys_dj-be.webp", "flyers/thumbs/2026-10-29_voices-of-pensacola-multicultural-center_2nd-annual-hallozine-fest.webp", "flyers/thumbs/2026-10-30_j-u-s-t_giant-robot.webp", "flyers/thumbs/2026-10-30_handlebar_wynter.webp", "flyers/thumbs/2026-10-30_bettys_sinners-on-the-block.webp", "flyers/thumbs/2026-10-30_voices-of-pensacola-multicultural-center_2nd-annual-hallozine-fest.webp", "flyers/thumbs/2026-10-31_handlebar_nuovo-testamento.webp", "flyers/thumbs/2026-10-31_bettys_bettys-block-party-halloween.webp", "flyers/thumbs/2026-11-01_handlebar_scattrbrain.webp"];
+var PRECACHE=["flyers/thumbs/2026-10-30_j-u-s-t_giant-robot.webp", "flyers/thumbs/2026-10-30_handlebar_wynter.webp", "flyers/thumbs/2026-10-30_bettys_sinners-on-the-block.webp", "flyers/thumbs/2026-10-30_voices-of-pensacola-multicultural-center_2nd-annual-hallozine-fest.webp", "flyers/thumbs/2026-10-31_handlebar_nuovo-testamento.webp", "flyers/thumbs/2026-10-31_bettys_undead-inside.webp", "flyers/thumbs/2026-10-31_bettys_bettys-block-party-halloween.webp", "flyers/thumbs/2026-11-01_handlebar_scattrbrain.webp", "flyers/thumbs/2026-11-05_bettys_daikaiju.webp", "flyers/thumbs/2026-11-07_handlebar_motion-city-soundtrack.webp"];
 var NAV_WAIT=3000;
 var ASSET_WAIT=1500;
 var slowAt=0;

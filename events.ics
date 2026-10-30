@@ -23,50 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-14-309-october-air-closing-exhibition-chad-porter@diypensacola
-DTSTAMP:20260927T000000Z
-SEQUENCE:16430388
-DTSTART;TZID=America/Chicago:20261014T180000
-DTEND;TZID=America/Chicago:20261014T210000
-SUMMARY:October AIR Closing Exhibition\, Chad Porter @ 309
-DESCRIPTION:October AIR Closing Exhibition\, Chad Porter\n6-9pm\nhttps://di
- ypensacola.com/s/2026-10-14-309-october-air-closing-exhibition-chad-porter
- .html\n\nChad Porter’s closing exhibition at @309punkproject\, wednesday
-  october 14th.
-LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-14-309-october-air-closing-exhibitio
- n-chad-porter.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-14-handlebar-cheese-for-the-table@diypensacola
-DTSTAMP:20261006T000000Z
-SEQUENCE:6522875
-DTSTART;TZID=America/Chicago:20261014T190000
-DTEND;TZID=America/Chicago:20261014T220000
-SUMMARY:Cheese for the Table\, Improvable Cause @ The Handlebar
-DESCRIPTION:Cheese for the Table\, Improvable Cause\n7pm\npossibly postpone
- d - check venue\nhttps://diypensacola.com/s/2026-10-14-handlebar-cheese-fo
- r-the-table.html\n\n@improvablecause is back with Cheese for the Table thi
- s wednesday at @thehandlebar850!
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-14-handlebar-cheese-for-the-table.ht
- ml
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-15-bettys-lesion-bastard-son@diypensacola
-DTSTAMP:20260826T000000Z
-SEQUENCE:3316715
-DTSTART;TZID=America/Chicago:20261015T190000
-DTEND;TZID=America/Chicago:20261015T220000
-SUMMARY:Lesion\, Bastard Son\, Hayweather +2 @ Betty’s
-DESCRIPTION:Lesion\, Bastard Son\, Hayweather\, beautysleep\, 7.7 PNX\n7pm\
- n$10-$20 (sliding scale)\nhttps://diypensacola.com/s/2026-10-15-bettys-les
- ion-bastard-son.html\n\nSupport @strivepensacola at @bettys_on_belmont in 
- two weeks 💞\n\n@lesion_bandfl @bastardsonband @beautysleep850
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-15-bettys-lesion-bastard-son.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-16-309-rent-strike-myles-bullen@diypensacola
 DTSTAMP:20260826T000000Z
 SEQUENCE:10165286
@@ -368,7 +324,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-27-handlebar-still-allice-pons@diypensacola
 DTSTAMP:20260908T000000Z
-SEQUENCE:1299388
+SEQUENCE:5547386
 DTSTART;TZID=America/Chicago:20261027T180000
 DTEND;TZID=America/Chicago:20261027T220000
 SUMMARY:Still Allice\, PONS\, Ihatesundays @ The Handlebar
@@ -378,6 +334,7 @@ DESCRIPTION:Still Allice\, PONS\, Ihatesundays\ndoors 6pm\, show 7pm\n$10\n
  27. doors at 6\, $10\, all ages.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-27-handlebar-still-allice-pons.html
+STATUS:CANCELLED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-28-handlebar-trache0tomy-modown@diypensacola
@@ -387,7 +344,8 @@ DTSTART;TZID=America/Chicago:20261028T180000
 DTEND;TZID=America/Chicago:20261028T210000
 SUMMARY:Trache0tomy\, Modown\, Necrobot +1 @ The Handlebar
 DESCRIPTION:Trache0tomy\, Modown\, Necrobot\, Dark Horizon\n6pm\n$10\nhttps
- ://diypensacola.com/s/2026-10-28-handlebar-trache0tomy-modown.html
+ ://diypensacola.com/s/2026-10-28-handlebar-trache0tomy-modown.html\n\nTrac
+ he0tomy next wednesday at @thehandlebar850!
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-28-handlebar-trache0tomy-modown.html
 END:VEVENT
@@ -501,15 +459,29 @@ DTSTAMP:20260826T000000Z
 SEQUENCE:14539170
 DTSTART;TZID=America/Chicago:20261031T180000
 DTEND;TZID=America/Chicago:20261031T210000
-SUMMARY:Nuovo Testamento\, Night Sins\, Urban Heat +3 @ The Handlebar
-DESCRIPTION:Nuovo Testamento\, Night Sins\, Urban Heat\, Grave Chorus\, DJ 
- Poseidon\, Kuru Remstate\ndoors 6 PM\nhttps://diypensacola.com/s/2026-10-3
- 1-handlebar-nuovo-testamento-night-sins.html\n\nnuovo testamento\, night s
- ins\, urban heat\, and grave chorus at the handlebar on halloween. doors a
- t 6\, with dj poseidon and kuru remstate spinning all night.
+SUMMARY:Nuovo Testamento\, Urban Heat\, Scattrbrain +3 @ The Handlebar
+DESCRIPTION:Nuovo Testamento\, Urban Heat\, Scattrbrain\, Grave Chorus\, DJ
+  Poseidon\, Kuru Remstate\ndoors 6 PM\nhttps://diypensacola.com/s/2026-10-
+ 31-handlebar-nuovo-testamento-night-sins.html\n\nnuovo testamento\, night 
+ sins\, urban heat\, and grave chorus at the handlebar on halloween. doors 
+ at 6\, with dj poseidon and kuru remstate spinning all night.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-31-handlebar-nuovo-testamento-night-
  sins.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-31-bettys-undead-inside-ryan-pfeiffer@diypensacola
+DTSTAMP:20261029T000000Z
+SEQUENCE:6168740
+DTSTART;TZID=America/Chicago:20261031T200000
+DTEND;TZID=America/Chicago:20261031T230000
+SUMMARY:Undead Inside\, Ryan Pfeiffer\, Queen Britt +1 @ Betty’s
+DESCRIPTION:Undead Inside\, Ryan Pfeiffer\, Queen Britt\, Paul Trampe\n8pm 
+ & 9:45pm\n$10\nhttps://diypensacola.com/s/2026-10-31-bettys-undead-inside-
+ ryan-pfeiffer.html
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-31-bettys-undead-inside-ryan-pfeiffe
+ r.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-bettys-bettys-block-party-halloween@diypensacola
@@ -533,7 +505,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-01-handlebar-scattrbrain@diypensacola
 DTSTAMP:20260827T000000Z
-SEQUENCE:6429964
+SEQUENCE:7227016
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:Scattrbrain @ The Handlebar (time TBA)
@@ -542,6 +514,7 @@ DESCRIPTION:Scattrbrain\ntime not listed\, check the venue\nhttps://diypens
  ndlebar\, sunday november 1st. the unwavering self doubt tour.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-01-handlebar-scattrbrain.html
+STATUS:CANCELLED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-02-handlebar-rufus-mcblack-cavae-mundi@diypensacola
@@ -549,11 +522,10 @@ DTSTAMP:20260914T000000Z
 SEQUENCE:710439
 DTSTART;TZID=America/Chicago:20261102T180000
 DTEND;TZID=America/Chicago:20261102T220000
-SUMMARY:Rufus McBlack\, Cavae Mundi @ The Handlebar
-DESCRIPTION:Rufus McBlack\, Cavae Mundi\ndoors 6pm / show 7pm\nhttps://diyp
- ensacola.com/s/2026-11-02-handlebar-rufus-mcblack-cavae-mundi.html\n\nrufu
- s mcblack and cavae mundi at the handlebar\, monday november 2nd. doors 6p
- m\, show at 7. part of night moves.
+SUMMARY:Night Moves\, Rufus McBlack\, Cavae Mundi @ The Handlebar
+DESCRIPTION:Night Moves\, Rufus McBlack\, Cavae Mundi\ndoors 6pm / show 7pm
+ \nhttps://diypensacola.com/s/2026-11-02-handlebar-rufus-mcblack-cavae-mund
+ i.html\n\nNight Moves Nov 2 at @thehandlebar850!
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-02-handlebar-rufus-mcblack-cavae-mun
  di.html
@@ -564,12 +536,26 @@ DTSTAMP:20261006T000000Z
 SEQUENCE:1574988
 DTSTART;TZID=America/Chicago:20261105T180000
 DTEND;TZID=America/Chicago:20261106T000000
-SUMMARY:Daikaiju @ Betty’s
-DESCRIPTION:Daikaiju\ndoors 6pm / show 9pm\n$15\nhttps://diypensacola.com/s
- /2026-11-05-bettys-daikaiju.html\n\nDaikaiju Nov 5 at @bettys_on_belmont 
- 🖤
+SUMMARY:Daikaiju\, Safety Coffin @ Betty’s
+DESCRIPTION:Daikaiju\, Safety Coffin\ndoors 6pm / show 9pm\n$15\nhttps://di
+ ypensacola.com/s/2026-11-05-bettys-daikaiju.html\n\nDaikaiju Nov 5 at @bet
+ tys_on_belmont 🖤
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-05-bettys-daikaiju.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-06-handlebar-noiseheads-hopout@diypensacola
+DTSTAMP:20261029T000000Z
+SEQUENCE:13926770
+DTSTART;TZID=America/Chicago:20261106T190000
+DTEND;TZID=America/Chicago:20261106T230000
+SUMMARY:Noiseheads\, Hopout\, Color The Void +1 @ The Handlebar
+DESCRIPTION:Noiseheads\, Hopout\, Color The Void\, Conflict of Interests\nd
+ oors 7pm / show 8pm\nhttps://diypensacola.com/s/2026-11-06-handlebar-noise
+ heads-hopout.html\n\n@hopout_theband @colorthevoidmusic @conflictofinteres
+ tsband
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-06-handlebar-noiseheads-hopout.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-07-handlebar-motion-city-soundtrack-colony-house@diypensacola
@@ -649,10 +635,10 @@ DTSTAMP:20260919T000000Z
 SEQUENCE:7124708
 DTSTART;TZID=America/Chicago:20261110T180000
 DTEND;TZID=America/Chicago:20261110T220000
-SUMMARY:Daisychain @ The Handlebar
-DESCRIPTION:Daisychain\ndoors 6pm / show 7pm\nhttps://diypensacola.com/s/20
- 26-11-10-handlebar-daisychain.html\n\nDaisychain fall tour\, Nov 10 at @th
- ehandlebar850
+SUMMARY:Daisychain\, Still Allice\, Sungraz @ The Handlebar
+DESCRIPTION:Daisychain\, Still Allice\, Sungraz\ndoors 6pm / show 7pm\nhttp
+ s://diypensacola.com/s/2026-11-10-handlebar-daisychain.html\n\nDaisychain 
+ fall tour\, Nov 10 at @thehandlebar850
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-10-handlebar-daisychain.html
 END:VEVENT
@@ -670,6 +656,19 @@ DESCRIPTION:Fuckin Nothin\, Horse Breakfast\, Stufy\, Goodwin Rainer\ndoors
 LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-11-309-fuckin-nothin-horse-breakfast
  .html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-12-handlebar-gnarled-wynter@diypensacola
+DTSTAMP:20261030T000000Z
+SEQUENCE:15426356
+DTSTART;TZID=America/Chicago:20261112T190000
+DTEND;TZID=America/Chicago:20261112T220000
+SUMMARY:Gnarled\, Wynter\, Cursed Body @ The Handlebar
+DESCRIPTION:Gnarled\, Wynter\, Cursed Body\n7PM\nhttps://diypensacola.com/s
+ /2026-11-12-handlebar-gnarled-wynter.html\n\nGnarled Nov 12 at @thehandleb
+ ar850!\n\n@gnarledofficial @wynter_officialmusic @cursedbodyband
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-12-handlebar-gnarled-wynter.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-13-pacific-kava-bar-renee-arozqueta-snake-and-the-rabbit@diypen
@@ -745,15 +744,30 @@ LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-14-bettys-bettys-fest-2-night-2.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-15-handlebar-i-set-my-friends-on-fire-set-to-stun@diypensacola
+DTSTAMP:20261030T000000Z
+SEQUENCE:13479188
+DTSTART;TZID=America/Chicago:20261115T180000
+DTEND;TZID=America/Chicago:20261115T210000
+SUMMARY:I Set My Friends on Fire\, Set To Stun\, Current Comfort @ The Hand
+ lebar
+DESCRIPTION:I Set My Friends on Fire\, Set To Stun\, Current Comfort\n6PM\n
+ https://diypensacola.com/s/2026-11-15-handlebar-i-set-my-friends-on-fire-s
+ et-to-stun.html\n\nI Set My Friends on Fire Nov 15 at @thehandlebar850!
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-15-handlebar-i-set-my-friends-on-fir
+ e-set-to-stun.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-17-handlebar-little-image@diypensacola
 DTSTAMP:20260919T000000Z
 SEQUENCE:480317
 DTSTART;TZID=America/Chicago:20261117T190000
 DTEND;TZID=America/Chicago:20261117T223000
-SUMMARY:Little Image @ The Handlebar
-DESCRIPTION:Little Image\ndoors 7pm / show 7:30pm\nhttps://diypensacola.com
- /s/2026-11-17-handlebar-little-image.html\n\nLittle Image at @thehandlebar
- 850 Nov 17
+SUMMARY:Little Image\, Gabrielle Grace\, Morning Trips @ The Handlebar
+DESCRIPTION:Little Image\, Gabrielle Grace\, Morning Trips\ndoors 7pm / sho
+ w 7:30pm\nhttps://diypensacola.com/s/2026-11-17-handlebar-little-image.htm
+ l\n\nLittle Image at @thehandlebar850 Nov 17
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-17-handlebar-little-image.html
 END:VEVENT
@@ -763,10 +777,10 @@ DTSTAMP:20260919T000000Z
 SEQUENCE:8517676
 DTSTART;TZID=America/Chicago:20261118T180000
 DTEND;TZID=America/Chicago:20261118T220000
-SUMMARY:Wayne Hancock @ The Handlebar
-DESCRIPTION:Wayne Hancock\ndoors 6pm / show 7pm\nhttps://diypensacola.com/s
- /2026-11-18-handlebar-wayne-hancock.html\n\nWayne Hancock Nov 18 at @theha
- ndlebar850
+SUMMARY:Wayne Hancock\, Nik Flagstar @ The Handlebar
+DESCRIPTION:Wayne Hancock\, Nik Flagstar\ndoors 6pm / show 7pm\nhttps://diy
+ pensacola.com/s/2026-11-18-handlebar-wayne-hancock.html\n\nWayne Hancock N
+ ov 18 at @thehandlebar850
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-18-handlebar-wayne-hancock.html
 END:VEVENT
@@ -802,10 +816,10 @@ DTSTAMP:20261005T000000Z
 SEQUENCE:2953118
 DTSTART;TZID=America/Chicago:20261204T190000
 DTEND;TZID=America/Chicago:20261204T220000
-SUMMARY:In Her Own Words @ The Handlebar
-DESCRIPTION:In Her Own Words\ndoors 7pm\nhttps://diypensacola.com/s/2026-12
- -04-handlebar-in-her-own-words.html\n\nIn Her Own Words Dec 4 at @thehandl
- ebar850
+SUMMARY:In Her Own Words\, Rematch @ The Handlebar
+DESCRIPTION:In Her Own Words\, Rematch\ndoors 7pm\nhttps://diypensacola.com
+ /s/2026-12-04-handlebar-in-her-own-words.html\n\nIn Her Own Words Dec 4 at
+  @thehandlebar850
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-04-handlebar-in-her-own-words.html
 END:VEVENT
@@ -990,9 +1004,10 @@ DTSTAMP:20260930T000000Z
 SEQUENCE:7047253
 DTSTART;TZID=America/Chicago:20270117T180000
 DTEND;TZID=America/Chicago:20270117T210000
-SUMMARY:Colour Revolt @ The Handlebar
-DESCRIPTION:Colour Revolt\n6pm\nhttps://diypensacola.com/s/2027-01-17-handl
- ebar-colour-revolt.html\n\nColour Revolt Jan 17 at @thehandlebar850!
+SUMMARY:Colour Revolt\, Starlin @ The Handlebar
+DESCRIPTION:Colour Revolt\, Starlin\n6pm\nhttps://diypensacola.com/s/2027-0
+ 1-17-handlebar-colour-revolt.html\n\nColour Revolt Jan 17 at @thehandlebar
+ 850!
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2027-01-17-handlebar-colour-revolt.html
 END:VEVENT

@@ -23,18 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-29-bettys-dj-be@diypensacola
-DTSTAMP:20261025T000000Z
-SEQUENCE:14501646
-DTSTART;TZID=America/Chicago:20261029T200000
-DTEND;TZID=America/Chicago:20261029T220000
-SUMMARY:DJ Be @ Betty’s
-DESCRIPTION:DJ Be\n8-10ish\nfree\nhttps://diypensacola.com/s/2026-10-29-bet
- tys-dj-be.html\n\nDJ Be Oct 29 at @bettys_on_belmont\, free hip hop night!
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-29-bettys-dj-be.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-30-bettys-sinners-on-the-block-dj-hale@diypensacola
 DTSTAMP:20261028T000000Z
 SEQUENCE:10671399
@@ -68,15 +56,29 @@ URL:https://diypensacola.com/s/2026-10-31-bettys-bettys-block-party-hallowe
  en.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-31-bettys-undead-inside-ryan-pfeiffer@diypensacola
+DTSTAMP:20261029T000000Z
+SEQUENCE:6168740
+DTSTART;TZID=America/Chicago:20261031T200000
+DTEND;TZID=America/Chicago:20261031T230000
+SUMMARY:Undead Inside\, Ryan Pfeiffer\, Queen Britt +1 @ Betty’s
+DESCRIPTION:Undead Inside\, Ryan Pfeiffer\, Queen Britt\, Paul Trampe\n8pm 
+ & 9:45pm\n$10\nhttps://diypensacola.com/s/2026-10-31-bettys-undead-inside-
+ ryan-pfeiffer.html
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-10-31-bettys-undead-inside-ryan-pfeiffe
+ r.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-05-bettys-daikaiju@diypensacola
 DTSTAMP:20261006T000000Z
 SEQUENCE:1574988
 DTSTART;TZID=America/Chicago:20261105T180000
 DTEND;TZID=America/Chicago:20261106T000000
-SUMMARY:Daikaiju @ Betty’s
-DESCRIPTION:Daikaiju\ndoors 6pm / show 9pm\n$15\nhttps://diypensacola.com/s
- /2026-11-05-bettys-daikaiju.html\n\nDaikaiju Nov 5 at @bettys_on_belmont 
- 🖤
+SUMMARY:Daikaiju\, Safety Coffin @ Betty’s
+DESCRIPTION:Daikaiju\, Safety Coffin\ndoors 6pm / show 9pm\n$15\nhttps://di
+ ypensacola.com/s/2026-11-05-bettys-daikaiju.html\n\nDaikaiju Nov 5 at @bet
+ tys_on_belmont 🖤
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-05-bettys-daikaiju.html
 END:VEVENT
