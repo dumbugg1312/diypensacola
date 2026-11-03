@@ -1,7 +1,7 @@
-var CACHE='diypensacola-ea92476a6e5d';
+var CACHE='diypensacola-948685c96289';
 var FONTS='diypensacola-fonts';
 var SHELL=["./", "offline.html", "style.css", "logo-hdr.webp", "favicon-48.png", "manifest.webmanifest", "flag.js"];
-var PRECACHE=["flyers/thumbs/2026-10-31_handlebar_nuovo-testamento.webp", "flyers/thumbs/2026-10-31_bettys_undead-inside.webp", "flyers/thumbs/2026-10-31_bettys_bettys-block-party-halloween.webp", "flyers/thumbs/2026-11-01_handlebar_scattrbrain.webp", "flyers/thumbs/2026-11-05_bettys_daikaiju.webp", "flyers/thumbs/2026-11-07_handlebar_motion-city-soundtrack.webp", "flyers/thumbs/2026-11-07_the-den_peace-talks.webp", "flyers/thumbs/2026-11-07_bettys_nature-boys.webp"];
+var PRECACHE=["flyers/thumbs/2026-11-05_bettys_daikaiju.webp", "flyers/thumbs/2026-11-06_handlebar_noiseheads.webp", "flyers/thumbs/2026-11-07_handlebar_motion-city-soundtrack.webp", "flyers/thumbs/2026-11-07_the-den_peace-talks.webp", "flyers/thumbs/2026-11-07_bettys_nature-boys.webp", "flyers/thumbs/2026-11-08_309_theatre-of-the-oppressed.webp", "flyers/thumbs/2026-11-08_handlebar_ajj.webp", "flyers/thumbs/2026-11-10_handlebar_daisychain.webp", "flyers/thumbs/2026-11-12_handlebar_gnarled.webp"];
 var NAV_WAIT=3000;
 var ASSET_WAIT=1500;
 var slowAt=0;

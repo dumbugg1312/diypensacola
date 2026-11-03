@@ -23,55 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-17-bettys-sapphic-saturday@diypensacola
-DTSTAMP:20260914T000000Z
-SEQUENCE:8789614
-DTSTART;VALUE=DATE:20261017
-DTEND;VALUE=DATE:20261018
-SUMMARY:POSTPONED: Sapphic Saturday @ Betty’s (time TBA)
-DESCRIPTION:Sapphic Saturday\ntime not listed\, check the venue\nhttps://di
- ypensacola.com/s/2026-10-17-bettys-sapphic-saturday.html\n\nsapphic saturd
- ay is back at betty’s on saturday october 17th.
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-17-bettys-sapphic-saturday.html
-STATUS:TENTATIVE
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-18-handlebar-robert-taylor-smith-marc-ganancias@diypensacola
-DTSTAMP:20261005T000000Z
-SEQUENCE:10621694
-DTSTART;TZID=America/Chicago:20261018T150000
-DTEND;TZID=America/Chicago:20261018T180000
-SUMMARY:Robert Taylor Smith\, Marc Ganancias\, Warren Wolf +1 @ The Handleb
- ar
-DESCRIPTION:Robert Taylor Smith\, Marc Ganancias\, Warren Wolf\, Katie Dine
- en\n3pm matinee\n$10\nhttps://diypensacola.com/s/2026-10-18-handlebar-robe
- rt-taylor-smith-marc-ganancias.html\n\nSongwriter rounds matinee Oct 18 at
-  @thehandlebar850
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-18-handlebar-robert-taylor-smith-mar
- c-ganancias.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-18-handlebar-fight-night-drag-show-thotberry@diypensacola
-DTSTAMP:20260915T000000Z
-SEQUENCE:13441696
-DTSTART;TZID=America/Chicago:20261018T183000
-DTEND;TZID=America/Chicago:20261018T220000
-SUMMARY:Fight Night Drag Show\, Thotberry Shortcake\, Xena-Morphine +3 @ Th
- e Handlebar
-DESCRIPTION:Fight Night Drag Show\, Thotberry Shortcake\, Xena-Morphine\, T
- itanium\, Jay Jay DuVay\, Hauntica\ndoors 6:30pm\, show 7pm\n$10\nhttps://
- diypensacola.com/s/2026-10-18-handlebar-fight-night-drag-show-thotberry.ht
- ml\n\nthe thot factory presents fight night\, hosted by thotberry with xen
- amorphine\, titanium\, jay jay duvay\, and hauntica at the handlebar. sund
- ay october 18\, doors 6:30\, show at 7. $10 cover\, 18+. dress up\, there 
- is a costume contest with prizes.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-18-handlebar-fight-night-drag-show-t
- hotberry.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-20-handlebar-the-convalescence-knifeback@diypensacola
 DTSTAMP:20260925T000000Z
 SEQUENCE:11103055
@@ -434,7 +385,8 @@ DTEND;TZID=America/Chicago:20261031T230000
 SUMMARY:Undead Inside\, Ryan Pfeiffer\, Queen Britt +1 @ Betty’s
 DESCRIPTION:Undead Inside\, Ryan Pfeiffer\, Queen Britt\, Paul Trampe\n8pm 
  & 9:45pm\n$10\nhttps://diypensacola.com/s/2026-10-31-bettys-undead-inside-
- ryan-pfeiffer.html
+ ryan-pfeiffer.html\n\nUndead Inside\, stand-up comedy in a haunted club th
+ is Saturday at @bettys_on_belmont 💀
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-10-31-bettys-undead-inside-ryan-pfeiffe
  r.html
@@ -508,8 +460,8 @@ DTEND;TZID=America/Chicago:20261106T230000
 SUMMARY:Noiseheads\, Hopout\, Color The Void +1 @ The Handlebar
 DESCRIPTION:Noiseheads\, Hopout\, Color The Void\, Conflict of Interests\nd
  oors 7pm / show 8pm\nhttps://diypensacola.com/s/2026-11-06-handlebar-noise
- heads-hopout.html\n\n@hopout_theband @colorthevoidmusic @conflictofinteres
- tsband
+ heads-hopout.html\n\nNight Moves pre-show Nov 6 at @thehandlebar850\n\n@ho
+ pout_theband @colorthevoidmusic @conflictofinterestsband
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-06-handlebar-noiseheads-hopout.html
 END:VEVENT
