@@ -23,20 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-02-handlebar-rufus-mcblack-cavae-mundi@diypensacola
-DTSTAMP:20260914T000000Z
-SEQUENCE:710439
-DTSTART;TZID=America/Chicago:20261102T180000
-DTEND;TZID=America/Chicago:20261102T220000
-SUMMARY:Night Moves\, Rufus McBlack\, Cavae Mundi @ The Handlebar
-DESCRIPTION:Night Moves\, Rufus McBlack\, Cavae Mundi\ndoors 6pm / show 7pm
- \nhttps://diypensacola.com/s/2026-11-02-handlebar-rufus-mcblack-cavae-mund
- i.html\n\nNight Moves Nov 2 at @thehandlebar850!
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-02-handlebar-rufus-mcblack-cavae-mun
- di.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-06-handlebar-noiseheads-hopout@diypensacola
 DTSTAMP:20261029T000000Z
 SEQUENCE:13926770
@@ -78,6 +64,20 @@ DESCRIPTION:AJJ\, Greet Death\ndoors 6pm / show 7pm\nhttps://diypensacola.c
  he handlebar\, sunday november 8th. doors 6pm\, show at 7.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-08-handlebar-ajj-greet-death.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-09-handlebar-jazz-night-arent-we@diypensacola
+DTSTAMP:20261103T000000Z
+SEQUENCE:10108781
+DTSTART;TZID=America/Chicago:20261109T180000
+DTEND;TZID=America/Chicago:20261109T220000
+SUMMARY:Jazz Night\, Aren’t We\, Brynnevere @ The Handlebar
+DESCRIPTION:Jazz Night\, Aren’t We\, Brynnevere\ndoors 6pm / music 7pm\n$
+ 5\nhttps://diypensacola.com/s/2026-11-09-handlebar-jazz-night-arent-we.htm
+ l\n\nAren’t We jazz night Nov 9 at @thehandlebar850!
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-09-handlebar-jazz-night-arent-we.htm
+ l
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-10-handlebar-daisychain@diypensacola
@@ -160,6 +160,20 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-18-handlebar-wayne-hancock.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-19-handlebar-katie-dineen-hope-given@diypensacola
+DTSTAMP:20261103T000000Z
+SEQUENCE:15021192
+DTSTART;TZID=America/Chicago:20261119T180000
+DTEND;TZID=America/Chicago:20261119T210000
+SUMMARY:Katie Dineen\, Hope Given\, Jacob Brock +1 @ The Handlebar
+DESCRIPTION:Katie Dineen\, Hope Given\, Jacob Brock\, Ed Adams\n6pm\n$10\nh
+ ttps://diypensacola.com/s/2026-11-19-handlebar-katie-dineen-hope-given.htm
+ l\n\nSongwriter rounds Nov 19 at @thehandlebar850!\n\n@katiedineensings
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-19-handlebar-katie-dineen-hope-given
+ .html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-20-handlebar-freddy-todd@diypensacola
 DTSTAMP:20261031T000000Z
 SEQUENCE:10020367
@@ -170,6 +184,21 @@ DESCRIPTION:Freddy Todd\n8PM\nhttps://diypensacola.com/s/2026-11-20-handleb
  ar-freddy-todd.html\n\nFreddy Todd Nov 20 at @thehandlebar850!
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-20-handlebar-freddy-todd.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-21-handlebar-cremro-smith-aj-the-musician@diypensacola
+DTSTAMP:20261103T000000Z
+SEQUENCE:9705004
+DTSTART;TZID=America/Chicago:20261121T200000
+DTEND;TZID=America/Chicago:20261121T230000
+SUMMARY:CremRo Smith\, AJ The Musician\, Knuk +3 @ The Handlebar
+DESCRIPTION:CremRo Smith\, AJ The Musician\, Knuk\, Sco Mazzi\, Txnka\, Kia
+ ra Symone\n8pm\nhttps://diypensacola.com/s/2026-11-21-handlebar-cremro-smi
+ th-aj-the-musician.html\n\nCremRo Smith Nov 21 at @thehandlebar850!\n\n@cr
+ emrosmith
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-21-handlebar-cremro-smith-aj-the-mus
+ ician.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-02-handlebar-20-watt-tombstone@diypensacola
@@ -298,6 +327,23 @@ DESCRIPTION:Whitmer Thomas\ntime not listed\, check the venue\nhttps://diyp
  at the handlebar\, friday december 18th.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-18-handlebar-whitmer-thomas.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-22-handlebar-ty-thomas-benefit-show-goodwin-rainer@diypensacola
+DTSTAMP:20261103T000000Z
+SEQUENCE:6857215
+DTSTART;TZID=America/Chicago:20261222T190000
+DTEND;TZID=America/Chicago:20261222T220000
+SUMMARY:Ty Thomas Benefit Show\, Goodwin Rainer\, Outlook Bleak +3 @ The Ha
+ ndlebar
+DESCRIPTION:Ty Thomas Benefit Show\, Goodwin Rainer\, Outlook Bleak\, Stufy
+ \, Sideswept Bangs\, Steve Herwin\n7pm\nhttps://diypensacola.com/s/2026-12
+ -22-handlebar-ty-thomas-benefit-show-goodwin-rainer.html\n\nTy Thomas bene
+ fit Dec 22 at @thehandlebar850\n\n@goodwinrainer @outlook_bleak @stufytheb
+ and @sidesweptbangsmusic @steve.herwin
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-22-handlebar-ty-thomas-benefit-show-
+ goodwin-rainer.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-12-handlebar-big-d-and-the-kids-table-omnigone@diypensacola

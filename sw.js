@@ -1,7 +1,7 @@
-var CACHE='diypensacola-948685c96289';
+var CACHE='diypensacola-5d9df825ffde';
 var FONTS='diypensacola-fonts';
 var SHELL=["./", "offline.html", "style.css", "logo-hdr.webp", "favicon-48.png", "manifest.webmanifest", "flag.js"];
-var PRECACHE=["flyers/thumbs/2026-11-05_bettys_daikaiju.webp", "flyers/thumbs/2026-11-06_handlebar_noiseheads.webp", "flyers/thumbs/2026-11-07_handlebar_motion-city-soundtrack.webp", "flyers/thumbs/2026-11-07_the-den_peace-talks.webp", "flyers/thumbs/2026-11-07_bettys_nature-boys.webp", "flyers/thumbs/2026-11-08_309_theatre-of-the-oppressed.webp", "flyers/thumbs/2026-11-08_handlebar_ajj.webp", "flyers/thumbs/2026-11-10_handlebar_daisychain.webp", "flyers/thumbs/2026-11-12_handlebar_gnarled.webp"];
+var PRECACHE=["flyers/thumbs/2026-11-05_bettys_daikaiju.webp", "flyers/thumbs/2026-11-06_handlebar_noiseheads.webp", "flyers/thumbs/2026-11-07_handlebar_motion-city-soundtrack.webp", "flyers/thumbs/2026-11-07_the-den_peace-talks.webp", "flyers/thumbs/2026-11-07_bettys_nature-boys.webp", "flyers/thumbs/2026-11-08_309_theatre-of-the-oppressed.webp", "flyers/thumbs/2026-11-08_handlebar_ajj.webp", "flyers/thumbs/2026-11-09_handlebar_jazz-night.webp", "flyers/thumbs/2026-11-11_309_fuckin-nothin.webp", "flyers/thumbs/2026-11-13_bettys_bettys-fest-2-night-1.webp"];
 var NAV_WAIT=3000;
 var ASSET_WAIT=1500;
 var slowAt=0;

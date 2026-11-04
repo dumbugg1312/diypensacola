@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola: Txnka
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-21-handlebar-cremro-smith-aj-the-musician@diypensacola
+DTSTAMP:20261103T000000Z
+SEQUENCE:9705004
+DTSTART;TZID=America/Chicago:20261121T200000
+DTEND;TZID=America/Chicago:20261121T230000
+SUMMARY:CremRo Smith\, AJ The Musician\, Knuk +3 @ The Handlebar
+DESCRIPTION:CremRo Smith\, AJ The Musician\, Knuk\, Sco Mazzi\, Txnka\, Kia
+ ra Symone\n8pm\nhttps://diypensacola.com/s/2026-11-21-handlebar-cremro-smi
+ th-aj-the-musician.html\n\nCremRo Smith Nov 21 at @thehandlebar850!\n\n@cr
+ emrosmith
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-21-handlebar-cremro-smith-aj-the-mus
+ ician.html
+END:VEVENT
+END:VCALENDAR
