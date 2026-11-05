@@ -454,4 +454,16 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2027-03-01-handlebar-haywire-dark-thoughts.h
  tml
 END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-29-handlebar-marbin@diypensacola
+DTSTAMP:20261105T000000Z
+SEQUENCE:15842712
+DTSTART;TZID=America/Chicago:20270329T180000
+DTEND;TZID=America/Chicago:20270329T220000
+SUMMARY:Marbin @ The Handlebar
+DESCRIPTION:Marbin\ndoors 6pm / show 7pm\nhttps://diypensacola.com/s/2027-0
+ 3-29-handlebar-marbin.html\n\nMarbin Mar 29 at @thehandlebar850
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-03-29-handlebar-marbin.html
+END:VEVENT
 END:VCALENDAR

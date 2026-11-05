@@ -23,20 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-21-handlebar-felicity-dear-maryanne@diypensacola
-DTSTAMP:20260826T000000Z
-SEQUENCE:8911302
-DTSTART;TZID=America/Chicago:20261021T180000
-DTEND;TZID=America/Chicago:20261021T210000
-SUMMARY:Felicity\, Dear Maryanne\, Other @ The Handlebar
-DESCRIPTION:Felicity\, Dear Maryanne\, Other\n6pm\nhttps://diypensacola.com
- /s/2026-10-21-handlebar-felicity-dear-maryanne.html\n\nFelicity Oct 21 at 
- @thehandlebar850\n\n@wearefelicity @dearmaryanne @otherband
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-21-handlebar-felicity-dear-maryanne.
- html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-22-downtown-music-hall-party-cannon-slugbleed@diypensacola
 DTSTAMP:20260826T000000Z
 SEQUENCE:3562092
@@ -1065,6 +1051,19 @@ URL:https://diypensacola.com/s/2027-02-20-handlebar-dusty-gannon-and-the-ag
  onal-gasps-the-march-violets.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-02-25-hunter-amphitheater-levity@diypensacola
+DTSTAMP:20261105T000000Z
+SEQUENCE:5306547
+DTSTART;TZID=America/Chicago:20270225T180000
+DTEND;TZID=America/Chicago:20270225T210000
+SUMMARY:Levity @ Hunter Amphitheater
+DESCRIPTION:Levity\ndoors 6pm / show 6pm\nhttps://diypensacola.com/s/2027-0
+ 2-25-hunter-amphitheater-levity.html\n\nLevity presents Neon Palms Feb 25 
+ at Maritime Park
+LOCATION:Hunter Amphitheater
+URL:https://diypensacola.com/s/2027-02-25-hunter-amphitheater-levity.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-03-01-handlebar-haywire-dark-thoughts@diypensacola
 DTSTAMP:20261024T000000Z
 SEQUENCE:6391785
@@ -1077,5 +1076,17 @@ DESCRIPTION:Haywire\, Dark Thoughts\, GVLLOW\ntime not listed\, check the v
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2027-03-01-handlebar-haywire-dark-thoughts.h
  tml
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-29-handlebar-marbin@diypensacola
+DTSTAMP:20261105T000000Z
+SEQUENCE:15842712
+DTSTART;TZID=America/Chicago:20270329T180000
+DTEND;TZID=America/Chicago:20270329T220000
+SUMMARY:Marbin @ The Handlebar
+DESCRIPTION:Marbin\ndoors 6pm / show 7pm\nhttps://diypensacola.com/s/2027-0
+ 3-29-handlebar-marbin.html\n\nMarbin Mar 29 at @thehandlebar850
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-03-29-handlebar-marbin.html
 END:VEVENT
 END:VCALENDAR

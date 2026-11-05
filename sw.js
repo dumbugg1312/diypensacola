@@ -1,4 +1,4 @@
-var CACHE='diypensacola-1b99d96215f8';
+var CACHE='diypensacola-23199b219f6e';
 var FONTS='diypensacola-fonts';
 var SHELL=["./", "offline.html", "style.css", "logo-hdr.webp", "favicon-48.png", "manifest.webmanifest", "flag.js"];
 var PRECACHE=["flyers/thumbs/2026-11-05_bettys_daikaiju.webp", "flyers/thumbs/2026-11-06_handlebar_noiseheads.webp", "flyers/thumbs/2026-11-07_handlebar_motion-city-soundtrack.webp", "flyers/thumbs/2026-11-07_the-den_peace-talks.webp", "flyers/thumbs/2026-11-07_bettys_nature-boys.webp", "flyers/thumbs/2026-11-08_309_theatre-of-the-oppressed.webp", "flyers/thumbs/2026-11-08_handlebar_ajj.webp", "flyers/thumbs/2026-11-09_handlebar_jazz-night.webp", "flyers/thumbs/2026-11-11_309_fuckin-nothin.webp"];
