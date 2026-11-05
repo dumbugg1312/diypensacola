@@ -23,18 +23,19 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-11-05-bettys-daikaiju@diypensacola
 DTSTAMP:20261006T000000Z
-SEQUENCE:1574988
-DTSTART;TZID=America/Chicago:20261105T180000
-DTEND;TZID=America/Chicago:20261106T000000
-SUMMARY:Daikaiju\, Safety Coffin @ Betty’s
-DESCRIPTION:Daikaiju\, Safety Coffin\ndoors 6pm / show 9pm\n$15\nhttps://di
- ypensacola.com/s/2026-11-05-bettys-daikaiju.html\n\nDaikaiju Nov 5 at @bet
- tys_on_belmont 🖤
+SEQUENCE:519555
+DTSTART;TZID=America/Chicago:20261105T190000
+DTEND;TZID=America/Chicago:20261105T230000
+SUMMARY:Daikaiju\, Safety Coffin\, Cavae Mundi @ Betty’s
+DESCRIPTION:Daikaiju\, Safety Coffin\, Cavae Mundi\ndoors 7pm / show 8pm\n$
+ 15\nhttps://diypensacola.com/s/2026-11-05-bettys-daikaiju.html\n\nDaikaiju
+  vs Safety Coffin and Cavae Mundi Nov 5 at @bettys_on_belmont\, plus karao
+ ke night 🖤\n@cavaemundi
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-05-bettys-daikaiju.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:tonight: Daikaiju\, Safety Coffin @ Betty’s
+DESCRIPTION:tonight: Daikaiju\, Safety Coffin\, Cavae Mundi @ Betty’s
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT

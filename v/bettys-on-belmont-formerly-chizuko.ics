@@ -25,13 +25,14 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-11-05-bettys-daikaiju@diypensacola
 DTSTAMP:20261006T000000Z
-SEQUENCE:1574988
-DTSTART;TZID=America/Chicago:20261105T180000
-DTEND;TZID=America/Chicago:20261106T000000
-SUMMARY:Daikaiju\, Safety Coffin @ Betty’s
-DESCRIPTION:Daikaiju\, Safety Coffin\ndoors 6pm / show 9pm\n$15\nhttps://di
- ypensacola.com/s/2026-11-05-bettys-daikaiju.html\n\nDaikaiju Nov 5 at @bet
- tys_on_belmont 🖤
+SEQUENCE:519555
+DTSTART;TZID=America/Chicago:20261105T190000
+DTEND;TZID=America/Chicago:20261105T230000
+SUMMARY:Daikaiju\, Safety Coffin\, Cavae Mundi @ Betty’s
+DESCRIPTION:Daikaiju\, Safety Coffin\, Cavae Mundi\ndoors 7pm / show 8pm\n$
+ 15\nhttps://diypensacola.com/s/2026-11-05-bettys-daikaiju.html\n\nDaikaiju
+  vs Safety Coffin and Cavae Mundi Nov 5 at @bettys_on_belmont\, plus karao
+ ke night 🖤\n@cavaemundi
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-05-bettys-daikaiju.html
 END:VEVENT
@@ -53,28 +54,34 @@ END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-13-bettys-bettys-fest-2-night-1@diypensacola
 DTSTAMP:20260918T000000Z
-SEQUENCE:794710
-DTSTART;VALUE=DATE:20261113
-DTEND;VALUE=DATE:20261114
-SUMMARY:Betty’s Fest 2 Night 1 @ Betty’s (time TBA)
-DESCRIPTION:Betty’s Fest 2 Night 1\ntime not listed\, check the venue\nht
- tps://diypensacola.com/s/2026-11-13-bettys-bettys-fest-2-night-1.html\n\nb
- etty’s fest 2\, night one. friday november 13th at betty’s on belmont 
- and the old bunny club. two stages\, lineup coming.
+SEQUENCE:10564333
+DTSTART;TZID=America/Chicago:20261113T200000
+DTEND;TZID=America/Chicago:20261113T230000
+SUMMARY:Betty’s Fest 2 Night 1\, Palmmeadow\, Careless Gaze +5 @ Betty’
+ s
+DESCRIPTION:Betty’s Fest 2 Night 1\, Palmmeadow\, Careless Gaze\, Mother
+ ’s Milk\, MyBrothaVan\, Marla & The Singers\, 3N?GMA\, Error.Function\nd
+ oors 8pm\n$15 / $20 under 21\nhttps://diypensacola.com/s/2026-11-13-bettys
+ -bettys-fest-2-night-1.html\n\nBetty’s Fest night one\, Friday Nov 13 at
+  @bettys_on_belmont. Hell of a line up 🖤\n\n@thepalmmeadow @mothersmilk
+ .official @marlaandthesingers @err0r.function
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-13-bettys-bettys-fest-2-night-1.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-14-bettys-bettys-fest-2-night-2@diypensacola
 DTSTAMP:20260918T000000Z
-SEQUENCE:1813191
-DTSTART;VALUE=DATE:20261114
-DTEND;VALUE=DATE:20261115
-SUMMARY:Betty’s Fest 2 Night 2 @ Betty’s (time TBA)
-DESCRIPTION:Betty’s Fest 2 Night 2\ntime not listed\, check the venue\nht
- tps://diypensacola.com/s/2026-11-14-bettys-bettys-fest-2-night-2.html\n\nb
- etty’s fest 2\, night two. saturday november 14th at betty’s on belmon
- t and the old bunny club. lineup coming.
+SEQUENCE:4932048
+DTSTART;TZID=America/Chicago:20261114T200000
+DTEND;TZID=America/Chicago:20261114T230000
+SUMMARY:Betty’s Fest 2 Night 2\, DJ Balance Universal\, 7.7 PNX +5 @ Bett
+ y’s
+DESCRIPTION:Betty’s Fest 2 Night 2\, DJ Balance Universal\, 7.7 PNX\, Gro
+ undscor\, Cookies & Cake\, Wynter\, Other\, The Void Winds\ndoors 8pm\n$15
+  / $20 under 21\nhttps://diypensacola.com/s/2026-11-14-bettys-bettys-fest-
+ 2-night-2.html\n\nBetty’s Fest night two\, Saturday Nov 14 at @bettys_on
+ _belmont!\n\n@cookies__and__cake @wynter_officialmusic @otherband @thevoid
+ _winds
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-14-bettys-bettys-fest-2-night-2.html
 END:VEVENT
@@ -90,6 +97,21 @@ DESCRIPTION:Valerie SassyFras\n9-11pm\nhttps://diypensacola.com/s/2026-11-2
   Nov 20 💞\n\n@valsassyfras
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-20-bettys-valerie-sassyfras.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-21-bettys-other-ihatesundays@diypensacola
+DTSTAMP:20261104T000000Z
+SEQUENCE:9447994
+DTSTART;TZID=America/Chicago:20261121T200000
+DTEND;TZID=America/Chicago:20261122T000000
+SUMMARY:Other\, Ihatesundays\, Conflict of Interests +1 @ Betty’s
+DESCRIPTION:Other\, Ihatesundays\, Conflict of Interests\, beautysleep\ndoo
+ rs 8 / music 9\n$10\nhttps://diypensacola.com/s/2026-11-21-bettys-other-ih
+ atesundays.html\n\nWack Booking’s Pensacola debut\, Nov 21 at @bettys_on
+ _belmont\n@otherband @theihatesundays @conflictofinterestsband @beautyslee
+ p850
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-21-bettys-other-ihatesundays.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-10-bettys-holy-locust-johanna-rose-the-dreamboats@diypensacola

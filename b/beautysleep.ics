@@ -22,4 +22,19 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-21-bettys-other-ihatesundays@diypensacola
+DTSTAMP:20261104T000000Z
+SEQUENCE:9447994
+DTSTART;TZID=America/Chicago:20261121T200000
+DTEND;TZID=America/Chicago:20261122T000000
+SUMMARY:Other\, Ihatesundays\, Conflict of Interests +1 @ Betty’s
+DESCRIPTION:Other\, Ihatesundays\, Conflict of Interests\, beautysleep\ndoo
+ rs 8 / music 9\n$10\nhttps://diypensacola.com/s/2026-11-21-bettys-other-ih
+ atesundays.html\n\nWack Booking’s Pensacola debut\, Nov 21 at @bettys_on
+ _belmont\n@otherband @theihatesundays @conflictofinterestsband @beautyslee
+ p850
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-21-bettys-other-ihatesundays.html
+END:VEVENT
 END:VCALENDAR
