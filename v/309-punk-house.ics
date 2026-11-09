@@ -23,21 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-08-309-theatre-of-the-oppressed-suzanne-byam@diypensacola
-DTSTAMP:20261024T000000Z
-SEQUENCE:5435793
-DTSTART;TZID=America/Chicago:20261108T120000
-DTEND;TZID=America/Chicago:20261108T140000
-SUMMARY:Theatre of the Oppressed\, Suzanne Byam @ 309
-DESCRIPTION:Theatre of the Oppressed\, Suzanne Byam\n12-2pm\nhttps://diypen
- sacola.com/s/2026-11-08-309-theatre-of-the-oppressed-suzanne-byam.html\n\n
- Theatre of the Oppressed Nov 8 at @309punkproject!
-LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-08-309-theatre-of-the-oppressed-suza
- nne-byam.html
-STATUS:CANCELLED
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-11-309-fuckin-nothin-horse-breakfast@diypensacola
 DTSTAMP:20261017T000000Z
 SEQUENCE:15930944
