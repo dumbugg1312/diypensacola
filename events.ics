@@ -23,132 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-22-downtown-music-hall-party-cannon-slugbleed@diypensacola
-DTSTAMP:20260826T000000Z
-SEQUENCE:3562092
-DTSTART;TZID=America/Chicago:20261022T180000
-DTEND;TZID=America/Chicago:20261022T220000
-SUMMARY:Party Cannon\, Slugbleed\, Fogcrawler +1 @ Downtown Music Hall
-DESCRIPTION:Party Cannon\, Slugbleed\, Fogcrawler\, Spidershed\ndoors 6pm\,
-  music 7pm\n$15 adv / $20 dos\nhttps://diypensacola.com/s/2026-10-22-downt
- own-music-hall-party-cannon-slugbleed.html\n\nParty Cannon Oct 22 at @down
- town_music_hall!\n\n@party_cannon_official @slugbleed @spidershed.nwfl
-LOCATION:Downtown Music Hall
-URL:https://diypensacola.com/s/2026-10-22-downtown-music-hall-party-cannon-
- slugbleed.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-22-309-wintergreen-oil-photo-transfer-workshop-kayleigh-rose@di
- ypensacola
-DTSTAMP:20260927T000000Z
-SEQUENCE:286282
-DTSTART;TZID=America/Chicago:20261022T180000
-DTEND;TZID=America/Chicago:20261022T210000
-SUMMARY:Wintergreen Oil Photo Transfer Workshop\, Kayleigh Rose @ 309
-DESCRIPTION:Wintergreen Oil Photo Transfer Workshop\, Kayleigh Rose\n6-9pm\
- nsliding scale\nhttps://diypensacola.com/s/2026-10-22-309-wintergreen-oil-
- photo-transfer-workshop-kayleigh-rose.html\n\nWintergreen oil photo transf
- er workshop with Kayleigh Rose at @309punkproject\, thursday october 22nd.
-LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-22-309-wintergreen-oil-photo-transfe
- r-workshop-kayleigh-rose.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-22-bettys-sludge-incorporated-cursed-body@diypensacola
-DTSTAMP:20261001T000000Z
-SEQUENCE:14648844
-DTSTART;TZID=America/Chicago:20261022T190000
-DTEND;TZID=America/Chicago:20261022T230000
-SUMMARY:Sludge Incorporated\, Cursed Body\, Cookies & Cake +1 @ Betty’s
-DESCRIPTION:Sludge Incorporated\, Cursed Body\, Cookies & Cake\, Sweet Lady
-  Sleeze\ndoors 7pm\, show 8pm\n$10\nhttps://diypensacola.com/s/2026-10-22-
- bettys-sludge-incorporated-cursed-body.html\n\nSludge Incorporated Oct 22 
- at @bettys_on_belmont!\n\n@cursedbodyband @cookies__and__cake @sweet.lady.
- sleeze
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-22-bettys-sludge-incorporated-cursed
- -body.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-22-handlebar-fenix-tx@diypensacola
-DTSTAMP:20260826T000000Z
-SEQUENCE:13891561
-DTSTART;VALUE=DATE:20261022
-DTEND;VALUE=DATE:20261023
-SUMMARY:Fenix Tx\, Scream Out Loud\, Color The Void @ The Handlebar (time T
- BA)
-DESCRIPTION:Fenix Tx\, Scream Out Loud\, Color The Void\ntime not listed\, 
- check the venue\nhttps://diypensacola.com/s/2026-10-22-handlebar-fenix-tx.
- html\n\nFenix TX Oct 22 at @thehandlebar850\n\n@fenixtx @screamoutloudfl @
- colorthevoidmusic
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-22-handlebar-fenix-tx.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-23-the-den-dirty-crumbums-dead-devils@diypensacola
-DTSTAMP:20260923T000000Z
-SEQUENCE:9762270
-DTSTART;TZID=America/Chicago:20261023T180000
-DTEND;TZID=America/Chicago:20261023T220000
-SUMMARY:Dirty Crumbums\, Dead Devils\, Ex-Teenage Rebels @ The Den
-DESCRIPTION:Dirty Crumbums\, Dead Devils\, Ex-Teenage Rebels\ndoors 6pm\, m
- usic 7pm\n$5\nhttps://diypensacola.com/s/2026-10-23-the-den-dirty-crumbums
- -dead-devils.html\n\nDirty Crumbums Oct 23 with Dead Devils + Ex-Teenage R
- ebels 🖤\n\n@exteenagerebels
-LOCATION:The Den
-URL:https://diypensacola.com/s/2026-10-23-the-den-dirty-crumbums-dead-devil
- s.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-23-handlebar-murder-on-the-dance-floor-drag-show-cvntteeth@diyp
- ensacola
-DTSTAMP:20261017T000000Z
-SEQUENCE:15540722
-DTSTART;TZID=America/Chicago:20261023T190000
-DTEND;TZID=America/Chicago:20261023T220000
-SUMMARY:Murder on the Dance Floor Drag Show\, Cvntteeth\, Jay Jay DuVay +3 
- @ The Handlebar
-DESCRIPTION:Murder on the Dance Floor Drag Show\, Cvntteeth\, Jay Jay DuVay
- \, Sarah Tonin\, Andy Rodginous\, Keke Zorra\ndoors 7pm\n$10 / $15\nhttps:
- //diypensacola.com/s/2026-10-23-handlebar-murder-on-the-dance-floor-drag-s
- how-cvntteeth.html\n\nMurder on the Dance Floor this friday at @thehandleb
- ar850!
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-23-handlebar-murder-on-the-dance-flo
- or-drag-show-cvntteeth.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-23-bettys-the-earthly-delights-sideshow@diypensacola
-DTSTAMP:20260903T000000Z
-SEQUENCE:444738
-DTSTART;TZID=America/Chicago:20261023T200000
-DTEND;TZID=America/Chicago:20261024T000000
-SUMMARY:The Earthly Delights Sideshow @ Betty’s
-DESCRIPTION:The Earthly Delights Sideshow\ndoors 8p / freaks 9p\nhttps://di
- ypensacola.com/s/2026-10-23-bettys-the-earthly-delights-sideshow.html\n\nt
- he earthly delights sideshow at betty’s on belmont. friday october 23rd\
- , doors 8\, freaks 9.
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-23-bettys-the-earthly-delights-sides
- how.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-24-handlebar-terrifying-tribute-show-26-cockfight@diypensacola
-DTSTAMP:20261008T000000Z
-SEQUENCE:382451
-DTSTART;TZID=America/Chicago:20261024T170000
-DTEND;TZID=America/Chicago:20261024T200000
-SUMMARY:Terrifying Tribute Show ’26\, Cockfight\, Palafoxx +2 @ The Handl
- ebar
-DESCRIPTION:Terrifying Tribute Show ’26\, Cockfight\, Palafoxx\, Cavae Mu
- ndi\, Snow Halo\ndoors 5pm\n$10 donation\nhttps://diypensacola.com/s/2026-
- 10-24-handlebar-terrifying-tribute-show-26-cockfight.html\n\nTerrifying Tr
- ibute Show in two weeks at @thehandlebar850!\n\n@cavaemundi @snowhalo_
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-24-handlebar-terrifying-tribute-show
- -26-cockfight.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-25-handlebar-goodbye-june-danny-worsnop@diypensacola
 DTSTAMP:20260826T000000Z
 SEQUENCE:6820432
@@ -586,13 +460,14 @@ DTSTAMP:20260918T000000Z
 SEQUENCE:10564333
 DTSTART;TZID=America/Chicago:20261113T200000
 DTEND;TZID=America/Chicago:20261113T230000
-SUMMARY:Betty’s Fest 2 Night 1\, Palmmeadow\, Careful Gaze +5 @ Betty’s
+SUMMARY:Betty’s Fest 2 Night 1\, Palmmeadow\, Careful Gaze +8 @ Betty’s
 DESCRIPTION:Betty’s Fest 2 Night 1\, Palmmeadow\, Careful Gaze\, Mother
- ’s Milk\, MyBrothaVan\, Marla & The Singers\, 3N?GMA\, Error.Function\nd
- oors 8pm\n$15 / $20 under 21\nhttps://diypensacola.com/s/2026-11-13-bettys
- -bettys-fest-2-night-1.html\n\nBetty’s Fest night one\, Friday Nov 13 at
-  @bettys_on_belmont. Hell of a line up 🖤\n\n@thepalmmeadow @mothersmilk
- .official @marlaandthesingers @err0r.function
+ ’s Milk\, MyBrothaVan\, Marla & The Singers\, 3N?GMA\, Error.Function\, 
+ The Earthly Delights Sideshow\, Vixen Valentine\, DJ Balance Universal\ndo
+ ors 8pm\n$15 / $20 under 21\nhttps://diypensacola.com/s/2026-11-13-bettys-
+ bettys-fest-2-night-1.html\n\nBetty’s Fest night one\, Friday Nov 13 at 
+ @bettys_on_belmont. Hell of a line up 🖤\n\n@thepalmmeadow @mothersmilk.
+ official @marlaandthesingers @err0r.function
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-13-bettys-bettys-fest-2-night-1.html
 END:VEVENT
@@ -617,14 +492,15 @@ DTSTAMP:20260918T000000Z
 SEQUENCE:4932048
 DTSTART;TZID=America/Chicago:20261114T200000
 DTEND;TZID=America/Chicago:20261114T230000
-SUMMARY:Betty’s Fest 2 Night 2\, DJ Balance Universal\, 7.7 PNX +6 @ Bett
+SUMMARY:Betty’s Fest 2 Night 2\, DJ Balance Universal\, 7.7 PNX +8 @ Bett
  y’s
 DESCRIPTION:Betty’s Fest 2 Night 2\, DJ Balance Universal\, 7.7 PNX\, Cry
  stal Plumage\, Groundscor\, Cookies & Cake\, Wynter\, Other\, The Void Win
- ds\ndoors 8pm\n$15 / $20 under 21\nhttps://diypensacola.com/s/2026-11-14-b
- ettys-bettys-fest-2-night-2.html\n\nBetty’s Fest night two\, Saturday No
- v 14 at @bettys_on_belmont!\n\n@crystal_plumage_fl @cookies__and__cake @wy
- nter_officialmusic @otherband @thevoid_winds
+ ds\, Night of the Living Drag\, Sapphic Saturday\ndoors 8pm\n$15 / $20 und
+ er 21\nhttps://diypensacola.com/s/2026-11-14-bettys-bettys-fest-2-night-2.
+ html\n\nBetty’s Fest night two\, Saturday Nov 14 at @bettys_on_belmont!\
+ n\n@crystal_plumage_fl @cookies__and__cake @wynter_officialmusic @otherban
+ d @thevoid_winds
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-14-bettys-bettys-fest-2-night-2.html
 END:VEVENT
@@ -897,6 +773,21 @@ URL:https://diypensacola.com/s/2026-12-11-handlebar-the-casualties-bullshit
  -detector.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-12-handlebar-serenas-fire-silenced@diypensacola
+DTSTAMP:20261108T000000Z
+SEQUENCE:3160277
+DTSTART;TZID=America/Chicago:20261212T190000
+DTEND;TZID=America/Chicago:20261212T230000
+SUMMARY:Serena’s Fire\, Silenced\, Knives +1 @ The Handlebar
+DESCRIPTION:Serena’s Fire\, Silenced\, Knives\, Widow Anchor\ndoors 7pm /
+  show 8pm\nhttps://diypensacola.com/s/2026-12-12-handlebar-serenas-fire-si
+ lenced.html\n\nSerena’s Fire Dec 12 at @thehandlebar850\n\n@serenasfireo
+ fficial @silenced_mobileal
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-12-handlebar-serenas-fire-silenced.h
+ tml
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-17-handlebar-rickshaw-billies-burger-patrol@diypensacola
 DTSTAMP:20260921T000000Z
 SEQUENCE:7447187
@@ -917,10 +808,10 @@ DTSTAMP:20260826T000000Z
 SEQUENCE:14814043
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
-SUMMARY:Whitmer Thomas @ The Handlebar (time TBA)
-DESCRIPTION:Whitmer Thomas\ntime not listed\, check the venue\nhttps://diyp
- ensacola.com/s/2026-12-18-handlebar-whitmer-thomas.html\n\nwhitmer thomas 
- at the handlebar\, friday december 18th.
+SUMMARY:Whitmer Thomas\, Clay Tatum @ The Handlebar (time TBA)
+DESCRIPTION:Whitmer Thomas\, Clay Tatum\ntime not listed\, check the venue\
+ nhttps://diypensacola.com/s/2026-12-18-handlebar-whitmer-thomas.html\n\nwh
+ itmer thomas at the handlebar\, friday december 18th.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-18-handlebar-whitmer-thomas.html
 END:VEVENT
@@ -1023,11 +914,11 @@ END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-18-handlebar-earth-to-eve@diypensacola
 DTSTAMP:20261021T000000Z
-SEQUENCE:9677759
-DTSTART;TZID=America/Chicago:20270218T180000
-DTEND;TZID=America/Chicago:20270218T220000
+SEQUENCE:6450657
+DTSTART;TZID=America/Chicago:20270218T190000
+DTEND;TZID=America/Chicago:20270218T230000
 SUMMARY:Earth to Eve @ The Handlebar
-DESCRIPTION:Earth to Eve\ndoors 6pm / show 7pm\nhttps://diypensacola.com/s/
+DESCRIPTION:Earth to Eve\ndoors 7pm / show 8pm\nhttps://diypensacola.com/s/
  2027-02-18-handlebar-earth-to-eve.html\n\nEarth to Eve Feb 18 at @thehandl
  ebar850!
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL

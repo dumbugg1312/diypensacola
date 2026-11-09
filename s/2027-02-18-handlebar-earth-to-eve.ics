@@ -23,11 +23,11 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:2027-02-18-handlebar-earth-to-eve@diypensacola
 DTSTAMP:20261021T000000Z
-SEQUENCE:9677759
-DTSTART;TZID=America/Chicago:20270218T180000
-DTEND;TZID=America/Chicago:20270218T220000
+SEQUENCE:6450657
+DTSTART;TZID=America/Chicago:20270218T190000
+DTEND;TZID=America/Chicago:20270218T230000
 SUMMARY:Earth to Eve @ The Handlebar
-DESCRIPTION:Earth to Eve\ndoors 6pm / show 7pm\nhttps://diypensacola.com/s/
+DESCRIPTION:Earth to Eve\ndoors 7pm / show 8pm\nhttps://diypensacola.com/s/
  2027-02-18-handlebar-earth-to-eve.html\n\nEarth to Eve Feb 18 at @thehandl
  ebar850!
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL

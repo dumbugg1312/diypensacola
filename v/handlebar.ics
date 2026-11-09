@@ -23,36 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-06-handlebar-noiseheads-hopout@diypensacola
-DTSTAMP:20261029T000000Z
-SEQUENCE:13926770
-DTSTART;TZID=America/Chicago:20261106T190000
-DTEND;TZID=America/Chicago:20261106T230000
-SUMMARY:Noiseheads\, Hopout\, Color The Void +1 @ The Handlebar
-DESCRIPTION:Noiseheads\, Hopout\, Color The Void\, Conflict of Interests\nd
- oors 7pm / show 8pm\nhttps://diypensacola.com/s/2026-11-06-handlebar-noise
- heads-hopout.html\n\nNight Moves pre-show Nov 6 at @thehandlebar850\n\n@ho
- pout_theband @colorthevoidmusic @conflictofinterestsband
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-06-handlebar-noiseheads-hopout.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-07-handlebar-motion-city-soundtrack-colony-house@diypensacola
-DTSTAMP:20260919T000000Z
-SEQUENCE:14953818
-DTSTART;TZID=America/Chicago:20261107T150000
-DTEND;TZID=America/Chicago:20261107T180000
-SUMMARY:Motion City Soundtrack\, Colony House\, Copeland +5 @ The Handlebar
-DESCRIPTION:Motion City Soundtrack\, Colony House\, Copeland\, Lucky\, Scre
- am Out Loud\, Safety Training\, Tirra Lirra\, Lasento\n3pm\nhttps://diypen
- sacola.com/s/2026-11-07-handlebar-motion-city-soundtrack-colony-house.html
- \n\nMotion City Soundtrack outdoors at @thehandlebar850 Nov 7. Hell of a l
- ine up 🖤\n\n@screamoutloudfl @safetytrainingband @tirralirraband
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-07-handlebar-motion-city-soundtrack-
- colony-house.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-08-handlebar-ajj-greet-death@diypensacola
 DTSTAMP:20260918T000000Z
 SEQUENCE:12537290
@@ -301,6 +271,21 @@ URL:https://diypensacola.com/s/2026-12-11-handlebar-the-casualties-bullshit
  -detector.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-12-handlebar-serenas-fire-silenced@diypensacola
+DTSTAMP:20261108T000000Z
+SEQUENCE:3160277
+DTSTART;TZID=America/Chicago:20261212T190000
+DTEND;TZID=America/Chicago:20261212T230000
+SUMMARY:Serena’s Fire\, Silenced\, Knives +1 @ The Handlebar
+DESCRIPTION:Serena’s Fire\, Silenced\, Knives\, Widow Anchor\ndoors 7pm /
+  show 8pm\nhttps://diypensacola.com/s/2026-12-12-handlebar-serenas-fire-si
+ lenced.html\n\nSerena’s Fire Dec 12 at @thehandlebar850\n\n@serenasfireo
+ fficial @silenced_mobileal
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-12-handlebar-serenas-fire-silenced.h
+ tml
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-17-handlebar-rickshaw-billies-burger-patrol@diypensacola
 DTSTAMP:20260921T000000Z
 SEQUENCE:7447187
@@ -321,10 +306,10 @@ DTSTAMP:20260826T000000Z
 SEQUENCE:14814043
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
-SUMMARY:Whitmer Thomas @ The Handlebar (time TBA)
-DESCRIPTION:Whitmer Thomas\ntime not listed\, check the venue\nhttps://diyp
- ensacola.com/s/2026-12-18-handlebar-whitmer-thomas.html\n\nwhitmer thomas 
- at the handlebar\, friday december 18th.
+SUMMARY:Whitmer Thomas\, Clay Tatum @ The Handlebar (time TBA)
+DESCRIPTION:Whitmer Thomas\, Clay Tatum\ntime not listed\, check the venue\
+ nhttps://diypensacola.com/s/2026-12-18-handlebar-whitmer-thomas.html\n\nwh
+ itmer thomas at the handlebar\, friday december 18th.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-18-handlebar-whitmer-thomas.html
 END:VEVENT
@@ -413,11 +398,11 @@ END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-18-handlebar-earth-to-eve@diypensacola
 DTSTAMP:20261021T000000Z
-SEQUENCE:9677759
-DTSTART;TZID=America/Chicago:20270218T180000
-DTEND;TZID=America/Chicago:20270218T220000
+SEQUENCE:6450657
+DTSTART;TZID=America/Chicago:20270218T190000
+DTEND;TZID=America/Chicago:20270218T230000
 SUMMARY:Earth to Eve @ The Handlebar
-DESCRIPTION:Earth to Eve\ndoors 6pm / show 7pm\nhttps://diypensacola.com/s/
+DESCRIPTION:Earth to Eve\ndoors 7pm / show 8pm\nhttps://diypensacola.com/s/
  2027-02-18-handlebar-earth-to-eve.html\n\nEarth to Eve Feb 18 at @thehandl
  ebar850!
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
