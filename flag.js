@@ -302,7 +302,7 @@ chip.innerHTML='<svg viewBox="0 0 10 10" aria-hidden="true"><path class="wpl" d=
 +'<path class="wpz" d="M1.5 .8h2.6v8.4H1.5zM5.9 .8h2.6v8.4H5.9z"/></svg>'
 +'<span><span class="wcall">WPNX </span>107.7</span>';
 bar.appendChild(chip);
-var on=false,wait=false,armed=false,audio=null,loading=false,fails=0,retry=0,armT=0,frame=null,tick=0,title0='';
+var on=false,wait=false,armed=false,audio=null,loading=false,fails=0,retry=0,armT=0,frame=null,open=false,pending=false,nav=false,tick=0,title0='',seq=0,cur=0,ys={},wantY=null;
 function paint(){
 chip.classList.toggle('on',on&&!wait);
 chip.classList.toggle('wait',wait||armed);
@@ -325,6 +325,17 @@ if(ytface(e)){host.stop();return;}
 var a=e.target&&e.target.closest?e.target.closest('a[href]'):null;
 if(a&&!a.target&&(a.protocol==='http:'||a.protocol==='https:')&&a.origin!==location.origin)a.target='_top';
 },true);
+window.__wpnxGo=function(u){host.go(new URL(u,location.href).href);};
+window.addEventListener('click',function(e){
+if(e.defaultPrevented||e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+var a=e.target&&e.target.closest?e.target.closest('a[href]'):null;
+if(!a)return;
+if(a.hash&&!a.target&&!a.hasAttribute('download')&&a.origin===location.origin
+&&a.pathname===location.pathname&&a.search===location.search){
+e.preventDefault();location.replace(a.href);return;}
+if(!pageLink(a))return;
+e.preventDefault();host.go(a.href);
+});
 return;
 }
 function flag(v){try{if(v)sessionStorage.setItem(KEY,String(Date.now()));else sessionStorage.removeItem(KEY);}catch(e){}}
@@ -393,59 +404,103 @@ var p=a.pathname||'';
 if(a.origin!==location.origin||!(p.slice(-1)==='/'||p.slice(-5)==='.html'))return false;
 return !(p===location.pathname&&a.search===location.search&&a.hash);
 }
+function fy(){try{return frame.contentWindow.scrollY||0;}catch(e){return 0;}}
+function load(url){
+nav=true;setTimeout(function(){nav=false;},8000);
+try{frame.contentWindow.location.replace(url);}catch(e){frame.src=url;}
+}
 function sync(){
-if(!frame)return;var u,t;
+if(!frame||!open||nav)return;var u,t;
 try{u=frame.contentWindow.location.href;t=frame.contentDocument.title;}catch(e){return;}
 if(!u||u==='about:blank')return;
-if(u!==location.href){try{history.replaceState({wpnx:1},'',u);}catch(e){}}
+if(u!==location.href){try{history.replaceState({wpnx:cur},'',u);}catch(e){}}
 if(t&&t!==document.title)document.title=t;
 }
+function cover(v){
+document.documentElement.classList.toggle('wpnxshell',v);
+[].forEach.call(document.body.children,function(el){if(el!==frame)el.inert=v;});
+}
 function reveal(){
-if(!frame||frame.style.visibility!=='hidden')return;
-frame.style.visibility='';
-document.documentElement.classList.add('wpnxshell');
-[].forEach.call(document.body.children,function(el){if(el!==frame)el.inert=true;});
+if(!frame||!pending)return;
+pending=false;open=true;
+frame.style.display='';frame.style.visibility='';
+cover(true);
+if(!tick)tick=setInterval(sync,500);
+sync();paint();
 try{frame.contentWindow.focus();}catch(e){}
 }
+function loaded(){
+nav=false;reveal();sync();paint();
+var y=wantY,w=frame.contentWindow;wantY=null;
+if(y){var f=function(){try{if(frame&&frame.contentWindow===w)w.scrollTo(0,y);}catch(e){}};f();setTimeout(f,250);}
+}
+function hideShell(){
+if(!frame)return;
+pending=false;
+if(open){
+ys[cur]=fy();
+open=false;clearInterval(tick);tick=0;
+cover(false);
+if(title0)document.title=title0;
+}
+frame.style.display='none';
+}
 function openShell(url,push){
-if(push){try{history.pushState({wpnx:1},'',url);}catch(e){location.href=url;return;}}
-title0=title0||document.title;
+if(push){cur=++seq;try{history.pushState({wpnx:cur},'',url);}catch(e){location.href=url;return;}}
+if(!open)title0=document.title;
+pending=true;wantY=null;
+if(frame){
+frame.style.visibility='hidden';frame.style.display='';
+load(url);
+}else{
 frame=document.createElement('iframe');
 frame.id='wpnxframe';frame.title='diypensacola';
 frame.setAttribute('allow','autoplay; fullscreen; encrypted-media; picture-in-picture; web-share; clipboard-write');
 frame.setAttribute('allowfullscreen','');
 frame.style.visibility='hidden';
-frame.addEventListener('load',function(){reveal();sync();paint();});
-frame.src=url;
+frame.addEventListener('load',loaded);
+nav=true;frame.src=url;
 document.body.appendChild(frame);
+}
 setTimeout(reveal,4000);
-tick=setInterval(sync,500);
 }
-function closeShell(){
-if(!frame)return;
-clearInterval(tick);tick=0;
-if(frame.parentNode)frame.parentNode.removeChild(frame);
-frame=null;
-document.documentElement.classList.remove('wpnxshell');
-[].forEach.call(document.body.children,function(el){el.inert=false;});
-if(title0)document.title=title0;
+function go(url){
+if(!frame||!open){location.href=url;return;}
+ys[cur]=fy();cur=++seq;wantY=null;
+try{history.pushState({wpnx:cur},'',url);}catch(e){}
+load(url);
 }
+window.__wpnx.go=go;
+window.__wpnxGo=function(u){
+var abs=new URL(u,location.href).href;
+if(on)openShell(abs,true);else location.href=abs;
+};
 window.addEventListener('click',function(e){
 if(!on||e.defaultPrevented||e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
 var a=e.target&&e.target.closest?e.target.closest('a[href]'):null;
 if(!pageLink(a))return;
 e.preventDefault();
-if(frame){try{history.replaceState({wpnx:1},'',a.href);}catch(x){}frame.src=a.href;}
-else openShell(a.href,true);
+if(frame&&pending){
+try{history.replaceState({wpnx:cur},'',a.href);}catch(x){}
+load(a.href);
+}else openShell(a.href,true);
 });
 window.addEventListener('popstate',function(e){
-var s=e.state&&e.state.wpnx;
-if(s&&!frame)openShell(location.href,false);
-else if(!s&&frame)closeShell();
+var id=e.state&&e.state.wpnx;
+if(!id){hideShell();return;}
+if(open)ys[cur]=fy();
+cur=id;
+if(!frame){openShell(location.href,false);return;}
+var same=false;
+try{same=frame.contentWindow.location.href===location.href;}catch(x){}
+if(same){if(!open){pending=true;reveal();}return;}
+if(!open){pending=true;frame.style.visibility='hidden';frame.style.display='';setTimeout(reveal,4000);}
+wantY=ys[id]||0;
+load(location.href);
 });
 try{if(history.state&&history.state.wpnx)history.replaceState(null,'',location.href);}catch(e){}
 addEventListener('beforeprint',function(){
-if(!frame)return;
+if(!open)return;
 try{frame.style.height=frame.contentDocument.documentElement.scrollHeight+'px';}catch(e){}
 document.documentElement.classList.add('wpnxprint');});
 addEventListener('afterprint',function(){

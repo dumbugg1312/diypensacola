@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; media-src https://wpnx.org; img-src 'self' data: https://diypensacola.goatcounter.com; font-src https://fonts.gstatic.com; connect-src 'self' https://diypensacola.goatcounter.com; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-qWzf7eMFXpX6Z6Cv8MMeh6y1+PKatDHwCbE84IAqJLE='">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; media-src https://wpnx.org; img-src 'self' data: https://diypensacola.goatcounter.com; font-src https://fonts.gstatic.com; connect-src 'self' https://diypensacola.goatcounter.com; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-q4tcrNRMxx4BNEy2huYtD4T3Xev5+Vma/uE2XNEnLv8='">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>search the scene · DIYPensacola</title>
 <meta name="description" content="Search the whole DIYPensacola record: 1625 past DIY and punk shows, 2650 bands and acts, and 99 venues in Pensacola, FL across 23 years, with a flyer wall and browsable bands and venues.">
@@ -630,7 +630,7 @@ if(vw)vw.addEventListener('click',function(){if(scope!=='all')return;setView(tru
 if(lucky)lucky.addEventListener('click',function(){
 var ok=[];DATASETS[scope].rows.forEach(function(r){if(!match(r))return;
 var a=r.el.querySelector('strong a');if(a)ok.push(a.getAttribute('href'));});
-if(ok.length)location.href=ok[Math.floor(Math.random()*ok.length)];});
+if(ok.length)(window.__wpnxGo||function(u){location.href=u;})(ok[Math.floor(Math.random()*ok.length)]);});
 (function(){
 if(!allExtras)return;
 var _scf=null;
