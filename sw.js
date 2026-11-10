@@ -1,7 +1,7 @@
-var CACHE='diypensacola-18a54cacb0e0';
+var CACHE='diypensacola-af4e5d5c8126';
 var FONTS='diypensacola-fonts';
 var SHELL=["./", "offline.html", "style.css", "logo-hdr.webp", "favicon-48.png", "manifest.webmanifest", "flag.js"];
-var PRECACHE=["flyers/thumbs/2026-11-09_handlebar_jazz-night.webp", "flyers/thumbs/2026-11-10_handlebar_daisychain.webp", "flyers/thumbs/2026-11-11_309_fuckin-nothin.webp", "flyers/thumbs/2026-11-12_handlebar_gnarled.webp", "flyers/thumbs/2026-11-13_pacific-kava-bar_renee-arozqueta.webp", "flyers/thumbs/2026-11-13_bettys_bettys-fest-2-night-1.webp", "flyers/thumbs/2026-11-14_309_night-on-the-tracks-the-art-of-protest.webp", "flyers/thumbs/2026-11-14_bettys_bettys-fest-2-night-2.webp", "flyers/thumbs/2026-11-14_handlebar_chrissy-chlapecka.webp"];
+var PRECACHE=["flyers/thumbs/2026-11-09_handlebar_jazz-night.webp", "flyers/thumbs/2026-11-10_handlebar_daisychain.webp", "flyers/thumbs/2026-11-11_309_fuckin-nothin.webp", "flyers/thumbs/2026-11-11_bettys_7-7-pnx.webp", "flyers/thumbs/2026-11-12_handlebar_gnarled.webp", "flyers/thumbs/2026-11-13_pacific-kava-bar_renee-arozqueta.webp", "flyers/thumbs/2026-11-13_bettys_bettys-fest-2-night-1.webp", "flyers/thumbs/2026-11-14_309_night-on-the-tracks-the-art-of-protest.webp", "flyers/thumbs/2026-11-14_bettys_bettys-fest-2-night-2.webp", "flyers/thumbs/2026-11-15_handlebar_i-set-my-friends-on-fire.webp"];
 var NAV_WAIT=3000;
 var ASSET_WAIT=1500;
 var slowAt=0;

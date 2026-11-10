@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola: Dot Dot Curve :)
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-17-downtown-music-hall-bunny-the-bear-dot-dot-curve@diypensacol
+ a
+DTSTAMP:20261109T000000Z
+SEQUENCE:7438385
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:Bunny The Bear\, Dot Dot Curve :) @ Downtown Music Hall (time TBA)
+DESCRIPTION:Bunny The Bear\, Dot Dot Curve :)\ntime not listed\, check the 
+ venue\nhttps://diypensacola.com/s/2026-12-17-downtown-music-hall-bunny-the
+ -bear-dot-dot-curve.html\n\nBunny The Bear 15 year anniversary tour\, Dec 
+ 17 at @downtown_music_hall\n\n@thebunnythebear @wristmeetsrazorbooking
+LOCATION:Downtown Music Hall
+URL:https://diypensacola.com/s/2026-12-17-downtown-music-hall-bunny-the-bea
+ r-dot-dot-curve.html
+END:VEVENT
+END:VCALENDAR

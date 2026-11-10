@@ -409,6 +409,19 @@ URL:https://diypensacola.com/s/2026-11-11-309-fuckin-nothin-horse-breakfast
  .html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-11-bettys-7-7-pnx@diypensacola
+DTSTAMP:20261109T000000Z
+SEQUENCE:10717622
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:7.7 PNX @ Betty’s (time TBA)
+DESCRIPTION:7.7 PNX\ntime not listed\, check the venue\nhttps://diypensacol
+ a.com/s/2026-11-11-bettys-7-7-pnx.html\n\n7.7 PNX Nov 11 at @bettys_on_bel
+ mont
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-11-bettys-7-7-pnx.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-12-handlebar-gnarled-wynter@diypensacola
 DTSTAMP:20261030T000000Z
 SEQUENCE:15426356
@@ -785,6 +798,22 @@ DESCRIPTION:Rickshaw Billie’s Burger Patrol\ntime not listed\, check the
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-17-handlebar-rickshaw-billies-burger
  -patrol.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-17-downtown-music-hall-bunny-the-bear-dot-dot-curve@diypensacol
+ a
+DTSTAMP:20261109T000000Z
+SEQUENCE:7438385
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:Bunny The Bear\, Dot Dot Curve :) @ Downtown Music Hall (time TBA)
+DESCRIPTION:Bunny The Bear\, Dot Dot Curve :)\ntime not listed\, check the 
+ venue\nhttps://diypensacola.com/s/2026-12-17-downtown-music-hall-bunny-the
+ -bear-dot-dot-curve.html\n\nBunny The Bear 15 year anniversary tour\, Dec 
+ 17 at @downtown_music_hall\n\n@thebunnythebear @wristmeetsrazorbooking
+LOCATION:Downtown Music Hall
+URL:https://diypensacola.com/s/2026-12-17-downtown-music-hall-bunny-the-bea
+ r-dot-dot-curve.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-18-handlebar-whitmer-thomas@diypensacola
