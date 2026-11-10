@@ -8,6 +8,7 @@ var done=false;
 function go(){
 var g=window.goatcounter;if(done||!g||!g.count)return;
 done=true;
+try{if(window.frameElement&&window.frameElement.id==='wpnxframe')g.allow_frame=true;}catch(e){}
 var of=g.filter;
 if(of)g.filter=function(){try{return of.apply(this,arguments);}catch(e){return false;}};
 if(!('visibilityState' in document)||document.visibilityState==='visible')g.count();
@@ -287,4 +288,172 @@ else if(d===day&&!a.classList.contains('tonight')){a.classList.add('tonight');if
 mark();
 document.addEventListener('visibilitychange',function(){if(!document.hidden)mark();});
 addEventListener('pageshow',function(e){if(e.persisted)mark();});
+})();
+(function(){
+var bar=document.querySelector('.modebar');
+if(!bar||!window.Audio||bar.querySelector('.wpnx'))return;
+var STREAM='https://wpnx.org/api/stream',KEY='wpnx';
+var home=bar.querySelector('a.modetab'),ROOT=home?home.href:location.href;
+var host=null;
+try{var fe=window.frameElement;if(fe&&fe.id==='wpnxframe'&&window.parent.__wpnx)host=window.parent.__wpnx;}catch(e){}
+var chip=document.createElement('button');
+chip.type='button';chip.className='wpnx';
+chip.innerHTML='<svg viewBox="0 0 10 10" aria-hidden="true"><path class="wpl" d="M1.5 .5l8 4.5-8 4.5z"/>'
++'<path class="wpz" d="M1.5 .8h2.6v8.4H1.5zM5.9 .8h2.6v8.4H5.9z"/></svg>'
++'<span><span class="wcall">WPNX </span>107.7</span>';
+bar.appendChild(chip);
+var on=false,wait=false,armed=false,audio=null,loading=false,fails=0,retry=0,armT=0,frame=null,tick=0,title0='';
+function paint(){
+chip.classList.toggle('on',on&&!wait);
+chip.classList.toggle('wait',wait||armed);
+chip.setAttribute('aria-pressed',on?'true':'false');
+chip.setAttribute('aria-label',(on?'pause':'play')+' WPNX 107.7, free radio pensacola, live');
+chip.title=on?'pause WPNX 107.7':'play WPNX 107.7, free radio pensacola, live';
+if(frame){try{var w=frame.contentWindow;if(w&&w.__wpnxPaint)w.__wpnxPaint(on,wait);}catch(e){}}
+}
+function ytface(e){
+var a=e.target&&e.target.closest?e.target.closest('a.ytface[data-yt]'):null;
+return a&&!(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button);
+}
+if(host){
+window.__wpnxPaint=function(o,w){on=o;wait=w;paint();};
+window.__wpnx={stop:function(){host.stop();}};
+var s=host.state();on=s[0];wait=s[1];paint();
+chip.addEventListener('click',function(){host.toggle();});
+document.addEventListener('click',function(e){
+if(ytface(e)){host.stop();return;}
+var a=e.target&&e.target.closest?e.target.closest('a[href]'):null;
+if(a&&!a.target&&(a.protocol==='http:'||a.protocol==='https:')&&a.origin!==location.origin)a.target='_top';
+},true);
+return;
+}
+function flag(v){try{if(v)sessionStorage.setItem(KEY,String(Date.now()));else sessionStorage.removeItem(KEY);}catch(e){}}
+var GEST=['click','keydown','touchend'];
+function regest(e){
+if(e.target&&chip.contains(e.target)){disarm();return;}
+start();
+}
+function disarm(){
+if(!armed)return;armed=false;clearTimeout(armT);
+GEST.forEach(function(t){document.removeEventListener(t,regest,true);});
+}
+function arm(){
+if(armed)return;armed=true;
+GEST.forEach(function(t){document.addEventListener(t,regest,true);});
+armT=setTimeout(function(){disarm();paint();},120000);
+}
+function again(){
+if(!on||retry)return;
+if(++fails>3){stop();return;}
+wait=true;paint();
+retry=setTimeout(function(){retry=0;if(on)start();},1500*fails);
+}
+function meta(){
+var ms=navigator.mediaSession;if(!ms||!window.MediaMetadata)return;
+try{
+ms.metadata=new MediaMetadata({title:'WPNX 107.7',artist:'Free Radio Pensacola',album:'live',
+artwork:[{src:new URL('icon-512.png',ROOT).href,sizes:'512x512',type:'image/png'}]});
+ms.setActionHandler('play',start);ms.setActionHandler('pause',stop);
+}catch(e){}
+}
+function start(){
+disarm();
+if(!audio){
+audio=new Audio();audio.preload='none';
+audio.addEventListener('playing',function(){loading=false;fails=0;if(on){wait=false;paint();}});
+audio.addEventListener('waiting',function(){if(on){wait=true;paint();}});
+audio.addEventListener('pause',function(){if(on&&!loading&&!audio.ended)stop();});
+audio.addEventListener('error',again);
+audio.addEventListener('ended',again);
+}
+on=true;wait=true;loading=true;paint();
+audio.src=STREAM;
+var p=audio.play();
+if(p&&p.catch)p.catch(function(err){
+loading=false;
+if(!on)return;
+if(err&&err.name==='NotAllowedError'){on=false;wait=false;arm();paint();}
+else if(!err||err.name!=='AbortError')again();
+});
+meta();
+}
+function stop(){
+on=false;wait=false;loading=false;fails=0;clearTimeout(retry);retry=0;disarm();
+if(audio){audio.pause();audio.removeAttribute('src');try{audio.load();}catch(e){}}
+paint();
+}
+function toggle(){if(on)stop();else start();}
+chip.addEventListener('click',toggle);
+window.__wpnx={toggle:toggle,stop:stop,state:function(){return [on,wait];}};
+document.addEventListener('click',function(e){if(on&&ytface(e))stop();},true);
+function pageLink(a){
+if(!a||a.hasAttribute('download')||(a.target&&a.target!=='_self'))return false;
+if(a.protocol!=='http:'&&a.protocol!=='https:')return false;
+var p=a.pathname||'';
+if(a.origin!==location.origin||!(p.slice(-1)==='/'||p.slice(-5)==='.html'))return false;
+return !(p===location.pathname&&a.search===location.search&&a.hash);
+}
+function sync(){
+if(!frame)return;var u,t;
+try{u=frame.contentWindow.location.href;t=frame.contentDocument.title;}catch(e){return;}
+if(!u||u==='about:blank')return;
+if(u!==location.href){try{history.replaceState({wpnx:1},'',u);}catch(e){}}
+if(t&&t!==document.title)document.title=t;
+}
+function reveal(){
+if(!frame||frame.style.visibility!=='hidden')return;
+frame.style.visibility='';
+document.documentElement.classList.add('wpnxshell');
+[].forEach.call(document.body.children,function(el){if(el!==frame)el.inert=true;});
+try{frame.contentWindow.focus();}catch(e){}
+}
+function openShell(url,push){
+if(push){try{history.pushState({wpnx:1},'',url);}catch(e){location.href=url;return;}}
+title0=title0||document.title;
+frame=document.createElement('iframe');
+frame.id='wpnxframe';frame.title='diypensacola';
+frame.setAttribute('allow','autoplay; fullscreen; encrypted-media; picture-in-picture; web-share; clipboard-write');
+frame.setAttribute('allowfullscreen','');
+frame.style.visibility='hidden';
+frame.addEventListener('load',function(){reveal();sync();paint();});
+frame.src=url;
+document.body.appendChild(frame);
+setTimeout(reveal,4000);
+tick=setInterval(sync,500);
+}
+function closeShell(){
+if(!frame)return;
+clearInterval(tick);tick=0;
+if(frame.parentNode)frame.parentNode.removeChild(frame);
+frame=null;
+document.documentElement.classList.remove('wpnxshell');
+[].forEach.call(document.body.children,function(el){el.inert=false;});
+if(title0)document.title=title0;
+}
+window.addEventListener('click',function(e){
+if(!on||e.defaultPrevented||e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+var a=e.target&&e.target.closest?e.target.closest('a[href]'):null;
+if(!pageLink(a))return;
+e.preventDefault();
+if(frame){try{history.replaceState({wpnx:1},'',a.href);}catch(x){}frame.src=a.href;}
+else openShell(a.href,true);
+});
+window.addEventListener('popstate',function(e){
+var s=e.state&&e.state.wpnx;
+if(s&&!frame)openShell(location.href,false);
+else if(!s&&frame)closeShell();
+});
+try{if(history.state&&history.state.wpnx)history.replaceState(null,'',location.href);}catch(e){}
+addEventListener('beforeprint',function(){
+if(!frame)return;
+try{frame.style.height=frame.contentDocument.documentElement.scrollHeight+'px';}catch(e){}
+document.documentElement.classList.add('wpnxprint');});
+addEventListener('afterprint',function(){
+if(!frame)return;
+frame.style.height='';document.documentElement.classList.remove('wpnxprint');});
+addEventListener('pagehide',function(){if(on)flag(1);});
+addEventListener('pageshow',function(e){if(e.persisted&&on&&audio&&audio.paused)stop();});
+var t0=0;
+try{t0=+sessionStorage.getItem(KEY)||0;sessionStorage.removeItem(KEY);}catch(e){}
+if(t0&&Date.now()-t0<15000)start();
 })();
