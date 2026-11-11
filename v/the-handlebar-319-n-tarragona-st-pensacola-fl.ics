@@ -274,6 +274,20 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-18-handlebar-whitmer-thomas.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-19-handlebar-five-eight-heavy-kid@diypensacola
+DTSTAMP:20261111T000000Z
+SEQUENCE:6603916
+DTSTART;TZID=America/Chicago:20261219T190000
+DTEND;TZID=America/Chicago:20261219T230000
+SUMMARY:Five Eight\, Heavy Kid\, The Bottoms @ The Handlebar
+DESCRIPTION:Five Eight\, Heavy Kid\, The Bottoms\ndoors 7pm / show 8pm\nhtt
+ ps://diypensacola.com/s/2026-12-19-handlebar-five-eight-heavy-kid.html\n\n
+ Heavy Holiday Hoedown Dec 19 at @thehandlebar850 🖤\n\n@heavy_kid_band
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-19-handlebar-five-eight-heavy-kid.ht
+ ml
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-22-handlebar-ty-thomas-benefit-show-goodwin-rainer@diypensacola
 DTSTAMP:20261103T000000Z
 SEQUENCE:6857215
@@ -318,6 +332,22 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2027-01-17-handlebar-colour-revolt.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-19-handlebar-adjust-the-sails-thoughts-on-bowling@diypensacola
+DTSTAMP:20261111T000000Z
+SEQUENCE:9928088
+DTSTART;TZID=America/Chicago:20270119T180000
+DTEND;TZID=America/Chicago:20270119T220000
+SUMMARY:Adjust The Sails\, Thoughts On Bowling\, We Hate Rowan @ The Handle
+ bar
+DESCRIPTION:Adjust The Sails\, Thoughts On Bowling\, We Hate Rowan\ndoors 6
+ pm / show 7pm\nhttps://diypensacola.com/s/2027-01-19-handlebar-adjust-the-
+ sails-thoughts-on-bowling.html\n\nAdjust The Sails and Thoughts On Bowling
+ \, Jan 19 at @thehandlebar850
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-01-19-handlebar-adjust-the-sails-though
+ ts-on-bowling.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-24-handlebar-silverada@diypensacola
 DTSTAMP:20261020T000000Z
 SEQUENCE:5908435
@@ -354,6 +384,20 @@ DESCRIPTION:Nervosa\, Embryonic Autopsy\ndoors 6pm / show 7pm\nhttps://diyp
   autopsy at the handlebar\, wednesday february 10th. doors 6pm.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2027-02-10-handlebar-nervosa.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-16-handlebar-opal-in-sky-cyborg-octopus@diypensacola
+DTSTAMP:20261111T000000Z
+SEQUENCE:15915986
+DTSTART;TZID=America/Chicago:20270216T190000
+DTEND;TZID=America/Chicago:20270216T230000
+SUMMARY:Opal In Sky\, Cyborg Octopus\, Fervence @ The Handlebar
+DESCRIPTION:Opal In Sky\, Cyborg Octopus\, Fervence\ndoors 7pm / show 8pm\n
+ https://diypensacola.com/s/2027-02-16-handlebar-opal-in-sky-cyborg-octopus
+ .html\n\nOpal In Sky Feb 16 at @thehandlebar850
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-02-16-handlebar-opal-in-sky-cyborg-octo
+ pus.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-18-handlebar-earth-to-eve@diypensacola
@@ -400,6 +444,20 @@ URL:https://diypensacola.com/s/2027-03-01-handlebar-haywire-dark-thoughts.h
  tml
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-03-09-handlebar-wild-pink-why-bonnie@diypensacola
+DTSTAMP:20261111T000000Z
+SEQUENCE:4559107
+DTSTART;TZID=America/Chicago:20270309T190000
+DTEND;TZID=America/Chicago:20270309T223000
+SUMMARY:Wild Pink\, Why Bonnie @ The Handlebar
+DESCRIPTION:Wild Pink\, Why Bonnie\ndoors 7pm / show 7:30pm\nhttps://diypen
+ sacola.com/s/2027-03-09-handlebar-wild-pink-why-bonnie.html\n\nWild Pink M
+ ar 9 at @thehandlebar850
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-03-09-handlebar-wild-pink-why-bonnie.ht
+ ml
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-03-29-handlebar-marbin@diypensacola
 DTSTAMP:20261105T000000Z
 SEQUENCE:15842712
@@ -410,5 +468,20 @@ DESCRIPTION:Marbin\ndoors 6pm / show 7pm\nhttps://diypensacola.com/s/2027-0
  3-29-handlebar-marbin.html\n\nMarbin Mar 29 at @thehandlebar850
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2027-03-29-handlebar-marbin.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-05-handlebar-the-menzingers-hot-water-music@diypensacola
+DTSTAMP:20261111T000000Z
+SEQUENCE:2316834
+DTSTART;TZID=America/Chicago:20270505T180000
+DTEND;TZID=America/Chicago:20270505T220000
+SUMMARY:The Menzingers\, Hot Water Music\, Weakened Friends @ The Handlebar
+DESCRIPTION:The Menzingers\, Hot Water Music\, Weakened Friends\ndoors 6pm 
+ / show 7pm\nhttps://diypensacola.com/s/2027-05-05-handlebar-the-menzingers
+ -hot-water-music.html\n\nThe Menzingers and Hot Water Music\, May 5 at @th
+ ehandlebar850!
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-05-05-handlebar-the-menzingers-hot-wate
+ r-music.html
 END:VEVENT
 END:VCALENDAR
