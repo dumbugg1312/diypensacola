@@ -302,6 +302,10 @@ chip.innerHTML='<svg viewBox="0 0 10 10" aria-hidden="true"><path class="wpl" d=
 +'<path class="wpz" d="M1.5 .8h2.6v8.4H1.5zM5.9 .8h2.6v8.4H5.9z"/></svg>'
 +'<span><span class="wcall">WPNX </span>107.7</span>';
 bar.appendChild(chip);
+document.addEventListener('click',function(e){
+var b=e.target&&e.target.closest?e.target.closest('.onair'):null;
+if(b){e.preventDefault();chip.click();}
+});
 var on=false,wait=false,armed=false,audio=null,loading=false,fails=0,retry=0,armT=0,frame=null,open=false,pending=false,nav=false,tick=0,title0='',seq=0,cur=0,ys={},wantY=null;
 function paint(){
 chip.classList.toggle('on',on&&!wait);
@@ -309,6 +313,9 @@ chip.classList.toggle('wait',wait||armed);
 chip.setAttribute('aria-pressed',on?'true':'false');
 chip.setAttribute('aria-label',(on?'pause':'play')+' WPNX 107.7, free radio pensacola, live');
 chip.title=on?'pause WPNX 107.7':'play WPNX 107.7, free radio pensacola, live';
+var oa=document.querySelectorAll('.onair');
+for(var i=0;i<oa.length;i++){oa[i].classList.toggle('on',on&&!wait);oa[i].classList.toggle('wait',wait||armed);
+oa[i].setAttribute('aria-pressed',on?'true':'false');oa[i].lastChild.textContent=on?'pause':'listen live';}
 if(frame){try{var w=frame.contentWindow;if(w&&w.__wpnxPaint)w.__wpnxPaint(on,wait);}catch(e){}}
 }
 function ytface(e){
