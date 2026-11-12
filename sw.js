@@ -1,4 +1,4 @@
-var CACHE='diypensacola-736cfc408d08';
+var CACHE='diypensacola-524dc928a744';
 var FONTS='diypensacola-fonts';
 var SHELL=["./", "offline.html", "style.css", "logo-hdr.webp", "favicon-48.png", "manifest.webmanifest", "flag.js"];
 var PRECACHE=["flyers/thumbs/2026-11-12_handlebar_gnarled.webp", "flyers/thumbs/2026-11-13_pacific-kava-bar_renee-arozqueta.webp", "flyers/thumbs/2026-11-13_bettys_bettys-fest-2-night-1.webp", "flyers/thumbs/2026-11-14_309_night-on-the-tracks-the-art-of-protest.webp", "flyers/thumbs/2026-11-14_bettys_bettys-fest-2-night-2.webp", "flyers/thumbs/2026-11-14_handlebar_chrissy-chlapecka.webp", "flyers/thumbs/2026-11-15_handlebar_i-set-my-friends-on-fire.webp", "flyers/thumbs/2026-11-17_handlebar_little-image.webp", "flyers/thumbs/2026-11-18_handlebar_wayne-hancock.webp", "flyers/thumbs/2026-11-19_handlebar_katie-dineen.webp", "flyers/thumbs/2026-11-20_handlebar_freddy-todd.webp"];
