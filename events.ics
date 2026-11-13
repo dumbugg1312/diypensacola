@@ -23,50 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-29-handlebar-the-linda-lindas@diypensacola
-DTSTAMP:20260826T000000Z
-SEQUENCE:8129454
-DTSTART;TZID=America/Chicago:20261029T183000
-DTEND;TZID=America/Chicago:20261029T213000
-SUMMARY:The Linda Lindas @ The Handlebar
-DESCRIPTION:The Linda Lindas\n6:30pm\nhttps://diypensacola.com/s/2026-10-29
- -handlebar-the-linda-lindas.html\n\nthe linda lindas at the handlebar. thu
- rsday oct 29\, 6:30pm. part of hallozine fest\, presented by 309 punk proj
- ect and foo foo fest. tickets at thehandlebar850.com.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-29-handlebar-the-linda-lindas.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-29-bettys-dj-be@diypensacola
-DTSTAMP:20261025T000000Z
-SEQUENCE:14501646
-DTSTART;TZID=America/Chicago:20261029T200000
-DTEND;TZID=America/Chicago:20261029T220000
-SUMMARY:DJ Be @ Betty’s
-DESCRIPTION:DJ Be\n8-10ish\nfree\nhttps://diypensacola.com/s/2026-10-29-bet
- tys-dj-be.html\n\nDJ Be Oct 29 at @bettys_on_belmont\, free hip hop night!
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-29-bettys-dj-be.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-29-voices-of-pensacola-multicultural-center-2nd-annual-hallozin
- e-fest@diypensacola
-DTSTAMP:20260826T000000Z
-SEQUENCE:6580113
-DTSTART;VALUE=DATE:20261029
-DTEND;VALUE=DATE:20261030
-SUMMARY:2nd Annual HalloZine Fest @ Voices of Pensacola Multicultural Cente
- r (time TBA)
-DESCRIPTION:2nd Annual HalloZine Fest\ntime not listed\, check the venue\nh
- ttps://diypensacola.com/s/2026-10-29-voices-of-pensacola-multicultural-cen
- ter-2nd-annual-hallozine-fest.html\n\n2nd annual hallozine fest. voices of
-  pensacola multicultural center\, october 29 and 30. zine market\, exhibit
- ions\, keynote speakers\, movies. save the date.
-LOCATION:Voices of Pensacola Multicultural Center
-URL:https://diypensacola.com/s/2026-10-29-voices-of-pensacola-multicultural
- -center-2nd-annual-hallozine-fest.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-30-j-u-s-t-giant-robot-martin-wong@diypensacola
 DTSTAMP:20261025T000000Z
 SEQUENCE:2649932
@@ -627,11 +583,12 @@ DTSTAMP:20261021T000000Z
 SEQUENCE:16528464
 DTSTART;TZID=America/Chicago:20261206T180000
 DTEND;TZID=America/Chicago:20261206T213000
-SUMMARY:The Crimson Armada\, Spiral\, Wraithbearer +1 @ The Handlebar
-DESCRIPTION:The Crimson Armada\, Spiral\, Wraithbearer\, Knives\ndoors 6pm 
- / music 6:30pm\n$17 adv / $20 door\nhttps://diypensacola.com/s/2026-12-06-
- handlebar-the-crimson-armada-spiral.html\n\nThe Crimson Armada Dec 6 at @t
- hehandlebar850 ⛓️\n\n@spiral.nwfl @wraithbearer
+SUMMARY:The Crimson Armada\, Thus Spoke Zarathustra\, Wraithbearer +1 @ The
+  Handlebar
+DESCRIPTION:The Crimson Armada\, Thus Spoke Zarathustra\, Wraithbearer\, Kn
+ ives\ndoors 6pm / music 6:30pm\n$17 adv / $20 door\nhttps://diypensacola.c
+ om/s/2026-12-06-handlebar-the-crimson-armada-spiral.html\n\nThe Crimson Ar
+ mada Dec 6 at @thehandlebar850 ⛓️\n\n@spiral.nwfl @wraithbearer
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-06-handlebar-the-crimson-armada-spir
  al.html

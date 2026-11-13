@@ -40,17 +40,4 @@ DESCRIPTION:Betty’s Fest 2 Night 2\, The Void Winds\, DJ Balance Universa
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-14-bettys-bettys-fest-2-night-2.html
 END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-12-handlebar-gnarled-wynter@diypensacola
-DTSTAMP:20261030T000000Z
-SEQUENCE:15426356
-DTSTART;TZID=America/Chicago:20261112T190000
-DTEND;TZID=America/Chicago:20261112T220000
-SUMMARY:Gnarled\, Wynter\, Cursed Body @ The Handlebar
-DESCRIPTION:Gnarled\, Wynter\, Cursed Body\n7PM\nhttps://diypensacola.com/s
- /2026-11-12-handlebar-gnarled-wynter.html\n\nGnarled Nov 12 at @thehandleb
- ar850!\n\n@gnarledofficial @wynter_officialmusic @cursedbodyband
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-12-handlebar-gnarled-wynter.html
-END:VEVENT
 END:VCALENDAR
