@@ -23,66 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-30-j-u-s-t-giant-robot-martin-wong@diypensacola
-DTSTAMP:20261025T000000Z
-SEQUENCE:2649932
-DTSTART;TZID=America/Chicago:20261030T160000
-DTEND;TZID=America/Chicago:20261030T190000
-SUMMARY:Giant Robot\, Martin Wong @ J.U.S.T.
-DESCRIPTION:Giant Robot\, Martin Wong\ndoors 4pm\nhttps://diypensacola.com/
- s/2026-10-30-j-u-s-t-giant-robot-martin-wong.html\n\nGiant Robot screening
-  Oct 30\, part of HalloZine Fest!
-LOCATION:J.U.S.T.
-URL:https://diypensacola.com/s/2026-10-30-j-u-s-t-giant-robot-martin-wong.h
- tml
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-handlebar-wynter-lesion@diypensacola
-DTSTAMP:20261024T000000Z
-SEQUENCE:864735
-DTSTART;TZID=America/Chicago:20261030T190000
-DTEND;TZID=America/Chicago:20261030T220000
-SUMMARY:Wynter\, Lesion\, Power Bomb +1 @ The Handlebar
-DESCRIPTION:Wynter\, Lesion\, Power Bomb\, Spidershed\n7:00pm\nhttps://diyp
- ensacola.com/s/2026-10-30-handlebar-wynter-lesion.html\n\nWynter Oct 30 at
-  @thehandlebar850!\n\n@wynter_officialmusic @lesion_bandfl @powerbombfl @s
- pidershed.nwfl
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-30-handlebar-wynter-lesion.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-bettys-sinners-on-the-block-dj-hale@diypensacola
-DTSTAMP:20261028T000000Z
-SEQUENCE:10671399
-DTSTART;TZID=America/Chicago:20261030T200000
-DTEND;TZID=America/Chicago:20261030T230000
-SUMMARY:Sinners on the Block\, DJ Hale\, Hazedapoet @ Betty’s
-DESCRIPTION:Sinners on the Block\, DJ Hale\, Hazedapoet\n8pm\nhttps://diype
- nsacola.com/s/2026-10-30-bettys-sinners-on-the-block-dj-hale.html\n\nSinne
- rs on the Block this Friday at @bettys_on_belmont 🖤\n@djhale__
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-30-bettys-sinners-on-the-block-dj-ha
- le.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-voices-of-pensacola-multicultural-center-2nd-annual-hallozin
- e-fest@diypensacola
-DTSTAMP:20260914T000000Z
-SEQUENCE:7063813
-DTSTART;VALUE=DATE:20261030
-DTEND;VALUE=DATE:20261031
-SUMMARY:2nd Annual HalloZine Fest @ Voices of Pensacola Multicultural Cente
- r (time TBA)
-DESCRIPTION:2nd Annual HalloZine Fest\ntime not listed\, check the venue\nh
- ttps://diypensacola.com/s/2026-10-30-voices-of-pensacola-multicultural-cen
- ter-2nd-annual-hallozine-fest.html\n\n2nd annual hallozine fest\, day two.
-  voices of pensacola multicultural center\, friday october 30. zine market
- \, exhibitions\, keynote speakers\, movies.
-LOCATION:Voices of Pensacola Multicultural Center
-URL:https://diypensacola.com/s/2026-10-30-voices-of-pensacola-multicultural
- -center-2nd-annual-hallozine-fest.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-31-handlebar-nuovo-testamento-night-sins@diypensacola
 DTSTAMP:20260826T000000Z
 SEQUENCE:14539170
@@ -580,15 +520,15 @@ END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-06-handlebar-the-crimson-armada-spiral@diypensacola
 DTSTAMP:20261021T000000Z
-SEQUENCE:16528464
+SEQUENCE:10320299
 DTSTART;TZID=America/Chicago:20261206T180000
-DTEND;TZID=America/Chicago:20261206T213000
+DTEND;TZID=America/Chicago:20261206T220000
 SUMMARY:The Crimson Armada\, Thus Spoke Zarathustra\, Wraithbearer +1 @ The
   Handlebar
 DESCRIPTION:The Crimson Armada\, Thus Spoke Zarathustra\, Wraithbearer\, Kn
- ives\ndoors 6pm / music 6:30pm\n$17 adv / $20 door\nhttps://diypensacola.c
- om/s/2026-12-06-handlebar-the-crimson-armada-spiral.html\n\nThe Crimson Ar
- mada Dec 6 at @thehandlebar850 ⛓️\n\n@spiral.nwfl @wraithbearer
+ ives\ndoors 6pm / show 7pm\n$17 adv / $20 door\nhttps://diypensacola.com/s
+ /2026-12-06-handlebar-the-crimson-armada-spiral.html\n\nThe Crimson Armada
+  Dec 6 at @thehandlebar850 ⛓️\n\n@spiral.nwfl @wraithbearer
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-06-handlebar-the-crimson-armada-spir
  al.html
