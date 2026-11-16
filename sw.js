@@ -1,4 +1,4 @@
-var CACHE='diypensacola-65ad889480ab';
+var CACHE='diypensacola-24e5ead021b1';
 var FONTS='diypensacola-fonts';
 var SHELL=["./", "offline.html", "style.css", "logo-hdr.webp", "favicon-48.png", "manifest.webmanifest", "flag.js"];
 var PRECACHE=["flyers/thumbs/2026-11-17_handlebar_little-image.webp", "flyers/thumbs/2026-11-18_handlebar_wayne-hancock.webp", "flyers/thumbs/2026-11-19_handlebar_katie-dineen.webp", "flyers/thumbs/2026-11-20_handlebar_freddy-todd.webp", "flyers/thumbs/2026-11-21_handlebar_cremro-smith.webp", "flyers/thumbs/2026-11-21_bettys_other.webp", "flyers/thumbs/2026-11-29_pensacola-liberation-center_the-snatches.webp"];
