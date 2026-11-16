@@ -23,18 +23,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-14-309-night-on-the-tracks-the-art-of-protest@diypensacola
-DTSTAMP:20260920T000000Z
-SEQUENCE:10116102
-DTSTART;TZID=America/Chicago:20261114T180000
-DTEND;TZID=America/Chicago:20261114T210000
-SUMMARY:Night on the Tracks: The Art of Protest @ 309
-DESCRIPTION:Night on the Tracks: The Art of Protest\n6pm-9pm\nhttps://diype
- nsacola.com/s/2026-11-14-309-night-on-the-tracks-the-art-of-protest.html\n
- \nThe Art of Protest at 309 for Night on the Tracks\, saturday november 14
- th.
+UID:2026-11-21-309-outcry-alchemists-of-rage-film-screening@diypensacola
+DTSTAMP:20261116T000000Z
+SEQUENCE:15848070
+DTSTART;TZID=America/Chicago:20261121T180000
+DTEND;TZID=America/Chicago:20261121T213000
+SUMMARY:OUTCRY: Alchemists of Rage Film Screening @ 309
+DESCRIPTION:OUTCRY: Alchemists of Rage Film Screening\ndoors 6pm / film 6:3
+ 0pm\nhttps://diypensacola.com/s/2026-11-21-309-outcry-alchemists-of-rage-f
+ ilm-screening.html\n\nOUTCRY: Alchemists of Rage screening + artist Q&A No
+ v 21 at @309punkproject
 LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-14-309-night-on-the-tracks-the-art-o
- f-protest.html
+URL:https://diypensacola.com/s/2026-11-21-309-outcry-alchemists-of-rage-fil
+ m-screening.html
 END:VEVENT
 END:VCALENDAR

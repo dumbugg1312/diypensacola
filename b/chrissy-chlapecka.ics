@@ -22,17 +22,4 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-UID:2026-11-14-handlebar-chrissy-chlapecka@diypensacola
-DTSTAMP:20260826T000000Z
-SEQUENCE:12078303
-DTSTART;VALUE=DATE:20261114
-DTEND;VALUE=DATE:20261115
-SUMMARY:Chrissy Chlapecka @ The Handlebar (time TBA)
-DESCRIPTION:Chrissy Chlapecka\ntime not listed\, check the venue\nhttps://d
- iypensacola.com/s/2026-11-14-handlebar-chrissy-chlapecka.html\n\nchrissy c
- hlapecka at the handlebar. sat nov 14.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-14-handlebar-chrissy-chlapecka.html
-END:VEVENT
 END:VCALENDAR

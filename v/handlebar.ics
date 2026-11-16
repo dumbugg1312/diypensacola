@@ -23,34 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-14-handlebar-chrissy-chlapecka@diypensacola
-DTSTAMP:20260826T000000Z
-SEQUENCE:12078303
-DTSTART;VALUE=DATE:20261114
-DTEND;VALUE=DATE:20261115
-SUMMARY:Chrissy Chlapecka @ The Handlebar (time TBA)
-DESCRIPTION:Chrissy Chlapecka\ntime not listed\, check the venue\nhttps://d
- iypensacola.com/s/2026-11-14-handlebar-chrissy-chlapecka.html\n\nchrissy c
- hlapecka at the handlebar. sat nov 14.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-14-handlebar-chrissy-chlapecka.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-15-handlebar-i-set-my-friends-on-fire-set-to-stun@diypensacola
-DTSTAMP:20261030T000000Z
-SEQUENCE:13479188
-DTSTART;TZID=America/Chicago:20261115T180000
-DTEND;TZID=America/Chicago:20261115T210000
-SUMMARY:I Set My Friends on Fire\, Set To Stun\, Current Comfort @ The Hand
- lebar
-DESCRIPTION:I Set My Friends on Fire\, Set To Stun\, Current Comfort\n6PM\n
- https://diypensacola.com/s/2026-11-15-handlebar-i-set-my-friends-on-fire-s
- et-to-stun.html\n\nI Set My Friends on Fire Nov 15 at @thehandlebar850!
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-15-handlebar-i-set-my-friends-on-fir
- e-set-to-stun.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-17-handlebar-little-image@diypensacola
 DTSTAMP:20260919T000000Z
 SEQUENCE:480317

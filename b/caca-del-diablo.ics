@@ -37,4 +37,23 @@ LOCATION:The Den
 URL:https://diypensacola.com/s/2026-12-05-the-den-headcannon-caca-del-diabl
  o.html
 END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-29-pensacola-liberation-center-the-snatches-bastard-son@diypens
+ acola
+DTSTAMP:20261116T000000Z
+SEQUENCE:12271043
+DTSTART;TZID=America/Chicago:20261129T163000
+DTEND;TZID=America/Chicago:20261129T200000
+SUMMARY:The Snatches\, Bastard Son\, Conflict of Interests +2 @ Pensacola L
+ iberation Center
+DESCRIPTION:The Snatches\, Bastard Son\, Conflict of Interests\, Caca Del D
+ iablo\, Rat Daughter\ndoors 4:30pm / music 5pm\nsliding scale ($5-$10 sugg
+ ested donation)\nhttps://diypensacola.com/s/2026-11-29-pensacola-liberatio
+ n-center-the-snatches-bastard-son.html\n\nPunxacola for Palestine Nov 29 a
+ t the Liberation Center 💞\n\n@shuttlepunx @bastardsonband @conflictofin
+ terestsband @caca.del.diablo @ratdaughterband
+LOCATION:Pensacola Liberation Center
+URL:https://diypensacola.com/s/2026-11-29-pensacola-liberation-center-the-s
+ natches-bastard-son.html
+END:VEVENT
 END:VCALENDAR

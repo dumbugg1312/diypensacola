@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:DIYPensacola Shows
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-21-309-outcry-alchemists-of-rage-film-screening@diypensacola
+DTSTAMP:20261116T000000Z
+SEQUENCE:15848070
+DTSTART;TZID=America/Chicago:20261121T180000
+DTEND;TZID=America/Chicago:20261121T213000
+SUMMARY:OUTCRY: Alchemists of Rage Film Screening @ 309
+DESCRIPTION:OUTCRY: Alchemists of Rage Film Screening\ndoors 6pm / film 6:3
+ 0pm\nhttps://diypensacola.com/s/2026-11-21-309-outcry-alchemists-of-rage-f
+ ilm-screening.html\n\nOUTCRY: Alchemists of Rage screening + artist Q&A No
+ v 21 at @309punkproject
+LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-21-309-outcry-alchemists-of-rage-fil
+ m-screening.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: OUTCRY: Alchemists of Rage Film Screening @ 309
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -23,70 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-31-handlebar-nuovo-testamento-night-sins@diypensacola
-DTSTAMP:20260826T000000Z
-SEQUENCE:14539170
-DTSTART;TZID=America/Chicago:20261031T180000
-DTEND;TZID=America/Chicago:20261031T210000
-SUMMARY:Nuovo Testamento\, Night Sins\, Urban Heat +4 @ The Handlebar
-DESCRIPTION:Nuovo Testamento\, Night Sins\, Urban Heat\, Scattrbrain\, Grav
- e Chorus\, DJ Poseidon\, Kuru Remstate\ndoors 6 PM\nhttps://diypensacola.c
- om/s/2026-10-31-handlebar-nuovo-testamento-night-sins.html\n\nnuovo testam
- ento\, night sins\, urban heat\, and grave chorus at the handlebar on hall
- oween. doors at 6\, with dj poseidon and kuru remstate spinning all night.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-31-handlebar-nuovo-testamento-night-
- sins.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-31-bettys-undead-inside-ryan-pfeiffer@diypensacola
-DTSTAMP:20261029T000000Z
-SEQUENCE:6168740
-DTSTART;TZID=America/Chicago:20261031T200000
-DTEND;TZID=America/Chicago:20261031T230000
-SUMMARY:Undead Inside\, Ryan Pfeiffer\, Queen Britt +1 @ Betty’s
-DESCRIPTION:Undead Inside\, Ryan Pfeiffer\, Queen Britt\, Paul Trampe\n8pm 
- & 9:45pm\n$10\nhttps://diypensacola.com/s/2026-10-31-bettys-undead-inside-
- ryan-pfeiffer.html\n\nUndead Inside\, stand-up comedy in a haunted club th
- is Saturday at @bettys_on_belmont 💀
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-31-bettys-undead-inside-ryan-pfeiffe
- r.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-31-bettys-bettys-block-party-halloween@diypensacola
-DTSTAMP:20260918T000000Z
-SEQUENCE:9676333
-DTSTART;VALUE=DATE:20261031
-DTEND;VALUE=DATE:20261101
-SUMMARY:Betty’s Block Party: Halloween\, Lesion\, Crystal Plumage +6 @ Be
- tty’s (time TBA)
-DESCRIPTION:Betty’s Block Party: Halloween\, Lesion\, Crystal Plumage\, M
- other’s Milk\, Free Radio PNX\, DJ Balance Universal\, MyBrothaVan\, Ura
- niumwilly\, Cookies & Cake\ntime not listed\, check the venue\n$15\nhttps:
- //diypensacola.com/s/2026-10-31-bettys-bettys-block-party-halloween.html\n
- \nbetty’s block party starts on halloween\, saturday october 31st. betty
- ’s on belmont and the old bunny club next door\, two stages. bands still
-  being confirmed.
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-10-31-bettys-bettys-block-party-hallowe
- en.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-01-handlebar-scattrbrain@diypensacola
-DTSTAMP:20260827T000000Z
-SEQUENCE:7227016
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-SUMMARY:Scattrbrain @ The Handlebar (time TBA)
-DESCRIPTION:Scattrbrain\ntime not listed\, check the venue\nhttps://diypens
- acola.com/s/2026-11-01-handlebar-scattrbrain.html\n\nscattrbrain at the ha
- ndlebar\, sunday november 1st. the unwavering self doubt tour.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-01-handlebar-scattrbrain.html
-STATUS:CANCELLED
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-02-handlebar-rufus-mcblack-cavae-mundi@diypensacola
 DTSTAMP:20260914T000000Z
 SEQUENCE:710439
@@ -430,6 +366,21 @@ LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-20-bettys-valerie-sassyfras.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-21-309-outcry-alchemists-of-rage-film-screening@diypensacola
+DTSTAMP:20261116T000000Z
+SEQUENCE:15848070
+DTSTART;TZID=America/Chicago:20261121T180000
+DTEND;TZID=America/Chicago:20261121T213000
+SUMMARY:OUTCRY: Alchemists of Rage Film Screening @ 309
+DESCRIPTION:OUTCRY: Alchemists of Rage Film Screening\ndoors 6pm / film 6:3
+ 0pm\nhttps://diypensacola.com/s/2026-11-21-309-outcry-alchemists-of-rage-f
+ ilm-screening.html\n\nOUTCRY: Alchemists of Rage screening + artist Q&A No
+ v 21 at @309punkproject
+LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-21-309-outcry-alchemists-of-rage-fil
+ m-screening.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-21-handlebar-cremro-smith-aj-the-musician@diypensacola
 DTSTAMP:20261103T000000Z
 SEQUENCE:9705004
@@ -458,6 +409,25 @@ DESCRIPTION:Other\, Ihatesundays\, Conflict of Interests\, beautysleep\ndoo
  p850
 LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-21-bettys-other-ihatesundays.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-29-pensacola-liberation-center-the-snatches-bastard-son@diypens
+ acola
+DTSTAMP:20261116T000000Z
+SEQUENCE:12271043
+DTSTART;TZID=America/Chicago:20261129T163000
+DTEND;TZID=America/Chicago:20261129T200000
+SUMMARY:The Snatches\, Bastard Son\, Conflict of Interests +2 @ Pensacola L
+ iberation Center
+DESCRIPTION:The Snatches\, Bastard Son\, Conflict of Interests\, Caca Del D
+ iablo\, Rat Daughter\ndoors 4:30pm / music 5pm\nsliding scale ($5-$10 sugg
+ ested donation)\nhttps://diypensacola.com/s/2026-11-29-pensacola-liberatio
+ n-center-the-snatches-bastard-son.html\n\nPunxacola for Palestine Nov 29 a
+ t the Liberation Center 💞\n\n@shuttlepunx @bastardsonband @conflictofin
+ terestsband @caca.del.diablo @ratdaughterband
+LOCATION:Pensacola Liberation Center
+URL:https://diypensacola.com/s/2026-11-29-pensacola-liberation-center-the-s
+ natches-bastard-son.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-02-handlebar-20-watt-tombstone@diypensacola
