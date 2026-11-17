@@ -238,7 +238,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-18-handlebar-whitmer-thomas@diypensacola
 DTSTAMP:20260826T000000Z
-SEQUENCE:14814043
+SEQUENCE:8242293
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Whitmer Thomas\, Clay Tatum @ The Handlebar (time TBA)
@@ -247,6 +247,7 @@ DESCRIPTION:Whitmer Thomas\, Clay Tatum\ntime not listed\, check the venue\
  itmer thomas at the handlebar\, friday december 18th.
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-18-handlebar-whitmer-thomas.html
+STATUS:CANCELLED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-19-handlebar-five-eight-heavy-kid@diypensacola
@@ -278,6 +279,24 @@ DESCRIPTION:Ty Thomas Benefit Show\, Goodwin Rainer\, Outlook Bleak\, Stufy
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-22-handlebar-ty-thomas-benefit-show-
  goodwin-rainer.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-27-handlebar-the-thot-after-christmas-drag-show-thotberry-short
+ cake@diypensacola
+DTSTAMP:20261117T000000Z
+SEQUENCE:5956354
+DTSTART;TZID=America/Chicago:20261227T183000
+DTEND;TZID=America/Chicago:20261227T220000
+SUMMARY:The Thot After Christmas Drag Show\, Thotberry Shortcake\, Gloss +2
+  @ The Handlebar
+DESCRIPTION:The Thot After Christmas Drag Show\, Thotberry Shortcake\, Glos
+ s\, Mizz Fortune\, Fruitbat\ndoors 6:30pm\, show 7pm\n$10\nhttps://diypens
+ acola.com/s/2026-12-27-handlebar-the-thot-after-christmas-drag-show-thotbe
+ rry-shortcake.html\n\nThot After Christmas drag show Dec 27 at @thehandleb
+ ar850!\n\n@theth0tfactory
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-27-handlebar-the-thot-after-christma
+ s-drag-show-thotberry-shortcake.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-12-handlebar-big-d-and-the-kids-table-omnigone@diypensacola
