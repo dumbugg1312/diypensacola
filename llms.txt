@@ -1,4 +1,4 @@
-# DIYPensacola
+# diypensacola
 
 > Community-run archive and calendar of DIY, punk, hardcore and queer shows in
 > Pensacola, Florida. Most shows are documented from the flyer that advertised

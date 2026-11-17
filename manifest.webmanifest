@@ -1,6 +1,6 @@
 {
-  "name": "DIYPensacola: Punksacola Shows",
-  "short_name": "DIYPensacola",
+  "name": "diypensacola: punksacola shows",
+  "short_name": "diypensacola",
   "description": "Upcoming DIY and punk shows in Pensacola, FL.",
   "start_url": "./",
   "scope": "./",

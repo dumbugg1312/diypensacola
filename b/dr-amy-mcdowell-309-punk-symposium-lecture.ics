@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DIYPensacola//Shows//EN
-X-WR-CALNAME:DIYPensacola: Dr. Amy McDowell (309 Punk Symposium lecture)
+X-WR-CALNAME:diypensacola: Dr. Amy McDowell (309 Punk Symposium lecture)
 X-WR-TIMEZONE:America/Chicago
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
