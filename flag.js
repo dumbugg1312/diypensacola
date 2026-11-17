@@ -370,7 +370,7 @@ function meta(){
 var ms=navigator.mediaSession;if(!ms||!window.MediaMetadata)return;
 try{
 ms.metadata=new MediaMetadata({title:'WPNX 107.7',artist:'Free Radio Pensacola',album:'live',
-artwork:[{src:new URL('icon-512-v2.png',ROOT).href,sizes:'512x512',type:'image/png'}]});
+artwork:[{src:new URL('icon-512-v3.png',ROOT).href,sizes:'512x512',type:'image/png'}]});
 ms.setActionHandler('play',start);ms.setActionHandler('pause',stop);
 }catch(e){}
 }
