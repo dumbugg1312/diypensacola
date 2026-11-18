@@ -880,6 +880,20 @@ URL:https://diypensacola.com/s/2027-03-25-handlebar-comehelpglo-shlumpy.htm
  l
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-03-26-handlebar-comehelpglo-shlumpy@diypensacola
+DTSTAMP:20261118T000000Z
+SEQUENCE:11656739
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270327
+SUMMARY:Comehelpglo\, Shlumpy\, Comehelpmae @ The Handlebar (time TBA)
+DESCRIPTION:Comehelpglo\, Shlumpy\, Comehelpmae\ntime not listed\, check th
+ e venue\nhttps://diypensacola.com/s/2027-03-26-handlebar-comehelpglo-shlum
+ py.html\n\nComehelpglo 2nd show\, Mar 26 at @thehandlebar850
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-03-26-handlebar-comehelpglo-shlumpy.htm
+ l
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-03-29-handlebar-marbin@diypensacola
 DTSTAMP:20261105T000000Z
 SEQUENCE:15842712
