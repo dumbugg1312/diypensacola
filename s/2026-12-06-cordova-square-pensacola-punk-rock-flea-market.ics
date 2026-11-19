@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:diypensacola shows
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-06-cordova-square-pensacola-punk-rock-flea-market@diypensacola
+DTSTAMP:20261119T000000Z
+SEQUENCE:5355236
+DTSTART;TZID=America/Chicago:20261206T120000
+DTEND;TZID=America/Chicago:20261206T173000
+SUMMARY:Pensacola Punk Rock Flea Market @ Cordova Square
+DESCRIPTION:Pensacola Punk Rock Flea Market\n12pm-5:30pm\nfree\nhttps://diy
+ pensacola.com/s/2026-12-06-cordova-square-pensacola-punk-rock-flea-market.
+ html\n\nPensacola Punk Rock Flea Market Dec 6 at Cordova Square!
+LOCATION:Cordova Square
+URL:https://diypensacola.com/s/2026-12-06-cordova-square-pensacola-punk-roc
+ k-flea-market.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:today: Pensacola Punk Rock Flea Market @ Cordova Square
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
