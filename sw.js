@@ -1,7 +1,7 @@
-var CACHE='diypensacola-20e8cd8f710f';
+var CACHE='diypensacola-18cbb01af71d';
 var FONTS='diypensacola-fonts';
 var SHELL=["./", "offline.html", "style.css", "logo-hdr.webp", "flyer-soon.webp", "favicon-48.png", "manifest.webmanifest", "flag.js"];
-var PRECACHE=["flyers/thumbs/2026-11-18_handlebar_wayne-hancock.webp", "flyers/thumbs/2026-11-19_handlebar_katie-dineen.webp", "flyers/thumbs/2026-11-20_handlebar_freddy-todd.webp", "flyers/thumbs/2026-11-21_309_outcry-alchemists-of-rage-film-screening.webp", "flyers/thumbs/2026-11-21_handlebar_cremro-smith.webp", "flyers/thumbs/2026-11-21_bettys_other.webp", "flyers/thumbs/2026-11-29_pensacola-liberation-center_the-snatches.webp"];
+var PRECACHE=["flyers/thumbs/2026-11-19_handlebar_katie-dineen.webp", "flyers/thumbs/2026-11-20_handlebar_freddy-todd.webp", "flyers/thumbs/2026-11-21_309_outcry-alchemists-of-rage-film-screening.webp", "flyers/thumbs/2026-11-21_handlebar_cremro-smith.webp", "flyers/thumbs/2026-11-21_bettys_other.webp", "flyers/thumbs/2026-11-29_pensacola-liberation-center_the-snatches.webp"];
 var NAV_WAIT=3000;
 var ASSET_WAIT=1500;
 var slowAt=0;

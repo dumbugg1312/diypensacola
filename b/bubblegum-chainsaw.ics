@@ -22,4 +22,20 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-03-handlebar-bubblegum-chainsaw-lettersfromcarswell@diypensacol
+ a
+DTSTAMP:20261119T000000Z
+SEQUENCE:11877342
+DTSTART;TZID=America/Chicago:20261203T180000
+DTEND;TZID=America/Chicago:20261203T220000
+SUMMARY:Bubblegum Chainsaw\, Lettersfromcarswell\, Spidershed +1 @ The Hand
+ lebar
+DESCRIPTION:Bubblegum Chainsaw\, Lettersfromcarswell\, Spidershed\, Lesion\
+ ndoors 6pm / music 7pm\n$15\nhttps://diypensacola.com/s/2026-12-03-handleb
+ ar-bubblegum-chainsaw-lettersfromcarswell.html
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-03-handlebar-bubblegum-chainsaw-lett
+ ersfromcarswell.html
+END:VEVENT
 END:VCALENDAR

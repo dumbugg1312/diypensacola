@@ -23,19 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-18-handlebar-wayne-hancock@diypensacola
-DTSTAMP:20260919T000000Z
-SEQUENCE:8517676
-DTSTART;TZID=America/Chicago:20261118T180000
-DTEND;TZID=America/Chicago:20261118T220000
-SUMMARY:Wayne Hancock\, Nik Flagstar @ The Handlebar
-DESCRIPTION:Wayne Hancock\, Nik Flagstar\ndoors 6pm / show 7pm\nhttps://diy
- pensacola.com/s/2026-11-18-handlebar-wayne-hancock.html\n\nWayne Hancock N
- ov 18 at @thehandlebar850
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-18-handlebar-wayne-hancock.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-19-handlebar-katie-dineen-hope-given@diypensacola
 DTSTAMP:20261103T000000Z
 SEQUENCE:15021192
@@ -88,6 +75,22 @@ DESCRIPTION:20 Watt Tombstone\nshow 7pm\nhttps://diypensacola.com/s/2026-12
  dlebar850
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-02-handlebar-20-watt-tombstone.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-03-handlebar-bubblegum-chainsaw-lettersfromcarswell@diypensacol
+ a
+DTSTAMP:20261119T000000Z
+SEQUENCE:11877342
+DTSTART;TZID=America/Chicago:20261203T180000
+DTEND;TZID=America/Chicago:20261203T220000
+SUMMARY:Bubblegum Chainsaw\, Lettersfromcarswell\, Spidershed +1 @ The Hand
+ lebar
+DESCRIPTION:Bubblegum Chainsaw\, Lettersfromcarswell\, Spidershed\, Lesion\
+ ndoors 6pm / music 7pm\n$15\nhttps://diypensacola.com/s/2026-12-03-handleb
+ ar-bubblegum-chainsaw-lettersfromcarswell.html
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-03-handlebar-bubblegum-chainsaw-lett
+ ersfromcarswell.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-04-handlebar-in-her-own-words@diypensacola
