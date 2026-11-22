@@ -22,4 +22,19 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-12-pacific-kava-bar-torso-man-cletus-bean@diypensacola
+DTSTAMP:20261122T000000Z
+SEQUENCE:10277647
+DTSTART;TZID=America/Chicago:20261212T180000
+DTEND;TZID=America/Chicago:20261212T210000
+SUMMARY:Torso Man\, Cletus Bean\, Dentada @ Pacific Kava Bar
+DESCRIPTION:Torso Man\, Cletus Bean\, Dentada\n6pm\n$7\nhttps://diypensacol
+ a.com/s/2026-12-12-pacific-kava-bar-torso-man-cletus-bean.html\n\nTorso Ma
+ n from Baltimore Dec 12 at Pacific Kava\n\n@shuttlepunx @torsoman.songs @d
+ entadathebandfl
+LOCATION:Pacific Kava Bar
+URL:https://diypensacola.com/s/2026-12-12-pacific-kava-bar-torso-man-cletus
+ -bean.html
+END:VEVENT
 END:VCALENDAR

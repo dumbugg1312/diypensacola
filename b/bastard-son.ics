@@ -23,6 +23,21 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:2026-12-14-handlebar-wadeview-spidershed@diypensacola
+DTSTAMP:20261122T000000Z
+SEQUENCE:16693243
+DTSTART;TZID=America/Chicago:20261214T180000
+DTEND;TZID=America/Chicago:20261214T220000
+SUMMARY:Wadeview\, Spidershed\, Bastard Son +1 @ The Handlebar
+DESCRIPTION:Wadeview\, Spidershed\, Bastard Son\, 10\,000 Pound Manatee\ndo
+ ors 6pm / music 7pm\n$10\nhttps://diypensacola.com/s/2026-12-14-handlebar-
+ wadeview-spidershed.html\n\nWadeview from Orlando Dec 14 at @thehandlebar8
+ 50\n\n@spidershed.nwfl @bastardsonband
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-14-handlebar-wadeview-spidershed.htm
+ l
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-29-pensacola-liberation-center-the-snatches-bastard-son@diypens
  acola
 DTSTAMP:20261116T000000Z

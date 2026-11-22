@@ -23,79 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-05-bettys-daikaiju@diypensacola
-DTSTAMP:20261006T000000Z
-SEQUENCE:519555
-DTSTART;TZID=America/Chicago:20261105T190000
-DTEND;TZID=America/Chicago:20261105T230000
-SUMMARY:Daikaiju\, Safety Coffin\, Cavae Mundi @ Betty’s
-DESCRIPTION:Daikaiju\, Safety Coffin\, Cavae Mundi\ndoors 7pm / show 8pm\n$
- 15\nhttps://diypensacola.com/s/2026-11-05-bettys-daikaiju.html\n\nDaikaiju
-  vs Safety Coffin and Cavae Mundi Nov 5 at @bettys_on_belmont\, plus karao
- ke night 🖤\n@cavaemundi
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-05-bettys-daikaiju.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-06-handlebar-noiseheads-hopout@diypensacola
-DTSTAMP:20261029T000000Z
-SEQUENCE:13926770
-DTSTART;TZID=America/Chicago:20261106T190000
-DTEND;TZID=America/Chicago:20261106T230000
-SUMMARY:Noiseheads\, Hopout\, Color The Void +1 @ The Handlebar
-DESCRIPTION:Noiseheads\, Hopout\, Color The Void\, Conflict of Interests\nd
- oors 7pm / show 8pm\nhttps://diypensacola.com/s/2026-11-06-handlebar-noise
- heads-hopout.html\n\nNight Moves pre-show Nov 6 at @thehandlebar850\n\n@ho
- pout_theband @colorthevoidmusic @conflictofinterestsband
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-06-handlebar-noiseheads-hopout.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-07-handlebar-motion-city-soundtrack-colony-house@diypensacola
-DTSTAMP:20260919T000000Z
-SEQUENCE:14953818
-DTSTART;TZID=America/Chicago:20261107T150000
-DTEND;TZID=America/Chicago:20261107T180000
-SUMMARY:Motion City Soundtrack\, Colony House\, Copeland +5 @ The Handlebar
-DESCRIPTION:Motion City Soundtrack\, Colony House\, Copeland\, Lucky\, Scre
- am Out Loud\, Safety Training\, Tirra Lirra\, Lasento\n3pm\nhttps://diypen
- sacola.com/s/2026-11-07-handlebar-motion-city-soundtrack-colony-house.html
- \n\nMotion City Soundtrack outdoors at @thehandlebar850 Nov 7. Hell of a l
- ine up 🖤\n\n@screamoutloudfl @safetytrainingband @tirralirraband
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-07-handlebar-motion-city-soundtrack-
- colony-house.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-07-the-den-peace-talks-lesion@diypensacola
-DTSTAMP:20261027T000000Z
-SEQUENCE:12983365
-DTSTART;TZID=America/Chicago:20261107T180000
-DTEND;TZID=America/Chicago:20261107T220000
-SUMMARY:Peace Talks\, Lesion\, Caca Del Diablo +1 @ The Den
-DESCRIPTION:Peace Talks\, Lesion\, Caca Del Diablo\, Lament\ndoors 6pm / mu
- sic 7pm\n$10 or pwyc\nhttps://diypensacola.com/s/2026-11-07-the-den-peace-
- talks-lesion.html\n\nPeace Talks from Pittsburgh Nov 7 🖤\n\n@lesion_ban
- dfl @caca.del.diablo
-LOCATION:The Den
-URL:https://diypensacola.com/s/2026-11-07-the-den-peace-talks-lesion.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-07-bettys-nature-boys-stress-wound@diypensacola
-DTSTAMP:20261007T000000Z
-SEQUENCE:2830840
-DTSTART;TZID=America/Chicago:20261107T200000
-DTEND;TZID=America/Chicago:20261108T000000
-SUMMARY:Nature Boys\, Stress Wound\, Mother’s Milk @ Betty’s
-DESCRIPTION:Nature Boys\, Stress Wound\, Mother’s Milk\ndoors 8p / show 9
- p\n$10\nhttps://diypensacola.com/s/2026-11-07-bettys-nature-boys-stress-wo
- und.html\n\nNature Boys back from KC\, Nov 7 at @bettys_on_belmont\n@stres
- s_wound @mothersmilk.official
-LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-07-bettys-nature-boys-stress-wound.h
- tml
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-08-309-theatre-of-the-oppressed-suzanne-byam@diypensacola
 DTSTAMP:20261024T000000Z
 SEQUENCE:5435793
@@ -607,6 +534,36 @@ URL:https://diypensacola.com/s/2026-12-11-handlebar-the-casualties-bullshit
  -detector.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-12-the-den-lesion-caca-del-diablo@diypensacola
+DTSTAMP:20261122T000000Z
+SEQUENCE:13922503
+DTSTART;TZID=America/Chicago:20261212T180000
+DTEND;TZID=America/Chicago:20261212T210000
+SUMMARY:Lesion\, Caca Del Diablo\, The Snatches +1 @ The Den
+DESCRIPTION:Lesion\, Caca Del Diablo\, The Snatches\, Bitchass\ndoors 6pm\n
+ $10 pwyc\nhttps://diypensacola.com/s/2026-12-12-the-den-lesion-caca-del-di
+ ablo.html\n\nPunkmas with Lesion Dec 12 🖤\n\n@lesion_bandfl @caca.del.d
+ iablo
+LOCATION:The Den
+URL:https://diypensacola.com/s/2026-12-12-the-den-lesion-caca-del-diablo.ht
+ ml
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-pacific-kava-bar-torso-man-cletus-bean@diypensacola
+DTSTAMP:20261122T000000Z
+SEQUENCE:10277647
+DTSTART;TZID=America/Chicago:20261212T180000
+DTEND;TZID=America/Chicago:20261212T210000
+SUMMARY:Torso Man\, Cletus Bean\, Dentada @ Pacific Kava Bar
+DESCRIPTION:Torso Man\, Cletus Bean\, Dentada\n6pm\n$7\nhttps://diypensacol
+ a.com/s/2026-12-12-pacific-kava-bar-torso-man-cletus-bean.html\n\nTorso Ma
+ n from Baltimore Dec 12 at Pacific Kava\n\n@shuttlepunx @torsoman.songs @d
+ entadathebandfl
+LOCATION:Pacific Kava Bar
+URL:https://diypensacola.com/s/2026-12-12-pacific-kava-bar-torso-man-cletus
+ -bean.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-12-handlebar-serenas-fire-silenced@diypensacola
 DTSTAMP:20261108T000000Z
 SEQUENCE:3160277
@@ -620,6 +577,21 @@ DESCRIPTION:Serena’s Fire\, Silenced\, Knives\, Widow Anchor\ndoors 7pm /
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-12-handlebar-serenas-fire-silenced.h
  tml
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-14-handlebar-wadeview-spidershed@diypensacola
+DTSTAMP:20261122T000000Z
+SEQUENCE:16693243
+DTSTART;TZID=America/Chicago:20261214T180000
+DTEND;TZID=America/Chicago:20261214T220000
+SUMMARY:Wadeview\, Spidershed\, Bastard Son +1 @ The Handlebar
+DESCRIPTION:Wadeview\, Spidershed\, Bastard Son\, 10\,000 Pound Manatee\ndo
+ ors 6pm / music 7pm\n$10\nhttps://diypensacola.com/s/2026-12-14-handlebar-
+ wadeview-spidershed.html\n\nWadeview from Orlando Dec 14 at @thehandlebar8
+ 50\n\n@spidershed.nwfl @bastardsonband
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-14-handlebar-wadeview-spidershed.htm
+ l
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-17-handlebar-rickshaw-billies-burger-patrol@diypensacola
@@ -683,16 +655,16 @@ END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-22-handlebar-ty-thomas-benefit-show-goodwin-rainer@diypensacola
 DTSTAMP:20261103T000000Z
-SEQUENCE:6857215
-DTSTART;TZID=America/Chicago:20261222T190000
+SEQUENCE:5257868
+DTSTART;TZID=America/Chicago:20261222T180000
 DTEND;TZID=America/Chicago:20261222T220000
 SUMMARY:Ty Thomas Benefit Show\, Goodwin Rainer\, Outlook Bleak +3 @ The Ha
  ndlebar
 DESCRIPTION:Ty Thomas Benefit Show\, Goodwin Rainer\, Outlook Bleak\, Stufy
- \, Sideswept Bangs\, Steve Herwin\n7pm\nhttps://diypensacola.com/s/2026-12
- -22-handlebar-ty-thomas-benefit-show-goodwin-rainer.html\n\nTy Thomas bene
- fit Dec 22 at @thehandlebar850\n\n@goodwinrainer @outlook_bleak @stufytheb
- and @sidesweptbangsmusic @steve.herwin
+ \, Sideswept Bangs\, Steve Herwin\ndoors 6pm / music 7pm\n$10 donation\nht
+ tps://diypensacola.com/s/2026-12-22-handlebar-ty-thomas-benefit-show-goodw
+ in-rainer.html\n\nTy Thomas benefit Dec 22 at @thehandlebar850\n\n@goodwin
+ rainer @outlook_bleak @stufytheband @sidesweptbangsmusic @steve.herwin
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-22-handlebar-ty-thomas-benefit-show-
  goodwin-rainer.html

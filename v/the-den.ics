@@ -52,4 +52,19 @@ DESCRIPTION:Brotality\, Sacreus\, Coastal High School\ndoors 6pm\, music 7p
 LOCATION:The Den
 URL:https://diypensacola.com/s/2026-12-11-the-den-brotality-sacreus.html
 END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-the-den-lesion-caca-del-diablo@diypensacola
+DTSTAMP:20261122T000000Z
+SEQUENCE:13922503
+DTSTART;TZID=America/Chicago:20261212T180000
+DTEND;TZID=America/Chicago:20261212T210000
+SUMMARY:Lesion\, Caca Del Diablo\, The Snatches +1 @ The Den
+DESCRIPTION:Lesion\, Caca Del Diablo\, The Snatches\, Bitchass\ndoors 6pm\n
+ $10 pwyc\nhttps://diypensacola.com/s/2026-12-12-the-den-lesion-caca-del-di
+ ablo.html\n\nPunkmas with Lesion Dec 12 🖤\n\n@lesion_bandfl @caca.del.d
+ iablo
+LOCATION:The Den
+URL:https://diypensacola.com/s/2026-12-12-the-den-lesion-caca-del-diablo.ht
+ ml
+END:VEVENT
 END:VCALENDAR

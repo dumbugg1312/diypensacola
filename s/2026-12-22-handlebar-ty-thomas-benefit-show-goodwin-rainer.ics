@@ -23,16 +23,16 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-12-22-handlebar-ty-thomas-benefit-show-goodwin-rainer@diypensacola
 DTSTAMP:20261103T000000Z
-SEQUENCE:6857215
-DTSTART;TZID=America/Chicago:20261222T190000
+SEQUENCE:5257868
+DTSTART;TZID=America/Chicago:20261222T180000
 DTEND;TZID=America/Chicago:20261222T220000
 SUMMARY:Ty Thomas Benefit Show\, Goodwin Rainer\, Outlook Bleak +3 @ The Ha
  ndlebar
 DESCRIPTION:Ty Thomas Benefit Show\, Goodwin Rainer\, Outlook Bleak\, Stufy
- \, Sideswept Bangs\, Steve Herwin\n7pm\nhttps://diypensacola.com/s/2026-12
- -22-handlebar-ty-thomas-benefit-show-goodwin-rainer.html\n\nTy Thomas bene
- fit Dec 22 at @thehandlebar850\n\n@goodwinrainer @outlook_bleak @stufytheb
- and @sidesweptbangsmusic @steve.herwin
+ \, Sideswept Bangs\, Steve Herwin\ndoors 6pm / music 7pm\n$10 donation\nht
+ tps://diypensacola.com/s/2026-12-22-handlebar-ty-thomas-benefit-show-goodw
+ in-rainer.html\n\nTy Thomas benefit Dec 22 at @thehandlebar850\n\n@goodwin
+ rainer @outlook_bleak @stufytheband @sidesweptbangsmusic @steve.herwin
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-22-handlebar-ty-thomas-benefit-show-
  goodwin-rainer.html

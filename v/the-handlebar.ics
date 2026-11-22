@@ -23,47 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-19-handlebar-katie-dineen-hope-given@diypensacola
-DTSTAMP:20261103T000000Z
-SEQUENCE:15021192
-DTSTART;TZID=America/Chicago:20261119T180000
-DTEND;TZID=America/Chicago:20261119T210000
-SUMMARY:Katie Dineen\, Hope Given\, Jacob Brock +1 @ The Handlebar
-DESCRIPTION:Katie Dineen\, Hope Given\, Jacob Brock\, Ed Adams\n6pm\n$10\nh
- ttps://diypensacola.com/s/2026-11-19-handlebar-katie-dineen-hope-given.htm
- l\n\nSongwriter rounds Nov 19 at @thehandlebar850!\n\n@katiedineensings
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-19-handlebar-katie-dineen-hope-given
- .html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-20-handlebar-freddy-todd@diypensacola
-DTSTAMP:20261031T000000Z
-SEQUENCE:10020367
-DTSTART;TZID=America/Chicago:20261120T200000
-DTEND;TZID=America/Chicago:20261120T230000
-SUMMARY:Freddy Todd @ The Handlebar
-DESCRIPTION:Freddy Todd\n8PM\nhttps://diypensacola.com/s/2026-11-20-handleb
- ar-freddy-todd.html\n\nFreddy Todd Nov 20 at @thehandlebar850!
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-20-handlebar-freddy-todd.html
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-21-handlebar-cremro-smith-aj-the-musician@diypensacola
-DTSTAMP:20261103T000000Z
-SEQUENCE:9705004
-DTSTART;TZID=America/Chicago:20261121T200000
-DTEND;TZID=America/Chicago:20261121T230000
-SUMMARY:CremRo Smith\, AJ The Musician\, Knuk +3 @ The Handlebar
-DESCRIPTION:CremRo Smith\, AJ The Musician\, Knuk\, Sco Mazzi\, Txnka\, Kia
- ra Symone\n8pm\nhttps://diypensacola.com/s/2026-11-21-handlebar-cremro-smi
- th-aj-the-musician.html\n\nCremRo Smith Nov 21 at @thehandlebar850!\n\n@cr
- emrosmith
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-21-handlebar-cremro-smith-aj-the-mus
- ician.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-12-02-handlebar-20-watt-tombstone@diypensacola
 DTSTAMP:20261015T000000Z
 SEQUENCE:1378615
@@ -211,6 +170,21 @@ URL:https://diypensacola.com/s/2026-12-12-handlebar-serenas-fire-silenced.h
  tml
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-14-handlebar-wadeview-spidershed@diypensacola
+DTSTAMP:20261122T000000Z
+SEQUENCE:16693243
+DTSTART;TZID=America/Chicago:20261214T180000
+DTEND;TZID=America/Chicago:20261214T220000
+SUMMARY:Wadeview\, Spidershed\, Bastard Son +1 @ The Handlebar
+DESCRIPTION:Wadeview\, Spidershed\, Bastard Son\, 10\,000 Pound Manatee\ndo
+ ors 6pm / music 7pm\n$10\nhttps://diypensacola.com/s/2026-12-14-handlebar-
+ wadeview-spidershed.html\n\nWadeview from Orlando Dec 14 at @thehandlebar8
+ 50\n\n@spidershed.nwfl @bastardsonband
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-14-handlebar-wadeview-spidershed.htm
+ l
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-17-handlebar-rickshaw-billies-burger-patrol@diypensacola
 DTSTAMP:20260921T000000Z
 SEQUENCE:7447187
@@ -256,16 +230,16 @@ END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-22-handlebar-ty-thomas-benefit-show-goodwin-rainer@diypensacola
 DTSTAMP:20261103T000000Z
-SEQUENCE:6857215
-DTSTART;TZID=America/Chicago:20261222T190000
+SEQUENCE:5257868
+DTSTART;TZID=America/Chicago:20261222T180000
 DTEND;TZID=America/Chicago:20261222T220000
 SUMMARY:Ty Thomas Benefit Show\, Goodwin Rainer\, Outlook Bleak +3 @ The Ha
  ndlebar
 DESCRIPTION:Ty Thomas Benefit Show\, Goodwin Rainer\, Outlook Bleak\, Stufy
- \, Sideswept Bangs\, Steve Herwin\n7pm\nhttps://diypensacola.com/s/2026-12
- -22-handlebar-ty-thomas-benefit-show-goodwin-rainer.html\n\nTy Thomas bene
- fit Dec 22 at @thehandlebar850\n\n@goodwinrainer @outlook_bleak @stufytheb
- and @sidesweptbangsmusic @steve.herwin
+ \, Sideswept Bangs\, Steve Herwin\ndoors 6pm / music 7pm\n$10 donation\nht
+ tps://diypensacola.com/s/2026-12-22-handlebar-ty-thomas-benefit-show-goodw
+ in-rainer.html\n\nTy Thomas benefit Dec 22 at @thehandlebar850\n\n@goodwin
+ rainer @outlook_bleak @stufytheband @sidesweptbangsmusic @steve.herwin
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-22-handlebar-ty-thomas-benefit-show-
  goodwin-rainer.html

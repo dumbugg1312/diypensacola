@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:diypensacola shows
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-12-the-den-lesion-caca-del-diablo@diypensacola
+DTSTAMP:20261122T000000Z
+SEQUENCE:13922503
+DTSTART;TZID=America/Chicago:20261212T180000
+DTEND;TZID=America/Chicago:20261212T210000
+SUMMARY:Lesion\, Caca Del Diablo\, The Snatches +1 @ The Den
+DESCRIPTION:Lesion\, Caca Del Diablo\, The Snatches\, Bitchass\ndoors 6pm\n
+ $10 pwyc\nhttps://diypensacola.com/s/2026-12-12-the-den-lesion-caca-del-di
+ ablo.html\n\nPunkmas with Lesion Dec 12 🖤\n\n@lesion_bandfl @caca.del.d
+ iablo
+LOCATION:The Den
+URL:https://diypensacola.com/s/2026-12-12-the-den-lesion-caca-del-diablo.ht
+ ml
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:tonight: Lesion\, Caca Del Diablo\, The Snatches\, Bitchass @ T
+ he Den
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
