@@ -23,6 +23,33 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:2026-11-27-handlebar-fatejacket-exformation@diypensacola
+DTSTAMP:20261123T000000Z
+SEQUENCE:14463090
+DTSTART;TZID=America/Chicago:20261127T190000
+DTEND;TZID=America/Chicago:20261127T220000
+SUMMARY:Fatejacket\, Exformation\, Jupiter Pilot @ The Handlebar
+DESCRIPTION:Fatejacket\, Exformation\, Jupiter Pilot\n7pm\n$10-$15\nhttps:/
+ /diypensacola.com/s/2026-11-27-handlebar-fatejacket-exformation.html\n\n@f
+ atejacket @exformationband @jupiterpilotband
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-27-handlebar-fatejacket-exformation.
+ html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-28-handlebar-future-elevators-cavae-mundi@diypensacola
+DTSTAMP:20261123T000000Z
+SEQUENCE:12398578
+DTSTART;TZID=America/Chicago:20261128T190000
+DTEND;TZID=America/Chicago:20261128T230000
+SUMMARY:Future Elevators\, Cavae Mundi @ The Handlebar
+DESCRIPTION:Future Elevators\, Cavae Mundi\ndoors 7pm / show 8pm\nhttps://d
+ iypensacola.com/s/2026-11-28-handlebar-future-elevators-cavae-mundi.html
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-28-handlebar-future-elevators-cavae-
+ mundi.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-02-handlebar-20-watt-tombstone@diypensacola
 DTSTAMP:20261015T000000Z
 SEQUENCE:1378615
@@ -329,6 +356,33 @@ DESCRIPTION:never easy\, Wayside\, postdrome\ndoors 6pm / show 7pm\nhttps:/
  easy at @thehandlebar850\, Feb 3
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2027-02-03-handlebar-never-easy-wayside.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-06-handlebar-first-day-back@diypensacola
+DTSTAMP:20261123T000000Z
+SEQUENCE:15249549
+DTSTART;TZID=America/Chicago:20270206T170000
+DTEND;TZID=America/Chicago:20270206T210000
+SUMMARY:First Day Back @ The Handlebar
+DESCRIPTION:First Day Back\ndoors 5pm / show 6pm\nhttps://diypensacola.com/
+ s/2027-02-06-handlebar-first-day-back.html\n\nFirst Day Back Feb 6 at @the
+ handlebar850
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-02-06-handlebar-first-day-back.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-08-handlebar-ryot-tour-willam@diypensacola
+DTSTAMP:20261123T000000Z
+SEQUENCE:16267530
+DTSTART;TZID=America/Chicago:20270208T190000
+DTEND;TZID=America/Chicago:20270208T230000
+SUMMARY:RYOT Tour\, Willam\, Discord Addams +6 @ The Handlebar
+DESCRIPTION:RYOT Tour\, Willam\, Discord Addams\, Mia Starr\, Latrice Royal
+ e\, Angeria\, Gidget Von Addams\, Lagoona Bloo\, Jan Sport\ndoors 7pm / sh
+ ow 8pm\nhttps://diypensacola.com/s/2027-02-08-handlebar-ryot-tour-willam.h
+ tml\n\nRYOT Tour Feb 8 at @thehandlebar850
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-02-08-handlebar-ryot-tour-willam.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-10-handlebar-nervosa@diypensacola

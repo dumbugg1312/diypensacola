@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DIYPensacola//Shows//EN
+X-WR-CALNAME:diypensacola: Angeria
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2027-02-08-handlebar-ryot-tour-willam@diypensacola
+DTSTAMP:20261123T000000Z
+SEQUENCE:16267530
+DTSTART;TZID=America/Chicago:20270208T190000
+DTEND;TZID=America/Chicago:20270208T230000
+SUMMARY:RYOT Tour\, Willam\, Discord Addams +6 @ The Handlebar
+DESCRIPTION:RYOT Tour\, Willam\, Discord Addams\, Mia Starr\, Latrice Royal
+ e\, Angeria\, Gidget Von Addams\, Lagoona Bloo\, Jan Sport\ndoors 7pm / sh
+ ow 8pm\nhttps://diypensacola.com/s/2027-02-08-handlebar-ryot-tour-willam.h
+ tml\n\nRYOT Tour Feb 8 at @thehandlebar850
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-02-08-handlebar-ryot-tour-willam.html
+END:VEVENT
+END:VCALENDAR

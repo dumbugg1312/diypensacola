@@ -23,34 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-08-309-theatre-of-the-oppressed-suzanne-byam@diypensacola
-DTSTAMP:20261024T000000Z
-SEQUENCE:5435793
-DTSTART;TZID=America/Chicago:20261108T120000
-DTEND;TZID=America/Chicago:20261108T140000
-SUMMARY:Theatre of the Oppressed\, Suzanne Byam @ 309
-DESCRIPTION:Theatre of the Oppressed\, Suzanne Byam\n12-2pm\nhttps://diypen
- sacola.com/s/2026-11-08-309-theatre-of-the-oppressed-suzanne-byam.html\n\n
- Theatre of the Oppressed Nov 8 at @309punkproject!
-LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-08-309-theatre-of-the-oppressed-suza
- nne-byam.html
-STATUS:CANCELLED
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-08-handlebar-ajj-greet-death@diypensacola
-DTSTAMP:20260918T000000Z
-SEQUENCE:12537290
-DTSTART;TZID=America/Chicago:20261108T180000
-DTEND;TZID=America/Chicago:20261108T220000
-SUMMARY:AJJ\, Greet Death @ The Handlebar
-DESCRIPTION:AJJ\, Greet Death\ndoors 6pm / show 7pm\nhttps://diypensacola.c
- om/s/2026-11-08-handlebar-ajj-greet-death.html\n\najj and greet death at t
- he handlebar\, sunday november 8th. doors 6pm\, show at 7.
-LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
-URL:https://diypensacola.com/s/2026-11-08-handlebar-ajj-greet-death.html
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-09-handlebar-jazz-night-arent-we@diypensacola
 DTSTAMP:20261103T000000Z
 SEQUENCE:10108781
@@ -324,6 +296,33 @@ LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-11-21-bettys-other-ihatesundays.html
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-27-handlebar-fatejacket-exformation@diypensacola
+DTSTAMP:20261123T000000Z
+SEQUENCE:14463090
+DTSTART;TZID=America/Chicago:20261127T190000
+DTEND;TZID=America/Chicago:20261127T220000
+SUMMARY:Fatejacket\, Exformation\, Jupiter Pilot @ The Handlebar
+DESCRIPTION:Fatejacket\, Exformation\, Jupiter Pilot\n7pm\n$10-$15\nhttps:/
+ /diypensacola.com/s/2026-11-27-handlebar-fatejacket-exformation.html\n\n@f
+ atejacket @exformationband @jupiterpilotband
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-27-handlebar-fatejacket-exformation.
+ html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-28-handlebar-future-elevators-cavae-mundi@diypensacola
+DTSTAMP:20261123T000000Z
+SEQUENCE:12398578
+DTSTART;TZID=America/Chicago:20261128T190000
+DTEND;TZID=America/Chicago:20261128T230000
+SUMMARY:Future Elevators\, Cavae Mundi @ The Handlebar
+DESCRIPTION:Future Elevators\, Cavae Mundi\ndoors 7pm / show 8pm\nhttps://d
+ iypensacola.com/s/2026-11-28-handlebar-future-elevators-cavae-mundi.html
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-11-28-handlebar-future-elevators-cavae-
+ mundi.html
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-29-pensacola-liberation-center-the-snatches-bastard-son@diypens
  acola
 DTSTAMP:20261116T000000Z
@@ -415,6 +414,20 @@ DESCRIPTION:Head Cannon\, Caca Del Diablo\, Pauper’s Grave\ndoors 7:00\n$
 LOCATION:The Den
 URL:https://diypensacola.com/s/2026-12-05-the-den-headcannon-caca-del-diabl
  o.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-05-bettys-surfwax-tokyo-coyote@diypensacola
+DTSTAMP:20261123T000000Z
+SEQUENCE:13272984
+DTSTART;TZID=America/Chicago:20261205T200000
+DTEND;TZID=America/Chicago:20261206T000000
+SUMMARY:Surf Wax\, Tokyo Coyote\, Dead Devils +1 @ Betty’s
+DESCRIPTION:Surf Wax\, Tokyo Coyote\, Dead Devils\, Earl’s Killer Squirre
+ l\ndoors 8pm / show 9pm\n$10\nhttps://diypensacola.com/s/2026-12-05-bettys
+ -surfwax-tokyo-coyote.html\n\nSurfwax Dec 5 at @bettys_on_belmont\n\n@toky
+ ocoyoteband @aternaldeaddevils
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-05-bettys-surfwax-tokyo-coyote.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-06-cordova-square-pensacola-punk-rock-flea-market@diypensacola
@@ -768,6 +781,33 @@ DESCRIPTION:never easy\, Wayside\, postdrome\ndoors 6pm / show 7pm\nhttps:/
  easy at @thehandlebar850\, Feb 3
 LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2027-02-03-handlebar-never-easy-wayside.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-06-handlebar-first-day-back@diypensacola
+DTSTAMP:20261123T000000Z
+SEQUENCE:15249549
+DTSTART;TZID=America/Chicago:20270206T170000
+DTEND;TZID=America/Chicago:20270206T210000
+SUMMARY:First Day Back @ The Handlebar
+DESCRIPTION:First Day Back\ndoors 5pm / show 6pm\nhttps://diypensacola.com/
+ s/2027-02-06-handlebar-first-day-back.html\n\nFirst Day Back Feb 6 at @the
+ handlebar850
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-02-06-handlebar-first-day-back.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-08-handlebar-ryot-tour-willam@diypensacola
+DTSTAMP:20261123T000000Z
+SEQUENCE:16267530
+DTSTART;TZID=America/Chicago:20270208T190000
+DTEND;TZID=America/Chicago:20270208T230000
+SUMMARY:RYOT Tour\, Willam\, Discord Addams +6 @ The Handlebar
+DESCRIPTION:RYOT Tour\, Willam\, Discord Addams\, Mia Starr\, Latrice Royal
+ e\, Angeria\, Gidget Von Addams\, Lagoona Bloo\, Jan Sport\ndoors 7pm / sh
+ ow 8pm\nhttps://diypensacola.com/s/2027-02-08-handlebar-ryot-tour-willam.h
+ tml\n\nRYOT Tour Feb 8 at @thehandlebar850
+LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2027-02-08-handlebar-ryot-tour-willam.html
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-10-handlebar-nervosa@diypensacola

@@ -22,4 +22,18 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-05-bettys-surfwax-tokyo-coyote@diypensacola
+DTSTAMP:20261123T000000Z
+SEQUENCE:13272984
+DTSTART;TZID=America/Chicago:20261205T200000
+DTEND;TZID=America/Chicago:20261206T000000
+SUMMARY:Surf Wax\, Tokyo Coyote\, Dead Devils +1 @ Betty’s
+DESCRIPTION:Surf Wax\, Tokyo Coyote\, Dead Devils\, Earl’s Killer Squirre
+ l\ndoors 8pm / show 9pm\n$10\nhttps://diypensacola.com/s/2026-12-05-bettys
+ -surfwax-tokyo-coyote.html\n\nSurfwax Dec 5 at @bettys_on_belmont\n\n@toky
+ ocoyoteband @aternaldeaddevils
+LOCATION:Betty’s\, 506 W Belmont St\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-05-bettys-surfwax-tokyo-coyote.html
+END:VEVENT
 END:VCALENDAR

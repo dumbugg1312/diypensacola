@@ -1,7 +1,7 @@
-var CACHE='diypensacola-e8eea00a7fd4';
+var CACHE='diypensacola-2fbee9ef569f';
 var FONTS='diypensacola-fonts';
 var SHELL=["./", "offline.html", "style.css", "logo-hdr.webp", "flyer-soon.webp", "favicon-48.png", "manifest.webmanifest", "flag.js"];
-var PRECACHE=["flyers/thumbs/2026-11-29_pensacola-liberation-center_the-snatches.webp"];
+var PRECACHE=["flyers/thumbs/2026-11-27_handlebar_fatejacket.webp", "flyers/thumbs/2026-11-29_pensacola-liberation-center_the-snatches.webp", "flyers/thumbs/2026-12-02_handlebar_20-watt-tombstone.webp", "flyers/thumbs/2026-12-03_handlebar_bubblegum-chainsaw.webp", "flyers/thumbs/2026-12-04_handlebar_in-her-own-words.webp", "flyers/thumbs/2026-12-05_handlebar_statement-of-pride.webp", "flyers/thumbs/2026-12-05_the-den_headcannon.webp", "flyers/thumbs/2026-12-05_bettys_surfwax.webp", "flyers/thumbs/2026-12-06_cordova-square_pensacola-punk-rock-flea-market.webp", "flyers/thumbs/2026-12-06_handlebar_the-crimson-armada.webp"];
 var NAV_WAIT=3000;
 var ASSET_WAIT=1500;
 var slowAt=0;
