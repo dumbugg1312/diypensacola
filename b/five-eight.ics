@@ -36,4 +36,19 @@ LOCATION:The Handlebar\, 319 N Tarragona St\, Pensacola\, FL
 URL:https://diypensacola.com/s/2026-12-19-handlebar-five-eight-heavy-kid.ht
  ml
 END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-19-309-weirdo-the-story-of-five-eight-five-eight@diypensacola
+DTSTAMP:20261124T000000Z
+SEQUENCE:14465639
+DTSTART;TZID=America/Chicago:20261219T143000
+DTEND;TZID=America/Chicago:20261219T180000
+SUMMARY:Weirdo: The Story of Five Eight\, Five Eight @ 309
+DESCRIPTION:Weirdo: The Story of Five Eight\, Five Eight\ndoors 2:30pm / fi
+ lm 3pm\n$5-$8 suggested donation\nhttps://diypensacola.com/s/2026-12-19-30
+ 9-weirdo-the-story-of-five-eight-five-eight.html\n\nFive Eight doc + acous
+ tic set Dec 19 at @309punkproject
+LOCATION:309\, 309 N 6th Ave\, Pensacola\, FL
+URL:https://diypensacola.com/s/2026-12-19-309-weirdo-the-story-of-five-eigh
+ t-five-eight.html
+END:VEVENT
 END:VCALENDAR
